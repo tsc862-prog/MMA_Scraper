@@ -32,6 +32,7 @@ SUPABASE_URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
 SUPABASE_KEY = os.environ.get('SUPABASE_KEY', '')
 
 COMPLETED_EVENTS_FILE = 'completed_events.txt'
+RECHECK_RECENT = 2  # always re-scrape the N most recent completed events
 
 # Fixed namespace for deterministic UUIDs — do not change after first run
 _NS = uuid.UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')
@@ -204,6 +205,16 @@ def parse_event_page(event_url, event_status):
 
 # ── Supabase push ─────────────────────────────────────────────────────────────
 
+def rpc(name):
+    """Call a parameterless Supabase stored procedure."""
+    resp = requests.post(
+        f'{SUPABASE_URL}/rest/v1/rpc/{name}',
+        headers=_headers(),
+        data='{}',
+    )
+    if resp.status_code not in (200, 204):
+        print(f'  [WARN] rpc {name} failed ({resp.status_code}): {resp.text[:200]}')
+
 def push_fights(fights):
     """Batch upsert all records — 4 HTTP requests total regardless of fight count."""
     events_map   = {}  # keyed by id to deduplicate
@@ -267,12 +278,20 @@ def main():
     print('Fetching event list...')
     all_events = get_event_urls()
 
-    # Skip completed events already scraped; always re-scrape upcoming
+    # The most recent N completed events get re-scraped even if already done,
+    # so that late result updates (decisions overturned, etc.) are captured.
+    recent_completed = [
+        url for url, status in all_events if status == 'completed'
+    ][:RECHECK_RECENT]
+    recheck = set(recent_completed)
+
+    # Skip completed events already scraped; always re-scrape upcoming + recent
     to_scrape = [
         (url, status) for url, status in all_events
-        if status == 'upcoming' or url not in completed
+        if status == 'upcoming' or url not in completed or url in recheck
     ]
 
+    print(f'Re-checking {len(recheck & completed)} recent completed events')
     print(f'Skipping {len(all_events) - len(to_scrape)} already-completed events')
     print(f'Scraping {len(to_scrape)} events...\n')
 
@@ -293,6 +312,8 @@ def main():
         push_fights(all_fights)
         for url in completed_urls:
             mark_event_completed(url)
+        print('Recalculating debut flags...')
+        rpc('recalculate_debut_flags')
 
     print(f'\nDone — pushed {len(all_fights)} fights to Supabase.')
 
