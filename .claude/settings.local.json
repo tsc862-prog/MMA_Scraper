@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"http://www.ufcstats.com/event-details/f3eb664db7fb1df3\")",
+      "Read(//tmp/**)"
+    ]
+  }
+}
