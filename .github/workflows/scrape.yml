@@ -35,14 +35,9 @@ jobs:
         run: |
           echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" >> .env
           echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}" >> .env
-          echo "PARAMOUNT_COOKIES=${{ secrets.PARAMOUNT_COOKIES }}" >> .env
 
       - name: Run UFC stats scraper
         run: python start.py
-
-      - name: Run Paramount scraper (daily only)
-        if: github.event.schedule == '0 14 * * *' || github.event_name == 'workflow_dispatch'
-        run: python paramount_scraper.py
 
       - name: Save completed events tracker
         run: |
