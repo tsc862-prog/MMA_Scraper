@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Supabase__execute_sql",
+      "Bash(curl -s \"http://www.ufcstats.com/event-details/9dde100a40dda0c2\")",
+      "Bash(python -c ':*)",
+      "Bash(curl -s \"http://www.ufcstats.com/event-details/24edbbe1a498f1a3\")"
+    ]
+  }
+}

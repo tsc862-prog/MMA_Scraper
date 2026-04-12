@@ -73,24 +73,6 @@ def fight_id(url):
     """Extract the hex ID from a ufcstats fight URL."""
     return url.rstrip('/').split('/')[-1]
 
-# ── Method helpers ────────────────────────────────────────────────────────────
-
-def broad_method(method):
-    if not method:
-        return None
-    m = method.upper()
-    if 'KO' in m or 'TKO' in m:
-        return 'KO/TKO'
-    if 'SUB' in m:
-        return 'Submission'
-    if 'DEC' in m:
-        return 'Decision'
-    if 'DQ' in m:
-        return 'DQ'
-    if 'NC' in m or 'NO CONTEST' in m:
-        return 'No Contest'
-    return method
-
 # ── Incremental tracking ──────────────────────────────────────────────────────
 
 def load_completed_events():
@@ -196,6 +178,7 @@ def parse_event_page(event_url, event_status):
             'is_title_bout':  bool(cells[6].find('img', src=lambda s: s and 'belt' in s)),
             'weight_class':   weight_class,
             'method':         method[0] if method else None,
+            'details':        method[1] if len(method) > 1 and method[1] else None,
             'finish_round':   rnd[0] if rnd else None,
             'finish_time':    t[0] if t else None,
             'fight_url':      fight_url,
@@ -253,14 +236,15 @@ def push_fights(fights):
         })
 
         if f['event_status'] == 'completed' and f['method']:
-            results_list.append({
-                'fight_id':     fid,
-                'winner_id':    w_id,
-                'method':       f['method'],
-                'method_broad': broad_method(f['method']),
-                'round':        int(f['finish_round']) if f['finish_round'] else None,
-                'time':         f['finish_time'],
-            })
+            result = {
+                'fight_id':   fid,
+                'winner_id':  w_id,
+                'method':     f['method'],
+                'round':      int(f['finish_round']) if f['finish_round'] else None,
+                'time':       f['finish_time'],
+                'details':    f.get('details'),
+            }
+            results_list.append(result)
 
     upsert('events',       list(events_map.values()))
     upsert('fighters',     list(fighters_map.values()))
@@ -298,8 +282,8 @@ def main():
     all_fights = []
     completed_urls = []
 
-    for i, (url, status) in enumerate(to_scrape):
-        print(f'[{i+1}/{len(to_scrape)}] ({status}) {url}')
+    for idx, (url, status) in enumerate(to_scrape):
+        print(f'[{idx+1}/{len(to_scrape)}] ({status}) {url}')
         fights = parse_event_page(url, status)
         if fights:
             all_fights.extend(fights)
