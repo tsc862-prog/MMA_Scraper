@@ -2,11 +2,11 @@ name: UFC Scraper
 
 on:
   schedule:
-    # start.py — Saturday fight night (6pm–midnight ET = 22:00–03:59 UTC)
-    - cron: '*/10 22-23 * * 6'   # Sat 6pm–8pm ET, every 10 min
-    - cron: '*/10 0-3 * * 0'     # Sat 8pm–midnight ET, every 10 min
-    # start.py + paramount — daily (10am ET)
-    - cron: '0 14 * * *'
+    # start.py — Saturday fight night (2pm–10pm PST = 22:00 Sat – 06:00 Sun UTC)
+    - cron: '*/10 22-23 * * 6'   # Sat 2pm–4pm PST, every 10 min
+    - cron: '*/10 0-5 * * 0'     # Sat 4pm–10pm PST, every 10 min
+    # start.py — daily at 11:30pm PST
+    - cron: '30 7 * * *'
   workflow_dispatch:               # manual trigger from GitHub UI
 
 concurrency:

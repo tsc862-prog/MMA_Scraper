@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-04-11 13:22
-Fight clips matched: 1182  |  Event links matched: 185  |  Unmatched: 38
+Generated: 2026-04-11 17:39
+Fight clips matched: 1188  |  Event links matched: 185  |  Unmatched: 1
 ================================================================================
 
-MATCHED FIGHTS (1182)
+MATCHED FIGHTS (1188)
 --------------------------------------------------------------------------------
 fight_id:  ccdd6c7577927a8c
 fighters:  Anderson Silva vs. Chris Leben
@@ -805,6 +805,11 @@ fighters:  Marcin Tybura vs. Tyrell Fortune  [Prelims]
 event:     UFC Fight Night: Adesanya vs. Pyfer (March 28, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KM6QZPYCEGAR2J9XRN4YASAR/
 
+fight_id:  1c50e43770ba84fc
+fighters:  Casey O’Neill vs. Gabriella Fernandes  [Prelims]
+event:     UFC Fight Night: Adesanya vs. Pyfer (March 28, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KKYH5ZWXEWJSMMWMQF99X62W/
+
 fight_id:  dbf1ee1a1912c735
 fighters:  Navajo Stirling vs. Bruno Lopes  [Prelims]
 event:     UFC Fight Night: Adesanya vs. Pyfer (March 28, 2026)
@@ -1154,6 +1159,31 @@ fight_id:  2bbfbb234c255249
 fighters:  Klaudia Sygula vs. Priscila Cachoeira  [Prelims]
 event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
 url:       https://www.paramountplus.com/shows/video/AUgwEiWeIfIt_xwl5SMBofcMpsfQ03aH/
+
+fight_id:  62b5ce408c150fa8
+fighters:  Gamrot vs. Ribovics
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNZFP3E1EBM9Y78A14Q9YQDK/
+
+fight_id:  f506977877074aa6
+fighters:  Suarez vs. Godinez
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNZE0RXGEKRRZW99HMVCXM7P/
+
+fight_id:  81d20c833e9a76eb
+fighters:  Padilla vs. Mederos
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNZD1M3VE4DSTV5TN6KC55A6/
+
+fight_id:  20868a67bea63129
+fighters:  Gastelum vs. Luque
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNZARYZJEBSSFCQ62EXFY445/
+
+fight_id:  5b49c3d36907c6df
+fighters:  Radtke vs. Prado
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNZA97GPE1ESQ69KEKHWJHYS/
 
 fight_id:  ca93e3f69fa3d725
 fighters:  Cain Velasquez vs. Antonio Rodrigo Nogueira
@@ -6844,43 +6874,6 @@ clip:      UFC 326: Holloway vs. Oliveira 2 - All The Fights
 url:       https://www.paramountplus.com/shows/video/ALVE01KKWARKN7E82VRKGE5PPG1691/
 
 
-UNMATCHED (38)
+UNMATCHED (1)
 --------------------------------------------------------------------------------
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
-no_fighter(Casey O’Neill) | Casey O’Neill vs. Gabriella Fernandes | Mar 28, 2026 | https://www.paramountplus.com/shows/video/ALVE01KKYH5ZWXEWJSMMWMQF99X62W/
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night on Paramount +
-UNKNOWN_TYPE           | Renato Moicano Profile Before UFC Fight Night In Vegas
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount +
-UNKNOWN_TYPE           | Joe Pyfer Previews Adesanya Fight, Talks Faith Shift
-UNKNOWN_TYPE           | Israel Adesanya Previews Joe Pyfer Fight, Vows To End Skid
-UNKNOWN_TYPE           | Maycee Barber Previews Grasso Fight, Touts Ferocity
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount+
-UNKNOWN_TYPE           | UFC Fight Night: Lerone Murphy Interview
-UNKNOWN_TYPE           | Michael 'Venom' Page Previews Sam Patterson Fight
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount+
-UNKNOWN_TYPE           | Dana White Announces All Main Events Up To UFC Freedom 250
-UNKNOWN_TYPE           | Kevin Vallejos Confident Ahead of Josh Emmett Fight
-UNKNOWN_TYPE           | Previewing UFC Fight Night
-UNKNOWN_TYPE           | UFC Fight Night: Josh Emmett Interview
-UNKNOWN_TYPE           | UFC 326 Bold Predictions
-UNKNOWN_TYPE           | UFC 326 Super Preview
-UNKNOWN_TYPE           | Charles Oliveira Profile Ahead Of UFC 326
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount+
-UNKNOWN_TYPE           | Lone'er Kavanagh Joins CBS Sports HQ
-UNKNOWN_TYPE           | Chito Vera Joins CBS Sports HQ
-UNKNOWN_TYPE           | Brandon Moreno Joins CBS Sports HQ
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTION From UFC Fight Night On Paramount+
-UNKNOWN_TYPE           | UFC Fight Night Fighter Breakdown: Anthony Hernandez
-UNKNOWN_TYPE           | UFC Fight Night Fighter Breakdown: Sean Strickland
-UNKNOWN_TYPE           | Dan Ige Joins CBS Sports HQ
-UNKNOWN_TYPE           | Geoff Neal Speaks on His Fight With Uros Medic, Sobriety & MORE
-UNKNOWN_TYPE           | Anthony Hernandez on the Upcoming Strickland Fight, His Win Streak & MORE
-UNKNOWN_TYPE           | Top 5 Storylines Heading Into UFC Fight Night
-UNKNOWN_TYPE           | HIGHLIGHTS & REACTIONS From UFC Fight Night On Paramount+
-UNKNOWN_TYPE           | Justin Gaethje Calls Out Ilia Topuria for White House Card
-UNKNOWN_TYPE           | UFC Fight Night Super Preview and Best Bets
-UNKNOWN_TYPE           | Michael Chandler Reacts to Getting Called Out by Ruffy & MORE
-UNKNOWN_TYPE           | UFC Fight Night Preview: Co-Main Event
-no_fighter(Oliveira Breakdown) | UFC Fight Night Storylines | Bautista vs. Oliveira Breakdown | Feb 2, 2026 | https://www.paramountplus.com/shows/video/sejGl1usrfCdqeDfkQCGNZph6pxn7HIf/
-UNKNOWN_TYPE           | Mario Bautista Take On Vinicius Oliveira In UFC Fight Night
-no_fighter(UFC 327 | Procházka, Ulberg | Fighter Breakdown) | UFC 327 | Procházka vs. Ulberg | Fighter Breakdown | Apr 6, 2026 | https://www.paramountplus.com/shows/video/ALVE01KNJYEMNCEHYTV61BQH9YKNNH/
