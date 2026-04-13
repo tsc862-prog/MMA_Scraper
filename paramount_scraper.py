@@ -450,6 +450,7 @@ def main(dry_run=False):
         title     = clip.get('title', '')
         p_url     = PARAMOUNT_BASE + clip.get('url', '')
         clip_date = parse_clip_date(clip)
+        dur_s     = clip.get('duration_raw') or 0
 
         name_a, name_b = parse_fighters(title)
         if not name_a:
@@ -472,6 +473,8 @@ def main(dry_run=False):
                 'event_date':    ev.get('date', ''),
                 'paramount_url': p_url,
                 'card_section':  parse_card_section(title),
+                'is_highlight':  bool(re.search(r'\bhighlights?\b', title, re.IGNORECASE)),
+                'duration':      dur_s if isinstance(dur_s, (int, float)) else 0,
             })
         else:
             unmatched.append(
@@ -558,14 +561,18 @@ def main(dry_run=False):
                 # else: skip weigh-ins, press conferences, breakdowns, etc.
             time.sleep(0.3)
 
-    # ── Deduplicate (keep first match per fight/event) ────────────────────────
+    # ── Deduplicate — prefer non-highlight title, then longest duration ───────
+    def _rank(m):
+        # Lower rank wins. (is_highlight=0 beats 1, longer duration beats shorter)
+        return (1 if m.get('is_highlight') else 0, -(m.get('duration') or 0))
+
     seen_fights = {}
-    deduped_fights = []
     for m in matched_fights:
-        if m['fight_id'] not in seen_fights:
-            seen_fights[m['fight_id']] = True
-            deduped_fights.append(m)
-    matched_fights = deduped_fights
+        fid = m['fight_id']
+        existing = seen_fights.get(fid)
+        if existing is None or _rank(m) < _rank(existing):
+            seen_fights[fid] = m
+    matched_fights = list(seen_fights.values())
 
     seen_events = {}
     deduped_events = []

@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-04-11 17:39
-Fight clips matched: 1188  |  Event links matched: 185  |  Unmatched: 1
+Generated: 2026-04-12 17:46
+Fight clips matched: 1195  |  Event links matched: 186  |  Unmatched: 82
 ================================================================================
 
-MATCHED FIGHTS (1188)
+MATCHED FIGHTS (1195)
 --------------------------------------------------------------------------------
 fight_id:  ccdd6c7577927a8c
 fighters:  Anderson Silva vs. Chris Leben
@@ -1160,30 +1160,65 @@ fighters:  Klaudia Sygula vs. Priscila Cachoeira  [Prelims]
 event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
 url:       https://www.paramountplus.com/shows/video/AUgwEiWeIfIt_xwl5SMBofcMpsfQ03aH/
 
-fight_id:  62b5ce408c150fa8
-fighters:  Gamrot vs. Ribovics
+fight_id:  a031f062b7ffefee
+fighters:  Jiri Prochazka vs. Carlos Ulberg
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNZFP3E1EBM9Y78A14Q9YQDK/
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGW6XEEQ90KMD9W0D4AT8/
+
+fight_id:  aade9d76ac6c6aef
+fighters:  Azamat Murzakanov vs. Paulo Costa
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGM6FE4XV2EYWEW31KRKQ/
+
+fight_id:  903552edaba48f4a
+fighters:  Curtis Blaydes vs. Josh Hokit
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGM05ENFT6X6E9DS7R5AR/
+
+fight_id:  c4d060cff018979a
+fighters:  Dominick Reyes vs. Johnny Walker
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MH2DAEQHTTEMXRSDHW8RB/
+
+fight_id:  60949f33201415ca
+fighters:  Cub Swanson vs. Nate Landwehr
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGV8NE2MSMHB2ZV1643HQ/
+
+fight_id:  10ab34056720b6b4
+fighters:  Patricio Freire vs. Aaron Pico  [Prelims]
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MH4SBE2Z8PJDWEGN0EXZ3/
+
+fight_id:  b4e16fb13153efdc
+fighters:  Kevin Holland vs. Randy Brown  [Prelims]
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGVDKEAW9QKT87FASR8XH/
+
+fight_id:  62b5ce408c150fa8
+fighters:  Mateusz Gamrot vs. Esteban Ribovics  [Prelims]
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MH2WQEA7T3D9TA5YS2W5R/
 
 fight_id:  f506977877074aa6
-fighters:  Suarez vs. Godinez
+fighters:  Tatiana Suarez vs. Loopy Godinez  [Prelims]
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNZE0RXGEKRRZW99HMVCXM7P/
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGKNME46ANSX20GWEZMKH/
 
 fight_id:  81d20c833e9a76eb
-fighters:  Padilla vs. Mederos
+fighters:  Chris Padilla vs. MarQuel Mederos  [Prelims]
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNZD1M3VE4DSTV5TN6KC55A6/
+url:       https://www.paramountplus.com/shows/video/ALVE01KNMP1WK1E53SW28ZGNRXTADB/
 
 fight_id:  20868a67bea63129
-fighters:  Gastelum vs. Luque
+fighters:  Kelvin Gastelum vs. Vicente Luque  [Prelims]
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNZARYZJEBSSFCQ62EXFY445/
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGNTXEFA9S7EDBAX0TSV0/
 
 fight_id:  5b49c3d36907c6df
-fighters:  Radtke vs. Prado
+fighters:  Charles Radtke vs. Francisco Prado  [Prelims]
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNZA97GPE1ESQ69KEKHWJHYS/
+url:       https://www.paramountplus.com/shows/video/ALVE01KNJ3QYR3EDA90Z69TZW8C6WT/
 
 fight_id:  ca93e3f69fa3d725
 fighters:  Cain Velasquez vs. Antonio Rodrigo Nogueira
@@ -5946,7 +5981,7 @@ event:     UFC 326: Holloway vs. Oliveira 2 (March 07, 2026)
 url:       https://www.paramountplus.com/shows/video/EZJekWSSSyrNQalUi5mM_Ma7W5uHIoTR/
 
 
-MATCHED EVENTS (185)
+MATCHED EVENTS (186)
 --------------------------------------------------------------------------------
 event_id:  729a274e-bd70-56af-a869-f4e923add42d
 event:     UFC 110: Nogueira vs Velasquez (February 20, 2010)
@@ -6873,7 +6908,93 @@ event:     UFC 326: Holloway vs. Oliveira 2 (March 07, 2026)
 clip:      UFC 326: Holloway vs. Oliveira 2 - All The Fights
 url:       https://www.paramountplus.com/shows/video/ALVE01KKWARKN7E82VRKGE5PPG1691/
 
+event_id:  a32a0ab4-1a4e-5d61-93ac-64df6092bd69
+event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
+clip:      UFC 327: Prochazka vs. Ulberg - All The Fights
+url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGANDETFT2RCHY4S30S5Y/
 
-UNMATCHED (1)
+
+UNMATCHED (82)
 --------------------------------------------------------------------------------
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
+UNKNOWN_TYPE           | UFC 327 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 327 Must-See Finishes
