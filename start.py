@@ -251,6 +251,38 @@ def push_fights(fights):
     upsert('fights',       fights_list)
     upsert('fight_results', results_list)
 
+    return events_map, fights_list
+
+def remove_stale_upcoming_fights(upcoming_event_ids, scraped_fight_ids):
+    """Delete DB fights on upcoming events that no longer appear on the card."""
+    if not upcoming_event_ids:
+        return
+    ev_filter = ','.join(upcoming_event_ids)
+    resp = requests.get(
+        f'{SUPABASE_URL}/rest/v1/fights?event_id=in.({ev_filter})&select=id',
+        headers=_headers(),
+    )
+    if not resp.ok:
+        print(f'  [WARN] fetch upcoming fights failed ({resp.status_code})')
+        return
+    db_ids = {r['id'] for r in resp.json()}
+    stale = db_ids - scraped_fight_ids
+    if not stale:
+        return
+    print(f'  Removing {len(stale)} stale fights from upcoming events...')
+    for fid in stale:
+        # Delete fight_results first (FK constraint)
+        requests.delete(
+            f'{SUPABASE_URL}/rest/v1/fight_results?fight_id=eq.{fid}',
+            headers=_headers(),
+        )
+        resp = requests.delete(
+            f'{SUPABASE_URL}/rest/v1/fights?id=eq.{fid}',
+            headers=_headers(),
+        )
+        if resp.status_code not in (200, 204):
+            print(f'    [WARN] delete fight {fid} failed ({resp.status_code})')
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -293,7 +325,19 @@ def main():
 
     if all_fights:
         print(f'\nPushing {len(all_fights)} fights to Supabase...')
-        push_fights(all_fights)
+        _, fights_list = push_fights(all_fights)
+
+        # Remove fights dropped from upcoming event cards
+        upcoming_event_ids = {
+            event_uuid(f['event_name'], f['event_date'])
+            for f in all_fights if f['event_status'] == 'upcoming'
+        }
+        scraped_fight_ids = {
+            fl['id'] for fl in fights_list
+            if fl['event_id'] in upcoming_event_ids
+        }
+        remove_stale_upcoming_fights(upcoming_event_ids, scraped_fight_ids)
+
         for url in completed_urls:
             mark_event_completed(url)
         print('Recalculating debut flags...')
