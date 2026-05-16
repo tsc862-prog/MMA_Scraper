@@ -189,7 +189,7 @@ def parse_event_page(event_url, event_status):
 # ── Supabase push ─────────────────────────────────────────────────────────────
 
 def rpc(name):
-    """Call a parameterless Supabase stored procedure."""
+    """Call a parameterless Supabase stored procedure. Returns its result, if any."""
     resp = requests.post(
         f'{SUPABASE_URL}/rest/v1/rpc/{name}',
         headers=_headers(),
@@ -197,6 +197,11 @@ def rpc(name):
     )
     if resp.status_code not in (200, 204):
         print(f'  [WARN] rpc {name} failed ({resp.status_code}): {resp.text[:200]}')
+        return None
+    try:
+        return resp.json()
+    except Exception:
+        return None
 
 def push_fights(fights):
     """Batch upsert all records — 4 HTTP requests total regardless of fight count."""
@@ -340,6 +345,12 @@ def main():
 
         for url in completed_urls:
             mark_event_completed(url)
+
+        print('Removing orphan events...')
+        orphans = rpc('delete_orphan_events')
+        if orphans:
+            print(f'  Deleted {orphans} orphan event(s)')
+
         print('Recalculating debut flags...')
         rpc('recalculate_debut_flags')
 
