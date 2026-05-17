@@ -1,5 +1,5 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-05-16 13:02
+Generated: 2026-05-16 21:17
 Fight clips matched: 1231  |  Event links matched: 187  |  Unmatched: 93
 ================================================================================
 
@@ -740,6 +740,71 @@ fighters:  Mackenzie Dern vs. Amanda Ribas
 event:     UFC Fight Night: Dern vs. Ribas 2 (January 11, 2025)
 url:       https://www.paramountplus.com/shows/video/zv2AFWU36WbJBvSUPTjFqzcEjrKzEUaE/
 
+fight_id:  e4aa608124896794
+fighters:  Arnold Allen vs. Melquizael Costa
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CS4EKYBN3WEFBM1DBN7/
+
+fight_id:  fc1266e2892ed111
+fighters:  Dooho Choi vs. Daniel Santos
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DQXE32AFTSYECV2VEYM/
+
+fight_id:  ecb7ff543dd41bf8
+fighters:  Malcolm Wellmaker vs. Juan Diaz
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DP1EXV9RFHS4NNBX7H1/
+
+fight_id:  57bd683efc797fc1
+fighters:  Modestas Bukauskas vs. Christian Edwards
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KREP7675EQSAHGMDAB3P11P2/
+
+fight_id:  a6ec8573a9d38c51
+fighters:  Timmy Cuamba vs. Benardo Sopaj
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CSBENF83CZVXVBBPT1B/
+
+fight_id:  ec32745308e2b055
+fighters:  Nikolay Veretennikov vs. Khaos Williams
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC7MYJQE0QTJ8H58FSJ1N15/
+
+fight_id:  6242cda790f2085d
+fighters:  Tuco Tokkos vs. Ivan Erslan  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BJSECEAEBKH7T6M1QVN/
+
+fight_id:  c9e0aa88afb81dab
+fighters:  Tommy Gantt vs. Artur Minev  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KREP75F9E4D966XRH82KV4A2/
+
+fight_id:  5f7111b982bcf6e3
+fighters:  Ketlen Vieira vs. Jacqueline Cavalcanti  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DX9EWMTKSY9ECEDJXSK/
+
+fight_id:  48cb604345f11766
+fighters:  Cody Brundage vs. Andre Petroski  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BE9EQ9V6TBE2TDEJX2S/
+
+fight_id:  b98ead4eff6bf872
+fighters:  Alice Ardelean vs. Polyana Viana  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CKGEZ8TYGDKJHRPYXZJ/
+
+fight_id:  b482d4452e4d0eee
+fighters:  Daniel Barez vs. Luis Gurule  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BDGE61RR27ZJKAHFQX9/
+
+fight_id:  39417b7d07c2fd83
+fighters:  Shauna Bannon vs. Nicolle Caliari  [Prelims]
+event:     UFC Fight Night: Allen vs. Costa (May 16, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BK1EP898QPM6BXGQ1YP/
+
 fight_id:  eb6d9fef6c374830
 fighters:  Jack Della Maddalena vs. Carlos Prates
 event:     UFC Fight Night: Della Maddalena vs. Prates (May 02, 2026)
@@ -1174,71 +1239,6 @@ fight_id:  32d371462c539bee
 fighters:  Luan Lacerda vs. Hecher Sosa  [Prelims]
 event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KKEYC53SEH09Y07PCPAKKHTR/
-
-fight_id:  244285b7fd0ddece
-fighters:  Piera Rodriguez vs. Sam Hughes  [Prelims]
-event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYDNV6EZA8SVK6C66SJJH2/
-
-fight_id:  f594fc5c2bc6237e
-fighters:  Josh Emmett vs. Kevin Vallejos
-event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYCZFSEAD9EQX15HVDT37W/
-
-fight_id:  3b7b771b9578383d
-fighters:  Amanda Lemos vs. Gillian Robertson
-event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYD0PDEJFBW70XZ7TKD31N/
-
-fight_id:  8bee5192baec71d8
-fighters:  Andre Fili vs. Jose Delgado
-event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF7DM1GEG3TET655G37KF4G/
-
-fight_id:  1330b5c21269fe92
-fighters:  Brandon Moreno vs. Lone'er Kavanagh
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/cBmgXu39s0CM1P3iD0EosdhETsVAY85A/
-
-fight_id:  36d12b31957e94db
-fighters:  Marlon Vera vs. David Martinez
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/d1smtBicS_NJTMCRmi7jlZc800zVBYVA/
-
-fight_id:  81f3d28d30d17378
-fighters:  Daniel Zellhuber vs. King Green
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/aQQLoH6xIxla7DRIsaV90U3Z_gmop1NG/
-
-fight_id:  7df505d8260ba680
-fighters:  Edgar Chairez vs. Felipe Bunes
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/IVPYd6pIUwWARgain_1dSzpBhTcrZAG8/
-
-fight_id:  15068d7b095ca9bd
-fighters:  Imanol Rodriguez vs. Kevin Borjas
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/7x4c9_OOnrOb05GoDtu7_vMpB24ZHLgE/
-
-fight_id:  3b76a00f5d0400eb
-fighters:  Santiago Luna vs. Angel Pacheco
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/7efif5Yf4io7FdztG0t0wMUP5rwTdJ_q/
-
-fight_id:  45ec0c5f19c9adbe
-fighters:  Ryan Gandra vs. Jose Daniel Medina  [Prelims]
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/lp4dukWmoviyJEy1CZcfZmMJ8e_6zKva/
-
-fight_id:  c40b934d2666e351
-fighters:  Ailin Perez vs. Macy Chiasson  [Prelims]
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/wm6QuzURJ2c0ejCmwXuYzaAF18PWGaV7/
-
-fight_id:  25ab195cefbce1d0
-fighters:  Cristian Quinonez vs. Kris Moutinho  [Prelims]
-event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
-url:       https://www.paramountplus.com/shows/video/xEfZmxNxkPMWjB10ePJ51YLZgZ5tOD3k/
 
 fight_id:  70f1621080b3435c
 fighters:  Khamzat Chimaev vs. Sean Strickland

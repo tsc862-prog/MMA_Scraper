@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-PFL Fight Scraper -> Supabase
-Scrapes Professional Fighters League events from sherdog.com and pushes
-results into Supabase. Mirrors start.py (the UFC scraper).
+Sherdog Fight Scraper -> Supabase
+Scrapes non-UFC promotions from sherdog.com and pushes results into Supabase.
+Currently covers PFL and MVP. Mirrors start.py (the UFC/ufcstats scraper).
 
 Setup:
   pip install requests beautifulsoup4
   Fill .env with SUPABASE_URL and SUPABASE_KEY
-  Run: python pfl_scraper.py
+  Run: python sherdog_scraper.py
 """
 
 import os
@@ -34,16 +34,56 @@ if os.path.exists(_env_path):
 SUPABASE_URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
 SUPABASE_KEY = os.environ.get('SUPABASE_KEY', '')
 
-ORGANIZATION = 'PFL'
-COMPLETED_EVENTS_FILE = 'pfl_completed_events.txt'
+COMPLETED_EVENTS_FILE = 'sherdog_completed_events.txt'
 SHERDOG_BASE = 'https://www.sherdog.com'
-PFL_ORG_URL  = f'{SHERDOG_BASE}/organizations/Professional-Fighters-League-12241'
 
 USER_AGENT = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
               '(KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36')
 
 # Fixed namespace for deterministic UUIDs — must match start.py
 _NS = uuid.UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')
+
+# Each org: Sherdog org page, the slug keywords that identify its own events
+# (the org page also links 'related events' from other promotions), the
+# name-prefix cleanup, and the fight-id prefix (do NOT change once data exists).
+# 'active': scraped by the daily run. Defunct orgs are inactive — scraped once
+# with --all, then skipped (no new events ever).
+SHERDOG_ORGS = [
+    {
+        'organization': 'PFL',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Professional-Fighters-League-12241',
+        'slug_keys':    ('professional-fighters-league', 'pfl-'),
+        'name_clean':   (r'^Professional Fighters League\s*-\s*', ''),
+        'fight_prefix': 'pflfight',
+        'active':       True,
+    },
+    {
+        'organization': 'MVP',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Most-Valuable-Promotions-19337',
+        'slug_keys':    ('most-valuable-promotions',),
+        'name_clean':   (r'^Most Valuable Promotions\s*-\s*', 'MVP: '),
+        'fight_prefix': 'mvpfight',
+        'active':       True,
+    },
+    {
+        # Defunct — folded into PFL. One-time scrape.
+        'organization': 'Bellator',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Bellator-MMA-1960',
+        'slug_keys':    ('bellator',),
+        'name_clean':   (r'^Bellator MMA\s*-\s*', ''),
+        'fight_prefix': 'bellatorfight',
+        'active':       False,
+    },
+    {
+        # Defunct — rebranded to PFL. One-time scrape.
+        'organization': 'WSOF',
+        'org_url':      f'{SHERDOG_BASE}/organizations/World-Series-of-Fighting-5449',
+        'slug_keys':    ('wsof',),
+        'name_clean':   (r'^World Series of Fighting\s*-\s*', ''),
+        'fight_prefix': 'wsoffight',
+        'active':       False,
+    },
+]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────
 
@@ -67,7 +107,28 @@ def upsert(table, records):
         data=json.dumps(records),
     )
     if resp.status_code not in (200, 201):
-        print(f'  [WARN] upsert {table} failed ({resp.status_code}): {resp.text[:200]}')
+        # Raise — a failed push must abort before events get marked completed.
+        raise RuntimeError(
+            f'upsert {table} failed ({resp.status_code}): {resp.text[:300]}')
+
+def fetch_female_fighter_names():
+    """Lowercased names of fighters known to be female (for women's labels)."""
+    names = set()
+    offset = 0
+    while True:
+        resp = requests.get(
+            f'{SUPABASE_URL}/rest/v1/fighters'
+            f'?gender=eq.F&select=name&limit=1000&offset={offset}',
+            headers=_headers(),
+        )
+        if not resp.ok:
+            break
+        batch = resp.json()
+        names.update(r['name'].lower() for r in batch)
+        if len(batch) < 1000:
+            break
+        offset += 1000
+    return names
 
 def rpc(name):
     """Call a parameterless Supabase stored procedure."""
@@ -92,10 +153,10 @@ def event_uuid(name, date):
 def fighter_uuid(name):
     return str(uuid.uuid5(_NS, f"fighter:{name}"))
 
-def pfl_fight_id(event_id, fighter_a, fighter_b):
+def sherdog_fight_id(prefix, event_id, fighter_a, fighter_b):
     """Deterministic fight id — Sherdog has no per-fight URL like ufcstats."""
     pair = ':'.join(sorted([fighter_a or '', fighter_b or '']))
-    return str(uuid.uuid5(_NS, f"pflfight:{event_id}:{pair}"))
+    return str(uuid.uuid5(_NS, f"{prefix}:{event_id}:{pair}"))
 
 def split_method(raw):
     """'KO (Punch)' -> ('KO', 'Punch');  'Decision (Unanimous)' -> ('Decision', 'Unanimous')."""
@@ -124,24 +185,42 @@ def _fetch(url):
     """GET a Sherdog page with a browser UA, following redirects."""
     return requests.get(url, headers={'User-Agent': USER_AGENT}, allow_redirects=True)
 
-def get_event_urls():
-    """Fetch all PFL event URLs from the Sherdog organization page.
-
-    The org page also links 'related events' from other promotions (UFC etc.)
-    — keep only genuine PFL slugs.
+def get_event_urls(org):
     """
-    resp = _fetch(PFL_ORG_URL)
-    soup = BeautifulSoup(resp.text, 'html.parser')
+    Fetch one org's event URLs from its Sherdog organization page, following
+    the 'Older Events' pagination (/recent-events/N) to the end.
+    The org page also links 'related events' from other promotions — keep
+    only slugs matching this org's keywords.
+    """
     urls = []
     seen = set()
-    for a in soup.select('a[href^="/events/"]'):
-        href = a.get('href')
-        if not href or href in seen:
-            continue
-        slug = href.split('/events/', 1)[-1].lower()
-        if 'professional-fighters-league' in slug or slug.startswith('pfl-'):
-            seen.add(href)
-            urls.append(SHERDOG_BASE + href)
+    page_url = org['org_url']
+    visited = set()
+
+    while page_url and page_url not in visited:
+        visited.add(page_url)
+        resp = _fetch(page_url)
+        soup = BeautifulSoup(resp.text, 'html.parser')
+
+        for a in soup.select('a[href^="/events/"]'):
+            href = a.get('href')
+            if not href or href in seen:
+                continue
+            slug = href.split('/events/', 1)[-1].lower()
+            if any(k in slug for k in org['slug_keys']):
+                seen.add(href)
+                urls.append(SHERDOG_BASE + href)
+
+        # Follow the "Older Events" pagination link, if any.
+        page_url = None
+        pag = soup.select_one('.pagination')
+        if pag:
+            for a in pag.find_all('a', href=True):
+                if 'older' in a.get_text(strip=True).lower():
+                    page_url = SHERDOG_BASE + a['href']
+                    break
+        time.sleep(0.3)
+
     return urls
 
 
@@ -163,9 +242,9 @@ def _iso_to_text(iso):
         return None
 
 
-def parse_event_page(event_url):
+def parse_event_page(event_url, org):
     """
-    Scrape one PFL event page. Returns a list of fight dicts — one per fight.
+    Scrape one Sherdog event page. Returns a list of fight dicts — one per fight.
     fight_position 1 = main event. Upcoming fights have None for result fields.
     """
     resp = _fetch(event_url)
@@ -178,13 +257,22 @@ def parse_event_page(event_url):
     # ── Event metadata ────────────────────────────────────────────────────────
     name_el = soup.find(itemprop='name')
     event_name = name_el.get_text(strip=True) if name_el else 'Unknown'
-    event_name = re.sub(r'^Professional Fighters League\s*-\s*', '', event_name).strip()
+    pattern, replacement = org['name_clean']
+    event_name = re.sub(pattern, replacement, event_name).strip()
 
     date_el = soup.find('meta', itemprop='startDate')
     event_date = _iso_to_text(date_el.get('content') if date_el else None)
 
     loc_el = soup.find(itemprop='location')
     event_location = loc_el.get_text(strip=True) if loc_el else None
+
+    base = {
+        'organization':   org['organization'],
+        'fight_prefix':   org['fight_prefix'],
+        'event_name':     event_name,
+        'event_date':     event_date,
+        'event_location': event_location,
+    }
 
     fights = []
 
@@ -220,9 +308,7 @@ def parse_event_page(event_url):
 
         if len(m_names) == 2:
             fights.append({
-                'event_name':     event_name,
-                'event_date':     event_date,
-                'event_location': event_location,
+                **base,
                 'fight_position': 1,
                 'fighter_a':      m_names[0],
                 'fighter_b':      m_names[1],
@@ -271,9 +357,7 @@ def parse_event_page(event_url):
                 t    = cells[6].get_text(strip=True)
 
             fights.append({
-                'event_name':     event_name,
-                'event_date':     event_date,
-                'event_location': event_location,
+                **base,
                 'fight_position': position,
                 'fighter_a':      fa,
                 'fighter_b':      fb,
@@ -288,100 +372,123 @@ def parse_event_page(event_url):
 
 # ── Supabase push ─────────────────────────────────────────────────────────────
 
-def push_fights(all_fights):
+def push_fights(all_fights, female_names):
     """Batch upsert events, fighters, fights, fight_results."""
     events_map   = {}
     fighters_map = {}
-    fights_list  = []
-    results_list = []
+    fights_map   = {}   # keyed by fight id — dedupes within the batch
+    results_map  = {}   # keyed by fight id
 
     for f in all_fights:
         ev_id = event_uuid(f['event_name'], f['event_date'])
         a_id  = fighter_uuid(f['fighter_a']) if f['fighter_a'] else None
         b_id  = fighter_uuid(f['fighter_b']) if f['fighter_b'] else None
         w_id  = fighter_uuid(f['winner']) if f['winner'] else None
-        fid   = pfl_fight_id(ev_id, f['fighter_a'], f['fighter_b'])
+        fid   = sherdog_fight_id(f['fight_prefix'], ev_id, f['fighter_a'], f['fighter_b'])
+
+        # Sherdog doesn't gender-label weight classes — prefix "Women's " when
+        # a fighter is known female. recalculate_womens_divisions() backfills
+        # any debutant women the female set doesn't yet cover.
+        weight_class = f['weight_class']
+        if weight_class and not weight_class.lower().startswith("women"):
+            if ((f['fighter_a'] or '').lower() in female_names or
+                    (f['fighter_b'] or '').lower() in female_names):
+                weight_class = f"Women's {weight_class}"
 
         events_map[ev_id] = {
             'id':           ev_id,
             'name':         f['event_name'],
             'date':         f['event_date'],
             'location':     f['event_location'],
-            'organization': ORGANIZATION,
+            'organization': f['organization'],
         }
 
         for name, uid in [(f['fighter_a'], a_id), (f['fighter_b'], b_id)]:
             if name and uid:
                 fighters_map[uid] = {'id': uid, 'name': name}
 
-        fights_list.append({
-            'id':                  fid,
-            'event_id':            ev_id,
-            'fighter1_id':         a_id,
-            'fighter2_id':         b_id,
-            'weight_class':        f['weight_class'],
-            'is_main':             f['fight_position'] == 1,
-            'fight_position':      f['fight_position'],
-            'fight_position_type': 'Main Event' if f['fight_position'] == 1 else None,
-        })
+        # Keep first occurrence — a fight reached via two redirect-equivalent
+        # event URLs would otherwise collide on id within the upsert batch.
+        if fid not in fights_map:
+            fights_map[fid] = {
+                'id':                  fid,
+                'event_id':            ev_id,
+                'fighter1_id':         a_id,
+                'fighter2_id':         b_id,
+                'weight_class':        weight_class,
+                'is_main':             f['fight_position'] == 1,
+                'fight_position':      f['fight_position'],
+                'fight_position_type': 'Main Event' if f['fight_position'] == 1 else None,
+            }
 
         # A finished fight has a method; upcoming ones don't.
-        if f['method']:
+        if f['method'] and fid not in results_map:
             method, details = split_method(f['method'])
-            results_list.append({
+            results_map[fid] = {
                 'fight_id':  fid,
                 'winner_id': w_id,
                 'method':    method,
                 'round':     int(f['finish_round']) if (f['finish_round'] or '').isdigit() else None,
                 'time':      f['finish_time'],
                 'details':   details,
-            })
+            }
 
     upsert('events',        list(events_map.values()))
     upsert('fighters',      list(fighters_map.values()))
-    upsert('fights',        fights_list)
-    upsert('fight_results', results_list)
+    upsert('fights',        list(fights_map.values()))
+    upsert('fight_results', list(results_map.values()))
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-def main():
+def main(include_inactive=False):
     if not SUPABASE_URL or not SUPABASE_KEY:
         raise ValueError('Missing SUPABASE_URL or SUPABASE_KEY in .env file')
 
     completed = load_completed_events()
-
-    print('Fetching PFL event list from Sherdog...')
-    all_event_urls = get_event_urls()
-    print(f'  {len(all_event_urls)} events found')
-
-    to_scrape = [u for u in all_event_urls if u not in completed]
-    print(f'Skipping {len(all_event_urls) - len(to_scrape)} already-scraped events')
-    print(f'Scraping {len(to_scrape)} events...\n')
-
+    female_names = fetch_female_fighter_names()
+    print(f'Loaded {len(female_names)} known female fighters')
     all_fights = []
     scraped_urls = []
 
-    for i, url in enumerate(to_scrape):
-        print(f'[{i+1}/{len(to_scrape)}] {url}')
-        fights = parse_event_page(url)
-        if fights:
-            all_fights.extend(fights)
-            # An event is "completed" once every fight has a result.
-            if all(f['method'] for f in fights):
-                scraped_urls.append(url)
-        time.sleep(0.5)
+    orgs = [o for o in SHERDOG_ORGS if o.get('active', True) or include_inactive]
+
+    for org in orgs:
+        print(f'\n=== {org["organization"]} ===')
+        print('Fetching event list from Sherdog...')
+        event_urls = get_event_urls(org)
+        to_scrape = [u for u in event_urls if u not in completed]
+        print(f'  {len(event_urls)} events found, '
+              f'{len(event_urls) - len(to_scrape)} already scraped, '
+              f'scraping {len(to_scrape)}...')
+
+        for i, url in enumerate(to_scrape):
+            print(f'  [{i+1}/{len(to_scrape)}] {url}')
+            fights = parse_event_page(url, org)
+            if fights:
+                all_fights.extend(fights)
+                # An event is "completed" once every fight has a result.
+                if all(f['method'] for f in fights):
+                    scraped_urls.append(url)
+            time.sleep(0.5)
 
     if all_fights:
-        print(f'\nPushing {len(all_fights)} PFL fights to Supabase...')
-        push_fights(all_fights)
+        print(f'\nPushing {len(all_fights)} fights to Supabase...')
+        push_fights(all_fights, female_names)
         for url in scraped_urls:
             mark_event_completed(url)
         print('Removing orphan events...')
         rpc('delete_orphan_events')
         print('Recalculating debut flags...')
         rpc('recalculate_debut_flags')
+        print('Recalculating women\'s divisions...')
+        rpc('recalculate_womens_divisions')
 
-    print(f'\nDone — pushed {len(all_fights)} PFL fights to Supabase.')
+    print(f'\nDone — pushed {len(all_fights)} fights to Supabase.')
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--all', action='store_true',
+                        help='Include inactive (defunct) orgs like Bellator/WSOF')
+    args = parser.parse_args()
+    main(include_inactive=args.all)

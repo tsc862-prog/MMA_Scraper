@@ -67,7 +67,7 @@ if len(matches) > 1:
 else:
     fighter = matches[0]
 
-print(f'Mapping  "{alias}"  →  {fighter["name"]} ({fighter["id"]})')
+print(f'Mapping  "{alias}"  ->  {fighter["name"]} ({fighter["id"]})')
 if add_alias(fighter['id'], alias):
     print('Done.')
 else:

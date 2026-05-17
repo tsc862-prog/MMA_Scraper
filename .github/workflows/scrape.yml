@@ -35,18 +35,37 @@ jobs:
         run: |
           echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" >> .env
           echo "SUPABASE_KEY=${{ secrets.SUPABASE_KEY }}" >> .env
+          echo "YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}" >> .env
+          echo "GMAIL_ADDRESS=${{ secrets.GMAIL_ADDRESS }}" >> .env
+          echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> .env
 
       - name: Run UFC stats scraper
         run: python start.py
 
-      - name: Run PFL scraper (daily only)
+      - name: Run Sherdog scraper — PFL + MVP (daily only)
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
-        run: python pfl_scraper.py
+        run: python sherdog_scraper.py
+
+      - name: Resolve fighter genders via Wikidata (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python gender_scraper.py
+
+      - name: Email review queue digest (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python review_email.py
+
+      - name: Run ESPN PFL video scraper (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python espn_pfl_scraper.py --push
+
+      - name: Run YouTube video scraper (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python youtube_scraper.py --push
 
       - name: Save completed events trackers
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add completed_events.txt pfl_completed_events.txt
+          git add completed_events.txt sherdog_completed_events.txt
           git diff --staged --quiet || git commit -m "Update completed events trackers [skip ci]"
           git push
