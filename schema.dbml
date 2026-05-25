@@ -1,0 +1,115 @@
+// MMA Scraper — target data model (the "every pro event" end state).
+//
+// To see it as a visual ER diagram:
+//   1. Open https://dbdiagram.io  (free, no account needed)
+//   2. Paste this whole file into the left-hand editor
+//   3. The diagram renders on the right — drag tables to arrange, export PNG/PDF
+//
+// This is a DESIGN TARGET, not the current DB. See SCHEMA.md for full notes.
+
+Table organizations {
+  id              bigint [pk, note: 'Sherdog organization id']
+  name            text
+  status          text   [note: 'active / defunct']
+}
+
+Table fighters {
+  id              bigint [pk, note: 'Sherdog fighter id — stable']
+  name            text
+  gender          text   [note: 'M / F']
+  gender_checked  boolean
+  nationality     text
+  date_of_birth   date
+}
+
+Table fighter_aliases {
+  alias           text   [pk, note: 'lowercased name variant']
+  fighter_id      bigint [ref: > fighters.id]
+}
+
+Table weight_classes {
+  id              int    [pk]
+  name            text   [note: "Flyweight, Women's Flyweight, Catchweight, ..."]
+  gender          text   [note: 'M / F']
+  upper_limit_lbs int    [note: 'null for sentinels']
+  sort_order      int
+}
+
+Table events {
+  id              bigint [pk, note: 'Sherdog event id — stable']
+  name            text
+  date            date
+  location        text
+  organization_id bigint [ref: > organizations.id]
+}
+
+Table fights {
+  id                  text   [pk, note: 'deterministic: event id + sorted fighter ids']
+  event_id            bigint [ref: > events.id]
+  fighter1_id         bigint [ref: > fighters.id]
+  fighter2_id         bigint [ref: > fighters.id]
+  weight_class_id     int    [ref: > weight_classes.id]
+  catch_weight_lbs    int    [note: 'poundage when division = Catchweight']
+  is_main             boolean
+  is_title            boolean
+  fight_position      int    [note: '1 = main event']
+  fight_position_type text
+  fighter1_rank       int    [note: 'UFC ranking, nullable']
+  fighter2_rank       int
+  fighter1_is_debut   boolean [note: 'first fight in that org — computed']
+  fighter2_is_debut   boolean
+  is_amateur          boolean
+  notes               text
+}
+
+Table fight_results {
+  fight_id   text   [pk, ref: - fights.id, note: 'one-to-one with fights']
+  winner_id  bigint [ref: > fighters.id, note: 'null = draw / no-contest']
+  method     text   [note: 'KO/TKO, Submission, Decision, ...']
+  details    text   [note: 'Rear Naked Choke, Punches, judges scores']
+  round      int
+  time       text
+}
+
+// Polymorphic: entity_id is a fight id OR an event id (no hard FK).
+Table video_links {
+  id          bigint [pk]
+  entity_type text   [note: 'fight / event']
+  entity_id   text   [note: 'fight id or event id']
+  platform    text   [note: 'youtube / paramount / espn / netflix / ...']
+  variant     text   [note: 'full_fight / full_event / main_card / prelims / highlight']
+  url         text
+}
+
+// Personal ratings — irreplaceable user data.
+Table ratings {
+  id         uuid    [pk]
+  fight_id   text    [ref: > fights.id]
+  user_id    uuid
+  rating     "numeric(3,1)"
+  notes      text
+  logged_at  bigint
+}
+
+// Audit trail of fights / events / fight_results changes.
+Table change_log {
+  id         bigint      [pk]
+  logged_at  timestamptz
+  table_name text
+  action     text        [note: 'INSERT / UPDATE / DELETE']
+  row_id     text
+  changes    jsonb
+}
+
+// Scraper items needing a human decision (gender, alias suggestions).
+Table review_queue {
+  id          bigint      [pk]
+  created_at  timestamptz
+  type        text        [note: 'gender / alias']
+  status      text        [note: 'pending / resolved / dismissed']
+  subject_id  text
+  payload     jsonb
+  resolved_at timestamptz
+  resolution  jsonb
+  token       uuid        [note: 'signs the emailed answer links']
+}
