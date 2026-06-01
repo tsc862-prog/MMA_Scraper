@@ -10,11 +10,53 @@ Setup:
 """
 
 import os
+import re
 import uuid
 import time
 import json
+import hashlib
 import requests
 from bs4 import BeautifulSoup
+
+# ── ufcstats.com proof-of-work bypass ─────────────────────────────────────────
+# ufcstats serves a 'Loading…' interstitial that runs JS:
+#   1. compute SHA256(nonce + ':' + n) until result starts with target zeros
+#   2. POST {nonce, n} to /__c → server sets a session cookie
+#   3. reload → real page
+# Replicate it here so the scraper actually gets data.
+_UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+       '(KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36')
+_SESSION = requests.Session()
+_SESSION.headers.update({'User-Agent': _UA, 'Accept': 'text/html,application/xhtml+xml'})
+
+def _solve_challenge(html):
+    """Return (nonce, n) if html is the challenge page, else None."""
+    nm = re.search(r'nonce\s*=\s*"([a-f0-9]+)"', html)
+    tm = re.search(r"new Array\((\d+)\+1\)\.join\('0'\)", html)
+    if not nm or 'Checking your browser' not in html:
+        return None
+    nonce = nm.group(1)
+    target = '0' * int(tm.group(1) if tm else 2)
+    n = 0
+    while True:
+        if hashlib.sha256(f'{nonce}:{n}'.encode()).hexdigest().startswith(target):
+            return nonce, n
+        n += 1
+
+def fetch(url, max_solves=2):
+    """GET url via the shared session, auto-solving the challenge if served."""
+    r = _SESSION.get(url, timeout=20)
+    for _ in range(max_solves):
+        sol = _solve_challenge(r.text)
+        if not sol:
+            return r
+        nonce, n = sol
+        _SESSION.post('http://www.ufcstats.com/__c',
+                      data={'nonce': nonce, 'n': str(n)},
+                      headers={'Content-Type': 'application/x-www-form-urlencoded'},
+                      timeout=15)
+        r = _SESSION.get(url, timeout=20)
+    return r
 
 # Load .env file manually — no extra packages needed
 _env_path = os.path.join(os.path.dirname(__file__), '.env')
@@ -92,7 +134,7 @@ def get_event_urls():
     events = []
     for status, page in [('completed', 'completed'), ('upcoming', 'upcoming')]:
         url = f'http://www.ufcstats.com/statistics/events/{page}?page=all'
-        resp = requests.get(url)
+        resp = fetch(url)
         soup = BeautifulSoup(resp.text, 'html.parser')
         for row in soup.find_all('tr', class_='b-statistics__table-row'):
             link = row.find('a', class_='b-link b-link_style_black')
@@ -107,7 +149,7 @@ def parse_event_page(event_url, event_status):
     Returns a list of fight dicts — one per fight on the card.
     fight_position 1 = main event. Upcoming fights have None for result fields.
     """
-    resp = requests.get(event_url)
+    resp = fetch(event_url)
     if resp.status_code != 200:
         print(f'  SKIP (HTTP {resp.status_code}): {event_url}')
         return []
@@ -258,23 +300,26 @@ def push_fights(fights):
 
     return events_map, fights_list
 
-def remove_stale_upcoming_fights(upcoming_event_ids, scraped_fight_ids):
-    """Delete DB fights on upcoming events that no longer appear on the card."""
-    if not upcoming_event_ids:
+def remove_stale_fights(event_ids, scraped_fight_ids):
+    """Delete DB fights on the given events that no longer appear on the
+    current card. Applies to both upcoming events and recently-rechecked
+    completed ones (replacements often land just before fight day, after
+    the event has flipped to ufcstats' 'completed' list)."""
+    if not event_ids:
         return
-    ev_filter = ','.join(upcoming_event_ids)
+    ev_filter = ','.join(event_ids)
     resp = requests.get(
         f'{SUPABASE_URL}/rest/v1/fights?event_id=in.({ev_filter})&select=id',
         headers=_headers(),
     )
     if not resp.ok:
-        print(f'  [WARN] fetch upcoming fights failed ({resp.status_code})')
+        print(f'  [WARN] fetch fights failed ({resp.status_code})')
         return
     db_ids = {r['id'] for r in resp.json()}
     stale = db_ids - scraped_fight_ids
     if not stale:
         return
-    print(f'  Removing {len(stale)} stale fights from upcoming events...')
+    print(f'  Removing {len(stale)} stale fights...')
     for fid in stale:
         # Delete fight_results first (FK constraint)
         requests.delete(
@@ -332,16 +377,17 @@ def main():
         print(f'\nPushing {len(all_fights)} fights to Supabase...')
         _, fights_list = push_fights(all_fights)
 
-        # Remove fights dropped from upcoming event cards
-        upcoming_event_ids = {
-            event_uuid(f['event_name'], f['event_date'])
-            for f in all_fights if f['event_status'] == 'upcoming'
+        # Remove fights dropped from event cards (replacements). Covers
+        # both upcoming events and re-scraped completed ones — replacements
+        # often land after the event flips to ufcstats' 'completed' list.
+        rescraped_event_ids = {
+            event_uuid(f['event_name'], f['event_date']) for f in all_fights
         }
         scraped_fight_ids = {
             fl['id'] for fl in fights_list
-            if fl['event_id'] in upcoming_event_ids
+            if fl['event_id'] in rescraped_event_ids
         }
-        remove_stale_upcoming_fights(upcoming_event_ids, scraped_fight_ids)
+        remove_stale_fights(rescraped_event_ids, scraped_fight_ids)
 
         for url in completed_urls:
             mark_event_completed(url)

@@ -15,11 +15,19 @@ Results are saved to paramount_matches.txt for review before any DB changes.
 
 import os
 import re
+import sys
 import time
 import json
 import subprocess
 import requests
 from datetime import datetime
+
+# Windows consoles default to cp1252 which can't render the U+2192 arrow
+# (and other Unicode glyphs) the scraper prints. Force UTF-8.
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except (AttributeError, ValueError):
+    pass
 
 # ── Load .env ─────────────────────────────────────────────────────────────────
 _env_path = os.path.join(os.path.dirname(__file__), '.env')
@@ -49,14 +57,25 @@ SHOW_CONFIGS = [
 # ── Supabase ──────────────────────────────────────────────────────────────────
 
 def supabase_get(table, params=''):
-    resp = requests.get(
-        f'{SUPABASE_URL}/rest/v1/{table}?{params}',
-        headers={
-            'apikey': SUPABASE_KEY,
-            'Authorization': f'Bearer {SUPABASE_KEY}',
-        },
-    )
-    return resp.json() if resp.ok else []
+    """Paginated fetch — Supabase caps each response at 1000 rows. Callers
+    can still pass `limit=N` in params to cap the total; without it we walk
+    all rows in 1000-row pages."""
+    PAGE, offset, out = 1000, 0, []
+    headers = {
+        'apikey': SUPABASE_KEY,
+        'Authorization': f'Bearer {SUPABASE_KEY}',
+    }
+    while True:
+        sep = '&' if params else ''
+        url = f'{SUPABASE_URL}/rest/v1/{table}?{params}{sep}limit={PAGE}&offset={offset}'
+        resp = requests.get(url, headers=headers)
+        if not resp.ok:
+            return out
+        batch = resp.json()
+        out.extend(batch)
+        if len(batch) < PAGE:
+            return out
+        offset += PAGE
 
 def _sb_headers():
     return {

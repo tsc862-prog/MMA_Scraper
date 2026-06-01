@@ -83,6 +83,44 @@ SHERDOG_ORGS = [
         'fight_prefix': 'wsoffight',
         'active':       False,
     },
+    {
+        # Defunct — ceased 2007 after the Zuffa acquisition. Lives on Fight Pass.
+        'organization': 'PRIDE',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Pride-Fighting-Championships-3',
+        'slug_keys':    ('pride-',),
+        'name_clean':   (r'^$', ''),   # no-op: names already clean (e.g. "Pride 10 - ...")
+        'fight_prefix': 'pridefight',
+        'active':       False,
+    },
+    {
+        # Defunct — bought by Zuffa, last event 2013. Lives on Fight Pass.
+        'organization': 'Strikeforce',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Strikeforce-716',
+        'slug_keys':    ('strikeforce',),
+        'name_clean':   (r'^$', ''),   # no-op: names already start with "Strikeforce - "
+        'fight_prefix': 'sffight',
+        'active':       False,
+    },
+    {
+        # Defunct — merged into UFC 2010. Lives on Fight Pass.
+        'organization': 'WEC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/World-Extreme-Cagefighting-48',
+        'slug_keys':    ('wec-',),
+        'name_clean':   (r'^$', ''),   # no-op: names already clean (e.g. "WEC 1 - ...")
+        'fight_prefix': 'wecfight',
+        'active':       False,
+    },
+    {
+        # UFC developmental series. Sherdog files RTUFC events under the
+        # UFC org page (oid=2) — we filter by slug pattern to pick them out.
+        # Active: a new season runs annually.
+        'organization': 'Road to UFC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Ultimate-Fighting-Championship-UFC-2',
+        'slug_keys':    ('ufc-road-to-ufc-',),
+        'name_clean':   (r'^UFC\s*-\s*', ''),   # strip "UFC - " prefix
+        'fight_prefix': 'rtufight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────

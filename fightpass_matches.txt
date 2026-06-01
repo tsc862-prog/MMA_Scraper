@@ -1,0 +1,2806 @@
+UFC FIGHT PASS MATCH RESULTS
+Events  — main: 20  prelims: 78
+Fights  — matched: 535 (per-fight URL: 0, event URL fallback: 535)
+Unmatched — episodes: 40  sub-events: 148  per-fight VODs: 63
+======================================================================
+
+MATCHED EVENTS — MAIN (20)
+----------------------------------------------------------------------
+event:    UFC 22: Only One Can be Champion
+episode:  UFC 22: There Can be Only One Champion
+url:      https://ufcfightpass.com/video/31075
+
+event:    UFC Fight Night
+episode:  UFC Fight Night: David Loiseau vs Evan Tanner
+url:      https://ufcfightpass.com/video/32137
+
+event:    UFC 92: The Ultimate 2008
+episode:  UFC 92: The Ultimate
+url:      https://ufcfightpass.com/video/83368
+
+event:    UFC 100
+episode:  UFC 100: Lesnar vs Mir 2
+url:      https://ufcfightpass.com/video/73494
+
+event:    UFC 124: St-Pierre vs Koscheck 2
+episode:  UFC 124: St-Pierre vs Koscheck
+url:      https://ufcfightpass.com/video/70669
+
+event:    UFC 150: Henderson vs Edgar II
+episode:  UFC 150: Henderson vs Edgar 2
+url:      https://ufcfightpass.com/video/68881
+
+event:    UFC 164: Henderson vs Pettis 2
+episode:  UFC 164: Henderson vs Pettis
+url:      https://ufcfightpass.com/video/29834
+
+event:    UFC 163: Aldo vs Jung
+episode:  UFC 163: Aldo vs Korean Zombie
+url:      https://ufcfightpass.com/video/30003
+
+event:    UFC 160: Velasquez vs Silva 2
+episode:  UFC 160: Velasquez vs Bigfoot 2
+url:      https://ufcfightpass.com/video/30181
+
+event:    UFC 181: Hendricks vs Lawler II
+episode:  UFC 181: Hendricks vs Lawler 2
+url:      https://ufcfightpass.com/video/55102
+
+event:    UFC 169: Barao vs Faber 2
+episode:  UFC 169: Barao vs Faber
+url:      https://ufcfightpass.com/video/66409
+
+event:    The Ultimate Fighter: American Top Team vs. Blackzilians Finale
+episode:  The Ultimate Fighter Finale: American Top Team vs Blackzilians
+url:      https://ufcfightpass.com/video/431380
+
+event:    UFC 204: Bisping vs. Henderson
+episode:  UFC 204: Bisping vs Henderson 2
+url:      https://ufcfightpass.com/video/23372
+
+event:    UFC 260: Miocic vs. Ngannou
+episode:  UFC 260: Miocic vs Ngannou 2
+url:      https://ufcfightpass.com/video/217473
+
+event:    UFC 257: Poirier vs. McGregor
+episode:  UFC 257: Poirier vs McGregor 2
+url:      https://ufcfightpass.com/video/205804
+
+event:    UFC 278: Usman vs. Edwards
+episode:  UFC 278: Usman vs Edwards 2
+url:      https://ufcfightpass.com/video/397679
+
+event:    UFC 277: Pena vs. Nunes 2
+episode:  UFC 277: Peña vs Nunes 2
+url:      https://ufcfightpass.com/video/389256
+
+event:    UFC 295: Prochazka vs. Pereira
+episode:  UFC 295: Procházka vs Pereira
+url:      https://ufcfightpass.com/video/554335
+
+event:    UFC Fight Night: Pavlovich vs. Blaydes
+episode:  UFC FIGHT NIGHT: PAVLOVICH vs BLAYDES PRELIMS
+url:      https://ufcfightpass.com/video/486248
+
+event:    UFC 303: Pereira vs. Prochazka 2
+episode:  UFC 303: Pereira vs Procházka 2
+url:      https://ufcfightpass.com/video/718478
+
+
+MATCHED EVENTS — PRELIMS (78)
+----------------------------------------------------------------------
+event:    UFC Fight Night
+episode:  UFC Fight  Night: Munoz vs Mousasi Exclusive Fight Pass Prelims
+url:      https://ufcfightpass.com/video/33710
+
+event:    UFC 255: Figueiredo vs. Perez
+episode:  UFC 255: Prelims
+url:      https://ufcfightpass.com/video/206132
+
+event:    UFC 251: Usman vs. Masvidal
+episode:  UFC 251: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/206176
+
+event:    UFC 250: Nunes vs. Spencer
+episode:  UFC 250: Nunes vs Spencer Fight Pass Prelims
+url:      https://ufcfightpass.com/video/206133
+
+event:    UFC 249: Ferguson vs. Gaethje
+episode:  UFC 249: Ferugson vs Gaethje Fight Pass Prelims
+url:      https://ufcfightpass.com/video/206169
+
+event:    UFC 248: Adesanya vs. Romero
+episode:  UFC 248: Prelims
+url:      https://ufcfightpass.com/video/206152
+
+event:    UFC 247: Jones vs. Reyes
+episode:  UFC 247: Prelims
+url:      https://ufcfightpass.com/video/206141
+
+event:    UFC 269: Oliveira vs. Poirier
+episode:  UFC 269: Prelims
+url:      https://ufcfightpass.com/video/280482
+
+event:    UFC 268: Usman vs. Covington 2
+episode:  UFC 268: Prelims
+url:      https://ufcfightpass.com/video/274275
+
+event:    UFC 267: Blachowicz vs. Teixeira
+episode:  UFC 267: Prelims
+url:      https://ufcfightpass.com/video/272008
+
+event:    UFC 266: Volkanovski vs. Ortega
+episode:  UFC 266: Prelims
+url:      https://ufcfightpass.com/video/264618
+
+event:    UFC 265: Lewis vs. Gane
+episode:  UFC 265: Prelims
+url:      https://ufcfightpass.com/video/252084
+
+event:    UFC 264: Poirier vs. McGregor 3
+episode:  UFC 264: Prelims
+url:      https://ufcfightpass.com/video/239563
+
+event:    UFC 263: Adesanya vs. Vettori 2
+episode:  UFC 263: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/230548
+
+event:    UFC Fight Night: Rozenstruik vs. Sakai
+episode:  UFC Fight Night: Rozenstruik vs Sakai Late Prelims
+url:      https://ufcfightpass.com/video/237909
+
+event:    UFC 262: Oliveira vs. Chandler
+episode:  UFC 262: Prelims
+url:      https://ufcfightpass.com/video/227760
+
+event:    UFC 261: Usman vs. Masvidal 2
+episode:  UFC 261: Prelims
+url:      https://ufcfightpass.com/video/223904
+
+event:    UFC 260: Miocic vs. Ngannou
+episode:  UFC 260: Prelims
+url:      https://ufcfightpass.com/video/217453
+
+event:    UFC 259: Blachowicz vs. Adesanya
+episode:  UFC 259: Prelims
+url:      https://ufcfightpass.com/video/212769
+
+event:    UFC 258: Usman vs. Burns
+episode:  UFC 258: Prelims
+url:      https://ufcfightpass.com/video/209266
+
+event:    UFC 257: Poirier vs. McGregor
+episode:  UFC 257: Prelims
+url:      https://ufcfightpass.com/video/205803
+
+event:    UFC 282: Blachowicz vs. Ankalaev
+episode:  UFC 282: Prelims
+url:      https://ufcfightpass.com/video/434932
+
+event:    UFC 281: Adesanya vs. Pereira
+episode:  UFC 281: Prelims
+url:      https://ufcfightpass.com/video/431079
+
+event:    UFC 280: Oliveira vs. Makhachev
+episode:  UFC 280: Prelims
+url:      https://ufcfightpass.com/video/422792
+
+event:    UFC 279: Diaz vs. Ferguson
+episode:  UFC 279: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/410144
+
+event:    UFC 278: Usman vs. Edwards
+episode:  UFC 278: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/397638
+
+event:    UFC 277: Pena vs. Nunes 2
+episode:  UFC 277: Prelims
+url:      https://ufcfightpass.com/video/409922
+
+event:    UFC 276: Adesanya vs. Cannonier
+episode:  UFC 276: Prelims
+url:      https://ufcfightpass.com/video/444814
+
+event:    UFC 275: Teixeira vs. Prochazka
+episode:  UFC 275: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/375641
+
+event:    UFC 274: Oliveira vs. Gaethje
+episode:  UFC 274: Prelims
+url:      https://ufcfightpass.com/video/391518
+
+event:    UFC 273: Volkanovski vs. The Korean Zombie
+episode:  UFC 273: Prelims
+url:      https://ufcfightpass.com/video/352664
+
+event:    UFC 272: Covington vs. Masvidal
+episode:  UFC 272: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/343004
+
+event:    UFC 271: Adesanya vs. Whittaker 2
+episode:  UFC 271: Prelims
+url:      https://ufcfightpass.com/video/326129
+
+event:    UFC 270: Ngannou vs. Gane
+episode:  UFC 270: Prelims
+url:      https://ufcfightpass.com/video/294203
+
+event:    UFC 296: Edwards vs. Covington
+episode:  UFC 296: Prelims
+url:      https://ufcfightpass.com/video/587848
+
+event:    UFC 295: Prochazka vs. Pereira
+episode:  UFC 295: Prelims
+url:      https://ufcfightpass.com/video/554336
+
+event:    UFC 294: Makhachev vs. Volkanovski 2
+episode:  UFC 294: Prelims
+url:      https://ufcfightpass.com/video/545823
+
+event:    UFC 293: Adesanya vs. Strickland
+episode:  UFC 293: Prelims
+url:      https://ufcfightpass.com/video/526132
+
+event:    UFC 292: Sterling vs. O'Malley
+episode:  UFC 292: Prelims
+url:      https://ufcfightpass.com/video/517298
+
+event:    UFC 291: Poirier vs. Gaethje 2
+episode:  UFC 291: Prelims
+url:      https://ufcfightpass.com/video/509558
+
+event:    UFC 290: Volkanovski vs. Rodriguez
+episode:  UFC 290: Prelims
+url:      https://ufcfightpass.com/video/509556
+
+event:    UFC 289: Nunes vs. Aldana
+episode:  UFC 289: Prelims
+url:      https://ufcfightpass.com/video/498692
+
+event:    UFC 288: Sterling vs. Cejudo
+episode:  UFC 288: Prelims
+url:      https://ufcfightpass.com/video/488809
+
+event:    UFC 287: Pereira vs. Adesanya 2
+episode:  UFC 287: Prelims
+url:      https://ufcfightpass.com/video/485134
+
+event:    UFC 286: Edwards vs. Usman 3
+episode:  UFC 286: Prelims
+url:      https://ufcfightpass.com/video/485126
+
+event:    UFC 285: Jones vs. Gane
+episode:  UFC 285: Prelims
+url:      https://ufcfightpass.com/video/465250
+
+event:    UFC 284: Makhachev vs. Volkanovski
+episode:  UFC 284: Prelims
+url:      https://ufcfightpass.com/video/456762
+
+event:    UFC 283: Teixeira vs. Hill
+episode:  UFC 283: Prelims
+url:      https://ufcfightpass.com/video/449211
+
+event:    UFC 310: Pantoja vs. Asakura
+episode:  UFC 310: Prelims
+url:      https://ufcfightpass.com/video/729416
+
+event:    UFC 309: Jones vs. Miocic
+episode:  UFC 309: Prelims
+url:      https://ufcfightpass.com/video/721813
+
+event:    UFC 308: Topuria vs. Holloway
+episode:  UFC 308: Prelims
+url:      https://ufcfightpass.com/video/709680
+
+event:    UFC 307: Pereira vs. Rountree Jr.
+episode:  UFC 307: Prelims
+url:      https://ufcfightpass.com/video/696197
+
+event:    UFC 305: Du Plessis vs. Adesanya
+episode:  UFC 305: Prelims
+url:      https://ufcfightpass.com/video/677415
+
+event:    UFC 304: Edwards vs. Muhammad 2
+episode:  UFC 304: Prelims
+url:      https://ufcfightpass.com/video/671737
+
+event:    UFC 303: Pereira vs. Prochazka 2
+episode:  UFC 303: Prelims
+url:      https://ufcfightpass.com/video/655106
+
+event:    UFC 302: Makhachev vs. Poirier
+episode:  UFC 302: Prelims
+url:      https://ufcfightpass.com/video/645221
+
+event:    UFC 301: Pantoja vs. Erceg
+episode:  UFC 301: Prelims
+url:      https://ufcfightpass.com/video/619412
+
+event:    UFC 300: Pereira vs. Hill
+episode:  UFC 300: Prelims
+url:      https://ufcfightpass.com/video/621683
+
+event:    UFC 299: O'Malley vs. Vera 2
+episode:  UFC 299: Prelims
+url:      https://ufcfightpass.com/video/604965
+
+event:    UFC 298: Volkanovski vs. Topuria
+episode:  UFC 298: Prelims
+url:      https://ufcfightpass.com/video/595683
+
+event:    UFC 297: Strickland vs. Du Plessis
+episode:  UFC 297: Prelims
+url:      https://ufcfightpass.com/video/573897
+
+event:    UFC 323: Dvalishvili vs. Yan 2
+episode:  UFC 323: Prelims
+url:      https://ufcfightpass.com/video/893886
+
+event:    UFC 321: Aspinall vs. Gane
+episode:  UFC 321: Prelims
+url:      https://ufcfightpass.com/video/874679
+
+event:    UFC 320: Ankalaev vs. Pereira 2
+episode:  UFC 320: Prelims
+url:      https://ufcfightpass.com/video/866737
+
+event:    UFC 319: Du Plessis vs. Chimaev
+episode:  UFC 319: Prelims
+url:      https://ufcfightpass.com/video/844934
+
+event:    UFC 318: Holloway vs. Poirier 3
+episode:  UFC 318: Prelims
+url:      https://ufcfightpass.com/video/832942
+
+event:    UFC 317: Topuria vs. Oliveira
+episode:  UFC 317: Prelims
+url:      https://ufcfightpass.com/video/821243
+
+event:    UFC 316: Dvalishvili vs. O'Malley 2
+episode:  UFC 316: Prelims
+url:      https://ufcfightpass.com/video/810571
+
+event:    UFC 315: Muhammad vs. Della Maddalena
+episode:  UFC 315: Prelims
+url:      https://ufcfightpass.com/video/798598
+
+event:    UFC 314: Volkanovski vs. Lopes
+episode:  UFC 314: Prelims
+url:      https://ufcfightpass.com/video/786296
+
+event:    UFC 313: Pereira vs. Ankalaev
+episode:  UFC 313: Prelims
+url:      https://ufcfightpass.com/video/769524
+
+event:    UFC 312: Du Plessis vs. Strickland 2
+episode:  UFC 312: Prelims
+url:      https://ufcfightpass.com/video/757380
+
+event:    UFC 311: Makhachev vs. Moicano
+episode:  UFC 311: Prelims
+url:      https://ufcfightpass.com/video/743536
+
+event:    UFC 324: Gaethje vs. Pimblett
+episode:  UFC 324: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/910625
+
+event:    UFC 325: Volkanovski vs. Lopes 2
+episode:  UFC 325: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/913971
+
+event:    UFC 326: Holloway vs. Oliveira 2
+episode:  UFC 326: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/929943
+
+event:    UFC 327: Prochazka vs. Ulberg
+episode:  UFC 327: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/944254
+
+event:    UFC 328: Chimaev vs. Strickland
+episode:  UFC 328: Fight Pass Prelims
+url:      https://ufcfightpass.com/video/956347
+
+
+MATCHED FIGHTS (535)
+----------------------------------------------------------------------
+fight_id: eaa63c8fb9379426  [event]
+  Michael Bisping vs Dan Henderson  @ UFC 204: Bisping vs. Henderson
+  https://ufcfightpass.com/video/23372
+
+fight_id: ebc7ec239faf7b0b  [event]
+  Gegard Mousasi vs Vitor Belfort  @ UFC 204: Bisping vs. Henderson
+  https://ufcfightpass.com/video/23372
+
+fight_id: 451d7d8c2a6bacb3  [event]
+  Jimi Manuwa vs Ovince Saint Preux  @ UFC 204: Bisping vs. Henderson
+  https://ufcfightpass.com/video/23372
+
+fight_id: 17067cf55726c673  [event]
+  Stefan Struve vs Daniel Omielańczuk  @ UFC 204: Bisping vs. Henderson
+  https://ufcfightpass.com/video/23372
+
+fight_id: 23253ebb1d86d8b4  [event]
+  Mirsad Bektić vs Russell Doane  @ UFC 204: Bisping vs. Henderson
+  https://ufcfightpass.com/video/23372
+
+fight_id: 8d5ea3bf3be7cb91  [event]
+  Brandon Moreno vs Brandon Royval  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206132
+
+fight_id: 6c1b38dd918793ff  [event]
+  Joaquin Buckley vs Jordan Wright  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206132
+
+fight_id: a485281be8e9d2e2  [event]
+  Antonina Shevchenko vs Ariane Lipski  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206132
+
+fight_id: e22d5aab3d099c7c  [event]
+  Daniel Rodriguez vs Nicolas Dalby  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206132
+
+fight_id: a02764f92a84dd36  [event]
+  Alan Jouban vs Jared Gooden  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206365
+
+fight_id: 90eb22b9eb6ed2a8  [event]
+  Kyle Daukaus vs Dustin Stoltzfus  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206365
+
+fight_id: 91afc389191d41fb  [event]
+  Louis Cosce vs Sasha Palatnikov  @ UFC 255: Figueiredo vs. Perez
+  https://ufcfightpass.com/video/206365
+
+fight_id: 137646de0ffd9c35  [event]
+  Marcin Tybura vs Maxim Grishin  @ UFC 251: Usman vs. Masvidal
+  https://ufcfightpass.com/video/206176
+
+fight_id: 08e48648e3504638  [event]
+  Karol Rosa vs Vanessa Melo  @ UFC 251: Usman vs. Masvidal
+  https://ufcfightpass.com/video/206176
+
+fight_id: 5d6fb4acfe5cc8a1  [event]
+  Martin Day vs Davey Grant  @ UFC 251: Usman vs. Masvidal
+  https://ufcfightpass.com/video/206176
+
+fight_id: de4c4997f1429dd1  [event]
+  Jussier Formiga vs Alex Perez  @ UFC 250: Nunes vs. Spencer
+  https://ufcfightpass.com/video/206133
+
+fight_id: 5fdf6611815efdfb  [event]
+  Alonzo Menifield vs Devin Clark  @ UFC 250: Nunes vs. Spencer
+  https://ufcfightpass.com/video/206133
+
+fight_id: 20ba608a6e717f05  [event]
+  Evan Dunham vs Herbert Burns  @ UFC 250: Nunes vs. Spencer
+  https://ufcfightpass.com/video/206133
+
+fight_id: 08244974cf39ae38  [event]
+  Bryce Mitchell vs Charles Rosa  @ UFC 249: Ferguson vs. Gaethje
+  https://ufcfightpass.com/video/206169
+
+fight_id: b70dfff154b135bf  [event]
+  Ryan Spann vs Sam Alvey  @ UFC 249: Ferguson vs. Gaethje
+  https://ufcfightpass.com/video/206169
+
+fight_id: cd258394e8d58d04  [event]
+  Sean O'Malley vs Jose Alberto Quinonez  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206152
+
+fight_id: 60c441c5838dfac2  [event]
+  Mark Madsen vs Austin Hubbard  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206152
+
+fight_id: a70c43cafabc73c3  [event]
+  Rodolfo Vieira vs Saparbek Safarov  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206152
+
+fight_id: d671f436fab2a252  [event]
+  Gerald Meerschaert vs Deron Winn  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206152
+
+fight_id: daa38964824f1b9f  [event]
+  Giga Chikadze vs Jamall Emmers  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206356
+
+fight_id: 467e08195b29e857  [event]
+  Danaa Batgerel vs Guido Cannetti  @ UFC 248: Adesanya vs. Romero
+  https://ufcfightpass.com/video/206356
+
+fight_id: 11f7bac5037a184c  [event]
+  Trevin Giles vs James Krause  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206141
+
+fight_id: cb56e868deaddac4  [event]
+  Lauren Murphy vs Andrea Lee  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206141
+
+fight_id: ed499508be1e5532  [event]
+  Alex Morono vs Kalinn Williams  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206141
+
+fight_id: d3f44fedc561d2d5  [event]
+  Miles Johns vs Mario Bautista  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206141
+
+fight_id: 5ab2a4fec735e0b2  [event]
+  Domingo Pilarte vs Journey Newson  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206361
+
+fight_id: 326b843cb2b7fd94  [event]
+  Andre Ewell vs Jonathan Martinez  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206361
+
+fight_id: a6441acec6718f03  [event]
+  Austin Lingo vs Youssef Zalal  @ UFC 247: Jones vs. Reyes
+  https://ufcfightpass.com/video/206361
+
+fight_id: 6537a32e7af905b0  [event]
+  Josh Emmett vs Dan Ige  @ UFC 269: Oliveira vs. Poirier
+  https://ufcfightpass.com/video/280482
+
+fight_id: abb8c6c0a057184e  [event]
+  PEDRO MUNHOZ vs DOMINICK CRUZ  @ UFC 269: Oliveira vs. Poirier
+  https://ufcfightpass.com/video/280482
+
+fight_id: 50f2539c73b98eec  [event]
+  Augusto Sakai vs Tai Tuivasa  @ UFC 269: Oliveira vs. Poirier
+  https://ufcfightpass.com/video/280482
+
+fight_id: 9039762cb9f4abdb  [event]
+  Jordan Wright vs BRUNO SILVA  @ UFC 269: Oliveira vs. Poirier
+  https://ufcfightpass.com/video/280482
+
+fight_id: 385101e8ad828c39  [event]
+  Alex Pereira vs Andreas Michailidis  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274275
+
+fight_id: d69e3677060af4c7  [event]
+  Al Iaquinta vs Bobby Green  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274275
+
+fight_id: fa3b28ff3585b4a0  [event]
+  Phil Hawes vs Chris Curtis  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274275
+
+fight_id: 095a351dd6f09f7e  [event]
+  Edmen Shahbazyan vs Nassourdine Imavov  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274275
+
+fight_id: 733dcfec0cc9b439  [event]
+  Ian Garry vs Jordan Williams  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274619
+
+fight_id: e25875165648162b  [event]
+  Gian Villante vs Chris Barnett  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274619
+
+fight_id: 88cc78d2d5d6bcaa  [event]
+  Dustin Jacoby vs John Allan  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274619
+
+fight_id: 8081cb92f71401c6  [event]
+  CJ Vergara vs Ode Osbourne  @ UFC 268: Usman vs. Covington 2
+  https://ufcfightpass.com/video/274619
+
+fight_id: d84968d7e9fcb4f3  [event]
+  AMANDA RIBAS vs VIRNA JANDIROBA  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 41cdfea7df63003f  [event]
+  Ricardo Ramos vs ZUBAIRA TUKHUGOV  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 768c86e307295944  [event]
+  ALBERT DURAEV vs ROMAN KOPYLOV  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 92c49cb075f612d7  [event]
+  SHAMIL GAMZATOV vs MICHAL OLEKSIEJCZUK  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 156f2425a937b22f  [event]
+  MAKWAN AMIRKHANI vs LERONE MURPHY  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 4a5e5232346993c7  [event]
+  Hu Yaozong vs Andre Petroski  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: 6163c18411aca830  [event]
+  TAGIR ULANBEKOV vs ALLAN NASCIMENTO  @ UFC 267: Blachowicz vs. Teixeira
+  https://ufcfightpass.com/video/272008
+
+fight_id: e7bb37681652c2c2  [event]
+  Roxanne Modafferi vs Talia Santos  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264618
+
+fight_id: f085f32bbb3220e1  [event]
+  Shamil Abdurakhimov vs Chris Daukaus  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264618
+
+fight_id: bc276e0f07e30a54  [event]
+  Marlon Moraes vs Merab Dvalishvili  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264618
+
+fight_id: b3c23fb2d71bba51  [event]
+  Dan Hooker vs Nasrat Haqparast  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264618
+
+fight_id: 73f6b72b4889088f  [event]
+  Matthew Semelsberger vs Martin Sano  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264700
+
+fight_id: 7484298ad57099be  [event]
+  Jonathan Pearce vs Omar Morales  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264700
+
+fight_id: d8189169b2c8a2aa  [event]
+  Cody Brundage vs Nick Maximov  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264700
+
+fight_id: 7abc4520f63f2c06  [event]
+  Uros Medic vs Jalin Turner  @ UFC 266: Volkanovski vs. Ortega
+  https://ufcfightpass.com/video/264700
+
+fight_id: 76ece0ee2ef5d240  [event]
+  Bobby Green vs Rafael Fiziev  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252084
+
+fight_id: 3d75081ce43774ca  [event]
+  VINCE MORALES vs DRAKO RODRIGUEZ  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252084
+
+fight_id: dcd0793ff1a43b68  [event]
+  Alonzo Menifield vs Ed Herman  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252084
+
+fight_id: f2336b7545f5f442  [event]
+  Karolina Kowalkiewicz vs Jessica Penne  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252084
+
+fight_id: 85c5dd604d5b3634  [event]
+  MANEL KAPE vs ODE OSBOURNE  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252081
+
+fight_id: 9a678f346946b6a4  [event]
+  Miles Johns vs Anderson Dos Santos  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252081
+
+fight_id: cce232c1b1b2e4a0  [event]
+  VICTORIA LEONARDO vs MELISSA GATTO  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252081
+
+fight_id: af9927b5589e708b  [event]
+  Johnny Munoz vs Jamey Simmons  @ UFC 265: Lewis vs. Gane
+  https://ufcfightpass.com/video/252081
+
+fight_id: 7070abfa26c079b8  [event]
+  Carlos Condit vs MAX GRIFFIN  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/239563
+
+fight_id: 96bbb6c573dac27a  [event]
+  NIKO PRICE vs MICHEL PEREIRA  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/239563
+
+fight_id: 07468b6347ac5e3d  [event]
+  Ryan Hall vs Ilia Topuria  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/239563
+
+fight_id: 858feabaf429a963  [event]
+  Trevin Giles vs Dricus Du Plessis  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/239563
+
+fight_id: 5d5bf07dbfada0e3  [event]
+  Jennifer Maia vs Jessica Eye  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/252093
+
+fight_id: 1aba46988c9b58f9  [event]
+  OMARI AKHMEDOV vs BRAD TAVARES  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/252093
+
+fight_id: ac0a1d87e9ff4085  [event]
+  ZHALGAS ZHUMAGULOV vs Jerome Rivera  @ UFC 264: Poirier vs. McGregor 3
+  https://ufcfightpass.com/video/252093
+
+fight_id: 34d38d77c1d3f00e  [event]
+  Pannie Kianzad vs Alexis Davis  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/230548
+
+fight_id: d4ad90ac58429b64  [event]
+  Matt Frevola vs Terrance McKinney  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/230548
+
+fight_id: 84cde29aebf6c00c  [event]
+  Chase Hooper vs Steven Peterson  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/230548
+
+fight_id: dedb74ee9d84deab  [event]
+  Fares Ziam vs Luigi Vendramini  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/230548
+
+fight_id: 1b4d5dbf5f663a97  [event]
+  Carlos Felipe vs Jake Collier  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/230548
+
+fight_id: 7d2051c6bae907cb  [event]
+  Drew Dober vs Brad Riddell  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/237152
+
+fight_id: 9127a6430e46292c  [event]
+  Eryk Anders vs Darren Stewart  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/237152
+
+fight_id: 34cb6e9952cd30a4  [event]
+  Lauren Murphy vs Joanne Calderwood  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/237152
+
+fight_id: d66164d2c770da68  [event]
+  Mosvar Evloev vs Hakeem Dawodu  @ UFC 263: Adesanya vs. Vettori 2
+  https://ufcfightpass.com/video/237152
+
+fight_id: 419d1e29668b57fb  [event]
+  Manon Fiorot vs Tabatha Ricci  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 58c5d506181812fa  [event]
+  Claudio Puelles vs Jordan Leavitt  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 23b943e9ce495f0b  [event]
+  Francisco Trinaldo vs Muslim Salikhov  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 1a50d5c7e1e5c058  [event]
+  Montana De La Rosa vs Ariane Lipski  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 73a83b2595416f0a  [event]
+  Sean Woodson vs Youssef Zalal  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 827aacd14f80e8f3  [event]
+  Makwan Amirkhani vs Kamuela Kirk  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 0716a38768a34789  [event]
+  Tanner Boser vs Ilir Latifi  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: 9cdfcd164b48f55e  [event]
+  Alan Patrick vs Mason Jones  @ UFC Fight Night: Rozenstruik vs. Sakai
+  https://ufcfightpass.com/video/237909
+
+fight_id: ca22bafab913aae7  [event]
+  Jacare Souza vs Andre Muniz  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227760
+
+fight_id: be2e28ba3bdeb400  [event]
+  Lando Vannata vs Mike Grundy  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227760
+
+fight_id: 5573d46130d6b967  [event]
+  Jordan Wright vs Jamie Pickett  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227760
+
+fight_id: 2b894d87ad9aae05  [event]
+  Andrea Lee vs Antonina Shevchenko  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227760
+
+fight_id: bfd672cac0726a9a  [event]
+  Gina Mazany vs Priscila Cachoeira  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227742
+
+fight_id: 1f2f27b36e79da74  [event]
+  Kevin Aguilar vs Tucker Lutz  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227742
+
+fight_id: de332779baa1b103  [event]
+  CHRISTOS GIAGOS vs Sean Soriano  @ UFC 262: Oliveira vs. Chandler
+  https://ufcfightpass.com/video/227742
+
+fight_id: 512af32553d9bd70  [event]
+  Alex Oliveira vs Randy Brown  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223904
+
+fight_id: c5dfce1eaa2dc169  [event]
+  Dwight Grant vs Stefan Sekulic  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223904
+
+fight_id: f5dd0a24a7dba53c  [event]
+  Karl Roberson vs Brendan Allen  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223904
+
+fight_id: 6a7347d1da8a2b87  [event]
+  Patrick Sabatini vs Tristan Connelly  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223904
+
+fight_id: eb5d62bda1581c62  [event]
+  Danaa Batgerel vs Kevin Natividad  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223921
+
+fight_id: a3cde349c8e018fb  [event]
+  Liang Na vs Ariane Carnelossi  @ UFC 261: Usman vs. Masvidal 2
+  https://ufcfightpass.com/video/223921
+
+fight_id: b1eff235241e719b  [event]
+  Stipe Miocic vs Francis Ngannou  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217473
+
+fight_id: 39d188fa9b95d550  [event]
+  Tyrone Woodley vs Vicente Luque  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217473
+
+fight_id: 0aa335dbc4cb3473  [event]
+  Sean O'Malley vs Thomas Almeida  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217473
+
+fight_id: 8317208cfb030ed3  [event]
+  Gillian Robertson vs Miranda Maverick  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217473
+
+fight_id: 390694c179f05c7f  [event]
+  Jamie Mullarkey vs Khama Worthy  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217473
+
+fight_id: 48292a027df02443  [event]
+  Fabio Cherant vs Alonzo Menifield  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217453
+
+fight_id: 4b3af85b0df51d09  [event]
+  Jared Gooden vs Abubakar Nurmagomedov  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217453
+
+fight_id: 6002c24f0b7f8cc7  [event]
+  Modestas Bukauskas vs Michal Oleksiejczuk  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217453
+
+fight_id: 2220b73ece1730c3  [event]
+  Shane Young vs Omar Morales  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217453
+
+fight_id: 41622791b276ad9e  [event]
+  Marc-Andre Barriault vs Abu Azaitar  @ UFC 260: Miocic vs. Ngannou
+  https://ufcfightpass.com/video/217359
+
+fight_id: 5980ab31e4718a83  [event]
+  Song Yadong vs Kyler Phillips  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212769
+
+fight_id: ae5d14a9fc1ad19c  [event]
+  Joseph Benavidez vs Askar Askarov  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212769
+
+fight_id: 873306ad79b62f5e  [event]
+  Rogerio Bontorin vs Kai Kara-France  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212769
+
+fight_id: d170f6580e1c244f  [event]
+  Kennedy Nzechukwu vs Carlos Ulberg  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212770
+
+fight_id: 7ad09f889d2cdb6f  [event]
+  Sean Brady vs Jake Matthews  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212770
+
+fight_id: 50ef636148fa6fac  [event]
+  Livinha Souza vs Amanda Lemos  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212770
+
+fight_id: e2abba69c3371618  [event]
+  Uros Medic vs Aalon Cruz  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212770
+
+fight_id: c096342c57a6f2c4  [event]
+  Mairo Bautista vs Trevin Jones  @ UFC 259: Blachowicz vs. Adesanya
+  https://ufcfightpass.com/video/212770
+
+fight_id: 8cf076524cad5a55  [event]
+  Belal Muhammad vs Dhiego Lima  @ UFC 258: Usman vs. Burns
+  https://ufcfightpass.com/video/209266
+
+fight_id: 96b1430379c0694a  [event]
+  Rodolfo Vieira vs Anthony Hernandez  @ UFC 258: Usman vs. Burns
+  https://ufcfightpass.com/video/209266
+
+fight_id: f98e954823bd6e02  [event]
+  Andre Ewell vs Chris Gutierrez  @ UFC 258: Usman vs. Burns
+  https://ufcfightpass.com/video/209266
+
+fight_id: 17616514e8fdacb9  [event]
+  Polyana Viana vs Mallory Martin  @ UFC 258: Usman vs. Burns
+  https://ufcfightpass.com/video/209266
+
+fight_id: 357c5b86ec83b826  [event]
+  Gabe Green vs Philip Rowe  @ UFC 258: Usman vs. Burns
+  https://ufcfightpass.com/video/209265
+
+fight_id: 3d3e7dc7b4bf2bc4  [event]
+  Dustin Poirier vs Conor McGregor  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205804
+
+fight_id: a5075f4eaee6036f  [event]
+  Dan Hooker vs Michael Chandler  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205804
+
+fight_id: c4ea3f6fae702459  [event]
+  Jessica Eye vs Joanne Calderwood  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205804
+
+fight_id: 65352221c0bfe52d  [event]
+  Andrew Sanchez vs Makhmud Muradov  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205804
+
+fight_id: cd08b68f0bafafbf  [event]
+  Marina Rodriguez vs Amanda Ribas  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205804
+
+fight_id: 92f569a6d9374b86  [event]
+  Brad Tavares vs Antonio Carlos Junior  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205803
+
+fight_id: 99dbe9669f31ed91  [event]
+  Arman Tsarukyan vs Matt Frevola  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205803
+
+fight_id: 83da743f6dda7dcc  [event]
+  Julianna Peña vs Sara McMann  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205803
+
+fight_id: f3ccbfd7036f3cf3  [event]
+  Nik Lentz vs Movsar Evloev  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205797
+
+fight_id: aaf45b095452be23  [event]
+  Amir Albazi vs Zalgas Zhumagulov  @ UFC 257: Poirier vs. McGregor
+  https://ufcfightpass.com/video/205797
+
+fight_id: fd7421f421e802bd  [event]
+  Raul Rosas Jr. vs Jay Perrin  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434932
+
+fight_id: 1779cc4ae925df01  [event]
+  Jairzinho Rozenstruik vs Chris Daukaus  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434932
+
+fight_id: 4e9d76ed54f1f352  [event]
+  Edmen Shahbazyan vs Dalcha Lungiambula  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434932
+
+fight_id: a346180c8b109469  [event]
+  Chris Curtis vs Joaquin Buckley  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434932
+
+fight_id: a1a5d06b0e7ada62  [event]
+  Billy Quarantillo vs Alexander Hernandez  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434833
+
+fight_id: 2d9d966e0e8df232  [event]
+  TJ Brown vs Erik Silva  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434833
+
+fight_id: 5bc31abb5842942a  [event]
+  Cameron Saaiman vs Steven Koslow  @ UFC 282: Blachowicz vs. Ankalaev
+  https://ufcfightpass.com/video/434833
+
+fight_id: 1f922cfe6178e830  [event]
+  Brad Riddell vs Renato Moicano  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431079
+
+fight_id: 6f22afbc5f8e0bd3  [event]
+  Dominick Reyes vs Ryan Spann  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431079
+
+fight_id: 93da91272d4a7ce3  [event]
+  Erin Blanchfield vs Molly McCann  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431079
+
+fight_id: 65ce9335b93d9c57  [event]
+  Andre Petroski vs Wellington Turman  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431079
+
+fight_id: 40707ddc9fdea500  [event]
+  Matt Frevola vs Ottman Azaitar  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431084
+
+fight_id: ff2e4b411f695017  [event]
+  Karolina Kowalkiewicz vs Silvana Gomez Juarez  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431084
+
+fight_id: 7f93b2f38497caec  [event]
+  Michael Trizano vs SeungWoo Choi  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431084
+
+fight_id: bee95769a221af9a  [event]
+  Julio Arce vs Montel Jackson  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431084
+
+fight_id: db026ff6eee4d174  [event]
+  Carlos Ulberg vs Nicolae Negumereanu  @ UFC 281: Adesanya vs. Pereira
+  https://ufcfightpass.com/video/431084
+
+fight_id: d325a1483d78ae75  [event]
+  Belal Muhammad vs Sean Brady  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: 2d36e2c10ee349fe  [event]
+  MAKHMUD MURADOV vs CAIO BORRALHO  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: f4d8266a42a41dff  [event]
+  VOLKAN OEZDEMIR vs NIKITA KRYLOV  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: cea6760d7bfbe19b  [event]
+  Abubakar Nurmagomedov vs Gadzhi Omargadzhiev  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: 1b204fc28bb023e6  [event]
+  Armen Petrosyan vs AJ Dobson  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: 1e8c33b1917fe1b7  [event]
+  Muhammad Mokaev vs Malcolm Gordon  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: 4011cdf1f182804c  [event]
+  Karol Rosa vs Lina Lansberg  @ UFC 280: Oliveira vs. Makhachev
+  https://ufcfightpass.com/video/422792
+
+fight_id: db3e26d02d790c97  [event]
+  NORMA DUMONT vs DANYELLE WOLF  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410144
+
+fight_id: 6010f681e54ba2cd  [event]
+  CHAD ANHELIGER vs ALATENGHEILI  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410144
+
+fight_id: a5cf273faa3982b7  [event]
+  MELISSA MARTINEZ vs ELISE REED  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410144
+
+fight_id: 86d57e8ef2191316  [event]
+  DARIAN WEEKS vs YOHAN LAINESSE  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410144
+
+fight_id: 0e6d624086f7952e  [event]
+  HAKEEM DAWODU vs JULIAN EROSA  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410210
+
+fight_id: 301f230c90c4bd7d  [event]
+  JAILTON ALMEIDA vs ANTON TURKALJ  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410210
+
+fight_id: 77acb96700e89c92  [event]
+  DENIS TIULIULIN vs JAMIE PICKETT  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410210
+
+fight_id: bf334cb4e63f3430  [event]
+  JAKE COLLIER vs CHRIS BARNETT  @ UFC 279: Diaz vs. Ferguson
+  https://ufcfightpass.com/video/410210
+
+fight_id: f70c817388602681  [event]
+  KAMARU USMAN vs LEON EDWARDS  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397679
+
+fight_id: 2de6652160cc7b9f  [event]
+  PAULO COSTA vs LUKE ROCKHOLD  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397679
+
+fight_id: 2ac3ce1f62b3c4b9  [event]
+  JOSE ALDO vs MERAB DVALISHVILI  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397679
+
+fight_id: 5abcf9f282983acc  [event]
+  TYSON PEDRO vs HARRY HUNSUCKER  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397679
+
+fight_id: 6b9f82291930bfec  [event]
+  Amir Albazi vs Francisco Figueiredo  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397638
+
+fight_id: d497d74a0df9e35e  [event]
+  Aoriqileng vs Jay Perrin  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397638
+
+fight_id: e0b98f3cf4a7cc3b  [event]
+  MARCIN TYBURA vs ALEXANDR ROMANOV  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397660
+
+fight_id: 0cf7a4593fd44e59  [event]
+  Leonardo Santos vs Jared Gordon  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397660
+
+fight_id: 2ac9b3ccb43422d8  [event]
+  Sean Woodson vs Luis Saldana  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397660
+
+fight_id: 4dac5258f22be059  [event]
+  AJ FLETCHER vs ANGE LOOSA  @ UFC 278: Usman vs. Edwards
+  https://ufcfightpass.com/video/397660
+
+fight_id: 72c3e5eacde4f0e5  [event]
+  Julianna Pena vs Amanda Nunes  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/389256
+
+fight_id: 5a1ce88ec1f75160  [event]
+  Brandon Moreno vs Kai Kara-France  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/389256
+
+fight_id: 52f87252af59e23b  [event]
+  Derrick Lewis vs Sergei Pavlovich  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/389256
+
+fight_id: 96b62bd56b252bab  [event]
+  Alexandre Pantoja vs Alex Perez  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/389256
+
+fight_id: 058c2724dec1add1  [event]
+  Magomed Ankalaev vs Anthony Smith  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/389256
+
+fight_id: 579b5770129b328a  [event]
+  Alex Morono vs Matthew Semelsberger  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409922
+
+fight_id: 81a18de517a3336a  [event]
+  Drew Dober vs Rafael Alves  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409922
+
+fight_id: 5a2b86570110191b  [event]
+  Don'Tale Mayes vs Hamdy Abdelwahab  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409922
+
+fight_id: 189b9af881b96de6  [event]
+  Drakkar Klose vs Rafa Garcia  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409922
+
+fight_id: e492dc60d8e44866  [event]
+  Michael Morales vs Adam Fugitt  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409919
+
+fight_id: 0366e183296fea07  [event]
+  Joselyne Edwards vs Ji Yeon Kim  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409919
+
+fight_id: 1ed550f094ca7745  [event]
+  Nicolae Negumereanu vs Ihor Potieria  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409919
+
+fight_id: 66f7bb31d24b3b36  [event]
+  ORION COSCE vs BLOOD DIAMOND  @ UFC 277: Pena vs. Nunes 2
+  https://ufcfightpass.com/video/409919
+
+fight_id: 98411542ca0e847d  [event]
+  BRAD RIDDELL vs JALIN TURNER  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444814
+
+fight_id: 4d8d1701c43c5fea  [event]
+  Ian Garry vs Gabe Green  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444814
+
+fight_id: 459bc7c0b47719c3  [event]
+  Jim Miller vs Donald Cerrone  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444814
+
+fight_id: 57775c8af89007c7  [event]
+  BRAD TAVARES vs DRICUS DU PLESSIS  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444814
+
+fight_id: 99ac96bb67e5c5e4  [event]
+  URIAH HALL vs ANDRE MUNIZ  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444824
+
+fight_id: 1c85003f6ec59c9d  [event]
+  Jessica Eye vs Maycee Barber  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444824
+
+fight_id: 0e2c7ec02a095813  [event]
+  JESSICA-ROSE CLARK vs JULIJA STOLIARENKO  @ UFC 276: Adesanya vs. Cannonier
+  https://ufcfightpass.com/video/444824
+
+fight_id: 5f4a107d930e4852  [event]
+  RAMONA PASCUAL vs JOSELYNE EDWARDS  @ UFC 275: Teixeira vs. Prochazka
+  https://ufcfightpass.com/video/375641
+
+fight_id: c94b153951be7590  [event]
+  SEUNGWOO CHOI vs JOSH CULIBAO  @ UFC 275: Teixeira vs. Prochazka
+  https://ufcfightpass.com/video/375939
+
+fight_id: 4a116a55ffaa0d64  [event]
+  MAHESHATE vs STEVE GARCIA  @ UFC 275: Teixeira vs. Prochazka
+  https://ufcfightpass.com/video/375939
+
+fight_id: 50eed57ea1390e16  [event]
+  BRENDAN ALLEN vs JACOB MALKOUN  @ UFC 275: Teixeira vs. Prochazka
+  https://ufcfightpass.com/video/375939
+
+fight_id: 029f5c36820fdc09  [event]
+  KYUNG HO KANG vs BATGEREL DANAA  @ UFC 275: Teixeira vs. Prochazka
+  https://ufcfightpass.com/video/375939
+
+fight_id: 8390441d93736719  [event]
+  Randy Brown vs Khaos Williams  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/391518
+
+fight_id: 6a902b97ac98c283  [event]
+  Francisco Trinaldo vs Danny Roberts  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/391518
+
+fight_id: fc4939b3c9071e66  [event]
+  Macy Chiasson vs Norma Dumont  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/391518
+
+fight_id: 80ac36a9dbc4b1a1  [event]
+  Brandon Royval vs Matt Schnell  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/391518
+
+fight_id: ff6c8dab41efcc09  [event]
+  Blagoy Ivanov vs Marcos Rogerio De Lima  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 397dd9a8694ef413  [event]
+  Andre Fialho vs Cameron VanCamp  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 60d9d50b763adc62  [event]
+  Tracy Cortez vs Melissa Gatto  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 8289033e03b4d9a3  [event]
+  KLEYDSON RODRIGUES vs CJ VERGARA  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 88455c967a7ef6fc  [event]
+  ARIANE CARNELOSSI vs LOOPY GODINEZ  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 430309e0f8a315d5  [event]
+  JOURNEY NEWSON vs FERNIE GARCIA  @ UFC 274: Oliveira vs. Gaethje
+  https://ufcfightpass.com/video/364294
+
+fight_id: 313b85fe82b2ba80  [event]
+  Ian Garry vs Darian Weeks  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352664
+
+fight_id: 7c6ed5b3d830d0cb  [event]
+  Anthony Hernandez vs Josh Fremd  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352664
+
+fight_id: 88c6e7f71b79fd65  [event]
+  Aspen Ladd vs Raquel Pennington  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352664
+
+fight_id: 7458a37feabf8788  [event]
+  Mickey Gall vs Mike Malott  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352664
+
+fight_id: 278b965694e563b2  [event]
+  Aleksei Oleinik vs Jared Vanderaa  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352596
+
+fight_id: 9e52a67410f2c879  [event]
+  Piera Rodriguez vs Kay Hansen  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352596
+
+fight_id: 313c36ce9bde6cf6  [event]
+  Julio Arce vs Daniel Santos  @ UFC 273: Volkanovski vs. The Korean Zombie
+  https://ufcfightpass.com/video/352596
+
+fight_id: 59d44b6888885500  [event]
+  BRIAN KELLEHER vs UMAR NURMAGOMEDOV  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/343004
+
+fight_id: 36d9337a27b71ba9  [event]
+  Devonte Smith vs Ludovit Klein  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/343004
+
+fight_id: d5323490163dde0e  [event]
+  Dustin Jacoby vs MICHAL OLEKSIEJCZUK  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/343004
+
+fight_id: fce6ab43b7d09aa4  [event]
+  Jalin Turner vs Jamie Mullarkey  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/342824
+
+fight_id: 9321b3c90ea5ca6c  [event]
+  Marina Rodriguez vs Yan Xiaonan  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/342824
+
+fight_id: ee278a5a25744cac  [event]
+  Nicolae Negumereanu vs kennedy nzechukwu  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/342824
+
+fight_id: c6fc43c351b08bda  [event]
+  Maryna Moroz vs Mariya Agapova  @ UFC 272: Covington vs. Masvidal
+  https://ufcfightpass.com/video/342824
+
+fight_id: b1e048825b5bbe1c  [event]
+  Roxanne Modafferi vs Casey O'Neill  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/326129
+
+fight_id: a0ba726da4a50458  [event]
+  Kyler Phillips vs Marcelo Rojo  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/326129
+
+fight_id: 3bebd99d5f94bec7  [event]
+  Carlos Ulberg vs Fabio Cherant  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/326129
+
+fight_id: 19e742ccaa09cf08  [event]
+  mana martinez vs ronnie lawrence  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/334202
+
+fight_id: c16bda7548181613  [event]
+  Aj Dobson vs Jacob Malkoun  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/334202
+
+fight_id: 821bef3a3394dd96  [event]
+  Douglas Silva De Andrade vs Sergey Morozov  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/334202
+
+fight_id: 507080ccded73591  [event]
+  Jeremiah Wells vs Blood Diamond  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/334202
+
+fight_id: 6708f3a32861038a  [event]
+  William Knight vs Maxim Grishin  @ UFC 271: Adesanya vs. Whittaker 2
+  https://ufcfightpass.com/video/334202
+
+fight_id: 44a55ba1de2b30e2  [event]
+  Raoni Barcelos vs Victor Henry  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294203
+
+fight_id: 0669231ebe3dd560  [event]
+  Jack Della Maddalena vs Pete Rodriguez  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294203
+
+fight_id: 9687021e5c4d092a  [event]
+  Tony Gravely vs Saimon Oliveira  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294203
+
+fight_id: 5da7168ac2ff0e1d  [event]
+  Matt Frevola vs Genaro Valdez  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294203
+
+fight_id: 0a0beb5aa9810de4  [event]
+  Kay Hansen vs Jasmine Jasudavicius  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294194
+
+fight_id: 4047c2e259529179  [event]
+  Silvana Gomez Juarez vs VANESSA DEMOPOULOS  @ UFC 270: Ngannou vs. Gane
+  https://ufcfightpass.com/video/294194
+
+fight_id: 521a0e016878d174  [event]
+  Alonzo Menifield vs Dustin Jacoby  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587848
+
+fight_id: 609d994bfe440ec3  [event]
+  Irene Aldana vs Karol Rosa  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587848
+
+fight_id: f8a8871d167fc929  [event]
+  Cody Garbrandt vs Brian Kelleher  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587848
+
+fight_id: c442899c21d58779  [event]
+  Casey O'Neill vs Ariane Lipski  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587848
+
+fight_id: 4ec249e549309b16  [event]
+  Tagir Ulanbekov vs Cody Durden  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587845
+
+fight_id: abb6e2169ba580d2  [event]
+  Andre Fili vs Lucas Almeida  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587845
+
+fight_id: fce6522f42b48f18  [event]
+  Martin Buday vs Shamil Gaziev  @ UFC 296: Edwards vs. Covington
+  https://ufcfightpass.com/video/587845
+
+fight_id: b1f2ec122beda7a5  [event]
+  JIRI PROCHAZKA vs Alex Pereira  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554335
+
+fight_id: db49619221b282af  [event]
+  Sergei Pavlovich vs Tom Aspinall  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554335
+
+fight_id: 6fd67582d8adb1c7  [event]
+  Jéssica Andrade vs Mackenzie Dern  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554335
+
+fight_id: 9fe98de1eac21f2e  [event]
+  Matt Frevola vs BENOIT SAINT DENIS  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554335
+
+fight_id: 128ab9aa4802c73f  [event]
+  Diego Lopes vs Pat Sabatini  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554335
+
+fight_id: 5704e73f91b9e7f7  [event]
+  Steve Erceg vs Alessandro Costa  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554336
+
+fight_id: a0362d60d2e1db0d  [event]
+  Tabatha Ricci vs Lupita Godinez  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554336
+
+fight_id: 480c4dbd2e792d86  [event]
+  Mateusz Rębecki vs Roosevelt Roberts  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554336
+
+fight_id: 83a0fff04494bfc4  [event]
+  Nazim Sadykhov vs Viacheslav Borshchev  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/554336
+
+fight_id: 4c025d1fff9e9fce  [event]
+  JARED GORDON vs MARK MADSEN  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/545191
+
+fight_id: 8a0fc4624578a7e4  [event]
+  Joshua Van vs Kevin Borjas  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/545191
+
+fight_id: 1cf69de0eea46877  [event]
+  Dennis Buzukja vs Jamall Emmers  @ UFC 295: Prochazka vs. Pereira
+  https://ufcfightpass.com/video/545191
+
+fight_id: e9256316716499b8  [event]
+  Tim Elliott vs Muhammad Mokaev  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 3c6fb6bf9b7afd40  [event]
+  Mohammad Yahya vs Trevor Peek  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 0d1af8c6a5793185  [event]
+  Javid Basharat vs Victor Henry  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 43de9ff6064361e1  [event]
+  Abu Azaitar vs Sedrique Dumas  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 75c5f923f966b53b  [event]
+  Mike Breeden vs Anshul Jubli  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: b84c447bb74febe2  [event]
+  Nathaniel Wood vs Muhammad Naimov  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 18e5af00a8478a0e  [event]
+  Viktoriia Dudakova vs Jinh Yu Frey  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 539732694ab2c8d6  [event]
+  Shara Magomedov vs Bruno Silva  @ UFC 294: Makhachev vs. Volkanovski 2
+  https://ufcfightpass.com/video/545823
+
+fight_id: 09a7f0979a58e6ea  [event]
+  Jack Jenkins vs Chepe Mariscal  @ UFC 293: Adesanya vs. Strickland
+  https://ufcfightpass.com/video/526132
+
+fight_id: 0aae15358d8606b9  [event]
+  Jamie Mullarkey vs John Makdessi  @ UFC 293: Adesanya vs. Strickland
+  https://ufcfightpass.com/video/526132
+
+fight_id: bfff5a3777841344  [event]
+  NASRAT HAQPARAST vs LANDON QUINONES  @ UFC 293: Adesanya vs. Strickland
+  https://ufcfightpass.com/video/526132
+
+fight_id: 5d481ff494bf40da  [event]
+  Shane Young vs Gabriel Miranda  @ UFC 293: Adesanya vs. Strickland
+  https://ufcfightpass.com/video/526129
+
+fight_id: 65c89e0c92e51bb8  [event]
+  KEVIN JOUSSET vs KIEFER CROSBIE  @ UFC 293: Adesanya vs. Strickland
+  https://ufcfightpass.com/video/526129
+
+fight_id: 1a95cc401f68f4c8  [event]
+  Chris Weidman vs Brad Tavares  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517298
+
+fight_id: f995ed679ef8bdf4  [event]
+  GREGORY RODRIGUES vs DENIS TIULIULIN  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517298
+
+fight_id: 62d53ad8f8769666  [event]
+  Austin Hubbard vs Kurt Holobaugh  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517298
+
+fight_id: e9754f597ec50f6f  [event]
+  Brad Katona vs Cody Gibson  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517298
+
+fight_id: 9f7c28381b6913c8  [event]
+  ANDRE PETROSKI vs GERALD MEERSCHAERT  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517295
+
+fight_id: 8c7b5b21b3532027  [event]
+  ANDREA LEE vs NATALIA SILVA  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517295
+
+fight_id: f329bd89e375d6df  [event]
+  Karine Silva vs Maryna Moroz  @ UFC 292: Sterling vs. O'Malley
+  https://ufcfightpass.com/video/517295
+
+fight_id: 4327fe98e1b6f222  [event]
+  Gabriel Bonfim vs Trevin Giles  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509558
+
+fight_id: e5ac7343b6d45188  [event]
+  CJ Vergara vs Vinicius Salvador  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509558
+
+fight_id: 5116f9398bfca446  [event]
+  Roman Kopylov vs Claudio Ribeiro  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509558
+
+fight_id: 7a8f218c07347c88  [event]
+  Jake Matthews vs Darrius Flowers  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509558
+
+fight_id: 3de326b65aa6245d  [event]
+  MATTHEW SEMELSBERGER vs UROS MEDIC  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509553
+
+fight_id: 74fef059e229d217  [event]
+  MIRANDA MAVERICK vs PRISCILA CACHOEIRA  @ UFC 291: Poirier vs. Gaethje 2
+  https://ufcfightpass.com/video/509553
+
+fight_id: 20d8f6b4b7c8bae7  [event]
+  ROBBIE LAWLER vs NIKO PRICE  @ UFC 290: Volkanovski vs. Rodriguez
+  https://ufcfightpass.com/video/509556
+
+fight_id: ef270d8cf29d071b  [event]
+  YAZMIN JAUREGUI vs DENISE GOMES  @ UFC 290: Volkanovski vs. Rodriguez
+  https://ufcfightpass.com/video/509556
+
+fight_id: 6ef12db5b099ec81  [event]
+  Jimmy Crute vs Alonzo Menifield  @ UFC 290: Volkanovski vs. Rodriguez
+  https://ufcfightpass.com/video/509556
+
+fight_id: 96eaf07b34538b8b  [event]
+  Nassourdine Imavov vs Chris Curtis  @ UFC 289: Nunes vs. Aldana
+  https://ufcfightpass.com/video/498692
+
+fight_id: 47a5d4bb68352055  [event]
+  Miranda Maverick vs Jasmine Jasudavicius  @ UFC 289: Nunes vs. Aldana
+  https://ufcfightpass.com/video/498692
+
+fight_id: 7ee8b91d7f80f8a7  [event]
+  Kyle Nelson vs Blake Bilder  @ UFC 289: Nunes vs. Aldana
+  https://ufcfightpass.com/video/498692
+
+fight_id: 947ea1122c04ba18  [event]
+  David Dvorak vs Stephen Erceg  @ UFC 289: Nunes vs. Aldana
+  https://ufcfightpass.com/video/498698
+
+fight_id: 1676c64a94be0557  [event]
+  Diana Belbita vs Maria Oliveira  @ UFC 289: Nunes vs. Aldana
+  https://ufcfightpass.com/video/498698
+
+fight_id: 3f8b4aeb3baf4724  [event]
+  Drew Dober vs Matt Frevola  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/488809
+
+fight_id: c3ca708aaf4262a7  [event]
+  KENNEDY NZECHUKWU vs DEVIN CLARK  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/488809
+
+fight_id: 4c9bbd9758be1168  [event]
+  KHAOS WILLIAMS vs ROLANDO BEDOYA  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/488809
+
+fight_id: 5f44d6d9e6bbecff  [event]
+  Marina Rodriguez vs VIRNA JANDIROBA  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/488809
+
+fight_id: 2372578d3f554c65  [event]
+  BRAXTON SMITH vs PARKER PORTER  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/486264
+
+fight_id: d22de60b7a3d908c  [event]
+  Phil Hawes vs IKRAM ALISKEROV  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/486264
+
+fight_id: 93fb6c7e590487f9  [event]
+  Joseph Holmes vs Claudio Ribeiro  @ UFC 288: Sterling vs. Cejudo
+  https://ufcfightpass.com/video/486264
+
+fight_id: 16628e25a043043a  [event]
+  Ricky Glenn vs Christos Giagos  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: 034cbbec91f67852  [event]
+  Rani Yahya vs Montel Jackson  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: 01aa5949ac6851f3  [event]
+  Karol Rosa vs Norma Dumont  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: 8beab5f941dae8e0  [event]
+  Mohammed Usman vs Junior Tafa  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: a941c4e25ddddfff  [event]
+  Francis Marshall vs William Gomis  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: 277233ca9ea25674  [event]
+  Brady Hiestand vs Batgerel Danaa  @ UFC Fight Night: Pavlovich vs. Blaydes
+  https://ufcfightpass.com/video/486248
+
+fight_id: bbc76ff9e1b1b142  [event]
+  Kevin Gastelum vs Chris Curtis  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485134
+
+fight_id: 95349402616097cd  [event]
+  Michelle Waterson vs Luana Pinheiro  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485134
+
+fight_id: 28e3d939eb043664  [event]
+  Gerald Meerschaert vs Joe Pyfer  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485134
+
+fight_id: 780147f2ed2637d1  [event]
+  Cynthia Calvillo vs Lupita Godinez  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485139
+
+fight_id: d7022b6058dbb26b  [event]
+  Ignacio Bahamondes vs Trey Ogden  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485139
+
+fight_id: 355a2f4090c0ca31  [event]
+  Jaqueline Amorim vs Sam Hughes  @ UFC 287: Pereira vs. Adesanya 2
+  https://ufcfightpass.com/video/485139
+
+fight_id: 13f5be7a2ea5577e  [event]
+  Jack Shore vs MAKWAN AMIRKHANI  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/485126
+
+fight_id: cdaf65287d9a0ecb  [event]
+  Chris Duncan vs Omar Morales  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/485126
+
+fight_id: f40ac11da3bd7f8e  [event]
+  Muhammad Mokaev vs Jafel Filho  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/485126
+
+fight_id: 533984c3ff4b4858  [event]
+  Lerone Murphy vs Gabriel Santos  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/455764
+
+fight_id: 38094db8e3539cba  [event]
+  CHRISTIAN DUNCAN vs DUSKO TODOROVIC  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/455764
+
+fight_id: 6068385c48de6801  [event]
+  JAKE HADLEY vs MALCOLM GORDON  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/455764
+
+fight_id: 8a3e7085e8e5a6e9  [event]
+  JOANNE WOOD vs LUANA CAROLINA  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/455764
+
+fight_id: 938c2c71b84e56ff  [event]
+  JAI HERBERT vs LUDOVIT KLEIN  @ UFC 286: Edwards vs. Usman 3
+  https://ufcfightpass.com/video/455764
+
+fight_id: ec490d4224d3bc78  [event]
+  Cody Garbrandt vs Trevin Jones  @ UFC 285: Jones vs. Gane
+  https://ufcfightpass.com/video/465250
+
+fight_id: c2fc4c1e0c769655  [event]
+  Derek Brunson vs Dricus Du Plessis  @ UFC 285: Jones vs. Gane
+  https://ufcfightpass.com/video/465250
+
+fight_id: 009feda296ae589c  [event]
+  Viviane Araujo vs Amanda Ribas  @ UFC 285: Jones vs. Gane
+  https://ufcfightpass.com/video/465250
+
+fight_id: c29e2c49e1e417c8  [event]
+  Julian Marquez vs Marc-Andre Barriault  @ UFC 285: Jones vs. Gane
+  https://ufcfightpass.com/video/465250
+
+fight_id: 8b7bc2af1e15b668  [event]
+  Joshua Culibao vs Melsik Baghdasaryan  @ UFC 284: Makhachev vs. Volkanovski
+  https://ufcfightpass.com/video/456762
+
+fight_id: 16dbe70eb7007f17  [event]
+  Shannon Ross vs Kleydson Rodrigues  @ UFC 284: Makhachev vs. Volkanovski
+  https://ufcfightpass.com/video/456762
+
+fight_id: a37a6b6f9551a6e8  [event]
+  Jamie Mullarkey vs Francisco Prado  @ UFC 284: Makhachev vs. Volkanovski
+  https://ufcfightpass.com/video/456762
+
+fight_id: 28af78600d6580f1  [event]
+  Jack Jenkins vs Don Shainis  @ UFC 284: Makhachev vs. Volkanovski
+  https://ufcfightpass.com/video/456763
+
+fight_id: 5ad8aa57c8d69680  [event]
+  Gregory Rodrigues vs Brunno Ferreira  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449211
+
+fight_id: 8cdcdfb76d1670dd  [event]
+  Thiago Moises vs Melquizael Costa  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449211
+
+fight_id: 7ed9e8f3258446c7  [event]
+  Gabriel Bonfim vs Mounir Lazzez  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449211
+
+fight_id: fffdc57255274be1  [event]
+  Shamil Abdurakhimov vs Jailton Almeida  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449300
+
+fight_id: 354dc211166a3982  [event]
+  Luan Lacerda vs Cody Stamann  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449300
+
+fight_id: 911b73db91738da6  [event]
+  Ismael Bonfim vs Terrance McKinney  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449300
+
+fight_id: f09c3d8a26806761  [event]
+  Warlley Alves vs Nicolas Dalby  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449300
+
+fight_id: 1d35e4c0941d1397  [event]
+  Saimon Oliveira vs Daniel Marcos  @ UFC 283: Teixeira vs. Hill
+  https://ufcfightpass.com/video/449300
+
+fight_id: 97caf8fca9d9603b  [event]
+  Dominick Reyes vs Anthony Smith  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729416
+
+fight_id: 4914f7bd073c6359  [event]
+  Vicente Luque vs Themba Gorimbo  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729416
+
+fight_id: df30514e0674d598  [event]
+  Movsar Evloev vs Aljamain Sterling  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729416
+
+fight_id: 7c0d0a28a8fba102  [event]
+  Randy Brown vs Bryan Battle  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729416
+
+fight_id: 0f16d83859d608c7  [event]
+  Chris Weidman vs Eryk Anders  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729396
+
+fight_id: d38029cf47e54cf7  [event]
+  Cody Durden vs Joshua Van  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729396
+
+fight_id: a5c57b0f49e9f61c  [event]
+  Michael Chiesa vs Max Griffin  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729396
+
+fight_id: 72b12a837290b327  [event]
+  Clay Guida vs Chase Hooper  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729396
+
+fight_id: eb94412f15c62650  [event]
+  Kennedy Nzechukwu vs Łukasz Brzeski  @ UFC 310: Pantoja vs. Asakura
+  https://ufcfightpass.com/video/729396
+
+fight_id: 2a930e2d7e1f87a9  [event]
+  Jonathan Martinez vs Marcus McGhee  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721813
+
+fight_id: 35c8223cc967fe0a  [event]
+  Jim Miller vs Damon Jackson  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721813
+
+fight_id: c565e2baa27cc7e5  [event]
+  David Onama vs Roberto Romero  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721813
+
+fight_id: 6c1faa6284428e5d  [event]
+  Marcin Tybura vs Jhonata Diniz  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721770
+
+fight_id: 00414fc5519233b4  [event]
+  Mickey Gall vs Ramiz Brahimaj  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721770
+
+fight_id: 9676a4e9362e4bfd  [event]
+  Bassil Hafez vs Oban Elliott  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721770
+
+fight_id: 40e2a7b65794ac05  [event]
+  Veronica Hardy vs Eduarda Moura  @ UFC 309: Jones vs. Miocic
+  https://ufcfightpass.com/video/721770
+
+fight_id: 781a2ea50f5ae68f  [event]
+  Ibo Aslan vs Raffael Cerqueira  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: 1d65c141776949d6  [event]
+  Geoff Neal vs Rafael dos Anjos  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: 919e3c5cc6999cb3  [event]
+  Mateusz Rębecki vs Myktybek Orolbai  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: af6eeea1cfe33240  [event]
+  Abus Magomedov vs Brunno Ferreira  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: df7928de73fc2fe8  [event]
+  Kennedy Nzechukwu vs Chris Barnett  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: 5c783cd188425783  [event]
+  Farid Basharat vs Victor Hugo  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: bde635a4f345bc3e  [event]
+  Ismail Naurdiev vs Bruno Silva  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: 6114076c689e8457  [event]
+  Rinat Fakhretdinov vs Carlos Leal  @ UFC 308: Topuria vs. Holloway
+  https://ufcfightpass.com/video/709680
+
+fight_id: 69bca5091b2a31f6  [event]
+  Stephen Thompson vs Joaquin Buckley  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696197
+
+fight_id: eb73b63bbd7b88a7  [event]
+  Marina Rodriguez vs Iasmin Lucindo  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696197
+
+fight_id: e8aad69aace1d31f  [event]
+  Austin Hubbard vs Alexander Hernandez  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696197
+
+fight_id: ed5b6681ab4e83e5  [event]
+  César Almeida vs Ihor Potieria  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696197
+
+fight_id: 58dec0a39cdefa3f  [event]
+  Ryan Spann vs Ovince Saint Preux  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696164
+
+fight_id: 58e5fc1914c4e641  [event]
+  Carla Esparza vs Tecia Pennington  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696164
+
+fight_id: 84b3577229880760  [event]
+  Court McGee vs Tim Means  @ UFC 307: Pereira vs. Rountree Jr.
+  https://ufcfightpass.com/video/696164
+
+fight_id: ea4ff1d77928b029  [event]
+  Junior Tafa vs Valter Walker  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677415
+
+fight_id: 43ebfc8914a39061  [event]
+  Josh Culibao vs Ricardo Ramos  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677415
+
+fight_id: b9d5c77ae7a8109b  [event]
+  Casey O'Neill vs Luana Santos  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677415
+
+fight_id: bfff6cf22c1c569c  [event]
+  Jack Jenkins vs Herbert Burns  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677415
+
+fight_id: ce75f5ecbc0d3dfd  [event]
+  Tom Nolan vs Alex Reyes  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677383
+
+fight_id: ea824ac4b8ed8a35  [event]
+  Song Kenan vs Ricky Glenn  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677383
+
+fight_id: 075a102456080ab2  [event]
+  Stewart Nicoll vs Jesus Aguilar  @ UFC 305: Du Plessis vs. Adesanya
+  https://ufcfightpass.com/video/677383
+
+fight_id: 45e6a9b56ee3a9d1  [event]
+  Nathaniel Wood vs Daniel Pineda  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671737
+
+fight_id: 678eda89a096dde8  [event]
+  Molly McCann vs Bruna Brasil  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671737
+
+fight_id: 9d8c32c60df0e287  [event]
+  Jake Hadley vs Caolan Loughran  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671737
+
+fight_id: 026bb9fd1b3f239d  [event]
+  MODESTAS BUKAUSKAS vs MARCIN PRACHNIO  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671737
+
+fight_id: 16b0a16ab2e20fdb  [event]
+  OBAN ELLIOTT vs PRESTON PARSONS  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671699
+
+fight_id: d6e240c47ba6034d  [event]
+  Muhammad Mokaev vs Manel Kape  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671699
+
+fight_id: 3183dfe66fcdd25f  [event]
+  SAM PATTERSON vs KIEFER CROSBIE  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671699
+
+fight_id: a5558e8fec59a687  [event]
+  Mick Parkin vs Lukasz Brzeski  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671699
+
+fight_id: dff2ef8fdde8c502  [event]
+  SHAUNA BANNON vs Alice Ardelean  @ UFC 304: Edwards vs. Muhammad 2
+  https://ufcfightpass.com/video/671699
+
+fight_id: bca5d01f8775f852  [event]
+  ALEX PEREIRA vs JIRI PROCHAZKA  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/718478
+
+fight_id: bf878c083a6b30ad  [event]
+  ANTHONY SMITH vs ROMAN DOLIDZE  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/718478
+
+fight_id: a571c622ab89b3d9  [event]
+  MAYRA BUENO SILVA vs MACY CHIASSON  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/718478
+
+fight_id: fbf77262d8da342b  [event]
+  IAN MACHADO GARRY vs MICHAEL PAGE  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/718478
+
+fight_id: daa6b47be304ec86  [event]
+  JOE PYFER vs MARC-ANDRE BARRIAULT  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655106
+
+fight_id: 08489fdfb56ee19c  [event]
+  CUB SWANSON vs ANDRE FILI  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655106
+
+fight_id: 2b7883b304b3df1c  [event]
+  CHARLES JOURDAIN vs JEAN SILVA  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655106
+
+fight_id: 5f8a92f10e5451ce  [event]
+  PAYTON TALBOTT vs YANIS GHEMMOURI  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655106
+
+fight_id: 2517029ff9c1a1a2  [event]
+  MICHELLE WATERSON-GOMEZ vs GILLIAN ROBERTSON  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655059
+
+fight_id: 3bbc222130d9dac7  [event]
+  ANDREI ARLOVSKI vs MARTIN BUDAY  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655059
+
+fight_id: 7856621db043423d  [event]
+  REI TSURUYA vs CARLOS HERNANDEZ  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655059
+
+fight_id: bbe3d8a37a276511  [event]
+  RICKY SIMON vs VINICIUS OLIVEIRA  @ UFC 303: Pereira vs. Prochazka 2
+  https://ufcfightpass.com/video/655059
+
+fight_id: ee24be90a01f552e  [event]
+  CESAR ALMEIDA vs ROMAN KOPYLOV  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645221
+
+fight_id: cf306c4714530f31  [event]
+  GRANT DAWSON vs JOE SOLECKI  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645221
+
+fight_id: b7575b0ec9f81741  [event]
+  PHIL ROWE vs JAKE MATTHEWS  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645221
+
+fight_id: 7d9bb6fda0ea1ee0  [event]
+  MICKEY GALL vs BASSIL HAFEZ  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645168
+
+fight_id: 2554b31a07f34e1a  [event]
+  AILIN PEREZ vs JOSELYNE EDWARDS  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645168
+
+fight_id: f1d3eec12662d8d7  [event]
+  MITCH RAPOSO vs ANDRE LIMA  @ UFC 302: Makhachev vs. Poirier
+  https://ufcfightpass.com/video/645168
+
+fight_id: c456b1950208e0b2  [event]
+  Jack Shore vs Joanderson Brito  @ UFC 301: Pantoja vs. Erceg
+  https://ufcfightpass.com/video/619412
+
+fight_id: c84a29f426f1aab7  [event]
+  Karolina Kowalkiewicz vs Iasmin Lucindo  @ UFC 301: Pantoja vs. Erceg
+  https://ufcfightpass.com/video/619412
+
+fight_id: 8a121f9c48f3773c  [event]
+  Elves Brener vs Myktybek Orolbai  @ UFC 301: Pantoja vs. Erceg
+  https://ufcfightpass.com/video/619412
+
+fight_id: eda1e8c285a0a788  [event]
+  JIRI PROCHAZKA vs ALEKSANDAR RAKIC  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621683
+
+fight_id: d95f21817a56eb05  [event]
+  CALVIN KATTAR vs ALJAMAIN STERLING  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621683
+
+fight_id: b1ac165326d8f29e  [event]
+  HOLLY HOLM vs KAYLA HARRISON  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621683
+
+fight_id: 538ca98010ed00ec  [event]
+  SODIQ YUSUFF vs DIEGO LOPES  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621683
+
+fight_id: 18824fa5c15c212f  [event]
+  Jalin Turner vs Renato Moicano  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621817
+
+fight_id: 603afedc31d95999  [event]
+  Jéssica Andrade vs Marina Rodriguez  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621817
+
+fight_id: efdad54c8550e6e0  [event]
+  BOBBY GREEN vs Jim Miller  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621817
+
+fight_id: 3ab0d8b344d2ebea  [event]
+  Deiveson Figueiredo vs Cody Garbrandt  @ UFC 300: Pereira vs. Hill
+  https://ufcfightpass.com/video/621817
+
+fight_id: 0133019a4f1055ee  [event]
+  Curtis Blaydes vs Jailton Almeida  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604965
+
+fight_id: 33658a3ca932d15d  [event]
+  Katlyn Cerminara vs Maycee Barber  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604965
+
+fight_id: 8baff440b82afd2b  [event]
+  Mateusz Gamrot vs Rafael dos Anjos  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604965
+
+fight_id: ebb758b49e82d0ed  [event]
+  Pedro Munhoz vs Kyler Phillips  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604965
+
+fight_id: 7bc7af11050e861b  [event]
+  Ion Cutelaba vs Philipe Lins  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604970
+
+fight_id: f0a9dfbb6f6ac852  [event]
+  Michel Pereira vs Michal Oleksiejczuk  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604970
+
+fight_id: cbdf29f36b343f6f  [event]
+  Robelis Despaigne vs Josh Parisian  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604970
+
+fight_id: 3d3dde60e3d59c1c  [event]
+  CJ Vergara vs Assu Almabayev  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604970
+
+fight_id: 3677ce6c1ee06a83  [event]
+  Joanne Wood vs Maryna Moroz  @ UFC 299: O'Malley vs. Vera 2
+  https://ufcfightpass.com/video/604970
+
+fight_id: 2aeb3ec2d8c05dc8  [event]
+  AMANDA LEMOS vs Mackenzie Dern  @ UFC 298: Volkanovski vs. Topuria
+  https://ufcfightpass.com/video/595680
+
+fight_id: 1456a3f96ac7e35b  [event]
+  MARCOS ROGERIO DE LIMA vs JUNIOR TAFA  @ UFC 298: Volkanovski vs. Topuria
+  https://ufcfightpass.com/video/595680
+
+fight_id: e92fb5c609e20b49  [event]
+  RINYA NAKAMURA vs CARLOS VERA  @ UFC 298: Volkanovski vs. Topuria
+  https://ufcfightpass.com/video/595680
+
+fight_id: aeb3e4d9710207a4  [event]
+  Zhang Mingyang vs Brendson Ribeiro  @ UFC 298: Volkanovski vs. Topuria
+  https://ufcfightpass.com/video/595680
+
+fight_id: 670e4754d8d3d172  [event]
+  Brad Katona vs Garrett Armfield  @ UFC 297: Strickland vs. Du Plessis
+  https://ufcfightpass.com/video/573897
+
+fight_id: 331ddc1141e934d1  [event]
+  Charles Jourdain vs Sean Woodson  @ UFC 297: Strickland vs. Du Plessis
+  https://ufcfightpass.com/video/573897
+
+fight_id: 43d90683078fcee5  [event]
+  Serhiy Sidey vs Ramon Taveras  @ UFC 297: Strickland vs. Du Plessis
+  https://ufcfightpass.com/video/573897
+
+fight_id: dff2685afd98ed9e  [event]
+  GILLIAN ROBERTSON vs POLYANA VIANA  @ UFC 297: Strickland vs. Du Plessis
+  https://ufcfightpass.com/video/573897
+
+fight_id: c797b58d85c840a4  [event]
+  Grant Dawson vs Manuel Torres  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893886
+
+fight_id: b3d2ac2244e4f791  [event]
+  Terrance McKinney vs Chris Duncan  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893886
+
+fight_id: 2417cc7bc1eea75b  [event]
+  Maycee Barber vs Karine Silva  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893886
+
+fight_id: 10a57b983e59f727  [event]
+  Nazim Sadykhov vs Farès Ziam  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893886
+
+fight_id: 3c683da1924b6c44  [event]
+  Marvin Vettori vs Brunno Ferreira  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893842
+
+fight_id: 7af407397532f7cf  [event]
+  Edson Barboza vs Jalin Turner  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893842
+
+fight_id: ea660db65bfa998f  [event]
+  Iwo Baraniewski vs Ibo Aslan  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893842
+
+fight_id: 964ea1777695851b  [event]
+  Mansur Abdul-Malik vs Antonio Trocoli  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893842
+
+fight_id: 40fa4f8b4b93884e  [event]
+  Muhammad Naimov vs Mairon Santos  @ UFC 323: Dvalishvili vs. Yan 2
+  https://ufcfightpass.com/video/893842
+
+fight_id: cb902d73389ed34b  [event]
+  Nasrat Haqparast vs Quillan Salkilld  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: 0230a9dd2739add4  [event]
+  Ikram Aliskerov vs JunYong Park  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: e9c034cec33b3479  [event]
+  Ludovit Klein vs Mateusz Rębecki  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: f2c2a49fed32bd75  [event]
+  Valter Walker vs Louie Sutherland  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: bd7394f07247d9ca  [event]
+  Nathaniel Wood vs Jose Delgado  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: 3fdb4c4b39218cf4  [event]
+  Hamdy Abdelwahab vs Chris Barnett  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: 22dd728012944f0a  [event]
+  Azat Maksum vs Mitch Raposo  @ UFC 321: Aspinall vs. Gane
+  https://ufcfightpass.com/video/874679
+
+fight_id: 9418ebb3db2a4bae  [event]
+  Ateba Gautier vs Tre'ston Vines  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866737
+
+fight_id: 1c7cc3a22ab7d907  [event]
+  Edmen Shahbazyan vs Andre Muniz  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866737
+
+fight_id: e53fd165a3bc1f8e  [event]
+  Chris Gutierrez vs Farid Basharat  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866737
+
+fight_id: 7b34aa1eb09b8301  [event]
+  Daniel Santos vs Yoo Joo-sang  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866737
+
+fight_id: 8353b491afa7bc32  [event]
+  Macy Chiasson vs Yana Santos  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866696
+
+fight_id: a951090fb402fd20  [event]
+  Punahele Soriano vs Nikolay Veretennikov  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866696
+
+fight_id: b98bc1ecb94ef4a5  [event]
+  Ramiz Brahimaj vs Austin Vanderford  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866696
+
+fight_id: 98883348ddb3be33  [event]
+  Veronica Hardy vs Brogan Walker  @ UFC 320: Ankalaev vs. Pereira 2
+  https://ufcfightpass.com/video/866696
+
+fight_id: 5efd13a12be06706  [event]
+  Baisangur Susurkaev vs Eric Nolan  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844934
+
+fight_id: 5b880d10b0ed7acc  [event]
+  Gerald Meerschaert vs Michal Oleksiejczuk  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844934
+
+fight_id: a2eafd9e1d5031b1  [event]
+  Jessica Andrade vs Loopy Godinez  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844934
+
+fight_id: 1d8dc0fb5d47357f  [event]
+  Chase Hooper vs Alexander Hernandez  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844934
+
+fight_id: bc63f1b2e52f603e  [event]
+  Edson Barboza vs Drakkar Klose  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844934
+
+fight_id: 88020d22cf905792  [event]
+  Karine Silva vs Dione Barbosa  @ UFC 319: Du Plessis vs. Chimaev
+  https://ufcfightpass.com/video/844871
+
+fight_id: d2cb92fdf6a497e9  [event]
+  Kyler Phillips vs Vinicius Oliveira  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832942
+
+fight_id: 8e1feda9141602f1  [event]
+  Marvin Vettori vs Brendan Allen  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832942
+
+fight_id: df2ed8b509fbdbdc  [event]
+  Francisco Prado vs Nikolay Veretennikov  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832942
+
+fight_id: 72e477b41f44e358  [event]
+  Ateba Gautier vs Robert Valentin  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832942
+
+fight_id: 37bc72d5d211b189  [event]
+  Adam Fugitt vs Islam Dulatov  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832869
+
+fight_id: 798652dbea086910  [event]
+  Jimmy Crute vs Marcin Prachnio  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832869
+
+fight_id: 182ee320edb1b5ed  [event]
+  Ryan Spann vs Lukasz Brzeski  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832869
+
+fight_id: 74099d470e8d2765  [event]
+  Brunno Ferreira vs Jackson Mcvey  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832869
+
+fight_id: a602c68147b752b2  [event]
+  Carli Judice vs Nicolle Caliari  @ UFC 318: Holloway vs. Poirier 3
+  https://ufcfightpass.com/video/832869
+
+fight_id: 958522de54ccc536  [event]
+  Jack Hermansson vs Gregory Rodrigues  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821243
+
+fight_id: 2f523b757f7f33a2  [event]
+  Hyder Amil vs Jose Miguel Delgado  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821243
+
+fight_id: 815ff62ca8e217be  [event]
+  Viviane Araujo vs Tracy Cortez  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821243
+
+fight_id: d7be78c400e7e0f9  [event]
+  Terrance Mckinney vs Viacheslav Borshchev  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821243
+
+fight_id: 9bff9fe298e63357  [event]
+  Niko Price vs Jacobe Smith  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821154
+
+fight_id: 043172689e415438  [event]
+  Jhonota Diniz vs Alvin Hines  @ UFC 317: Topuria vs. Oliveira
+  https://ufcfightpass.com/video/821154
+
+fight_id: b6a87389bdc36a00  [event]
+  Bruno Silva vs Joshua Van  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810571
+
+fight_id: 01100a90b584215d  [event]
+  Azamat Murzakanov vs Brendson Ribeiro  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810571
+
+fight_id: f0488a4486a64af0  [event]
+  Khaos Williams vs Andreas Gustafsson  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810571
+
+fight_id: d078e9046aa86307  [event]
+  Ariane Da Silva vs Wang Cong  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810527
+
+fight_id: 9f4a0de31375ba04  [event]
+  Jeka Saragih vs Joo Sang Yoo  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810527
+
+fight_id: 2e4064e0e6d4d92e  [event]
+  Quillan Salkilld vs Yanal Ashmouz  @ UFC 316: Dvalishvili vs. O'Malley 2
+  https://ufcfightpass.com/video/810527
+
+fight_id: 2521234a4bf7c615  [event]
+  Mike Malott vs Charles Radtke  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798598
+
+fight_id: 4db2d86ebe8c8abd  [event]
+  Jessica Andrade vs Jasmine Jasudavicius  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798598
+
+fight_id: c812457a810dde39  [event]
+  Modestas Bukauskas vs Ion Cutelaba  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798598
+
+fight_id: 99aa1f28e22bb6dd  [event]
+  Navajo Stirling vs Ivan Erslan  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798598
+
+fight_id: 6ecfa439ef900bcc  [event]
+  Marc-Andre Barriault vs Bruno Silva  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798465
+
+fight_id: 0e0a4282cd6c86d7  [event]
+  Daniel Santos vs Jeongyeong Lee  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798465
+
+fight_id: c20bd12ae7f04eff  [event]
+  Brad Katona vs Bekzat Almakhan  @ UFC 315: Muhammad vs. Della Maddalena
+  https://ufcfightpass.com/video/798465
+
+fight_id: fc43d60cbd6b0e6a  [event]
+  Dan Ige vs Sean Woodson  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786296
+
+fight_id: 0eccebee160137b1  [event]
+  Yan Xiaonan vs Virna Jandiroba  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786296
+
+fight_id: 11eb27a1ac74d225  [event]
+  Jim Miller vs Chase Hooper  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786296
+
+fight_id: 08e7a39eb7482ebf  [event]
+  Darren Elkins vs Julian Erosa  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786296
+
+fight_id: 4bbda6c1f6cf9d4e  [event]
+  Sedriques Dumas vs Michal Oleksiejczuk  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786226
+
+fight_id: fd98843926965cbd  [event]
+  Sumudaerji vs Mitch Raposo  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786226
+
+fight_id: b87d6f71d901355b  [event]
+  Tresean Gore vs Marco Tulio  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786226
+
+fight_id: 0e71e69359db4d1e  [event]
+  Nora Cornolle vs Hailey Cowan  @ UFC 314: Volkanovski vs. Lopes
+  https://ufcfightpass.com/video/786226
+
+fight_id: af3e43049bc86fe9  [event]
+  Joshua Van vs Rei Tsuruya  @ UFC 313: Pereira vs. Ankalaev
+  https://ufcfightpass.com/video/769524
+
+fight_id: e61cb905f6152183  [event]
+  Brunno Ferreira vs Armen Petrosyan  @ UFC 313: Pereira vs. Ankalaev
+  https://ufcfightpass.com/video/769524
+
+fight_id: cab4937435d081d0  [event]
+  Alex Morono vs Carlos Leal  @ UFC 313: Pereira vs. Ankalaev
+  https://ufcfightpass.com/video/769524
+
+fight_id: 19fe7177254802d1  [event]
+  Mairon Santos vs Francis Marshall  @ UFC 313: Pereira vs. Ankalaev
+  https://ufcfightpass.com/video/769489
+
+fight_id: 96c2f85b46e98e91  [event]
+  Djorden Santos vs Ozzy Diaz  @ UFC 313: Pereira vs. Ankalaev
+  https://ufcfightpass.com/video/769489
+
+fight_id: c35a53be30bfd066  [event]
+  Jack Jenkins vs Gabriel Santos  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757380
+
+fight_id: 64641156360b1b81  [event]
+  Tom Nolan vs Viacheslav Borshchev  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757380
+
+fight_id: 946cae1beed2baec  [event]
+  Wang Cong vs Bruna Brasil  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757380
+
+fight_id: c7fadbdfdc14c282  [event]
+  Colby Thicknesse vs Aleksandre Topuria  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757380
+
+fight_id: 8bc8bb0021337de7  [event]
+  Jonathan Micallef vs Kevin Jousset  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757342
+
+fight_id: 4218d1d1ce6d322c  [event]
+  Quillan Salkilld vs Anshul Jubli  @ UFC 312: Du Plessis vs. Strickland 2
+  https://ufcfightpass.com/video/757342
+
+fight_id: d14f98b24691d082  [event]
+  Payton Talbott vs Raoni Barcelos  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743536
+
+fight_id: 938081fae11dcbbf  [event]
+  Zachary Reese vs Azamat Bekoev  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743536
+
+fight_id: a6db8eb1fb3eebf2  [event]
+  Bogdan Guskov vs Billy Elekana  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743536
+
+fight_id: aa3fca085d476636  [event]
+  Grant Dawson vs Diego Ferreira  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743536
+
+fight_id: 340fcdcabc49f142  [event]
+  Karol Rosa vs Ailin Perez  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743503
+
+fight_id: e5e3d396a9b1c5ae  [event]
+  RINYA NAKAMURA vs Muin Gafurov  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743503
+
+fight_id: 95ba27bea09cd84e  [event]
+  Ricky Turcios vs Benardo Sopaj  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743503
+
+fight_id: e294a1e5723011db  [event]
+  Tagir Ulanbekov vs Clayton Carpenter  @ UFC 311: Makhachev vs. Moicano
+  https://ufcfightpass.com/video/743503
+
+fight_id: abfb3ed6dcb0e1f0  [event]
+  Josh Hokit vs Denzel Freeman  @ UFC 324: Gaethje vs. Pimblett
+  https://ufcfightpass.com/video/910625
+
+fight_id: 210fc45074fba464  [event]
+  Adam Fugitt vs Ty Miller  @ UFC 324: Gaethje vs. Pimblett
+  https://ufcfightpass.com/video/910625
+
+fight_id: 4c1e7e1765a5438a  [event]
+  Kaan Ofli vs Yi Zha  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/913971
+
+fight_id: ad14c502c9c5a7e9  [event]
+  Kim Sang-wook vs Dom Mar Fan  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/913971
+
+fight_id: 780bae82bdfc7112  [event]
+  Keiichiro Nakamura vs Sebastian Szalay  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/913971
+
+fight_id: 5c73e0013b859664  [event]
+  Sulangrangbo vs Lawrence Lui  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/913971
+
+fight_id: d94f1b32a81e3fa1  [event]
+  Junior Tafa vs Billy Elekana  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/914015
+
+fight_id: 47362cae6ba0e077  [event]
+  Cam Rowston vs Cody Brundage  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/914015
+
+fight_id: 0047f8aadca1936f  [event]
+  Jacob Malkoun vs Torrez Finney  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/914015
+
+fight_id: 78912b78aa946375  [event]
+  Jonathan Micallef vs Oban Elliott  @ UFC 325: Volkanovski vs. Lopes 2
+  https://ufcfightpass.com/video/914015
+
+fight_id: a22fd3735819d858  [event]
+  Sumudaerji vs Jesus Aguilar  @ UFC 326: Holloway vs. Oliveira 2
+  https://ufcfightpass.com/video/929943
+
+fight_id: cc03e698c4b7da52  [event]
+  Rafael Tobias vs Diyar Nurgozhay  @ UFC 326: Holloway vs. Oliveira 2
+  https://ufcfightpass.com/video/929943
+
+fight_id: a5abdc461cb1538e  [event]
+  Luke Fernandez vs Rodolfo Bellato  @ UFC 326: Holloway vs. Oliveira 2
+  https://ufcfightpass.com/video/929943
+
+fight_id: 20868a67bea63129  [event]
+  Kelvin Gastelum vs Vicente Luque  @ UFC 327: Prochazka vs. Ulberg
+  https://ufcfightpass.com/video/944254
+
+fight_id: 5b49c3d36907c6df  [event]
+  Charles Radtke vs Francisco Prado  @ UFC 327: Prochazka vs. Ulberg
+  https://ufcfightpass.com/video/944254
+
+fight_id: 9d35723a53749931  [event]
+  Roman Kopylov vs Marco Tulio  @ UFC 328: Chimaev vs. Strickland
+  https://ufcfightpass.com/video/956347
+
+fight_id: 303018d7459323b4  [event]
+  Pat Sabatini vs William Gomis  @ UFC 328: Chimaev vs. Strickland
+  https://ufcfightpass.com/video/956347
+
+fight_id: 1f5d0b106385b2ac  [event]
+  Baisangur Susurkaev vs Djorden Santos  @ UFC 328: Chimaev vs. Strickland
+  https://ufcfightpass.com/video/956347
+
+fight_id: e92d89cb2d69235e  [event]
+  Clayton Carpenter vs Jose Ochoa  @ UFC 328: Chimaev vs. Strickland
+  https://ufcfightpass.com/video/956347
+
+
+UNMATCHED EPISODES (40)
+----------------------------------------------------------------------
+  vod=30323  'UFC 1: The Beginning'
+  vod=31560  'UFC: The Ultimate Ultimate'
+  vod=32069  'UFC: The Ultimate Ultimate 2'
+  vod=31104  'UFC Japan: Ultimate Japan'
+  vod=30855  'UFC Brazil: Ultimate Brazil'
+  vod=348916  'TUF 1 Finale: TUF 1 Finale'
+  vod=349916  'TUF 4: The Comeback Finale'
+  vod=31562  'TUF 6 Finale: TUF 6 Finale'
+  vod=32136  'UFC Live 2: Jones vs Matyushenko'
+  vod=29314  'UFC Live 6: Cruz vs Johnson'
+  vod=29633  'Fight for the Troops: Kennedy vs Natal'
+  vod=36965  'The Ultimate Fighter Latin America 2 Finale: Magny vs Gastelum'
+  vod=40791  'TUF 23 Finale: Team Joanna vs Team Claudia'
+  vod=56165  'TUF Redemption: Johnson vs Gaethje'
+  vod=253989  'Recargado UFC 257: Poirier vs McGregor'
+  vod=375427  'EUFC Fight Night: Volkov vs Rozenstruik'
+  vod=527560  'Noche UFC: Grasso vs Shevchenko 2'
+  vod=521127  'Noche UFC: Grasso vs Shevchenko 2 Prelims'
+  vod=463244  'UFC Vegas 70 Prelims'
+  vod=687502  'Noche UFC 306: Prelims'
+  vod=687435  'Noche UFC 306: Fight Pass Prelims'
+  vod=598520  'UFC México: Moreno vs Royval 2 Prelims'
+  vod=884734  'VeChain UFC 322: Della Maddalena vs Makhachev'
+  vod=884654  'VeChain UFC 322: Prelims'
+  vod=884608  'VeChain UFC 322: Fight Pass Prelims'
+  vod=857720  'Noche UFC: Lopes vs Silva'
+  vod=857634  'Noche UFC: Lopes vs Silva Prelims'
+  vod=807998  'UFC Vegas 107'
+  vod=807893  'UFC Vegas 107 Prelims'
+  vod=32429  'PRIDE: Grand Prix 2000 Finals'
+  vod=33328  'PRIDE: Grand Prix 2000 Opening Round'
+  vod=31435  'PRIDE 8'
+  vod=31172  'PRIDE 6'
+  vod=33326  'PRIDE 5'
+  vod=32803  'PRIDE 4'
+  vod=31326  'PRIDE 3'
+  vod=31785  'PRIDE 2'
+  vod=33305  'PRIDE 1'
+  vod=125434  'Strikeforce Grand Prix Heavyweight Tournament: Overeem vs Werdum'
+  vod=33805  'Strikeforce: At The Mansion II'
+
+UNMATCHED SUB-EVENTS (148)
+----------------------------------------------------------------------
+  vod=89811  UFC Fight Night  | Paige VanZant vs Michelle Waterson
+  vod=89811  UFC Fight Night  | Sage Northcutt vs Mickey Gall
+  vod=89811  UFC Fight Night  | Urijah Faber vs Brad Pickett
+  vod=89811  UFC Fight Night  | Alan Jouban vs Mike Perry
+  vod=45780  UFC Fight Night  | Ryan Bader vs Antônio Rogério Nogueira
+  vod=45780  UFC Fight Night  | Thomas Almeida vs Albert Morales
+  vod=45780  UFC Fight Night  | Cláudia Gadelha vs Cortney Casey
+  vod=45780  UFC Fight Night  | Thales Leites vs Krzysztof Jotko
+  vod=45780  UFC Fight Night  | Warlley Alves vs Kamaru Usman
+  vod=45780  UFC Fight Night  | Sérgio Moraes vs Zak Ottow
+  vod=89332  UFC Fight Night  | Demian Maia vs Carlos Condit
+  vod=89332  UFC Fight Night  | Anthony Pettis vs Charles Oliveira
+  vod=89332  UFC Fight Night  | Paige VanZant vs Bec Rawlings
+  vod=89332  UFC Fight Night  | Joe Lauzon vs Jim Miller
+  vod=89339  UFC Fight Night  | Holly Holm vs Valentina Shevchenko
+  vod=89339  UFC Fight Night  | Edson Barboza vs Gilbert Melendez
+  vod=89339  UFC Fight Night  | Francis Ngannou vs Bojan Mihajlović
+  vod=89339  UFC Fight Night  | Felice Herrig vs Kailin Curran
+  vod=59554  UFC Fight Night  | Donald Cerrone vs Darren Till
+  vod=59554  UFC Fight Night  | Karolina Kowalkiewicz vs Jodie Esquibel
+  vod=59554  UFC Fight Night  | Jan Błachowicz vs Devin Clark
+  vod=59554  UFC Fight Night  | Oskar Piechota vs Jonathan Wilson
+  vod=51964  UFC Fight Night  | Demetrious Johnson vs Wilson Reis
+  vod=51964  UFC Fight Night  | Rose Namajunas vs Michelle Waterson
+  vod=51964  UFC Fight Night  | Ronaldo Souza vs Robert Whittaker
+  vod=51964  UFC Fight Night  | Jeremy Stephens vs Renato Moicano
+  vod=89810  UFC Fight Night  | Valentina Shevchenko vs Julianna Peña
+  vod=89810  UFC Fight Night  | Donald Cerrone vs Jorge Masvidal
+  vod=89810  UFC Fight Night  | Andrei Arlovski vs Francis Ngannou
+  vod=89810  UFC Fight Night  | Alex Caceres vs Jason Knight
+  vod=64782  UFC Fight Night  | Kevin Lee vs Al Iaquinta
+  vod=64782  UFC Fight Night  | Edson Barboza vs Dan Hooker
+  vod=64782  UFC Fight Night  | Rob Font vs Sergio Pettis
+  vod=64782  UFC Fight Night  | Jim Miller vs Charles Oliveira
+  vod=65370  UFC Fight Night  | Chan Sung Jung vs Yair Rodriguez
+  vod=65370  UFC Fight Night  | Donald Cerrone vs Mike Perry
+  vod=65370  UFC Fight Night  | Raquel Pennington vs Germaine de Randamie
+  vod=65370  UFC Fight Night  | Beneil Dariush vs Thiago Moises
+  vod=65370  UFC Fight Night  | Maycee Barber vs Hannah Cifers
+  vod=65370  UFC Fight Night  | Mike Trizano vs Luis Pena
+  vod=64391  UFC Fight Night  | Volkan Oezdemir vs Anthony Smith
+  vod=64391  UFC Fight Night  | Michael Johnson vs Artem Lobov
+  vod=64391  UFC Fight Night  | Misha Cirkunov vs Patrick Cummins
+  vod=64391  UFC Fight Night  | Andre Soukamthath vs Jonathan Martinez
+  vod=64391  UFC Fight Night  | Gian Villante vs Ed Herman
+  vod=64391  UFC Fight Night  | Alex Garcia vs Court McGee
+  vod=65494  UFC Fight Night  | Thiago Santos vs Eryk Anders
+  vod=65494  UFC Fight Night  | Alex Oliveira vs Carlo Pedersoli Jr.
+  vod=65494  UFC Fight Night  | Antônio Rogério Nogueira vs Sam Alvey
+  vod=65494  UFC Fight Night  | Andre Ewell vs Renan Barão
+  vod=65494  UFC Fight Night  | Randa Markos vs Marina Rodriguez
+  vod=62537  UFC Fight Night  | Donald Cerrone vs Yancy Medeiros
+  vod=62537  UFC Fight Night  | Derrick Lewis vs Marcin Tybura
+  vod=62537  UFC Fight Night  | James Vick vs Francisco Trinaldo
+  vod=62537  UFC Fight Night  | Thiago Alves vs Curtis Millender
+  vod=62537  UFC Fight Night  | Steven Peterson vs Brandon Davis
+  vod=62537  UFC Fight Night  | Sage Northcutt vs Thibault Gouti
+  vod=206195  UFC Fight Night  | Donald Cerrone vs Justin Gaethje
+  vod=206195  UFC Fight Night  | Glover Teixeira vs Nikita Krylov
+  vod=206195  UFC Fight Night  | Todd Duffee vs Jeff Hughes
+  vod=206195  UFC Fight Night  | Michel Pereira vs Tristan Connelly
+  vod=206195  UFC Fight Night  | Antônio Carlos Júnior vs Uriah Hall
+  vod=206195  UFC Fight Night  | Misha Cirkunov vs Jim Crute
+  vod=206176  UFC 251: Usman vs. Masvidal  | Raulian Paiva vs Zhalgas Zhamagulov
+  vod=206259  UFC Fight Night  | Corey Anderson vs Jan Blachowicz
+  vod=206259  UFC Fight Night  | Diego Sanchez vs Michel Pereira
+  vod=206259  UFC Fight Night  | Montana De La Rosa vs Mara Romero Borella
+  vod=206259  UFC Fight Night  | Brok Weaver vs Kazula Vargas
+  vod=206259  UFC Fight Night  | Rogerio Bontorin vs Ray	Borg
+  vod=206259  UFC Fight Night  | Lando Vannata vs Yancy Medeiros
+  vod=274619  UFC 268: Usman vs. Covington 2  | Melsik Bagdasaryan vs Bruno Souza
+  vod=272008  UFC 267: Blachowicz vs. Teixeira  | Elizeu Zaleski dos Santos vs Benoit Saint-Denis
+  vod=237896  UFC Fight Night  | Julian Erosa vs SEUNGWOO CHOI
+  vod=237896  UFC Fight Night  | Matt Brown vs Dhiego Lima
+  vod=237896  UFC Fight Night  | Aleksei Oleinik vs Serghei Spivac
+  vod=237896  UFC Fight Night  | Wellington Turman vs Bruno Silva
+  vod=237896  UFC Fight Night  | Marlon Vera vs Davey Grant
+  vod=237896  UFC Fight Night  | Chan Sung Jang vs Dan Ige
+  vod=237904  UFC Fight Night  | Aleksa Camur vs NICOLAE NEGUMEREANU
+  vod=237904  UFC Fight Night  | Kanako Murata vs Virna Jandiroba
+  vod=237904  UFC Fight Night  | Khaos Williams vs MATTHEW SEMELSBERGER
+  vod=237904  UFC Fight Night  | Josh Parisian vs Roque Martinez
+  vod=237904  UFC Fight Night  | Joaquim Silva vs Rick Glenn
+  vod=237904  UFC Fight Night  | Casey O'Neill vs Lara Procopio
+  vod=223921  UFC 261: Usman vs. Masvidal 2  | Qileng Aori vs Jeff Molina
+  vod=223921  UFC 261: Usman vs. Masvidal 2  | Rodrigo Vargas vs Zhu Rong
+  vod=212769  UFC 259: Blachowicz vs. Adesanya  | Dominick Cruz vs Casey Kenny
+  vod=212770  UFC 259: Blachowicz vs. Adesanya  | Tim Elliot vs Jordan Espinosa
+  vod=205803  UFC 257: Poirier vs. McGregor  | Khalil Rountree Jr vs Marcin Prachnio
+  vod=397679  UFC 278: Usman vs. Edwards  | Yanan Wu vs Lucie Pudilová
+  vod=397638  UFC 278: Usman vs. Edwards  | Daniel Da Silva vs Victor Altimirano
+  vod=375641  UFC 275: Teixeira vs. Prochazka  | Na Liang vs Silvana Gomez Juarez
+  vod=343004  UFC 272: Covington vs. Masvidal  | Tim Elliot vs Tagir Ulanbekov
+  vod=326129  UFC 271: Adesanya vs. Whittaker 2  | Andrei Arolvski vs Jared Vanderaa
+  vod=545191  UFC 295: Prochazka vs. Pereira  | John Castaneda vs Kang Kyung-ho
+  vod=526132  UFC 293: Adesanya vs. Strickland  | Carlos Ulberg vs Jung Da Un
+  vod=526129  UFC 293: Adesanya vs. Strickland  | Mike Mathetha vs Charlie Radtke
+  vod=509556  UFC 290: Volkanovski vs. Rodriguez  | Jack Della Maddalena vs Josiah Harrell
+  vod=498692  UFC 289: Nunes vs. Aldana  | Aiemann Zahabi vs Qileng Aori
+  vod=486264  UFC 288: Sterling vs. Cejudo  | Rafael Estevam vs ZHALGAS ZHUMAGULOV
+  vod=486264  UFC 288: Sterling vs. Cejudo  | DANIEL SANTOS vs JOHNNY MUNOZ
+  vod=485134  UFC 287: Pereira vs. Adesanya 2  | Karl Williams vs Chase Sherman
+  vod=485139  UFC 287: Pereira vs. Adesanya 2  | Sha Yilan vs Steve Garcia
+  vod=485126  UFC 286: Edwards vs. Usman 3  | Sam Patterson vs Yanal Ashmoz
+  vod=455764  UFC 286: Edwards vs. Usman 3  | Julianna Miller vs Veronica Macedo
+  vod=466378  UFC Fight Night  | Karl Williams vs Lukasz Brzeski
+  vod=466378  UFC Fight Night  | Raphael Assuncao vs Davey Grant
+  vod=466378  UFC Fight Night  | SEDRIQUES DUMAS vs Josh Fremd
+  vod=466378  UFC Fight Night  | Mario Bautista vs Guido Cannetti
+  vod=466378  UFC Fight Night  | Ariane Lipski vs JJ Aldrich
+  vod=466378  UFC Fight Night  | Victor Henry vs Toney Gravely
+  vod=466378  UFC Fight Night  | Tyson Nam vs Bruno Silva
+  vod=466378  UFC Fight Night  | Carlston Harris vs Abubakar Nurmagomedov
+  vod=458587  UFC Fight Night  | Nazim Sadykhov vs Evan Elder
+  vod=458587  UFC Fight Night  | Lina Lansberg vs Mayra Bueno Silva
+  vod=458587  UFC Fight Night  | Jamall Emmers vs Khusein Ashkabov
+  vod=458587  UFC Fight Night  | Ovince Saint Preux vs Philipe Lins
+  vod=458587  UFC Fight Night  | AJ Fletcher vs Themba Gorimbo
+  vod=458587  UFC Fight Night  | Clayton Carpenter vs Juancamilo Ronderos
+  vod=456762  UFC 284: Makhachev vs. Volkanovski  | Tyson Pedro vs Zhang Mingyang
+  vod=456763  UFC 284: Makhachev vs. Volkanovski  | Loma Lookboonme vs Elise Reed
+  vod=456763  UFC 284: Makhachev vs. Volkanovski  | Shane Young vs Blake Bider
+  vod=456763  UFC 284: Makhachev vs. Volkanovski  | Zubaira Tukhugov vs Elves Benner
+  vod=449211  UFC 283: Teixeira vs. Hill  | Mauricio Rua vs Ihor Potieriaf
+  vod=449300  UFC 283: Teixeira vs. Hill  | Josiane Nunes vs Zarah Fairn dos Santos
+  vod=721813  UFC 309: Jones vs. Miocic  | Chris Weidman vs Eryk Anders
+  vod=718478  UFC 303: Pereira vs. Prochazka 2  | BRIAN ORTEGA vs DIEGO LOPES
+  vod=645221  UFC 302: Makhachev vs. Poirier  | Jailton Almeida vs Alexander Romanov
+  vod=619412  UFC 301: Pantoja vs. Erceg  | Jean Silva vs William Gomis
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Dan Argueta vs Miles Johns
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Tim Means vs Andre Fialho
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Jacob Malkoun vs Cody Brundage
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Mohammed Usman vs Jake Collier
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Mizuki Inoue vs Hannah Goldy
+  vod=595683  UFC 298: Volkanovski vs. Topuria  | Tamires Vidal vs Montserrat Rendon
+  vod=874679  UFC 321: Aspinall vs. Gane  | Jaqueline Amorim vs Mizuki Inoue
+  vod=866696  UFC 320: Ankalaev vs. Pereira 2  | Patchy Mix vs Jakub Wikłacz
+  vod=844934  UFC 319: Du Plessis vs. Chimaev  | Bryan Battle vs Nursulton Ruziboev
+  vod=844871  UFC 319: Du Plessis vs. Chimaev  | Alibi Idris vs Joseph Morales
+  vod=810571  UFC 316: Dvalishvili vs. O'Malley 2  | Serghei Spivac vs Waldo Cortes-Acosta
+  vod=810527  UFC 316: Dvalishvili vs. O'Malley 2  | Marquel Medros vs Mark Choinski
+  vod=769524  UFC 313: Pereira vs. Ankalaev  | Curtis Blaydes vs Rizvan Kuniev
+  vod=769489  UFC 313: Pereira vs. Ankalaev  | Chris Gutierrez vs John Castandea
+  vod=757342  UFC 312: Du Plessis vs. Strickland 2  | Zhu Rong vs Kody Steele
+  vod=910625  UFC 324: Gaethje vs. Pimblett  | Michael Johnson vs Alexander Hernandez
+  vod=910625  UFC 324: Gaethje vs. Pimblett  | Ricky Turcios vs Cameron Smotherman
+  vod=913971  UFC 325: Volkanovski vs. Lopes 2  | Aaron Tau vs Namsrai Batbayar
+  vod=944254  UFC 327: Prochazka vs. Ulberg  | Chris Padilla vs Marquel Menderos
+
+UNMATCHED PER-FIGHT VODs (63)
+----------------------------------------------------------------------
+  vod=848041  'Sergei Pavlovich vs Waldo Cortes-Acosta UFC Shanghai'  — no DB fight for this pair
+  vod=844846  'Alibi Idris vs Joseph Morales UFC 319'  — fighter not in DB
+  vod=832987  'Dan Ige vs Patricio Freire UFC 318'  — no DB fight for this pair
+  vod=810687  'Merab Dvalishvili vs Sean O’Malley UFC 316'  — fighter not in DB
+  vod=801800  'Park Hyun-sung vs Carlos Hernandez UFC Vegas 106'  — fighter not in DB
+  vod=782601  'Cortavious Romious vs Lee Chang-ho UFC Vegas 105'  — fighter not in DB
+  vod=776559  'Carlos Ulberg vs Jan Błachowicz UFC London'  — fighter not in DB
+  vod=773123  'Choi Seung-Woo vs Kevin Vallejos UFC Vegas 104'  — fighter not in DB
+  vod=773107  'Waldo Cortes-Acosta vs Ryan Spann UFC Vegas 104'  — no DB fight for this pair
+  vod=757425  'Weili Zhang vs Tatiana Suarez UFC 312'  — no DB fight for this pair
+  vod=757358  'Cong Wang vs Bruna Brasil UFC 312'  — no DB fight for this pair
+  vod=740183  'Nurullo Aliyev vs Joe Solecki UFC Vegas 101'  — no DB fight for this pair
+  vod=724048  'Xiaonan Yan vs Tabatha Ricci UFC Macau'  — no DB fight for this pair
+  vod=724046  'Muslim Salikhov vs Kenan Song UFC Macau'  — no DB fight for this pair
+  vod=724047  'Gabriella Fernandes vs Cong Wang UFC Macau'  — no DB fight for this pair
+  vod=723991  'Su Young You vs Balgyn Jenisuly UFC Macau'  — fighter not in DB
+  vod=723938  'Long Xiao vs Quang Le UFC Macau'  — no DB fight for this pair
+  vod=718787  'Melissa Mullins vs Klaudia Syguła UFC Vegas 100'  — fighter not in DB
+  vod=685033  'Rong Zhu vs Chris Padilla UFC Vegas 97'  — no DB fight for this pair
+  vod=645200  'Jailton Almeida vs Alexander Romanov UFC 302'  — no DB fight for this pair
+  vod=619429  'Michel Pereira vs Ihor Poteria UFC 301'  — fighter not in DB
+  vod=597901  'Gerald Meerschaert vs Bryan Barbarena UFC Vegas 88'  — fighter not in DB
+  vod=588869  'Brandon Moreno vs Brandon Royval UFC México'  — 2 candidates; hint='UFC México'
+  vod=588862  'Yair Rodriguez vs Brian Ortega UFC México'  — 2 candidates; hint='UFC México'
+  vod=588789  'Edgar Chairez vs Daniel Lacerda UFC México'  — 2 candidates; hint='UFC México'
+  vod=579997  'Lee Jeong Yeong vs Blake Bilder UFC Vegas 85'  — fighter not in DB
+  vod=571733  'Andrei Arlovski vs Waldo Cortes-Acosta UFC Vegas 84'  — no DB fight for this pair
+  vod=557972  'Rayanne Amanda vs Talita Alencar UFC Vegas 83'  — fighter not in DB
+  vod=545241  'Matt Frevola vs Benoit Saint-Denis UFC 295'  — fighter not in DB
+  vod=545179  'John Castaneda vs Kang Kyung-ho UFC 295'  — fighter not in DB
+  vod=532649  'Irina Alekseeva vs Melissa Dixon UFC Vegas 81'  — no DB fight for this pair
+  vod=521107  'Edgar Chairez vs Daniel Lacerda Noche UFC'  — 2 candidates; hint='Noche UFC'
+  vod=516488  'Ciryl Gane vs Sergey Spivak UFC Paris'  — fighter not in DB
+  vod=516465  'Benoit Saint-Denis vs Thiago Moises UFC Paris'  — fighter not in DB
+  vod=513108  'Waldo Cortes-Acosta vs Lukasz Brzeski UFC Singapore'  — no DB fight for this pair
+  vod=513086  'Billy Goff vs Yusaku Kinoshita UFC Singapore'  — no DB fight for this pair
+  vod=508327  'Khalil Rountree Jr vs Chris Daukaus UFC Vegas 78'  — fighter not in DB
+  vod=508267  'Jaqueline Amorim vs Montserrat Conejo UFC Vegas 78'  — fighter not in DB
+  vod=503916  'Alex Pereira vs Jan Błachowicz UFC 291'  — fighter not in DB
+  vod=475244  'Kron Garcie vs Charles Jourdain UFC 288'  — fighter not in DB
+  vod=472662  'Marcos Rogério de Lima vs Waldo Cortes-Acosta UFC Vegas 72'  — no DB fight for this pair
+  vod=469561  'Brady Hiesand vs Batgerel Danaa UFC Vegas 71'  — fighter not in DB
+  vod=455806  'Yanal Ashmoz vs Sam Patterson UFC 286'  — fighter not in DB
+  vod=446246  'Jamall Emmers vs Khusein Ashkabov UFC Vegas 69'  — fighter not in DB
+  vod=444001  'Loma Lookboonme vs Elise Reed UFC 284'  — fighter not in DB
+  vod=441909  'Devin Clark vs Jung Da Un UFC Vegas 68'  — fighter not in DB
+  vod=441862  'Park Hyun-sung vs Choi Seung-guk UFC Vegas 68'  — fighter not in DB
+  vod=29817  'Junior Dos Santos vs. Cain Velasquez UFC Fight Night'  — 3 candidates; hint='UFC Fight Night'
+  vod=167859  'Dominick Reyes vs Jan Błachowicz UFC 253'  — fighter not in DB
+  vod=41135  'Rafael Dos Anjos vs Donald Cerrone II UFC Fight Night'  — no DB fight for this pair
+  vod=810687  'Merab Dvalishvili vs Sean O’Malley UFC 316'  — fighter not in DB
+  vod=41937  'TJ Dillashaw vs Renan Barao UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
+  vod=157136  'Deiveson Figueiredo vs Joseph Benavidez UFC Fight Island 2'  — 2 candidates; hint='UFC Fight Island 2'
+  vod=31520  'Demetrious Johnson vs. John Dodson UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
+  vod=31119  'Demetrious Johnson vs. Joseph Benavidez UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
+  vod=757425  'Weili Zhang vs Tatiana Suarez UFC 312'  — no DB fight for this pair
+  vod=218717  'Weili Zhang vs Rose Namajunas UFC 261'  — no DB fight for this pair
+  vod=102662  'Jessica Andrade vs Weili Zhang UFC Fight Night'  — no DB fight for this pair
+  vod=32394  'Mike Brown vs. Urijah Faber WEC 41'  — no DB fight for this pair
+  vod=30919  'Fedor Emelianenko vs. Mark Coleman II PRIDE 32 The Real Deal'  — no DB fight for this pair
+  vod=32360  'Nobuhiko Takada vs Mark Colemann PRIDE 5'  — fighter not in DB
+  vod=34059  'Takanori Gomi vs. Tatsuya Kawajira PRIDE: Bushido 9'  — fighter not in DB
+  vod=59009  'Dong Hyun Kim vs Takanori Gomi UFC Fight Night'  — no DB fight for this pair

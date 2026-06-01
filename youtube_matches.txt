@@ -1,7 +1,7 @@
 YOUTUBE PFL MATCH RESULTS
 Fights  — matched: 702  unmatched: 152
-Events  — matched: 3  unmatched: 12
-Geo-blocked in US (not stored): 0 fights, 7 events
+Events  — matched: 3  unmatched: 13
+Geo-blocked in US (not stored): 0 fights, 8 events
 ======================================================================
 
 MATCHED FIGHTS (702)
@@ -3690,8 +3690,9 @@ ambiguous (2 fights): Ray Cooper III vs Magomed Magomedkerimov | Full Fight | Ra
 no fight for Louis Taylor vs Abus Magomedov | Full Fight | Louis Taylor vs Abus Magomedov (Middleweight Title Bout) | 2018 PFL Championship | https://www.youtube.com/watch?v=FXYDghtKsMc
 ambiguous (2 fights): Lance Palmer vs Steven Siler | Full Fight | Lance Palmer vs Steven Siler (Featherweight Title Bout) | 2018 PFL Championship | https://www.youtube.com/watch?v=W_urAuhzHL0
 
-UNMATCHED FULL EVENTS (12)
+UNMATCHED FULL EVENTS (13)
 ----------------------------------------------------------------------
+unrecognized title format          | 2026 MENA: PFL Dubai | Full Event | https://www.youtube.com/watch?v=J2nExjQx5Qg
 unrecognized title format          | When Dakota Ditcheva And Kayla Harrison Fought On The Same Card! 🔥 | Full Event | PFL 9 2022 | https://www.youtube.com/watch?v=NPO4odBWgaE
 unrecognized title format          | This One's Personal! | Usman Nurmagomedov vs Paul Hughes! | Full Event | PFL Champions Series 1 | https://www.youtube.com/watch?v=b4OTlLBQCqw
 unrecognized title format          | 2025 MENA: Finals | Full Event | https://www.youtube.com/watch?v=WpCsWNSZ-9U
@@ -3705,8 +3706,9 @@ unrecognized title format          | Andrei Arlovski, Anthony Johnson, Marlon Mo
 unrecognized title format          | Brendan Loughnane v Movlid Khaybulaev | PFL 9 | Full Event | https://www.youtube.com/watch?v=SIhvtAgnoHM
 unrecognized title format          | PFL: Fight Night Full Event | https://www.youtube.com/watch?v=m1SaGdwqLhM
 
-GEO-BLOCKED IN US — NOT STORED (7)
+GEO-BLOCKED IN US — NOT STORED (8)
 ----------------------------------------------------------------------
+event | PFL Brussels: Habirora vs. Henderson | https://www.youtube.com/watch?v=CKYBkzZTtm8
 event | PFL Sioux Falls: Storley vs. Zendeli | https://www.youtube.com/watch?v=Qeme0iq590Q
 event | PFL Belfast: Kelly vs. Wilson | https://www.youtube.com/watch?v=SbCXx8A8Bj0
 event | PFL Chicago: Pettis vs. McKee | https://www.youtube.com/watch?v=W3Nt23yEImo

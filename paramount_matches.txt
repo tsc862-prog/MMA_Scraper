@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-05-16 21:17
-Fight clips matched: 1231  |  Event links matched: 187  |  Unmatched: 93
+Generated: 2026-05-31 17:13
+Fight clips matched: 1280  |  Event links matched: 187  |  Unmatched: 118
 ================================================================================
 
-MATCHED FIGHTS (1231)
+MATCHED FIGHTS (1280)
 --------------------------------------------------------------------------------
 fight_id:  ccdd6c7577927a8c
 fighters:  Anderson Silva vs. Chris Leben
@@ -109,11 +109,6 @@ fight_id:  4dd561df1ca58ab8
 fighters:  Frank Mir vs. Daniel Cormier
 event:     UFC on FOX: Henderson vs Melendez (April 20, 2013)
 url:       https://www.paramountplus.com/shows/video/pUOXpcXW_XCLicIzSbAyGubum8MI_huW/
-
-fight_id:  5d839e4eda09d6e4
-fighters:  Conor McGregor vs. Max Holloway
-event:     UFC Fight Night: Shogun vs Sonnen (August 17, 2013)
-url:       https://www.paramountplus.com/shows/video/fFEoi9GV07_bxa3mELUIl4OexhNMaO9J/
 
 fight_id:  56ce29bdb1fe9abf
 fighters:  Nate Diaz vs. Josh Thomson
@@ -500,6 +495,11 @@ fighters:  Mackenzie Dern vs. Marina Rodriguez
 event:     UFC Fight Night: Dern vs. Rodriguez (October 09, 2021)
 url:       https://www.paramountplus.com/shows/video/01MTFXEEZn1AbRMBTko0kYEgFwzh55_E/
 
+fight_id:  ce151e053721fe69
+fighters:  Kevin Holland vs. Kyle Daukaus
+event:     UFC Fight Night: Santos vs. Walker (October 02, 2021)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQG84DP3E4Q9QYDY3H1R8XSW/
+
 fight_id:  0b47788da6de735e
 fighters:  Alexandre Pantoja vs. Brandon Royval
 event:     UFC Fight Night: Cannonier vs. Gastelum (August 21, 2021)
@@ -560,10 +560,20 @@ fighters:  Jack Della Maddalena vs. Danny Roberts
 event:     UFC Fight Night: Nzechukwu vs. Cutelaba (November 19, 2022)
 url:       https://www.paramountplus.com/shows/video/QHgkoMYtO1VaHCAtZIQSOlmDpEAGlMXB/
 
+fight_id:  86dff1593d8b9a1f
+fighters:  Chase Hooper vs. Steve Garcia
+event:     UFC Fight Night: Kattar vs. Allen (October 29, 2022)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQG84M0KEDWR9GH78G4BS6W2/
+
 fight_id:  d33814971932422a
 fighters:  Mackenzie Dern vs. Yan Xiaonan
 event:     UFC Fight Night: Dern vs. Yan (October 01, 2022)
 url:       https://www.paramountplus.com/shows/video/m4hObKJjO0ABlMFJdF4bF54U4ht34Jt8/
+
+fight_id:  810c9da07970c4a6
+fighters:  Ciryl Gane vs. Tai Tuivasa
+event:     UFC Fight Night: Gane vs. Tuivasa (September 03, 2022)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQG84J3ZE69VFNP5FHNTHEMF/
 
 fight_id:  d0fb381cacbb0446
 fighters:  Curtis Blaydes vs. Tom Aspinall
@@ -614,6 +624,11 @@ fight_id:  b395c89e19a3fec4
 fighters:  Alexa Grasso vs. Valentina Shevchenko
 event:     UFC Fight Night: Grasso vs. Shevchenko 2 (September 16, 2023)
 url:       https://www.paramountplus.com/shows/video/3j7eMNafgK0yZqEg_i___nsM0Ro9sdWu/
+
+fight_id:  ea006bae605e2a6b
+fighters:  Ciryl Gane vs. Serghei Spivac
+event:     UFC Fight Night: Gane vs. Spivac (September 02, 2023)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQG84FZQE42BNZ0G0X1ACGGX/
 
 fight_id:  96704d7ba3a452d9
 fighters:  Max Holloway vs. Chan Sung Jung
@@ -695,6 +710,11 @@ fighters:  Mackenzie Dern vs. Loopy Godinez
 event:     UFC Fight Night: Sandhagen vs. Nurmagomedov (August 03, 2024)
 url:       https://www.paramountplus.com/shows/video/KFOGpSeXkcY8wEFDfFdlprY2Awou9j0J/
 
+fight_id:  120ec60ad18cf6c5
+fighters:  Steve Garcia vs. SeungWoo Choi
+event:     UFC Fight Night: Lemos vs. Jandiroba (July 20, 2024)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQG84NPZEZSVTSQHHZ4V7H1M/
+
 fight_id:  80108a70c4afa6c2
 fighters:  Joshua Van vs. Charles Johnson
 event:     UFC Fight Night: Namajunas vs. Cortez (July 13, 2024)
@@ -739,6 +759,71 @@ fight_id:  f46308108eb9261a
 fighters:  Mackenzie Dern vs. Amanda Ribas
 event:     UFC Fight Night: Dern vs. Ribas 2 (January 11, 2025)
 url:       https://www.paramountplus.com/shows/video/zv2AFWU36WbJBvSUPTjFqzcEjrKzEUaE/
+
+fight_id:  423f32dd018ac218
+fighters:  Song Yadong vs. Deiveson Figueiredo
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSYNE408AP0SGQB9P3VX/
+
+fight_id:  a23d84f15207e459
+fighters:  Zhang Mingyang vs. Alonzo Menifield
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRG8ENWS4MGFXEFD14R5/
+
+fight_id:  f74e4afdf6ae29d1
+fighters:  Sergei Pavlovich vs. Tallison Teixeira
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV9CEFSBDQZE2JFSXVJ1/
+
+fight_id:  00959e29e4a10e26
+fighters:  Kai Asakura vs. Cameron Smotherman
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRJQE5STDRR1K341MPCB/
+
+fight_id:  c1c9dfd0c0952f18
+fighters:  Jake Matthews vs. Carlston Harris
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7Z41E33B1X40PG91XGXB/
+
+fight_id:  7e8749cbf32ef1f8
+fighters:  Alex Perez vs. Sumudaerji
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRFZE8R8HRDCQZXKVZ3A/
+
+fight_id:  f6d09973de0f83e7
+fighters:  Yi Sak Lee vs. Luis Felipe Dias  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSZ3E0TSQVJ84K2297YP/
+
+fight_id:  bc0b3c16246e0d1d
+fighters:  Ding Meng vs. Jose Souza  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRN7EJTAY9335NB4AHKC/
+
+fight_id:  3bc0190fb17ba42f
+fighters:  Aoriqileng vs. Cody Haddon  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRM3EFMV6Q1NC6NW7CMD/
+
+fight_id:  224dce2c0b03e7eb
+fighters:  Rei Tsuruya vs. Luis Gurule  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7XX9EAASQ78JR811CNQX/
+
+fight_id:  3f719885c9916e06
+fighters:  Angela Hill vs. Xiong Jingnan  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV4QEM1BTSBANEE44DXH/
+
+fight_id:  34d5ec676fb5bce3
+fighters:  Zhu Kangjie vs. Rodrigo Vera  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSN1B1HJEBYR145T4NTC54KF/
+
+fight_id:  370ff29489150560
+fighters:  Loma Lookboonmee vs. Jaqueline Amorim  [Prelims]
+event:     UFC Fight Night: Song vs. Figueiredo (May 30, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV6PEVQ8PZ5NMENY9DD0/
 
 fight_id:  e4aa608124896794
 fighters:  Arnold Allen vs. Melquizael Costa
@@ -1240,6 +1325,226 @@ fighters:  Luan Lacerda vs. Hecher Sosa  [Prelims]
 event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KKEYC53SEH09Y07PCPAKKHTR/
 
+fight_id:  244285b7fd0ddece
+fighters:  Piera Rodriguez vs. Sam Hughes  [Prelims]
+event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KKEYDNV6EZA8SVK6C66SJJH2/
+
+fight_id:  f594fc5c2bc6237e
+fighters:  Josh Emmett vs. Kevin Vallejos
+event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KKEYCZFSEAD9EQX15HVDT37W/
+
+fight_id:  3b7b771b9578383d
+fighters:  Amanda Lemos vs. Gillian Robertson
+event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KKEYD0PDEJFBW70XZ7TKD31N/
+
+fight_id:  8bee5192baec71d8
+fighters:  Andre Fili vs. Jose Delgado
+event:     UFC Fight Night: Emmett vs. Vallejos (March 14, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KKF7DM1GEG3TET655G37KF4G/
+
+fight_id:  1330b5c21269fe92
+fighters:  Brandon Moreno vs. Lone'er Kavanagh
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/cBmgXu39s0CM1P3iD0EosdhETsVAY85A/
+
+fight_id:  36d12b31957e94db
+fighters:  Marlon Vera vs. David Martinez
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/d1smtBicS_NJTMCRmi7jlZc800zVBYVA/
+
+fight_id:  81f3d28d30d17378
+fighters:  Daniel Zellhuber vs. King Green
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/aQQLoH6xIxla7DRIsaV90U3Z_gmop1NG/
+
+fight_id:  7df505d8260ba680
+fighters:  Edgar Chairez vs. Felipe Bunes
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/IVPYd6pIUwWARgain_1dSzpBhTcrZAG8/
+
+fight_id:  15068d7b095ca9bd
+fighters:  Imanol Rodriguez vs. Kevin Borjas
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/7x4c9_OOnrOb05GoDtu7_vMpB24ZHLgE/
+
+fight_id:  3b76a00f5d0400eb
+fighters:  Santiago Luna vs. Angel Pacheco
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/7efif5Yf4io7FdztG0t0wMUP5rwTdJ_q/
+
+fight_id:  45ec0c5f19c9adbe
+fighters:  Ryan Gandra vs. Jose Daniel Medina  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/lp4dukWmoviyJEy1CZcfZmMJ8e_6zKva/
+
+fight_id:  c40b934d2666e351
+fighters:  Ailin Perez vs. Macy Chiasson  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/wm6QuzURJ2c0ejCmwXuYzaAF18PWGaV7/
+
+fight_id:  25ab195cefbce1d0
+fighters:  Cristian Quinonez vs. Kris Moutinho  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/xEfZmxNxkPMWjB10ePJ51YLZgZ5tOD3k/
+
+fight_id:  6154ee95d3f4fc32
+fighters:  Douglas Silva de Andrade vs. Javier Reyes  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/guPx8_Qk56mwduwwU8B4TFlASLWDiC7b/
+
+fight_id:  44d58943ac8e47e1
+fighters:  Regina Tarin vs. Ernesta Kareckaite  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/JcvSC6dFp8B2BQjntDtewVOK7CfzQGrl/
+
+fight_id:  581292ffe5b09344
+fighters:  Erik Silva vs. Francis Marshall  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/wAawh6glavxbcTVqWsTKT_SzOR9fASta/
+
+fight_id:  c6a85b67fdd2ef3d
+fighters:  Damian Pinas vs. Wes Schultz  [Prelims]
+event:     UFC Fight Night: Moreno vs. Kavanagh (February 28, 2026)
+url:       https://www.paramountplus.com/shows/video/EjKJkiurYvgeMCTIXe00UQsi84LAuFYV/
+
+fight_id:  8d740c844353ae0e
+fighters:  Sean Strickland vs. Anthony Hernandez
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/TImMSe4J8nl5r0uyGhmOA09tdgsVlxVU/
+
+fight_id:  dd12bf51c5ed7f1e
+fighters:  Geoff Neal vs. Uros Medic
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/NVF2kXimGlQIA9wM2SRvizdAIpPO2nZJ/
+
+fight_id:  dc6f6c8228390ebb
+fighters:  Dan Ige vs. Melquizael Costa
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/reMyhX447HtN4n_qJccBa5hWH5OJwqhc/
+
+fight_id:  04b7bcc0e8488604
+fighters:  Serghei Spivac vs. Ante Delija
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/GBIMCp36UpF7sgrHIRfP49bOkeQnxxZY/
+
+fight_id:  54437b8dba3a6110
+fighters:  Jacobe Smith vs. Josiah Harrell
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/AilN82Rwb201qYowUaDtLw_9GZwmhrpA/
+
+fight_id:  372d1dee0db8dbee
+fighters:  Zach Reese vs. Michel Pereira
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/8GSbg_NensZh9m_YGfv1Qp5lj4jYcXYo/
+
+fight_id:  202d3277e569ad03
+fighters:  Chidi Njokuani vs. Carlos Leal  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/e4hRXBfTsi3dRP3sAgkNK03nFTqWXAmP/
+
+fight_id:  7ffdaa44fc8d111b
+fighters:  Ode Osbourne vs. Alibi Idiris  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/TQ854m_14W_GOFS_RMiX1fxnIuREP3kD/
+
+fight_id:  ac39c1f00ae31e58
+fighters:  Alden Coria vs. Luis Gurule  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/m54TiwHxQPs5kRves2CZ6X2hJKfX2tVk/
+
+fight_id:  fd56a469e4589ebc
+fighters:  Nora Cornolle vs. Joselyne Edwards  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/zIlmoS7w4EpVq5CAuzHWChb7KbPJG3_m/
+
+fight_id:  8f9896e60047007f
+fighters:  Ramiz Brahimaj vs. Punahele Soriano  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/WUC_PQpOMLP1GCIYqblwRC1mUxzlSRXi/
+
+fight_id:  508e622130b0a84d
+fighters:  Phil Rowe vs. Jean-Paul Lebosnoyani  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/_K8pyrOZcL5hX0W6TS_WBRZGBUAOmv_A/
+
+fight_id:  5b97f47cdd355cbe
+fighters:  Jordan Leavitt vs. Yadier del Valle  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/mg6EcYlLkzkw7dHYfUpgEFbzyjPS4kAe/
+
+fight_id:  6e78d874097a3d22
+fighters:  Juliana Miller vs. Carli Judice  [Prelims]
+event:     UFC Fight Night: Strickland vs. Hernandez (February 21, 2026)
+url:       https://www.paramountplus.com/shows/video/AbF_Pw8sO9bQUwSi7_xzZTLo1XPqUCJu/
+
+fight_id:  fb4b1754d510b0d0
+fighters:  Mario Bautista vs. Vinicius Oliveira
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/NGbMk_pwGhbIqTh5k9dFUKS8gxtkq707/
+
+fight_id:  dbbf8334a2600895
+fighters:  Amir Albazi vs. Kyoji Horiguchi
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/7XrPAopc8QEqpwAED7L9lX_9VaUyeJD7/
+
+fight_id:  a5c5f76cf0a7c784
+fighters:  Jailton Almeida vs. Rizvan Kuniev
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/nqyekZI8vkHEz5n4v00OIsJ5bakKEK_L/
+
+fight_id:  8fea32ab0445859c
+fighters:  Michal Oleksiejczuk vs. Marc-Andre Barriault
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/hYZo3AsKeEiBdNbrrL2D93zqeVBxs1gf/
+
+fight_id:  2a26c0cfa06265b7
+fighters:  Jean Matsumoto vs. Farid Basharat
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/JKefS34JWeazuxoda3jGb1ynK_fvyPk1/
+
+fight_id:  6cca11f353a2b42d
+fighters:  Dustin Jacoby vs. Julius Walker
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/o83qXHmYdR5E7BLijPCeChLbcsiS20HA/
+
+fight_id:  f964d2dda87f25f0
+fighters:  Alex Morono vs. Daniil Donchenko  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/Io3MT0J2oCJVITAm6Qs6cklbL_3Ti_2k/
+
+fight_id:  abefaf1807941ee4
+fighters:  Nikolay Veretennikov vs. Niko Price  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/R0Aukjf__EPkLaFN1qU65O6qy28J_O5z/
+
+fight_id:  cc5c5a8cff4c1ae9
+fighters:  Bruna Brasil vs. Ketlen Souza  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/o5WiSVvn_vgwTOlqgarMKY0EVwQZ5CY7/
+
+fight_id:  86df0e75f41784d8
+fighters:  Javid Basharat vs. Gianni Vazquez  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/ATMGPjgCgVbPJBCRFucyWdb5GqhWBOI4/
+
+fight_id:  84e8ccc3c97c2b4c
+fighters:  Wang Cong vs. Eduarda Moura  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/paafSVGNlbe5MiNfYaYi4DG7Qs_Hizvs/
+
+fight_id:  9d30c887e8bd8824
+fighters:  Muin Gafurov vs. Jakub Wiklacz  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/Ux1CIZEh3Y_ag2LH8XfvX2Xm6wJvWXLD/
+
+fight_id:  2bbfbb234c255249
+fighters:  Klaudia Sygula vs. Priscila Cachoeira  [Prelims]
+event:     UFC Fight Night: Bautista vs. Oliveira (February 07, 2026)
+url:       https://www.paramountplus.com/shows/video/AUgwEiWeIfIt_xwl5SMBofcMpsfQ03aH/
+
 fight_id:  70f1621080b3435c
 fighters:  Khamzat Chimaev vs. Sean Strickland
 event:     UFC 328: Chimaev vs. Strickland (May 09, 2026)
@@ -1299,31 +1604,6 @@ fight_id:  e92d89cb2d69235e
 fighters:  Clayton Carpenter vs. Jose Ochoa  [Prelims]
 event:     UFC 328: Chimaev vs. Strickland (May 09, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KQA62CQ2E5FTMQBPXVGAJP4H/
-
-fight_id:  ce151e053721fe69
-fighters:  Kevin Holland vs. Kyle Daukaus
-event:     UFC Fight Night: Santos vs. Walker (October 02, 2021)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQG84DP3E4Q9QYDY3H1R8XSW/
-
-fight_id:  86dff1593d8b9a1f
-fighters:  Chase Hooper vs. Steve Garcia
-event:     UFC Fight Night: Kattar vs. Allen (October 29, 2022)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQG84M0KEDWR9GH78G4BS6W2/
-
-fight_id:  810c9da07970c4a6
-fighters:  Ciryl Gane vs. Tai Tuivasa
-event:     UFC Fight Night: Gane vs. Tuivasa (September 03, 2022)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQG84J3ZE69VFNP5FHNTHEMF/
-
-fight_id:  ea006bae605e2a6b
-fighters:  Ciryl Gane vs. Serghei Spivac
-event:     UFC Fight Night: Gane vs. Spivac (September 02, 2023)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQG84FZQE42BNZ0G0X1ACGGX/
-
-fight_id:  120ec60ad18cf6c5
-fighters:  Steve Garcia vs. SeungWoo Choi
-event:     UFC Fight Night: Lemos vs. Jandiroba (July 20, 2024)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQG84NPZEZSVTSQHHZ4V7H1M/
 
 fight_id:  ca93e3f69fa3d725
 fighters:  Cain Velasquez vs. Antonio Rodrigo Nogueira
@@ -1824,11 +2104,6 @@ fight_id:  8b4eeaa048361ba3
 fighters:  Gregor Gillespie vs. Andrew Holbrook
 event:     UFC 210: Cormier vs. Johnson 2 (April 08, 2017)
 url:       https://www.paramountplus.com/shows/video/l2LKUjxBMqe_ZRbfm833OWIXvJrNcATa/
-
-fight_id:  16a0352f3e19b931
-fighters:  Stipe Miocic vs. Junior Dos Santos
-event:     UFC 211: Miocic vs. Dos Santos (May 13, 2017)
-url:       https://www.paramountplus.com/shows/video/OIuqiixJ3sR4sjreoLqJjY7DQ3u2hf_t/
 
 fight_id:  0fd8214ac276728e
 fighters:  Joanna Jedrzejczyk vs. Jessica Andrade
@@ -3390,11 +3665,6 @@ fighters:  Herbert Burns vs. Daniel Pineda  [Main Card]
 event:     UFC 252: Miocic vs. Cormier 3 (August 15, 2020)
 url:       https://www.paramountplus.com/shows/video/A4Uj5mdpbHFkNBcAZzeK2TJadGdOpM4D/
 
-fight_id:  dc24c4759651c6ad
-fighters:  Junior Dos Santos vs. Jairzinho Rozenstruik  [Main Card]
-event:     UFC 252: Miocic vs. Cormier 3 (August 15, 2020)
-url:       https://www.paramountplus.com/shows/video/ZNdZN04cfVfMCUTWEbU5JGAFk0GDo5ue/
-
 fight_id:  7200343d2e957cf3
 fighters:  Sean O'Malley vs. Marlon Vera  [Main Card]
 event:     UFC 252: Miocic vs. Cormier 3 (August 15, 2020)
@@ -3544,11 +3814,6 @@ fight_id:  022bdd58cc6e571d
 fighters:  Cub Swanson vs. Daniel Pineda  [Prelims]
 event:     UFC 256: Figueiredo vs. Moreno (December 12, 2020)
 url:       https://www.paramountplus.com/shows/video/1Gf3eRdflf6f891iaafsyNG_PEGGPktb/
-
-fight_id:  fe3ff5b1d9135add
-fighters:  Junior Dos Santos vs. Ciryl Gane  [Main Card]
-event:     UFC 256: Figueiredo vs. Moreno (December 12, 2020)
-url:       https://www.paramountplus.com/shows/video/j1ca3Xpy2XWgiAN8MfjOushvpHSk6BdR/
 
 fight_id:  4a172a5191cb8e60
 fighters:  Kevin Holland vs. Jacare Souza  [Main Card]
@@ -5295,11 +5560,6 @@ fighters:  Alex Pereira vs. Khalil Rountree Jr.  [Main Card]
 event:     UFC 307: Pereira vs. Rountree Jr. (October 05, 2024)
 url:       https://www.paramountplus.com/shows/video/HZusUcar5buiktK4LmALgryh90QuqrEp/
 
-fight_id:  af6eeea1cfe33240
-fighters:  Abusupiyan Magomedov vs. Brunno Ferreira  [Prelims]
-event:     UFC 308: Topuria vs. Holloway (October 26, 2024)
-url:       https://www.paramountplus.com/shows/video/94Sy7cMh4O1k3IMg0giVAcMIkVsKYqgO/
-
 fight_id:  919e3c5cc6999cb3
 fighters:  Mateusz Rebecki vs. Myktybek Orolbai  [Prelims]
 event:     UFC 308: Topuria vs. Holloway (October 26, 2024)
@@ -5550,11 +5810,6 @@ fighters:  Bryce Mitchell vs. Jean Silva  [Main Card]
 event:     UFC 314: Volkanovski vs. Lopes (April 12, 2025)
 url:       https://www.paramountplus.com/shows/video/hJc3JaLdyXTSDFpC8VARpSOjdtuVmQTk/
 
-fight_id:  d3be5a4e0ec273e2
-fighters:  Yair Rodriguez vs. Patricio Freire  [Main Card]
-event:     UFC 314: Volkanovski vs. Lopes (April 12, 2025)
-url:       https://www.paramountplus.com/shows/video/trokPPgiv_kOUGYuTjMoNf_D7lAtH5Qr/
-
 fight_id:  d05cb4c4135ce402
 fighters:  Michael Chandler vs. Paddy Pimblett  [Main Card]
 event:     UFC 314: Volkanovski vs. Lopes (April 12, 2025)
@@ -5769,11 +6024,6 @@ fight_id:  9418ebb3db2a4bae
 fighters:  Ateba Abega Gautier vs. Tre'ston Vines  [Prelims]
 event:     UFC 320: Ankalaev vs. Pereira 2 (October 04, 2025)
 url:       https://www.paramountplus.com/shows/video/QHe9OeIOFfO9PrPUfhmyPTGa9JhB2wPI/
-
-fight_id:  d006dd2513bd376d
-fighters:  Joe Pyfer vs. Abusupiyan Magomedov  [Main Card]
-event:     UFC 320: Ankalaev vs. Pereira 2 (October 04, 2025)
-url:       https://www.paramountplus.com/shows/video/_mspPR663Ax_UGOAOjWnEUFKk7oK7I3v/
 
 fight_id:  84ebd144d5e79c88
 fighters:  Youssef Zalal vs. Josh Emmett  [Main Card]
@@ -6119,11 +6369,6 @@ fight_id:  60949f33201415ca
 fighters:  Cub Swanson vs. Nate Landwehr
 event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGV8NE2MSMHB2ZV1643HQ/
-
-fight_id:  10ab34056720b6b4
-fighters:  Patricio Freire vs. Aaron Pico  [Prelims]
-event:     UFC 327: Prochazka vs. Ulberg (April 11, 2026)
-url:       https://www.paramountplus.com/shows/video/ALVE01KN7MH4SBE2Z8PJDWEGN0EXZ3/
 
 fight_id:  b4e16fb13153efdc
 fighters:  Kevin Holland vs. Randy Brown  [Prelims]
@@ -7099,8 +7344,9 @@ clip:      UFC 327: Prochazka vs. Ulberg - All The Fights
 url:       https://www.paramountplus.com/shows/video/ALVE01KN7MGANDETFT2RCHY4S30S5Y/
 
 
-UNMATCHED (93)
+UNMATCHED (118)
 --------------------------------------------------------------------------------
+ambiguous(2 fights)    | Conor McGregor vs. Max Holloway | Apr 17, 2013 | https://www.paramountplus.com/shows/video/fFEoi9GV07_bxa3mELUIl4OexhNMaO9J/
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
 UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
@@ -7193,4 +7439,28 @@ no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramount
 UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 328 Must-See Finishes
+no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/
+UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 Must-See Finishes
+no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/
+UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 Must-See Finishes
+no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/
+UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 Must-See Finishes
+no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/
+UNKNOWN_TYPE           | UFC 328 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC 328 Must-See Finishes
+no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/
+no_fight               | Stipe Miocic vs. Junior Dos Santos | May 13, 2017 | https://www.paramountplus.com/shows/video/OIuqiixJ3sR4sjreoLqJjY7DQ3u2hf_t/
+no_fight               | Junior Dos Santos vs. Jairzinho Rozenstruik | Aug 15, 2020 | https://www.paramountplus.com/shows/video/ZNdZN04cfVfMCUTWEbU5JGAFk0GDo5ue/
+no_fight               | Junior Dos Santos vs. Ciryl Gane | Dec 12, 2020 | https://www.paramountplus.com/shows/video/j1ca3Xpy2XWgiAN8MfjOushvpHSk6BdR/
+no_fight               | Abusupiyan Magomedov vs. Brunno Ferreira | Oct 26, 2024 | https://www.paramountplus.com/shows/video/94Sy7cMh4O1k3IMg0giVAcMIkVsKYqgO/
+no_fight               | Yair Rodriguez vs. Patricio Freire | Apr 12, 2025 | https://www.paramountplus.com/shows/video/trokPPgiv_kOUGYuTjMoNf_D7lAtH5Qr/
+no_fight               | Joe Pyfer vs. Abusupiyan Magomedov | Oct 4, 2025 | https://www.paramountplus.com/shows/video/_mspPR663Ax_UGOAOjWnEUFKk7oK7I3v/
+no_fight               | Patricio Freire vs. Aaron Pico | Apr 11, 2026 | https://www.paramountplus.com/shows/video/ALVE01KN7MH4SBE2Z8PJDWEGN0EXZ3/
 no_fight               | Kopylov vs. Silva | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KR7G7X4SEF5A07N1TJJB33C6/

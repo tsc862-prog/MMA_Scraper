@@ -70,6 +70,25 @@ permanent fork.
   `active: false` in `SHERDOG_ORGS` (defunct — one-time scrape, skipped daily).
 - Re-run with `python sherdog_scraper.py --all` if ever needed.
 
+### TODO — PRIDE / Strikeforce / WEC (and other Fight Pass orgs)
+Incorporate every org with content on Fight Pass into the DB. Two halves:
+1. **Fight records** — extend `sherdog_scraper.py` with new `SHERDOG_ORGS`
+   entries (Sherdog has full PRIDE / Strikeforce / WEC event histories). Use
+   distinct `fight_prefix` per org (e.g. `pridefight`, `sffight`, `wecfight`)
+   so IDs stay stable forever — see ground rule below.
+2. **Video scraper** — Fight Pass already exposes these via top-level buckets
+   I've already enumerated. Extend `PLAYLIST_BUCKETS` in `fightpass_scraper.py`:
+   - `uj-A` — Pride FC Event Replays
+   - `97Ms` — StrikeForce Event Replays
+   - `_7Cg` — WEC Event Replays
+   - `ioe3` — Pride FC: Classic Fights (per-fight VODs)
+   - `JW-A` — Strikeforce: Classic Fights
+   - `cbRY` — WEC: Classic Fights
+   - `Md4s` — PRIDE FC LEGENDS
+   The existing `--scan-vods` brute-force pass will also pick up standalone
+   fight VODs for these orgs once the fighters/fights exist in the DB
+   (matching is fighter-pair based, org-agnostic).
+
 ### Other orgs worth evaluating
 Once the fighter-page scraper (Phase 2) lands, explicit org configs matter much
 less — fighter pages pull in every org anyway. Still useful for events/video:
