@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-05-31 17:13
-Fight clips matched: 1280  |  Event links matched: 187  |  Unmatched: 118
+Generated: 2026-06-17 07:06
+Fight clips matched: 1292  |  Event links matched: 188  |  Unmatched: 118
 ================================================================================
 
-MATCHED FIGHTS (1280)
+MATCHED FIGHTS (1292)
 --------------------------------------------------------------------------------
 fight_id:  ccdd6c7577927a8c
 fighters:  Anderson Silva vs. Chris Leben
@@ -759,6 +759,66 @@ fight_id:  f46308108eb9261a
 fighters:  Mackenzie Dern vs. Amanda Ribas
 event:     UFC Fight Night: Dern vs. Ribas 2 (January 11, 2025)
 url:       https://www.paramountplus.com/shows/video/zv2AFWU36WbJBvSUPTjFqzcEjrKzEUaE/
+
+fight_id:  5c69b019e6deee41
+fighters:  Belal Muhammad vs. Gabriel Bonfim
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ3EGEPZB9AG1VKJ147HC/
+
+fight_id:  419fff06f338f5c6
+fighters:  Brendan Allen vs. Edmen Shahbazyan
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5W5E6PRT6VS6FRNRS93/
+
+fight_id:  58ffa2dac4f2e7d0
+fighters:  Fares Ziam vs. Tom Nolan
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4RNECJB95NT3DA7EX5A/
+
+fight_id:  c47796e11a801e12
+fighters:  Bryce Mitchell vs. Santiago Luna
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVCRNEQCRZ7VX5GARVZ7K/
+
+fight_id:  bfe4950b3de83e9c
+fighters:  Iwo Baraniewski vs. Junior Tafa
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVDDZEJXA0ET5GAASVPK3/
+
+fight_id:  5d2eedd05081ed23
+fighters:  Matt Schnell vs. Alessandro Costa  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVE60E7TTKDGFN5T32MTZ/
+
+fight_id:  90940d93d6e0998f
+fighters:  Marcus McGhee vs. John Yannis  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSVWBVDDE8YSK2QHQ7R6T448/
+
+fight_id:  20d74ed23d3e9b3a
+fighters:  Bruno Silva vs. Edgar Chairez  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ393ET3BCTJK0DC2Z6SY/
+
+fight_id:  98e77712f99956ff
+fighters:  Priscila Cachoeira vs. Chelsea Chandler  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5K0EQ2BS79ZR3RD48CZ/
+
+fight_id:  44cfbb8c3c356c65
+fighters:  Jordan Leavitt vs. Joanderson Brito  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4QTE858YNMQJ8JC9JQE/
+
+fight_id:  a6b211d8dab5edec
+fighters:  Jeisla Chaves vs. Yuneisy Duben  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5DBEQ0SK4FDWQBN7373/
+
+fight_id:  b0474597b2c60482
+fighters:  Ketlen Souza vs. Ariane Carnelossi  [Prelims]
+event:     UFC Fight Night: Muhammad vs. Bonfim (June 06, 2026)
+url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4BWE3MB3PZ8EW0X8T6P/
 
 fight_id:  423f32dd018ac218
 fighters:  Song Yadong vs. Deiveson Figueiredo
@@ -6406,7 +6466,7 @@ event:     UFC 328: Chimaev vs. Strickland (May 09, 2026)
 url:       https://www.paramountplus.com/shows/video/ALVE01KQA61XEBEXEBEAXC58483045/
 
 
-MATCHED EVENTS (187)
+MATCHED EVENTS (188)
 --------------------------------------------------------------------------------
 event_id:  729a274e-bd70-56af-a869-f4e923add42d
 event:     UFC 110: Nogueira vs Velasquez (February 20, 2010)
@@ -7333,9 +7393,14 @@ event:     UFC 324: Gaethje vs. Pimblett (January 24, 2026)
 clip:      UFC 324: Gaethje vs. Pimblett Event Recap
 url:       https://www.paramountplus.com/shows/video/ALVE01KP9PJQPPEHTRCFGMAYK50NMY/
 
+event_id:  94641d54-a089-56f1-91d6-adcc793f60e3
+event:     UFC 325: Volkanovski vs. Lopes 2 (January 31, 2026)
+clip:      UFC 325: Volkanovski vs. Lopes 2 Event Recap
+url:       https://www.paramountplus.com/shows/video/ALVE01KRHHMEA7E6NTYQ707QHW9NVJ/
+
 event_id:  41b027e9-7254-5a3b-9f71-fa6d2fb70e2b
 event:     UFC 326: Holloway vs. Oliveira 2 (March 07, 2026)
-clip:      UFC 326: Holloway vs. Oliveira 2 - All The Fights
+clip:      UFC 326: Holloway vs. Oliveira 2 Event Recap
 url:       https://www.paramountplus.com/shows/video/ALVE01KKWARKN7E82VRKGE5PPG1691/
 
 event_id:  a32a0ab4-1a4e-5d61-93ac-64df6092bd69

@@ -121,6 +121,80 @@ SHERDOG_ORGS = [
         'fight_prefix': 'rtufight',
         'active':       True,
     },
+    {
+        # Defunct — only 2 events ever (Banned 2008, Day of Reckoning 2009)
+        # but legendary cards (Fedor vs Sylvia, Fedor vs Arlovski).
+        'organization': 'Affliction',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Affliction-1459',
+        'slug_keys':    ('affliction-',),
+        'name_clean':   (r'^$', ''),   # names already start with "Affliction"
+        'fight_prefix': 'afflictionfight',
+        'active':       False,
+    },
+    {
+        # Defunct — classic Japanese MMA, multiple eras. Fight Pass has 19+
+        # standalone fight VODs in "X vs Y Vale Tudo Japan ..." format.
+        'organization': 'Vale Tudo Japan',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Vale-Tudo-Japan-12',
+        'slug_keys':    ('vale-tudo-japan-',),
+        'name_clean':   (r'^$', ''),   # already prefixed "Vale Tudo Japan"
+        'fight_prefix': 'vtjfight',
+        'active':       False,
+    },
+    {
+        # Active UK/European feeder. McGregor, Edwards, Pimblett all came
+        # from here. Sherdog event slugs are "CW-NNN-Cage-Warriors-NNN-..."
+        # (CW abbrev). Lots of events — paginates back to Cage Warriors 1.
+        # Names come back like "CW 207 - Cage Warriors 207: Manchester" —
+        # strip the redundant "CW NNN - " prefix.
+        'organization': 'Cage Warriors',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Cage-Warriors-186',
+        'slug_keys':    ('cw-', 'cage-warriors-'),
+        'name_clean':   (r'^CW\s+\d+\s*-\s*', ''),
+        'fight_prefix': 'cwfight',
+        'active':       True,
+    },
+    {
+        # Women's MMA promotion, ~50 events. Founded 2012 — major pre-UFC
+        # outlet for women's MMA before the UFC opened up.
+        'organization': 'Invicta FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Invicta-Fighting-Championships-4469',
+        'slug_keys':    ('invicta-',),
+        'name_clean':   (r'^$', ''),   # already prefixed "Invicta FC"
+        'fight_prefix': 'invictafight',
+        'active':       True,
+    },
+    {
+        # Active US feeder (Legacy Fighting Alliance). Heir to RFA + Legacy.
+        'organization': 'LFA',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Legacy-Fighting-Alliance-LFA-11339',
+        'slug_keys':    ('lfa-',),
+        'name_clean':   (r'^$', ''),   # already prefixed "LFA"
+        'fight_prefix': 'lfafight',
+        'active':       True,
+    },
+    {
+        # Active US east-coast feeder (Cage Fury Fighting Championships).
+        # Sherdog names duplicate the abbrev: "CFFC 100 - Cage Fury Fighting
+        # Championships 100" — strip the redundant trailing copy.
+        'organization': 'CFFC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Cage-Fury-Fighting-Championships-813',
+        'slug_keys':    ('cffc-',),
+        'name_clean':   (r'\s*-\s*Cage\s+Fury\s+Fighting\s+Championships(?:\s+\d+)?', ''),
+        'fight_prefix': 'cffcfight',
+        'active':       True,
+    },
+    {
+        # Japanese Pancrase (1993-present). 60+ year history; lots of events.
+        # 'pancrase-' slug_key also picks up Deep & Pancrase joint events
+        # (when we add DEEP later, those need exclusion to avoid dup fights).
+        'organization': 'Pancrase',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Pancrase-19',
+        'slug_keys':    ('pancrase-',),
+        'name_clean':   (r'^$', ''),   # already prefixed
+        'fight_prefix': 'pancrasefight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────

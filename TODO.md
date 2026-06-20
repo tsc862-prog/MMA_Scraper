@@ -95,6 +95,110 @@ less — fighter pages pull in every org anyway. Still useful for events/video:
 - **ONE Championship**, **KSW**, **Cage Warriors**, **Invicta FC**, **RIZIN**
   — all on Sherdog; add as `SHERDOG_ORGS` entries if event-level coverage wanted.
 
+### Fight Pass × Sherdog org expansion roadmap
+
+Survey done 2026-06-19 — re-walked the 17 top-level Fight Pass buckets and
+vesper-searched 34 org names; cross-referenced with a Sherdog org-ID scan.
+Buckets with ≥20 "X vs Y" titles for the org name are real per-fight content;
+buckets with 0–4 are noise / namesakes.
+
+#### Already in DB
+| Org | Sherdog ID | Fight Pass | Active |
+|---|---|---|---|
+| UFC | 2 (via ufcstats) | series 2284 + HCpi + 9bTN + vesper | ✓ |
+| Road to UFC | (under UFC, slug-filtered) | series 2924 | ✓ |
+| PRIDE | 3 | uj-A + ioe3 + Md4s | — |
+| Strikeforce | 716 | 97Ms + JW-A | — |
+| WEC | 48 | _7Cg + cbRY | — |
+| Bellator | 1960 | — (DAZN/PFL now) | — |
+| WSOF | 5449 | — | — |
+| PFL | 12241 | — (own platform) | ✓ |
+| MVP | 19337 | — | ✓ |
+
+#### Tier 1 — small / defunct + clear Fight Pass + Sherdog match
+*(One-shot scrape; predictable parse; immediate per-fight URL coverage via vesper)*
+- **Affliction** — only 2 events ever ("Banned" 2008, "Day of Reckoning" 2009);
+  vesper finds 17 per-fight VODs. Sherdog ID TBD (probe `Affliction-Banned`
+  event page during impl).
+- **EliteXC** — Sherdog 937; defunct 2008; ~30 events; 19 per-fight VODs on FP.
+- **Vale Tudo Japan (VTJ)** — Sherdog 12; classic Japanese MMA; 20 per-fight
+  VODs on FP under "Vale Tudo Japan N" naming.
+- **King of the Cage** — Sherdog 1; long history; 20 per-fight VODs on FP.
+- **BodogFIGHT** — Sherdog 883; defunct ~2008; ~11 VODs on FP.
+
+#### Tier 2 — active regional feeders + clear FP content
+*(Recurring scrape; active=True; cleanest Fight Pass content)*
+- **Cage Warriors** — Sherdog 186; UK/Europe; very active; 20 per-fight VODs
+  in classic "X vs Y Cage Warriors N" format. **High value** — McGregor,
+  Edwards, Pimblett all came from here.
+- **Invicta FC** — Sherdog ID TBD (probe one of their events); women's MMA;
+  ~50 events; mixed event-replay + per-fight VODs on FP. Important for
+  women's coverage.
+- **LFA (Legacy Fighting Alliance)** — Sherdog ID TBD; US feeder; 20 per-fight
+  VODs in "X vs Y LFA N" format.
+- **CFFC (Cage Fury FC)** — Sherdog ID TBD; US east coast; 20 per-fight VODs.
+- **Fury FC** — Sherdog ID TBD; US; 20 per-fight VODs.
+- **Pancrase** — Sherdog 19; Japan, 60+ year history; modern era VODs on FP
+  in "X vs Y Pancrase NNN" format.
+- **Shooto** — Sherdog 21; mainly Shooto Brazil VODs on FP.
+
+#### Tier 3 — secondary regionals
+*(Worth doing eventually; lower per-event interest)*
+- **DEEP** — Sherdog 24; Japan.
+- **Titan FC** — Sherdog 740; US.
+- **XFN** — Sherdog ID TBD.
+- **M-1 Global** — Sherdog 72; Russia; status check needed.
+- **JCK** — Chinese org; Sherdog ID TBD; modern Chinese MMA on FP.
+- **Combate Global / Combat FC** — needs disambiguation; samples ambiguous.
+
+#### Skip — confirmed not on Fight Pass
+*(Vesper returns 0 or only noise. Content lives elsewhere; revisit if scope changes.)*
+- **KSW** (Polish — DAZN) — vesper 0 results
+- **RIZIN** (Japanese — own platform) — vesper 0 results
+- **BAMMA** (defunct) — vesper 0 results
+- **ONE Championship** (own streaming) — vesper hits only namesakes
+- **Bellator** (PFL/DAZN now) — vesper hits only namesakes
+- **Sengoku, DREAM, IFL** — vesper hits unrelated content
+
+#### Per-org implementation checklist
+For each org we add:
+1. **Sherdog config** — append `SHERDOG_ORGS` entry: `org_url`, `slug_keys`,
+   `name_clean`, **unique `fight_prefix`** (never reuse, never change once
+   data exists), `active` flag. Test parse one event before committing.
+2. **Sherdog backfill** — `python sherdog_scraper.py --all` (defunct) or daily
+   incremental (active).
+3. **Fight Pass event-level URLs** — if the org has a dedicated
+   `VOD_PLAYLIST level=event` bucket (PRIDE/SF/WEC pattern), add to
+   `PLAYLIST_BUCKETS`. Most Tier 2/3 orgs don't have one — skip.
+4. **Fight Pass per-fight URLs** — extend `_EVENT_PREFIX` regex in
+   `parse_fight_vod_title()` with the org's keyword(s). Currently:
+   `(?:UFC|Strikeforce|PRIDE|WEC|Bellator|Noche\s+UFC)`. Need to add (in
+   roughly the order they're implemented):
+   - `Cage\s+Warriors`, `Invicta(\s+FC)?`, `LFA`, `CFFC`, `Fury\s+FC`,
+     `Pancrase`, `Shooto`, `KOTC|King\s+of\s+the\s+Cage`, `Affliction`,
+     `EliteXC`, `Vale\s+Tudo\s+Japan|VTJ`, `DEEP`, `Titan\s+FC`, `XFN`,
+     `M-1`, `JCK`, `Bodog`.
+   Order matters: longer phrases first to avoid premature match.
+5. **Vesper search** — `--search-vesper` already catches per-fight VODs once
+   fighters/fights are in DB. Run it once after the Sherdog backfill.
+6. **Brute-force scan** — `--scan-vods` covers the legacy 25k–60k VOD range.
+   Already-scanned IDs are skipped via `fightpass_scan_progress.txt`.
+   Re-run with a higher `--scan-end` (existing default is 60000; new VODs
+   are pushing past 970000 now) — but only when chasing the long tail.
+
+#### Risks
+- **Fighter name encoding** — DEEP/Pancrase/JCK use kanji/hanzi names that
+  Sherdog romanizes inconsistently. Expect alias work in `fighter_aliases`.
+- **Weight class formats** — old/foreign orgs sometimes used non-standard
+  weight categories. Schema is text-typed so it tolerates this, but UI
+  filtering may need new buckets.
+- **Duplicate fighter records** — fighters who span orgs (e.g. a LFA fighter
+  who later signs with UFC) get name-hash UUIDs in both. The Sherdog-ID
+  migration (Phase 1 of north-star) is the proper fix; until then expect
+  the orphan-cleanup pattern we used for "Yi Sak Lee".
+- **Catchweight / open-weight** — PRIDE/early UFC fights need the
+  `catch_weight_lbs` column from the target schema; current DB doesn't have it.
+
 ## Video sources
 - Generalize the YouTube scraper's channels beyond the PFL channel (it already
   covers PFL+Bellator+WSOF; ONE/KSW/etc. have their own channels).

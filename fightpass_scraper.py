@@ -202,6 +202,54 @@ class FightPass:
             return None
         return r.json()
 
+    def vesper_search(self, query):
+        """Fight Pass's UI search hits a separate service (vesper) instead of
+        any /api/v4/* endpoint. Returns [(vod_id, title), ...] of VODs whose
+        title matches the query — catches per-fight VODs that aren't in any
+        walkable playlist (e.g. pre-2023 standalone fight VODs like Zahabi
+        vs Vieira UFC Fight Night vod 53279)."""
+        url = 'https://search.dce-prod.dicelaboratory.com/search'
+        r = self.session.get(url, params={'query': query}, timeout=20)
+        if r.status_code == 401:
+            self._login()
+            r = self.session.get(url, params={'query': query}, timeout=20)
+        if not r.ok:
+            return []
+        # Each result card has an `action.data` blob like
+        #   {"type": "VOD", "title": "...", "id": "VOD#241537", ...}
+        # Walk the JSON tree and pull title + id from those nodes. (An
+        # earlier regex-based version paired text from a PLAYLIST card with
+        # the id from the next VOD card and silently produced bad titles.)
+        try:
+            tree = r.json()
+        except ValueError:
+            return []
+        out = []
+        def walk(node):
+            if isinstance(node, dict):
+                if node.get('type') == 'VOD':
+                    nid = node.get('id') or ''
+                    if isinstance(nid, str) and nid.startswith('VOD#'):
+                        try:
+                            out.append((int(nid[4:]), node.get('title') or ''))
+                        except ValueError:
+                            pass
+                for v in node.values():
+                    walk(v)
+            elif isinstance(node, list):
+                for v in node:
+                    walk(v)
+        walk(tree)
+        # Dedupe (a single VOD can appear in multiple result sections).
+        seen = set()
+        unique = []
+        for vid, title in out:
+            if vid in seen:
+                continue
+            seen.add(vid)
+            unique.append((vid, title))
+        return unique
+
     def bucket_items(self, exid):
         """All items in a top-level browse bucket (paginated)."""
         last_seen = None
@@ -416,7 +464,12 @@ def resolve_fighter(name, by_name, by_alias, by_last):
 #   "Jack Della Maddalena vs Islam Makhachev VeChain UFC 322"  (sponsor)
 #   "Alexandre Pantoja vs Kai Asakura - UFC 310"               (dash sep)
 #   "Themba Gorimbo vs Niko Price at UFC Fight Night ..."      (word sep)
-_EVENT_PREFIX = r'(?:UFC|Strikeforce|PRIDE|WEC|Bellator|Noche\s+UFC)'
+# Multi-word phrases first so the regex doesn't lock onto a shorter prefix.
+_EVENT_PREFIX = (
+    r'(?:Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
+    r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
+    r'LFA|CFFC|Pancrase|Shooto)'
+)
 # Optional crud between fighter2 and the event prefix: sponsor + a separator
 _CRUD = r'(?:[-—–:]|at)?\s*(?:VeChain|ESPN\+?|TUDN|DraftKings)?\s*'
 _FIGHT_VOD_RE = re.compile(
@@ -467,7 +520,7 @@ def save_scan_progress(vid):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main(push=False, force=False, scan_vods=False,
-         scan_start=None, scan_end=None):
+         scan_start=None, scan_end=None, search_vesper=False):
     for var in ('SUPABASE_URL', 'SUPABASE_KEY', 'FIGHTPASS_EMAIL', 'FIGHTPASS_PASSWORD'):
         if not os.environ.get(var):
             print(f'Missing {var} in .env'); sys.exit(1)
@@ -598,12 +651,15 @@ def main(push=False, force=False, scan_vods=False,
                                 break
                         if matched_fight:
                             break
-                    if matched_fight:
-                        label = f'{n1} vs {n2}  @ {ev["name"]}'
-                        matched_fights.append((matched_fight['id'], url, label, 'event'))
-                    else:
+                    if not matched_fight:
                         unmatched_subs.append(
                             (vod_id, ev['name'], f'{n1} vs {n2}'))
+                        # NB: don't push the EPISODE url onto matched_fight —
+                        # that puts a multi-fight VOD link on each individual
+                        # fight (e.g. 'UFC 323: Fight Pass Prelims' VOD on all
+                        # 5 fights in it). fights.fightpass_url is reserved
+                        # for true per-fight VODs (passes 2 + 3); the app
+                        # falls back to events.fightpass_url when null.
 
                 time.sleep(0.2)
             time.sleep(0.3)
@@ -617,9 +673,12 @@ def main(push=False, force=False, scan_vods=False,
     #                   parse, resolve fighters, match to a DB fight.
     # Buckets are typed PLAYLISTS (collection of playlists, each containing
     # VODs) or VOD_PLAYLIST (the bucket IS the VOD list).
-    SKIP_KEYWORDS = ('press conference', 'weigh-in', 'weighin',
-                     'fight pass prelims', ': prelims', ' prelims',
-                     'pre-fight show', 'post-fight show')
+    # Hard-skip non-content VODs (these can't be event-level or per-fight)
+    SKIP_NON_CONTENT = ('press conference', 'weigh-in', 'weighin',
+                        'pre-fight show', 'post-fight show')
+    # Legacy alias still used by passes 3 and 4 below
+    SKIP_KEYWORDS = SKIP_NON_CONTENT + ('fight pass prelims',
+                                       ': prelims', ' prelims')
 
     def walk_bucket_vods(bucket):
         """Yield (vod_dict, parent_playlist_title or None) for every VOD in
@@ -651,7 +710,7 @@ def main(push=False, force=False, scan_vods=False,
             if vod_id in seen:
                 continue
             tl = v_title.lower()
-            if any(kw in tl for kw in SKIP_KEYWORDS):
+            if any(kw in tl for kw in SKIP_NON_CONTENT):
                 continue
 
             if bucket['level'] == 'event':
@@ -670,11 +729,38 @@ def main(push=False, force=False, scan_vods=False,
                         (vod_id, v_title, WATCH_URL.format(vod_id)))
                 continue
 
-            # level == 'fight': existing per-fight matching path.
+            # level == 'fight': try event-level matching FIRST for prelims
+            # VODs and language-prefixed main card VODs. These appear in
+            # the HCpi playlist for an event that isn't in any series (e.g.
+            # vod 917032 'UFC Fight Night: Bautista vs Oliveira Prelims'
+            # has episodeInformation=None, so pass 1 misses it).
+            # Strip language prefix like '(ESPAÑOL) ' for matching purposes.
+            base_for_event = re.sub(r'^\([^)]+\)\s*', '', v_title).strip()
+            if re.search(r'\bprelims\b', tl):
+                # Strip ": Prelims" / " Fight Pass Prelims" suffix
+                base = re.sub(r'\s*:?\s*(?:fight\s+pass\s+)?\bprelims\b\s*$',
+                              '', base_for_event, flags=re.IGNORECASE).strip()
+                ev = (match_event_fuzzy(base, bucket_events, bucket_events_by_norm)
+                      if base else None)
+                if ev:
+                    url = WATCH_URL.format(vod_id)
+                    matched_events.append((ev['id'], 'prelims', url, v_title))
+                    matched_vod_ids.append(vod_id)
+                continue   # prelims VODs are never per-fight
+
             scoped_event = (match_event(parent_pl_title, bucket_events_by_norm)
                             if parent_pl_title else None)
             a, b, hint = parse_fight_vod_title(v_title)
             if not a or not b:
+                # Not a per-fight VOD. Might be a main card event VOD that
+                # isn't in any series (e.g. the language-prefixed one).
+                ev = (match_event_fuzzy(base_for_event, bucket_events,
+                                        bucket_events_by_norm)
+                      if base_for_event else None)
+                if ev:
+                    url = WATCH_URL.format(vod_id)
+                    matched_events.append((ev['id'], 'main', url, v_title))
+                    matched_vod_ids.append(vod_id)
                 continue
             ids_a = resolve_fighter(a, by_name, by_alias, by_last)
             ids_b = resolve_fighter(b, by_name, by_alias, by_last)
@@ -807,6 +893,92 @@ def main(push=False, force=False, scan_vods=False,
         save_scan_progress(scan_end_id)
         print(f'  scan complete — {scanned} VODs checked')
 
+    # ── PASS 4: vesper search by fighter name ──────────────────────────────
+    # Fight Pass's UI search hits a separate 'vesper' search service. It
+    # surfaces per-fight VODs that aren't in any walkable playlist — e.g.
+    # pre-2023 standalone fight VODs like vod 53279 'Aiemann Zahabi vs
+    # Reginaldo Vieira UFC Fight Night'. For each fighter who has at least
+    # one fight without a per-fight URL, search vesper by last name, parse
+    # the returned VODs through the existing matcher.
+    if search_vesper:
+        print(f'\n=== PASS 4: vesper search by fighter name ===')
+        # Find fighters whose fights are missing fightpass_url
+        missing_fighters = set()
+        for fi in fights:
+            if not fi.get('fightpass_url'):
+                if fi['fighter1_id']: missing_fighters.add(fi['fighter1_id'])
+                if fi['fighter2_id']: missing_fighters.add(fi['fighter2_id'])
+        # Dedupe by last name (one query catches A's all fights regardless
+        # of order in the VOD title).
+        last_names_to_search = {}
+        for f in fighters:
+            if f['id'] not in missing_fighters:
+                continue
+            ln = f['name'].split()[-1] if f['name'] else ''
+            if not ln:
+                continue
+            last_names_to_search.setdefault(ln, []).append(f['id'])
+        print(f'  {len(last_names_to_search)} unique last names to search')
+
+        seen_vesper = set()  # avoid re-processing the same vod twice
+        for i, last in enumerate(sorted(last_names_to_search.keys())):
+            if i % 100 == 0 and i:
+                print(f'  ...{i}/{len(last_names_to_search)} searched')
+            try:
+                results = fp.vesper_search(last)
+            except Exception as e:
+                print(f'  [WARN] vesper search {last!r}: {e}')
+                continue
+            for vid, v_title in results:
+                vod_id = str(vid)
+                if vod_id in seen or vod_id in seen_vesper:
+                    continue
+                seen_vesper.add(vod_id)
+                tl = v_title.lower()
+                if any(kw in tl for kw in SKIP_KEYWORDS):
+                    continue
+                a, b, hint = parse_fight_vod_title(v_title)
+                if not a or not b:
+                    continue
+                ids_a = resolve_fighter(a, by_name, by_alias, by_last)
+                ids_b = resolve_fighter(b, by_name, by_alias, by_last)
+                if not ids_a or not ids_b:
+                    continue
+                cands_map = {}
+                for x in ids_a:
+                    for y in ids_b:
+                        for f in fight_lookup.get(frozenset((x, y)), []):
+                            cands_map[f['id']] = f
+                candidates = list(cands_map.values())
+                if not candidates:
+                    continue
+                picked = None
+                if len(candidates) == 1:
+                    picked = candidates[0]
+                elif hint:
+                    hint_n = _norm(hint)
+                    for f in candidates:
+                        ev = ev_by_id.get(f['event_id'])
+                        if ev and hint_n and hint_n in _norm(ev['name']):
+                            picked = f; break
+                    if not picked:
+                        cand_events = [ev_by_id[f['event_id']] for f in candidates
+                                       if f['event_id'] in ev_by_id]
+                        cand_norm = {_norm(e['name']): e for e in cand_events}
+                        ev_match = match_event_fuzzy(hint, cand_events, cand_norm)
+                        if ev_match:
+                            for f in candidates:
+                                if f['event_id'] == ev_match['id']:
+                                    picked = f; break
+                if picked:
+                    ev = ev_by_id.get(picked['event_id'])
+                    url = WATCH_URL.format(vod_id)
+                    label = f'{a} vs {b}  @ {ev["name"] if ev else "?"} [vesper]'
+                    matched_fights.append((picked['id'], url, label, 'fight'))
+                    matched_vod_ids.append(vod_id)
+            time.sleep(0.1)
+        print(f'  vesper pass complete — {len(seen_vesper)} unique VODs evaluated')
+
     # ── Dedupe per-event by variant (keep first per (event,variant)) ──────────
     event_main    = {}
     event_prelims = {}
@@ -905,6 +1077,10 @@ if __name__ == '__main__':
                         help='Override VOD scan start ID')
     parser.add_argument('--scan-end',   type=int, default=None,
                         help='Override VOD scan end ID')
+    parser.add_argument('--search-vesper', action='store_true',
+                        help="PASS 4: search Fight Pass's vesper service by "
+                             'fighter last name for missing per-fight VOD URLs')
     args = parser.parse_args()
     main(push=args.push, force=args.force, scan_vods=args.scan_vods,
-         scan_start=args.scan_start, scan_end=args.scan_end)
+         scan_start=args.scan_start, scan_end=args.scan_end,
+         search_vesper=args.search_vesper)
