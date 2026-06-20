@@ -477,6 +477,7 @@ https://www.sherdog.com/events/WSOF-2-Arlovski-vs-Johnson-27943
 https://www.sherdog.com/events/WSOF-1-Arlovski-vs-Cole-24535
 https://www.sherdog.com/events/Professional-Fighters-League-PFL-MENA-9-Pride-of-Arabia-112252
 https://www.sherdog.com/events/Professional-Fighters-League-PFL-Brussels-Habirora-vs-Henderson-111953
+<<<<<<< HEAD
 https://www.sherdog.com/events/Pride-34-Kamikaze-4725
 https://www.sherdog.com/events/Pride-33-Second-Coming-4392
 https://www.sherdog.com/events/Pride-FC-Shockwave-2006-4316
@@ -1858,3 +1859,6 @@ https://www.sherdog.com/events/Pancrase-Yes-We-Are-Hybrid-Wrestlers-4-97
 https://www.sherdog.com/events/Pancrase-Yes-We-Are-Hybrid-Wrestlers-3-95
 https://www.sherdog.com/events/Pancrase-Yes-We-Are-Hybrid-Wrestlers-2-94
 https://www.sherdog.com/events/Pancrase-Yes-We-Are-Hybrid-Wrestlers-1-92
+=======
+https://www.sherdog.com/events/Professional-Fighters-League-PFL-Africa-2-2026-First-Round-112510
+>>>>>>> 754c0dc87287e3c7b2167be7fac1cdc1b5333df9
