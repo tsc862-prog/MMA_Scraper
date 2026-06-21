@@ -467,6 +467,8 @@ def resolve_fighter(name, by_name, by_alias, by_last):
 # Multi-word phrases first so the regex doesn't lock onto a shorter prefix.
 _EVENT_PREFIX = (
     r'(?:Dana\s+White|Contender\s+Series|DWCS|King\s+of\s+the\s+Cage|'
+    # "(?<!Cage\s)Fury FC" so CFFC's "Cage Fury FC" titles are NOT read as Fury FC
+    r'(?<!Cage\s)Fury\s+FC|Titan\s+FC|'
     r'Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'

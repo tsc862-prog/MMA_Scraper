@@ -265,6 +265,29 @@ SHERDOG_ORGS = [
         'fight_prefix': 'rizinfight',
         'active':       True,
     },
+    {
+        # Fury Fighting Championship (Houston, TX; 2017-present). ~155 events;
+        # active US feeder with Fight Pass per-fight VODs. DISTINCT from CFFC
+        # (Cage Fury FC) — Fury FC slugs are "Fury-FC-NNN-...", CFFC's are
+        # "CFFC-..."; 'fury-fc-' does not match CFFC's slugs.
+        'organization': 'Fury FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Fury-Fighting-Championship-7617',
+        'slug_keys':    ('fury-fc-',),
+        'name_clean':   (r'\s*-\s*Fury\s+Fighting\s+Championship\s+\d+', ''),
+        'fight_prefix': 'furyfcfight',
+        'active':       True,
+    },
+    {
+        # Titan FC (Kansas/US, 2006-present). ~83 events; on Fight Pass since
+        # 2014. Sherdog org 740 (NOT the Japan/Argentina/Combat namesakes).
+        # Slugs are "Titan-FC-NNN-..."; 'titan-fc-' avoids the other Titan orgs.
+        'organization': 'Titan FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Titan-Fighting-Championship-740',
+        'slug_keys':    ('titan-fc-',),
+        'name_clean':   (r'^$', ''),   # names already "Titan FC NN - ..."
+        'fight_prefix': 'titanfcfight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────
