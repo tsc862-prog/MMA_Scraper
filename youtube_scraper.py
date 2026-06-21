@@ -33,7 +33,27 @@ SUPABASE_URL    = os.environ.get('SUPABASE_URL', '').rstrip('/')
 SUPABASE_KEY    = os.environ.get('SUPABASE_KEY', '')
 YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY', '')
 
-PFL_CHANNEL_ID = 'UCPrONRG9hO1f-OrxW-WH-xg'
+# Each channel covers one or more DB organizations. Adding a new promotion's
+# official YouTube channel = appending an entry here.
+#   has_full_event_uploads — True for channels that upload '... | Full Event'
+#                            videos (PFL does this; RIZIN only uploads per-fight).
+CHANNELS = [
+    {
+        'name':       'PFL',
+        'channel_id': 'UCPrONRG9hO1f-OrxW-WH-xg',
+        'orgs':       ['PFL', 'Bellator', 'WSOF'],
+        'has_full_event_uploads': True,
+    },
+    {
+        # RIZIN Fighting Federation. Title format on per-fight uploads is
+        #   'Full Fight | <Japanese> vs. <Japanese> / Romanized A vs. Romanized B - YYYY/M/D RIZIN LANDMARK XX'
+        # — needs '/' added as a segment delimiter in parse_fight_candidates.
+        'name':       'RIZIN',
+        'channel_id': 'UCZZ0UGjWsRdM8_5bsqtxYaQ',
+        'orgs':       ['RIZIN'],
+        'has_full_event_uploads': False,
+    },
+]
 YT_API         = 'https://www.googleapis.com/youtube/v3'
 VIDEO_URL_TMPL = 'https://www.youtube.com/watch?v={}'
 OUTPUT_FILE    = 'youtube_matches.txt'
@@ -104,11 +124,11 @@ def yt_paginated(endpoint, params):
         if not page_token:
             break
 
-def get_full_fight_playlists():
-    """All channel playlists whose title mentions 'full fight'."""
+def get_full_fight_playlists(channel_id):
+    """All playlists for `channel_id` whose title mentions 'full fight'."""
     playlists = []
     for pl in yt_paginated('playlists', {
-        'part': 'snippet', 'channelId': PFL_CHANNEL_ID, 'maxResults': 50,
+        'part': 'snippet', 'channelId': channel_id, 'maxResults': 50,
     }):
         title = pl['snippet']['title']
         if 'full fight' in title.lower():
@@ -127,12 +147,12 @@ def get_playlist_videos(playlist_id):
             videos.append((vid, sn['title']))
     return videos
 
-def get_full_event_videos():
+def get_full_event_videos(channel_id):
     """
-    Scan the channel uploads for '... | Full Event' videos.
+    Scan a channel's uploads for '... | Full Event' videos.
     Returns (video_id, title) tuples.
     """
-    uploads_playlist = 'UU' + PFL_CHANNEL_ID[2:]   # uploads playlist id
+    uploads_playlist = 'UU' + channel_id[2:]   # uploads playlist id
     out = []
     for item in yt_paginated('playlistItems', {
         'part': 'snippet', 'playlistId': uploads_playlist, 'maxResults': 50,
@@ -178,14 +198,19 @@ def parse_fight_candidates(title):
     fighter DB — titles put the event tag in many forms, so every
     pipe-delimited segment is tried.
 
-    Handles:
+    Handles (PFL/Bellator):
       "(HD FULL FIGHT) Cedric Doumbe vs Jordan Zebo | PFL Paris (...)"
       "Full Fight | Dakota Ditcheva vs Cornelia Holm | PFL Paris"
       "Clay Collard vs Shane Burgos (Lightweight Semifinal) | 2023 PFL Playoffs"
       "Title!! | Sergio Pettis vs Kyoji Horiguchi 堀口恭司 | Full Fight | Bellator 272"
+    Plus (RIZIN-style):
+      "Full Fight | 富沢ダイチ vs. 加藤瑠依 / Daichi Tomizawa vs. Rui Kato - 2026/6/6 RIZIN LANDMARK 14 in SENDAI"
+        — needs '/' added as a segment delimiter, and the trailing
+        ' - YYYY/M/D ...' stripped from fighter B.
     """
     candidates = []
-    for seg in title.split('|'):
+    # Split on '|' AND '/' so RIZIN's romanized pair gets its own segment.
+    for seg in re.split(r'[|/]', title):
         seg = re.sub(r'\([^)]*\)', '', seg)         # drop parentheticals
         seg = re.sub(r'[^\x00-\x7F]+', '', seg)     # drop non-ASCII (CJK names)
         seg = re.sub(r'\s+\d+\s*$', '', seg).strip()  # drop trailing rematch num
@@ -195,6 +220,11 @@ def parse_fight_candidates(title):
             continue
         a = m.group(1).strip(' -–—!?.')
         b = m.group(2).strip(' -–—!?.')
+        # Strip trailing ' - YYYY/M/D EVENT' / 'YYYY.M.D EVENT' / etc. from
+        # fighter B — RIZIN per-fight titles use both 'YYYY/M/D' and 'YYYY.M.D'.
+        b = re.sub(r'\s*[-–—]?\s*\d{4}[\./]\d+[\./]\d+.*$', '', b).strip()
+        # Strip stray brackets that survive the date trim.
+        b = b.strip('[](){}!? -–—.')
         if a and b and len(a) > 1 and len(b) > 1:
             candidates.append((a, b))
     return candidates
@@ -314,83 +344,89 @@ def main(push=False):
     if not YOUTUBE_API_KEY:
         raise ValueError('Missing YOUTUBE_API_KEY in .env')
 
-    # The official PFL YouTube channel posts full fights for PFL plus the
-    # promotions PFL absorbed — Bellator and WSOF.
     print('Loading data from Supabase...')
     fighters = fetch_all('fighters', 'id,name')
     aliases  = fetch_all('fighter_aliases', 'alias,fighter_id')
-    events   = fetch_all('events', 'id,name,date,location',
-                         '&organization=in.(PFL,Bellator,WSOF)')
-    channel_event_ids = {e['id'] for e in events}
     all_fights = fetch_all('fights', 'id,event_id,fighter1_id,fighter2_id')
-    channel_fights = [f for f in all_fights if f['event_id'] in channel_event_ids]
-    print(f'  {len(fighters)} fighters, {len(events)} events, '
-          f'{len(channel_fights)} fights (PFL+Bellator+WSOF)')
-
-    (by_name, by_last, by_alias,
-     fighter_names, event_by_id, fight_lookup) = build_lookups(
-        fighters, aliases, channel_fights, events)
-    lookups = (by_name, by_last, by_alias, fighter_names, event_by_id, fight_lookup)
-
-    print('Fetching PFL "Full Fight" playlists from YouTube...')
-    playlists = get_full_fight_playlists()
-    print(f'  {len(playlists)} full-fight playlists\n')
 
     matched, unmatched = [], []
-    seen_fight = set()
-
-    for pl in playlists:
-        hint = playlist_event_hint(pl['title'])
-        videos = get_playlist_videos(pl['id'])
-        print(f'  [{pl["title"]}] — {len(videos)} videos')
-        for vid, vtitle in videos:
-            url = VIDEO_URL_TMPL.format(vid)
-            cand_pairs = parse_fight_candidates(vtitle)
-            if not cand_pairs:
-                unmatched.append(('PARSE_FAIL', vtitle, url))
-                continue
-
-            fight = None
-            reason = 'no candidate matched'
-            for name_a, name_b in cand_pairs:
-                fight, reason = find_fight(name_a, name_b, hint, lookups)
-                if fight:
-                    break
-
-            if fight:
-                if fight['id'] in seen_fight:
-                    continue
-                seen_fight.add(fight['id'])
-                n1 = fighter_names.get(fight['fighter1_id'], '?')
-                n2 = fighter_names.get(fight['fighter2_id'], '?')
-                ev = event_by_id.get(fight['event_id'], {}).get('name', '?')
-                matched.append({
-                    'fight_id': fight['id'], 'label': f'{n1} vs {n2} @ {ev}',
-                    'video_title': vtitle, 'url': url, 'video_id': vid,
-                })
-            else:
-                unmatched.append((reason, vtitle, url))
-
-    # ── Full-event pass — match "... | Full Event" uploads to events ──────────
-    print('\nScanning channel uploads for "Full Event" videos...')
-    fe_videos = get_full_event_videos()
-    print(f'  {len(fe_videos)} full-event videos found')
-
     ev_matched, ev_unmatched = [], []
+    seen_fight = set()
     seen_event = set()
-    for vid, vtitle in fe_videos:
-        url = VIDEO_URL_TMPL.format(vid)
-        event, reason = match_full_event(vtitle, events)
-        if event:
-            if event['id'] in seen_event:
-                continue
-            seen_event.add(event['id'])
-            ev_matched.append({
-                'event_id': event['id'], 'event_name': event['name'],
-                'video_title': vtitle, 'url': url, 'video_id': vid,
-            })
-        else:
-            ev_unmatched.append((reason, vtitle, url))
+
+    # Walk each channel independently — its DB scope is the events for its
+    # orgs (e.g. PFL channel only matches PFL/Bellator/WSOF events).
+    for ch in CHANNELS:
+        org_filter = ','.join(ch['orgs'])
+        events = fetch_all('events', 'id,name,date,location',
+                           f'&organization=in.({org_filter})')
+        channel_event_ids = {e['id'] for e in events}
+        channel_fights = [f for f in all_fights if f['event_id'] in channel_event_ids]
+        print(f'\n=== Channel: {ch["name"]} (orgs={ch["orgs"]}) ===')
+        print(f'  {len(events)} events, {len(channel_fights)} fights in scope')
+
+        (by_name, by_last, by_alias,
+         fighter_names, event_by_id, fight_lookup) = build_lookups(
+            fighters, aliases, channel_fights, events)
+        lookups = (by_name, by_last, by_alias, fighter_names, event_by_id, fight_lookup)
+
+        playlists = get_full_fight_playlists(ch['channel_id'])
+        print(f'  {len(playlists)} full-fight playlists')
+
+        for pl in playlists:
+            hint = playlist_event_hint(pl['title'])
+            videos = get_playlist_videos(pl['id'])
+            print(f'    [{pl["title"]}] — {len(videos)} videos')
+            for vid, vtitle in videos:
+                url = VIDEO_URL_TMPL.format(vid)
+                cand_pairs = parse_fight_candidates(vtitle)
+                if not cand_pairs:
+                    unmatched.append(('PARSE_FAIL', vtitle, url))
+                    continue
+
+                fight = None
+                reason = 'no candidate matched'
+                for name_a, name_b in cand_pairs:
+                    fight, reason = find_fight(name_a, name_b, hint, lookups)
+                    if fight:
+                        break
+
+                if fight:
+                    if fight['id'] in seen_fight:
+                        continue
+                    seen_fight.add(fight['id'])
+                    n1 = fighter_names.get(fight['fighter1_id'], '?')
+                    n2 = fighter_names.get(fight['fighter2_id'], '?')
+                    ev = event_by_id.get(fight['event_id'], {}).get('name', '?')
+                    matched.append({
+                        'fight_id': fight['id'], 'label': f'{n1} vs {n2} @ {ev}',
+                        'video_title': vtitle, 'url': url, 'video_id': vid,
+                    })
+                else:
+                    unmatched.append((reason, vtitle, url))
+
+        # Full-event pass — only channels that upload that style of video
+        if ch['has_full_event_uploads']:
+            print(f'  Scanning {ch["name"]} uploads for "Full Event" videos...')
+            fe_videos = get_full_event_videos(ch['channel_id'])
+            print(f'    {len(fe_videos)} full-event videos found')
+            for vid, vtitle in fe_videos:
+                url = VIDEO_URL_TMPL.format(vid)
+                event, reason = match_full_event(vtitle, events)
+                if event:
+                    if event['id'] in seen_event:
+                        continue
+                    seen_event.add(event['id'])
+                    ev_matched.append({
+                        'event_id': event['id'], 'event_name': event['name'],
+                        'video_title': vtitle, 'url': url, 'video_id': vid,
+                    })
+                else:
+                    ev_unmatched.append((reason, vtitle, url))
+
+    # 'events' is per-channel above; for the geo-block + write-file passes
+    # below we use a unified event_by_id keyed off matched results.
+    events = fetch_all('events', 'id,name,date,location')
 
     # ── Drop videos geo-blocked in COUNTRY ────────────────────────────────────
     print(f'\nChecking region restrictions ({COUNTRY})...')

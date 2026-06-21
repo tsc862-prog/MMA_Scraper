@@ -52,6 +52,10 @@ SHOW_CONFIGS = [
     ('ufc',             range(2000, 2027), 'numbered'),
     ('ufc-2010s',       range(2010, 2021), 'recap'),
     ('ufc-2000s',       range(2000, 2010), 'recap'),
+    # UFC Freedom 250 (White House, 2026) — own Paramount show slug.
+    # Clip titles use the same "Fighter vs. Fighter (Event - Main)" shape
+    # as fight_night, so the fight_night parser handles it.
+    ('ufc-white-house', range(2026, 2028), 'fight_night'),
 ]
 
 # ── Supabase ──────────────────────────────────────────────────────────────────

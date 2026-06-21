@@ -5,3 +5,9 @@ __pycache__/
 # staging build artifacts
 staging_scrape*.log
 migrate/__pycache__/
+
+# cutover artifacts (local only)
+migrate/backup/
+migrate/.last_backup_stamp
+prod_rebuild.log
+*.precutover.bak

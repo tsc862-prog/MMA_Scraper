@@ -1,10 +1,10 @@
 YOUTUBE PFL MATCH RESULTS
-Fights  — matched: 702  unmatched: 152
-Events  — matched: 3  unmatched: 13
+Fights  — matched: 777  unmatched: 611
+Events  — matched: 4  unmatched: 13
 Geo-blocked in US (not stored): 0 fights, 8 events
 ======================================================================
 
-MATCHED FIGHTS (702)
+MATCHED FIGHTS (777)
 ----------------------------------------------------------------------
 fight_id: b102284f-0697-54eb-97f9-1e7e89d28e36
 fight:    Corey Anderson vs Denis Goltsov @ PFL Road to Dubai Champions Series 2 & PFL Africa 2025 First Round
@@ -580,11 +580,6 @@ fight_id: cb0d18fb-495e-52e4-afb7-5ee08f56ddae
 fight:    Renan Ferreira vs Ryan Bader @ PFL Super Fights - PFL vs. Bellator Champs
 video:    Renan Ferreira vs Ryan Bader | PFL vs Bellator | Full Fight
 url:      https://www.youtube.com/watch?v=0j5LbwWsv8Y
-
-fight_id: ffa0a622-11ab-5e9f-9a29-3a031e3cd083
-fight:    Johnny Eblen vs Impa Kasanganay @ PFL Super Fights - PFL vs. Bellator Champs
-video:    Johnny Eblen vs Impa Kasanganay | PFL vs Bellator | Full Fight
-url:      https://www.youtube.com/watch?v=R_H72BGDe4k
 
 fight_id: 6cf925c0-adf4-5276-8694-5cc8dd9b11a4
 fight:    Jason Jackson vs Ray Cooper III @ PFL Super Fights - PFL vs. Bellator Champs
@@ -3516,9 +3511,394 @@ fight:    Natan Schulte vs Rashid Magomedov @ 2018 Season PFL Championships
 video:    Full Fight | Natan Schulte vs Rashid Magomedov (Lightweight Title Bout) | 2018 PFL Championship
 url:      https://www.youtube.com/watch?v=kPU0yvl0x_U
 
+fight_id: a1c39b1b-8e74-5041-b622-af09d5cbe50e
+fight:    Daichi Tomizawa vs Rui Kato @ Rizin FF - Landmark Vol. 14
+video:    Full Fight | 冨澤大智 vs. 加藤瑠偉 / Daichi Tomizawa vs. Rui Kato - 2026/6/6[RIZIN LANDMARK 14 in SENDAI]
+url:      https://www.youtube.com/watch?v=nFEYJkb8UR4
 
-MATCHED FULL EVENTS (3)
+fight_id: 476945db-7be4-5838-8c4e-7ba573dd95a3
+fight:    Tony Laramie vs Yuki Motoya @ Rizin FF - Landmark Vol. 14
+video:    Full Fight | 元谷友貴 vs. トニー・ララミー / Yuki Motoya vs. Tony Laramie - 2026/6/6 RIZIN LANDMARK 14 in SENDAI
+url:      https://www.youtube.com/watch?v=nwCEfx_xnH8
+
+fight_id: 0269e49d-997f-5009-8d13-a135aa7b76dc
+fight:    Ryo Takagi vs Kaiwen Li @ Rizin FF - Rizin 53
+video:    Full Fight | 高木凌 vs. リー・カイウェン / Ryo Takagi vs. Kaiwen Li - 2026.5.10[RIZIN.53]
+url:      https://www.youtube.com/watch?v=H1QEN8AS4Gg
+
+fight_id: 2418344d-78a5-5b5d-94e7-8b27bf084b20
+fight:    Ryan Cafaro vs Koyomi Matsushima @ Rizin FF - Rizin 53
+video:    Full Fight | 松嶋こよみ vs. ライアン・カファロ / Koyomi Matsushima vs. Ryan Cafaro - 2026.5.10[RIZIN.53]
+url:      https://www.youtube.com/watch?v=_DOGDtlXuQs
+
+fight_id: 7cd59b4e-314e-5798-9e2d-74cb1536c5ca
+fight:    Joe Hiramoto vs Seiya Ameyama @ Rizin FF - Rizin 53
+video:    Full Fight | 飴山聖也 vs. 平本丈 / Seiya Ameyama vs. Joe Hiramoto - 2026.5.10[RIZIN.53]
+url:      https://www.youtube.com/watch?v=mrA67abWFGY
+
+fight_id: a5c8320d-c343-5cd3-8e1b-4896aae587f0
+fight:    Danny Sabatello vs Joji Goto @ Rizin FF - Landmark Vol. 13
+video:    Full Fight | ダニー・サバテロ vs. 後藤丈治 / Danny Sabatello vs. Joji Goto -2026.4.12 [RIZIN LANDMARK 13]
+url:      https://www.youtube.com/watch?v=8V14F2XfHo0
+
+fight_id: 16edf491-92f2-5d7c-8e8e-9dcec2d15ccd
+fight:    Azizbek Temirov vs Ryuya Fukuda @ Rizin FF - Landmark Vol. 13
+video:    Full Fight | 福田龍彌 vs. アジズベク・テミロフ / Ryuya Fukuda vs. Azizbek Temirov -2026.4.12[RIZIN LANDMARK 13]
+url:      https://www.youtube.com/watch?v=G0FDOVi_6_g
+
+fight_id: b36bfcba-94a0-57de-b069-da07df1fb990
+fight:    Kazumasa Majima vs James Gallagher @ Rizin FF - Landmark Vol. 13
+video:    Full Fight | 摩嶋一整 vs. ジェームズ・ギャラガー / Kazumasa Majima vs. James Gallagher -2026.4.12 RIZIN LANDMARK 13
+url:      https://www.youtube.com/watch?v=Viao49xBPJc
+
+fight_id: 14feeee3-6367-57de-b3ff-1b2d774495ea
+fight:    Ayaka Hamasaki vs Yu Ri Shim @ Rizin FF - Landmark Vol. 10
+video:    Full Fight | 浜崎朱加 vs. シン・ユリ / Ayaka Hamasaki vs. Yu Ri Shim - 2024.11.17[RIZIN LANDMARK 10]
+url:      https://www.youtube.com/watch?v=csRn-xpU1Lc
+
+fight_id: 101b8b71-f17a-5459-83b5-46c39fee58bd
+fight:    Nurkhan Zhumagazy vs Tatsuya Saika @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 雑賀“ヤン坊”達也 vs. ヌルハン・ズマガジー / Tatsuya “Yanbo” Saika vs. Nurkhan Zhumagazy - 2025.11.3
+url:      https://www.youtube.com/watch?v=pCa96Fil38k
+
+fight_id: a319dffb-bd34-52e1-bfc3-b8c920fd8258
+fight:    Joji Goto vs Jose Torres @ Rizin FF - Shiwasu no Cho Tsuwamono Matsuri
+video:    Full Fight | 後藤丈治 vs. ホセ・トーレス / Joji Goto vs. Jose Torres - 2025.12.31[RIZIN師走の超強者祭り]
+url:      https://www.youtube.com/watch?v=Y2dpapbYN90
+
+fight_id: dd1c7976-8fcb-5ba1-9b30-ed2a292a265b
+fight:    Shoko Sato vs John Sweeney @ Rizin FF - Rizin 52
+video:    Full Fight | 佐藤将光 vs. ジョン・スウィーニー / Shoko Sato vs. John Sweeney - 2026.3.7[RIZIN.52]
+url:      https://www.youtube.com/watch?v=U7MG4NN-IcU
+
+fight_id: f228a5b5-229f-526d-9b6e-f09184203f19
+fight:    Jinnosuke Kashimura vs Hideo Tokoro @ Rizin FF - Rizin 52
+video:    Full Fight | 所英男 vs. 鹿志村仁之介 / Hideo Tokoro vs. Jinnosuke Kashimura - 2026.3.7[RIZIN.52]
+url:      https://www.youtube.com/watch?v=GIFIVTzwOY4
+
+fight_id: cb8f97cb-6aab-55d7-83ac-b2c49d1429aa
+fight:    Yuki Ito vs Carlos Mota @ Rizin FF - Rizin 52
+video:    Full Fight | 伊藤裕樹 vs. カルロス・モタ / Yuki Ito vs. Carlos Mota - 2026.3.7[RIZIN.52]
+url:      https://www.youtube.com/watch?v=h04aFTym9dc
+
+fight_id: 27da37f2-40b7-5ca9-bc42-48f4a5588cd3
+fight:    Luiz Gustavo vs Taisei Sakuraba @ Rizin FF - Rizin 52
+video:    Full Fight | ルイス・グスタボ vs. 桜庭大世 / Luiz Gustavo vs. Taisei Sakuraba - 2026.3.7[RIZIN.52]
+url:      https://www.youtube.com/watch?v=2uj7vHH87Wc
+
+fight_id: 5c03e479-b716-5b19-8dd8-16e76975d7ff
+fight:    Yusuke Yachi vs Bilal Kai Haga @ Rizin FF - Rizin 51
+video:    Full Fight | 矢地祐介 vs  芳賀ビラル海 / Yusuke Yachi vs. Bilal Kai Haga - 2025.9.28 [RIZIN.51］
+url:      https://www.youtube.com/watch?v=hrHcGhE4H6c
+
+fight_id: 1f2a73cc-b64a-5eba-b20b-e45909a710bc
+fight:    Kyung Pyo Kim vs Daigo Kuramoto @ Rizin FF - Landmark Vol. 10
+video:    Full Fight | キム・ギョンピョ vs. 倉本大悟 / Kyung Pyo Kim vs. Daigo Kuramoto - 2024.11.17 [RIZIN LANDMARK 10］
+url:      https://www.youtube.com/watch?v=92WNhl7Fba0
+
+fight_id: 1b0f5bb5-b138-5fa9-9cd6-dcfdf4fd9b1a
+fight:    Ryo Takagi vs Kisa Miyake @ Rizin FF - Rizin 51
+video:    Full Fight | 高木凌 vs  三宅輝砂 / Ryo Takagi vs. Kisa Miyake - 2025.9.28 [RIZIN.51］
+url:      https://www.youtube.com/watch?v=hJfyWCIKaXc
+
+fight_id: 97158b8b-0d76-5bb8-979e-8589e97b1bf5
+fight:    Tony Laramie vs Wataru Yamauchi @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | トニー・ララミー vs. 山内渉 / Tony Laramie vs. Wataru Yamauchi - 2025.11.3 RIZIN LANDMARK 12
+url:      https://www.youtube.com/watch?v=qvjidDaUiHU
+
+fight_id: ea8da04c-4aa4-5fae-a45e-5c53f4111e63
+fight:    Ryuya Fukuda vs Tatsuya Ando @ Rizin FF - Shiwasu no Cho Tsuwamono Matsuri
+video:    Full Fight | 福田龍彌 vs. 安藤達也 / Ryuya Fukuda vs. Tatsuya Ando - 2025.12.31 [RIZIN師走の超強者祭り]
+url:      https://www.youtube.com/watch?v=BKA2f_Os8ro
+
+fight_id: 3d6d7ac7-8d1d-5b64-95fa-56d316219a68
+fight:    Kyoma Akimoto vs Suguru Nii @ Rizin FF - Shiwasu no Cho Tsuwamono Matsuri
+video:    Full Fight | 秋元強真 vs. 新居すぐる / Kyoma Akimoto vs. Suguru Nii - 2025.12.31 [RIZIN師走の超強者祭り]
+url:      https://www.youtube.com/watch?v=A6rMvBo3t8g
+
+fight_id: f32bd245-3d83-59f4-a1e1-337212463f20
+fight:    Tatsuki Shinotsuka vs Daichi Tomizawa @ Rizin FF - Shiwasu no Cho Tsuwamono Matsuri
+video:    Full Fight | 篠塚辰樹 vs. 冨澤大智 / Tatsuki Shinotsuka vs. Daichi Tomizawa - 2025.12.31 [RIZIN師走の超強者祭り]
+url:      https://www.youtube.com/watch?v=Y0MMqBNoeBE
+
+fight_id: 6d0641ca-cff8-53d5-8c7c-9c6ee9ebd712
+fight:    Danny Sabatello vs Naoki Inoue @ Rizin FF - Shiwasu no Cho Tsuwamono Matsuri
+video:    Full Fight | 井上直樹 vs. ダニー・サバテロ / Naoki Inoue vs. Danny Sabatello - 2025.12.31 [RIZIN師走の超強者祭り]
+url:      https://www.youtube.com/watch?v=m4wLoHV3JF4
+
+fight_id: a6329c6f-c83d-59f9-ac43-8915ea709688
+fight:    Daichi Tomizawa vs Joe Hiramoto @ Rizin FF - Rizin 51
+video:    Full Fight | 冨澤大智 vs. 平本丈 | Daichi Tomizawa vs. Joe Hiramoto -2025.9.28 [RIZIN.51]
+url:      https://www.youtube.com/watch?v=b5FRoX9RD_k
+
+fight_id: 84ad5ab7-6395-5786-a5c9-7de0b69a4a8a
+fight:    Joji Goto vs Taichi Nakajima @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 中島太一 vs. 後藤丈治 / Taichi Nakajima vs. Joji Goto | RIZIN LANDMARK 12 in KOBE -2025.11.3
+url:      https://www.youtube.com/watch?v=KSAyLH0zWao
+
+fight_id: 888120d1-c25c-565b-9be9-55706935fe30
+fight:    Taisei Sakuraba vs Sho Patrick Usami @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 宇佐美正パトリック vs. 桜庭大世 / Sho Patrick Usami vs. Taisei Sakuraba | RIZIN LANDMARK 12 in KOBE
+url:      https://www.youtube.com/watch?v=za1zVLBxGIg
+
+fight_id: 23071b50-91fb-5dcb-8f2f-a5402821043a
+fight:    Jinnosuke Kashimura vs Hyuma Yasui @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 鹿志村仁之介 vs. 安井飛馬 | Jinnosuke Kashimura vs. Hyuma Yasui | RIZIN LANDMARK 12 in KOBE
+url:      https://www.youtube.com/watch?v=oOaxAw0WEwY
+
+fight_id: 9f303e04-edb7-5d08-ba1f-50c6f8e10091
+fight:    Seika Izawa vs Saori Oshima @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 伊澤星花 vs. 大島沙緒里 / Seika Izawa vs. Saori Oshima | RIZIN LANDMARK 12 in KOBE -2025.11.3
+url:      https://www.youtube.com/watch?v=FQzL8NpJVns
+
+fight_id: 2bcdd858-11ed-58db-a8cd-6cbec1ae4349
+fight:    Kazumasa Majima vs Shuya Kimura @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 摩嶋一整 vs. 木村柊也 / Kazumasa Majima vs. Shuya Kimura | RIZIN LANDMARK 12 in KOBE-2025.11.3
+url:      https://www.youtube.com/watch?v=XannaKexNIg
+
+fight_id: ca014e2a-8e14-5133-8f3e-0cd0684ffdba
+fight:    Kyoma Akimoto vs Kyohei Hagiwara @ Rizin FF - Landmark Vol. 12
+video:    Full Fight | 秋元強真 vs. 萩原京平 / Kyoma Akimoto vs. Kyohei Hagiwara | RIZIN LANDMARK 12 -2025.11.3
+url:      https://www.youtube.com/watch?v=-neSpJExHF0
+
+fight_id: 6895db09-ea0e-5ac5-80d8-8f7617a1b5a5
+fight:    Danny Sabatello vs Shoko Sato @ Rizin FF - Rizin 51
+video:    Full Fight | 佐藤将光 vs. ダニー・サバテロ / Shoko Sato vs. Danny Sabatello -2025.9.28 [RIZIN.51]
+url:      https://www.youtube.com/watch?v=EufvngFkj-s
+
+fight_id: 3b8b63f1-e9f8-53ef-9d9b-5d930f39fd48
+fight:    Genji Umeno vs Ryusei Ashizawa @ Rizin FF - Rizin 51
+video:    Full Fight | 梅野源治 vs. 芦澤竜誠 / Genji Umeno vs. Ryusei Ashizawa -2025.9.28 [RIZIN.51]
+url:      https://www.youtube.com/watch?v=sBFSz24iop8
+
+fight_id: bc7950aa-c68b-54aa-9799-6e8814f45cd0
+fight:    Hiromasa Ougikubo vs Jose Torres @ Rizin FF - Super Rizin 4
+video:    Full Fight | ホセ・トーレス vs. 扇久保博正 / Jose Torres vs. Hiromasa Ougikubo - 2025.7.27 [超RIZIN.4]
+url:      https://www.youtube.com/watch?v=kSToaD5j32E
+
+fight_id: f1cb3008-7bc6-5bb4-a230-92d7b73c936d
+fight:    Alibek Gadzhammatov vs Takaki Soya @ Rizin FF - Super Rizin 4
+video:    Full Fight | アリベク・ガジャマトフ vs. 征矢貴 / Alibek Gadzhammatov vs. Takaki Soya - 2025.7.27 [超RIZIN.4]
+url:      https://www.youtube.com/watch?v=SP7DlEuRIWI
+
+fight_id: 60ffec87-b8de-5753-9edf-ff3ff9a6d663
+fight:    Yuki Ito vs Nkazimulo Zulu @ Rizin FF - Super Rizin 4
+video:    Full Fight | 伊藤裕樹 vs. エンカジムーロ・ズールー / Yuki Ito vs. Nkazimulo Zulu - 2025.7.27 [超RIZIN.4]
+url:      https://www.youtube.com/watch?v=ox7aW8SKFzw
+
+fight_id: 6b26d97a-2fa7-5766-b163-daf8156004c0
+fight:    Danny Sabatello vs Shinobu Ota @ Rizin FF - Otoko Matsuri
+video:    Full Fight | ダニー・サバテロ vs. 太田忍 / Danny Sabatello vs. Shinobu Ota - 2025.5.4 [RIZIN男祭り]
+url:      https://www.youtube.com/watch?v=xFxzkjM4gT4
+
+fight_id: 9e2cb455-cfd0-5597-a28a-a462837eb4b3
+fight:    Joe Hiramoto vs Toki Tamaru @ Rizin FF - Otoko Matsuri
+video:    Full Fight | 平本丈 vs. 田丸辰 / Joe Hiramoto vs. Toki Tamaru - 2025.5.4 [RIZIN男祭り]
+url:      https://www.youtube.com/watch?v=SssbKjJtfgs
+
+fight_id: 16efea74-6a67-5b39-81c7-bf9b188ff49b
+fight:    Alexander Soldatkin vs Mikio Ueda @ Rizin FF - Super Rizin 4
+video:    Full Fight | 上田幹雄 vs. アレクサンダー・ソルダトキン / Mikio Ueda vs. Aleksandr Soldatkin - 2025.7.27 [超RIZIN.4]
+url:      https://www.youtube.com/watch?v=DA6zCqpoJgk
+
+fight_id: 4bd3b300-1201-5bd7-bdfd-01ecd2ef5b52
+fight:    Marek Samociuk vs Jose Augusto @ Rizin FF - Super Rizin 4
+video:    Full Fight | ジョゼ・アウグスト vs. マレク・サモチュク / Jose Augusto vs. Marek Samociuk - 2025.7.27 [超RIZIN.4]
+url:      https://www.youtube.com/watch?v=sSyarnWD8rg
+
+fight_id: 0b2b10b9-0063-548a-8a2a-6393a84ad753
+fight:    Ryuya Fukuda vs Ryusei Ashizawa @ Rizin FF - Rizin Bangaichi / Rizin 49: Decade
+video:    Full Fight | 福田龍彌 vs. 芦澤竜誠 / Ryuya Fukuda vs. Ryusei Ashizawa - 2024/12/31 [RIZIN.49]
+url:      https://www.youtube.com/watch?v=nn_HVSAC1hI
+
+fight_id: b4eb2d62-4bad-578f-aeff-b527b89f1fca
+fight:    Takaki Soya vs John Dodson @ Rizin FF - Otoko Matsuri
+video:    Full Fight | ジョン・ドッドソン vs. 征矢貴 / John Dodson vs. Takaki Soya - 2025/05/04[RIZIN男祭り]
+url:      https://www.youtube.com/watch?v=tMr-z28F2FY
+
+fight_id: d34f53bb-7b84-56db-9bcf-eb6a67d9c7ef
+fight:    Alibek Gadzhammatov vs Daichi Kitakata @ Rizin FF - Landmark Vol. 10
+video:    Full Fight | 北方大地 vs. アリベク・ガジャマトフ / Daichi Kitakata vs. alibek gadzhammatov  - 2024/11/17
+url:      https://www.youtube.com/watch?v=XWWsY-QIOMs
+
+fight_id: bae7ee6e-8120-515d-91dd-5ea65a43d689
+fight:    Erson Yamamoto vs Daichi Tomizawa @ Rizin FF - Otoko Matsuri
+video:    Full Fight | 山本アーセン vs. 冨澤大智 / Erson Yamamoto vs. Daichi Tomizawa - 2025/05/04[RIZIN男祭り]
+url:      https://www.youtube.com/watch?v=fA6SqY77PCg
+
+fight_id: 5f096b0f-6fbd-5e06-94d4-8ce4030c0772
+fight:    Joji Goto vs Jinnosuke Kashimura @ Rizin FF - Landmark Vol. 11
+video:    Full Fight | 後藤丈治 vs. 鹿志村仁之介 / Joji Goto vs. Jinnosuke Kashimura - 2025/06/14 [RIZIN LANDMARK 11]
+url:      https://www.youtube.com/watch?v=WM2I02Cfe_M
+
+fight_id: c48ac8a3-b74a-51b7-af9c-4c0281ba72de
+fight:    Yoshinori Horie vs Yamato Nishikawa @ Rizin FF - Landmark Vol. 11
+video:    Full Fight | 堀江圭功 vs. 西川大和 / Yoshinori Horie vs. Yamato Nishikawa - 2025/06/14 [RIZIN LANDMARK 11]
+url:      https://www.youtube.com/watch?v=KpNUK3bq2SY
+
+fight_id: c9f34a94-3c32-553b-b3ba-af93633517ba
+fight:    Vugar Karamov vs Shuya Kimura @ Rizin FF - Landmark Vol. 11
+video:    Full Fight | ヴガール・ケラモフ vs. 木村柊也 / Vugar Karamov vs. Shuya Kimura - 2025/06/14 [RIZIN LANDMARK 11]
+url:      https://www.youtube.com/watch?v=rWz10dHmyvc
+
+fight_id: a5050ff1-5c5e-5729-9700-f5589ab28b1d
+fight:    Shuya Kimura vs Takeji Yokoyama @ Rizin FF - Rizin 50
+video:    Full Fight | 横山武司 vs. 木村柊也 / Takeji Yokoyama vs. Shuya Kimura - 2025/03/30 [RIZIN.50]
+url:      https://www.youtube.com/watch?v=xsc_X-M6cJQ
+
+fight_id: 68b76e47-0c4c-5713-83fe-af828163ded2
+fight:    Joji Goto vs Junya Hibino @ Rizin FF - Landmark Vol. 6
+video:    Full Fight | 後藤丈治 vs. 日比野“エビ中”純也 / Joji Goto vs. Junya “Ebichu” Hibino - 2023/10/01
+url:      https://www.youtube.com/watch?v=BWfHrT2KFn0
+
+fight_id: 0f28a667-8b12-531b-8ca7-11e4b41f9380
+fight:    Magerram Gasanzade vs Rikuto Shirakawa @ Rizin FF - Landmark Vol. 10
+video:    Full Fight | 白川ダーク陸斗 vs. マゲラム・ガサンザデ / Rikuto Dark Shirakawa vs. Magerram Gasanzade - 2024/11/17
+url:      https://www.youtube.com/watch?v=roJ3m72D3aE
+
+fight_id: e34a45b7-b590-5af2-babe-df0cd9dd43e0
+fight:    Viktor Kolesnik vs Atsushi Kishimoto @ Rizin FF - Rizin 42
+video:    Full Fight | 岸本篤史 vs. ビクター・コレスニック / Atsushi Kishimoto vs. Viktor Kolesnik - 2023/05/06 [RIZIN.42]
+url:      https://www.youtube.com/watch?v=wPGYroKBf8E
+
+fight_id: c827c96d-8c28-5a37-b7b4-e3de9f5f10df
+fight:    Hyuk Min Ji vs Koji Takeda @ Rizin FF - World Series in Korea
+video:    Full Fight | ジ・ヒョクミン vs. 武田光司 / Hyuk Min Ji vs. Koji Takeda- 2025/5/31 [RIZIN WORLD SERIES IN KOREA]
+url:      https://www.youtube.com/watch?v=M9WWIPVI8o8
+
+fight_id: 40435907-65b8-5e37-892c-c3154444069b
+fight:    Shoko Sato vs Soo Chul Kim @ Rizin FF - World Series in Korea
+video:    Full Fight | キム・スーチョル vs. 佐藤将光 / Soo Chul Kim vs. Shoko Sato - 2025/5/31
+url:      https://www.youtube.com/watch?v=r_wYfQ_48YM
+
+fight_id: c8435849-bbe1-57d2-ae5f-1ede62a5a919
+fight:    Roberto Satoshi de Souza vs Won Bin Ki @ Rizin FF - World Series in Korea
+video:    Full Fight | キ・ウォンビン vs. ホベルト・サトシ・ソウザ / Won Bin Ki vs. Roberto Satoshi Souza - 2025/5/31
+url:      https://www.youtube.com/watch?v=tWixgfRvjLo
+
+fight_id: 06386e49-45c8-5d53-ad4e-c61fefd0ccd0
+fight:    Hiroto Gomyo vs Koki Akada @ Rizin FF - Rizin Bangaichi / Rizin 49: Decade
+video:    Full Fight | 五明宏人 vs. 赤田プレイボイ功輝 / Hiroto Gomyo vs. Koki Playboi Akada - 雷神番外地
+url:      https://www.youtube.com/watch?v=PoT4VCDpHuc
+
+fight_id: 4c7b7683-90c2-5642-9227-4ae8e8100451
+fight:    Shoko Sato vs Juntaro Ushiku @ Rizin FF - Rizin 48
+video:    Full Fight | 牛久絢太郎 vs. 佐藤将光 / Juntaro Ushiku vs. Shoko Sato - 2024/9/29 [RIZIN.48]
+url:      https://www.youtube.com/watch?v=1EHRO6-aG7Y
+
+fight_id: 3c75712c-9014-5d73-ba0c-5e20fa343912
+fight:    Yoshiki Nakahara vs Akira Haraguchi @ Rizin FF - Rizin 39
+video:    Full Fight | 中原由貴 vs. 原口央 / Yoshiki Nakahara vs. Akira Haraguchi - 2022/10/23 [RIZIN.39]
+url:      https://www.youtube.com/watch?v=yETE0kgLBSI
+
+fight_id: 44fe05f8-fd1e-5231-be4f-eaf28c316fbc
+fight:    Koji Takeda vs Johnny Case @ Rizin FF - Rizin 37
+video:    Full Fight |  ジョニー・ケース vs. 武田光司 / Johnny Case vs. Koji Takeda - 2022/7/31 [RIZIN.37]
+url:      https://www.youtube.com/watch?v=pnb3BvJSur4
+
+fight_id: 34583b53-ff6e-556f-aef4-329eedd6f27c
+fight:    Kyung Pyo Kim vs Sho Patrick Usami @ Rizin FF - Rizin 41
+video:    Full Fight | 宇佐美正パトリック vs. キム・ギョンピョ / Sho Patrick Usami vs. Kyung Pyo Kim
+url:      https://www.youtube.com/watch?v=QUldhgp5oC8
+
+fight_id: dc1d36d7-c081-5208-958d-bdc12e52aa3d
+fight:    Tenshin Nasukawa vs Yamato Fujita @ Rizin Fighting World Grand Prix 2017 - Men's Bantamweight & Women's Tournament: Aki No Jin
+video:    Full Fight | 那須川天心 vs. 藤田大和 / Tenshin Nasukawa vs. Yamato Fujita - 10/15/2017
+url:      https://www.youtube.com/watch?v=xLdKTl1K_Fk
+
+fight_id: 644e35ed-69d2-529d-a155-a32fdc1c3afa
+fight:    Tenshin Nasukawa vs Francesco Ghigliotti @ Rizin 5 - Rizin 2017 in Yokohama: Sakura
+video:    Full Fight | 那須川天心 vs. フランチェスコ・ギリオッティ / Tenshin Nasukawa vs. Francesco Ghigliotti - 4/16/2017
+url:      https://www.youtube.com/watch?v=vUxTbC1At-k
+
+fight_id: 77a390c0-e8fa-54bb-8c74-6393f77b82e2
+fight:    Tenshin Nasukawa vs Dylan Oligo @ Rizin 4 - Rizin Fighting World Grand Prix 2016: Final Round
+video:    Full Fight | 那須川天心 vs. カウイカ・オリージョ / Tenshin Nasukawa vs. Kawika Oligo - 12/31/2016
+url:      https://www.youtube.com/watch?v=Se6N7dHr_7c
+
+fight_id: 8bb886c7-5e88-523e-8966-ecaa4bb802c2
+fight:    Yusuke Yachi vs Daron Cruickshank @ Rizin 5 - Rizin 2017 in Yokohama: Sakura
+video:    Full Fight | ダロン・クルックシャンク vs. 矢地祐介 / Daron Cruickshank vs. Yusuke Yachi - 4/16/2017
+url:      https://www.youtube.com/watch?v=9zZbo2q_2kM
+
+fight_id: 213e7cb0-9d75-5cb7-b262-d0102d52e85a
+fight:    Shintaro Ishiwatari vs Takafumi Otsuka @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: Final Round
+video:    Full Fight | 大塚隆史 vs. 石渡伸太郎 / Takafumi Otsuka vs. Shintaro Ishiwatari - 12/31/2017
+url:      https://www.youtube.com/watch?v=NCXny9qs1hw
+
+fight_id: eb195b92-fbb9-5a4e-948d-7c395e949483
+fight:    Manel Kape vs Ian McCall @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 2nd Round
+video:    Full Fight | イアン・マッコール vs. マネル・ケイプ / Ian McCall vs. Manel Kape - 12/29/2017
+url:      https://www.youtube.com/watch?v=lGzYk_vCp68
+
+fight_id: 2df4bbd1-01e7-5adb-ae54-5f400881dfbe
+fight:    Shintaro Ishiwatari vs Kevin Petshi @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 2nd Round
+video:    Full Fight | 石渡伸太郎 vs. ケビン・ペッシ / Shintaro Ishiwatari vs. Kevin Petshi - 12/29/2017
+url:      https://www.youtube.com/watch?v=u_NjCwpRu-E
+
+fight_id: b79ca52f-a196-5ef3-b28c-979cfabc6f78
+fight:    Takafumi Otsuka vs Khalid Taha @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 2nd Round
+video:    Full Fight | 大塚隆史 vs. カリッド・タハ / Takafumi Otsuka vs. Khalid Taha - 12/29/2017
+url:      https://www.youtube.com/watch?v=uZIpwzW4h9g
+
+fight_id: 9b455497-c019-59f7-b03d-446d4d044f33
+fight:    Shintaro Ishiwatari vs Akhmed Musakaev @ Rizin Fighting World Grand Prix 2017 - Men's Bantamweight & Women's Tournament: Aki No Jin
+video:    Full Fight | 石渡伸太郎 vs. アクメド・ムサカエフ / Shintaro Ishiwatari vs. Akhmed Musakaev - 10/15/2017
+url:      https://www.youtube.com/watch?v=IR3WR0zUvHo
+
+fight_id: 82cff6c6-6601-5d5f-99a4-dced4af05eda
+fight:    Takafumi Otsuka vs Anthony Birchak @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 1st Round
+video:    Full Fight | 大塚隆史 vs. アンソニー・バーチャック / Takafumi Otsuka vs. Anthony Birchak - 7/30/2017
+url:      https://www.youtube.com/watch?v=CFiEoL6Idms
+
+fight_id: d3e227cf-045c-577e-82d3-a305df7a25bc
+fight:    Kyoji Horiguchi vs Manel Kape @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: Final Round
+video:    Full Fight |  Manel Kape vs. Kyoji Horiguchi - 12/31/2017
+url:      https://www.youtube.com/watch?v=ybm1uWcdiXs
+
+fight_id: 79bac0f0-a46d-59e3-a074-74ff907117c8
+fight:    Kyoji Horiguchi vs Hideo Tokoro @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 1st Round
+video:    Full Fight | 堀口恭司 vs. 所英男 / Kyoji Horiguchi vs. Hideo Tokoro - 7/30/2017
+url:      https://www.youtube.com/watch?v=JaY-waB7uWI
+
+fight_id: 472b57a1-736a-5113-9e17-8e431c9510d0
+fight:    Kyoji Horiguchi vs Yuki Motoya @ Rizin 5 - Rizin 2017 in Yokohama: Sakura
+video:    Full Fight | 堀口恭司 vs. 元谷友貴 / Kyoji Horiguchi vs. Yuki Motoya - 4/16/2017
+url:      https://www.youtube.com/watch?v=HYeUMrHXDUo
+
+fight_id: 752ec58a-4488-5ebc-802f-f9bef3f9c817
+fight:    Yusuke Yachi vs Takanori Gomi @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: Final Round
+video:    Full Fight | 矢地祐介 vs. 五味隆典 / Yusuke Yachi vs. Takanori Gomi - 12/31/2017
+url:      https://www.youtube.com/watch?v=O2oss4fJrio
+
+fight_id: 69ec47ef-c61b-5980-8cf4-381fd6deaef8
+fight:    Satoru Kitaoka vs Daron Cruickshank @ Rizin 3 - Rizin Fighting World Grand Prix 2016: 2nd Round
+video:    Full Fight | 北岡悟 vs. ダロン・クルックシャンク / Satoru Kitaoka vs. Daron Cruickshank - 12/29/2016
+url:      https://www.youtube.com/watch?v=r1G-pFfwuBU
+
+fight_id: 354c3979-b99e-5141-ac1d-957d4fc0aa1e
+fight:    Kyoji Horiguchi vs Shintaro Ishiwatari @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: Final Round
+video:    Full Fight | 堀口恭司 vs. 石渡伸太郎 / Kyoji Horiguchi vs. Shintaro Ishiwatari - 12/31/2017
+url:      https://www.youtube.com/watch?v=9yEi7qbPKdg
+
+fight_id: db603c93-ef97-5645-bd01-e5b0e2b9c37a
+fight:    Kai Asakura vs Jae Hoon Moon @ Rizin FF - Heisei's Last Yarennoka!
+video:    Full Fight | ムン・ジェフン vs. 朝倉海 / Jae Hoon Moon vs. Kai Asakura - 平成最後のやれんのか！
+url:      https://www.youtube.com/watch?v=fbHvFH4oVSg
+
+fight_id: 3688da56-c732-5649-82d2-271d1b7fb6f3
+fight:    Kai Asakura vs Kizaemon Saiga @ Rizin Fighting World Grand Prix 2017 - Bantamweight Tournament: 2nd Round
+video:    Full Fight | 才賀紀左衛門 vs. 朝倉海 / Kizaemon Saiga vs. Kai Asakura - 12/29/2017
+url:      https://www.youtube.com/watch?v=zSxmRhRzZ4k
+
+
+MATCHED FULL EVENTS (4)
 ----------------------------------------------------------------------
+event_id: 6b246d67-cd0b-5431-baa6-94572d5d062a
+event:    PFL Africa 2: 2026 First Round
+video:    2026 PFL Africa: Nigeria | Full Event
+url:      https://www.youtube.com/watch?v=uIYQboeQ7do
+
 event_id: 9b44955c-0a11-573d-a721-89112cf2ef1c
 event:    PFL Africa 1: 2026 First Round
 video:    2026 PFL Africa: Pretoria | Full Event
@@ -3535,7 +3915,7 @@ video:    2025 PFL Africa: SemiFinals | Full Event
 url:      https://www.youtube.com/watch?v=B-cscM6DKKo
 
 
-UNMATCHED FIGHTS (152)
+UNMATCHED FIGHTS (611)
 ----------------------------------------------------------------------
 PARSE_FAIL                     | 31 Of The Most VIOLENT PFL Finishes From 2025! | Feat. Pettis, van Steenis, Edwards & MORE! | https://www.youtube.com/watch?v=U2Xy4wcv0bY
 PARSE_FAIL                     | Biggest Moments from PFL Champions Series: Dubai | https://www.youtube.com/watch?v=k6-JEBnThM4
@@ -3569,6 +3949,7 @@ fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Yoko Higashi | P
 ambiguous (2 fights): Bruno Cappelozza vs Matheus Scheffel | Bruno Cappelozza vs Matheus Scheffel 2 | PFL 2, 2023 | https://www.youtube.com/watch?v=RszVhCK09Xg
 ambiguous (3 fights): Gabriel Braga vs Jesus Pinedo | Gabriel Braga vs Jesus Pinedo 1 | PFL 1, 2023 | https://www.youtube.com/watch?v=i-W7tv34Pks
 ambiguous (2 fights): Bubba Jenkins vs Chris Wade | Bubba Jenkins vs Chris Wade 2 | PFL 1, 2023 | https://www.youtube.com/watch?v=68EWMCly-s4
+fighter not found: "PFL"       | Johnny Eblen vs Impa Kasanganay | PFL vs Bellator | Full Fight | https://www.youtube.com/watch?v=R_H72BGDe4k
 fighter not found: "PFL"       | Aaron Pico vs Henry Corrales 2 | PFL vs Bellator | Full Fight | https://www.youtube.com/watch?v=JAzuKI0Xm88
 fighter not found: "PFL"       | Abdullah Al Qahtani vs Edukondala Rao | PFL vs Bellator | Full Fight | https://www.youtube.com/watch?v=S_ELxS3oqmw
 ambiguous (3 fights): Kayla Harrison vs Larissa Pacheco | Full Fight | Kayla Harrison vs Larissa Pacheco 2 (Lightweight Title Bout) | 2019 PFL Championship | https://www.youtube.com/watch?v=aOZUPPHZ4cw
@@ -3678,7 +4059,7 @@ fighter not found: "Vinny Magalhes" | Full Fight | Sean O'Connell vs Vinny Magal
 ambiguous (3 fights): Kayla Harrison vs Larissa Pacheco | Full Fight | Kayla Harrison vs Larissa Pacheco 2 (Lightweight Title Bout) | 2019 PFL Championship | https://www.youtube.com/watch?v=aOZUPPHZ4cw
 fighter not found: "Jordan Johnson  2019 PFL Championship" | Full Fight | Emiliano Sordi vs Jordan Johnson (Light Heavyweight Title Bout) 2019 PFL Championship | https://www.youtube.com/watch?v=TBE9b_0LmxI
 ambiguous (3 fights): Lance Palmer vs Alex Gilpin | Full Fight | Lance Palmer vs Alex Gilpin 3 (Featherweight Title Bout) | 2019 PFL Championship | https://www.youtube.com/watch?v=A7OtydXIj5I
-fighter not found: "David Valente" | Full Fight | Brendan Loughnane vs David Valente | 2019 PFL Championship | https://www.youtube.com/watch?v=Y50gEFXABNo
+no fight for Brendan Loughnane vs David Valente | Full Fight | Brendan Loughnane vs David Valente | 2019 PFL Championship | https://www.youtube.com/watch?v=Y50gEFXABNo
 ambiguous (2 fights): Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill (Bantamweight Title Bout) | WSOF 18, 2015 | https://www.youtube.com/watch?v=vBPydjtzCRE
 ambiguous (2 fights): Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill 2 (Bantamweight Title Bout) | WSOF 32, 2016 | https://www.youtube.com/watch?v=6JnmS357pHY
 ambiguous (2 fights): Marlon Moraes vs Sheymon Moraes | Full Fight | Marlon Moraes vs Sheymon Moraes (Bantamweight Title Bout) | WSOF 22, 2015 | https://www.youtube.com/watch?v=x-vwq0c71r4
@@ -3689,6 +4070,464 @@ fighter not found: "Vinny Magalhes" | Full Fight | Sean O'Connell vs Vinny Magal
 ambiguous (2 fights): Ray Cooper III vs Magomed Magomedkerimov | Full Fight | Ray Cooper III vs Magomed Magomedkerimov (Welterweight Title) | 2018 PFL Championship | https://www.youtube.com/watch?v=UZ8Zp85vWvE
 no fight for Louis Taylor vs Abus Magomedov | Full Fight | Louis Taylor vs Abus Magomedov (Middleweight Title Bout) | 2018 PFL Championship | https://www.youtube.com/watch?v=FXYDghtKsMc
 ambiguous (2 fights): Lance Palmer vs Steven Siler | Full Fight | Lance Palmer vs Steven Siler (Featherweight Title Bout) | 2018 PFL Championship | https://www.youtube.com/watch?v=W_urAuhzHL0
+fighter not found: "BlackPantherBeynoah" | Full Fight | “ブラックパンサー”ベイノア vs. 芳賀ビラル海 / “BlackPanther”Beynoah vs. Bilal Kai Haga - 2026/6/6 | https://www.youtube.com/watch?v=BjfFrl1p3b0
+fighter not found: "Makoto Shinryu" | Full Fight | 扇久保博正 vs. 神龍誠 2 / Makoto Shinryu vs. Hiromasa Ougikubo - 2026/6/6[RIZIN LANDMARK 14] | https://www.youtube.com/watch?v=hHPzLEwZ2Ho
+no fight for JOLLY vs Kenshin Kodama | Full Fight | ジョリー vs. 児玉兼慎 / JOLLY vs. Kenshin Kodama - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=Z1ylkMtZV3g
+fighter not found: "Kouzi"     | Full Fight | 平本蓮 vs. 皇治 / Ren Hiramoto vs. Kouzi - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=KRD6MC9ekVc
+fighter not found: "Ilkhom Nozimov" | Full Fight | イルホム・ノジモフ vs. ルイス・グスタボ / Ilkhom Nozimov vs. Luiz Gustavo - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=AZeVe_xWqYs
+fighter not found: "Razhabali Shaidulloev" | Full Fight | ラジャブアリ・シェイドゥラエフ vs. 久保優太 2 / Razhabali Shaidulloev vs. Yuta Kubo -  RIZIN LANDMARK 13 | https://www.youtube.com/watch?v=Aijo5bLVhfk
+fighter not found: "Abijah Kaleo Meheula - RIZIN LANDMARK" | Full Fight | 萩原京平 vs. アバイジャ・カレオ・メヘウラ / Kyohei Hagiwara vs. Abijah Kaleo Meheula - RIZIN LANDMARK 13 | https://www.youtube.com/watch?v=C95sCEsxzGs
+fighter not found: "MG Shinsuke" | Full Fight | 宮川日向 vs. MG眞介 / Hyuga Miyagawa vs. MG Shinsuke - 2025.11.3[RIZIN LANDMARK 12 in KOBE] | https://www.youtube.com/watch?v=2IZZU46qK-Y
+fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs. ヒロヤ / Makoto Shinryu vs. Hiroya - 2025.12.31[RIZIN師走の超強者祭り] | https://www.youtube.com/watch?v=KI6pj0F45uQ
+no fight for Kyoma Akimoto vs Patchy Mix | Full Fight | 秋元強真 vs. パッチー・ミックス / Kyoma Akimoto vs. Patchy Mix - 2026.3.7 [RIZIN.52] | https://www.youtube.com/watch?v=wgHvErGwjzM
+fighter not found: "Hiroya"    | Full Fight | 所英男 vs. ヒロヤ / Hideo Tokoro vs. Hiroya - 2024.7.28 [超RIZIN.3］ | https://www.youtube.com/watch?v=qPk2G2S7ImM
+fighter not found: "Umisaki Iruka" | Full Fight | NOEL vs. 海咲イルカ / NOEL vs. Umisaki Iruka - 2025.11.3 [RIZIN LANDMARK 12 in KOBE］ | https://www.youtube.com/watch?v=hGRHF3edPP4
+no fight for Ryusei Ashizawa vs JOLLY | Full Fight | 芦澤竜誠 vs. ジョリー / Ryusei Ashizawa vs. JOLLY - 2025.12.31 [RIZIN師走の超強者祭り] | https://www.youtube.com/watch?v=a7CX7Goy7Lo
+no fight for Kleber Koike vs Vugar Karamov | Full Fight | クレベル・コイケ vs. ヴガール・ケラモフ / Kleber Koike vs. Vugar Karamov - 2025.12.31 [RIZIN師走の超強者祭り] | https://www.youtube.com/watch?v=IHV08j8zCs0
+fighter not found: "Razhabali Shaidulloev" | Full Fight | ラジャブアリ・シェイドゥラエフ vs. 朝倉未来 / Razhabali Shaidulloev vs. Mikuru Asakura -2025.12.31 | https://www.youtube.com/watch?v=_-JceHLCwKw
+fighter not found: "Ilkhom Nozimov" | Full Fight | ホベルト・サトシ・ソウザ vs. イルホム・ノジモフ / Roberto Satoshi Souza vs. Ilkhom Nozimov - 2025.12.31 | https://www.youtube.com/watch?v=Q1ekA86W7r8
+ambiguous (2 fights): Hiromasa Ougikubo vs Yuki Motoya | Full Fight | 扇久保博正 vs. 元谷友貴 / Hiromasa Ougikubo vs. Yuki Motoya - 2025.12.31 [RIZIN師走の超強者祭り] | https://www.youtube.com/watch?v=gYjOzK4np7k
+fighter not found: "RENA"      | Full Fight | 伊澤星花 vs. RENA / Seika Izawa vs. RENA - 2025.12.31 [RIZIN師走の超強者祭り] | https://www.youtube.com/watch?v=lZ6r7WZWT28
+fighter not found: "Tony Laramie - RIZIN.50" | Full Fight | 伊藤裕樹 vs. トニー・ララミー / Yuki Ito vs. Tony Laramie - RIZIN.50 | https://www.youtube.com/watch?v=4k4rTRP6muI
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. リ・ユンフォン / Kintaro vs. Yunfeng Li | RIZIN LANDMARK 12 in KOBE -2025.11.3 | https://www.youtube.com/watch?v=HVdZs35V0rM
+fighter not found: "Kate Lotus" | Full Fight | ケイト・ロータス vs. イ・ボミ | Kate Lotus vs. Bomi Lee | RIZIN LANDMARK 12 in KOBE -2025.11.3 | https://www.youtube.com/watch?v=Bz9AsxCR60U
+fighter not found: "Yoshinori Horie - [RIZIN.51" | Full Fight | ホベルト・サトシ・ソウザ vs. 堀江圭功 / Roberto Satoshi Souza vs. Yoshinori Horie - [RIZIN.51] | https://www.youtube.com/watch?v=20gdtF-BryI
+fighter not found: "Razhabali Shaidulloev" | Full Fight | ラジャブアリ・シェイドゥラエフ vs. ビクター・コレスニック / Razhabali Shaidulloev vs. Viktor Kolesnik | https://www.youtube.com/watch?v=LBzMuZUFNq8
+fighter not found: "Makoto Shinryu" | Full Fight | 元谷友貴 vs. 神龍誠 / Yuki Motoya vs. Makoto Shinryu - 2025.9.28 [RIZIN.51] | https://www.youtube.com/watch?v=O4xIHpRuhD0
+fighter not found: "Alibek Gadzhammatov -[RIZIN.51" | Full Fight | 扇久保博正 vs. アリベク・ガジャマトフ / Hiromasa Ougikubo vs. Alibek Gadzhammatov -[RIZIN.51] | https://www.youtube.com/watch?v=4xqhNgJWUKg
+fighter not found: "Kurobara kun" | Full Fight | 安井飛馬 vs. 黒薔薇くん / Hyuma Yasui  vs. Kurobara kun -2024.12.31 [RIZIN DECADE／雷神番外地] | https://www.youtube.com/watch?v=VmnCJLet9ds
+fighter not found: "CORO"      | Full Fight | 中島太一 vs. CORO / Taichi Nakajima  vs. CORO -2025.06.14 [RIZIN LANDAMRK 11 in SAPPORO] | https://www.youtube.com/watch?v=e1YSEd__RUc
+fighter not found: "Takakenshin" | Full Fight | 貴賢神 vs. 稲田将 / Takakenshin  vs. Masashi Inada -2025.07.27 [超RIZIN.4 真夏の喧嘩祭り／喧嘩三番勝負] | https://www.youtube.com/watch?v=-t2O-NgX8_M
+fighter not found: "Hiroya"    | Full Fight | 元谷友貴 vs. ヒロヤ / Yuki Motoya vs. Hiroya - 2025.7.27 [超RIZIN.4] | https://www.youtube.com/watch?v=uRjDG6T1XXo
+fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs. 山本アーセン / Makoto Shinryu vs. Erson Yamamoto - 2025.7.27 [超RIZIN.4] | https://www.youtube.com/watch?v=T9ELyTE2s64
+fighter not found: "SASUKE"    | Full Fight | ビクター・コレスニック vs. SASUKE / Viktor Kolesnik vs. SASUKE - 2025.6.14 [RIZIN LANDMARK 11] | https://www.youtube.com/watch?v=Ox4IV1YkrLI
+fighter not found: "vs.  Taiga" | Full Fight | 大雅 vs. 梅野源治 Taiga vs. Genji Umeno -2024.12.31 [RIZIN.49] | https://www.youtube.com/watch?v=aK5Qi_FL0CM
+PARSE_FAIL                     | Full Fight | ヤン・ジヨン vs. 安藤達也 / Ji Yong Yang vs.Tatsuya Ando - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=YIjogO3oUOg
+PARSE_FAIL                     | Full Fight | 井上直樹 vs. 福田龍彌 / Naoki Inoue vs.Ryuya Fukuda - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=58RCtf-diXw
+PARSE_FAIL                     | Full Fight | 秋元強真 vs. 赤田功輝 / Kyoma Akimoto vs.Koki Akada - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=pywqlrHGrqA
+PARSE_FAIL                     | Full Fight | 金原正徳 vs. YA-MAN / Masanori Kanehara vs.YA-MAN - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=XwW5sGwcyQs
+PARSE_FAIL                     | Full Fight | パトリッキー・ピットブル vs. 野村駿太 / Patricky Pitbull vs.Shunta Nomura - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=tnZGSjgNTmI
+PARSE_FAIL                     | Full Fight | クレベル・コイケ vs. 朝倉未来 2/ Kleber Koike vs.Mikuru Asakura 2 - 超RIZIN.4 真夏の喧嘩祭り | https://www.youtube.com/watch?v=JOV6bK76FqU
+PARSE_FAIL                     | Full Fight | 伊澤星花 vs. ルシア・アプデルガリム / Seika Izawa vs.Lucia Apdelgarim - 2024/12/31[RIZIN.49] | https://www.youtube.com/watch?v=Bk4o03N6R-c
+fighter not found: "Yutaka Saito  [RIZIN 45" | Full Fight | クレベル・コイケ vs. 斎藤裕 / Kleber Koike vs. Yutaka Saito  [RIZIN 45] | https://www.youtube.com/watch?v=FeGpKi81qeI
+PARSE_FAIL                     | Full Fight | ルイス・グスタボ vs. 野村駿太 / Luiz Gustavo vs.Shunta Nomura - 2025/3/30[RIZIN.50] | https://www.youtube.com/watch?v=QCcraDiitOs
+no fight for Luiz Gustavo vs Patricky Pitbull | Full Fight | ルイス・グスタボ vs. パトリッキー・ピットブル / Luiz Gustavo vs. Patricky Pitbull - 2019/12/31[RIZIN.20] | https://www.youtube.com/watch?v=gYPwmwcyeUY
+fighter not found: "Nisse"     | Full Fight | にっせー vs. 須田萌里 / Nisse vs. Moeri Suda - 2022/07/02[RIZIN.36] | https://www.youtube.com/watch?v=k8oKsIvGf8o
+fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs. ホセ・トーレス / Makoto Shinryu vs. Jose Torres - 2024/12/31[RIZIN.49] | https://www.youtube.com/watch?v=eNZ6NteFh1c
+PARSE_FAIL                     | Full Fight | 神龍誠 vs. 伊藤裕樹 / Makoto Shinryu vs.Yuki Ito - 2025/05/04[RIZIN男祭り] | https://www.youtube.com/watch?v=-tN6Sb1AqvM
+fighter not found: "Makoto Shinryu" | Full Fight | 扇久保博正 vs. 神龍誠 / Makoto Shinryu vs. Hiromasa Ougikubo - 2024/07/28[超RIZIN.3] | https://www.youtube.com/watch?v=iiArviQd3gM
+fighter not found: "Tatsuya Ando - [RIZIN LANDMARK 11" | Full Fight | マゲラム・ガサンザデ vs. 安藤達也 / Magerram Gasanzade vs. Tatsuya Ando - [RIZIN LANDMARK 11] | https://www.youtube.com/watch?v=PSdJrqapOmw
+fighter not found: "Ilkhom Nozimov" | Full Fight | イルホム・ノジモフ vs. 新居すぐる / Ilkhom Nozimov vs. Suguru Nii - 2025/06/14 [RIZIN LANDMARK 11] | https://www.youtube.com/watch?v=1eik4LZIA5E
+fighter not found: "Kintaro"   | Full Fight | ヤン・ジヨン vs. 金太郎 / Ji Yong Yang vs. Kintaro - 2025/5/31 [RIZIN WORLD SERIES IN KOREA] | https://www.youtube.com/watch?v=4yZkjUshgHY
+fighter not found: "Kate Lotus" | Full Fight | シン・ユリ vs. ケイト・ロータス / Yu Ri Shim vs. Kate Lotus - 2025/5/31 | https://www.youtube.com/watch?v=GkXdeoE9e0Y
+fighter not found: "Machi"     | Full Fight | 万智 vs. パク・ソヨン / Machi vs. Seo Young Park - RIZIN.50 | https://www.youtube.com/watch?v=8N4aUYqrLV0
+fighter not found: "Uoi Fullswing" | Full Fight | 魚井フルスイング vs. 赤田プレイボイ功輝 / Uoi Fullswing vs. Koki Playboi Akada - RIZIN.50 | https://www.youtube.com/watch?v=6TYz53TYk5c
+fighter not found: "Toby Misech - RIZIN.50" | Full Fight | 萩原京平 vs. トビー・ミセッチ / Kyohei Hagiwara vs. Toby Misech - RIZIN.50 | https://www.youtube.com/watch?v=atBMrbbdbDA
+fighter not found: "King Edokpolo - RIZIN.50" | Full Fight | 酒井リョウ vs. エドポロキング / Ryo Sakai vs. King Edokpolo - RIZIN.50 | https://www.youtube.com/watch?v=UcKTYlR72uI
+fighter not found: "Karshyga Dautbek - RIZIN.50" | Full Fight | 鈴木千裕 vs. カルシャガ・ダウトベック / Chihiro Suzuki vs. Karshyga Dautbek - RIZIN.50 | https://www.youtube.com/watch?v=jHbxnif_geI
+fighter not found: "Yuki Motoya - RIZIN.50" | Full Fight | 井上直樹 vs. 元谷友貴 / Naoki Inoue vs. Yuki Motoya - RIZIN.50 | https://www.youtube.com/watch?v=Zy6td0irN8U
+fighter not found: "Kyung Pyo Kim - RIZIN.47" | Full Fight | スパイク・カーライル vs. キム・ギョンピョ / Spike Carlyle vs. Kyung Pyo Kim - RIZIN.47 | https://www.youtube.com/watch?v=NAp0vU3X3ds
+fighter not found: "Tony Laramie - RL.10" | Full Fight |  村元友太郎 vs. トニー・ララミー / Yutaro Muramoto vs. Tony Laramie - RL.10 | https://www.youtube.com/watch?v=gG73oBl5iLc
+fighter not found: "Takeji Yokoyama - RIZIN.42" | Full Fight | 山本琢也 vs. 横山武司 / Takuya Yamamoto vs. Takeji Yokoyama - RIZIN.42 | https://www.youtube.com/watch?v=qti0BP8cZU8
+fighter not found: "Machi - RIZIN LANDMARK.6" | Full Fight | 渡辺彩華 vs. 万智 / Ayaka Watanabe vs. Machi - RIZIN LANDMARK.6 | https://www.youtube.com/watch?v=mVSgkxZzs_4
+PARSE_FAIL                     | Full Fight | 貴賢神 vs. エドポロキング / Takakenshin vs.King Edokpolo - RIZIN.49 | https://www.youtube.com/watch?v=18SZxxG2ZkA
+fighter not found: "Shinobu Ota - RIZIN.46" | Full Fight | 牛久絢太郎 vs. 太田忍 / Juntaro Ushiku vs. Shinobu Ota - RIZIN.46 | https://www.youtube.com/watch?v=AbzQAWCYJgs
+fighter not found: "Ryo Takagi - RIZIN.48" | Full Fight | 萩原京平 vs. 高木凌 / Kyohei Hagiwara vs. Ryo Takagi - RIZIN.48 | https://www.youtube.com/watch?v=x27Z5nBFqOo
+fighter not found: "YUSHI"     | Full Fight | YUSHI vs. 平本丈 / YUSHI vs. Joe Hiramoto - RIZIN.45 | https://www.youtube.com/watch?v=FWB_ulNs4RM
+fighter not found: "Takaki Soya - RIZIN.3" | Full Fight | ジョン・ドッドソン vs. 征矢貴  / John Dodson vs. Takaki Soya - 超RIZIN.3 | https://www.youtube.com/watch?v=lArLJjjcK5E
+fighter not found: "Tae In Kim - RIZIN.49" | Full Fight | 上田幹雄 vs. キム・テイン / Mikio Ueda vs. Tae In Kim - RIZIN.49 | https://www.youtube.com/watch?v=HOGUwntm2bw
+fighter not found: "Taiju Shiratori" | Full Fight | 白鳥大珠 vs. ウザ強ヨシヤ / Taiju Shiratori vs. Yoshiya Uzatsuyo | https://www.youtube.com/watch?v=2wPOIHvEsTA
+fighter not found: "Razhabali Shaidulloev - RIZIN" | Full Fight | クレベル・コイケ vs. ラジャブアリ・シェイドゥラエフ / Kleber Koike vs. Razhabali Shaidulloev - RIZIN男祭り | https://www.youtube.com/watch?v=2fxHSUlKlHQ
+fighter not found: "Chihiro Suzuki - RIZIN OTOKOMATSURI" | Full Fight | 朝倉未来 vs. 鈴木千裕 / Mikuru Asakura vs. Chihiro Suzuki - RIZIN OTOKOMATSURI | https://www.youtube.com/watch?v=tOmmNJUARG8
+fighter not found: "Kyoma Akimoto - RIZIN" | Full Fight | 高木凌 vs. 秋元強真 / Ryo Takagi vs. Kyoma Akimoto - RIZIN男祭り | https://www.youtube.com/watch?v=pS0SKQq9ooU
+fighter not found: "Taisei Nishitani - RIZIN" | Full Fight | 萩原京平 vs. 西谷大成 / Kyohei Hagiwara vs. Taisei Nishitani - RIZIN男祭り | https://www.youtube.com/watch?v=5m-3ylzMwGQ
+fighter not found: "Hiroya"    | Full Fight | ヒロヤ vs. 篠塚辰樹 / Hiroya vs. Tatsuki Shinotsuka - RIZIN男祭り | https://www.youtube.com/watch?v=UO6NYgJHGrk
+fighter not found: "Taio Asahisa" | Full Fight | 朝久泰央 vs. ウザ強ヨシヤ / Taio Asahisa vs. Yoshiya Uzatsuyo - RIZIN男祭り | https://www.youtube.com/watch?v=HTEy-TElHPs
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. ダイキ・ライトイヤー / Kintaro vs. Daiki Lightyear - 2024/3/23 [RIZIN LANDMARK 9 in KOBE] | https://www.youtube.com/watch?v=A2OuMPowSYA
+no fight for Issa Hosokawa vs Sho Patrick Usami | Full Fight |  細川一颯 vs. 宇佐美正パトリック / Issa Hosokawa vs Sho Patrick Usami - 2024/12/31 [雷神番外地] | https://www.youtube.com/watch?v=hxRQejVqnJ8
+fighter not found: "Kouzi - RIZIN.45" | 【期間限定】Full Fight | 三浦孝太 vs. 皇治 / Kota Miura vs. Kouzi - RIZIN.45 | https://www.youtube.com/watch?v=ZFfpKfjsb9I
+fighter not found: "Kota Ossman - RIZIN LANDMARK 8 in SAGA" | Full Fight | 阿部大治 vs 押忍マン洸太/ Daichi Abe vs. Kota Ossman - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=u-66CeJMa0s
+fighter not found: "Masakazu Imanari - RIZIN LANDMARK 8 in SAGA" | Full Fight | 摩嶋一整 vs 今成正和/ Kazumasa Majima vs. Masakazu Imanari - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=QBana6ZJv2w
+fighter not found: "Shohei Nose - RIZIN LANDMARK 8 in SAGA" | Full Fight | 瀧澤謙太 vs 野瀬翔平 / Kenta Takizawa vs. Shohei Nose - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=h2RVGTJNb3o
+fighter not found: "Yoshinori Horie - RIZIN LANDMARK 8 in SAGA" | Full Fight | ルイス・グスタボ vs 堀江圭功 / Luiz Gustavo vs. Yoshinori Horie - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=5EUKwf9UbSo
+fighter not found: "Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA" | Full Fight | 矢地祐介 vs. 白川陸斗/ Yusuke Yachi vs. Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Df-04r1TrfA
+fighter not found: "Claire Lopez - RIZIN LANDMARK 8 in SAGA" | Full Fight | 大島沙緒里 vs クレア・ロペス/ Saori Oshima vs. Claire Lopez - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=DEwT_102V0Q
+fighter not found: "Ryo Takagi - RIZIN LANDMARK 6 in NAGOYA" | Full Fight | ビクター・コレスニック vs. 高木凌 / Viktor Kolesnik vs. Ryo Takagi - RIZIN LANDMARK 6 in NAGOYA | https://www.youtube.com/watch?v=U7cBZr-Mpm8
+fighter not found: "Kyohei Hagiwara - RIZIN.44" | Full Fight | 牛久絢太郎 vs. 萩原京平 / Juntaro Ushiku vs. Kyohei Hagiwara - RIZIN.44 | https://www.youtube.com/watch?v=XPntuopp6yA
+fighter not found: "Yusaku Inoue - RIZIN LANDMARK 6 in NAGOYA" | Full Fight | 渡慶次幸平 vs. 井上雄策 / Kohei Tokeshi vs. Yusaku Inoue - RIZIN LANDMARK 6 in NAGOYA | https://www.youtube.com/watch?v=_QAcY4cx0Co
+fighter not found: "Ryo Okada - RIZIN.44" | Full Fight | 中島太一 vs. 岡田遼 / Taichi Nakajima vs. Ryo Okada - RIZIN.44 | https://www.youtube.com/watch?v=Yx1emCfJoIc
+fighter not found: "Full Fight" | Full Fight   昇侍 vs  ヤン・ジヨン   Shoji vs  Ji Yong Yang   RIZIN 36 | https://www.youtube.com/watch?v=wlb4MonPpis
+fighter not found: "Rikuto Shirakawa - RIZIN.44" | Full Fight | 中原由貴 vs. 白川陸斗 / Yoshiki Nakahara vs. Rikuto Shirakawa - RIZIN.44 | https://www.youtube.com/watch?v=Yn0gae6yjxE
+fighter not found: "Ryusei Ashizawa - RIZIN.45" | Full Fight | 太田忍 vs. 芦澤竜誠 / Shinobu Ota vs. Ryusei Ashizawa - RIZIN.45 | https://www.youtube.com/watch?v=jlkxg8zqKmc
+fighter not found: "Hiroto Uesako - BELLATOR JAPAN" | Full Fight | 矢地祐介 vs. 上迫博仁 / Yusuke Yachi vs. Hiroto Uesako - BELLATOR JAPAN | https://www.youtube.com/watch?v=U5UihDEbuFs
+fighter not found: "Kouzi - RIZIN.45" | Full Fight | 三浦孝太 vs. 皇治 / Kota Miura vs. Kouzi - RIZIN.45 | https://www.youtube.com/watch?v=Zk2RV3XbSEI
+fighter not found: "Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA" | Full Fight | 芦田崇宏 vs  鈴木博昭 / Takahiro Ashida vs. Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Ecqcgbc_kP8
+fighter not found: "Hiroya - RIZIN.45" | Full Fight | 新井丈 vs  ヒロヤ / Jo Arai vs. Hiroya - RIZIN.45 | https://www.youtube.com/watch?v=iNIm9IpA_f8
+fighter not found: "SatoshiDominatorYamasu" | Full Fight | 弥益ドミネーター聡志 vs. 新居すぐる / Satoshi“Dominator”Yamasu vs. Suguru Nii - RIZIN.45 | https://www.youtube.com/watch?v=Im6EyX1EMOQ
+fighter not found: "YA-MAN - RIZIN.45" | Full Fight | 平本蓮 vs. YA-MAN / Ren Hiramoto vs. YA-MAN - RIZIN.45 | https://www.youtube.com/watch?v=CoXiPlUEBGU
+fighter not found: "Daichi Tomizawa - RIZIN.45" | Full Fight | 篠塚辰樹 vs. 冨澤大智 / Tatsuki Shinotsuka vs. Daichi Tomizawa - RIZIN.45 | https://www.youtube.com/watch?v=qCtFJTKw-Vw
+PARSE_FAIL                     | Full Fight | YURA vs. 朝久泰央 / YURA vs.Taio Asahisa - 雷神番外地 | https://www.youtube.com/watch?v=nmBKBpScX5s
+PARSE_FAIL                     | Full Fight | 冨澤大智 vs. 三浦孝太 / Daichi Tomizawa vs.Kota Miura - 雷神番外地 | https://www.youtube.com/watch?v=M3JnvfojSIY
+PARSE_FAIL                     | Full Fight | 野田蒼 vs. 篠塚辰樹 / Aoi Noda vs.Tatsuki Shinotsuka - 雷神番外地 | https://www.youtube.com/watch?v=lR6QyUgZkgQ
+PARSE_FAIL                     | Full Fight | 安保瑠輝也 vs. シナ・カリミアン / Rukiya Anpo vs.Sina Karimian - 雷神番外地 | https://www.youtube.com/watch?v=Nuw0GCa1viY
+PARSE_FAIL                     | Full Fight | 横内三旺 vs. ⻫藤健心 / Sanou Yokouchi vs.Kenshin Saito - RIZIN.49 / RIZIN KOSHIEN | https://www.youtube.com/watch?v=mGqTorjPvLg
+PARSE_FAIL                     | Full Fight | 矢地祐介 vs. 桜庭大世 / Yusuke Yachi vs.Taisei Sakuraba - RIZIN.49 | https://www.youtube.com/watch?v=O5jTEtSaCl0
+PARSE_FAIL                     | Full Fight | YA-MAN vs. カルシャガ・ダウトベック / YA-MAN vs.Karshyga Dautbek - RIZIN.49 | https://www.youtube.com/watch?v=4r8TECMXsNI
+fighter not found: "Razhabali Shaidulloev - RIZIN.49" | Full Fight | 久保優太 vs. ラジャブアリ・シェイドゥラエフ / Yuta Kubo vs. Razhabali Shaidulloev - RIZIN.49 | https://www.youtube.com/watch?v=l6WmmfPNpQ0
+fighter not found: "Kyoma Akimoto - RIZIN.49" | Full Fight | 元谷友貴 vs. 秋元強真 / Yuki Motoya vs. Kyoma Akimoto - RIZIN.49 | https://www.youtube.com/watch?v=e2HkzX6sEAs
+fighter not found: "Vugar Karamov - RIZIN.49" | Full Fight | ホベルト・サトシ・ソウザ vs. ヴガール・ケラモフ / Roberto Satoshi Souza vs. Vugar Karamov - RIZIN.49 | https://www.youtube.com/watch?v=5lqjYZ-452s
+fighter not found: "Nkazimulo Zulu - RIZIN.49" | Full Fight | 堀口恭司 vs. エンカジムーロ・ズールー / Kyoji Horiguchi vs. Nkazimulo Zulu - RIZIN.49 | https://www.youtube.com/watch?v=RXpz8SyGO2g
+fighter not found: "Kleber Koike - RIZIN.49" | Full Fight | 鈴木千裕 vs. クレベル・コイケ / Chihiro Suzuki vs. Kleber Koike - RIZIN.49 | https://www.youtube.com/watch?v=eF-uDjkOdcg
+PARSE_FAIL                     | Full Fight | カルシャガ・ダウトベック vs. 木下カラテ / Karshyga Dautbek vs.Karate Kinoshita - RIZIN.48 | https://www.youtube.com/watch?v=SKXpMO13OL8
+fighter not found: "BlackPantherBeynoah" | Full Fight | “ブラックパンサー”ベイノア vs. 宇佐美正パトリック / “BlackPanther”Beynoah vs. Sho Patrick Usami - RIZIN.40 | https://www.youtube.com/watch?v=dwsLYGJdQus
+fighter not found: "Shinobu Ota 2 - RIZIN.48" | Full Fight |  元谷友貴 vs. 太田忍 2 / Yuki Motoya vs. Shinobu Ota 2 - RIZIN.48 | https://www.youtube.com/watch?v=568fQwq1Cr8
+fighter not found: "Erson Yamamoto - RIZIN.44" | Full Fight | 福田龍彌 vs. 山本アーセン / Ryuya Fukuda vs. Erson Yamamoto - RIZIN.44 | https://www.youtube.com/watch?v=wxkigH-Ihjw
+fighter not found: "Nkazimulo Zulu - RIZIN.48" | Full Fight | 新井丈 vs.  エンカジムーロ・ズールー / Jo Arai vs. Nkazimulo Zulu - RIZIN.48 | https://www.youtube.com/watch?v=0mkHXrLRqk0
+fighter not found: "Yuya"MONKEY"Shibata" | Full Fight | 柴田“MONKEY”有哉 vs. ヒロヤ / Yuya"MONKEY"Shibata vs. Hiroya -RIZIN LANDMARK 10 in NAGOYA | https://www.youtube.com/watch?v=C4yDfJ8P2JU
+fighter not found: "Jung Hyun Lee -RIZIN LANDMARK 10 in NAGOYA" | Full Fight | 伊藤裕樹 vs. イ・ジョンヒョン / Yuki Ito vs. Jung Hyun Lee -RIZIN LANDMARK 10 in NAGOYA | https://www.youtube.com/watch?v=pjH1uiP4iq0
+fighter not found: "Kyoma Akimoto -RIZIN LANDMARK 10 in NAGOYA" | Full Fight | 鈴木博昭 vs. 秋元強真 / Hiroaki Suzuki vs. Kyoma Akimoto -RIZIN LANDMARK 10 in NAGOYA | https://www.youtube.com/watch?v=3_ecO1y3ASc
+fighter not found: "Ryusei Ashizawa -RIZIN LANDMARK 10 in NAGOYA" | Full Fight | 昇侍 vs. 芦澤竜誠 / Shoji vs. Ryusei Ashizawa -RIZIN LANDMARK 10 in NAGOYA | https://www.youtube.com/watch?v=HDK4xHdUwJQ
+fighter not found: "Kazumasa Majima -RIZIN LANDMARK 10 in NAGOYA" | Full Fight | ヴガール・ケラモフ vs. 摩嶋一整 / Vugar Karamov vs. Kazumasa Majima -RIZIN LANDMARK 10 in NAGOYA | https://www.youtube.com/watch?v=q_YCvFLCtAQ
+fighter not found: "Yuya"MONKEY"Shibata" | Full Fight | 柴田“MONKEY”有哉 vs. 山本アーセン / Yuya"MONKEY"Shibata vs. Arson Yamamoto | https://www.youtube.com/watch?v=HWL0ZHhZ6jQ
+fighter not found: "Yuta"      | Full Fight | 悠太 vs 加藤久輝 / Yuta vs. Hisaki Kato  - RIZIN.1 | https://www.youtube.com/watch?v=h_vVNeCm0Hg
+fighter not found: "Kazumasa Majima  - RIZIN.3" | Full Fight | 新居すぐる vs. 摩嶋一整 / Suguru Nii vs. Kazumasa Majima  - 超RIZIN.3 | https://www.youtube.com/watch?v=5hJAOibdFfk
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. 秋元強真 / Kintaro vs. Kyoma Akimoto -RIZIN.48 | https://www.youtube.com/watch?v=nwC2dNEgCRI
+fighter not found: "Kanna Asakura -RIZIN.48" | Full Fight | 伊澤星花 vs. 浅倉カンナ / Seika Izawa vs. Kanna Asakura -RIZIN.48 | https://www.youtube.com/watch?v=cnxrVXqpL_k
+fighter not found: "Soo Chul Kim -RIZIN.48" | Full Fight | 井上直樹 vs. キム・スーチョル / Naoki Inoue vs. Soo Chul Kim -RIZIN.48 | https://www.youtube.com/watch?v=WXFaOlc2gvw
+fighter not found: "Razhabali Shaidulloev -RIZIN.48" | Full Fight | フアン・アーチュレッタ vs. ラジャブアリ・シェイドゥラエフ / Juan Archuleta vs. Razhabali Shaidulloev -RIZIN.48 | https://www.youtube.com/watch?v=p4ceSkmNo8s
+fighter not found: "Luiz Gustavo -RIZIN.48" | Full Fight | ホベルト・サトシ・ソウザ vs. ルイス・グスタボ / Roberto Satoshi Souza vs. Luiz Gustavo -RIZIN.48 | https://www.youtube.com/watch?v=ypWLbk1Fw9I
+fighter not found: "Sho Patrick Usami - RIZIN.47" | Full Fight | 徳留一樹 vs. 宇佐美正パトリック / Kazuki Tokudome vs. Sho Patrick Usami - RIZIN.47 | https://www.youtube.com/watch?v=TYkeKX5-jOo
+fighter not found: "Shinobu Ota - RIZIN.37" | Full Fight | 元谷友貴 vs. 太田忍 / Yuki Motoya vs. Shinobu Ota - RIZIN.37 | https://www.youtube.com/watch?v=nin_Xp7_Jnw
+fighter not found: "Luiz Gustavo - RIZIN LANDMARK 5 in YOYOGI" | Full Fight | 武田光司 vs.ルイス・グスタボ / Koji Takeda vs. Luiz Gustavo - RIZIN LANDMARK 5 in YOYOGI | https://www.youtube.com/watch?v=kPFOKk5w1uA
+PARSE_FAIL                     | RIZINファンが選ぶベストバウト | 2024年/2月~7月 | https://www.youtube.com/watch?v=fz1S7wQbdRw
+fighter not found: "YA-MAN - RIZIN.3" | Full Fight | 鈴木博昭 vs. YA-MAN / Hiroaki Suzuki vs. YA-MAN - 超RIZIN.3 | https://www.youtube.com/watch?v=22bZAyLEbD8
+fighter not found: "Yuta Kubo - RIZIN.3" | Full Fight | 斎藤裕 vs. 久保優太 / Yutaka Saito vs. Yuta Kubo - 超RIZIN.3 | https://www.youtube.com/watch?v=F7H0VG7OxuQ
+fighter not found: "Kouzi - RIZIN.3" | Full Fight | 芦澤竜誠 vs. 皇治 / Ryusei Ashizawa vs. Kouzi - 超RIZIN.3 | https://www.youtube.com/watch?v=WKkKORAp9bU
+fighter not found: "Rukiya Anpo - RIZIN.3" | Full Fight | マニー・パッキャオ vs.  安保瑠輝也 / Manny Pacquiao vs. Rukiya Anpo - 超RIZIN.3 | https://www.youtube.com/watch?v=3q1A9MciIs0
+fighter not found: "Ren Hiramoto - RIZIN.3" | Full Fight | 朝倉未来 vs. 平本蓮 / Mikuru Asakura vs. Ren Hiramoto - 超RIZIN.3 | https://www.youtube.com/watch?v=xJ88QWWf4HQ
+fighter not found: "Spike Carlyle - RIZIN.35" | Full Fight | 武田光司 vs. スパイク・カーライル / Koji Takeda vs. Spike Carlyle - RIZIN.35 | https://www.youtube.com/watch?v=glpzacSEd1c
+fighter not found: "Hiromasa Ougikubo - RIZIN.2" | Full Fight | フアン・アーチュレッタ vs. 扇久保博正 / Juan Archuleta vs. Hiromasa Ougikubo - 超RIZIN.2 | https://www.youtube.com/watch?v=YNc5N6alhPk
+fighter not found: "Tsuyoshi Sudario" | Full Fight | スダリオ剛 vs. 上田幹雄 / Tsuyoshi Sudario vs. Mikio Ueda - RIZIN.45 | https://www.youtube.com/watch?v=_DmxnVoXryo
+fighter not found: "Nobumitsu Tyson - RIZIN.40" | Full Fight | ジョニー・ケース vs. 大尊伸光 / Johnny Case vs. Nobumitsu Tyson - RIZIN.40 | https://www.youtube.com/watch?v=6sHjB0VX5HA
+fighter not found: "Tetsuya Seki - RIZIN.47" | Full Fight | カルシャガ・ダウトベック vs. 関鉄矢 / Karshyga Dautbek vs. Tetsuya Seki - RIZIN.47 | https://www.youtube.com/watch?v=mjyY6vT824g
+fighter not found: "Uoi Fullswing - RIZIN.47" | Full Fight | 梅野源治 vs. 魚井フルスイング / Genji Umeno vs. Uoi Fullswing - RIZIN.47 | https://www.youtube.com/watch?v=qzb1rNN6wNI
+fighter not found: "Sergio Pettis - RIZIN.47" | Full Fight | 堀口恭司 vs. セルジオ・ペティス / Kyoji Horiguchi vs. Sergio Pettis - RIZIN.47 | https://www.youtube.com/watch?v=Vy3wzUPr9UM
+fighter not found: "Razhabali Shaidulloev - RIZIN.47" | Full Fight | 武田光司 vs. ラジャブアリ・シェイドゥラエフ / Koji Takeda vs. Razhabali Shaidulloev - RIZIN.47 | https://www.youtube.com/watch?v=H-9cEynW5ow
+fighter not found: "Juan Archuleta - RIZIN.47" | Full Fight | クレベル・コイケ vs. フアン・アーチュレッタ / Kleber Koike vs. Juan Archuleta - RIZIN.47 | https://www.youtube.com/watch?v=2MSzJeIN5Sc
+fighter not found: "BlackPantherBeynoah" | Full Fight | “ブラックパンサー”ベイノア vs. 井上雄策 / “BlackPanther”Beynoah vs. Yusaku Inoue -  RIZIN.46 | https://www.youtube.com/watch?v=95DGLc4tX54
+fighter not found: "Chihiro Suzuki - Yogibo presents RIZIN.46" | Full Fight | 鈴木千裕 vs. 金原正徳 / Masanori Kanehara vs. Chihiro Suzuki - Yogibo presents RIZIN.46【実況解説付き】 | https://www.youtube.com/watch?v=UhK_s-7-eO4
+fighter not found: "Taisei Nishitani - Yogibo presents RIZIN.46" | Full Fight | 高木凌 vs. 西谷大成 / Ryo Takagi vs. Taisei Nishitani - Yogibo presents RIZIN.46 | https://www.youtube.com/watch?v=VdKhyR0zP4Y
+fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs. イ・ジョンヒョン / Makoto Shinryu vs. Jung Hyun Lee - Yogibo presents RIZIN.46 | https://www.youtube.com/watch?v=L_Jl9VkcMuk
+fighter not found: "J.Martinez - Yogibo presents RIZIN.46" | Full Fight | 篠塚辰樹 vs. J.マルチネス / Tatsuki Shinotsuka vs. J.Martinez - Yogibo presents RIZIN.46 | https://www.youtube.com/watch?v=FCW57KsK5X0
+fighter not found: "Soo Chul Kim - Yogibo presents RIZIN.46" | Full Fight | 中島太一 vs. キム・スーチョル / Taichi Nakajima vs. Soo Chul Kim - Yogibo presents RIZIN.46 | https://www.youtube.com/watch?v=AY8kzcNN86U
+fighter not found: "Shoko Sato - RIZIN LANDMARK 9 in KOBE" | Full Fight | 井上直樹 vs. 佐藤将光 / Naoki Inoue vs. Shoko Sato - RIZIN LANDMARK 9 in KOBE | https://www.youtube.com/watch?v=AYC1BSPj6Dg
+fighter not found: "Kyohei Hagiwara - RIZIN LANDMARK 9 in KOBE" | Full Fight | 武田光司 vs 萩原京平 / Koji Takeda vs. Kyohei Hagiwara - RIZIN LANDMARK 9 in KOBE | https://www.youtube.com/watch?v=C78uDZYspSg
+fighter not found: "K-Taro Nakamura - RIZIN LANDMARK" | Full Fight | ホベルト・サトシ・ソウザ vs.中村K太郎 / Roberto Satoshi Souza vs. K-Taro Nakamura - RIZIN LANDMARK 9 | https://www.youtube.com/watch?v=H2qAgx6_Wfo
+fighter not found: "Ryogo Takahashi - RIZIN LANDMARK 9 in KOBE" | Full Fight | 久保優太 vs. 高橋遼伍 / Yuta Kubo vs. Ryogo Takahashi - RIZIN LANDMARK 9 in KOBE | https://www.youtube.com/watch?v=J8e0JOBqZJ0
+fighter not found: "RENA"      | Full Fight | RENA vs. シン・ユリ/ RENA vs. Yu Ri Shim - RIZIN LANDMARK9 in KOBE | https://www.youtube.com/watch?v=O0dqgSAw_J8
+fighter not found: "Buakaw Banchamek" | Full Fight | ブアカーオ・バンチャメーク vs. 木村“フィリップ”ミノル / Buakaw Banchamek vs. Minoru“Philip”Kimura | https://www.youtube.com/watch?v=q1qTLIAUpX0
+fighter not found: "Spike Carlyle - RIZIN.42" | Full Fight | ホベルト・サトシ・ソウザ vs. スパイク・カーライル / Roberto Satoshi Souza vs. Spike Carlyle - RIZIN.42 | https://www.youtube.com/watch?v=3Pef6VzkyBk
+fighter not found: "Kenta Takizawa - RIZIN.40" | Full Fight | 井上直樹 vs  瀧澤謙太 / Naoki Inoue vs. Kenta Takizawa - RIZIN.40 | https://www.youtube.com/watch?v=PqI66BfwOQ0
+fighter not found: "Erson Yamamoto - RIZIN.42" | Full Fight | 伊藤裕樹 vs. 山本アーセン / Yuki Ito vs. Erson Yamamoto - RIZIN.42 | https://www.youtube.com/watch?v=uX-IHhEtCcc
+fighter not found: "Shoko Sato - RIZIN LANDMARK 6 in NAGOYA" | Full Fight | 太田忍 vs  佐藤将光 / Shinobu Ota vs. Shoko Sato - RIZIN LANDMARK 6 in NAGOYA | https://www.youtube.com/watch?v=E_oa4lpMdIY
+fighter not found: "Rukiya Anpo - RIZIN.45" | Full Fight | 久保優太 vs. 安保瑠輝也 / Yuta Kubo vs. Rukiya Anpo - RIZIN.45 | https://www.youtube.com/watch?v=r6qSXmQ2rM8
+fighter not found: "Zach Zane - RIZIN.43" | Full Fight | 矢地祐介 vs ザック・ゼイン / Yusuke Yachi vs. Zach Zane - RIZIN.43 | https://www.youtube.com/watch?v=Azzv_0TvkO4
+fighter not found: "Kazumasa Majima - RIZIN.42" | Full Fight | 芦田崇宏 vs  摩嶋一整 / Takahiro Ashida vs. Kazumasa Majima - RIZIN.42 | https://www.youtube.com/watch?v=Gqgya3lPIrI
+fighter not found: "Yoshinori Horie - RIZIN.44" | Full Fight | スパイク・カーライル vs 堀江圭功 / Spike Carlyle vs. Yoshinori Horie - RIZIN.44 | https://www.youtube.com/watch?v=IsP7vTHFMWk
+fighter not found: "Hiroya - RIZIN.2" | Full Fight | 伊藤裕樹 vs ヒロヤ / Yuki Ito vs. Hiroya - 超RIZIN.2 | https://www.youtube.com/watch?v=NtOyLPVpY_w
+fighter not found: "Kai Asakura - RIZIN.45" | Full Fight | フアン・アーチュレッタ vs  朝倉海 / Juan Archuleta vs. Kai Asakura - RIZIN.45 | https://www.youtube.com/watch?v=r_p85QBkPnc
+fighter not found: "Makoto Shinryu - RIZIN.45" | Full Fight | 堀口恭司 vs. 神龍誠 / Kyoji Horiguchi vs. Makoto Shinryu - RIZIN.45 | https://www.youtube.com/watch?v=L9oH4PrCfaU
+fighter not found: "Miyuu Yamamoto - RIZIN.45" | Full Fight | 伊澤星花 vs. 山本美憂 / Seika Izawa vs. Miyuu Yamamoto - RIZIN.45 | https://www.youtube.com/watch?v=PeUoD_Qk43Q
+fighter not found: "Masanori Kanehara - RIZIN.44" | Full Fight | クレベル・コイケ vs. 金原正徳 / Kleber Koike vs. Masanori Kanehara - RIZIN.44 | https://www.youtube.com/watch?v=I-V7V0BL1t8
+fighter not found: "Chihiro Suzuki - RIZIN.43" | Full Fight | クレベル・コイケ vs.  鈴木千裕 / Kleber Koike vs. Chihiro Suzuki - RIZIN.43 | https://www.youtube.com/watch?v=VnzIJOuUjt4
+fighter not found: "Taisei Nishitani - RIZIN.43" | Full Fight | 鈴木博昭 vs.  西谷大成 / Hiroaki Suzuki vs. Taisei Nishitani - RIZIN.43 | https://www.youtube.com/watch?v=QNJQvgYJPUw
+fighter not found: "AlanHiroYamaniha - RIZIN LANDMARK" | Full Fight | 所英男 vs. アラン“ヒロ”ヤマニハ / Hideo Tokoro vs. Alan“Hiro”Yamaniha - RIZIN LANDMARK 6 | https://www.youtube.com/watch?v=mYAtV-_pQU8
+fighter not found: "Vugar Karamov - RIZIN.2" | Full Fight | 朝倉未来 vs.  ヴガール・ケラモフ / Mikuru Asakura vs. Vugar Karamov - 超RIZIN.2 | https://www.youtube.com/watch?v=niq1AKbWOCk
+fighter not found: "Chihiro Suzuki - RIZIN.2" | Full Fight | パトリシオ・ピットブル vs.  鈴木千裕 / Patricio Pitbull vs. Chihiro Suzuki - 超RIZIN.2 | https://www.youtube.com/watch?v=NnL1wfDTKas
+fighter not found: "Chihiro Suzuki - RIZIN LANDMARK" | Full Fight | ヴガール・ケラモフ vs. 鈴木千裕 / Vugar Karamov vs. Chihiro Suzuki - RIZIN LANDMARK 7 | https://www.youtube.com/watch?v=-ftzKuKO1B4
+fighter not found: "Yoshinori Horie - RIZIN.41" | Full Fight | ヴガール・ケラモフ vs.  堀江圭功 / Vugar Karamov vs. Yoshinori Horie - RIZIN.41 | https://www.youtube.com/watch?v=Baq7RJ0MDWw
+fighter not found: "Shinobu Ota - RIZIN LANDMARK" | Full Fight | 倉本一真 vs. 太田忍 / Kazuma Kuramoto vs. Shinobu Ota - RIZIN LANDMARK 5 | https://www.youtube.com/watch?v=cykw80_Ti5Q
+fighter not found: "RENA"      | Full Fight | RENA vs.  クレア・ロペス / RENA vs. Claire Lopez - RIZIN LANDMARK 5 | https://www.youtube.com/watch?v=k7uQA_6U64c
+fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs.  北方大地 / Makoto Shinryu vs. Daichi Kitakata - RIZIN.41 | https://www.youtube.com/watch?v=KdXrq2bBUps
+ambiguous (2 fights): Shizuka Sugiyama vs Kana Watanabe | Full Fight | 杉山しずか vs. 渡辺華奈  / Shizuka Sugiyama vs. Kana Watanabe - 平成最後のやれんのか！ | https://www.youtube.com/watch?v=1XbHUVfLAcE
+fighter not found: "Yuichi Miyagi - RIZIN.36" | Full Fight | 伊藤裕樹 vs. 宮城友一 / Yuki Ito vs. Yuichi Miyagi - RIZIN.36 | https://www.youtube.com/watch?v=J4g68IR5-q8
+fighter not found: "Yuta Kubo - RIZIN LANDMARK 4 in NAGOYA" | Full Fight | 奥田啓介 vs.  久保優太 / Keisuke Okuda vs. Yuta Kubo - RIZIN LANDMARK 4 in NAGOYA | https://www.youtube.com/watch?v=9iIeHyKNNTc
+fighter not found: "Chihiro Suzuki - RIZIN.40" | Full Fight | 中原由貴 vs. 鈴木千裕 / Yoshiki Nakahara vs. Chihiro Suzuki - RIZIN.40 | https://www.youtube.com/watch?v=fBeERiqvGRg
+fighter not found: "Chihiro Suzuki - RIZIN.38" | Full Fight | 萩原京平 vs. 鈴木千裕 / Kyohei Hagiwara vs. Chihiro Suzuki - RIZIN.38 | https://www.youtube.com/watch?v=p4vrGmxeN1Q
+fighter not found: "Yuki Motoya - RIZIN.42" | Full Fight |  朝倉海 vs. 元谷友貴 / Kai Asakura vs. Yuki Motoya - RIZIN.42 | https://www.youtube.com/watch?v=EfkscZBAgbM
+fighter not found: "Juan Archuleta - RIZIN.42" | Full Fight | 井上直樹 vs. フアン・アーチュレッタ / Naoki Inoue vs. Juan Archuleta - RIZIN.42 | https://www.youtube.com/watch?v=tZ4zk3QS1V4
+fighter not found: "Mikuru Asakura - RIZIN LANDMARK" | Full Fight | 牛久絢太郎 vs. 朝倉未来 / Juntaro Ushiku vs. Mikuru Asakura - RIZIN LANDMARK 5 | https://www.youtube.com/watch?v=RFpu20x1T3w
+fighter not found: "Ren Hiramoto - RIZIN LANDMARK" | Full Fight | 斎藤裕 vs. 平本蓮 / Yutaka Saito vs. Ren Hiramoto - RIZIN LANDMARK 5 | https://www.youtube.com/watch?v=t0-RlCLGl1I
+fighter not found: "Genji Umeno - RIZIN.40" | Full Fight | 平本蓮 vs. 梅野源治 / Ren Hiramoto vs. Genji Umeno - RIZIN.40 | https://www.youtube.com/watch?v=EqRENovNuF4
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. 芦澤竜誠 / Kouzi vs. Ryusei Ashizawa - RIZIN.41 | https://www.youtube.com/watch?v=OFdYMA6gbHU
+fighter not found: "Kyohei Hagiwara-RIZIN.41" | Full Fight | カイル・アグォン vs. 萩原京平 / Kyle Aguon vs. Kyohei Hagiwara - RIZIN.41 | https://www.youtube.com/watch?v=K8r4ZmyTt_4
+fighter not found: "Taichi Nakajima - RIZIN.35" | Full Fight | ヴガール・ケラモフ vs. 中島太一 / Vugar Karamov vs. Taichi Nakajima - RIZIN.35 | https://www.youtube.com/watch?v=sVJTSTGxb-c
+fighter not found: "Nikita Sapun RIZIN" | Full Fight | 那須川天心 vs. ニキータ・サプン / Tenshin Nasukawa vs. Nikita Sapun【那須川天心 RIZINデビュー戦】 | https://www.youtube.com/watch?v=gEpVSHgg50o
+fighter not found: "AJ McKee - RIZIN.40" | Full Fight | ホベルト・サトシ・ソウザ vs. AJ・マッキー / Roberto Satoshi Souza vs. AJ McKee - RIZIN.40 | https://www.youtube.com/watch?v=Vydvza-q9qM
+fighter not found: "Patricio Pitbull - RIZIN.40" | Full Fight | クレベル・コイケ vs. パトリシオ・ピットブル / Kleber Koike vs. Patricio Pitbull - RIZIN.40 | https://www.youtube.com/watch?v=GqNo0ZS1PYg
+fighter not found: "Kyoji Horiguchi 3 - RIZIN.40" | Full Fight | 扇久保博正 vs. 堀口恭司 3 / Hiromasa Ougikubo vs. Kyoji Horiguchi 3 - RIZIN.40 | https://www.youtube.com/watch?v=Mj2O2iLxR-g
+fighter not found: "Juan Archuleta - RIZIN.40" | Full Fight | キム・スーチョル vs. フアン・アーチュレッタ / Soo Chul Kim vs. Juan Archuleta - RIZIN.40 | https://www.youtube.com/watch?v=xOgdKzaH9F4
+fighter not found: "Gadzhi Rabadanov - RIZIN.40" | Full Fight | 武田光司 vs. ガジ・ラバダノフ / Koji Takeda vs. Gadzhi Rabadanov - RIZIN.40 | https://www.youtube.com/watch?v=sJ5BWPe7D7U
+fighter not found: "Bunchuai Phonsungnoen - RIZIN" | Full Fight | 三浦孝太 vs. ブンチュアイ・ポーンスーンヌーン / Kota Miura vs. Bunchuai Phonsungnoen - 超RIZIN | https://www.youtube.com/watch?v=z4C_2vYSnoI
+fighter not found: "Bandasak So Trakunpet - RIZIN" | Full Fight | 吉成名高 vs. バンダサック・ソー・トラクンペット / Nadaka Yoshinari vs. Bandasak So Trakunpet - 超RIZIN | https://www.youtube.com/watch?v=v19iTPQIZnI
+fighter not found: "Trent Girdham - RIZIN.39" | Full Fight | 梅野源治 vs. トレント・ガーダム / Genji Umeno vs. Trent Girdham - RIZIN.39 | https://www.youtube.com/watch?v=bcgTOQKAxMI
+fighter not found: "Kleber Koike - RIZIN.39" | Full Fight | 牛久絢太郎 vs. クレベル・コイケ / Juntaro Ushiku vs. Kleber Koike - RIZIN.39 | https://www.youtube.com/watch?v=n3k36kVidTI
+fighter not found: "Soo Chul Kim - RIZIN.38" | Full Fight | 扇久保博正 vs. キム・スーチョル / Hiromasa Ougikubo vs. Soo Chul Kim - RIZIN.38 | https://www.youtube.com/watch?v=0T6sza_pDaE
+fighter not found: "Zach Zane - RIZIN.39" | Full Fight | 武田光司 vs. ザック・ゼイン / Koji Takeda vs. Zach Zane - RIZIN.39 | https://www.youtube.com/watch?v=aSYKv392oSk
+fighter not found: "Sho Patrick Usami - RIZIN.39" | Full Fight | 佐々木信治 vs. 宇佐美正パトリック / Shinji Sasaki vs. Sho Patrick Usami - RIZIN.39 | https://www.youtube.com/watch?v=0zmzYM4gDYI
+fighter not found: "Si Woo Park - RIZIN.38" | Full Fight | 浜崎朱加 vs. パク・シウ / Ayaka Hamasaki vs. Si Woo Park - RIZIN.38 | https://www.youtube.com/watch?v=C1XAgJFx4oc
+fighter not found: "Si Woo Park - RIZIN.37" | Full Fight | 浅倉カンナ vs. パク・シウ / Kanna Asakura vs. Si Woo Park - RIZIN.37 | https://www.youtube.com/watch?v=IhbgMZxz0-o
+fighter not found: "Tsuyoshi Sudario" | Full Fight | スダリオ剛 vs. 関根“シュレック”秀樹 / Tsuyoshi Sudario vs. Hideki “Shrek” Sekine - RIZIN.37 | https://www.youtube.com/watch?v=oyFp0qid1k0
+fighter not found: "Anastasiya Svetkivska - RIZIN.38" | Full Fight | 伊澤星花 vs. アナスタシア・スヴェッキスカ / Seika Izawa vs. Anastasiya Svetkivska - RIZIN.38 | https://www.youtube.com/watch?v=TdIko1ER_WM
+fighter not found: "Laura Fontoura - RIZIN.37" | Full Fight | 伊澤星花 vs. ラーラ・フォントーラ / Seika Izawa vs. Laura Fontoura - RIZIN.37 | https://www.youtube.com/watch?v=9FZl4cceFZU
+fighter not found: "Johnny Case 2 - RIZIN.35" | Full Fight | ホベルト・サトシ・ソウザ vs. ジョニー・ケース 2 / Roberto Satoshi Souza vs. Johnny Case 2 - RIZIN.35 | https://www.youtube.com/watch?v=bXmziXLTAn0
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. ジジ / Kouzi vs. Jizzy - 超RIZIN | https://www.youtube.com/watch?v=-8aAD4VhMqU
+fighter not found: "SatoshiDominatorYamasu" | Full Fight | 弥益ドミネーター聡志 vs. 平本蓮 / Satoshi“Dominator”Yamasu vs. Ren Hiramoto - RIZIN LANDMARK 4 | https://www.youtube.com/watch?v=jCXi2ZuvuBk
+fighter not found: "Kazuma Kuramoto - RIZIN LANDMARK" | Full Fight | 元谷友貴 vs. 倉本一真 / Yuki Motoya vs. Kazuma Kuramoto - RIZIN LANDMARK 4 | https://www.youtube.com/watch?v=eLfZLlNlLIU
+fighter not found: "Minowaman Z" | Full Fight | ミノワマンZ vs. 侍マーク・ハント / Minowaman Z vs. Samurai Mark Hunt - RIZIN LANDMARK 4 | https://www.youtube.com/watch?v=zyB-K4i_0LE
+fighter not found: "Uoi Fullswing" | Full Fight | 魚井フルスイング vs. ヤン・ジヨン / Uoi Fullswing vs. Ji Yong Yang - RIZIN LANDMARK 4 | https://www.youtube.com/watch?v=-PZAg2uDJKM
+fighter not found: "Kyohei Hagiwara - RIZIN LANDMARK vol.3" | Full Fight | クレベル・コイケ vs. 萩原京平 / Kleber Koike vs. Kyohei Hagiwara - RIZIN LANDMARK vol.3 | https://www.youtube.com/watch?v=Lx5Tk5IAmN0
+fighter not found: "Yutaka Saito 2 - RIZIN.35" | Full Fight | 牛久絢太郎 vs. 斎藤裕 2 / Juntaro Ushiku vs. Yutaka Saito 2 - RIZIN.35 | https://www.youtube.com/watch?v=027i5ltW2Rc
+fighter not found: "Kintaro - RIZIN.38" | Full Fight | 堀口恭司 vs. 金太郎 / Kyoji Horiguchi vs. Kintaro - RIZIN.38 | https://www.youtube.com/watch?v=rFSCkrw257k
+fighter not found: "Maike Linhares - IZA" | Full Fight | キム・スーチョル vs. マイケ・リニャーレス / Soo Chul Kim vs. Maike Linhares - IZAの舞 (2015) | https://www.youtube.com/watch?v=2umAXrODfZ4
+fighter not found: "Ren Hiramoto - RIZIN LANDMARK vol.2" | Full Fight | 鈴木千裕 vs. 平本蓮 / Chihiro Suzuki vs. Ren Hiramoto - RIZIN LANDMARK vol.2 | https://www.youtube.com/watch?v=Fo5Dv_AVHgc
+fighter not found: "Patrick Mix - RIZIN.20" | Full Fight | 元谷友貴 vs. パトリック・ミックス / Yuki Motoya vs. Patrick Mix - RIZIN.20 | https://www.youtube.com/watch?v=w_41QPVDOD0
+fighter not found: "Roberto Satoshi Souza - RIZIN.19" | Full Fight | ジョニー・ケース vs. ホベルト・サトシ・ソウザ / Johnny Case vs. Roberto Satoshi Souza - RIZIN.19 | https://www.youtube.com/watch?v=hoYgv_KGwug
+fighter not found: "Hiroto Uesako - RIZIN.19" | Full Fight | ルイス・グスタボ vs. 上迫博仁 / Luiz Gustavo vs. Hiroto Uesako - RIZIN.19 | https://www.youtube.com/watch?v=ZZ_mXyZqwDE
+fighter not found: "Johnny Case - RIZIN.17" | Full Fight | 北岡悟 vs. ジョニー・ケース / Satoru Kitaoka vs. Johnny Case - RIZIN.17 | https://www.youtube.com/watch?v=mwPXuvRMQ-U
+fighter not found: "Johnny Case - RIZIN.14" | Full Fight | 矢地祐介 vs. ジョニー・ケース / Yusuke Yachi vs. Johnny Case - RIZIN.14 | https://www.youtube.com/watch?v=FR4SVYhenw8
+fighter not found: "Luiz Gustavo - RIZIN.12" | Full Fight | 矢地祐介 vs. ルイス・グスタボ / Yusuke Yachi vs. Luiz Gustavo - RIZIN.12 | https://www.youtube.com/watch?v=swsByn1HNf0
+fighter not found: "SatoshiDominatorYamasu" | Full Fight | 弥益ドミネーター聡志 vs. 萩原京平 / Satoshi“Dominator”Yamasu vs. Kyohei Hagiwara - RIZIN.34 | https://www.youtube.com/watch?v=pa13gZm6Bd8
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. 梅野源治 2 / Kouzi vs. Genji Umeno 2 - RIZIN.34 | https://www.youtube.com/watch?v=zvEoLyyHQrs
+fighter not found: "Sora Yamamoto - RIZIN.34" | Full Fight | 中村大介 vs. 山本空良 / Daisuke Nakamura vs. Sora Yamamoto - RIZIN.34 | https://www.youtube.com/watch?v=Yc0Nr3sPlwQ
+fighter not found: "Strasser Kiichi" | Full Fight | ストラッサー起一 vs. 阿部大治 / Strasser Kiichi vs. Daichi Abe - RIZIN.34 | https://www.youtube.com/watch?v=2dN56V_oVHY
+fighter not found: "Yutaro Muramoto - RIZIN.34" | Full Fight | 北方大地 vs. 村元友太郎 / Daichi Kitakata vs. Yutaro Muramoto - RIZIN.34 | https://www.youtube.com/watch?v=YrgYhn-yCoU
+fighter not found: "Akira - RIZIN.34" | Full Fight | 大原樹理 vs. アキラ / Juri Ohara vs. Akira - RIZIN.34 | https://www.youtube.com/watch?v=Km9Ns8lpcU0
+fighter not found: "Taiga"     | Full Fight | 大雅 vs. 髙橋亮 / Taiga vs. Ryo Takahashi - RIZIN.34 | https://www.youtube.com/watch?v=yLSOUvlqSp4
+fighter not found: "AlanHiroYamaniha" | Full Fight | アラン“ヒロ”ヤマニハ vs. 手塚基伸 / Alan“Hiro”Yamaniha vs. Motonobu Tezuka - RIZIN.34 | https://www.youtube.com/watch?v=uF8bw-tXMZ4
+fighter not found: "Yuto Uda - RIZIN.34" | Full Fight | 竿本樹生 vs. 宇田悠斗 / Tatsuki Saomoto vs. Yuto Uda - RIZIN.34 | https://www.youtube.com/watch?v=PCL0_zPm3KQ
+fighter not found: "NavE - RIZIN.34" | Full Fight | 福田龍彌 vs. NavE / Ryuya Fukuda vs. NavE - RIZIN.34 | https://www.youtube.com/watch?v=F86ud8cAEXQ
+fighter not found: "Yuya"      | Full Fight | 憂也 vs. 洋輔YAMATO / Yuya vs. Yousuke Yamato - RIZIN.34 | https://www.youtube.com/watch?v=KPI91iVQl7k
+fighter not found: "Yuuki Kasahara" | Full Fight | 笠原友希 vs. 元氣 / Yuuki Kasahara vs. Motoki - RIZIN.34 | https://www.youtube.com/watch?v=sIhj2iklve0
+fighter not found: "Jin Mandokoro" | Full Fight | 政所仁 vs. 佐藤執斗 2 / Jin Mandokoro vs. Syuto Sato 2 - RIZIN.34 | https://www.youtube.com/watch?v=SpZ9CVoeG5U
+fighter not found: "RYUKI"     | Full Fight | RYUKI vs. 山本歩夢 / RYUKI vs. Ayumu Yamamoto - RIZIN.34 | https://www.youtube.com/watch?v=AkGOyOURpgo
+fighter not found: "Yuma Yamahata" | Full Fight | 山畑雄摩 vs. 小川翔 / Yuma Yamahata vs. Sho Ogawa - RIZIN.34 | https://www.youtube.com/watch?v=9uDNMsZTgcU
+fighter not found: "Masaya Jaki" | Full Fight | 蛇鬼将矢 vs. こうた / Masaya Jaki vs. Kouta - RIZIN.34 | https://www.youtube.com/watch?v=VuYkjlm2vkI
+fighter not found: "Shun - RIZIN.34" | Full Fight | 佐藤亮 vs. 駿 / Ryo Sato vs. Shun - RIZIN.34 | https://www.youtube.com/watch?v=8NT-eQ37S68
+fighter not found: "Kyohei Hagiwara - RIZIN LANDMARK vol.1" | Full Fight | 朝倉未来 vs. 萩原京平 / Mikuru Asakura vs. Kyohei Hagiwara - RIZIN LANDMARK vol.1 | https://www.youtube.com/watch?v=zcTVAPyjs7c
+fighter not found: "Keisuke Okuda - RIZIN LANDMARK vol.1" | Full Fight | 鈴木博昭 vs. 奥田啓介 / Hiroaki Suzuki vs. Keisuke Okuda - RIZIN LANDMARK vol.1 | https://www.youtube.com/watch?v=qIY1SqWJq0Q
+fighter not found: "Takeshi"Kanten"Kasugai -RIZIN LANDMARK vol.1" | Full Fight | 今成正和 vs. 春日井“寒天”たけし / Masakazu Imanari vs. Takeshi"Kanten"Kasugai -RIZIN LANDMARK vol.1 | https://www.youtube.com/watch?v=EPRZbP5SmqY
+fighter not found: "Nobutaka Naito - RIZIN LANDMARK vol.1" | Full Fight | 渡部修斗 vs. 内藤頌貴 / Shooto Watanabe vs. Nobutaka Naito - RIZIN LANDMARK vol.1 | https://www.youtube.com/watch?v=IdciLk8Z9gE
+fighter not found: "Mikuru Asakura 2 - RIZIN.33 VR" | 【VR】Full Fight | 斎藤裕 vs. 朝倉未来 2 / Yutaka Saito vs. Mikuru Asakura 2 - RIZIN.33 ✳︎VRゴーグル視聴推奨✳︎ | https://www.youtube.com/watch?v=R93oVJWP3_I
+fighter not found: "Hiromasa Ougikubo 2 - RIZIN.33" | Full Fight | 朝倉海 vs. 扇久保博正 2 / Kai Asakura vs. Hiromasa Ougikubo 2 - RIZIN.33 | https://www.youtube.com/watch?v=JOahU1hSTyY
+fighter not found: "Yusuke Yachi 2 - RIZIN.33" | Full Fight | ホベルト・サトシ・ソウザ vs. 矢地祐介 2 / Roberto Satoshi Souza vs. Yusuke Yachi 2 - RIZIN.33 | https://www.youtube.com/watch?v=3vxaotnoKOg
+fighter not found: "Mikuru Asakura 2 - RIZIN.33" | Full Fight | 斎藤裕 vs. 朝倉未来 2 / Yutaka Saito vs. Mikuru Asakura 2 - RIZIN.33 | https://www.youtube.com/watch?v=vBiAQFzjmGY
+fighter not found: "Takanori Gomi - RIZIN.33" | Full Fight | 那須川天心 vs. 五味隆典 / Tenshin Nasukawa vs. Takanori Gomi - RIZIN.33 | https://www.youtube.com/watch?v=4t-CjBAZwwk
+fighter not found: "RENA"      | Full Fight | RENA vs. パク・シウ / RENA vs. Si Woo Park - RIZIN.33 | https://www.youtube.com/watch?v=cJmd8hDDjYM
+fighter not found: "Seika Izawa - RIZIN.33" | Full Fight | 浜崎朱加 vs. 伊澤星花 / Ayaka Hamasaki vs. Seika Izawa - RIZIN.33 | https://www.youtube.com/watch?v=S9A0s1ZgD0c
+fighter not found: "BlackPantherBeynoah - RIZIN.33" | Full Fight | 武田光司 vs. “ブラックパンサー”ベイノア / Koji Takeda vs. “BlackPanther”Beynoah - RIZIN.33 | https://www.youtube.com/watch?v=7ROx3_P4bfA
+fighter not found: "Hideki Shrek Sekine - RIZIN.33" | Full Fight | シビサイ頌真 vs. 関根"シュレック"秀樹 / Shoma Shibisai vs. Hideki “Shrek” Sekine - RIZIN.33 | https://www.youtube.com/watch?v=mH9HXBxAwSU
+fighter not found: "Hiroaki Suzuki - RIZIN.33" | Full Fight | 萩原京平 vs. 鈴木博昭 / Kyohei Hagiwara vs. Hiroaki Suzuki - RIZIN.33 | https://www.youtube.com/watch?v=FcAO1Sk8Ad4
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. YA-MAN / Kouzi vs. YA-MAN - RIZIN.33 | https://www.youtube.com/watch?v=DrOSt2ACPA8
+fighter not found: "Shibatar"  | Full Fight | シバター vs. 久保優太 / Shibatar vs. Yuta Kubo - RIZIN.33 | https://www.youtube.com/watch?v=r61uwcRaRi8
+fighter not found: "Shinobu Ota - RIZIN.33" | Full Fight | 祖根寿麻 vs. 太田忍 / Kazuma Sone vs. Shinobu Ota - RIZIN.33 | https://www.youtube.com/watch?v=Lda0AbLGYGI
+fighter not found: "Kintaro - RIZIN.33" | Full Fight | 元谷友貴 vs. 金太郎 / Yuki Motoya vs. Kintaro - RIZIN.33 | https://www.youtube.com/watch?v=xcvwhH7MQ-I
+fighter not found: "Naoki Inoue - RIZIN.33" | Full Fight | 扇久保博正 vs. 井上直樹 / Hiromasa Ougikubo vs. Naoki Inoue - RIZIN.33 | https://www.youtube.com/watch?v=aeLExc6sQaw
+fighter not found: "Kenta Takizawa - RIZIN.33" | Full Fight | 朝倉海 vs. 瀧澤謙太 / Kai Asakura vs. Kenta Takizawa - RIZIN.33 | https://www.youtube.com/watch?v=e4OdDZJr5PE
+fighter not found: "YUSHI - RIZIN.33" | Full Fight | 三浦孝太 vs. YUSHI / Kota Miura vs. YUSHI - RIZIN.33 | https://www.youtube.com/watch?v=KN3Hgzi7ZSA
+fighter not found: "RENA"      | Full Fight | RENA vs. 山本美憂 2 / RENA vs. Miyuu Yamamoto 2 - RIZIN.32 | https://www.youtube.com/watch?v=qCJnWcmbbSU
+fighter not found: "kouzi"     | Full Fight | 皇治 vs. 祖根寿麻 / kouzi vs. Kazuma Sone - RIZIN.32 | https://www.youtube.com/watch?v=sc4sQ_jXKek
+fighter not found: "Yoshiro Maeda - RIZIN.32" | Full Fight | 砂辺光久 vs. 前田吉朗 / Mitsuhisa Sunabe vs. Yoshiro Maeda - RIZIN.32 | https://www.youtube.com/watch?v=QMp_jTgDG4s
+fighter not found: "Katsuya Kitamura - RIZIN.32" | Full Fight | ボビー・オロゴン vs. 北村克哉 / Bobby Ologun vs. Katsuya Kitamura - RIZIN.32 | https://www.youtube.com/watch?v=W4S6dZAlwks
+fighter not found: "Daryl Lokoku" | Full Fight | ロクク・ダリ vs. “ブラックパンサー”ベイノア / Daryl Lokoku vs. “BlackPanther”Beynoah - RIZIN.32 | https://www.youtube.com/watch?v=0OYVz3jpZuw
+fighter not found: "Kohei Tokeshi - RIZIN.32" | Full Fight | 大原樹理 vs. 渡慶次幸平 / Juri Ohara vs. Kohei Tokeshi - RIZIN.32 | https://www.youtube.com/watch?v=rks76c7vDz4
+fighter not found: "Tatsuya So - RIZIN.32" | Full Fight | 越智晴雄 vs. 曹竜也 / Haruo Ochi vs. Tatsuya So - RIZIN.32 | https://www.youtube.com/watch?v=zZE5txikOzE
+fighter not found: "Yuichi Miyagi - RIZIN.32" | Full Fight | 安谷屋智弘 vs. 宮城友一 / Tomohiro Adaniya vs. Yuichi Miyagi - RIZIN.32 | https://www.youtube.com/watch?v=6hH9OEPLTrg
+fighter not found: "Nisse"     | Full Fight | にっせー vs. 古賀愛蘭 / Nisse vs. Aira Koga - RIZIN.32 | https://www.youtube.com/watch?v=ofr1s1OXwIw
+fighter not found: "Tanner Lourenco - RIZIN.32" | Full Fight | 熊澤伸哉 vs. タナー・ロレンツォ / Shinya Kumazawa vs. Tanner Lourenco - RIZIN.32 | https://www.youtube.com/watch?v=r_Omj-FqGLs
+fighter not found: "Lopez Satsuma - RIZIN.32" | Full Fight | 宮城寛克 vs. ロペス薩摩 / Hirokatsu Miyagi vs. Lopez Satsuma - RIZIN.32 | https://www.youtube.com/watch?v=31k0isYdBc4
+fighter not found: "TARKER"    | Full Fight | TARKER vs. 関原翔 / TARKER vs. Sho Sekihara - RIZIN.32 | https://www.youtube.com/watch?v=NN0YW9h54J4
+fighter not found: "Ryoga Terayama" | Full Fight | 寺山遼冴 vs. 弘樹 / Ryoga Terayama vs. Hiroki - RIZIN.32 | https://www.youtube.com/watch?v=j_sQ60-D1Hk
+fighter not found: "Juntaro Ushiku - RIZIN.31" | Full Fight | 斎藤裕 vs. 牛久絢太郎 / Yutaka Saito vs. Juntaro Ushiku - RIZIN.31 | https://www.youtube.com/watch?v=szwymB8Md1Y
+fighter not found: "Saori Oshima - RIZIN.31" | Full Fight | Kanna Asakura vs. Saori Oshima - RIZIN.31 | https://www.youtube.com/watch?v=UM689osiBoI
+fighter not found: "Tsuyoshi Sudario" | Full Fight | スダリオ剛 vs. SAINT / Tsuyoshi Sudario vs. SAINT - RIZIN.31 | https://www.youtube.com/watch?v=UPdcOcprEiQ
+fighter not found: "Takahiro Ashida - RIZIN.31" | Full Fight | 金原正徳 vs. 芦田崇宏 / Masanori Kanehara vs. Takahiro Ashida - RIZIN.31 | https://www.youtube.com/watch?v=27Uk6aEcCjQ
+fighter not found: "Akira - RIZIN.31" | Full Fight | 阿部大治 vs. アキラ / Daichi Abe vs. Akira - RIZIN.31 | https://www.youtube.com/watch?v=ie-7o1CO-Es
+fighter not found: "Suguru Nii - RIZIN.31" | Full Fight | 中村大介 vs. 新居すぐる / Daisuke Nakamura vs. Suguru Nii - RIZIN.31 | https://www.youtube.com/watch?v=LVYpX9fqLdA
+fighter not found: "Takuya Yamamoto - RIZIN.31" | Full Fight | 白川陸斗 vs. 山本琢也 / Rikuto Shirakawa vs. Takuya Yamamoto - RIZIN.31 | https://www.youtube.com/watch?v=jp9C-pcnUUc
+fighter not found: "Naoki Ishikawa - RIZIN.31" | Full Fight | 吉成名高 vs. 石川直樹 / Nadaka Yoshinari vs. Naoki Ishikawa - RIZIN.31 | https://www.youtube.com/watch?v=2xSNn0r-ooI
+fighter not found: "Yuki Ito - RIZIN.31" | Full Fight | 中村優作 vs. 伊藤裕樹 / Yusaku Nakamura vs. Yuki Ito - RIZIN.31 | https://www.youtube.com/watch?v=lcW1L-FOXpI
+fighter not found: "Kunta Hashimoto - RIZIN.31" | Full Fight | 伊藤盛一郎 vs. 橋本薫汰 / Seiichiro Ito vs. Kunta Hashimoto - RIZIN.31 | https://www.youtube.com/watch?v=seWBpYmNIE8
+fighter not found: "Ryuya Okuwaki" | Full Fight | 奥脇竜哉 vs. 老沼隆斗 / Ryuya Okuwaki vs. Ryuto Oinuma - RIZIN.31 | https://www.youtube.com/watch?v=DsBJggOiXuQ
+fighter not found: "Alan HiroYamaniha - RIZIN.30" | Full Fight | 朝倉海 vs. アラン“ヒロ”ヤマニハ / Kai Asakura vs. Alan “Hiro”Yamaniha - RIZIN.30 | https://www.youtube.com/watch?v=ZZjM7L1GM-4
+fighter not found: "Kintaro - RIZIN.30" | Full Fight | 井上直樹 vs. 金太郎 / Naoki Inoue vs. Kintaro - RIZIN.30 | https://www.youtube.com/watch?v=a7RakJQTxgM
+fighter not found: "Takafumi Otsuka - RIZIN.30" | Full Fight | 扇久保博正 vs. 大塚隆史 / Hiromasa Ougikubo vs. Takafumi Otsuka - RIZIN.30 | https://www.youtube.com/watch?v=2y5qka9hSX4
+fighter not found: "Kenta Takizawa - RIZIN.30" | Full Fight | 元谷友貴 vs. 瀧澤謙太 / Yuki Motoya vs. Kenta Takizawa - RIZIN.30 | https://www.youtube.com/watch?v=gFEW77NYwqE
+fighter not found: "Emi Fujino  - RIZIN.30" | Full Fight | 浜崎朱加 vs. 藤野恵実 / Ayaka Hamasaki vs. Emi Fujino  - RIZIN.30 | https://www.youtube.com/watch?v=7NtZPFyxQrA
+fighter not found: "Yusuke Yachi - RIZIN.30" | Full Fight | 武田光司 vs. 矢地祐介 / Koji Takeda vs. Yusuke Yachi - RIZIN.30 | https://www.youtube.com/watch?v=FXrs_1L6K8A
+fighter not found: "Yoshinori Horie - RIZIN.30" | Full Fight | 佐々木憂流迦 vs. 堀江圭功 / Ulka Sasaki vs. Yoshinori Horie - RIZIN.30 | https://www.youtube.com/watch?v=E-KCppuMPK0
+fighter not found: "Yuta Kubo - RIZIN.30" | Full Fight | 太田忍 vs. 久保優太 / Shinobu Ota vs. Yuta Kubo - RIZIN.30 | https://www.youtube.com/watch?v=CpTAcUy0JJ8
+fighter not found: "Chihiro Suzuki - RIZIN.30" | Full Fight | 昇侍 vs. 鈴木千裕 / Shoji vs. Chihiro Suzuki - RIZIN.30 | https://www.youtube.com/watch?v=DxL23sTK-mM
+fighter not found: "Momoka - RIZIN.30" | Full Fight | ぱんちゃん璃奈 vs. 百花 / Panchan Rina vs. Momoka - RIZIN.30 | https://www.youtube.com/watch?v=JOwTK5_ZrGU
+fighter not found: "Manel Kape - RIZIN.14" | Full Fight | 佐々木憂流迦 vs. マネル・ケイプ / Ulka Sasaki vs. Manel Kape - RIZIN.14 | https://www.youtube.com/watch?v=MMMyVqPQg4I
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. 白鳥大珠 / Kouzi vs. Taiju Shiratori - RIZIN.29 | https://www.youtube.com/watch?v=tq0713OpKcc
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. 伊藤空也 / Kintaro vs. Kuya Ito - RIZIN.29 | https://www.youtube.com/watch?v=cawGVRWZ5l8
+fighter not found: "Shian - RIZIN.29" | Full Fight | 大塚隆史 vs. 獅庵 / Takafumi Otsuka vs. Shian - RIZIN.29 | https://www.youtube.com/watch?v=HjC99nQGG6I
+fighter not found: "Imanari Masakazu - RIZIN.29" | Full Fight | 瀧澤謙太 vs. 今成正和 / Kenta Takizawa vs. Imanari Masakazu - RIZIN.29 | https://www.youtube.com/watch?v=isECQ590yhY
+fighter not found: "Alan Hiro Yamaniha - RIZIN.29" | Full Fight | 倉本一真 vs. アラン“ヒロ”ヤマニハ / Kazuma Kuramoto vs. Alan “Hiro” Yamaniha - RIZIN.29 | https://www.youtube.com/watch?v=R3E6aLA_soU
+fighter not found: "Yuki TENCHO Kawana - RIZIN.29" | Full Fight | 矢地祐介 vs. 川名TENCHO雄生 / Yusuke Yachi vs. Yuki TENCHO Kawana - RIZIN.29 | https://www.youtube.com/watch?v=tl7sFJCKUhU
+fighter not found: "Jin Aoi - RIZIN.29" | Full Fight | 白川陸斗 vs. 青井人 / Rikuto Shirakawa vs. Jin Aoi - RIZIN.29 | https://www.youtube.com/watch?v=5t4UZWvpLIE
+fighter not found: "Taiju Shiratori" | Full Fight | 白鳥大珠 vs. 髙橋亮 / Taiju Shiratori vs. Ryo Takahashi - RIZIN.29 | https://www.youtube.com/watch?v=cPcD_GcBOe4
+fighter not found: "Kouzi"     | Full Fight | 皇治 vs. 梅野源治 / Kouzi vs. Genji Umeno - RIZIN.29 | https://www.youtube.com/watch?v=IoJRiiT0nsk
+fighter not found: "Chikai - RIZIN.29" | Full Fight | 吉成名高 vs. 誓 / Nadaka Yoshinari vs. Chikai - RIZIN.29 | https://www.youtube.com/watch?v=ULs8_6L6bOM
+fighter not found: "Jyosei Izumi - RIZIN.29" | Full Fight | 植山征紀 vs. 泉丈成 / Seiki Ueyama vs. Jyosei Izumi - RIZIN.29 | https://www.youtube.com/watch?v=k-JoClVtXIs
+fighter not found: "Yuma Yamahata" | Full Fight | 山畑雄摩 vs. 髙橋聖人 / Yuma Yamahata vs. Kiyoto Takahashi - RIZIN.29 | https://www.youtube.com/watch?v=XmAP9hzOsK0
+fighter not found: "Kleber Koike - RIZIN.28" | Full Fight | 朝倉未来 vs. クレベル・コイケ / Mikuru Asakura vs. Kleber Koike - RIZIN.28 | https://www.youtube.com/watch?v=wOirmNoNMHc
+fighter not found: "Koki Osaki , HIROYA , Hideo Tokoro - RIZIN.28" | 那須川天心 vs. 大﨑孔稀 , HIROYA , 所英男 / Tenshin Nasukawa vs. Koki Osaki , HIROYA , Hideo Tokoro - RIZIN.28 | https://www.youtube.com/watch?v=Q1aOilzUa0c
+fighter not found: "Roberto Satoshi Souza - RIZIN.28" | Full Fight | トフィック・ムサエフ vs. ホベルト・サトシ・ソウザ / Tofiq Musayev vs. Roberto Satoshi Souza - RIZIN.28 | https://www.youtube.com/watch?v=0AENIzjFwNo
+fighter not found: "Shooto Watanabe - RIZIN.28" | Full Fight | 朝倉海 vs. 渡部修斗 / Kai Asakura vs. Shooto Watanabe - RIZIN.28 | https://www.youtube.com/watch?v=NWybv24TdIA
+fighter not found: "Naoki Inoue - RIZIN.28" | Full Fight | 石渡伸太郎 vs. 井上直樹 / Shintaro Ishiwatari vs. Naoki Inoue - RIZIN.28 | https://www.youtube.com/watch?v=r8Bw4paU1QI
+fighter not found: "TakeshiKantenKasugai - RIZIN.28" | Full Fight | 扇久保博正 vs. 春日井“寒天”たけし / Hiromasa Ougikubo vs. Takeshi“Kanten”Kasugai - RIZIN.28 | https://www.youtube.com/watch?v=deKP5636B4w
+fighter not found: "Ryo Okada - RIZIN.28" | Full Fight | 元谷友貴 vs. 岡田遼 / Yuki Motoya vs. Ryo Okada - RIZIN.28 | https://www.youtube.com/watch?v=xUW8jFFeq7A
+fighter not found: "Vugar Karamov - RIZIN.28" | Full Fight | 斎藤裕 vs. ヴガール・ケラモフ / Yutaka Saito vs. Vugar Karamov - RIZIN.28 | https://www.youtube.com/watch?v=AEZosftj1GE
+fighter not found: "Tsuyoshi Sudario - RIZIN.28" | Full Fight | シビサイ頌真 vs. スダリオ剛 / Shoma Shibisai vs. Tsuyoshi Sudario - RIZIN.28 | https://www.youtube.com/watch?v=vNmZllzxnb4
+fighter not found: "SatoshiDominatorYamasu" | Full Fight | 弥益ドミネーター聡志 vs. “ブラックパンサー”ベイノア / Satoshi“Dominator”Yamasu vs. “BlackPanther”Beynoah | https://www.youtube.com/watch?v=xCl6tHr2cS0
+fighter not found: "Damien Brown - RIZIN.19" | Full Fight | トフィック・ムサエフ vs. ダミアン・ブラウン / Tofiq Musayev vs. Damien Brown - RIZIN.19 | https://www.youtube.com/watch?v=z32aoItQJJo
+fighter not found: "Mizuto Hirota - RIZIN.17" | Full Fight | ホベルト・サトシ・ソウザ vs. 廣田瑞人 / Roberto Satoshi Souza vs. Mizuto Hirota - RIZIN.17 | https://www.youtube.com/watch?v=C6EKMwUxe4Q
+fighter not found: "Tofiq Musayev - RIZIN.16" | Full Fight | ダロン・クルックシャンク vs. トフィック・ムサエフ / Daron Cruickshank vs. Tofiq Musayev - RIZIN.16 | https://www.youtube.com/watch?v=3ivdNvKOaa4
+fighter not found: "Roberto Satoshi Souza - RIZIN.15" | Full Fight | 北岡悟 vs. ホベルト・サトシ・ソウザ / Satoru Kitaoka vs. Roberto Satoshi Souza - RIZIN.15 | https://www.youtube.com/watch?v=0BXMbjCaVDg
+fighter not found: "Nobumitsu Tyson" | Full Fight | 大尊伸光 vs. トフィック・ムサエフ / Nobumitsu Tyson vs. Tofiq Musayev - RIZIN.14 | https://www.youtube.com/watch?v=RSDUN6TXxOM
+fighter not found: "Ulka Sasaki - RIZIN.17" | Full Fight | 石渡伸太郎 vs. 佐々木憂流迦 / Shintaro Ishiwatari vs. Ulka Sasaki - RIZIN.17 | https://www.youtube.com/watch?v=YWLJxbmVS34
+fighter not found: "Justin Scoggins - RIZIN.14" | Full Fight | 元谷友貴 vs. ジャスティン・スコッギンス / Yuki Motoya vs. Justin Scoggins - RIZIN.14 | https://www.youtube.com/watch?v=MfPFUV1y1-M
+fighter not found: "Kazuma Sone - RIZIN.12" | Full Fight | 元谷友貴 vs. 祖根寿麻 / Yuki Motoya vs. Kazuma Sone - RIZIN.12 | https://www.youtube.com/watch?v=g1uUAnTlNDw
+fighter not found: "C.B.Dollaway - RIZIN.20" | Full Fight | イリー・プロハースカ vs. C.B.ダラウェイ / Jiri Prochazka vs. C.B.Dollaway - RIZIN.20 | https://www.youtube.com/watch?v=s0EiEpos6oM
+fighter not found: "Fabio Maldonado - RIZIN.19" | Full Fight | イリー・プロハースカ vs. ファビオ・マルドナド / Jiri Prochazka vs. Fabio Maldonado - RIZIN.19 | https://www.youtube.com/watch?v=Om8TwID2X9g
+fighter not found: "King Mo"   | Full Fight | キング・モー vs. イリー・プロハースカ 2 / King Mo vs. Jiri Prochazka 2 - RIZIN.15 | https://www.youtube.com/watch?v=wpElfF70WlQ
+fighter not found: "Brandon Halsey - RIZIN.14" | Full Fight | イリー・プロハースカ vs. ブランドン・ホールジー / Jiri Prochazka vs. Brandon Halsey - RIZIN.14 | https://www.youtube.com/watch?v=1oEkGys6oEs
+fighter not found: "Jake Heun - RIZIN.13" | Full Fight | イリー・プロハースカ vs. ジェイク・ヒューン / Jiri Prochazka vs. Jake Heun - RIZIN.13 | https://www.youtube.com/watch?v=_TbHo3nRE4Y
+fighter not found: "Bruno Cappelozza - RIZIN.11" | Full Fight | イリー・プロハースカ vs. ブルーノ・カッペローザ / Jiri Prochazka vs. Bruno Cappelozza - RIZIN.11 | https://www.youtube.com/watch?v=iXR0ae9yUik
+fighter not found: "Jiri Prochazka - IZA" | Full Fight | ワジム・ネムコフ vs. イリー・プロハースカ / Vadim Nemkov vs. Jiri Prochazka - IZAの舞 | https://www.youtube.com/watch?v=90kDN1UieFc
+fighter not found: "Kanna Asakura 2 - RIZIN.27" | Full Fight | 浜崎朱加 vs. 浅倉カンナ 2 / Ayaka Hamasaki vs. Kanna Asakura 2 - RIZIN.27 | https://www.youtube.com/watch?v=Lh7Z1Euxdg8
+fighter not found: "Kazuki Tokudome - RIZIN.27" | Full Fight | ホベルト・サトシ・ソウザ vs. 徳留一樹 / Roberto Satoshi Souza vs. Kazuki Tokudome - RIZIN.27 | https://www.youtube.com/watch?v=FfZdWHUbc8s
+fighter not found: "Takasuke Kume - RIZIN.27" | Full Fight | 武田光司 vs. 久米鷹介 / Koji Takeda vs. Takasuke Kume - RIZIN.27 | https://www.youtube.com/watch?v=EQSGxYVV5Bw
+fighter not found: "Kazumasa Majima - RIZIN.27" | Full Fight | クレベル・コイケ vs. 摩嶋一整 / Kleber Koike vs. Kazumasa Majima - RIZIN.27 | https://www.youtube.com/watch?v=JKbXpsCVrxk
+fighter not found: "Tsuyoshi Sudario" | Full Fight | スダリオ剛 vs. 宮本和志 / Tsuyoshi Sudario vs. Kazushi Miyamoto - RIZIN.27 | https://www.youtube.com/watch?v=LCjThNVkTbw
+fighter not found: "Taiga"     | Full Fight | 大雅 vs. 基山幹太 / Taiga vs. Kanta Motoyama - RIZIN.27 | https://www.youtube.com/watch?v=ej046wpqGAI
+fighter not found: "Yoshinori Horie - RIZIN.27" | Full Fight | 関鉄矢 vs. 堀江圭功 / Tetsuya Seki vs. Yoshinori Horie - RIZIN.27 | https://www.youtube.com/watch?v=VWNLEIjMbj4
+fighter not found: "Shian - RIZIN.27" | Full Fight | 祖根寿麻 vs. 獅庵 / Kazuma Sone vs. Shian - RIZIN.27 | https://www.youtube.com/watch?v=ywVEZqdmrGY
+fighter not found: "Takumi Tamaru - RIZIN.27" | Full Fight | 渡部修斗 vs. 田丸匠 / Shooto Watanabe vs. Takumi Tamaru - RIZIN.27 | https://www.youtube.com/watch?v=os3exJHKd-A
+fighter not found: "Seigo Yamamoto - RIZIN.27" | Full Fight | 村元友太郎 vs. 山本聖悟 / Yutaro Muramoto vs. Seigo Yamamoto - RIZIN.27 | https://www.youtube.com/watch?v=7fcDo4RLUOA
+fighter not found: "Masayoshi Kunimoto - RIZIN.27" | Full Fight | 佐藤執斗 vs. 國本真義 / Syuto Sato vs. Masayoshi Kunimoto - RIZIN.27 | https://www.youtube.com/watch?v=GJcc4Ad-FPA
+fighter not found: "Riku Yoshida - RIZIN.27" | Full Fight | 桜井力 vs. 吉田陸 / Riki Sakurai vs. Riku Yoshida - RIZIN.27 | https://www.youtube.com/watch?v=TGjPyhg-Wb8
+fighter not found: "Hiroki - RIZIN.27" | Full Fight | 内藤凌太 vs. 弘樹 / Kohei Sugiyama vs. Hiroki - RIZIN.27 | https://www.youtube.com/watch?v=j3suMaU4I_Q
+fighter not found: "Yuki Ito - RIZIN.27" | Full Fight | 杉山廣平 vs. 伊藤裕樹 / Kohei Sugiyama vs. Yuki Ito - RIZIN.27 | https://www.youtube.com/watch?v=NXsQq0-ArEE
+fighter not found: "Takeya Mizugaki - RIZIN.18" | Full Fight | マネル・ケイプ vs. 水垣偉弥 / Manel Kape vs. Takeya Mizugaki - RIZIN.18 | https://www.youtube.com/watch?v=Ox7AuJoHjZo
+fighter not found: "Kyoji Horiguchi 2 - RIZIN.26" | Full Fight | 朝倉海 vs. 堀口恭司 2 / Kai Asakura vs. Kyoji Horiguchi 2 - RIZIN.26 | https://www.youtube.com/watch?v=osxRYKeoWTo
+fighter not found: "Kumandoi Phetjaroenvit - RIZIN.26" | Full Fight | Tenshin Nasukawa vs. Kumandoi Phetjaroenvit - RIZIN.26 | https://www.youtube.com/watch?v=WpfDNCEis1k
+fighter not found: "Satoshi"Dominator"Yamasu - RIZIN.26" | Full Fight | 朝倉未来 vs. 弥益ドミネーター聡志 / Mikuru Asakura vs. Satoshi"Dominator"Yamasu - RIZIN.26 | https://www.youtube.com/watch?v=Whwmy7UBu0g
+fighter not found: "Kouzi - RIZIN.26" | Full Fight | 五味隆典 vs. 皇治 / Takanori Gomi vs. Kouzi - RIZIN.26 | https://www.youtube.com/watch?v=Oh-ZACZyCgo
+fighter not found: "Miyuu Yamamoto - RIZIN.26" | Full Fight | 浜崎朱加 vs. 山本美憂 / Ayaka Hamasaki vs. Miyuu Yamamoto - RIZIN.26 | https://www.youtube.com/watch?v=8Eymp233gK4
+fighter not found: "Naoki Inoue - RIZIN.26" | Full Fight | 元谷友貴 vs. 井上直樹 / Yuki Motoya vs. Naoki Inoue - RIZIN.26 | https://www.youtube.com/watch?v=W30q6oDCcJU
+fighter not found: "Kleber Koike - RIZIN.26" | Full Fight | カイル・アグォン vs. クレベル・コイケ / Kyle Aguon vs. Kleber Koike - RIZIN.26 | https://www.youtube.com/watch?v=dusq9YMiDp8
+fighter not found: "Ren Hiramoto - RIZIN.26" | Full Fight | 萩原京平 vs. 平本蓮 / Kyohei Hagiwara vs. Ren Hiramoto - RIZIN.26 | https://www.youtube.com/watch?v=CN_5KjJQSeo
+fighter not found: "Shinobu Ota - RIZIN.26" | Full Fight | 所英男 vs. 太田忍 / Hideo Tokoro vs. Shinobu Ota - RIZIN.26 | https://www.youtube.com/watch?v=bVacv6VQ1_U
+fighter not found: "Petmalai Phetjaroenvit - RIZIN.26" | Full Fight | 吉成名高 vs. ペットマライ・ペットジャルーンウィット / Nadaka Yoshinari vs. Petmalai Phetjaroenvit - RIZIN.26 | https://www.youtube.com/watch?v=uSfp13wwLYY
+fighter not found: "Kenta Takizawa - RIZIN.26" | Full Fight | 佐々木憂流迦 vs. 瀧澤謙太 / Ulka Sasaki vs. Kenta Takizawa - RIZIN.26 | https://www.youtube.com/watch?v=vO-U38CqQhw
+fighter not found: "Ai - RIZIN.26" | Full Fight | 浅倉カンナ vs. あい / Kanna Asakura vs. Ai - RIZIN.26 | https://www.youtube.com/watch?v=uCo2S6CHDEk
+fighter not found: "HIROYA"    | Full Fight | HIROYA vs. シバター / HIROYA vs. Shibatar - RIZIN.26 | https://www.youtube.com/watch?v=NZPL34w28eA
+fighter not found: "Kazuma Kuramoto - RIZIN.26" | Full Fight | 中原太陽 vs. 倉本一真 / Taiyo Nakahara vs. Kazuma Kuramoto - RIZIN.26 | https://www.youtube.com/watch?v=WZ2kDgCF7qQ
+fighter not found: "Minowaman" | Full Fight | ミノワマン vs. スダリオ剛 / Minowaman vs. Sudario Tsuyoshi - RIZIN.26 | https://www.youtube.com/watch?v=VGRBmmgVYR8
+fighter not found: "Eru Takebayashi - RIZIN.26" | Full Fight | さくら vs. 竹林エル / Sakura vs. Eru Takebayashi - RIZIN.26 | https://www.youtube.com/watch?v=MSNqHPFMBBY
+fighter not found: "Ben Nguyen - RIZIN.15" | Full Fight | 堀口恭司 vs. ベン・ウィン / Kyoji Horiguchi vs. Ben Nguyen - RIZIN.15 | https://www.youtube.com/watch?v=DpW1Cbv99oA
+fighter not found: "Hiromasa Ougikubo - RIZIN.11" | Full Fight | 堀口恭司 vs. 扇久保博正 / Kyoji Horiguchi vs. Hiromasa Ougikubo - RIZIN.11 | https://www.youtube.com/watch?v=v-bX-Yr-cBk
+fighter not found: "Ian McCall - RIZIN.10" | Full Fight | 堀口恭司 vs. イアン・マッコール / Kyoji Horiguchi vs. Ian McCall - RIZIN.10 | https://www.youtube.com/watch?v=5ytY1eiDvcQ
+no fight for Kyoji Horiguchi vs Gabriel Oliveira | Full Fight | 堀口恭司 vs. ガブリエル・オリベイラ / Kyoji Horiguchi vs. Gabriel Oliveira - 12/29/2017 | https://www.youtube.com/watch?v=TNDTunTKKuU
+fighter not found: "Yutaka Saito - RIZIN.25" | Full Fight | 朝倉未来 vs. 斎藤裕 / Mikuru Asakura vs. Yutaka Saito - RIZIN.25 | https://www.youtube.com/watch?v=b9I20IcVcRc
+fighter not found: "Kenta Takizawa - RIZIN.25" | Full Fight | 扇久保博正 vs. 瀧澤謙太 / Hiromasa Ougikubo vs. Kenta Takizawa - RIZIN.25 | https://www.youtube.com/watch?v=kWSwpV8zp4k
+fighter not found: "Let's Gota - RIZIN.25" | Full Fight | 住村竜市朗 vs. レッツ豪太 / Ryuichiro Sumimura vs. Let's Gota - RIZIN.25 | https://www.youtube.com/watch?v=vUNOYUCFimc
+fighter not found: "Daichi Kitakata - RIZIN.25" | Full Fight | 竿本樹生 vs. 北方大地 / Tatsuki Saomoto vs. Daichi Kitakata - RIZIN.25 | https://www.youtube.com/watch?v=egGSY0ZEhyg
+fighter not found: "Kyohei Hagiwara - RIZIN.25" | Full Fight | 内村洋次郎 vs. 萩原京平 / Yojiro Uchimura vs. Kyohei Hagiwara - RIZIN.25 | https://www.youtube.com/watch?v=kVBzkZzu2KQ
+fighter not found: "Taiga"     | Full Fight | 大雅 vs. 山畑雄摩 / Taiga vs. Yuma Yamahata - RIZIN.25 | https://www.youtube.com/watch?v=1HBLp2PjYsg
+fighter not found: "Hidenori Ebata" | Full Fight | 江畑秀範 vs. 佐野勇海 / Hidenori Ebata vs. Isami Sano - RIZIN.25 | https://www.youtube.com/watch?v=H2A0OV3UdzE
+fighter not found: "Rikuto Shirakawa - RIZIN.25" | Full Fight | 朴光哲 vs. 白川陸斗 / Kotetsu Boku vs. Rikuto Shirakawa - RIZIN.25 | https://www.youtube.com/watch?v=BBiG4JBSj0A
+fighter not found: "Jin Mandokoro" | Full Fight | 政所仁 vs. 佐藤執斗 / Jin Mandokoro vs. Syuto Sato - RIZIN.25 | https://www.youtube.com/watch?v=Q0IWW7EztVI
+fighter not found: "Shohei Asahara - RIZIN.25" | Full Fight | 山口侑馬 vs. 麻原将平 / Yuma Yamaguchi vs. Shohei Asahara - RIZIN.25 | https://www.youtube.com/watch?v=upI2RJh2Cos
+fighter not found: "Kouzi - RIZIN.24" | Full Fight | 那須川天心 vs. 皇治 / Tenshin Nasukawa vs. Kouzi - RIZIN.24 | https://www.youtube.com/watch?v=sGE-_tUJkY4
+fighter not found: "Shoji - RIZIN.24" | Full Fight | 朝倉海 vs. 昇侍 / Kai Asakura vs. Shoji - RIZIN.24 | https://www.youtube.com/watch?v=dQcz8bIScB8
+fighter not found: "Yuki Kawana - RIZIN.24" | Full Fight | 武田光司 vs. 川名雄生 / Koji Takeda vs. Yuki Kawana - RIZIN.24 | https://www.youtube.com/watch?v=DM4deP38kmI
+fighter not found: "Satoru Kitaoka - RIZIN.24" | Full Fight | 久米鷹介 vs. 北岡悟 / Takasuke Kume vs. Satoru Kitaoka - RIZIN.24 | https://www.youtube.com/watch?v=hMyHas342oY
+fighter not found: "Taishi Hiratsuka - RIZIN.24" | Full Fight | 北川裕紀 vs. 平塚大士 / Yuuki Kitagawa vs. Taishi Hiratsuka - RIZIN.24 | https://www.youtube.com/watch?v=M_dchENvynE
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. 瀧澤謙太 / Kintaro vs. Kenta Takizawa - RIZIN.24 | https://www.youtube.com/watch?v=thDvkHMPbHQ
+fighter not found: "RENA"      | Full Fight | RENA vs. 富松恵美 / RENA vs. Emi Tomimatsu - RIZIN.24 | https://www.youtube.com/watch?v=ntst3cwDKGA
+fighter not found: "Kyohei Hagiwara - RIZIN.24" | Full Fight | 芦田崇宏 vs. 萩原京平 / Takahiro Ashida vs. Kyohei Hagiwara - RIZIN.24 | https://www.youtube.com/watch?v=4W2UnC-V8Nc
+fighter not found: "Sudario Tsuyoshi" | Full Fight | スダリオ剛 vs. ディラン・ジェイムス / Sudario Tsuyoshi vs. Dylan James - RIZIN.24 | https://www.youtube.com/watch?v=M-9KRSOnqLk
+fighter not found: "Mutsuki Ebata" | Full Fight | 江幡睦 vs. 良星 / Mutsuki Ebata vs. Rasta - RIZIN.24 | https://www.youtube.com/watch?v=jVCuMiJo4Fw
+fighter not found: "Juri Ohara - RIZIN.24" | Full Fight | 矢地祐介 vs. 大原樹里 / Yusuke Yachi vs. Juri Ohara - RIZIN.24 | https://www.youtube.com/watch?v=uMKz8n8ucrA
+fighter not found: "Rui Ebata - RIZIN.20" | Full Fight | 那須川天心 vs. 江幡塁 / Tenshin Nasukawa vs. Rui Ebata - RIZIN.20 | https://www.youtube.com/watch?v=r3n_o8dBn5I
+fighter not found: "Tenshin Nasukawa - RIZIN.16" | Full Fight | マーティン・ブランコ vs. 那須川天心 / Martin Blanco vs. Tenshin Nasukawa - RIZIN.16 | https://www.youtube.com/watch?v=slWpz88OMok
+fighter not found: "Fritz Biagtan - RIZIN.15" | Full Fight | 那須川天心 vs. フリッツ・ビアグタン / Tenshin Nasukawa vs. Fritz Biagtan - RIZIN.15 | https://www.youtube.com/watch?v=GcIcX4GI0Uc
+fighter not found: "Tenshin Nasukawa - RIZIN.10" | Full Fight | 中村優作 vs. 那須川天心 / Yusaku Nakamura vs. Tenshin Nasukawa - RIZIN.10 | https://www.youtube.com/watch?v=8_wIJU6pyVg
+no fight for Tenshin Nasukawa vs Yuta Cat Hamamoto | Full Fight | 那須川天心 vs. 浜本“キャット”雄大 / Tenshin Nasukawa vs. Yuta “Cat” Hamamoto - 12/31/2017 | https://www.youtube.com/watch?v=Lz9N8MutJSI
+no fight for Tenshin Nasukawa vs Kizaemon Saiga | Full Fight | 那須川天心 vs. 才賀紀左衛門 / Tenshin Nasukawa vs. Kizaemon Saiga - 7/30/2017 | https://www.youtube.com/watch?v=vf1XoIlsp6s
+fighter not found: "Hiromasa Ougikubo - RIZIN.23" | Full Fight | 朝倉海 vs. 扇久保博正 / Kai Asakura vs. Hiromasa Ougikubo - RIZIN.23 | https://www.youtube.com/watch?v=5l9YbbQ2vZ8
+fighter not found: "Uoi Fullswing - RIZIN.23" | Full Fight | 元谷友貴 vs. 魚井フルスイング / Yuki Motoya vs. Uoi Fullswing - RIZIN.23 | https://www.youtube.com/watch?v=djYYrXhxrSM
+fighter not found: "Kazumasa Majima - RIZIN.23" | Full Fight | 斎藤裕 vs. 摩嶋一整 / Yutaka Saito vs. Kazumasa Majima - RIZIN.23 | https://www.youtube.com/watch?v=Pva1NLamsic
+fighter not found: "Taiga 2 - RIZIN.23" | Full Fight | 原口健飛 vs. 大雅 2 / Kento Haraguchi vs. Taiga 2 - RIZIN.23 | https://www.youtube.com/watch?v=zk-hPtIFBHQ
+fighter not found: "Jin Aoi - RIZIN.23" | Full Fight | 朴光哲 vs. 青井人 / Kotetsu Boku vs. Jin Aoi - RIZIN.23 | https://www.youtube.com/watch?v=F84VJRZKTC0
+fighter not found: "Makoto Shinryu - RIZIN.23" | Full Fight | 伊藤盛一郎 vs. 神龍誠 / Seiichiro Ito vs. Makoto Shinryu - RIZIN.23 | https://www.youtube.com/watch?v=N3tT2wZaSXE
+fighter not found: "Kaito"     | Full Fight | 海人 vs. ロクク・ダリ / Kaito vs. Daryl Lokoku - RIZIN.23 | https://www.youtube.com/watch?v=b9nsBF9Geig
+fighter not found: "Tatsuki Saomoto - RIZIN.23" | Full Fight | 中村優作 vs. 竿本樹生 / Yusaku Nakamura vs. Tatsuki Saomoto - RIZIN.23 | https://www.youtube.com/watch?v=I6Fh9BmvuQM
+fighter not found: "Koji Mori - RIZIN.23" | Full Fight | 松倉信太郎 vs. 森興二 / Shintaro Matsukura vs. Koji Mori - RIZIN.23 | https://www.youtube.com/watch?v=ki-Wytsx474
+fighter not found: "Roberto Satoshi Souza - RIZIN.22" | Full Fight | 矢地祐介 vs. ホベルト・サトシ・ソウザ / Yusuke Yachi vs. Roberto Satoshi Souza - RIZIN.22 | https://www.youtube.com/watch?v=pg-cBTqYt8o
+fighter not found: "Tomo Maesawa - RIZIN.22" | Full Fight | 浜崎朱加 vs. 前澤智 / Ayaka Hamasaki vs. Tomo Maesawa - RIZIN.22 | https://www.youtube.com/watch?v=k-bCXd4tmlA
+fighter not found: "Mizuki Furuse - RIZIN.22" | Full Fight | 浅倉カンナ vs. 古瀬美月 / Kanna Asakura vs. Mizuki Furuse - RIZIN.22 | https://www.youtube.com/watch?v=QpIjY8SBMuM
+fighter not found: "Shooto Watanabe - RIZIN.22" | Full Fight | 井上直樹 vs. 渡部修斗 / Naoki Inoue vs. Shooto Watanabe - RIZIN.22 | https://www.youtube.com/watch?v=uA9yptNLC24
+fighter not found: "Rui Ebata" | Full Fight | 江幡塁 vs. 植山征紀 / Rui Ebata vs. Seiki Ueyama - RIZIN.22 | https://www.youtube.com/watch?v=Hi0xxhXfNq8
+fighter not found: "Yuushin - RIZIN.22" | Full Fight | 吉成名高 vs. 優心 / Nadaka Yoshinari vs. Yuushin - RIZIN.22 | https://www.youtube.com/watch?v=CUp5JKazoSY
+fighter not found: "Kouya Kanda - RIZIN.22" | Full Fight | 関鉄矢 vs. 神田コウヤ / Tetsuya Seki vs. Kouya Kanda - RIZIN.22 | https://www.youtube.com/watch?v=85engptcTiM
+fighter not found: "Kyohei Hagiwara - RIZIN.22" | Full Fight | 白川陸斗 vs. 萩原京平 / Rikuto Shirakawa vs. Kyohei Hagiwara - RIZIN.22 | https://www.youtube.com/watch?v=Y8IEGf8EY9s
+fighter not found: "Kenji Kato - RIZIN.22" | Full Fight | 山本アーセン vs. 加藤ケンジ / Erson Yamamoto vs. Kenji Kato - RIZIN.22 | https://www.youtube.com/watch?v=TEBP9gykk_w
+fighter not found: "Hiromasa Ougikubo - RIZIN.17" | Full Fight | 元谷友貴 vs. 扇久保博正 / Yuki Motoya vs. Hiromasa Ougikubo - RIZIN.17 | https://www.youtube.com/watch?v=lXM3vcQu7IY
+fighter not found: "Patricky "Pitbull" Freire - R20" | Full Fight | トフィック・ムサエフ vs. パトリッキー・“ピットブル”・フレイレ / Tofiq Musayev vs. Patricky "Pitbull" Freire - R20 | https://www.youtube.com/watch?v=PalDSmryWao
+fighter not found: "Hiromasa Ougikubo - RIZIN.20" | Full Fight | 石渡伸太郎 vs. 扇久保博正 / Shintaro Ishiwatari vs. Hiromasa Ougikubo - RIZIN.20 | https://www.youtube.com/watch?v=ErX85-BoM3M
+fighter not found: "Melvin Guillard - RIZIN.11" | Full Fight | 五味隆典 vs. メルビン・ギラード / Takanori Gomi vs. Melvin Guillard - RIZIN.11 | https://www.youtube.com/watch?v=I269hWTCPgY
+fighter not found: "Osunaarashi" | Full Fight | 大砂嵐 vs. ボブ・サップ / Osunaarashi vs. Bob Sapp - RIZIN.13 | https://www.youtube.com/watch?v=US-VtK3FPMY
+fighter not found: "Tofiq Musayev - RIZIN.20" | Full Fight | ジョニー・ケース vs. トフィック・ムサエフ / Johnny Case vs. Tofiq Musayev - RIZIN.20 | https://www.youtube.com/watch?v=rslBLyrJwIY
+fighter not found: "King Mo"   | Full Fight | ミルコ・クロコップ vs. キング・モー / Mirko Cro Cop vs. King Mo - 12/29/2016 | https://www.youtube.com/watch?v=OrnHpxveXco
+fighter not found: "Taiju Shiratori" | Full Fight | 白鳥大珠 vs. 大雅 / Taiju Shiratori vs. Taiga - RIZIN.19 | https://www.youtube.com/watch?v=uMZSCi_QTYI
+fighter not found: "Seo Hee Ham - RIZIN.20" | Full Fight | 浜崎朱加 vs. ハム・ソヒ / Ayaka Hamasaki vs. Seo Hee Ham - RIZIN.20 | https://www.youtube.com/watch?v=IRiwK2g3jZE
+fighter not found: "Jinh Yu Frey - RIZIN.16" | Full Fight | 浜崎朱加 vs. ジン・ユ・フレイ / Ayaka Hamasaki vs. Jinh Yu Frey - RIZIN.16 | https://www.youtube.com/watch?v=z4luMl3Ac5A
+fighter not found: "Miyuu Yamamoto - RIZIN.16" | Full Fight | 浅倉カンナ vs. 山本美憂 / Kanna Asakura vs. Miyuu Yamamoto - RIZIN.16 | https://www.youtube.com/watch?v=CrXqN-FvJiM
+fighter not found: "Ayaka Hamasaki - RIZIN.14" | Full Fight | 浅倉カンナ vs. 浜崎朱加 / Kanna Asakura vs. Ayaka Hamasaki - RIZIN.14 | https://www.youtube.com/watch?v=oCE3BZPVCOk
+fighter not found: "RENA"      | Full Fight | RENA vs. 浅倉カンナ / RENA vs. Kanna Asakura - 12/31/2017 | https://www.youtube.com/watch?v=8hIiyfC2S5U
+fighter not found: "RENA"      | Full Fight | RENA vs. 山本美憂 / RENA vs. Miyuu Yamamoto - 9/25/2016 | https://www.youtube.com/watch?v=i69-gsNhsHk
+fighter not found: "Ulka Sasaki - RIZIN.19" | Full Fight | 朝倉海 vs. 佐々木憂流迦 / Kai Asakura vs. Ulka Sasaki - RIZIN.19 | https://www.youtube.com/watch?v=KLKzPY2_v7g
+fighter not found: "Topnoi Tiger Muay Thai - RIZIN.13" | Full Fight | 朝倉海 vs. トップノイ・タイガームエタイ / Kai Asakura vs. Topnoi Tiger Muay Thai - RIZIN.13 | https://www.youtube.com/watch?v=jzTyBTRjsp4
+fighter not found: "Kai Asakura - RIZIN.10" | Full Fight | マネル・ケイプ vs. 朝倉海 / Manel Kape vs. Kai Asakura - RIZIN.10 | https://www.youtube.com/watch?v=OT-7jvpoRzY
+fighter not found: "John Macapa - RIZIN.20" | Full Fight | 朝倉未来 vs. ジョン・マカパ / Mikuru Asakura vs. John Macapa - RIZIN.20 | https://www.youtube.com/watch?v=n1raKPwzIeg
+fighter not found: "Mikuru Asakura - RIZIN.17" | Full Fight | Yusuke Yachi vs. Mikuru Asakura - RIZIN.17 | https://www.youtube.com/watch?v=LRutpBKZsAA
+fighter not found: "Luiz Gustavo - RIZIN.15" | Full Fight | 朝倉未来 vs. ルイス・グスタボ / Mikuru Asakura vs. Luiz Gustavo - RIZIN.15 | https://www.youtube.com/watch?v=5FaO0n-WMSE
+fighter not found: "Lion Takeshi" | Full Fight | リオン武 vs. 朝倉未来 / Lion Takeshi vs. Mikuru Asakura - 平成最後のやれんのか！ | https://www.youtube.com/watch?v=JspYfgO-hOA
+fighter not found: "Karshyga Dautbek - RIZIN.13" | Full Fight | 朝倉未来 vs. カルシャガ・ダウトベック / Mikuru Asakura vs. Karshyga Dautbek - RIZIN.13 | https://www.youtube.com/watch?v=d9xRGZvuq7o
+fighter not found: "Mikuru Asakura - RIZIN.12" | Full Fight | 日沖発 vs. 朝倉未来 / Hatsu Hioki vs. Mikuru Asakura - RIZIN.12 | https://www.youtube.com/watch?v=PK56_km79Og
+fighter not found: "Manel Kape 2 - RIZIN.20" | Full Fight | 朝倉海 vs. マネル・ケイプ 2 / Kai Asakura vs. Manel Kape 2 - RIZIN.20 | https://www.youtube.com/watch?v=rhQeXZ39Gw0
+fighter not found: "Kai Asakura - RIZIN.18" | Full Fight | 堀口恭司 vs. 朝倉海 / Kyoji Horiguchi vs. Kai Asakura - RIZIN.18 | https://www.youtube.com/watch?v=gJxsez3bzsM
+fighter not found: "Tenshin Nasukawa - RIZIN.14" | Full Fight | フロイド・メイウェザー vs.那須川天心 / Floyd Mayweather vs. Tenshin Nasukawa - RIZIN.14 | https://www.youtube.com/watch?v=tsWdXE2jWPc
+fighter not found: "Darrion Caldwell - RIZIN.14" | Full Fight | 堀口恭司 vs. ダリオン・コールドウェル / Kyoji Horiguchi vs. Darrion Caldwell - RIZIN.14 | https://www.youtube.com/watch?v=SDj92OrpoGM
+fighter not found: "Kyoji Horiguchi - RIZIN.13" | Full Fight | Tenshin Nasukawa vs. Kyoji Horiguchi - RIZIN.13 | https://www.youtube.com/watch?v=KspXkAV1Bjw
+fighter not found: "Yuya"      | Full Fight | 憂也 vs. 康輝 / Yuya vs. Kouki - RIZIN.21 | https://www.youtube.com/watch?v=ldv35LLpbEs
+fighter not found: "Masaji Tozuka" | Full Fight | 戸塚昌司 vs. 大澤匡弘 / Masaji Tozuka vs. Masahiro Ozawa - RIZIN.21 | https://www.youtube.com/watch?v=cOa2at1QBwc
+fighter not found: "Henrry Cejas" | Full Fight | ヘンリー・セハス vs. SEIDO / Henrry Cejas vs. SEIDO - RIZIN.21 | https://www.youtube.com/watch?v=glgRzg8JR3U
+fighter not found: "Naoya - RIZIN.21" | Full Fight | 竹内賢一 vs. 直也 / Kenichi Takeuchi vs. Naoya - RIZIN.21 | https://www.youtube.com/watch?v=ydGpXq6Pl00
+fighter not found: "Kousuke Jitsukata" | Full Fight | 実方宏介 vs. 酒井リョウ / Kousuke Jitsukata vs. Ryo Sakai - RIZIN.21 | https://www.youtube.com/watch?v=sekunp03IgE
+fighter not found: "Kyle Aguon - RIZIN.21" | Full Fight | ヴガール・ケラモフ vs. カイル・アグォン / Vugar Karamov vs. Kyle Aguon - RIZIN.21 | https://www.youtube.com/watch?v=iSktGjd6MO4
+fighter not found: "Naoki Inoue - RIZIN.21" | Full Fight | トレント・ガーダム vs. 井上直樹 / Trent Girdham vs. Naoki Inoue - RIZIN.21 | https://www.youtube.com/watch?v=XdBCwmY29TM
+fighter not found: "Team Nakai - RIZIN.21" | Full Fight | ホベルト・サトシ・ソウザ vs. チーム中井(中井祐樹) / Roberto Satoshi Souza vs. Team Nakai - RIZIN.21 | https://www.youtube.com/watch?v=NKPzcV0nPaA
+fighter not found: "Falco Neto - RIZIN.21" | Full Fight | マルコス・ヨシオ・ソウザ vs. ファルコ・ネト / Marcos Yoshio Souza vs. Falco Neto - RIZIN.21 | https://www.youtube.com/watch?v=csR_e5HOkwg
+fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. 加藤ケンジ / Kintaro vs. Kenji Kato - RIZIN.21 | https://www.youtube.com/watch?v=Noi4EuYuoJ0
+fighter not found: "Hideki "Shrek" Sekine - RIZIN.21" | Full Fight | ロッキー・マルティネス vs. 関根"シュレック"秀樹 / Roque Martinez vs. Hideki "Shrek" Sekine - RIZIN.21 | https://www.youtube.com/watch?v=_Vs8wSkitfs
+fighter not found: "Masanori Kanehara - RIZIN.21" | Full Fight | ビクター・ヘンリー vs. 金原正徳 / Victor Henry vs. Masanori Kanehara - RIZIN.21 | https://www.youtube.com/watch?v=dSpdIeJ8Ou4
+fighter not found: "Daniel Salas - RIZIN.21" | Full Fight | 朝倉未来 vs. ダニエル・サラス / Mikuru Asakura vs. Daniel Salas - RIZIN.21 | https://www.youtube.com/watch?v=LIPr5HKwhqg
 
 UNMATCHED FULL EVENTS (13)
 ----------------------------------------------------------------------
