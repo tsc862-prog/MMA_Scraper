@@ -503,7 +503,10 @@ def event_anchored_fight(a, b, hint, events, events_by_norm, fights_by_event, fi
 # Multi-word phrases first so the regex doesn't lock onto a shorter prefix.
 _EVENT_PREFIX = (
     r'(?:Dana\s+White|Contender\s+Series|DWCS|King\s+of\s+the\s+Cage|'
-    # "(?<!Cage\s)Fury FC" so CFFC's "Cage Fury FC" titles are NOT read as Fury FC
+    # CFFC's other Fight Pass naming — must precede the Fury FC rule below so
+    # "Cage Fury FC" is read as CFFC, not Fury FC.
+    r'Cage\s+Fury\s+FC|'
+    # "(?<!Cage\s)Fury FC" so a bare "Fury FC" is the Texas org, not CFFC.
     r'(?<!Cage\s)Fury\s+FC|Titan\s+FC|'
     r'Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
