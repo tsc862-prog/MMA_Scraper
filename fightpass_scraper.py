@@ -466,10 +466,10 @@ def resolve_fighter(name, by_name, by_alias, by_last):
 #   "Themba Gorimbo vs Niko Price at UFC Fight Night ..."      (word sep)
 # Multi-word phrases first so the regex doesn't lock onto a shorter prefix.
 _EVENT_PREFIX = (
-    r'(?:Dana\s+White|Contender\s+Series|DWCS|'
+    r'(?:Dana\s+White|Contender\s+Series|DWCS|King\s+of\s+the\s+Cage|'
     r'Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
-    r'LFA|CFFC|Pancrase|Shooto)'
+    r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'
 )
 # Optional crud between fighter2 and the event prefix: sponsor + a separator
 _CRUD = r'(?:[-—–:]|at)?\s*(?:VeChain|ESPN\+?|TUDN|DraftKings)?\s*'
@@ -521,7 +521,7 @@ def save_scan_progress(vid):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main(push=False, force=False, scan_vods=False,
-         scan_start=None, scan_end=None, search_vesper=False):
+         scan_start=None, scan_end=None, search_vesper=False, only_orgs=None):
     for var in ('SUPABASE_URL', 'SUPABASE_KEY', 'FIGHTPASS_EMAIL', 'FIGHTPASS_PASSWORD'):
         if not os.environ.get(var):
             print(f'Missing {var} in .env'); sys.exit(1)
@@ -547,6 +547,7 @@ def main(push=False, force=False, scan_vods=False,
         by_alias.setdefault(al, a['fighter_id'])
         by_alias.setdefault(_fold_accents(al), a['fighter_id'])
     fighter_names = {f['id']: f['name'] for f in fighters}
+    org_by_event = {e['id']: e.get('organization') for e in events}
 
     fight_lookup = {}   # frozenset({f1_id, f2_id}) -> [fights]
     fights_by_event = {}
@@ -909,6 +910,17 @@ def main(push=False, force=False, scan_vods=False,
             if not fi.get('fightpass_url'):
                 if fi['fighter1_id']: missing_fighters.add(fi['fighter1_id'])
                 if fi['fighter2_id']: missing_fighters.add(fi['fighter2_id'])
+        # Optional org scope: only search fighters who appear in the named orgs
+        # (e.g. --orgs DWCS to populate just that org's per-fight VODs fast).
+        if only_orgs:
+            wanted = {o.strip().lower() for o in only_orgs}
+            org_fighters = set()
+            for fi in fights:
+                if (org_by_event.get(fi['event_id']) or '').lower() in wanted:
+                    if fi['fighter1_id']: org_fighters.add(fi['fighter1_id'])
+                    if fi['fighter2_id']: org_fighters.add(fi['fighter2_id'])
+            missing_fighters &= org_fighters
+            print(f'  scoped to orgs {sorted(wanted)}: {len(missing_fighters)} fighters')
         # Dedupe by last name (one query catches A's all fights regardless
         # of order in the VOD title).
         last_names_to_search = {}
@@ -1081,7 +1093,11 @@ if __name__ == '__main__':
     parser.add_argument('--search-vesper', action='store_true',
                         help="PASS 4: search Fight Pass's vesper service by "
                              'fighter last name for missing per-fight VOD URLs')
+    parser.add_argument('--orgs', type=str, default=None,
+                        help='Scope the vesper pass to fighters in these orgs '
+                             '(comma-separated), e.g. --orgs "DWCS"')
     args = parser.parse_args()
     main(push=args.push, force=args.force, scan_vods=args.scan_vods,
          scan_start=args.scan_start, scan_end=args.scan_end,
-         search_vesper=args.search_vesper)
+         search_vesper=args.search_vesper,
+         only_orgs=args.orgs.split(',') if args.orgs else None)

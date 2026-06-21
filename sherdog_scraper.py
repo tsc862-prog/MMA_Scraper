@@ -223,6 +223,37 @@ SHERDOG_ORGS = [
         'active':       True,
     },
     {
+        # Defunct — folded 2008 (Kimbo Slice, Gina Carano era). ~30 events.
+        # Fight Pass has per-fight VODs. Slugs are "EliteXC-...".
+        'organization': 'EliteXC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/EliteXC-937',
+        'slug_keys':    ('elitexc',),
+        'name_clean':   (r'^$', ''),   # names already "EliteXC - ..."
+        'fight_prefix': 'elitexcfight',
+        'active':       False,
+    },
+    {
+        # King of the Cage (1998-present). Long-running US regional, 100s of
+        # events. Sherdog event slugs are "KOTC-...". Per-fight VODs on FP.
+        'organization': 'King of the Cage',
+        'org_url':      f'{SHERDOG_BASE}/organizations/King-of-the-Cage-1',
+        'slug_keys':    ('kotc-',),
+        'name_clean':   (r'^$', ''),   # names already "KOTC - ..."
+        'fight_prefix': 'kotcfight',
+        'active':       True,
+    },
+    {
+        # Shooto (Japan, 1989-present) + Shooto Brazil. 100s of events; slugs
+        # "Shooto-...". Mainly Shooto Brazil per-fight VODs on Fight Pass.
+        # Kanji names romanize inconsistently — expect some alias work.
+        'organization': 'Shooto',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Shooto-21',
+        'slug_keys':    ('shooto',),
+        'name_clean':   (r'^$', ''),   # names already "Shooto - ..."
+        'fight_prefix': 'shootofight',
+        'active':       True,
+    },
+    {
         # RIZIN Fighting Federation (Japan, 2015-present). Records-only on
         # Sherdog — Fight Pass has zero RIZIN content (confirmed via vesper).
         # Videos come via the official RIZIN YouTube channel (see youtube_scraper.py).
