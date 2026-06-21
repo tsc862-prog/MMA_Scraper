@@ -19,3 +19,9 @@ on conflict (alias) do update set fighter_id = excluded.fighter_id;
 insert into fighter_aliases (alias, fighter_id)
 select 'alfred khashakayan', id from fighters where name='Alfred Khashakyan'
 on conflict (alias) do nothing;
+
+-- Fight Pass spells "Sayury Canon" as "Sayury Cannon" (double-n). Alias it;
+-- the Canon vs Yanez (Fury FC 120) VOD 969707 was set directly.
+insert into fighter_aliases (alias, fighter_id)
+select 'sayury cannon', id from fighters where name='Sayury Canon'
+on conflict (alias) do nothing;
