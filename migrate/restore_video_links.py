@@ -79,21 +79,32 @@ def main():
     n_fights = ir.fetch_all('fights', 'id,event_id,fighter1_id,fighter2_id')
 
     # --- fight matcher lk (mirror repoint_ratings.main) ---
-    name_ids, alias_ids, last_ids = defaultdict(list), defaultdict(list), defaultdict(list)
+    name_ids, clean_ids, alias_ids, last_ids = (defaultdict(list), defaultdict(list),
+                                                defaultdict(list), defaultdict(list))
     for f in n_fighters:
         if f.get('name'):
             name_ids[f['name'].lower().strip()].append(f['id'])
-            last_ids[f['name'].split()[-1].lower()].append(f['id'])
+            ct = rr.clean_toks(f['name'])
+            if ct:
+                clean_ids[' '.join(ct)].append(f['id'])
+                last_ids[ct[-1]].append(f['id'])
     for al in n_aliases:
         alias_ids[al['alias'].lower().strip()].append(al['fighter_id'])
 
     def resolve(name):
+        # exact -> alias -> suffix-stripped full name -> suffix-stripped last name.
+        # (raw last-name fallback wrongly matched "X Jr." on the token "jr".)
         nl = (name or '').lower().strip()
         if name_ids.get(nl):
             return name_ids[nl]
         if alias_ids.get(nl):
             return alias_ids[nl]
-        return last_ids.get(nl.split()[-1], []) if nl else []
+        ct = rr.clean_toks(name)
+        if not ct:
+            return []
+        if clean_ids.get(' '.join(ct)):
+            return clean_ids[' '.join(ct)]
+        return last_ids.get(ct[-1], [])
 
     event_by_id = {e['id']: e for e in n_events}
     ev_by_name_lower = {e['name'].lower(): e['id'] for e in n_events if e.get('name')}

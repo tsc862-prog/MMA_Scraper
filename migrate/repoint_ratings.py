@@ -78,6 +78,16 @@ def name_tokens(s):
     return {t for t in s.split() if t and t not in _SUFFIX}
 
 
+def clean_toks(s):
+    """Ordered, accent-folded tokens with name-suffixes (jr/sr/iii) dropped.
+    Used for last-name fallback so 'Michael Aswell Jr.' resolves on 'aswell',
+    not the bogus token 'jr'."""
+    s = unicodedata.normalize('NFKD', s or '')
+    s = ''.join(c for c in s if not unicodedata.combining(c)).lower()
+    s = re.sub(r"[^a-z0-9 ]", ' ', s)
+    return [t for t in s.split() if t and t not in _SUFFIX]
+
+
 def _date_window(iso):
     """[iso-1, iso, iso+1] — Sherdog dates use event-local tz, so international
     cards land ±1 day off ufcstats."""
@@ -200,11 +210,15 @@ def main():
     # Name resolution must return ALL ids for a name — with Sherdog ids,
     # different people legitimately share a name (e.g. multiple "Bruno Silva").
     from collections import defaultdict
-    name_ids, alias_ids, last_ids = defaultdict(list), defaultdict(list), defaultdict(list)
+    name_ids, clean_ids, alias_ids, last_ids = (defaultdict(list), defaultdict(list),
+                                                defaultdict(list), defaultdict(list))
     for f in n_fighters:
         if f.get('name'):
             name_ids[f['name'].lower().strip()].append(f['id'])
-            last_ids[f['name'].split()[-1].lower()].append(f['id'])
+            ct = clean_toks(f['name'])
+            if ct:
+                clean_ids[' '.join(ct)].append(f['id'])
+                last_ids[ct[-1]].append(f['id'])
     for al in n_aliases:
         alias_ids[al['alias'].lower().strip()].append(al['fighter_id'])
 
@@ -214,7 +228,12 @@ def main():
             return name_ids[nl]
         if alias_ids.get(nl):
             return alias_ids[nl]
-        return last_ids.get(nl.split()[-1], []) if nl else []
+        ct = clean_toks(name)
+        if not ct:
+            return []
+        if clean_ids.get(' '.join(ct)):
+            return clean_ids[' '.join(ct)]
+        return last_ids.get(ct[-1], [])
 
     event_by_id = {e['id']: e for e in n_events}
     ev_by_name_lower = {e['name'].lower(): e['id'] for e in n_events if e.get('name')}
