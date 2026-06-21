@@ -59,17 +59,44 @@ Safety net for historical UFC `is_title` in case Sherdog misses an old event.
 9. `psql … -f migrate/03_verify.sql` — every gate must pass (esp.
    `ratings_orphaned = 0`, ratings_total unchanged, no duplicate fighter names).
 
-## Cutover (planned, with prod frozen briefly)
-1. Pause prod writes (disable the GitHub Actions schedule).
-2. Re-run the **whole scripted build** on a **fresh** prod copy (steps above).
-   Re-copying prod at cutover folds in the small delta of ratings logged during
-   the build window **by construction** — nothing is "imported later".
-3. Validate (`03_verify.sql`).
-4. Repoint the **app** `SUPABASE_URL` to the migrated DB.
-5. Merge `sherdog-source-of-truth` to `main` — this activates the retired-`start.py`
-   cron (Sherdog incl. UFC). Regenerate the video-scraper `*_matches.txt`
-   trackers (they hold stale old fight ids; the scrapers self-heal by name on the
-   next `--push`).
+## Cutover — IN-PLACE on prod (chosen method)
+
+Proven end-to-end on staging (832/832 ratings repointed, full 17-org rebuild =
+30,166 fights, gender carried over, all QA gates clean). Run in a maintenance
+window. Requires SQL access to prod (reconnect the Supabase MCP to the prod org,
+or use the dashboard SQL Editor) plus `.env` pointed at prod for the scrapers.
+
+0. **Pause prod writes** — disable the GitHub Actions schedule (Actions tab).
+1. **Backup** (safety net): `python migrate/backup_prod.py <stamp>`  (full JSONL dump).
+2. **Prepare**: run `migrate/01_prepare.sql` on prod — snapshots `*_old`
+   (fighters_old keeps gender), drops the view/FKs/name-unique, truncates the
+   data tables (NOT ratings), retypes ids uuid→bigint, adds organizations +
+   `events.organization_id`, disables audit triggers.
+3. **Rebuild** from Sherdog (all 17 configured orgs):
+   ```
+   rm -f sherdog_completed_events.txt
+   python sherdog_scraper.py --all          # per-org push + retry; resumable
+   ```
+   Re-run until every org reports "scraping 0".
+4. **Re-point ratings** — must be 0 unmatched:
+   ```
+   python migrate/repoint_ratings.py            # dry-run gate
+   python migrate/repoint_ratings.py --apply
+   ```
+5. **Carry over gender**: run `migrate/repoint_gender.sql` on prod (fast SQL
+   join; `repoint_gender.py` is the REST fallback).
+6. **Finalize**: run `migrate/02_finalize.sql` — re-adds FKs (bigint), the
+   ratings FK, recreates `fight_search`, re-enables triggers, drops `*_old`.
+7. **RPCs**: `select delete_orphan_events(); select recalculate_debut_flags();
+   select recalculate_womens_divisions();`
+8. **Verify**: run `migrate/03_verify.sql` — every gate must pass (esp.
+   `ratings_orphaned = 0`, ratings count unchanged).
+9. **Re-enable + ship**: merge `sherdog-source-of-truth` to `main` (activates the
+   Sherdog-incl-UFC cron, start.py retired), re-enable the schedule. Regenerate
+   the video-scraper `*_matches.txt` trackers (they hold stale old fight ids; the
+   scrapers self-heal by name on the next `--push`).
+
+Rollback: restore from the step-1 backup (re-insert the JSONL) if any gate fails.
 
 ## Notes / risks
 - **Most likely failure:** UFC ratings (787) not re-matching because Sherdog
