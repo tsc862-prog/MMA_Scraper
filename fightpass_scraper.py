@@ -479,11 +479,21 @@ _FIGHT_VOD_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Alternate-broadcast tags (Snoop Dogg's "SnoopCast" alt commentary on DWCS).
+# These sit between the fighter names and the event keyword in VOD titles
+# ("X vs Y SnoopCast: Contender Series"), so they get absorbed into fighter B
+# and break matching. Strip them before parsing, and flag them so a SnoopCast
+# VOD is only used as a fallback when no standard video exists for the fight.
+_ALT_RE = re.compile(r'\s*\b(?:snoop\s*cast|snoop\s*dogg)\b\s*:?\s*', re.IGNORECASE)
+
+def is_alt_broadcast(title):
+    return bool(title and _ALT_RE.search(title))
+
 def parse_fight_vod_title(title):
     """Return (fighter_a, fighter_b, event_hint) or (None, None, None)."""
     if not title:
         return None, None, None
-    m = _FIGHT_VOD_RE.match(title.strip())
+    m = _FIGHT_VOD_RE.match(_ALT_RE.sub(' ', title).strip())
     if not m:
         return None, None, None
     return m.group('a').strip(), m.group('b').strip(), m.group('event').strip()
@@ -812,7 +822,8 @@ def main(push=False, force=False, scan_vods=False,
                 ev = ev_by_id.get(picked['event_id'])
                 url = WATCH_URL.format(vod_id)
                 label = f'{a} vs {b}  @ {ev["name"] if ev else "?"}'
-                matched_fights.append((picked['id'], url, label, 'fight'))
+                matched_fights.append((picked['id'], url, label,
+                                       'fight_alt' if is_alt_broadcast(v_title) else 'fight'))
                 matched_vod_ids.append(vod_id)
             else:
                 per_fight_unmatched.append(
@@ -885,7 +896,8 @@ def main(push=False, force=False, scan_vods=False,
                 ev = ev_by_id.get(picked['event_id'])
                 url = WATCH_URL.format(vod_id)
                 label = f'{a} vs {b}  @ {ev["name"] if ev else "?"} [scan]'
-                matched_fights.append((picked['id'], url, label, 'fight'))
+                matched_fights.append((picked['id'], url, label,
+                                       'fight_alt' if is_alt_broadcast(v_title) else 'fight'))
                 matched_vod_ids.append(vod_id)
             else:
                 per_fight_unmatched.append(
@@ -987,7 +999,8 @@ def main(push=False, force=False, scan_vods=False,
                     ev = ev_by_id.get(picked['event_id'])
                     url = WATCH_URL.format(vod_id)
                     label = f'{a} vs {b}  @ {ev["name"] if ev else "?"} [vesper]'
-                    matched_fights.append((picked['id'], url, label, 'fight'))
+                    matched_fights.append((picked['id'], url, label,
+                                       'fight_alt' if is_alt_broadcast(v_title) else 'fight'))
                     matched_vod_ids.append(vod_id)
             time.sleep(0.1)
         print(f'  vesper pass complete — {len(seen_vesper)} unique VODs evaluated')
@@ -999,13 +1012,15 @@ def main(push=False, force=False, scan_vods=False,
         store = event_main if variant == 'main' else event_prelims
         store.setdefault(ev_id, (url, ep_title))
 
-    # Per-fight URLs (source='fight') win over event-level (source='event').
+    # Priority: standard per-fight VOD > event-level > SnoopCast (alt broadcast).
+    # SnoopCast ('fight_alt') is used only when no standard video exists.
+    _SRC_PRIO = {'fight': 3, 'event': 2, 'fight_alt': 1}
     fight_url = {}
     for fid, url, label, source in matched_fights:
         cur = fight_url.get(fid)
-        if cur is None or (cur[2] == 'event' and source == 'fight'):
+        if cur is None or _SRC_PRIO.get(source, 0) > _SRC_PRIO.get(cur[2], 0):
             fight_url[fid] = (url, label, source)
-    perfight_count = sum(1 for v in fight_url.values() if v[2] == 'fight')
+    perfight_count = sum(1 for v in fight_url.values() if v[2] in ('fight', 'fight_alt'))
     eventlvl_count = sum(1 for v in fight_url.values() if v[2] == 'event')
 
     # ── Write review file ─────────────────────────────────────────────────────
