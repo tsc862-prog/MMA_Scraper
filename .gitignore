@@ -11,3 +11,6 @@ migrate/backup/
 migrate/.last_backup_stamp
 prod_rebuild.log
 *.precutover.bak
+
+# scraper run logs
+*.log

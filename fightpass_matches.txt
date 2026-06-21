@@ -1,7 +1,7 @@
 UFC FIGHT PASS MATCH RESULTS
 Events  — main: 0  prelims: 0
-Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 40  sub-events: 0  per-fight VODs: 69
+Fights  — matched: 25 (per-fight URL: 25, event URL fallback: 0)
+Unmatched — episodes: 38  sub-events: 0  per-fight VODs: 51
 ======================================================================
 
 MATCHED EVENTS — MAIN (0)
@@ -10,12 +10,111 @@ MATCHED EVENTS — MAIN (0)
 MATCHED EVENTS — PRELIMS (0)
 ----------------------------------------------------------------------
 
-MATCHED FIGHTS (0)
+MATCHED FIGHTS (25)
 ----------------------------------------------------------------------
+fight_id: 105f5aed-e12a-5fd9-b117-26eef45b1f24  [fight_alt]
+  Adam Antolin vs Casey Kenney  @ Season 1, Episode 8 [vesper]
+  https://ufcfightpass.com/video/58456
 
-UNMATCHED EPISODES (40)
+fight_id: e4730ff0-89a6-5579-8425-16071953ed11  [fight_alt]
+  Zu Anyanwu vs Greg Rebello  @ Season 1, Episode 1 [vesper]
+  https://ufcfightpass.com/video/57821
+
+fight_id: 2e84255d-5c66-5582-9257-d188e62644e2  [fight_alt]
+  Julio Arce vs Peter Petties  @ Season 1, Episode 5 [vesper]
+  https://ufcfightpass.com/video/58422
+
+fight_id: c058600b-5469-5ab1-9c0f-2001787fe6d3  [fight_alt]
+  Kennedy Nzechukwu vs Anton Berzin  @ Season 1, Episode 7 [vesper]
+  https://ufcfightpass.com/video/58305
+
+fight_id: 774b4b17-7db9-504f-ad72-1b095e31dca3  [fight_alt]
+  Kurt Holobaugh vs Matt Bessette  @ Season 1, Episode 1 [vesper]
+  https://ufcfightpass.com/video/57597
+
+fight_id: 4e00e56a-194b-5e2f-a7d4-1fa6fa7e9fae  [fight_alt]
+  Joby Sanchez vs JP Buys  @ Season 1, Episode 7 [vesper]
+  https://ufcfightpass.com/video/58668
+
+fight_id: 710be289-e260-5faa-a558-a20e118e8b8a  [fight_alt]
+  Charles Byrd vs Buddy Wallace  @ Season 1, Episode 6 [vesper]
+  https://ufcfightpass.com/video/57831
+
+fight_id: d1b8de19-7cea-57eb-8ebb-84312cf97028  [fight_alt]
+  Charles Byrd vs Jamie Pickett  @ Season 1, Episode 1 [vesper]
+  https://ufcfightpass.com/video/57678
+
+fight_id: 22b16759-b82f-51a7-8a03-977d7b489e34  [fight_alt]
+  John Castaneda vs Cheyden Leialoha  @ Season 1, Episode 4 [vesper]
+  https://ufcfightpass.com/video/58343
+
+fight_id: f8b7b37f-647a-539c-8f7f-8b2dfe991e3c  [fight_alt]
+  Mike Santiago vs Mark Cherico  @ Season 1, Episode 7 [vesper]
+  https://ufcfightpass.com/video/58300
+
+fight_id: 162e6423-bcbe-5767-8eff-f75e54ff6134  [fight_alt]
+  Sidney Outlaw vs Michael Cora  @ Season 1, Episode 2 [vesper]
+  https://ufcfightpass.com/video/58145
+
+fight_id: eb4de5d7-ee62-5ddc-ba6a-7389809b79ea  [fight_alt]
+  Allen Crowder vs Don'Tale Mayes  @ Season 1, Episode 8 [vesper]
+  https://ufcfightpass.com/video/58202
+
+fight_id: 159c7c02-3d29-5c25-bb8c-0af305d54aa6  [fight_alt]
+  Daniel Spohn vs Angel DeAnda  @ Season 1, Episode 2 [vesper]
+  https://ufcfightpass.com/video/57438
+
+fight_id: 9f0e2b89-8903-5357-8088-2ff04a1d7992  [fight_alt]
+  Ricky Simon vs Donavon Frelow  @ Season 1, Episode 5 [vesper]
+  https://ufcfightpass.com/video/57789
+
+fight_id: f3a888b3-c437-5d05-aa87-635519b722ea  [fight_alt]
+  Matt Frevola vs Jose Flores  @ Season 1, Episode 8 [vesper]
+  https://ufcfightpass.com/video/58644
+
+fight_id: b6458d4e-a68a-575f-adea-c998c20cb98b  [fight_alt]
+  Casey Kenney vs C.J. Hamilton  @ Season 1, Episode 2 [vesper]
+  https://ufcfightpass.com/video/58032
+
+fight_id: 36d7e4dd-ec79-57f0-9873-5f9c8ef9491c  [fight_alt]
+  Julian Marquez vs Phil Hawes  @ Season 1, Episode 4 [vesper]
+  https://ufcfightpass.com/video/58357
+
+fight_id: e23118ac-bdd6-5981-a6ea-618ee8577c10  [fight_alt]
+  Alonzo Menifield vs Daniel Jolly  @ Season 1, Episode 3 [vesper]
+  https://ufcfightpass.com/video/57802
+
+fight_id: 7cae1658-dcb0-5706-970c-b287267d5d53  [fight_alt]
+  Cameron Olson vs Karl Reed  @ Season 1, Episode 6 [vesper]
+  https://ufcfightpass.com/video/58152
+
+fight_id: 2a4bdf41-be58-5de9-9cb0-e0c3f2c9e55d  [fight]
+  Travis Hooke vs Justin Scott  @ KOTC - Outlaws [vesper]
+  https://ufcfightpass.com/video/48264
+
+fight_id: ce0f49a3-58bd-52de-bd56-14742948c49d  [fight_alt]
+  Karl Roberson vs Ryan Spann  @ Season 1, Episode 3 [vesper]
+  https://ufcfightpass.com/video/58426
+
+fight_id: 0d4dfa15-21e1-5cdf-9934-2c4d8805058d  [fight_alt]
+  Boston Salmon vs Ricky Turcios  @ Season 1, Episode 1 [vesper]
+  https://ufcfightpass.com/video/57872
+
+fight_id: 18f2e0bb-20eb-5fff-916a-2c45a8606092  [fight_alt]
+  Thanh Le vs Lazar Stojadinovic  @ Season 1, Episode 2 [vesper]
+  https://ufcfightpass.com/video/58029
+
+fight_id: f49f1e04-ad86-5b0b-af13-74a04c1ed022  [fight_alt]
+  Jordan Espinosa vs Nick Urso  @ Season 1, Episode 7 [vesper]
+  https://ufcfightpass.com/video/58625
+
+fight_id: 8d4326ad-b13a-55ff-947a-73b99c78e266  [fight_alt]
+  Geoff Neal vs Chase Waldon  @ Season 1, Episode 3 [vesper]
+  https://ufcfightpass.com/video/58285
+
+
+UNMATCHED EPISODES (38)
 ----------------------------------------------------------------------
-  vod=30323  'UFC 1: The Beginning'
   vod=31560  'UFC: The Ultimate Ultimate'
   vod=32069  'UFC: The Ultimate Ultimate 2'
   vod=31104  'UFC Japan: Ultimate Japan'
@@ -23,8 +122,6 @@ UNMATCHED EPISODES (40)
   vod=348916  'TUF 1 Finale: TUF 1 Finale'
   vod=349916  'TUF 4: The Comeback Finale'
   vod=31562  'TUF 6 Finale: TUF 6 Finale'
-  vod=32136  'UFC Live 2: Jones vs Matyushenko'
-  vod=29314  'UFC Live 6: Cruz vs Johnson'
   vod=29633  'Fight for the Troops: Kennedy vs Natal'
   vod=36965  'The Ultimate Fighter Latin America 2 Finale: Magny vs Gastelum'
   vod=40791  'TUF 23 Finale: Team Joanna vs Team Claudia'
@@ -44,6 +141,7 @@ UNMATCHED EPISODES (40)
   vod=857634  'Noche UFC: Lopes vs Silva Prelims'
   vod=807998  'UFC Vegas 107'
   vod=807893  'UFC Vegas 107 Prelims'
+  vod=936152  'UFC Fight Night: Evloev vs Murphy Prelims'
   vod=32429  'PRIDE: Grand Prix 2000 Finals'
   vod=33328  'PRIDE: Grand Prix 2000 Opening Round'
   vod=31435  'PRIDE 8'
@@ -59,36 +157,25 @@ UNMATCHED EPISODES (40)
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (69)
+UNMATCHED PER-FIGHT VODs (51)
 ----------------------------------------------------------------------
   vod=857629  'Jose Medina vs Dusko Todorovic Noche UFC'  — no DB fight for this pair
-  vod=848041  'Sergei Pavlovich vs Waldo Cortes-Acosta UFC Shanghai'  — no DB fight for this pair
   vod=844846  'Alibi Idris vs Joseph Morales UFC 319'  — fighter not in DB
-  vod=832987  'Dan Ige vs Patricio Freire UFC 318'  — no DB fight for this pair
   vod=810687  'Merab Dvalishvili vs Sean O’Malley UFC 316'  — fighter not in DB
   vod=801800  'Park Hyun-sung vs Carlos Hernandez UFC Vegas 106'  — fighter not in DB
   vod=782601  'Cortavious Romious vs Lee Chang-ho UFC Vegas 105'  — fighter not in DB
   vod=776559  'Carlos Ulberg vs Jan Błachowicz UFC London'  — fighter not in DB
   vod=773123  'Choi Seung-Woo vs Kevin Vallejos UFC Vegas 104'  — fighter not in DB
-  vod=773107  'Waldo Cortes-Acosta vs Ryan Spann UFC Vegas 104'  — no DB fight for this pair
-  vod=757425  'Weili Zhang vs Tatiana Suarez UFC 312'  — no DB fight for this pair
-  vod=757358  'Cong Wang vs Bruna Brasil UFC 312'  — no DB fight for this pair
   vod=740183  'Nurullo Aliyev vs Joe Solecki UFC Vegas 101'  — no DB fight for this pair
-  vod=724048  'Xiaonan Yan vs Tabatha Ricci UFC Macau'  — no DB fight for this pair
-  vod=724046  'Muslim Salikhov vs Kenan Song UFC Macau'  — no DB fight for this pair
-  vod=724047  'Gabriella Fernandes vs Cong Wang UFC Macau'  — no DB fight for this pair
   vod=723991  'Su Young You vs Balgyn Jenisuly UFC Macau'  — fighter not in DB
-  vod=723938  'Long Xiao vs Quang Le UFC Macau'  — no DB fight for this pair
   vod=718787  'Melissa Mullins vs Klaudia Syguła UFC Vegas 100'  — fighter not in DB
   vod=685033  'Rong Zhu vs Chris Padilla UFC Vegas 97'  — no DB fight for this pair
-  vod=645200  'Jailton Almeida vs Alexander Romanov UFC 302'  — no DB fight for this pair
   vod=619429  'Michel Pereira vs Ihor Poteria UFC 301'  — fighter not in DB
   vod=597901  'Gerald Meerschaert vs Bryan Barbarena UFC Vegas 88'  — fighter not in DB
   vod=588869  'Brandon Moreno vs Brandon Royval UFC México'  — 2 candidates; hint='UFC México'
   vod=588862  'Yair Rodriguez vs Brian Ortega UFC México'  — 2 candidates; hint='UFC México'
   vod=588789  'Edgar Chairez vs Daniel Lacerda UFC México'  — 2 candidates; hint='UFC México'
   vod=579997  'Lee Jeong Yeong vs Blake Bilder UFC Vegas 85'  — fighter not in DB
-  vod=571733  'Andrei Arlovski vs Waldo Cortes-Acosta UFC Vegas 84'  — no DB fight for this pair
   vod=557972  'Rayanne Amanda vs Talita Alencar UFC Vegas 83'  — fighter not in DB
   vod=545241  'Matt Frevola vs Benoit Saint-Denis UFC 295'  — fighter not in DB
   vod=545179  'John Castaneda vs Kang Kyung-ho UFC 295'  — fighter not in DB
@@ -96,13 +183,10 @@ UNMATCHED PER-FIGHT VODs (69)
   vod=521107  'Edgar Chairez vs Daniel Lacerda Noche UFC'  — 2 candidates; hint='Noche UFC'
   vod=516488  'Ciryl Gane vs Sergey Spivak UFC Paris'  — fighter not in DB
   vod=516465  'Benoit Saint-Denis vs Thiago Moises UFC Paris'  — fighter not in DB
-  vod=513108  'Waldo Cortes-Acosta vs Lukasz Brzeski UFC Singapore'  — no DB fight for this pair
-  vod=513086  'Billy Goff vs Yusaku Kinoshita UFC Singapore'  — no DB fight for this pair
   vod=508327  'Khalil Rountree Jr vs Chris Daukaus UFC Vegas 78'  — fighter not in DB
   vod=508267  'Jaqueline Amorim vs Montserrat Conejo UFC Vegas 78'  — fighter not in DB
   vod=503916  'Alex Pereira vs Jan Błachowicz UFC 291'  — fighter not in DB
   vod=475244  'Kron Garcie vs Charles Jourdain UFC 288'  — fighter not in DB
-  vod=472662  'Marcos Rogério de Lima vs Waldo Cortes-Acosta UFC Vegas 72'  — no DB fight for this pair
   vod=469561  'Brady Hiesand vs Batgerel Danaa UFC Vegas 71'  — fighter not in DB
   vod=455806  'Yanal Ashmoz vs Sam Patterson UFC 286'  — fighter not in DB
   vod=446246  'Jamall Emmers vs Khusein Ashkabov UFC Vegas 69'  — fighter not in DB
@@ -118,10 +202,6 @@ UNMATCHED PER-FIGHT VODs (69)
   vod=157136  'Deiveson Figueiredo vs Joseph Benavidez UFC Fight Island 2'  — 2 candidates; hint='UFC Fight Island 2'
   vod=31520  'Demetrious Johnson vs. John Dodson UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
   vod=31119  'Demetrious Johnson vs. Joseph Benavidez UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
-  vod=757425  'Weili Zhang vs Tatiana Suarez UFC 312'  — no DB fight for this pair
-  vod=218717  'Weili Zhang vs Rose Namajunas UFC 261'  — no DB fight for this pair
-  vod=102662  'Jessica Andrade vs Weili Zhang UFC Fight Night'  — no DB fight for this pair
-  vod=32394  'Mike Brown vs. Urijah Faber WEC 41'  — no DB fight for this pair
   vod=30919  'Fedor Emelianenko vs. Mark Coleman II PRIDE 32 The Real Deal'  — no DB fight for this pair
   vod=32360  'Nobuhiko Takada vs Mark Colemann PRIDE 5'  — fighter not in DB
   vod=28837  'Forrest Griffin vs Mauricio Rua UFC 76'  — no DB fight for this pair
