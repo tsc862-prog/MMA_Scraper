@@ -326,9 +326,17 @@ def mark_event_completed(url):
 
 # ── Scraping ──────────────────────────────────────────────────────────────────
 
-def _fetch(url):
-    """GET a Sherdog page with a browser UA, following redirects."""
-    return requests.get(url, headers={'User-Agent': USER_AGENT}, allow_redirects=True)
+def _fetch(url, retries=4):
+    """GET a Sherdog page with a browser UA, retrying transient network errors."""
+    last = None
+    for attempt in range(retries):
+        try:
+            return requests.get(url, headers={'User-Agent': USER_AGENT},
+                                allow_redirects=True, timeout=30)
+        except requests.exceptions.RequestException as e:
+            last = e
+            time.sleep(2 * (attempt + 1))
+    raise last
 
 def get_event_urls(org):
     """
@@ -665,8 +673,7 @@ def main(include_inactive=False, limit=None, only_orgs=None):
     # Organizations are the FK target for events — upsert them first.
     upsert_organizations()
 
-    all_fights = []
-    scraped_urls = []
+    total_pushed = 0
     remaining = limit  # None = no cap; otherwise max events to scrape this run
 
     if only_orgs:
@@ -688,32 +695,39 @@ def main(include_inactive=False, limit=None, only_orgs=None):
               f'{len(event_urls) - len([u for u in event_urls if u not in completed])} already scraped, '
               f'scraping {len(to_scrape)}...')
 
+        # Accumulate + push PER ORG so a network failure mid-run only loses the
+        # current org, not every org scraped before it.
+        org_fights = []
+        org_completed = []
         for i, url in enumerate(to_scrape):
             print(f'  [{i+1}/{len(to_scrape)}] {url}')
             fights = parse_event_page(url, org)
             if fights:
-                all_fights.extend(fights)
+                org_fights.extend(fights)
                 # An event is "completed" once every fight has a result.
                 if all(f['method'] for f in fights):
-                    scraped_urls.append(url)
+                    org_completed.append(url)
             time.sleep(0.5)
+
+        if org_fights:
+            print(f'  Pushing {len(org_fights)} {org["organization"]} fights...')
+            push_fights(org_fights, female_names)
+            for url in org_completed:
+                mark_event_completed(url)
+            total_pushed += len(org_fights)
 
         if remaining is not None:
             remaining -= len(to_scrape)
 
-    if all_fights:
-        print(f'\nPushing {len(all_fights)} fights to Supabase...')
-        push_fights(all_fights, female_names)
-        for url in scraped_urls:
-            mark_event_completed(url)
-        print('Removing orphan events...')
+    if total_pushed:
+        print('\nRemoving orphan events...')
         rpc('delete_orphan_events')
         print('Recalculating debut flags...')
         rpc('recalculate_debut_flags')
         print('Recalculating women\'s divisions...')
         rpc('recalculate_womens_divisions')
 
-    print(f'\nDone — pushed {len(all_fights)} fights to Supabase.')
+    print(f'\nDone — pushed {total_pushed} fights to Supabase.')
 
 if __name__ == '__main__':
     import argparse
