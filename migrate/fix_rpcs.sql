@@ -26,3 +26,22 @@ begin
     fighter2_is_debut = exists(select 1 from ranked r where r.fight_id=fi.id and r.fighter_id=fi.fighter2_id and r.rn=1)
   where true;
 end; $$;
+
+-- update_event_paramount_urls() cast the incoming id to ::UUID and compared it
+-- to events.id — now bigint, giving "operator does not exist: bigint = uuid"
+-- when paramount_scraper.py ran. Cast to ::bigint. (update_fight_paramount_urls
+-- uses text and was unaffected; the YouTube/ESPN scrapers PATCH by id directly.)
+create or replace function public.update_event_paramount_urls(data jsonb)
+ returns integer language plpgsql as $function$
+declare updated int;
+begin
+  with updates as (
+    select (elem->>'id')::bigint as id, elem->>'url' as url
+    from jsonb_array_elements(data) as elem
+  )
+  update events e set paramount_url = u.url
+  from updates u where e.id = u.id;
+  get diagnostics updated = row_count;
+  return updated;
+end;
+$function$;
