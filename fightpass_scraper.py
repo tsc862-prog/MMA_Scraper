@@ -466,7 +466,8 @@ def resolve_fighter(name, by_name, by_alias, by_last):
 #   "Themba Gorimbo vs Niko Price at UFC Fight Night ..."      (word sep)
 # Multi-word phrases first so the regex doesn't lock onto a shorter prefix.
 _EVENT_PREFIX = (
-    r'(?:Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
+    r'(?:Dana\s+White|Contender\s+Series|DWCS|'
+    r'Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto)'
 )

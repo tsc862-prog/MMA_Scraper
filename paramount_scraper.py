@@ -56,6 +56,12 @@ SHOW_CONFIGS = [
     # Clip titles use the same "Fighter vs. Fighter (Event - Main)" shape
     # as fight_night, so the fight_night parser handles it.
     ('ufc-white-house', range(2026, 2028), 'fight_night'),
+    # Dana White's Contender Series — Paramount era (2026+). Per-fight "vs."
+    # clips → matched to DWCS fights by fighter pair + date (org-agnostic).
+    # NOTE: verify this show slug against the Paramount+ DWCS page URL
+    # (paramountplus.com/shows/<slug>/). If clips log "(no clips)", the slug
+    # is wrong — correct it here.
+    ('dana-whites-contender-series', range(2026, 2028), 'fight_night'),
 ]
 
 # ── Supabase ──────────────────────────────────────────────────────────────────
