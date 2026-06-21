@@ -11,11 +11,12 @@
 
 begin;
 
--- 0. Snapshot OLD data for the ratings repoint join (plain copies, no constraints).
-create table fighters_old      as select * from fighters;
-create table events_old        as select * from events;
-create table fights_old        as select * from fights;
-create table fight_results_old as select * from fight_results;
+-- 0. Snapshot OLD data for the repoint joins (plain copies, no constraints).
+create table fighters_old        as select * from fighters;
+create table events_old          as select * from events;
+create table fights_old          as select * from fights;
+create table fight_results_old   as select * from fight_results;
+create table fighter_aliases_old as select * from fighter_aliases;
 
 -- 1. Drop the view that depends on the columns we're about to retype.
 drop view if exists fight_search;

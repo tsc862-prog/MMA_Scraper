@@ -59,6 +59,7 @@ drop table if exists fighters_old;
 drop table if exists events_old;
 drop table if exists fights_old;
 drop table if exists fight_results_old;
+drop table if exists fighter_aliases_old;
 
 commit;
 
