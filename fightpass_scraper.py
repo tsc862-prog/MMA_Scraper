@@ -456,6 +456,42 @@ def resolve_fighter(name, by_name, by_alias, by_last):
     last = (_fold_accents(nl) or nl).split()[-1] if nl else ''
     return by_last.get(last, [])
 
+_NAME_SUFFIX = frozenset({'jr', 'sr', 'ii', 'iii', 'iv', 'v'})
+
+def _name_tokens(name):
+    """Accent-folded lowercase token set, name-suffixes dropped. Token-set
+    overlap tolerates spelling/nickname drift ('Cannon'~'Canon' share nothing,
+    but the opponent + a shared token still pin the fight within one event)."""
+    s = _fold_accents(name or '').lower()
+    s = re.sub(r'[^a-z0-9 ]', ' ', s)
+    return {t for t in s.split() if t and t not in _NAME_SUFFIX}
+
+def event_anchored_fight(a, b, hint, events, events_by_norm, fights_by_event, fighter_names):
+    """Fallback for Fight Pass name misspellings/nicknames the exact resolver
+    misses: pin the event from the title's event hint, then fuzzy-match the
+    fight within that event's (few) bouts by name-token overlap. Requires a
+    clear, unambiguous winner so it won't mis-assign."""
+    if not hint:
+        return None
+    ev = match_event_fuzzy(hint, events, events_by_norm)
+    if not ev:
+        return None
+    ta, tb = _name_tokens(a), _name_tokens(b)
+    if not ta or not tb:
+        return None
+    best, best_score, tie = None, 0, False
+    for fi in fights_by_event.get(ev['id'], []):
+        n1 = _name_tokens(fighter_names.get(fi['fighter1_id'], ''))
+        n2 = _name_tokens(fighter_names.get(fi['fighter2_id'], ''))
+        score = max(len(ta & n1) + len(tb & n2), len(ta & n2) + len(tb & n1))
+        if score > best_score:
+            best, best_score, tie = fi, score, False
+        elif score == best_score and best and fi['id'] != best['id']:
+            tie = True
+    if best and best_score >= 2 and not tie:
+        return best
+    return None
+
 # Fight Pass per-fight VOD titles look like:
 #   "Conor McGregor vs Chad Mendes UFC 189"
 #   "Jose Aldo vs. Chan Sung Jung UFC 163"
@@ -584,6 +620,7 @@ def main(push=False, force=False, scan_vods=False,
                            # don't poison future push runs)
 
     ev_by_id = {e['id']: e for e in events}
+    all_events_by_norm = {_norm(e['name']): e for e in events}  # global, for vesper fallback
 
     for series in SERIES:
         org_events = [e for e in events if e['organization'] == series['organization']]
@@ -969,20 +1006,18 @@ def main(push=False, force=False, scan_vods=False,
                     continue
                 ids_a = resolve_fighter(a, by_name, by_alias, by_last)
                 ids_b = resolve_fighter(b, by_name, by_alias, by_last)
-                if not ids_a or not ids_b:
-                    continue
-                cands_map = {}
-                for x in ids_a:
-                    for y in ids_b:
-                        for f in fight_lookup.get(frozenset((x, y)), []):
-                            cands_map[f['id']] = f
-                candidates = list(cands_map.values())
-                if not candidates:
-                    continue
+                candidates = []
+                if ids_a and ids_b:
+                    cands_map = {}
+                    for x in ids_a:
+                        for y in ids_b:
+                            for f in fight_lookup.get(frozenset((x, y)), []):
+                                cands_map[f['id']] = f
+                    candidates = list(cands_map.values())
                 picked = None
                 if len(candidates) == 1:
                     picked = candidates[0]
-                elif hint:
+                elif len(candidates) > 1 and hint:
                     hint_n = _norm(hint)
                     for f in candidates:
                         ev = ev_by_id.get(f['event_id'])
@@ -997,6 +1032,12 @@ def main(push=False, force=False, scan_vods=False,
                             for f in candidates:
                                 if f['event_id'] == ev_match['id']:
                                     picked = f; break
+                # Fallback: exact resolution missed (FP name spelling/nickname).
+                # Pin the event from the hint, fuzzy-match the fight within it.
+                if not picked and not candidates and hint:
+                    picked = event_anchored_fight(a, b, hint, events,
+                                                  all_events_by_norm,
+                                                  fights_by_event, fighter_names)
                 if picked:
                     ev = ev_by_id.get(picked['event_id'])
                     url = WATCH_URL.format(vod_id)
