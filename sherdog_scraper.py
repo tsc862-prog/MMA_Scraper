@@ -135,6 +135,20 @@ SHERDOG_ORGS = [
         'active':       True,
     },
     {
+        # UFC developmental series (Dana White's Contender Series). Its own
+        # Sherdog org (12411), ~89 events. Names come as "Dana White's Contender
+        # Series - Contender Series 2024: Week 1" — strip the redundant prefix.
+        # Active: a new season runs annually.
+        'organization': 'DWCS',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Dana-Whites-Contender-Series-12411',
+        # 'contender-series' matches both the modern slug and the 2017-18
+        # "Dana-Whites-Tuesday-Night-Contender-Series-..." era (incl. Brazil).
+        'slug_keys':    ('contender-series',),
+        'name_clean':   (r"^Dana White's (?:Tuesday Night )?Contender Series\s*-\s*", ''),
+        'fight_prefix': 'dwcsfight',
+        'active':       True,
+    },
+    {
         # Defunct — only 2 events ever (Banned 2008, Day of Reckoning 2009)
         # but legendary cards (Fedor vs Sylvia, Fedor vs Arlovski).
         'organization': 'Affliction',
