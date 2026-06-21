@@ -205,8 +205,13 @@ For each org we add:
 - Per source, note free vs. paywalled.
 
 ## Ground rules (carried over from prior decisions)
-- ufcstats stays the UFC source — do **not** re-key UFC off another source.
-- Never change a Sherdog `fight_prefix` once data exists for that org.
+- ~~ufcstats stays the UFC source~~ **SUPERSEDED 2026-06-20:** Sherdog is now the
+  single source of truth for every org **including UFC** (`start.py`/ufcstats
+  retired as canonical). See `migrate/RUNBOOK.md`. Fighters/events are keyed on
+  Sherdog numeric ids; fights on `uuid5(event_id:sorted fighter ids)`.
+- Fight ids no longer use per-org `fight_prefix` — the unified Sherdog-id scheme
+  replaced it during the source-of-truth migration. (`fight_prefix` remains in
+  the org configs only as documentation.)
 - Build risky changes on a staging copy of the DB, cut over when proven (see
   "Build approach" above). End state is one DB / one app — not a permanent
   fork. Ratings are irreplaceable: they live in the copy from the start and are
