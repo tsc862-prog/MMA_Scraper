@@ -61,10 +61,19 @@ jobs:
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python youtube_scraper.py --push
 
+      # Flag amateur bouts on pro-named cards (Sherdog only marks amateur on the
+      # fighter page). Incremental via amateur_checked.txt — only fighters added
+      # since the last run are checked. Scoped to orgs that run amateur cards;
+      # --limit caps a one-off backlog (resumes next night). Add new amateur-
+      # running orgs to this list when they're added to SHERDOG_ORGS.
+      - name: Flag amateur fights from fighter pages (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python amateur_scraper.py --orgs "Fury FC,King of the Cage,LFA,CFFC,Shooto,Pancrase,Invicta FC,Cage Warriors,EliteXC,Titan FC" --limit 2000
+
       - name: Save completed events trackers
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sherdog_completed_events.txt
+          git add sherdog_completed_events.txt amateur_checked.txt
           git diff --staged --quiet || git commit -m "Update completed events trackers [skip ci]"
           git push
