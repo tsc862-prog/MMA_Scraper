@@ -517,6 +517,11 @@ def parse_event_page(event_url, org):
     loc_el = soup.find(itemprop='location')
     event_location = loc_el.get_text(strip=True) if loc_el else None
 
+    # Amateur cards are whole events on Sherdog (e.g. "Fury FC - Amateur
+    # Series 60") — the bouts carry normal weight classes, so the signal is the
+    # event name. We KEEP these fights but flag them is_amateur (hidden in-app).
+    event_amateur = bool(re.search(r'\bamateur\b', event_name, re.I))
+
     base = {
         'organization':    org['organization'],
         'organization_id': id_from_url(org['org_url']),
@@ -563,7 +568,7 @@ def parse_event_page(event_url, org):
             finish_round = cells.get('Round') or None
             finish_time  = cells.get('Time') or None
 
-        if len(m) == 2 and m[0][0] and m[1][0] and not _is_amateur(weight_class):
+        if len(m) == 2 and m[0][0] and m[1][0]:
             fights.append({
                 **base,
                 'fight_position': 1,
@@ -574,6 +579,7 @@ def parse_event_page(event_url, org):
                 'winner_id':      m[winner_idx][1] if winner_idx is not None else None,
                 'weight_class':   weight_class,
                 'is_title':       _is_title(weight_class, fc),
+                'is_amateur':     event_amateur or _is_amateur(weight_class),
                 'method':         method,
                 'finish_round':   finish_round,
                 'finish_time':    finish_time,
@@ -598,8 +604,6 @@ def parse_event_page(event_url, org):
 
             wc_el = cells[2].select_one('.weight_class')
             weight_class = wc_el.get_text(strip=True) if wc_el else None
-            if _is_amateur(weight_class):
-                continue
             position += 1
 
             res_a = cells[1].select_one('.final_result')
@@ -628,6 +632,7 @@ def parse_event_page(event_url, org):
                 'winner_id':      winner_id,
                 'weight_class':   weight_class,
                 'is_title':       _is_title(weight_class, tr),
+                'is_amateur':     event_amateur or _is_amateur(weight_class),
                 'method':         method or None,
                 'finish_round':   rnd or None,
                 'finish_time':    t or None,
@@ -690,6 +695,7 @@ def push_fights(all_fights, female_names):
                 'weight_class':        weight_class,
                 'is_main':             f['fight_position'] == 1,
                 'is_title':            f.get('is_title', False),
+                'is_amateur':          f.get('is_amateur', False),
                 'fight_position':      f['fight_position'],
                 'fight_position_type': 'Main Event' if f['fight_position'] == 1 else None,
             }
