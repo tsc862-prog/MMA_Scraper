@@ -339,13 +339,21 @@ def _norm(name):
     return re.sub(r'[^a-z0-9]+', ' ', (name or '').lower()).strip()
 
 def classify_episode(title):
-    """Returns (variant, base_title) — variant is 'main' or 'prelims'."""
-    m = re.search(r'\b[Pp]relims\b', title)
-    if m:
-        # Strip ": Prelims" / " Prelims" suffix
-        base = re.sub(r'\s*:?\s*\bprelims\b\s*$', '', title, flags=re.IGNORECASE).strip()
+    """Returns (variant, base_title) — variant is 'main' or 'prelims'.
+    Matches Prelims / Preliminaries / Preliminares (Spanish) — not just the
+    exact word 'Prelims', so Spanish prelims aren't misread as the main card."""
+    if re.search(r'\bprelim', title or '', re.I):
+        # Strip a trailing "(Fight Pass) Prelim..." so the base matches the event
+        base = re.sub(r'\s*[:\-]?\s*(fight\s+pass\s+)?prelim\w*\s*$', '',
+                      title, flags=re.IGNORECASE).strip()
         return 'prelims', base
     return 'main', title
+
+
+def _is_spanish(title):
+    """Spanish-language VOD (e.g. "(ESPAÑOL) ..."). English is canonical, so
+    these are skipped for event slots rather than taking main/prelims."""
+    return bool(re.search(r'espa[nñ]ol|\(spanish\)', title or '', re.I))
 
 def match_event(fp_title, events_by_norm):
     """fp_title is the cleaned (no Prelims) episode title."""
@@ -643,6 +651,8 @@ def main(push=False, force=False, scan_vods=False,
                     continue
 
                 title   = ep.get('title', '')
+                if _is_spanish(title):
+                    continue   # English versions are canonical for event slots
                 variant, base = classify_episode(title)
                 url     = WATCH_URL.format(vod_id)
 
@@ -729,7 +739,7 @@ def main(push=False, force=False, scan_vods=False,
     # VODs) or VOD_PLAYLIST (the bucket IS the VOD list).
     # Hard-skip non-content VODs (these can't be event-level or per-fight)
     SKIP_NON_CONTENT = ('press conference', 'weigh-in', 'weighin',
-                        'pre-fight show', 'post-fight show')
+                        'pre-fight show', 'post-fight show', 'español', 'espanol')
     # Legacy alias still used by passes 3 and 4 below
     SKIP_KEYWORDS = SKIP_NON_CONTENT + ('fight pass prelims',
                                        ': prelims', ' prelims')
