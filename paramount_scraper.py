@@ -49,6 +49,10 @@ OUTPUT_FILE       = 'paramount_matches.txt'
 #   show_type: 'fight_night' | 'numbered' | 'recap'
 SHOW_CONFIGS = [
     ('ufc-fight-night', range(2006, 2027), 'fight_night'),
+    # Numbered PPVs: the 'ufc' year-seasons are only promos. The real content
+    # (full main card "UFC NNN in English"/"... All The Fights" + per-fight
+    # clips) lives under season = the EVENT NUMBER and is fetched per numbered
+    # DB event via fetch_event_fight_clips() below — not here.
     ('ufc',             range(2000, 2027), 'numbered'),
     ('ufc-2010s',       range(2010, 2021), 'recap'),
     ('ufc-2000s',       range(2000, 2010), 'recap'),
@@ -176,7 +180,14 @@ def classify_clip(title):
       'unknown'     — everything else (skipped)
     """
     tl = title.lower()
-    if 'event recap' in tl or re.search(r'\ball the fights\b', tl):
+    # Spanish-language versions exist ("... in Spanish" / "(Español)") — skip;
+    # English is canonical for the event/fight slot.
+    if 'in spanish' in tl or 'español' in tl or 'espanol' in tl:
+        return 'unknown'
+    # Full event / main-card replay: "UFC 328 in English", "... - All The
+    # Fights", "... Event Recap" → events.paramount_url.
+    if ('event recap' in tl or 'all the fights' in tl
+            or re.search(r'\bin english\b', tl)):
         return 'recap'
     if re.search(r'\bvs\.?\s', tl):
         return 'fight_clip'
@@ -196,8 +207,9 @@ def extract_event_name_from_clip(title, clip_type):
         return re.sub(r'\s*-\s*all the fights.*', '', title, flags=re.IGNORECASE).strip()
 
     if clip_type == 'recap':
-        # Strip "Event Recap", "Recap", or "- All The Fights" suffix
-        name = re.sub(r'\s*-?\s*\b(all the fights|event recap|recap)\b.*', '', title, flags=re.IGNORECASE).strip()
+        # Strip "Event Recap"/"Recap"/"All The Fights"/"in English" suffix.
+        # "UFC 328 in English" -> "UFC 328".
+        name = re.sub(r'\s*-?\s*\b(all the fights|event recap|recap|in english)\b.*', '', title, flags=re.IGNORECASE).strip()
         # Bare number prefix "321: Aspinall vs. Gane" → "UFC 321"
         m = re.match(r'^(\d+)\s*:', name)
         if m:
