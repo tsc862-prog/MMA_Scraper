@@ -102,33 +102,36 @@ def main():
         todo = todo[:args.limit]
     print(f'  {len(todo)} fighters to check ({len(checked)} already done)\n')
 
-    to_flag = set()
+    def flag_fights(fight_ids):
+        ids = list(fight_ids)
+        for j in range(0, len(ids), 100):
+            chunk = ids[j:j+100]
+            inlist = ','.join(f'"{c}"' for c in chunk)   # fight ids are text
+            r = requests.patch(f'{s.SUPABASE_URL}/rest/v1/fights?id=in.({inlist})',
+                               headers=s._headers(), data=json.dumps({'is_amateur': True}))
+            if r.status_code not in (200, 204):
+                raise RuntimeError(f'flag failed ({r.status_code}): {r.text[:200]}')
+
+    total_flagged = 0
     for i, fid in enumerate(todo):
         try:
             am_events = amateur_event_ids(fid)
         except Exception as e:
             print(f'  [WARN] fighter {fid}: {e}')
-            continue
+            continue   # not recorded as checked -> retried next run
         if am_events:
-            for fight_id, event_id in by_fighter[fid]:
-                if event_id in am_events:
-                    to_flag.add(fight_id)
+            fight_ids = {fight_id for fight_id, event_id in by_fighter[fid]
+                         if event_id in am_events}
+            if fight_ids:
+                flag_fights(fight_ids)          # persist BEFORE marking checked
+                total_flagged += len(fight_ids)
         with open(CHECKED_FILE, 'a') as fh:
             fh.write(f'{fid}\n')
         if (i + 1) % 200 == 0:
-            print(f'  ...{i+1}/{len(todo)}  ({len(to_flag)} fights to flag so far)')
+            print(f'  ...{i+1}/{len(todo)}  ({total_flagged} fights flagged)')
         time.sleep(0.3)
 
-    print(f'\nFlagging {len(to_flag)} amateur fights...')
-    ids = list(to_flag)
-    for j in range(0, len(ids), 100):
-        chunk = ids[j:j+100]
-        inlist = ','.join(f'"{c}"' for c in chunk)   # fight ids are text
-        r = requests.patch(f'{s.SUPABASE_URL}/rest/v1/fights?id=in.({inlist})',
-                           headers=s._headers(), data=json.dumps({'is_amateur': True}))
-        if r.status_code not in (200, 204):
-            sys.exit(f'  flag failed ({r.status_code}): {r.text[:200]}')
-    print(f'Done — flagged {len(to_flag)} fights amateur.')
+    print(f'\nDone — flagged {total_flagged} amateur fights this run.')
 
 
 if __name__ == '__main__':

@@ -14,3 +14,6 @@ prod_rebuild.log
 
 # scraper run logs
 *.log
+
+# amateur enrichment state
+amateur_checked.txt
