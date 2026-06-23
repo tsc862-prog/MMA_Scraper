@@ -49,6 +49,12 @@ jobs:
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python gender_scraper.py
 
+      # Confirm gender by opponent unanimity (cheap, no API) and auto-resolve the
+      # gender review items. Runs after gender_scraper so it uses its fresh checks.
+      - name: Propagate gender from opponents (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python gender_propagate.py --apply
+
       - name: Email review queue digest (daily only)
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python review_email.py
