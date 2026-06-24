@@ -340,12 +340,37 @@ def parse_event_hint(title):
 
 # ── Matching ──────────────────────────────────────────────────────────────────
 
+# Paramount titles some specially-named cards differently from Sherdog (our DB
+# source of truth), and they carry no "UFC NNN" number to fall back on. Map the
+# Paramount-extracted event name (lowercased) → the exact DB event name so
+# find_event resolves them. Add an entry here when an event-level VOD logs as
+# EVENT no_event_match(...) in paramount_matches.txt.
+EVENT_NAME_ALIASES = {
+    'ufc at the white house: topuria vs. gaethje':
+        'UFC White House - Freedom 250: Topuria vs. Gaethje',
+}
+
+def surname(name):
+    """Last-name token for the fallback index, ignoring trailing generational
+    suffixes (Jr., Sr., II–IV). Without this every '… Jr.' keys under 'jr.', so
+    a clip like 'Michael Aswell Jr.' collides with every other Junior on lookup.
+    Must be used for both index construction and lookup so the keys line up."""
+    toks = name.split()
+    while len(toks) > 1 and toks[-1].lower().rstrip('.') in {'jr', 'sr', 'ii', 'iii', 'iv'}:
+        toks = toks[:-1]
+    return toks[-1].lower()
+
 def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter_by_last,
                event_by_id, event_name_hint=None, event_by_name_lower=None,
                fighter_by_alias=None):
     """
     Match a clip to a fight.
     Returns (fight, event, reason).
+
+    Future-dated bouts are excluded up front: a full-fight clip can't exist for a
+    fight that hasn't happened, so a historical fight re-surfaced ahead of a
+    scheduled rematch won't attach to the upcoming rematch's row (reason
+    'future_event_only' when every candidate is in the future).
 
     event_name_hint: event name extracted from the clip title parenthetical — used
                      as the primary tiebreaker for rematches before falling back to date.
@@ -362,8 +387,8 @@ def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter
             fid = fighter_by_alias.get(nl)
             if fid:
                 return [fid]
-        # 3. Last name fallback
-        return fighter_by_last.get(name.split()[-1].lower(), [])
+        # 3. Last name fallback (suffix-aware so '… Jr.' doesn't collide)
+        return fighter_by_last.get(surname(name), [])
 
     ids_a = lookup_ids(name_a)
     ids_b = lookup_ids(name_b)
@@ -382,6 +407,22 @@ def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter
 
     if not candidates:
         return None, None, 'no_fight'
+
+    # 0. Drop future-dated bouts. A full-fight clip cannot exist for a fight
+    #    that hasn't happened yet, so a historical fight re-promoted during
+    #    rematch hype (e.g. the 2013 McGregor vs. Holloway video resurfacing
+    #    ahead of a scheduled rematch) must never attach to the upcoming
+    #    rematch's fight row. Undated candidates are kept (we only drop bouts
+    #    confirmed to be in the future).
+    now = datetime.now()
+    non_future = [
+        f for f in candidates
+        if (d := parse_event_date(event_by_id.get(f['event_id'], {}).get('date', ''))) is None
+        or d <= now
+    ]
+    if not non_future:
+        return None, None, 'future_event_only'
+    candidates = non_future
 
     # 1. Narrow by event name extracted from the clip title (best for rematches)
     if event_name_hint and event_by_name_lower and len(candidates) > 1:
@@ -418,6 +459,9 @@ def find_event(raw_name, clip_date, event_by_name_lower, events):
         return None, 'no_name'
 
     key = raw_name.lower().strip()
+
+    # 0. Known Paramount→DB name alias (specially-named cards with no UFC number)
+    key = EVENT_NAME_ALIASES.get(key, key)
 
     # 1. Exact match
     ev = event_by_name_lower.get(key)
@@ -458,8 +502,7 @@ def main(dry_run=False):
 
     for f in fighters:
         fighter_by_name[f['name'].lower()] = f['id']
-        last = f['name'].split()[-1].lower()
-        fighter_by_last.setdefault(last, []).append(f['id'])
+        fighter_by_last.setdefault(surname(f['name']), []).append(f['id'])
 
     fight_lookup = {}
     for fight in fights:

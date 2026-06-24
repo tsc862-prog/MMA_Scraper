@@ -18,6 +18,7 @@ import sys
 import json
 import argparse
 import requests
+from datetime import date
 
 # Load .env
 _env_path = os.path.join(os.path.dirname(__file__), '.env')
@@ -236,6 +237,26 @@ def playlist_event_hint(playlist_title):
 
 # ── Matching ──────────────────────────────────────────────────────────────────
 
+def surname(name):
+    """Last-name token for the fallback index, ignoring trailing generational
+    suffixes (Jr., Sr., II–IV). Without this every '… Jr.' keys under 'jr.', so
+    a clip like 'Michael Aswell Jr.' collides with every other Junior on lookup.
+    Must be used for both index construction and lookup so the keys line up."""
+    toks = name.split()
+    while len(toks) > 1 and toks[-1].lower().rstrip('.') in {'jr', 'sr', 'ii', 'iii', 'iv'}:
+        toks = toks[:-1]
+    return toks[-1].lower()
+
+def _is_future_event(ev):
+    """True if the event is confirmed to be in the future. A full-fight video
+    can't exist for a bout that hasn't happened, so such candidates are dropped.
+    Undated/unparseable events return False (kept)."""
+    d = (ev.get('date') or '')[:10]
+    try:
+        return date.fromisoformat(d) > date.today()
+    except ValueError:
+        return False
+
 def build_lookups(fighters, aliases, channel_fights, events):
     fighter_by_name  = {}
     fighter_by_last  = {}
@@ -245,7 +266,7 @@ def build_lookups(fighters, aliases, channel_fights, events):
         fid, name = f['id'], f['name']
         fighter_names[fid] = name
         fighter_by_name[name.lower()] = fid
-        fighter_by_last.setdefault(name.split()[-1].lower(), []).append(fid)
+        fighter_by_last.setdefault(surname(name), []).append(fid)
     for a in aliases:
         fighter_by_alias[a['alias'].lower()] = a['fighter_id']
 
@@ -268,7 +289,7 @@ def resolve_fighter(name, by_name, by_alias, by_last):
     fid = by_alias.get(nl)
     if fid:
         return [fid]
-    return by_last.get(nl.split()[-1], [])
+    return by_last.get(surname(nl), [])
 
 def find_fight(name_a, name_b, event_hint, lookups):
     (by_name, by_last, by_alias, fighter_names, event_by_id, fight_lookup) = lookups
@@ -286,6 +307,15 @@ def find_fight(name_a, name_b, event_hint, lookups):
             candidates.extend(fight_lookup.get(frozenset((a, b)), []))
     if not candidates:
         return None, f'no fight for {name_a} vs {name_b}'
+
+    # Drop future-dated bouts: a full-fight video can't exist for a fight that
+    # hasn't happened yet, so a historical fight re-surfaced ahead of a scheduled
+    # rematch won't attach to the upcoming rematch's row.
+    non_future = [c for c in candidates
+                  if not _is_future_event(event_by_id.get(c['event_id'], {}))]
+    if not non_future:
+        return None, f'future event only: {name_a} vs {name_b}'
+    candidates = non_future
 
     if len(candidates) == 1:
         return candidates[0], 'matched'

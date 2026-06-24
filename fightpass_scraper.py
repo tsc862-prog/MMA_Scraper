@@ -26,6 +26,7 @@ import time
 import argparse
 import unicodedata
 import requests
+from datetime import date
 
 # ── Load .env ─────────────────────────────────────────────────────────────────
 _env = os.path.join(os.path.dirname(__file__), '.env')
@@ -461,10 +462,36 @@ def resolve_fighter(name, by_name, by_alias, by_last):
         fid = by_alias.get(cand)
         if fid:
             return [fid]
-    last = (_fold_accents(nl) or nl).split()[-1] if nl else ''
+    last = surname(_fold_accents(nl) or nl)
     return by_last.get(last, [])
 
 _NAME_SUFFIX = frozenset({'jr', 'sr', 'ii', 'iii', 'iv', 'v'})
+
+def surname(name):
+    """Last-name token for the fallback index, ignoring trailing generational
+    suffixes (Jr., Sr., II–V). Without this every '… Jr.' keys under 'jr.', so a
+    clip like 'Michael Aswell Jr.' collides with every other Junior on lookup.
+    Must be used for both index construction and lookup so the keys line up."""
+    toks = (name or '').split()
+    while len(toks) > 1 and toks[-1].lower().rstrip('.') in _NAME_SUFFIX:
+        toks = toks[:-1]
+    return toks[-1].lower() if toks else ''
+
+def _event_is_future(ev):
+    """True if the event is confirmed to be in the future. A full-fight VOD can't
+    exist for a bout that hasn't happened, so such candidates are dropped before
+    matching. Undated/unparseable events return False (kept)."""
+    s = ((ev or {}).get('date') or '')[:10]
+    try:
+        return date.fromisoformat(s) > date.today()
+    except ValueError:
+        return False
+
+def _drop_future(candidates, ev_by_id):
+    """Return candidates whose event isn't in the future; if that leaves none,
+    return [] so the caller logs it unmatched rather than picking a future bout."""
+    return [f for f in candidates
+            if not _event_is_future(ev_by_id.get(f['event_id'], {}))]
 
 def _name_tokens(name):
     """Accent-folded lowercase token set, name-suffixes dropped. Token-set
@@ -598,7 +625,7 @@ def main(push=False, force=False, scan_vods=False,
         nl = f['name'].lower()
         by_name.setdefault(nl, f['id'])
         by_name.setdefault(_fold_accents(nl), f['id'])
-        last = nl.split()[-1] if nl else ''
+        last = surname(nl)
         by_last.setdefault(last, []).append(f['id'])
         by_last.setdefault(_fold_accents(last), []).append(f['id'])
     for a in aliases:
@@ -844,6 +871,12 @@ def main(push=False, force=False, scan_vods=False,
                 per_fight_unmatched.append(
                     (vod_id, v_title, 'no DB fight for this pair'))
                 continue
+            non_future = _drop_future(candidates, ev_by_id)
+            if not non_future:
+                per_fight_unmatched.append(
+                    (vod_id, v_title, 'only future-dated bout for this pair'))
+                continue
+            candidates = non_future
             picked = None
             if scoped_event:
                 for f in candidates:
@@ -934,6 +967,12 @@ def main(push=False, force=False, scan_vods=False,
                 per_fight_unmatched.append(
                     (vod_id, v_title, 'scan: no DB fight for this pair'))
                 continue
+            non_future = _drop_future(candidates, ev_by_id)
+            if not non_future:
+                per_fight_unmatched.append(
+                    (vod_id, v_title, 'scan: only future-dated bout for this pair'))
+                continue
+            candidates = non_future
             picked = None
             if len(candidates) == 1:
                 picked = candidates[0]
@@ -991,7 +1030,7 @@ def main(push=False, force=False, scan_vods=False,
         for f in fighters:
             if f['id'] not in missing_fighters:
                 continue
-            ln = f['name'].split()[-1] if f['name'] else ''
+            ln = surname(f['name'])
             if not ln:
                 continue
             last_names_to_search.setdefault(ln, []).append(f['id'])
@@ -1027,6 +1066,7 @@ def main(push=False, force=False, scan_vods=False,
                             for f in fight_lookup.get(frozenset((x, y)), []):
                                 cands_map[f['id']] = f
                     candidates = list(cands_map.values())
+                candidates = _drop_future(candidates, ev_by_id)
                 picked = None
                 if len(candidates) == 1:
                     picked = candidates[0]
