@@ -38,7 +38,7 @@ dispatch via `if: github.event.schedule == '30 7 * * *' || github.event_name == 
 
 | Step | Script | Runs | What it does |
 |---|---|---|---|
-| Sherdog scraper | `sherdog_scraper.py` | **every** trigger | Source of truth for all orgs incl. UFC. Scrapes events/fights into Supabase. (`start.py`/ufcstats is retired.) |
+| Sherdog scraper | `sherdog_scraper.py` | **every** trigger | Source of truth for all orgs incl. UFC. Scrapes events/fights into Supabase, and prunes fights that dropped off a re-scraped card (opponent swaps / cancellations) — fights with results or user ratings are never deleted. (`start.py`/ufcstats is retired.) |
 | Resolve genders | `gender_scraper.py` | daily / manual | Resolves fighter gender via Wikidata P21 for unchecked non-UFC fighters; one woman per fight is enough — propagation relabels her opponents' divisions. |
 | Propagate genders | `gender_propagate.py --apply` | daily / manual | Cheap, no-API opponent-graph propagation: pro MMA is gender-segregated, so each fight-graph component is single-gender — seed from checked fighters and propagate to unchecked ones, auto-resolving the matching gender review items. Runs after the Wikidata pass so it uses its fresh seeds. |
 | Email digest | `review_email.py` | daily / manual | Emails the pending `review_queue` via Gmail SMTP with one-click resolve links (Supabase edge function). |

@@ -288,6 +288,142 @@ SHERDOG_ORGS = [
         'fight_prefix': 'titanfcfight',
         'active':       True,
     },
+    # ── 2026-07 Fight Pass expansion wave ─────────────────────────────────────
+    {
+        # Abu Dhabi's flagship promotion (2019-present), ~76 events. Heavy
+        # Fight Pass per-fight coverage ("X vs Y UAE Warriors 71").
+        'organization': 'UAE Warriors',
+        'org_url':      f'{SHERDOG_BASE}/organizations/UAE-Warriors-5307',
+        'slug_keys':    ('uae-warriors-',),
+        'name_clean':   (r'^$', ''),   # names already "UAE Warriors 72 - ..."
+        'fight_prefix': 'uaewfight',
+        'active':       True,
+    },
+    {
+        # Australia's top promotion (~107 events). FP: "X vs Y Eternal MMA 103".
+        'organization': 'Eternal MMA',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Eternal-MMA-5231',
+        'slug_keys':    ('eternal-mma-',),
+        'name_clean':   (r'^$', ''),   # names already "Eternal MMA 107 - ..."
+        'fight_prefix': 'eternalfight',
+        'active':       True,
+    },
+    {
+        # French promotion (2019-present), ~43 events. Sherdog names events
+        # "Ares 42 - ..." (no FC); Fight Pass titles say "Ares FC 42".
+        # Exclude the unrelated "Ares Chaos MMA" org's slugs.
+        'organization': 'Ares FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Ares-Fighting-Championship-15823',
+        'slug_keys':    ('ares-',),
+        'exclude_slug_keys': ('ares-chaos',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'aresfight',
+        'active':       True,
+    },
+    {
+        # Urijah Faber's Sacramento promotion (2021-present), ~43 events +
+        # Prospect Series / Combat U sub-cards. FP: "... Urijah Faber's A-1
+        # Combat 36" (hyphenated on FP, "A1" on Sherdog). 'fabers-a1-combat'
+        # slug key avoids the unrelated "A1 Combate MMA" org.
+        'organization': 'A1 Combat',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Urijah-Fabers-A1-Combat-17054',
+        'slug_keys':    ('fabers-a1-combat',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'a1fight',
+        'active':       True,
+    },
+    {
+        # Mexico's UWC (2010s-present), ~61 events. Fight Pass titles drop
+        # "Mexico" ("X vs Y UWC 58") — strip it from names so hints match.
+        'organization': 'UWC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Ultimate-Warrior-Challenge-Mexico-2611',
+        'slug_keys':    ('uwc-mexico-',),
+        'name_clean':   (r'^UWC\s+Mexico', 'UWC'),
+        'fight_prefix': 'uwcfight',
+        'active':       True,
+    },
+    {
+        # Mexico City promotion (2018-present), ~63 events. Sherdog zero-pads
+        # event numbers ("LUX 062") while Fight Pass says "Lux Fight League 56"
+        # — strip the padding so numbers line up.
+        'organization': 'LUX',
+        'org_url':      f'{SHERDOG_BASE}/organizations/LUX-Fight-League-12569',
+        'slug_keys':    ('lux-',),
+        'name_clean':   (r'^LUX\s+0+(\d)', r'LUX \1'),
+        'fight_prefix': 'luxfight',
+        'active':       True,
+    },
+    {
+        # Jue Cheng King (China, ~143 events incl. "JCK Fight Night N" and
+        # "JCK Kings NNN"). FP titles: "X vs Y JCK MMA 2023: ...". Strip the
+        # redundant "Jue Cheng King - " prefix.
+        'organization': 'JCK',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Jue-Cheng-King-16251',
+        'slug_keys':    ('jue-cheng-king',),
+        'name_clean':   (r'^Jue\s+Cheng\s+King\s*-\s*', ''),
+        'fight_prefix': 'jckfight',
+        'active':       True,
+    },
+    {
+        # Anthony Pettis FC (2021-present), ~25 events incl. the India series.
+        # FP: "X vs Y APFC: ..." / "X vs Y Anthony Pettis FC 9".
+        'organization': 'APFC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Anthony-Pettis-Fighting-Championship-APFC-16795',
+        'slug_keys':    ('anthony-pettis-fc',),
+        'name_clean':   (r'^$', ''),   # names already "Anthony Pettis FC 23 - ..."
+        'fight_prefix': 'apfcfight',
+        'active':       True,
+    },
+    {
+        # Xtreme Fighting League (Tulsa, OK) — runs the "Xtreme Fight Night"
+        # (XFN) series Fight Pass carries ("X vs Y XFN 383"). Sherdog names
+        # events "XFL - Xtreme Fight Night 411" — rewrite to "XFN 411" so
+        # Fight Pass hints match. Mixed MMA/kickboxing cards; kickboxing
+        # bouts aren't indexed by Sherdog so only MMA comes through.
+        'organization': 'XFN',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Xtreme-Fighting-League-Oklahoma-575',
+        'slug_keys':    ('xfl-', 'xtreme-fight-night'),
+        'name_clean':   (r'^XFL\s*-\s*Xtreme\s+Fight\s+Night', 'XFN'),
+        'fight_prefix': 'xfnfight',
+        'active':       True,
+    },
+    {
+        # Legacy FC (Texas, 2009-2016) — merged with RFA to form LFA. 66
+        # events; Fight Pass has per-fight VODs ("X vs Y Legacy FC 63").
+        # Sherdog names duplicate the abbrev ("LFC 63 - Legacy Fighting
+        # Championship 63") — rewrite to "Legacy FC 63". 'cage-legacy' is a
+        # different org.
+        'organization': 'Legacy FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Legacy-Fighting-Championship-Texas-2602',
+        'slug_keys':    ('lfc-', 'legacy-'),
+        'exclude_slug_keys': ('cage-legacy',),
+        'name_clean':   (r'^LFC\s+(\d+)\s*-\s*Legacy\s+Fighting\s+Championship\s+\d+',
+                         r'Legacy FC \1'),
+        'fight_prefix': 'legacyfight',
+        'active':       False,
+    },
+    {
+        # Classic Entertainment & Sports (New England, 2010-present), ~85
+        # events. Fight Pass has event replays + per-fight VODs ("CES MMA 73").
+        'organization': 'CES MMA',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Classic-Entertainment-and-Sports-CES-MMA-3124',
+        'slug_keys':    ('ces-mma-',),
+        'name_clean':   (r'^$', ''),   # names already "CES MMA 82 - ..."
+        'fight_prefix': 'cesfight',
+        'active':       True,
+    },
+    {
+        # Jorge Masvidal's iKON FC (2022-2023, 6 events) + the earlier iKon
+        # Fighting Federation era (iFF 1-7) under the same Sherdog org. FP
+        # has event replays ("Jorge Masvidal's iKON FC 6"). Strip the
+        # redundant "iFC N - " / "iFF N - " prefix.
+        'organization': 'iKON FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/iKon-Fighting-Championship-16451',
+        'slug_keys':    ('ifc-', 'iff-'),
+        'name_clean':   (r'^iF[CF]\s+\d+\s*-\s*', ''),
+        'fight_prefix': 'ikonfight',
+        'active':       False,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────
@@ -716,6 +852,54 @@ def push_fights(all_fights, female_names):
     upsert('fighters',      list(fighters_map.values()))
     upsert('fights',        list(fights_map.values()))
     upsert('fight_results', list(results_map.values()))
+    prune_stale_fights(fights_map)
+
+def prune_stale_fights(fights_map):
+    """Delete DB fights that dropped off a re-scraped card. Fights are keyed
+    by (event, fighterA, fighterB), so an opponent swap inserts the new
+    pairing but leaves the old one behind — upserts never remove rows (e.g.
+    Hardwick vs Hughes lingering on Cage Warriors 209 after the Savio swap).
+
+    Scoped to the events in this batch. A fight is never deleted if it has a
+    fight_results row (it actually happened) or a ratings row (user data);
+    both FKs are NO ACTION, so those deletes would fail anyway."""
+    by_event = {}
+    for f in fights_map.values():
+        by_event.setdefault(f['event_id'], set()).add(f['id'])
+
+    deleted = 0
+    for ev_id, keep_ids in by_event.items():
+        resp = requests.get(
+            f'{SUPABASE_URL}/rest/v1/fights?event_id=eq.{ev_id}&select=id',
+            headers=_headers())
+        if not resp.ok:
+            continue
+        stale = [r['id'] for r in resp.json() if r['id'] not in keep_ids]
+        if not stale:
+            continue
+        protected = set()
+        for table in ('fight_results', 'ratings'):
+            r = requests.get(
+                f'{SUPABASE_URL}/rest/v1/{table}'
+                f'?fight_id=in.({",".join(stale)})&select=fight_id',
+                headers=_headers())
+            if r.ok:
+                protected.update(x['fight_id'] for x in r.json())
+            else:
+                protected.update(stale)   # can't verify — keep everything
+        doomed = [i for i in stale if i not in protected]
+        if not doomed:
+            continue
+        r = requests.delete(
+            f'{SUPABASE_URL}/rest/v1/fights?id=in.({",".join(doomed)})',
+            headers=_headers())
+        if r.status_code in (200, 204):
+            deleted += len(doomed)
+        else:
+            print(f'  [WARN] prune for event {ev_id} failed '
+                  f'({r.status_code}): {r.text[:200]}')
+    if deleted:
+        print(f'  Pruned {deleted} stale fight(s) no longer on their card')
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 

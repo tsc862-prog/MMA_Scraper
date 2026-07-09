@@ -124,7 +124,8 @@ buckets with 0–4 are noise / namesakes.
 - **Vale Tudo Japan (VTJ)** — Sherdog 12; classic Japanese MMA; 20 per-fight
   VODs on FP under "Vale Tudo Japan N" naming.
 - **King of the Cage** — Sherdog 1; long history; 20 per-fight VODs on FP.
-- **BodogFIGHT** — Sherdog 883; defunct ~2008; ~11 VODs on FP.
+- ~~**BodogFIGHT** — Sherdog 883; defunct ~2008; ~11 VODs on FP.~~ *(2026-07-08:
+  those VODs are one HookNShoot tournament, not BodogFIGHT — skipped.)*
 
 #### Tier 2 — active regional feeders + clear FP content
 *(Recurring scrape; active=True; cleanest Fight Pass content)*
@@ -142,14 +143,32 @@ buckets with 0–4 are noise / namesakes.
   in "X vs Y Pancrase NNN" format.
 - **Shooto** — Sherdog 21; mainly Shooto Brazil VODs on FP.
 
-#### Tier 3 — secondary regionals
-*(Worth doing eventually; lower per-event interest)*
-- **DEEP** — Sherdog 24; Japan.
-- **Titan FC** — Sherdog 740; US.
-- **XFN** — Sherdog ID TBD.
-- **M-1 Global** — Sherdog 72; Russia; status check needed.
-- **JCK** — Chinese org; Sherdog ID TBD; modern Chinese MMA on FP.
-- **Combate Global / Combat FC** — needs disambiguation; samples ambiguous.
+#### DONE — 2026-07-08 expansion wave (12 orgs)
+Re-probed the candidates against live vesper and added the confirmed ones to
+`SHERDOG_ORGS` + `_EVENT_PREFIX`:
+- **Active:** UAE Warriors (5307), Eternal MMA (5231), Ares FC (15823),
+  Urijah Faber's A1 Combat (17054), UWC Mexico (2611, labeled `UWC`),
+  LUX Fight League (12569, labeled `LUX`), JCK / Jue Cheng King (16251),
+  APFC (16795), XFN / Xtreme Fighting League Oklahoma (575)
+- **Defunct archives:** Legacy FC Texas (2602), CES MMA (3124),
+  iKON FC (16451 — covers both the Masvidal iFC and earlier iFF eras)
+
+Name normalization happens in `name_clean` so Fight Pass hints match:
+"XFL - Xtreme Fight Night 409" → "XFN 409", "LUX 058" → "LUX 58",
+"UWC Mexico 58" → "UWC 58", "LFC 63 - …" → "Legacy FC 63".
+
+Deferred (real FP content, marginal value): Gladiator Challenge (~700 events,
+legacy VODs only), HookNShoot (single Bodog tournament), Battlefield Fight
+League, Urban Warfare.
+
+#### Tier 3 — resolved 2026-07-08
+- **Titan FC** — done earlier (Sherdog 740).
+- **XFN**, **JCK** — done (see above).
+- ~~**DEEP**~~ — **not on Fight Pass** (vesper only returns namesakes:
+  Gladiator Challenge "Deep Impact", QUINTET, APFC India). Records-only
+  candidate for a later Sherdog-only add.
+- ~~**M-1 Global**~~ — **not on Fight Pass** (vesper noise only).
+- ~~**Combate Global**~~ — **not on Fight Pass** (vesper returns A-1 Combat).
 
 #### Skip — confirmed not on Fight Pass
 *(Vesper returns 0 or only noise. Content lives elsewhere; revisit if scope changes.)*
@@ -159,6 +178,9 @@ buckets with 0–4 are noise / namesakes.
 - **ONE Championship** (own streaming) — vesper hits only namesakes
 - **Bellator** (PFL/DAZN now) — vesper hits only namesakes
 - **Sengoku, DREAM, IFL** — vesper hits unrelated content
+- **DEEP, M-1 Global, Combate Global** — re-probed 2026-07-08, noise only
+- **BodogFIGHT** — the "~11 Bodog VODs" are actually one HookNShoot
+  tournament, not the BodogFIGHT org; nothing of BodogFIGHT itself on FP
 
 #### Per-org implementation checklist
 For each org we add:

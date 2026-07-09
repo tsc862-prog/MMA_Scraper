@@ -27,6 +27,7 @@ import argparse
 import unicodedata
 import requests
 from datetime import date
+from collections import Counter
 
 # ── Load .env ─────────────────────────────────────────────────────────────────
 _env = os.path.join(os.path.dirname(__file__), '.env')
@@ -352,9 +353,11 @@ def classify_episode(title):
 
 
 def _is_spanish(title):
-    """Spanish-language VOD (e.g. "(ESPAÑOL) ..."). English is canonical, so
-    these are skipped for event slots rather than taking main/prelims."""
-    return bool(re.search(r'espa[nñ]ol|\(spanish\)', title or '', re.I))
+    """Spanish-language VOD (e.g. "(ESPAÑOL) ..." or "Recargado UFC 257",
+    the Spanish re-broadcast). English is canonical, so these are skipped
+    for event slots rather than taking main/prelims."""
+    return bool(re.search(r'espa[nñ]ol|\(spanish\)|\brecargado\b',
+                          title or '', re.I))
 
 def match_event(fp_title, events_by_norm):
     """fp_title is the cleaned (no Prelims) episode title."""
@@ -369,10 +372,13 @@ def build_season_episode_map(org_events):
     Returns {(season_number, episode_number): event_dict}."""
     from datetime import datetime
     def _parse_date(s):
-        try:
-            return datetime.strptime(s, '%B %d, %Y')
-        except (ValueError, TypeError):
-            return None
+        # ISO (Sherdog-era DB) first, then the legacy ufcstats text format.
+        for fmt in ('%Y-%m-%d', '%B %d, %Y'):
+            try:
+                return datetime.strptime(s or '', fmt)
+            except ValueError:
+                pass
+        return None
     def _season(name):
         m = re.search(r'Season\s+(\d+)', name or '', re.I)
         return int(m.group(1)) if m else 1
@@ -402,6 +408,7 @@ def build_season_episode_map(org_events):
 _NOISE_TOKENS = frozenset({
     'the', 'a', 'an', 'and', 'fc', 'mma',
     'world', 'extreme', 'cagefighting',   # Sherdog's WEC-NN placeholder filler
+    'vechain',                            # sponsor prefix ("VeChain UFC 322")
 })
 
 def _core_tokens(name):
@@ -449,6 +456,107 @@ def match_event_fuzzy(fp_title, events_for_org, events_by_norm):
                  if ' '.join(_core_tokens(e['name'])[:n]) == lead]
         if len(cands) == 1:
             return cands[0]
+    return None
+
+def _season_year(season_title):
+    """'UFC Event Replays' seasons are titled with the event year ('1995').
+    Returns the year as int, or None if the title isn't a year."""
+    m = re.fullmatch(r'(19|20)\d\d', (season_title or '').strip())
+    return int(m.group()) if m else None
+
+# Tokens ignored when scoring year-scoped title overlap: these appear in
+# nearly every title on one side or the other ('UFC Fight Night ...'), so
+# counting them creates ties between unrelated events instead of signal.
+_SCORE_IGNORE = frozenset({'ufc', 'vs', 'fight', 'night', 'on'})
+
+def _overlap_tokens(name):
+    """Core tokens as a Counter for overlap scoring. Expands Fight Pass's
+    'TUF' abbreviation so 'TUF 4: The Comeback Finale' can meet Sherdog's
+    'UFC - The Ultimate Fighter 4 Finale'."""
+    out = []
+    for t in _core_tokens(name):
+        if t == 'tuf':
+            out += ['ultimate', 'fighter']
+        elif t not in _SCORE_IGNORE:
+            out.append(t)
+    return Counter(out)
+
+def match_event_by_year_tokens(fp_title, year, org_events):
+    """Last-resort title matcher for the series walk, used when exact/fuzzy
+    fail on Fight Pass↔Sherdog naming divergence ('UFC: The Ultimate
+    Ultimate' vs 'UFC - Ultimate Ultimate 1995'). Scores token overlap
+    against only the events in the VOD's season year and requires a clear,
+    unique winner so it won't mis-assign."""
+    ft = _overlap_tokens(fp_title)
+    if not ft or not year:
+        return None
+    best, second, best_ev = 0, 0, None
+    for e in org_events:
+        if not (e.get('date') or '').startswith(str(year)):
+            continue
+        score = sum((ft & _overlap_tokens(e['name'])).values())
+        if score > best:
+            second, best, best_ev = best, score, e
+        elif score > second:
+            second = score
+    if best >= 2 and best > second:
+        return best_ev
+    return None
+
+def match_event_by_headliners(fp_title, year, org_event_ids, by_name, by_alias,
+                              by_last, fight_lookup, ev_by_id):
+    """Fight Pass titles 'UFC on Fox 6' as 'UFC Fight Night: Johnson vs
+    Dodson' — nothing in common with Sherdog's name except the headliners.
+    Strip the leading '...:' prefix, resolve the two names, and require the
+    pair to have fought at exactly one in-org event in the season's year
+    (the year disambiguates rematches)."""
+    base = re.sub(r'^[^:]*:\s*', '', fp_title or '').strip()
+    m = re.match(r'^(?P<a>.+?)\s+vs\.?\s+(?P<b>.+?)(?:\s+\d+)?$', base, re.I)
+    if not m:
+        return None
+    ids_a = resolve_fighter(m.group('a'), by_name, by_alias, by_last)
+    ids_b = resolve_fighter(m.group('b'), by_name, by_alias, by_last)
+    cand_events = set()
+    for a in ids_a:
+        for b in ids_b:
+            for f in fight_lookup.get(frozenset((a, b)), []):
+                if f['event_id'] not in org_event_ids:
+                    continue
+                ev = ev_by_id.get(f['event_id']) or {}
+                if year and not (ev.get('date') or '').startswith(str(year)):
+                    continue
+                cand_events.add(f['event_id'])
+    if len(cand_events) == 1:
+        return ev_by_id[next(iter(cand_events))]
+    return None
+
+def event_from_subevents(sub_events, org_event_ids, by_name, by_alias,
+                         by_last, fight_lookup, ev_by_id):
+    """Pin the DB event for an event-level VOD from the fights on its card
+    (subEvents). Titles like 'UFC Vegas 107' share nothing with Sherdog's
+    'UFC on ESPN 68 - Blanchfield vs. Barber', but the fight list is
+    unambiguous: each resolvable fighter pair votes for the DB events it
+    fought in; require >=2 votes and a unique winner."""
+    votes = {}
+    for sub in sub_events:
+        parts = (sub.get('details') or {}).get('participants') or []
+        if len(parts) != 2:
+            continue
+        ids1 = resolve_fighter(parts[0].get('name'), by_name, by_alias, by_last)
+        ids2 = resolve_fighter(parts[1].get('name'), by_name, by_alias, by_last)
+        pair_events = set()
+        for a in ids1:
+            for b in ids2:
+                for f in fight_lookup.get(frozenset((a, b)), []):
+                    if f['event_id'] in org_event_ids:
+                        pair_events.add(f['event_id'])
+        for eid in pair_events:
+            votes[eid] = votes.get(eid, 0) + 1
+    if not votes:
+        return None
+    ranked = sorted(votes.items(), key=lambda kv: -kv[1])
+    if ranked[0][1] >= 2 and (len(ranked) == 1 or ranked[0][1] > ranked[1][1]):
+        return ev_by_id.get(ranked[0][0])
     return None
 
 def resolve_fighter(name, by_name, by_alias, by_last):
@@ -542,8 +650,18 @@ _EVENT_PREFIX = (
     # "Cage Fury FC" is read as CFFC, not Fury FC.
     r'Cage\s+Fury\s+FC|'
     # "(?<!Cage\s)Fury FC" so a bare "Fury FC" is the Texas org, not CFFC.
-    r'(?<!Cage\s)Fury\s+FC|Titan\s+FC|'
+    # "Fury Challenger Series" (no FC) is Fight Pass's title for Fury FC's
+    # Challenger Series cards — DB names them "Fury FC - Challenger Series N".
+    r'(?<!Cage\s)Fury\s+(?:FC|Challenger\s+Series)|Titan\s+FC|'
     r'Vale\s+Tudo\s+Japan|Cage\s+Warriors|Noche\s+UFC|Invicta(?:\s+FC)?|'
+    # 2026 expansion wave. Possessive promoter prefixes ("Urijah Faber's",
+    # "Jorge Masvidal's") live inside the prefix so they don't get absorbed
+    # into fighter B's name. Multi-word forms before their short aliases.
+    r"(?:Urijah\s+Faber['’]s\s+)?A-?1\s+Combat|"
+    r"(?:Jorge\s+Masvidal['’]s\s+)?iKON(?:\s+FC)?|"
+    r'Eternal\s+MMA|Ares\s+FC|UAE\s+Warriors|Lux\s+Fight\s+League|'
+    r'Anthony\s+Pettis\s+FC|APFC|JCK(?:\s+MMA)?|Legacy\s+FC|'
+    r'CES(?:\s+MMA)?|UWC|XFN|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'
 )
@@ -663,6 +781,7 @@ def main(push=False, force=False, scan_vods=False,
     for series in SERIES:
         org_events = [e for e in events if e['organization'] == series['organization']]
         events_by_norm = {_norm(e['name']): e for e in org_events}
+        org_event_ids = {e['id'] for e in org_events}
         # Position-based matcher (Road to UFC): build (season, episode) → event.
         position_map = (build_season_episode_map(org_events)
                         if series.get('matcher') == 'season_episode' else {})
@@ -683,6 +802,8 @@ def main(push=False, force=False, scan_vods=False,
                 variant, base = classify_episode(title)
                 url     = WATCH_URL.format(vod_id)
 
+                detail = None
+                detail_fetched = False
                 if series.get('matcher') == 'season_episode':
                     ep_info = ep.get('episodeInformation') or {}
                     sn = ep_info.get('seasonNumber')
@@ -702,6 +823,26 @@ def main(push=False, force=False, scan_vods=False,
                     ev = match_event(base, events_by_norm)
                     if not ev:
                         ev = match_event_fuzzy(base, org_events, events_by_norm)
+                    if not ev:
+                        # Naming-divergence fallbacks: Fight Pass titles like
+                        # 'UFC Vegas 107' or 'TUF 1 Finale' share little with
+                        # Sherdog's names. First pin the event from the card's
+                        # fight list (subEvents), else by title-token overlap
+                        # scoped to the season's year (seasons are years).
+                        detail = fp.vod_quiet(vod_id)
+                        detail_fetched = True
+                        subs = (detail or {}).get('subEvents') or []
+                        ev = event_from_subevents(subs, org_event_ids, by_name,
+                                                  by_alias, by_last,
+                                                  fight_lookup, ev_by_id)
+                        year = _season_year(season.get('title'))
+                        if not ev:
+                            ev = match_event_by_headliners(
+                                base, year, org_event_ids, by_name, by_alias,
+                                by_last, fight_lookup, ev_by_id)
+                        if not ev:
+                            ev = match_event_by_year_tokens(base, year,
+                                                            org_events)
 
                 if not ev:
                     unmatched_eps.append((vod_id, title, url))
@@ -713,12 +854,13 @@ def main(push=False, force=False, scan_vods=False,
                 matched_vod_ids.append(vod_id)
 
                 # Pull VOD detail for subEvents (per-fight matching).
-                try:
-                    detail = fp.vod(vod_id)
-                except Exception as e:
-                    print(f'    [WARN] vod {vod_id}: {e}')
-                    continue
-                sub_events = detail.get('subEvents') or []
+                if not detail_fetched:
+                    try:
+                        detail = fp.vod(vod_id)
+                    except Exception as e:
+                        print(f'    [WARN] vod {vod_id}: {e}')
+                        continue
+                sub_events = (detail or {}).get('subEvents') or []
 
                 event_fights = fights_by_event.get(ev['id'], [])
                 event_fight_keys = {

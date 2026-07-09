@@ -1,7 +1,7 @@
 UFC FIGHT PASS MATCH RESULTS
 Events  — main: 0  prelims: 0
-Fights  — matched: 25 (per-fight URL: 25, event URL fallback: 0)
-Unmatched — episodes: 38  sub-events: 0  per-fight VODs: 51
+Fights  — matched: 44 (per-fight URL: 44, event URL fallback: 0)
+Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 39
 ======================================================================
 
 MATCHED EVENTS — MAIN (0)
@@ -10,138 +10,187 @@ MATCHED EVENTS — MAIN (0)
 MATCHED EVENTS — PRELIMS (0)
 ----------------------------------------------------------------------
 
-MATCHED FIGHTS (25)
+MATCHED FIGHTS (44)
 ----------------------------------------------------------------------
-fight_id: 105f5aed-e12a-5fd9-b117-26eef45b1f24  [fight_alt]
-  Adam Antolin vs Casey Kenney  @ Season 1, Episode 8 [vesper]
-  https://ufcfightpass.com/video/58456
+fight_id: f7766122-d25c-5966-bdd8-f08366484a2f  [fight]
+  Alexander Loof vs Alexander O'Sullivan  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974914
 
-fight_id: e4730ff0-89a6-5579-8425-16071953ed11  [fight_alt]
-  Zu Anyanwu vs Greg Rebello  @ Season 1, Episode 1 [vesper]
-  https://ufcfightpass.com/video/57821
+fight_id: 14f207a9-37d1-5a7c-ab45-305159a89b78  [fight]
+  Eliezer Kubanza vs Christopher Alvidrez  @ Contender Series 2025: Week 8 [vesper]
+  https://ufcfightpass.com/video/864682
 
-fight_id: 2e84255d-5c66-5582-9257-d188e62644e2  [fight_alt]
-  Julio Arce vs Peter Petties  @ Season 1, Episode 5 [vesper]
-  https://ufcfightpass.com/video/58422
+fight_id: 11b6053d-a51d-57ab-8588-c93be241558e  [fight]
+  Djani Barbir vs Mantas Kondratavicius  @ Contender Series 2025: Week 7 [vesper]
+  https://ufcfightpass.com/video/861922
 
-fight_id: c058600b-5469-5ab1-9c0f-2001787fe6d3  [fight_alt]
-  Kennedy Nzechukwu vs Anton Berzin  @ Season 1, Episode 7 [vesper]
-  https://ufcfightpass.com/video/58305
+fight_id: a0f337da-e431-592e-8556-879141e17461  [fight]
+  Jake Valdes vs Cornell Beacham  @ CFFC 155: Cunningham vs. Russell [vesper]
+  https://ufcfightpass.com/video/974939
 
-fight_id: 774b4b17-7db9-504f-ad72-1b095e31dca3  [fight_alt]
-  Kurt Holobaugh vs Matt Bessette  @ Season 1, Episode 1 [vesper]
-  https://ufcfightpass.com/video/57597
+fight_id: 05e89785-c887-523e-81a8-777b46646bea  [fight]
+  Johnny Munoz vs Bear Rivas  @ KOTC - Bitter Rivals [vesper]
+  https://ufcfightpass.com/video/57147
 
-fight_id: 4e00e56a-194b-5e2f-a7d4-1fa6fa7e9fae  [fight_alt]
-  Joby Sanchez vs JP Buys  @ Season 1, Episode 7 [vesper]
-  https://ufcfightpass.com/video/58668
+fight_id: 1d9b67bb-1505-512b-ad9d-3092b1aece57  [fight]
+  Andreeas Binder vs Sado Ucar  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974915
 
-fight_id: 710be289-e260-5faa-a558-a20e118e8b8a  [fight_alt]
-  Charles Byrd vs Buddy Wallace  @ Season 1, Episode 6 [vesper]
-  https://ufcfightpass.com/video/57831
+fight_id: 3fe2f405-5682-588d-93ab-d98f6d73c5bf  [fight]
+  Luca Borando vs Leandro Camargo  @ Cage Warriors 209: Newcastle [vesper]
+  https://ufcfightpass.com/video/979318
 
-fight_id: d1b8de19-7cea-57eb-8ebb-84312cf97028  [fight_alt]
-  Charles Byrd vs Jamie Pickett  @ Season 1, Episode 1 [vesper]
-  https://ufcfightpass.com/video/57678
+fight_id: 7117b768-8db1-5072-88bf-a457a372f3b4  [fight]
+  Josh Carrick vs Gvido Shusts  @ Cage Warriors 207: Manchester [vesper]
+  https://ufcfightpass.com/video/974925
 
-fight_id: 22b16759-b82f-51a7-8a03-977d7b489e34  [fight_alt]
-  John Castaneda vs Cheyden Leialoha  @ Season 1, Episode 4 [vesper]
-  https://ufcfightpass.com/video/58343
+fight_id: 9463f9a9-d20e-5f0c-8141-ade928ff34b8  [fight]
+  Jeisla Chaves vs Sofia Montenegro  @ Contender Series 2025: Week 7 [vesper]
+  https://ufcfightpass.com/video/861910
 
-fight_id: f8b7b37f-647a-539c-8f7f-8b2dfe991e3c  [fight_alt]
-  Mike Santiago vs Mark Cherico  @ Season 1, Episode 7 [vesper]
-  https://ufcfightpass.com/video/58300
+fight_id: bfb31d7a-c83c-5f0b-9acc-0bc23f9c6b7b  [fight]
+  Sean Clancy Jr vs Lucas Rodrigues  @ Cage Warriors 171: Glasgow [vesper]
+  https://ufcfightpass.com/video/613557
 
-fight_id: 162e6423-bcbe-5767-8eff-f75e54ff6134  [fight_alt]
-  Sidney Outlaw vs Michael Cora  @ Season 1, Episode 2 [vesper]
-  https://ufcfightpass.com/video/58145
+fight_id: 6a070d37-0661-56ca-a4e1-400bdec2f602  [fight]
+  Taiga Tanimura vs Genta Shindo  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979288
 
-fight_id: eb4de5d7-ee62-5ddc-ba6a-7389809b79ea  [fight_alt]
-  Allen Crowder vs Don'Tale Mayes  @ Season 1, Episode 8 [vesper]
-  https://ufcfightpass.com/video/58202
+fight_id: 1e397ba1-70a7-5b7c-9b0d-4b98f63ff56e  [fight]
+  Kendly St. Louis vs Feraris Golden  @ CFFC 109 [vesper]
+  https://ufcfightpass.com/video/363845
 
-fight_id: 159c7c02-3d29-5c25-bb8c-0af305d54aa6  [fight_alt]
-  Daniel Spohn vs Angel DeAnda  @ Season 1, Episode 2 [vesper]
-  https://ufcfightpass.com/video/57438
+fight_id: 412c6b06-b8dd-5bcc-9550-87c44cdcf9bf  [fight]
+  Shinsuke Kamei vs Yusuke Hatakeyama  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979283
 
-fight_id: 9f0e2b89-8903-5357-8088-2ff04a1d7992  [fight_alt]
-  Ricky Simon vs Donavon Frelow  @ Season 1, Episode 5 [vesper]
-  https://ufcfightpass.com/video/57789
+fight_id: 897d9ae8-0c8a-53e0-9497-4514fc5e8712  [fight]
+  Damiano Scogna vs Rony Henrique  @ Cage Warriors 209: Newcastle [vesper]
+  https://ufcfightpass.com/video/979334
 
-fight_id: f3a888b3-c437-5d05-aa87-635519b722ea  [fight_alt]
-  Matt Frevola vs Jose Flores  @ Season 1, Episode 8 [vesper]
-  https://ufcfightpass.com/video/58644
+fight_id: 495ca7e5-a346-564a-86b0-3f9814b7d6b0  [fight]
+  Naoki Hirata vs Isana Morita  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969306
 
-fight_id: b6458d4e-a68a-575f-adea-c998c20cb98b  [fight_alt]
-  Casey Kenney vs C.J. Hamilton  @ Season 1, Episode 2 [vesper]
-  https://ufcfightpass.com/video/58032
+fight_id: a47cfeca-0104-597c-8ec2-7425131351f8  [fight]
+  Kayana La Torre vs Kara Hoad  @ CFFC 155: Cunningham vs. Russell [vesper]
+  https://ufcfightpass.com/video/974936
 
-fight_id: 36d7e4dd-ec79-57f0-9873-5f9c8ef9491c  [fight_alt]
-  Julian Marquez vs Phil Hawes  @ Season 1, Episode 4 [vesper]
-  https://ufcfightpass.com/video/58357
+fight_id: 91a22436-b3b6-5ee3-af0b-f75f1fbb8223  [fight]
+  Fuuto Shimoyama vs Itsuki Miyamoto  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979282
 
-fight_id: e23118ac-bdd6-5981-a6ea-618ee8577c10  [fight_alt]
-  Alonzo Menifield vs Daniel Jolly  @ Season 1, Episode 3 [vesper]
-  https://ufcfightpass.com/video/57802
+fight_id: a23ec11d-981e-5c98-a413-b575afc7cc3c  [fight]
+  Yoshito Itokawa vs Yohei Nada  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969304
 
-fight_id: 7cae1658-dcb0-5706-970c-b287267d5d53  [fight_alt]
-  Cameron Olson vs Karl Reed  @ Season 1, Episode 6 [vesper]
-  https://ufcfightpass.com/video/58152
+fight_id: 8c04eeaf-0bcc-55c7-970c-41831a97f525  [fight]
+  Hiroki Imai vs Hideto Yamaguchi  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969298
 
-fight_id: 2a4bdf41-be58-5de9-9cb0-e0c3f2c9e55d  [fight]
-  Travis Hooke vs Justin Scott  @ KOTC - Outlaws [vesper]
-  https://ufcfightpass.com/video/48264
+fight_id: 815171ac-1edc-5a6c-ac7a-3419b66032e7  [fight]
+  Shay Ingram vs Marin Vetrila  @ Cage Warriors 207: Manchester [vesper]
+  https://ufcfightpass.com/video/974930
 
-fight_id: ce0f49a3-58bd-52de-bd56-14742948c49d  [fight_alt]
-  Karl Roberson vs Ryan Spann  @ Season 1, Episode 3 [vesper]
-  https://ufcfightpass.com/video/58426
+fight_id: eb78f3d2-c98a-5a81-88f5-0d6090cd4fbb  [fight]
+  Egor Kostyuchenko vs Jakob Scheffel  @ CFFC 155: Cunningham vs. Russell [vesper]
+  https://ufcfightpass.com/video/974937
 
-fight_id: 0d4dfa15-21e1-5cdf-9934-2c4d8805058d  [fight_alt]
-  Boston Salmon vs Ricky Turcios  @ Season 1, Episode 1 [vesper]
-  https://ufcfightpass.com/video/57872
+fight_id: f1802c23-8196-579d-b873-788c2e244041  [fight]
+  Yusuke Kasuya vs Daichi Kamiya  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979290
 
-fight_id: 18f2e0bb-20eb-5fff-916a-2c45a8606092  [fight_alt]
-  Thanh Le vs Lazar Stojadinovic  @ Season 1, Episode 2 [vesper]
-  https://ufcfightpass.com/video/58029
+fight_id: 29b333a1-a4ab-50f3-950d-7289364b5ee9  [fight]
+  Koutarou Musha vs Teppei Kayanuma  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979284
 
-fight_id: f49f1e04-ad86-5b0b-af13-74a04c1ed022  [fight_alt]
-  Jordan Espinosa vs Nick Urso  @ Season 1, Episode 7 [vesper]
-  https://ufcfightpass.com/video/58625
+fight_id: f4bd7c6e-8071-5ffa-b33e-fc33acbe78e4  [fight]
+  Kaisei Ujihara vs Takuei Teraoka  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979287
 
-fight_id: 8d4326ad-b13a-55ff-947a-73b99c78e266  [fight_alt]
-  Geoff Neal vs Chase Waldon  @ Season 1, Episode 3 [vesper]
-  https://ufcfightpass.com/video/58285
+fight_id: 70e3a201-34a5-5bc5-8f86-2df09cdc75ad  [fight]
+  Kaito Kimoto vs Kazuma Mizushima  @ Pancrase - Blood.9 [vesper]
+  https://ufcfightpass.com/video/969291
+
+fight_id: 20c854ac-e09f-5db6-97cb-4eec7ad07c4b  [fight]
+  Otabek Rajabov vs Shosuke Kinoshita  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979289
+
+fight_id: 71c6e28f-a175-5cfb-b238-86c55d0ce8b7  [fight]
+  Yoshiki Nukui vs Yuma Kondo  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979279
+
+fight_id: 9b4d963f-b76e-5a39-b9a8-f7a0ab905b73  [fight]
+  Ryohei Kobayashi vs Taiga Masuda  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969301
+
+fight_id: 3efce5cd-9d5a-5eea-a51d-bc30d0396bf6  [fight]
+  Jake McHugh vs Lorenzo De Nigris  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974911
+
+fight_id: d4b53ada-a397-5c7b-9b7f-450d3f48bfda  [fight]
+  Adam Lynn vs Rick Legere  @ KOTC - Excessive Damage [vesper]
+  https://ufcfightpass.com/video/54033
+
+fight_id: 7cd057cd-e4db-5dc9-8f01-cd69c2659f2a  [fight]
+  Matthew O'Rourke vs Trevor Makengo  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974909
+
+fight_id: c3e5c926-9414-56f6-b8f2-e528c2c83e4f  [fight]
+  Reo Masuda vs Taiga Murakoso  @ Pancrase - 363 [vesper]
+  https://ufcfightpass.com/video/979280
+
+fight_id: e58d19b3-449a-579b-90e5-e6c04d70639d  [fight]
+  Ryo Matsui vs Nahoru Miyagi  @ Pancrase - Blood.9 [vesper]
+  https://ufcfightpass.com/video/969293
+
+fight_id: 41f72720-40b7-524b-97e1-a77412bce848  [fight]
+  Anas Nfaou vs Randy Mboyo  @ Cage Warriors 209: Newcastle [vesper]
+  https://ufcfightpass.com/video/979319
+
+fight_id: f23d8f6f-5b5b-58b5-a6ab-f3582be0913a  [fight]
+  Ollie Sarwa vs Pietro Mochetti  @ Cage Warriors 208: London [vesper]
+  https://ufcfightpass.com/video/979325
+
+fight_id: 100d2652-6cad-5c5f-817c-5ad421b1fb12  [fight]
+  Ryo Yazawa vs Guilherme Nakagawa  @ Pancrase - Blood.9 [vesper]
+  https://ufcfightpass.com/video/969292
+
+fight_id: cf80c52a-9c99-5f88-8c46-324f38823f74  [fight]
+  Yusuf Nazokatov vs Cristiano Oliveira  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974904
+
+fight_id: ff329359-e3f2-5d94-a01f-df7f6d1594ec  [fight]
+  Rafael Tobias vs Jair De Oliveira  @ Contender Series 2025: Week 7 [vesper]
+  https://ufcfightpass.com/video/861879
+
+fight_id: a48acb2f-52bb-5afe-bb53-18bfe7d678fb  [fight]
+  Yoshiki Uematsu vs Shuya Oribe  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969300
+
+fight_id: 64cce83b-41fd-544b-9bfa-2c3e6b38ed6b  [fight]
+  Hiroki Otani vs Sena Seki  @ Pancrase - Blood.10 [vesper]
+  https://ufcfightpass.com/video/969299
+
+fight_id: 71be1f4d-f7b5-5736-afc6-d20652a0fe7c  [fight]
+  Dwight Grant vs Carlo Pedersoli Jr.  @ UFC Fight Night 145 - Blachowicz vs. Santos [vesper]
+  https://ufcfightpass.com/video/96033
+
+fight_id: d3d79f8a-cc8e-5675-a17a-3df8bbcd6aba  [fight]
+  Carlo Pedersoli Jr. vs Brad Scott  @ UFC Fight Night 130 - Thompson vs. Till [vesper]
+  https://ufcfightpass.com/video/64572
+
+fight_id: b89daa96-06b0-5bfa-8dc1-7022f671a366  [fight]
+  Alex Oliveira vs Carlo Pedersoli  @ UFC Fight Night 137 - Santos vs. Anders [vesper]
+  https://ufcfightpass.com/video/64564
+
+fight_id: e07f5ef5-b164-52b6-a911-bd9351ad39f3  [fight]
+  Kevin Robeldo vs Stiven Shehu  @ Cage Warriors 206: Unplugged [vesper]
+  https://ufcfightpass.com/video/974912
 
 
-UNMATCHED EPISODES (38)
+UNMATCHED EPISODES (11)
 ----------------------------------------------------------------------
-  vod=31560  'UFC: The Ultimate Ultimate'
-  vod=32069  'UFC: The Ultimate Ultimate 2'
-  vod=31104  'UFC Japan: Ultimate Japan'
-  vod=30855  'UFC Brazil: Ultimate Brazil'
-  vod=348916  'TUF 1 Finale: TUF 1 Finale'
-  vod=349916  'TUF 4: The Comeback Finale'
-  vod=31562  'TUF 6 Finale: TUF 6 Finale'
-  vod=29633  'Fight for the Troops: Kennedy vs Natal'
-  vod=36965  'The Ultimate Fighter Latin America 2 Finale: Magny vs Gastelum'
-  vod=40791  'TUF 23 Finale: Team Joanna vs Team Claudia'
-  vod=56165  'TUF Redemption: Johnson vs Gaethje'
-  vod=253989  'Recargado UFC 257: Poirier vs McGregor'
-  vod=375427  'EUFC Fight Night: Volkov vs Rozenstruik'
-  vod=527560  'Noche UFC: Grasso vs Shevchenko 2'
-  vod=521127  'Noche UFC: Grasso vs Shevchenko 2 Prelims'
-  vod=463244  'UFC Vegas 70 Prelims'
-  vod=687502  'Noche UFC 306: Prelims'
-  vod=687435  'Noche UFC 306: Fight Pass Prelims'
-  vod=598520  'UFC México: Moreno vs Royval 2 Prelims'
-  vod=884734  'VeChain UFC 322: Della Maddalena vs Makhachev'
-  vod=884654  'VeChain UFC 322: Prelims'
-  vod=884608  'VeChain UFC 322: Fight Pass Prelims'
-  vod=857720  'Noche UFC: Lopes vs Silva'
-  vod=857634  'Noche UFC: Lopes vs Silva Prelims'
-  vod=807998  'UFC Vegas 107'
-  vod=807893  'UFC Vegas 107 Prelims'
-  vod=936152  'UFC Fight Night: Evloev vs Murphy Prelims'
   vod=32429  'PRIDE: Grand Prix 2000 Finals'
   vod=33328  'PRIDE: Grand Prix 2000 Opening Round'
   vod=31435  'PRIDE 8'
@@ -157,11 +206,9 @@ UNMATCHED EPISODES (38)
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (51)
+UNMATCHED PER-FIGHT VODs (39)
 ----------------------------------------------------------------------
   vod=857629  'Jose Medina vs Dusko Todorovic Noche UFC'  — no DB fight for this pair
-  vod=844846  'Alibi Idris vs Joseph Morales UFC 319'  — fighter not in DB
-  vod=810687  'Merab Dvalishvili vs Sean O’Malley UFC 316'  — fighter not in DB
   vod=801800  'Park Hyun-sung vs Carlos Hernandez UFC Vegas 106'  — fighter not in DB
   vod=782601  'Cortavious Romious vs Lee Chang-ho UFC Vegas 105'  — fighter not in DB
   vod=776559  'Carlos Ulberg vs Jan Błachowicz UFC London'  — fighter not in DB
@@ -170,39 +217,29 @@ UNMATCHED PER-FIGHT VODs (51)
   vod=723991  'Su Young You vs Balgyn Jenisuly UFC Macau'  — fighter not in DB
   vod=718787  'Melissa Mullins vs Klaudia Syguła UFC Vegas 100'  — fighter not in DB
   vod=685033  'Rong Zhu vs Chris Padilla UFC Vegas 97'  — no DB fight for this pair
-  vod=619429  'Michel Pereira vs Ihor Poteria UFC 301'  — fighter not in DB
   vod=597901  'Gerald Meerschaert vs Bryan Barbarena UFC Vegas 88'  — fighter not in DB
   vod=588869  'Brandon Moreno vs Brandon Royval UFC México'  — 2 candidates; hint='UFC México'
   vod=588862  'Yair Rodriguez vs Brian Ortega UFC México'  — 2 candidates; hint='UFC México'
   vod=588789  'Edgar Chairez vs Daniel Lacerda UFC México'  — 2 candidates; hint='UFC México'
   vod=579997  'Lee Jeong Yeong vs Blake Bilder UFC Vegas 85'  — fighter not in DB
   vod=557972  'Rayanne Amanda vs Talita Alencar UFC Vegas 83'  — fighter not in DB
-  vod=545241  'Matt Frevola vs Benoit Saint-Denis UFC 295'  — fighter not in DB
-  vod=545179  'John Castaneda vs Kang Kyung-ho UFC 295'  — fighter not in DB
   vod=532649  'Irina Alekseeva vs Melissa Dixon UFC Vegas 81'  — no DB fight for this pair
   vod=521107  'Edgar Chairez vs Daniel Lacerda Noche UFC'  — 2 candidates; hint='Noche UFC'
   vod=516488  'Ciryl Gane vs Sergey Spivak UFC Paris'  — fighter not in DB
   vod=516465  'Benoit Saint-Denis vs Thiago Moises UFC Paris'  — fighter not in DB
-  vod=508327  'Khalil Rountree Jr vs Chris Daukaus UFC Vegas 78'  — fighter not in DB
   vod=508267  'Jaqueline Amorim vs Montserrat Conejo UFC Vegas 78'  — fighter not in DB
   vod=503916  'Alex Pereira vs Jan Błachowicz UFC 291'  — fighter not in DB
-  vod=475244  'Kron Garcie vs Charles Jourdain UFC 288'  — fighter not in DB
   vod=469561  'Brady Hiesand vs Batgerel Danaa UFC Vegas 71'  — fighter not in DB
-  vod=455806  'Yanal Ashmoz vs Sam Patterson UFC 286'  — fighter not in DB
   vod=446246  'Jamall Emmers vs Khusein Ashkabov UFC Vegas 69'  — fighter not in DB
-  vod=444001  'Loma Lookboonme vs Elise Reed UFC 284'  — fighter not in DB
   vod=441909  'Devin Clark vs Jung Da Un UFC Vegas 68'  — fighter not in DB
   vod=441862  'Park Hyun-sung vs Choi Seung-guk UFC Vegas 68'  — fighter not in DB
   vod=29817  'Junior Dos Santos vs. Cain Velasquez UFC Fight Night'  — 3 candidates; hint='UFC Fight Night'
   vod=167859  'Dominick Reyes vs Jan Błachowicz UFC 253'  — fighter not in DB
-  vod=41135  'Rafael Dos Anjos vs Donald Cerrone II UFC Fight Night'  — no DB fight for this pair
-  vod=810687  'Merab Dvalishvili vs Sean O’Malley UFC 316'  — fighter not in DB
   vod=41937  'TJ Dillashaw vs Renan Barao UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
   vod=30558  'Dominick Cruz vs. Scott Jorgensen WEC 53'  — no DB fight for this pair
   vod=157136  'Deiveson Figueiredo vs Joseph Benavidez UFC Fight Island 2'  — 2 candidates; hint='UFC Fight Island 2'
   vod=31520  'Demetrious Johnson vs. John Dodson UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
   vod=31119  'Demetrious Johnson vs. Joseph Benavidez UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
-  vod=30919  'Fedor Emelianenko vs. Mark Coleman II PRIDE 32 The Real Deal'  — no DB fight for this pair
   vod=32360  'Nobuhiko Takada vs Mark Colemann PRIDE 5'  — fighter not in DB
   vod=28837  'Forrest Griffin vs Mauricio Rua UFC 76'  — no DB fight for this pair
   vod=29659  'Mauricio Rua vs. Forrest Griffin UFC 134'  — no DB fight for this pair
