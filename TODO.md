@@ -92,8 +92,9 @@ Incorporate every org with content on Fight Pass into the DB. Two halves:
 ### Other orgs worth evaluating
 Once the fighter-page scraper (Phase 2) lands, explicit org configs matter much
 less — fighter pages pull in every org anyway. Still useful for events/video:
-- **ONE Championship**, **KSW**, **Cage Warriors**, **Invicta FC**, **RIZIN**
-  — all on Sherdog; add as `SHERDOG_ORGS` entries if event-level coverage wanted.
+- ~~**ONE Championship**~~ (done 2026-07-10 — Sherdog `One-Championship-3877`,
+  video via YouTube), ~~**Cage Warriors**, **Invicta FC**, **RIZIN**~~ (all
+  done). Still open: **KSW** (Sherdog-only — paywalled video), **Oktagon**.
 
 ### Fight Pass × Sherdog org expansion roadmap
 
@@ -161,6 +162,25 @@ Deferred (real FP content, marginal value): Gladiator Challenge (~700 events,
 legacy VODs only), HookNShoot (single Bodog tournament), Battlefield Fight
 League, Urban Warfare.
 
+#### DONE — 2026-07-10 YouTube-video wave (2 orgs)
+Orgs with **no Fight Pass content but a reliable official YouTube channel** —
+wired to `SHERDOG_ORGS` (records) + `CHANNELS` in `youtube_scraper.py` (video),
+not Fight Pass. Both `active: True`:
+- **ONE Championship** (Sherdog `One-Championship-3877`, 400+ events) — slug key
+  `one-championship-`, name strips "One Championship - " prefix. YouTube channel
+  `UCiormkBf3jm6mfb7k0yPbKA`; full fights in event-named "... Full Fights"
+  playlists. MMA-only (Sherdog skips ONE's Muay Thai/kickboxing/grappling).
+- **Brave CF** (Sherdog `Brave-Combat-Federation-11227`, ~107 events) — slug key
+  `brave-cf-`, name strips "- Brave Combat Federation ..." suffix. YouTube
+  channel `UCos8j6dB44G_nlNpdJdP8SQ`; "FREE FULL FIGHTS" + per-event playlists.
+
+Run once after deploy: `python sherdog_scraper.py --all` (backfill records) then
+`python youtube_scraper.py --push` (attach videos). Note: ONE/Brave post
+per-fight full fights only on YouTube — their full events are paywalled
+(Prime Video / BRAVE TV), so no event-level YouTube URLs for them today. The
+full-event matcher is now org-agnostic (see Video sources) and will pick them
+up automatically if that ever changes.
+
 #### Tier 3 — resolved 2026-07-08
 - **Titan FC** — done earlier (Sherdog 740).
 - **XFN**, **JCK** — done (see above).
@@ -173,9 +193,10 @@ League, Urban Warfare.
 #### Skip — confirmed not on Fight Pass
 *(Vesper returns 0 or only noise. Content lives elsewhere; revisit if scope changes.)*
 - **KSW** (Polish — DAZN) — vesper 0 results
-- **RIZIN** (Japanese — own platform) — vesper 0 results
+- **RIZIN** (Japanese — own platform) — vesper 0 results; video via YouTube instead
 - **BAMMA** (defunct) — vesper 0 results
-- **ONE Championship** (own streaming) — vesper hits only namesakes
+- **ONE Championship** (own streaming) — vesper hits only namesakes; **added
+  2026-07-10 via YouTube instead** (see YouTube-video wave above)
 - **Bellator** (PFL/DAZN now) — vesper hits only namesakes
 - **Sengoku, DREAM, IFL** — vesper hits unrelated content
 - **DEEP, M-1 Global, Combate Global** — re-probed 2026-07-08, noise only
@@ -222,8 +243,37 @@ For each org we add:
   `catch_weight_lbs` column from the target schema; current DB doesn't have it.
 
 ## Video sources
-- Generalize the YouTube scraper's channels beyond the PFL channel (it already
-  covers PFL+Bellator+WSOF; ONE/KSW/etc. have their own channels).
+- ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
+  2026-07-10:** `CHANNELS` in `youtube_scraper.py` now covers PFL (+Bellator/
+  WSOF), RIZIN, ONE Championship, and Brave CF. Adding an org's channel = one
+  `CHANNELS` entry — nothing else to configure.
+- ~~Full-event matching is PFL-only.~~ **DONE 2026-07-10:** `match_full_event`
+  is now org-agnostic (no promotion name hard-coded) and runs for every channel;
+  it also fixed a latent PFL bug — the old `^YYYY PFL <key>` regex silently
+  dropped PFL's newer regional names ("2026 MENA: PFL Riyadh", "2026 PFL Africa:
+  Nigeria"). Highlights/recaps/promos are rejected (`_NOT_FULL_EVENT`). Roman
+  numerals (II–X) fold to arabic and an exact name-token tier splits themed
+  siblings ("Fists of Fury" vs "Fists of Fury 2"). Full-event videos embedded
+  inside per-fight playlists are now routed to the event matcher instead of
+  PARSE_FAILing (`_is_full_event_title`), plus the bounded uploads scan.
+- **ONE full events ARE on YouTube but US-geo-blocked (2026-07-10).** ONE files
+  themed full-event replays inside its 'Full Fights' playlists (Fists of Fury,
+  Unbreakable, Collision Course, Big Bang, Inside the Matrix — 14 videos). The
+  matcher now resolves all 14 to the exact event, but ONE sets
+  `regionRestriction.blocked = [AT,CH,DE,IN,JP,NZ,US]`, so with `COUNTRY='US'`
+  they're matched then dropped — 0 stored for a US audience. (8 of PFL's newer
+  full events are US-blocked the same way.) This is the free-YouTube answer to
+  the skipped Prime Video crawler: the content exists, but ONE blocks the US.
+- KSW/Oktagon remain unwired (paywalled — no free channel).
+- **Prime Video / watch.onefc.com — evaluated & skipped (2026-07-10).** ONE's
+  full-event replays live on Amazon Prime Video (US-only, subscription) and
+  ONE's own OTT. Neither is reliably crawlable: the Amazon ONE tournament page
+  server-rendered event titles once, then returned a stripped JS-only shell on
+  0/5 retries (fingerprints + throttles bots; catalog is session-gated ajax);
+  watch.onefc.com is a Next.js app whose SSR carries no catalog — content sits
+  behind an auth-gated client API. Both would store paywalled, geo-locked links
+  (lower value than the free ONE YouTube per-fight coverage already wired). Not
+  worth a crawler; revisit only if a public/free endpoint appears.
 - Per source, note free vs. paywalled.
 
 ## Ground rules (carried over from prior decisions)

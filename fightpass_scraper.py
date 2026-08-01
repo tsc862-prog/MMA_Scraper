@@ -659,7 +659,9 @@ _EVENT_PREFIX = (
     # into fighter B's name. Multi-word forms before their short aliases.
     r"(?:Urijah\s+Faber['’]s\s+)?A-?1\s+Combat|"
     r"(?:Jorge\s+Masvidal['’]s\s+)?iKON(?:\s+FC)?|"
-    r'Eternal\s+MMA|Ares\s+FC|UAE\s+Warriors|Lux\s+Fight\s+League|'
+    # Ares: Fight Pass titles older cards "Ares 25" but newer ones "Ares FC 42"
+    # (Sherdog/DB always uses the no-FC form). Make FC optional so both parse.
+    r'Eternal\s+MMA|Ares(?:\s+FC)?|UAE\s+Warriors|Lux\s+Fight\s+League|'
     r'Anthony\s+Pettis\s+FC|APFC|JCK(?:\s+MMA)?|Legacy\s+FC|'
     r'CES(?:\s+MMA)?|UWC|XFN|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'

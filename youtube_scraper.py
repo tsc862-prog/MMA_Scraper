@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """
 youtube_scraper.py
-Matches full-fight videos from the official PFL YouTube channel to fights in
-Supabase. The PFL channel covers PFL, Bellator and WSOF (PFL absorbed both).
+Matches full-fight videos from official promotion YouTube channels to fights in
+Supabase. Each channel in CHANNELS covers one or more DB orgs:
+  - PFL channel   → PFL, Bellator, WSOF (PFL absorbed both); full-event uploads
+  - RIZIN channel → RIZIN (per-fight only)
+  - ONE channel   → ONE Championship (per-fight, MMA bouts only)
+  - BRAVE channel → Brave CF (per-fight)
 Stores the video URL in fights.youtube_url (per fight) and events.youtube_url
-(full-event videos).
+(full-event videos). The full-event matcher is org-agnostic — any channel that
+posts '... Full Event' uploads gets matched; today only PFL does on YouTube
+(ONE/Brave post full events on their own paywalled platforms).
 
 Uses the YouTube Data API v3 — set YOUTUBE_API_KEY in .env.
 
@@ -35,24 +41,53 @@ SUPABASE_KEY    = os.environ.get('SUPABASE_KEY', '')
 YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY', '')
 
 # Each channel covers one or more DB organizations. Adding a new promotion's
-# official YouTube channel = appending an entry here.
-#   has_full_event_uploads — True for channels that upload '... | Full Event'
-#                            videos (PFL does this; RIZIN only uploads per-fight).
+# official YouTube channel = appending an entry here. Every channel gets both
+# passes: per-fight ('full fight' playlists) and full-event (recent uploads
+# whose title carries a 'full event' marker — org-agnostic, see
+# match_full_event). Channels that only post per-fight simply yield no
+# full-event matches; nothing to configure per channel.
 CHANNELS = [
     {
+        # PFL — posts full-event uploads as 'YYYY [<region>:] PFL <city> |
+        # Full Event' (e.g. '2026 MENA: PFL Riyadh', '2026 PFL Africa: Nigeria').
         'name':       'PFL',
         'channel_id': 'UCPrONRG9hO1f-OrxW-WH-xg',
         'orgs':       ['PFL', 'Bellator', 'WSOF'],
-        'has_full_event_uploads': True,
     },
     {
         # RIZIN Fighting Federation. Title format on per-fight uploads is
         #   'Full Fight | <Japanese> vs. <Japanese> / Romanized A vs. Romanized B - YYYY/M/D RIZIN LANDMARK XX'
         # — needs '/' added as a segment delimiter in parse_fight_candidates.
+        # Per-fight only; no full-event uploads.
         'name':       'RIZIN',
         'channel_id': 'UCZZ0UGjWsRdM8_5bsqtxYaQ',
         'orgs':       ['RIZIN'],
-        'has_full_event_uploads': False,
+    },
+    {
+        # ONE Championship. Full fights live in a handful of event-named
+        # playlists ('ONE: FISTS OF FURY Full Fights', ...). Per-fight titles:
+        # '<flag> Superlek vs. <flag> Takeru | Full Fight' — flags/CJK are
+        # stripped by the non-ASCII pass in parse_fight_candidates. Muay
+        # Thai/kickboxing bouts don't resolve against the MMA fighter DB and
+        # drop out as unmatched (expected — Sherdog indexes only ONE's MMA).
+        # ONE DOES post themed full-event replays inside its 'Full Fights'
+        # playlists (e.g. 'ONE Championship: FISTS OF FURY | Full Event') and the
+        # matcher resolves all of them — but ONE geo-blocks them out of the US
+        # (regionRestriction.blocked includes US), so with COUNTRY='US' they're
+        # matched then dropped by the geo pass. Nothing stored for a US audience;
+        # auto-stores if COUNTRY changes or ONE lifts the block.
+        'name':       'ONE',
+        'channel_id': 'UCiormkBf3jm6mfb7k0yPbKA',
+        'orgs':       ['ONE Championship'],
+    },
+    {
+        # BRAVE CF. Full fights collected in a 'FREE FULL FIGHTS' compilation
+        # plus per-event 'Full Fight Coverage' playlists. Full events live on
+        # paywalled BRAVE TV — YouTube only carries highlights/recaps, which the
+        # full-event matcher rejects (see _NOT_FULL_EVENT).
+        'name':       'Brave CF',
+        'channel_id': 'UCos8j6dB44G_nlNpdJdP8SQ',
+        'orgs':       ['Brave CF'],
     },
 ]
 YT_API         = 'https://www.googleapis.com/youtube/v3'
@@ -148,21 +183,33 @@ def get_playlist_videos(playlist_id):
             videos.append((vid, sn['title']))
     return videos
 
-def get_full_event_videos(channel_id):
+def get_full_event_videos(channel_id, max_pages=8):
     """
-    Scan a channel's uploads for '... | Full Event' videos.
+    Scan a channel's most-recent uploads for '... full event' videos.
     Returns (video_id, title) tuples.
+
+    Bounded to `max_pages` × 50 = 400 recent uploads: new full events surface at
+    the top of the feed and older ones were captured (and stored) by prior runs,
+    so a bounded scan keeps this cheap on channels with huge back catalogues
+    (ONE, Brave) without losing coverage on channels that do post them (PFL).
     """
     uploads_playlist = 'UU' + channel_id[2:]   # uploads playlist id
-    out = []
-    for item in yt_paginated('playlistItems', {
-        'part': 'snippet', 'playlistId': uploads_playlist, 'maxResults': 50,
-    }):
-        sn = item['snippet']
-        title = sn.get('title', '')
-        vid = sn.get('resourceId', {}).get('videoId')
-        if vid and re.search(r'\bfull event\b', title, re.IGNORECASE):
-            out.append((vid, title))
+    out, page_token, pages = [], None, 0
+    while pages < max_pages:
+        data = yt_get('playlistItems', {
+            'part': 'snippet', 'playlistId': uploads_playlist, 'maxResults': 50,
+            **({'pageToken': page_token} if page_token else {}),
+        })
+        pages += 1
+        for item in data.get('items', []):
+            sn = item['snippet']
+            title = sn.get('title', '')
+            vid = sn.get('resourceId', {}).get('videoId')
+            if vid and _is_full_event_title(title):
+                out.append((vid, title))
+        page_token = data.get('nextPageToken')
+        if not page_token:
+            break
     return out
 
 def _viewable(region_restriction, country):
@@ -329,42 +376,103 @@ def find_fight(name_a, name_b, event_hint, lookups):
 
     return None, f'ambiguous ({len(candidates)} fights): {name_a} vs {name_b}'
 
+# Markers that identify a highlights / recap / promo clip rather than a genuine
+# full-event upload. A title like 'BRAVE 100 ... | Full Event Highlights' carries
+# 'full event' but is NOT one — reject it so it never attaches to an event.
+_NOT_FULL_EVENT = re.compile(
+    r'\b(highlights?|recap|vlog|preview|promo|trailer|teaser)\b', re.IGNORECASE)
+
+# Roman numerals 2-10 → arabic. ONE files its themed cards as 'FISTS OF FURY II'
+# on YouTube but 'Fists of Fury 2' on Sherdog; the numeral is often the only
+# thing separating an event from its sibling, so it must survive tokenization.
+# 'i' (=1) is deliberately omitted — a lone 'i' is too collision-prone and a
+# base event has no number anyway ('Fists of Fury', not 'Fists of Fury 1').
+_ROMAN = {'ii': '2', 'iii': '3', 'iv': '4', 'v': '5', 'vi': '6',
+          'vii': '7', 'viii': '8', 'ix': '9', 'x': '10'}
+
+def _is_full_event_title(title):
+    """A video that is a full event replay ('... | Full Event') rather than a
+    single bout. ONE files these inside its per-fight playlists; PFL posts them
+    to its uploads feed. Both routes send such titles to match_full_event."""
+    return bool(re.search(r'\bfull event\b', title, re.IGNORECASE))
+
+def _sig_tokens(text):
+    """Significant tokens: alpha words >2 chars + standalone numbers, with
+    roman numerals (II–X) folded to arabic so 'FISTS OF FURY II' and
+    'Fists of Fury 2' produce the same token set."""
+    out = []
+    for t in re.split(r'[^a-z0-9]+', text.lower()):
+        t = _ROMAN.get(t, t)
+        if (t.isalpha() and len(t) > 2) or t.isdigit():
+            out.append(t)
+    return out
+
 def match_full_event(title, events):
     """
-    Match a '... | Full Event' video title to a PFL event.
-    Handles the consistent recent format "[YEAR] PFL <KEY> | Full Event",
-    matching KEY tokens against the event name + location.
+    Match a '... full event' video title to one of `events` (already scoped to
+    the video's channel orgs). Org-agnostic — no promotion name is hard-coded.
+
+    Strip the 'full event' marker, @collab handles and parentheticals, drop the
+    year (if any), and tokenize (see _sig_tokens). The event's own organization
+    name is treated as implied — its tokens ('one', 'championship', 'pfl') don't
+    have to appear in the video title — because events are already org-scoped.
+    Match tiers, strongest first:
+      1. exact  — video's non-org tokens == event's non-org name tokens. Needed
+                  to split themed siblings ('Fists of Fury' vs 'Fists of Fury 2';
+                  a base card must not also match its numbered follow-ups).
+      2. name   — every video token is in the event name.
+      3. name+location — every video token is in name OR location.
+
+    Handles both PFL's regional uploads and ONE's themed playlist full events:
+      "2026 PFL San Diego | Full Event"                 -> PFL San Diego
+      "2026 MENA: PFL Riyadh | Full Event"              -> PFL MENA (in Riyadh)
+      "ONE Championship: FISTS OF FURY | Full Event"    -> Fists of Fury
+      "ONE Championship: FISTS OF FURY II | Full Event" -> Fists of Fury 2
     Returns (event, reason).
     """
-    m = re.match(r'^\s*(\d{4})\s+PFL\s+(.+?)\s*\|\s*full event', title, re.IGNORECASE)
-    if not m:
-        return None, 'unrecognized title format'
-    year, key = m.group(1), m.group(2)
-    tokens = [t for t in re.split(r'[^a-z0-9]+', key.lower()) if len(t) > 2]
-    if not tokens:
+    if _NOT_FULL_EVENT.search(title):
+        return None, 'not a full event (highlights/recap/promo)'
+
+    key = re.split(r'\|?\s*full event\b', title, maxsplit=1, flags=re.IGNORECASE)[0]
+    key = re.sub(r'@\S+', ' ', key)          # drop @collab handles
+    key = re.sub(r'\([^)]*\)', ' ', key)     # drop parentheticals
+    ym = re.search(r'\b(?:19|20)\d{2}\b', key)
+    year = ym.group(0) if ym else None
+    if year:
+        key = key.replace(year, ' ')
+    vid = set(_sig_tokens(key))
+    if not vid:
         return None, 'no key tokens'
 
-    hits = []          # token matched in name OR location
-    name_hits = []     # token matched in event name alone
+    exact, name_hits, hits = [], [], []
     for e in events:
-        if year not in (e.get('date') or ''):
+        if year and year not in (e.get('date') or ''):
             continue
-        name_words = set(re.split(r'[^a-z0-9]+', e['name'].lower()))
-        loc_words  = set(re.split(r'[^a-z0-9]+', (e.get('location') or '').lower()))
-        full = name_words | loc_words
-        if all(tok in full for tok in tokens):
-            hits.append(e)
-        if all(tok in name_words for tok in tokens):
+        org  = set(re.split(r'[^a-z0-9]+', (e.get('organization') or '').lower()))
+        name = set(_sig_tokens(e['name']))
+        loc  = set(re.split(r'[^a-z0-9]+', (e.get('location') or '').lower()))
+        v = vid - org          # org name is implied by scope — don't require it
+        if not v:
+            continue
+        if v == (name - org):
+            exact.append(e)
+        if v <= name:
             name_hits.append(e)
+        if v <= (name | loc):
+            hits.append(e)
 
-    # A name match is stronger than a location-only match.
+    label = f'{year or "any"} / {"+".join(sorted(vid))}'
+    if len(exact) == 1:
+        return exact[0], 'matched (exact)'
     if len(name_hits) == 1:
         return name_hits[0], 'matched'
     if len(hits) == 1:
         return hits[0], 'matched'
+    if exact:
+        return None, f'ambiguous exact ({len(exact)}): {label}'
     if not hits:
-        return None, f'no event ({year} / {"+".join(tokens)})'
-    return None, f'ambiguous ({len(hits)} events: {year} / {"+".join(tokens)})'
+        return None, f'no event ({label})'
+    return None, f'ambiguous ({len(hits)} events: {label})'
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
@@ -384,11 +492,28 @@ def main(push=False):
     seen_fight = set()
     seen_event = set()
 
+    def record_full_event(vid, vtitle, events):
+        """Match a '... Full Event' video to one of `events` and record it,
+        deduped by event. Used from both the playlist scan (ONE files full
+        events inside per-fight playlists) and the uploads scan (PFL)."""
+        url = VIDEO_URL_TMPL.format(vid)
+        event, reason = match_full_event(vtitle, events)
+        if not event:
+            ev_unmatched.append((reason, vtitle, url))
+            return
+        if event['id'] in seen_event:
+            return
+        seen_event.add(event['id'])
+        ev_matched.append({
+            'event_id': event['id'], 'event_name': event['name'],
+            'video_title': vtitle, 'url': url, 'video_id': vid,
+        })
+
     # Walk each channel independently — its DB scope is the events for its
     # orgs (e.g. PFL channel only matches PFL/Bellator/WSOF events).
     for ch in CHANNELS:
         org_filter = ','.join(ch['orgs'])
-        events = fetch_all('events', 'id,name,date,location',
+        events = fetch_all('events', 'id,name,date,location,organization',
                            f'&organization=in.({org_filter})')
         channel_event_ids = {e['id'] for e in events}
         channel_fights = [f for f in all_fights if f['event_id'] in channel_event_ids]
@@ -409,6 +534,13 @@ def main(push=False):
             print(f'    [{pl["title"]}] — {len(videos)} videos')
             for vid, vtitle in videos:
                 url = VIDEO_URL_TMPL.format(vid)
+                # A playlist can hold event replays alongside single bouts
+                # (ONE's themed 'Full Fights' playlists include a '... | Full
+                # Event' video). Route those to the full-event matcher, not the
+                # A-vs-B parser (which would just PARSE_FAIL on them).
+                if _is_full_event_title(vtitle):
+                    record_full_event(vid, vtitle, events)
+                    continue
                 cand_pairs = parse_fight_candidates(vtitle)
                 if not cand_pairs:
                     unmatched.append(('PARSE_FAIL', vtitle, url))
@@ -435,24 +567,13 @@ def main(push=False):
                 else:
                     unmatched.append((reason, vtitle, url))
 
-        # Full-event pass — only channels that upload that style of video
-        if ch['has_full_event_uploads']:
-            print(f'  Scanning {ch["name"]} uploads for "Full Event" videos...')
-            fe_videos = get_full_event_videos(ch['channel_id'])
-            print(f'    {len(fe_videos)} full-event videos found')
-            for vid, vtitle in fe_videos:
-                url = VIDEO_URL_TMPL.format(vid)
-                event, reason = match_full_event(vtitle, events)
-                if event:
-                    if event['id'] in seen_event:
-                        continue
-                    seen_event.add(event['id'])
-                    ev_matched.append({
-                        'event_id': event['id'], 'event_name': event['name'],
-                        'video_title': vtitle, 'url': url, 'video_id': vid,
-                    })
-                else:
-                    ev_unmatched.append((reason, vtitle, url))
+        # Full-event pass — runs for every channel; org-agnostic matcher, so
+        # channels that don't post full events simply yield nothing.
+        print(f'  Scanning {ch["name"]} recent uploads for "Full Event" videos...')
+        fe_videos = get_full_event_videos(ch['channel_id'])
+        print(f'    {len(fe_videos)} full-event candidate videos found')
+        for vid, vtitle in fe_videos:
+            record_full_event(vid, vtitle, events)
 
     # 'events' is per-channel above; for the geo-block + write-file passes
     # below we use a unified event_by_id keyed off matched results.
@@ -471,7 +592,7 @@ def main(push=False):
 
     # ── Write review file ─────────────────────────────────────────────────────
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as out:
-        out.write('YOUTUBE PFL MATCH RESULTS\n')
+        out.write('YOUTUBE MATCH RESULTS\n')
         out.write(f'Fights  — matched: {len(matched)}  unmatched: {len(unmatched)}\n')
         out.write(f'Events  — matched: {len(ev_matched)}  unmatched: {len(ev_unmatched)}\n')
         out.write(f'Geo-blocked in {COUNTRY} (not stored): '

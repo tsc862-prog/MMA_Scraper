@@ -43,7 +43,7 @@ dispatch via `if: github.event.schedule == '30 7 * * *' || github.event_name == 
 | Propagate genders | `gender_propagate.py --apply` | daily / manual | Cheap, no-API opponent-graph propagation: pro MMA is gender-segregated, so each fight-graph component is single-gender — seed from checked fighters and propagate to unchecked ones, auto-resolving the matching gender review items. Runs after the Wikidata pass so it uses its fresh seeds. |
 | Email digest | `review_email.py` | daily / manual | Emails the pending `review_queue` via Gmail SMTP with one-click resolve links (Supabase edge function). |
 | ESPN PFL videos | `espn_pfl_scraper.py --push` | daily / manual | Matches PFL event replays from ESPN's Watch API into `events.espn_url`. |
-| YouTube videos | `youtube_scraper.py --push` | daily / manual | Matches full-fight/event videos from the official PFL channel (covers PFL/Bellator/WSOF) into `fights.youtube_url` / `events.youtube_url`. |
+| YouTube videos | `youtube_scraper.py --push` | daily / manual | Matches full-fight/event videos from official promotion channels — PFL (PFL/Bellator/WSOF, full events), RIZIN, ONE Championship, and Brave CF (per-fight) — into `fights.youtube_url` / `events.youtube_url`. |
 | Flag amateur fights | `amateur_scraper.py --orgs "…" --limit 2000` | daily / manual | Flags amateur bouts on otherwise-pro regional cards by reading Sherdog fighter pages; incremental via `amateur_checked.txt`. |
 | Save trackers | inline git | **every** trigger | Commits updated state files back to `main` (see below). |
 

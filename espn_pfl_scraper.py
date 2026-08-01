@@ -126,6 +126,22 @@ def parse_catalog_item(item):
     if not cid:
         return None
 
+    # The catalog item is a *listing* wrapper; the playable replay lives in
+    # streams[]. The ESPN watch player needs the STREAM id, which often differs
+    # from the listing id (e.g. an English Main-Card listing whose on-demand
+    # replay stream carries a different guid) — using the listing id yields a
+    # link that doesn't resolve. Among primary streams, prefer the on-demand
+    # 'online' replay over the 'linear' live-channel simulcast (the linear id
+    # points at the live feed, not the VOD); break ties by longest duration.
+    # Fall back to the listing id if the item carries no streams.
+    streams = item.get('streams') or []
+    primary = [s for s in streams if s.get('tier') == 'primary'] or streams
+    def _stream_rank(s):
+        is_linear = (s.get('source') or {}).get('type') == 'linear'
+        return (1 if is_linear else 0, -(s.get('durationInSeconds') or 0))
+    stream = min(primary, key=_stream_rank) if primary else None
+    watch_id = (stream or {}).get('id') or cid
+
     espn_date = None
     utc = item.get('utc')
     if utc:
@@ -139,7 +155,7 @@ def parse_catalog_item(item):
         'variant':    variant,
         'is_spanish': is_spanish,
         'date':       espn_date,
-        'watch_url':  WATCH_URL_TMPL.format(cid),
+        'watch_url':  WATCH_URL_TMPL.format(watch_id),
     }
 
 
@@ -150,7 +166,10 @@ def variant_slot(variant):
 # ── Matching ──────────────────────────────────────────────────────────────────
 
 def parse_db_date(date_str):
-    for fmt in ('%B %d, %Y', '%b %d, %Y'):
+    # Supabase returns ISO dates ('2026-07-25'); the '%B %d, %Y' forms are kept
+    # for any legacy free-text dates. ISO must be first — without it this
+    # returned None for every event, silently disabling all date logic below.
+    for fmt in ('%Y-%m-%d', '%B %d, %Y', '%b %d, %Y'):
         try:
             return datetime.strptime(date_str, fmt).date()
         except (ValueError, TypeError):
@@ -193,6 +212,17 @@ def main(push=False):
         # DB event name starts with the ESPN base name ("PFL Chicago" ⊂
         # "PFL Chicago: Pettis vs. McKee").
         candidates = [e for e in db_events if e['name'].lower().startswith(base)]
+
+        # Fallback for city-name form mismatches: ESPN abbreviates some cities
+        # differently than Sherdog (ESPN "PFL D.C." vs Sherdog "PFL Washington
+        # D.C.: Jean vs. Rodriguez"), so the name prefix doesn't line up. PFL
+        # runs at most one card per day, so match by air date instead — a PFL
+        # event within a day of the ESPN date is the same event. If this yields
+        # more than one it falls through to 'ambiguous' below (never mis-stored).
+        if not candidates and entry['date']:
+            candidates = [e for e in db_events
+                          if parse_db_date(e['date'])
+                          and abs((parse_db_date(e['date']) - entry['date']).days) <= 1]
 
         # Narrow by date when there's more than one
         if len(candidates) > 1 and entry['date']:

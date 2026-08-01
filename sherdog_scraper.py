@@ -424,6 +424,40 @@ SHERDOG_ORGS = [
         'fight_prefix': 'ikonfight',
         'active':       False,
     },
+    # ── 2026-07 YouTube-video wave ────────────────────────────────────────────
+    # Orgs with no Fight Pass content but a reliable official YouTube channel
+    # posting full fights (matched in youtube_scraper.py, RIZIN-style).
+    {
+        # ONE Championship (Singapore, 2011-present). Top-3 global promotion,
+        # 400+ events. Sherdog files every ONE event under this org with slugs
+        # 'One-Championship-...' (Friday Fights, on Prime Video, Samurai, etc.);
+        # the org page also links related PFL/UFC events, excluded by slug key.
+        # Names come as "One Championship - One Friday Fights 161" — strip the
+        # redundant "One Championship - " prefix. ONE cards mix MMA with Muay
+        # Thai/kickboxing/grappling, but Sherdog only indexes the MMA bouts, so
+        # only MMA comes through. Videos via the official ONE YouTube channel.
+        'organization': 'ONE Championship',
+        'org_url':      f'{SHERDOG_BASE}/organizations/One-Championship-3877',
+        'slug_keys':    ('one-championship-',),
+        'name_clean':   (r'^One Championship\s*-\s*', ''),
+        'fight_prefix': 'onefight',
+        'active':       True,
+    },
+    {
+        # Brave Combat Federation (Bahrain, 2016-present). ~107 events across
+        # 38 countries — the 'most global' promotion. Sherdog slugs are
+        # 'Brave-CF-NNN-Brave-Combat-Federation-NNN...' (joint events append
+        # '/ WFC 30', '/ Alash Pride 123', etc.). Names duplicate the abbrev
+        # ("Brave CF 101 - Brave Combat Federation 101") — strip the trailing
+        # "- Brave Combat Federation ..." copy down to "Brave CF 101". Videos
+        # via the official BRAVE CF YouTube channel.
+        'organization': 'Brave CF',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Brave-Combat-Federation-11227',
+        'slug_keys':    ('brave-cf-',),
+        'name_clean':   (r'\s*-\s*Brave\s+Combat\s+Federation.*$', ''),
+        'fight_prefix': 'bravefight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────
