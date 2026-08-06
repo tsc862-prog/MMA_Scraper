@@ -213,6 +213,14 @@ For each org we add:
 3. **Fight Pass event-level URLs** — if the org has a dedicated
    `VOD_PLAYLIST level=event` bucket (PRIDE/SF/WEC pattern), add to
    `PLAYLIST_BUCKETS`. Most Tier 2/3 orgs don't have one — skip.
+   Confirmed 2026-08-06: regional-org full-event replays DO exist but are
+   **completely unindexed** — not in vesper search, not in any browse bucket,
+   isolated in the VOD-id space, titled like the event (e.g. vod 985090
+   'Fury FC 122', 2.5 h). The only way to find them is the `--scan-vods`
+   id scan, which now also event-matches such titles (guarded by a
+   description-date check ±3 days and a ≥1 h duration floor). Some orgs
+   (KOTC, Eternal MMA, UAE Warriors, Invicta, CES, Cage Warriors) also have
+   vesper-indexed replays that `--search-events` finds directly.
 4. **Fight Pass per-fight URLs** — extend `_EVENT_PREFIX` regex in
    `parse_fight_vod_title()` with the org's keyword(s). Currently:
    `(?:UFC|Strikeforce|PRIDE|WEC|Bellator|Noche\s+UFC)`. Need to add (in
@@ -224,6 +232,12 @@ For each org we add:
    Order matters: longer phrases first to avoid premature match.
 5. **Vesper search** — `--search-vesper` already catches per-fight VODs once
    fighters/fights are in DB. Run it once after the Sherdog backfill.
+   For **recent-event gaps** prefer `--search-events` (PASS 5, added
+   2026-08-06): queries vesper by event name instead of fighter last name, so
+   a whole card's clips arrive in one query instead of drowning below the
+   ~20-result cap on common surnames ('King', 'Garcia'). Covers per-fight
+   gaps for events since `--since` (default 2025-01-01) plus event-level
+   replay gaps for UFC/PRIDE/Strikeforce/WEC at any date.
 6. **Brute-force scan** — `--scan-vods` covers the legacy 25k–60k VOD range.
    Already-scanned IDs are skipped via `fightpass_scan_progress.txt`.
    Re-run with a higher `--scan-end` (existing default is 60000; new VODs
