@@ -27,8 +27,9 @@ alter table events add constraint events_organization_id_fkey
 alter table ratings add constraint ratings_fight_id_fkey
   foreign key (fight_id) references fights(id);
 
--- 3. Recreate fight_search (identical to prod; adds nothing new).
-create or replace view fight_search as
+-- 3. Recreate fight_search (matches prod as of 2026-08-06: security_invoker,
+--    is_amateur, and the event-level Fight Pass URL columns).
+create or replace view fight_search with (security_invoker=on) as
  select fi.id, fi.weight_class, fi.is_main, fi.is_title, fi.fight_position,
         fi.fight_position_type,
         f1.id as fighter1_id, f1.name as fighter1_name,
@@ -41,7 +42,9 @@ create or replace view fight_search as
         e.paramount_url as event_paramount_url,
         fi.fighter1_is_debut, fi.fighter2_is_debut,
         e.organization as event_organization,
-        fi.youtube_url, fi.fightpass_url
+        fi.youtube_url, fi.fightpass_url, fi.is_amateur,
+        e.fightpass_url as event_fightpass_url,
+        e.fightpass_prelims_url as event_fightpass_prelims_url
    from fights fi
      join fighters f1 on f1.id = fi.fighter1_id
      join fighters f2 on f2.id = fi.fighter2_id

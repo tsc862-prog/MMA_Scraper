@@ -130,7 +130,10 @@ Scraper items needing a human decision (gender, alias suggestions).
 
 ### fight_search (view)
 Denormalized join of fights + fighters + events + fight_results for
-app/lookup convenience.
+app/lookup convenience. Carries the per-fight video URLs plus the
+event-level ones (`event_paramount_url`, `event_fightpass_url`,
+`event_fightpass_prelims_url`) so the app can fall back to the full-card
+replay when a fight has no dedicated VOD. `security_invoker=on`.
 
 ## Changes from current
 
