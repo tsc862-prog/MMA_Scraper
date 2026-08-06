@@ -56,7 +56,7 @@ Table fights {
   fight_position_type text
   fighter1_rank       int    [note: 'UFC ranking, nullable']
   fighter2_rank       int
-  fighter1_is_debut   boolean [note: 'first fight in that org — computed']
+  fighter1_is_debut   boolean [note: 'first fight in that org — computed; same-date ties go to highest fight_position']
   fighter2_is_debut   boolean
   is_amateur          boolean
   notes               text

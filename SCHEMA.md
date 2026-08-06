@@ -83,7 +83,7 @@ men's or women's division row.
 | fight_position       | int  | 1 = main event |
 | fight_position_type  | text |
 | fighter1_rank / 2    | int  | UFC ranking, nullable |
-| fighter1_is_debut / 2| bool | first fight in that org — computed |
+| fighter1_is_debut / 2| bool | first fight in that org — computed; same-date ties (early UFC tournaments) resolve to the fight lowest on the card (highest fight_position) |
 | is_amateur           | bool | amateur bouts flagged (or excluded entirely) |
 | notes                | text |
 

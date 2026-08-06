@@ -4,21 +4,25 @@
 -- replace it with a date-native version. (delete_orphan_events and
 -- recalculate_womens_divisions were unaffected — prod's originals kept.)
 
+-- Same-date tie-break (2026-08-06): early UFC tournament events have a fighter
+-- appearing multiple times on one card. fight_position 1 = main event, so the
+-- highest fight_position is the bout fought first — that one is the debut. The
+-- old tie-break was fight_id (uuid), which picked an arbitrary fight.
 create or replace function recalculate_debut_flags() returns void language plpgsql as $$
 begin
   with f as (
-    select fi.id as fight_id, fi.fighter1_id, fi.fighter2_id, e.organization, e.date
+    select fi.id as fight_id, fi.fighter1_id, fi.fighter2_id, fi.fight_position, e.organization, e.date
       from fights fi join events e on e.id = fi.event_id
   ),
   long as (
-    select fight_id, fighter1_id as fighter_id, organization, date from f
+    select fight_id, fighter1_id as fighter_id, fight_position, organization, date from f
     union all
-    select fight_id, fighter2_id, organization, date from f
+    select fight_id, fighter2_id, fight_position, organization, date from f
   ),
   ranked as (
     select fight_id, fighter_id, organization,
            row_number() over (partition by fighter_id, organization
-                              order by date nulls last, fight_id) rn
+                              order by date nulls last, fight_position desc nulls last, fight_id) rn
       from long
   )
   update fights fi set
