@@ -68,6 +68,12 @@ SERIES = [
      'matcher': 'title'},
     {'id': 2924, 'name': 'Road to UFC',       'organization': 'Road to UFC',
      'matcher': 'season_episode'},
+    # DWCS episodes are full-event replays. DB names are 'Season N, Episode M'
+    # (2017-19) or 'Contender Series YYYY: Week N' (2020+); Fight Pass numbers
+    # seasons from 2017, so season1_year bridges the year-named ones. The 2018
+    # DWCS Brazil specials aren't in this series — excluded by name.
+    {'id': 2285, 'name': "Dana White's Contender Series", 'organization': 'DWCS',
+     'matcher': 'season_episode', 'season1_year': 2017, 'exclude': r'brazil'},
 ]
 
 # Top-level Fight Pass buckets to crawl for URLs. Two axes:
@@ -369,11 +375,18 @@ def match_event(fp_title, events_by_norm):
     """fp_title is the cleaned (no Prelims) episode title."""
     return events_by_norm.get(_norm(fp_title))
 
-def build_season_episode_map(org_events):
-    """For series matched by (seasonNumber, episodeNumber) — currently just
-    Road to UFC. Group DB events by season parsed from name (defaults to
-    season 1 when no 'Season N' substring), sort by (date, trailing-number
-    in name), then position-map them.
+def build_season_episode_map(org_events, season1_year=None, exclude_re=None):
+    """For series matched by (seasonNumber, episodeNumber). Two modes:
+
+    - positional (default — Road to UFC): group DB events by season parsed
+      from name (defaults to season 1 when no 'Season N' substring), sort by
+      (date, trailing-number in name), then position-map them.
+    - name-keyed (season1_year set — DWCS): season = 'Season N' from the
+      name, else the event year offset from season1_year; episode = the
+      'Week N' / 'Episode N' number in the name. Events without one, or
+      matching exclude_re (the 2018 DWCS Brazil specials, which aren't in
+      the Fight Pass series), are skipped — safer than positions when a
+      year holds extra events.
 
     Returns {(season_number, episode_number): event_dict}."""
     from datetime import datetime
@@ -391,6 +404,25 @@ def build_season_episode_map(org_events):
     def _trailing_num(name):
         m = re.search(r'(\d+)\s*$', name or '')
         return int(m.group(1)) if m else 0
+
+    if season1_year:
+        result = {}
+        for e in org_events:
+            name = e.get('name') or ''
+            if exclude_re and re.search(exclude_re, name, re.I):
+                continue
+            m = re.search(r'Season\s+(\d+)', name, re.I)
+            if m:
+                season = int(m.group(1))
+            else:
+                date = _parse_date(e.get('date'))
+                if not date:
+                    continue
+                season = date.year - season1_year + 1
+            w = re.search(r'(?:Week|Episode)\s+(\d+)', name, re.I)
+            if w:
+                result[(season, int(w.group(1)))] = e
+        return result
 
     by_season = {}
     for e in org_events:
@@ -816,7 +848,9 @@ def main(push=False, force=False, scan_vods=False,
         events_by_norm = {_norm(e['name']): e for e in org_events}
         org_event_ids = {e['id'] for e in org_events}
         # Position-based matcher (Road to UFC): build (season, episode) → event.
-        position_map = (build_season_episode_map(org_events)
+        position_map = (build_season_episode_map(org_events,
+                                                 series.get('season1_year'),
+                                                 series.get('exclude'))
                         if series.get('matcher') == 'season_episode' else {})
         print(f'=== {series["name"]} (matching against {len(org_events)} '
               f'{series["organization"]} events) ===')
@@ -840,12 +874,12 @@ def main(push=False, force=False, scan_vods=False,
                 if series.get('matcher') == 'season_episode':
                     ep_info = ep.get('episodeInformation') or {}
                     sn = ep_info.get('seasonNumber')
-                    # Title's "Episode N" is reliable; API's episodeNumber
-                    # is sometimes broken (RTUFC S3: returns 1,3,5,7,9 for
-                    # a 5-episode season). Prefer title, fall back to API
-                    # for episodes whose title has no "Episode N" (e.g.
+                    # Title's "Episode N" / "Week N" (DWCS) is reliable; API's
+                    # episodeNumber is sometimes broken (RTUFC S3: returns
+                    # 1,3,5,7,9 for a 5-episode season). Prefer title, fall
+                    # back to API for episodes whose title has neither (e.g.
                     # "Road to UFC S2: Finals").
-                    en_match = re.search(r'Episode\s+(\d+)', title, re.I)
+                    en_match = re.search(r'(?:Episode|Week)\s+(\d+)', title, re.I)
                     en = int(en_match.group(1)) if en_match else ep_info.get('episodeNumber')
                     ev = position_map.get((sn, en)) if sn and en else None
                 else:
