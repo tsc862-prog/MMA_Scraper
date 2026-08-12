@@ -9,6 +9,9 @@ Shows scraped:
   ufc              — numbered events: full-card entries + individual fight clips
   ufc-2010s        — 2010s event recaps  → events.paramount_url
   ufc-2000s        — 2000s event recaps  → events.paramount_url
+  dana-white-contender-series — DWCS full episodes → events.paramount_url
+                     (seasons are numbered 1..N, episodes titled 'Week N';
+                     matched to DWCS events by air date)
 
 Results are saved to paramount_matches.txt for review before any DB changes.
 """
@@ -60,12 +63,10 @@ SHOW_CONFIGS = [
     # Clip titles use the same "Fighter vs. Fighter (Event - Main)" shape
     # as fight_night, so the fight_night parser handles it.
     ('ufc-white-house', range(2026, 2028), 'fight_night'),
-    # Dana White's Contender Series — Paramount era (2026+). Per-fight "vs."
-    # clips → matched to DWCS fights by fighter pair + date (org-agnostic).
-    # NOTE: verify this show slug against the Paramount+ DWCS page URL
-    # (paramountplus.com/shows/<slug>/). If clips log "(no clips)", the slug
-    # is wrong — correct it here.
-    ('dana-whites-contender-series', range(2026, 2028), 'fight_night'),
+    # Dana White's Contender Series — P+ hosts the full catalog. Seasons are
+    # numbered (1 = 2017, 10 = 2026), episodes are 'Week N' Full Episodes;
+    # matched to DWCS events by air date. Bump the range as seasons air.
+    ('dana-white-contender-series', range(1, 12), 'dwcs'),
 ]
 
 # ── Supabase ──────────────────────────────────────────────────────────────────
@@ -491,10 +492,13 @@ def find_event(raw_name, clip_date, event_by_name_lower, events):
 def main(dry_run=False):
     # ── Load Supabase data ────────────────────────────────────────────────────
     print('Loading Supabase data...')
-    fighters = supabase_get('fighters',      'select=id,name&limit=10000')
-    fights   = supabase_get('fights',        'select=id,fighter1_id,fighter2_id,event_id&limit=10000')
-    events   = supabase_get('events',        'select=id,name,date&limit=10000')
-    aliases  = supabase_get('fighter_aliases', 'select=alias,fighter_id&limit=10000')
+    # No limit caps — the Sherdog-era DB is well past 10k rows (56k+ fights),
+    # and a capped fetch matches against an arbitrary, heap-order-dependent
+    # subset (symptom: match counts flapping run to run).
+    fighters = supabase_get('fighters',      'select=id,name')
+    fights   = supabase_get('fights',        'select=id,fighter1_id,fighter2_id,event_id')
+    events   = supabase_get('events',        'select=id,name,date,organization')
+    aliases  = supabase_get('fighter_aliases', 'select=alias,fighter_id')
 
     fighter_by_name  = {}
     fighter_by_last  = {}
@@ -566,6 +570,10 @@ def main(dry_run=False):
                 f' | {clip.get("airdate", "")} | {p_url}'
             )
 
+    # DWCS episodes are titled just 'Week N' — the air date is the identity.
+    dwcs_by_date = {e.get('date'): e for e in events
+                    if e.get('organization') == 'DWCS'}
+
     for slug, seasons, _show_type in SHOW_CONFIGS:
         print(f'Fetching show: {slug}')
         clips = fetch_clips_for_show(slug, seasons)
@@ -575,6 +583,36 @@ def main(dry_run=False):
             title     = clip.get('title', '')
             p_url     = PARAMOUNT_BASE + clip.get('url', '')
             clip_date = parse_clip_date(clip)
+
+            # ── DWCS full episodes → events table (match by air date) ────────
+            if _show_type == 'dwcs':
+                if clip.get('type') == 'Full Episode' and clip_date:
+                    ev = dwcs_by_date.get(clip_date.strftime('%Y-%m-%d'))
+                    if not ev:
+                        # P+ air dates occasionally drift from the card date
+                        # (S9W4: aired Aug 30, card Sep 2) — nearest within 3d.
+                        cands = [
+                            (abs((parse_event_date(d) - clip_date).days), e)
+                            for d, e in dwcs_by_date.items()
+                            if d and parse_event_date(d)]
+                        cands.sort(key=lambda x: x[0])
+                        if cands and cands[0][0] <= 3:
+                            ev = cands[0][1]
+                    if ev:
+                        matched_events.append({
+                            'event_id':    ev['id'],
+                            'event_name':  ev['name'],
+                            'event_date':  ev.get('date', ''),
+                            'paramount_url': p_url,
+                            'clip_title':  title,
+                        })
+                    else:
+                        unmatched.append(
+                            f'{"DWCS_NO_EVENT":<22} | {title}'
+                            f' | {clip.get("airdate", "")} | {p_url}')
+                elif classify_clip(title) == 'fight_clip':
+                    process_fight_clip(clip)
+                continue
 
             # Skip "All The Fights" from the ufc numbered show only —
             # those events are handled via the /video/xhr/ sub-clip fetch.
