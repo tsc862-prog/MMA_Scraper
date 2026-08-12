@@ -1,14 +1,14 @@
 UFC FIGHT PASS MATCH RESULTS
 Events  — main: 1  prelims: 0
 Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 40
+Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 44
 ======================================================================
 
 MATCHED EVENTS — MAIN (1)
 ----------------------------------------------------------------------
-event:    Eternal MMA 108 - Southport
-episode:  Eternal MMA 108
-url:      https://ufcfightpass.com/video/987798
+event:    CFFC 158: Hamill vs. Pauley
+episode:  Cage Fury FC 158
+url:      https://ufcfightpass.com/video/989865
 
 
 MATCHED EVENTS — PRELIMS (0)
@@ -34,7 +34,7 @@ UNMATCHED EPISODES (11)
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (40)
+UNMATCHED PER-FIGHT VODs (44)
 ----------------------------------------------------------------------
   vod=871770  'Aoriqileng vs Cody Gibson UFC Vancouver'  — fighter not in DB
   vod=871767  'Bruno Silva vs HyunSung Park UFC Vancouver'  — no DB fight for this pair
@@ -75,4 +75,8 @@ UNMATCHED PER-FIGHT VODs (40)
   vod=55814  'Takanori Gomi vs Leonardo Santos Shooto Japan: Treasure Hunt 7'  — no DB fight for this pair
   vod=59009  'Dong Hyun Kim vs Takanori Gomi UFC Fight Night'  — no DB fight for this pair
   vod=35733  'Myles Jury vs. Takanori Gomi UFC Fight Night'  — no DB fight for this pair
-  vod=989104  'Mateusz Gamrot vs Quillan Salkilld | UFC Journey'  — scan: fighter not in DB
+  vod=990647  'Anthony Wint vs Matt Adams Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
+  vod=990648  'Fabrizio Escarrega vs Abe Alsaghir Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
+  vod=990649  'Bilal Hasan vs Mridul Saikia Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
+  vod=990650  'Jon Kunneman vs Joseph Kropschot Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
+  vod=990748  'Mackenzie Dern vs Gillian Robertson Preview | UFC 330'  — scan: fighter not in DB

@@ -1189,6 +1189,12 @@ def main(push=False, force=False, scan_vods=False,
             return 'matched'
         return 'nomatch'
 
+    # Fight Pass↔DB org-name aliases applied before event-level fuzzy matching
+    # ('Cage Fury FC 158' vs DB 'CFFC 158: ...' share no tokens otherwise).
+    _EVENT_TITLE_ALIASES = [
+        (re.compile(r'\bcage\s+fury\s+fc\b', re.I), 'CFFC'),
+    ]
+
     # Shared by passes 3 and 5: try a VOD as a full-event (or prelims) replay.
     # Some replays are completely unindexed — not in vesper, not in any
     # bucket, isolated in the VOD-id space (e.g. 985090 'Fury FC 122') — so
@@ -1207,6 +1213,8 @@ def main(push=False, force=False, scan_vods=False,
         if any(kw in tl for kw in SKIP_EVENT_LEVEL):
             return False
         variant, base_t = classify_episode(v_title)
+        for rx, repl in _EVENT_TITLE_ALIASES:
+            base_t = rx.sub(repl, base_t)
         ev2 = match_event_fuzzy(base_t, events, all_events_by_norm)
         if not ev2 or _event_is_future(ev2):
             return False
