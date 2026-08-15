@@ -243,8 +243,9 @@ SHERDOG_ORGS = [
         'active':       True,
     },
     {
-        # Shooto (Japan, 1989-present) + Shooto Brazil. 100s of events; slugs
-        # "Shooto-...". Mainly Shooto Brazil per-fight VODs on Fight Pass.
+        # Shooto (Japan, 1989-present). 100s of events; slugs "Shooto-...".
+        # Shooto Brazil is a SEPARATE Sherdog org (Shooto-Brazil-13715, its
+        # own entry below) — this org page holds no Brazil events.
         # Kanji names romanize inconsistently — expect some alias work.
         'organization': 'Shooto',
         'org_url':      f'{SHERDOG_BASE}/organizations/Shooto-21',
@@ -456,6 +457,84 @@ SHERDOG_ORGS = [
         'slug_keys':    ('brave-cf-',),
         'name_clean':   (r'\s*-\s*Brave\s+Combat\s+Federation.*$', ''),
         'fight_prefix': 'bravefight',
+        'active':       True,
+    },
+    # ── 2026-08-15 Fight Pass survey wave ────────────────────────────────────
+    {
+        # Shooto Brazil (1994-present), ~138 events. Its own Sherdog org —
+        # DISTINCT from Japanese Shooto (Shooto-21), whose org page holds no
+        # Brazil events. Active Fight Pass partner with per-fight VODs.
+        'organization': 'Shooto Brazil',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Shooto-Brazil-13715',
+        'slug_keys':    ('shooto-brazil-',),
+        'name_clean':   (r'^$', ''),   # names already "Shooto Brazil 138 - ..."
+        'fight_prefix': 'shootobrfight',
+        'active':       True,
+    },
+    {
+        # Battlefield Fight League (Vancouver, 2010-present), Canada's largest
+        # promotion, ~88 events. FP has per-fight clips AND full-event replays.
+        # Names duplicate the abbrev ("BFL 68 - Battlefield Fight League").
+        'organization': 'BFL',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Battlefield-Fight-League-3067',
+        'slug_keys':    ('bfl-',),
+        'name_clean':   (r'\s*-\s*Battlefield\s+Fight\s+League.*$', ''),
+        'fight_prefix': 'bflfight',
+        'active':       True,
+    },
+    {
+        # Tuff-N-Uff (Las Vegas, 1994-present), ~166 events. Long-time Fight
+        # Pass partner. Historically amateur-heavy — Sherdog lists the pro
+        # bouts; events with no pro fights get pruned as orphans. Names come
+        # as "Tuff-N-Uff - Tuff-N-Uff 154" — strip the leading copy.
+        'organization': 'Tuff-N-Uff',
+        'org_url':      f'{SHERDOG_BASE}/organizations/TuffNUff-972',
+        'slug_keys':    ('tuffnuff',),
+        'name_clean':   (r'^Tuff-N-Uff\s*-\s*', ''),
+        'fight_prefix': 'tuffnuffight',
+        'active':       True,
+    },
+    {
+        # Unified MMA (Edmonton, 2009-present), ~68 events. FP per-fight VODs.
+        # Names duplicate the org ("Unified MMA 63 - Unified MMA").
+        'organization': 'Unified MMA',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Unified-MMA-2802',
+        'slug_keys':    ('unified-mma-',),
+        'name_clean':   (r'\s*-\s*Unified\s+MMA$', ''),
+        'fight_prefix': 'unifiedfight',
+        'active':       True,
+    },
+    {
+        # INKA MMA (Lima, Peru), ~59 events. FP per-fight VODs (Spanish +
+        # English live feeds). Sherdog names are "Inka 55 - Night of
+        # Prospects" — kept as-is; FP's "Inka MMA 59" matches via noise-token
+        # stripping ('mma' is a noise token).
+        'organization': 'INKA MMA',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Inka-MMA-1673',
+        'slug_keys':    ('inka-',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'inkafight',
+        'active':       True,
+    },
+    {
+        # Bison Kombat (Brazil, 2023-present), 8 events so far, growing FP
+        # partner. Mixed pro/amateur cards — Sherdog lists the pro bouts.
+        'organization': 'Bison Kombat',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Bison-Kombat-10127',
+        'slug_keys':    ('bison-kombat-',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'bisonfight',
+        'active':       True,
+    },
+    {
+        # ZFN / Z Fight Night (Seoul, 2025-present) — the Korean Zombie's
+        # promotion, Korea's FP partner. Small but growing ("ZFN - Origin N"
+        # events; FP titles zero-pad: 'ZFN Origin 04').
+        'organization': 'ZFN',
+        'org_url':      f'{SHERDOG_BASE}/organizations/ZFight-Night-18328',
+        'slug_keys':    ('zfn-',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'zfnfight',
         'active':       True,
     },
 ]

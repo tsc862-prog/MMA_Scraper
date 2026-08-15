@@ -103,12 +103,17 @@ vesper-searched 34 org names; cross-referenced with a Sherdog org-ID scan.
 Buckets with ≥20 "X vs Y" titles for the org name are real per-fight content;
 buckets with 0–4 are noise / namesakes.
 
-#### 2026-08-15 re-survey — new viable orgs (not yet in DB)
+#### 2026-08-15 re-survey — new viable orgs
 
 Sources: full upcoming live-schedule walk (current FP streaming partners) +
 vesper probe of 33 org names. All below have real per-fight VOD catalogs.
 
-Active FP partners (live-streamed; add as `active: True`):
+**WIRED IN 2026-08-15** — all 7 active partners below added to
+`SHERDOG_ORGS` (records backfilled: 548 events / 5,440 fights) and to
+`_EVENT_PREFIX` in the Fight Pass scraper; `--search-events` run for video
+URLs. ZFN turned out to be on Sherdog after all (`ZFight-Night-18328`).
+
+Active FP partners (live-streamed; added as `active: True`):
 - **Shooto Brazil** — Sherdog `Shooto-Brazil-13715` (138 events, ~1,377
   fights); clips through Shooto Brazil 138; #139 live 2026-08-28. Biggest
   catch. Distinct from the Japanese Shooto already in DB.

@@ -723,6 +723,10 @@ _EVENT_PREFIX = (
     r'Eternal\s+MMA|Ares(?:\s+FC)?|UAE\s+Warriors|Lux\s+Fight\s+League|'
     r'Anthony\s+Pettis\s+FC|APFC|JCK(?:\s+MMA)?|Legacy\s+FC|'
     r'CES(?:\s+MMA)?|UWC|XFN|'
+    # 2026-08-15 survey wave. 'Shooto Brazil' must precede the bare 'Shooto'
+    # below so Brazil clips aren't read as the Japanese org.
+    r'Shooto\s+Brazil|Battlefield\s+Fight\s+League|BFL|Tuff-?N-?Uff|'
+    r'Unified\s+MMA|Inka(?:\s+MMA)?|Bison\s+Kombat|ZFN|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'
 )
@@ -858,7 +862,15 @@ def main(push=False, force=False, scan_vods=False,
         for season in fp.series_seasons(series['id']):
             print(f'  season {season["id"]} {season["title"]!r}  '
                   f'(episodes={season.get("episodeCount")})')
-            for ep in fp.season_episodes(season['id']):
+            # A freshly-created season can be listed by the series endpoint
+            # while its own detail still 404s (e.g. DWCS Season 10 during
+            # setup) — skip it rather than killing the whole run.
+            try:
+                episodes = list(fp.season_episodes(season['id']))
+            except Exception as e:
+                print(f'  [WARN] season {season["id"]}: {e}')
+                continue
+            for ep in episodes:
                 vod_id = str(ep['id'])
                 if vod_id in seen:
                     continue

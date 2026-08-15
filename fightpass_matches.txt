@@ -1,21 +1,1521 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 1  prelims: 0
-Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 44
+Events  — main: 19  prelims: 0
+Fights  — matched: 357 (per-fight URL: 357, event URL fallback: 0)
+Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 39
 ======================================================================
 
-MATCHED EVENTS — MAIN (1)
+MATCHED EVENTS — MAIN (19)
 ----------------------------------------------------------------------
-event:    CFFC 158: Hamill vs. Pauley
-episode:  Cage Fury FC 158
-url:      https://ufcfightpass.com/video/989865
+event:    Unified MMA 45
+episode:  Unified MMA 45
+url:      https://ufcfightpass.com/video/363695
+
+event:    BFL 72
+episode:  BFL 72
+url:      https://ufcfightpass.com/video/352095
+
+event:    BFL 73
+episode:  BFL 73: Warfare
+url:      https://ufcfightpass.com/video/374619
+
+event:    BFL 75
+episode:  BFL 75
+url:      https://ufcfightpass.com/video/422573
+
+event:    KOTC - Total Destruction
+episode:  KOTC: Total Destruction
+url:      https://ufcfightpass.com/video/62462
+
+event:    KOTC - Total Devastation
+episode:  KOTC: Total Devastation
+url:      https://ufcfightpass.com/video/58138
+
+event:    KOTC - Total Elimination
+episode:  KOTC: Total Elimination
+url:      https://ufcfightpass.com/video/56841
+
+event:    KOTC - Fisticuffs
+episode:  KOTC: Fisticuffs
+url:      https://ufcfightpass.com/video/46129
+
+event:    Shooto Brazil 57 - Candido vs. Suema
+episode:  Shooto Brazil 57: Candido vs Suema
+url:      https://ufcfightpass.com/video/36547
+
+event:    Unified MMA 44
+episode:  Unified MMA 44
+url:      https://ufcfightpass.com/video/354314
+
+event:    Tuff-N-Uff 129
+episode:  Tuff-N-Uff 129
+url:      https://ufcfightpass.com/video/382692
+
+event:    BFL 74
+episode:  BFL 74
+url:      https://ufcfightpass.com/video/402753
+
+event:    Shooto Brazil 112 - Gheno vs. Costa
+episode:  Shooto Brazil 112
+url:      https://ufcfightpass.com/video/417036
+
+event:    Tuff-N-Uff 130
+episode:  Tuff-N-Uff 130
+url:      https://ufcfightpass.com/video/419562
+
+event:    Unified MMA 47
+episode:  Unified MMA 47
+url:      https://ufcfightpass.com/video/422836
+
+event:    BFL 76 - The Rebel vs. JT Money
+episode:  BFL 76
+url:      https://ufcfightpass.com/video/460564
+
+event:    BFL 77
+episode:  BFL 77
+url:      https://ufcfightpass.com/video/487794
+
+event:    BFL 81
+episode:  BFL 81
+url:      https://ufcfightpass.com/video/684791
+
+event:    BFL 87
+episode:  BFL 87
+url:      https://ufcfightpass.com/video/955467
 
 
 MATCHED EVENTS — PRELIMS (0)
 ----------------------------------------------------------------------
 
-MATCHED FIGHTS (0)
+MATCHED FIGHTS (357)
 ----------------------------------------------------------------------
+fight_id: df5ea735-f5dc-5e04-8c4e-31c87176d711  [fight]
+  Fabio Perpetua vs Victor Xavier  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983528
+
+fight_id: d4eb92e5-0300-5940-a988-9f7f29627c62  [fight]
+  Mateus Araujo vs Douglas Machado  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983530
+
+fight_id: 433c7811-a44d-5968-9113-69b41648c491  [fight]
+  Gabriel dos Anjos vs Alexandre Guerra  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983527
+
+fight_id: 2e363131-a0d5-50b2-b2f8-6902786fc8aa  [fight]
+  Walysson Aguiar vs Rodrigo Praia  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983529
+
+fight_id: 4e7c62b5-1319-553c-a1af-033dfc941f8b  [fight]
+  Wellington Predador vs Mateo Pereira  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983533
+
+fight_id: 0304ed88-456c-5dbf-adf6-13661784a123  [fight]
+  Carlos Veras vs Leonardo Leozin  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983531
+
+fight_id: a8be41de-1355-579b-941f-797408287632  [fight]
+  Yan Teixeira vs Luiz Carlos Aranha  @ Shooto Brazil 138 - Pereira vs. Souza [event-search]
+  https://ufcfightpass.com/video/983532
+
+fight_id: 9ceea8c8-9f28-583a-88e5-786944d0eff1  [fight]
+  Tadd Ilgas vs Lucas Tupi  @ Shooto Brazil 136 - Almeida vs. dos Santos [event-search]
+  https://ufcfightpass.com/video/972202
+
+fight_id: b8ce7555-1490-55c1-aa77-0ca07235bc29  [fight]
+  Juscelino Pantoja vs Micael de Jesus  @ Shooto Brazil 136 - Almeida vs. dos Santos [event-search]
+  https://ufcfightpass.com/video/972204
+
+fight_id: 08626d0a-7fc2-59df-8bfb-721b67305573  [fight]
+  Yarlei Junior vs Reidney Oliveira  @ Shooto Brazil 129 - Sara vs. Sabrina [event-search]
+  https://ufcfightpass.com/video/972201
+
+fight_id: c5a36525-db74-5a8c-8499-27d3d3b4777a  [fight]
+  Thiago Carvalho vs Nildean Paes  @ Shooto Brazil 136 - Almeida vs. dos Santos [event-search]
+  https://ufcfightpass.com/video/972205
+
+fight_id: 9e28e347-40ac-57cc-b3ab-7f3cc40b5538  [fight]
+  Guilherme Doin vs Ricardo Rodrigues  @ Shooto Brazil 136 - Almeida vs. dos Santos [event-search]
+  https://ufcfightpass.com/video/972200
+
+fight_id: d6ab45ac-8d02-5222-8087-0c2f7b940247  [fight]
+  Mohamed Camara vs Jeimison Oliveira  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970013
+
+fight_id: 18eeae16-d5de-57c8-8991-82fd77e1adae  [fight]
+  Breno Marinho vs Rogério Sobrinho  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970014
+
+fight_id: 7ec42fd0-c9b5-51eb-ae3b-f8ec0e76d366  [fight]
+  Walber dos Anjos vs Ronildo Cabral  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970017
+
+fight_id: cc1058a0-9d51-5d93-bf75-abaa32c806fc  [fight]
+  Thalita Soares vs Tatiane Aguiar  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970018
+
+fight_id: 70e2cc31-bbb9-5b19-b872-484e0552ac91  [fight]
+  Charles Duarte vs Bruno Nascimento  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970019
+
+fight_id: 325350f2-39e3-5251-80ed-ae418ba5e2da  [fight]
+  Pedro Campos vs Neto Mota  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970015
+
+fight_id: a1a0df41-30d8-5b8c-bfac-1281317e697d  [fight]
+  Mindaugas Bartkus vs Arthur Mota  @ Shooto Brazil 137 - Aguiar vs. Soares [event-search]
+  https://ufcfightpass.com/video/970012
+
+fight_id: fabc5346-bdd3-5018-b130-93a50478a5e8  [fight]
+  Taku Matsuoka vs Haruki Touyama  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991083
+
+fight_id: d4da273e-0634-5137-b652-340eeb90a138  [fight]
+  Seiya Saso vs Shota Tabata  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991088
+
+fight_id: dd708b06-9266-5056-a3df-d58e5f8889e0  [fight]
+  Ryoya Komiya vs Taito Watanabe  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991092
+
+fight_id: b3c6ce0a-3e2e-5de5-b427-6b6cc3da4d35  [fight]
+  Sho Miyashita vs Yua Osawa  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991093
+
+fight_id: f388d0b5-9d43-585b-b8e5-33da674c6896  [fight]
+  Issei Tokida vs Taketeru Ozawa  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991090
+
+fight_id: c6e80061-f5be-58f2-9aba-e8f46944c2c0  [fight]
+  Arashi Yamanobe vs Ryuta Tomoyose  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991091
+
+fight_id: 7aa3914a-fea5-581c-919c-73b861b720b7  [fight]
+  Kazuki Omura vs Tomoya Kamakura  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991087
+
+fight_id: e65d16ca-f2da-57bc-a9b3-84c0986e1c83  [fight]
+  Yosei Shibayama vs Masataka Tensaka  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991081
+
+fight_id: 24011c06-2d1e-57e5-95c0-77dd66ac5ca5  [fight]
+  Ryohei Kobayashi vs Tomoya Ono  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991085
+
+fight_id: 545a6dd4-e888-5c09-bc61-ca51de09990c  [fight]
+  Rikuya Ishida vs Joji Shirai  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991086
+
+fight_id: 2ba54210-5ee4-5a44-9492-e0ed6f83f605  [fight]
+  Kazuya Kato vs Retsuki Oshika  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991089
+
+fight_id: ed25414f-07da-56f9-a86f-916856617e07  [fight]
+  Junya Sawaki vs Guilherme Nakagawa  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991084
+
+fight_id: 7508abd7-88c4-50df-9f5d-d2b08d35b6be  [fight]
+  Shuya Oribe vs Joe Yamaguchi  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991082
+
+fight_id: c55fe95a-07b8-5ac5-8eaf-29fc313ef080  [fight]
+  Hiroki Otani vs Takeshi Kojima  @ Pancrase - Blood.12 [event-search]
+  https://ufcfightpass.com/video/991080
+
+fight_id: 6c850d96-754f-551c-86b6-7132bf88e68f  [fight]
+  Matt Friesen vs Jon Kunneman  @ Anthony Pettis FC 16 - Milwaukee Fight Night 7 [event-search]
+  https://ufcfightpass.com/video/989058
+
+fight_id: 034c7697-844d-5333-b586-8d8bd51f6e50  [fight]
+  Shamil Shikhshabekov vs Argemiro Delmandes  @ Tuff-N-Uff 155 [event-search]
+  https://ufcfightpass.com/video/979938
+
+fight_id: cd29efaf-eaef-54eb-9a91-41504c4a4382  [fight]
+  Taron Grigoryan vs Daniel Lacerda  @ Tuff-N-Uff 155 [event-search]
+  https://ufcfightpass.com/video/979939
+
+fight_id: 2d16216b-a5c0-527b-8029-8deb74b6738d  [fight]
+  Justin Vazquez vs Miguel Barrientos  @ Tuff-N-Uff 155 [event-search]
+  https://ufcfightpass.com/video/979940
+
+fight_id: 499875b7-95ae-54c1-96b7-7af730f3ccb1  [fight]
+  Delian Alishahi vs James Cannon  @ Tuff-N-Uff 155 [event-search]
+  https://ufcfightpass.com/video/979937
+
+fight_id: 4d2f93b4-e8ea-5272-8c57-4091ead7f759  [fight]
+  Salhahuddin Everett vs Armus Guyton  @ Tuff-N-Uff 155 [event-search]
+  https://ufcfightpass.com/video/979936
+
+fight_id: ddddb23a-6c26-57c7-bd60-4bfac24583e2  [fight]
+  Amarsanaa Tsogookhuu vs Iler Bakhtier Uulu  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968900
+
+fight_id: 65459970-7621-5a75-91d4-96a917f8e26b  [fight]
+  Albert Tadevosyan vs Darren Smith Jr  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968899
+
+fight_id: ee1b71d6-ac87-5bfc-867e-dd1d492c6e78  [fight]
+  Devon Jackson vs Shamel Findley  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968898
+
+fight_id: d34c50c5-c50e-5dd9-a531-2746b8dd8a1c  [fight]
+  Smilla Sundell vs Maya Stewart  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968903
+
+fight_id: 25b45ef7-d411-5147-9914-61632f5d979d  [fight]
+  Shimon Smotritsky vs Perry Stargel  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968896
+
+fight_id: f5f632b0-deb7-5f78-b253-4737f9ae8c03  [fight]
+  Jess Rubio vs Suad Salimova  @ Tuff-N-Uff 154 [event-search]
+  https://ufcfightpass.com/video/968888
+
+fight_id: 88090826-4d36-59ca-b613-fe8b54e8037d  [fight]
+  Kai Kamaka III vs Michel Lima  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912279
+
+fight_id: a12e6eac-2759-566b-abbe-4e85b4bd355a  [fight]
+  David Goldenberg vs De'Aundre Tipton  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912280
+
+fight_id: 6a56c7a7-9942-5129-a224-9be06c0653a5  [fight]
+  Smilla Sundell vs Miranda Barber  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912277
+
+fight_id: 7f67b150-0f3b-5096-870a-2f441347c9f8  [fight]
+  Renato Canuto vs Luciano Ramos  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912282
+
+fight_id: 65bf0550-9410-5c26-802e-383d5f966b37  [fight]
+  Sal Everett vs Wesley Drain  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912275
+
+fight_id: 40fe8f3b-abff-5e51-bb2a-dd9fd3c3e0e2  [fight]
+  João Paulo Fagundes vs Júlio César Santos  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498710
+
+fight_id: e75d5066-209e-5695-9b11-67d9fa8a3479  [fight]
+  Itamar Junior vs Ernane Pimenta  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498711
+
+fight_id: 5c9153a9-b65c-5a20-8546-d46812c3187a  [fight]
+  Marcos De Paula vs Ricardo Dias Junior  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498712
+
+fight_id: 961ee3dd-53a0-56df-95f7-ecc322e7bd78  [fight]
+  Marcos Novais vs Oziel dos Santos  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498713
+
+fight_id: a1452b01-f251-5f67-b399-2a2a0ad02a98  [fight]
+  Pedro Nobre vs Junior Assis  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498714
+
+fight_id: 6da54043-40a7-5699-8cda-b3079cc081be  [fight]
+  Aridriano Oliveira vs Felipe Alves  @ Shooto Brazil 118 - King vs. Cesar [event-search]
+  https://ufcfightpass.com/video/498715
+
+fight_id: c08a342f-df7d-527d-9c00-5ecfde40d214  [fight]
+  Leonardo Feitosa vs Matheus Silveira  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969560
+
+fight_id: 2649d8cb-4b5d-591d-87f5-41be2a8a319c  [fight]
+  Ana Rodrigues vs Jasmin Rocha  @ Shooto Brazil 39 - Rocha vs. Nenzao [event-search]
+  https://ufcfightpass.com/video/934861
+
+fight_id: 8883b83a-f230-543e-a7df-422b2f1e0257  [fight]
+  Max Griffin vs Ramiz Brahimaj  @ UFC on ESPN 17 - Santos vs. Teixeira [event-search]
+  https://ufcfightpass.com/video/211053
+
+fight_id: 0d9d9bff-e34a-5103-8a07-dd7b814d5979  [fight]
+  Luiz Buakaw vs Dagoberto Santos  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979226
+
+fight_id: 08fca63e-729d-55d6-8344-1c0c9e157c07  [fight]
+  Bruno Santos vs Rodrigo Sarafian  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969565
+
+fight_id: ac369526-653b-5b53-8a54-616d0ed6d68f  [fight]
+  Joel Santos vs Martin Farley  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969563
+
+fight_id: 47370982-cfb3-5b35-96d0-97f7c9dcd725  [fight]
+  Mateus Santos vs Alan Gabriel  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969578
+
+fight_id: 3b5ec323-7cce-5ab7-b58a-ffcd45b049bc  [fight]
+  Fabio Perpetua vs Denison Santos  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969574
+
+fight_id: 7cd72aec-a771-5cb7-ae2e-61b160ecf9f9  [fight]
+  Radley Da Silva vs Rander Junio  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970153
+
+fight_id: 2897dd82-8375-5b32-a92e-ae6a475d5ed1  [fight]
+  Neyver Melendres vs Henry Miranda  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912778
+
+fight_id: 628ffe82-15bb-5f13-a305-a0fc97b6da93  [fight]
+  Diego Martinez vs Roni Ramos  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984954
+
+fight_id: 1f414a2d-533a-57f6-b273-ae038265dc02  [fight]
+  Jhonatan Cieza vs Anthony Portilla  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984995
+
+fight_id: 30c6aa0d-4b0f-51e7-bb07-8099056cb7e9  [fight]
+  Nilson Rojas vs Gonzalo Hanampa  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984998
+
+fight_id: 101d8c83-ba1f-5ea0-b392-606780a603df  [fight]
+  Marlon Rodriguez vs Joselito Jesus  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984994
+
+fight_id: 6f2723b7-a805-5d89-be1c-dd4f0cac92ad  [fight]
+  Paula Bonifaz vs Soledad Zapata  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984996
+
+fight_id: 014d47de-2895-50c0-80d4-041e23276263  [fight]
+  Braian Gonzalez vs Ivan Cuayla  @ Inka 59 - Guerra en Sudamerica [event-search]
+  https://ufcfightpass.com/video/984997
+
+fight_id: 2eae6fb7-0a1c-56a7-ae63-9f479dd82081  [fight]
+  Zeus Papadopulos vs Vicente Bahamondes  @ Inka 58 - Escuza vs. Lopez [event-search]
+  https://ufcfightpass.com/video/977610
+
+fight_id: 5ca0e56f-84dc-5239-890c-18f07864ca92  [fight]
+  Octavio Lopez vs Ian Escuza  @ Inka 58 - Escuza vs. Lopez [event-search]
+  https://ufcfightpass.com/video/977609
+
+fight_id: 3286c1d8-d8ab-5fb1-a394-5000b9e9f10d  [fight]
+  Jhon Jairo Sornoza vs Cristian Espinoza  @ Inka 58 - Escuza vs. Lopez [event-search]
+  https://ufcfightpass.com/video/977607
+
+fight_id: 685b7af5-a417-5ee5-9084-4de95aa583f6  [fight]
+  Aaron Rodriguez vs Martin Mansilla  @ Inka 58 - Escuza vs. Lopez [event-search]
+  https://ufcfightpass.com/video/977608
+
+fight_id: 3b8fa8b4-3db9-59c7-8951-cf304660d419  [fight]
+  Juan David Vera vs Sebastian Apaza  @ Inka 58 - Escuza vs. Lopez [event-search]
+  https://ufcfightpass.com/video/977605
+
+fight_id: dd436366-a8bd-5eda-b557-951f6009d96e  [fight]
+  Giovanni Mazzetti vs Diego Morillo  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972565
+
+fight_id: daf2f34f-e375-515e-b289-f8f7a08912b2  [fight]
+  Bruno Rodriguez vs Mayton Perea  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972555
+
+fight_id: 7df71395-157e-555e-b24c-2b5b6a3ffc82  [fight]
+  Alan Sosa vs Samuel Mieles  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972541
+
+fight_id: 50ba3427-7c51-5068-9025-0d54b69048c0  [fight]
+  Yacomo Cordova vs Ender Yepez  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972508
+
+fight_id: 310fff7d-4f0a-5ae8-aec4-d147ce75f079  [fight]
+  Teodosio Curi vs Luis Sanchez  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972470
+
+fight_id: 198612e3-89a4-5c1c-bb15-a292e536aa15  [fight]
+  Ludwing Alvarez vs Daniel Lavi  @ Inka 54 - Mazzetti vs. Morillo [event-search]
+  https://ufcfightpass.com/video/972468
+
+fight_id: 0c097206-014e-5016-8bf3-88d53e582741  [fight]
+  Edney Cruz vs Kevin Acosta  @ Inka 56 - Ccanto vs. Antonio [event-search]
+  https://ufcfightpass.com/video/972120
+
+fight_id: f43cb02e-dddf-57e1-a76b-9f8cd0c80be5  [fight]
+  Guilherme Ferreira vs Neyver Melendres  @ Inka 56 - Ccanto vs. Antonio [event-search]
+  https://ufcfightpass.com/video/972119
+
+fight_id: 38ce0e94-0518-51cc-914a-adad3fc10029  [fight]
+  Sebastian Wies vs Wilson Mori  @ Inka 56 - Ccanto vs. Antonio [event-search]
+  https://ufcfightpass.com/video/972117
+
+fight_id: 782a7110-6fb1-590f-aa76-b907a9027beb  [fight]
+  Ary Farias vs Sergio Ribeiro  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515514
+
+fight_id: 5336cfcd-3857-526d-a6b5-a0f2290aa77d  [fight]
+  Ronys Torres vs Pedro Paulino  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515515
+
+fight_id: 05aaea2b-6bc4-58b0-8896-cc655daa2168  [fight]
+  Joao Oliveira vs Daniel Alves  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515510
+
+fight_id: 179e569b-3ff8-5638-b291-d2c0483e06bb  [fight]
+  Carlos Pereira vs Murilo Filho  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515511
+
+fight_id: a3b8e597-7a65-5ccc-86b7-bf2cf8f3bd09  [fight]
+  Harlysson Nunes vs Patrick Gomes  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515502
+
+fight_id: 65a2a182-d0f8-569a-a3a4-ed6716cef3cb  [fight]
+  Alisson Silva vs Douglas Batista  @ Shooto Brazil 119 - Torres vs. Vinagre [event-search]
+  https://ufcfightpass.com/video/515509
+
+fight_id: bb1590db-72a0-57dc-8d80-9228e46f0327  [fight]
+  Cesar Almeida vs Danilo Guerreiro  @ Shooto Brazil 110 - Buga vs. King [event-search]
+  https://ufcfightpass.com/video/503228
+
+fight_id: c3354b74-f126-55bd-ab1b-5c142472efef  [fight]
+  Patrick Moulin vs Lucas Caldas  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777233
+
+fight_id: a83c285f-bce8-5804-9d36-11affefd7de5  [fight]
+  Hannette Staack vs Jaqueline Cavalcanti  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777230
+
+fight_id: c2e9c750-4006-5f3f-b292-cbf209a9dcc7  [fight]
+  Rogerio Sobrinho vs Patricio Lima  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777232
+
+fight_id: c2858491-a1f2-5b0b-bb1d-cee8c6d622b6  [fight]
+  Fabiola Nascimento vs Ana Vitoria Sampaio  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777227
+
+fight_id: cb5f44e2-8597-5203-bd50-4e77570ac685  [fight]
+  Matheus Nogueira vs Eduardo Alencar  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777228
+
+fight_id: 55851e8a-0af1-58fa-8f50-ff9591c8e4f0  [fight]
+  Claudeci Sousa vs Emerson Rosendo  @ Shooto Brazil 128 - Sampaio vs. Nascimento [event-search]
+  https://ufcfightpass.com/video/777229
+
+fight_id: f2cdd78e-4aea-5fb2-b8d0-de72f0840969  [fight]
+  Cleverson Carrilho vs Eliel Santos  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732917
+
+fight_id: 73958158-4776-574e-8821-b3e697d7c1da  [fight]
+  Lucas Caldas vs Marcos Oliveira  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732911
+
+fight_id: 61034869-fd60-5b26-a505-a39af34eb369  [fight]
+  Mateus Soares vs Wallace Lopes  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732913
+
+fight_id: 869130b8-dacd-5c3d-95d1-a32c51555977  [fight]
+  Breno Yuri vs Leandro Mesquita  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732915
+
+fight_id: f0b4e1e3-d979-501f-bd11-5cfd3a55c2ab  [fight]
+  Damian Pinas vs Wesley Silva  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732912
+
+fight_id: fe402a8c-4aec-5684-aa70-351260af6f73  [fight]
+  Rogerio Sobrinho vs João Oliveira  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732916
+
+fight_id: da915c97-1ad4-51aa-8d4d-8af0ced7e2ce  [fight]
+  Wildemar Santos vs Flavio Magon  @ Shooto Brazil 127 - Magon vs. Santos [event-search]
+  https://ufcfightpass.com/video/732914
+
+fight_id: 4016a24a-bfba-5460-b287-cd0d1ca90a2e  [fight]
+  Hernani Perpetuo vs Yukinari Tamura  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552131
+
+fight_id: d15d74c2-bf03-5a91-9a64-3ba26d1059aa  [fight]
+  Martin Camilo vs Yuri Neles  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552124
+
+fight_id: db36cfef-61d3-59f3-9261-c4e826fe3748  [fight]
+  Antonio Monteiro vs Lucas Tavares  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552129
+
+fight_id: 8e50f67b-1768-5631-a4e6-20b376929b55  [fight]
+  Renan Marcelino vs Harlysson Nunes  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552127
+
+fight_id: 3c8a903d-21be-5e53-9bd7-8ebdd58ce45e  [fight]
+  Andrey Augusto vs Gilberto Sousa  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552125
+
+fight_id: a8f10849-00f1-51cb-a20c-48909903b2b9  [fight]
+  Tatiane Aguiar vs Yana Gadelha  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552120
+
+fight_id: 2c7fbdbd-388a-55cb-b56b-1399b38ebbc5  [fight]
+  David Mgoyan vs Luciano Ramos  @ Tuff-N-Uff 144 [event-search]
+  https://ufcfightpass.com/video/804341
+
+fight_id: 3320ab32-53f0-5dde-b8c6-785bc2f2bee2  [fight]
+  Cody Chovancek vs Jordan Howard  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808653
+
+fight_id: 38595f67-5743-5363-b98f-4d4a4ae44ca2  [fight]
+  Bobby Poulter vs Mo Ado  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808650
+
+fight_id: 2c11f4a6-595a-5997-8662-218bd266f637  [fight]
+  Jake Geauvreau vs Joash Walkins  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808649
+
+fight_id: 4b8a9259-18d0-5f78-82d8-03cb91bed941  [fight]
+  Fawaz Olayemi vs Jonathan Lefebvre  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808636
+
+fight_id: 4a811582-1941-586f-a0c1-9993b9b41be4  [fight]
+  Jordan Tecson vs Sajid Raihan  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808640
+
+fight_id: 69f9983b-918b-5dca-aef5-1281a8286997  [fight]
+  Hunter Lee vs Cal Kostiniuk  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808642
+
+fight_id: c07d20c0-ee07-5f78-b2d1-860947d190e4  [fight]
+  Michael Imperato vs Ramon Cardozo  @ Unified MMA 62 [event-search]
+  https://ufcfightpass.com/video/808647
+
+fight_id: c025a735-1065-531a-9fb4-782bf8e46618  [fight]
+  Jake Geauvreau vs Leo Bonin  @ Unified MMA 60 [event-search]
+  https://ufcfightpass.com/video/749817
+
+fight_id: 687aa608-bf26-5dc4-8266-b8ef8042ca9f  [fight]
+  Liam Macfadyen vs Diego DeJesus  @ Unified MMA 60 [event-search]
+  https://ufcfightpass.com/video/749819
+
+fight_id: ac05fa5b-4ec0-5811-b7bf-367a5704ac9e  [fight]
+  Zack Powell vs Mo Ado  @ Unified MMA 60 [event-search]
+  https://ufcfightpass.com/video/749820
+
+fight_id: 77359a53-73ee-567a-80ce-6ec830914636  [fight]
+  TJ Laramie vs Joash Walkins  @ Unified MMA 60 [event-search]
+  https://ufcfightpass.com/video/749822
+
+fight_id: dcb3d70d-1a24-51a4-87d4-7e80709fae06  [fight]
+  Ferdaws Nayimi vs Potey Doahi  @ Unified MMA 60 [event-search]
+  https://ufcfightpass.com/video/749827
+
+fight_id: 7da358fd-635a-5063-a7f3-cd2d69e8e8bb  [fight]
+  Ljae Simminz vs Justin Kennedy  @ Unified MMA 59 [event-search]
+  https://ufcfightpass.com/video/703148
+
+fight_id: 3431a9d2-95d9-5568-94fb-33a0c7dbacdf  [fight]
+  Liam Macfadyen vs Dan Sopa  @ Unified MMA 59 [event-search]
+  https://ufcfightpass.com/video/703144
+
+fight_id: c17f11c3-d348-53f0-84f6-e548ee44c3b8  [fight]
+  Jake Craig vs Jimmy Hinel  @ Unified MMA 59 [event-search]
+  https://ufcfightpass.com/video/703146
+
+fight_id: efb2c065-9220-531e-8b4b-d1ccf438578d  [fight]
+  Jesse Roberts vs Matt Speciale  @ Unified MMA 59 [event-search]
+  https://ufcfightpass.com/video/703145
+
+fight_id: 5853c6d9-0f08-5a70-9083-68395c362f67  [fight]
+  Jeremy Henry vs Alex Morgan  @ Unified MMA 59 [event-search]
+  https://ufcfightpass.com/video/703147
+
+fight_id: 5d9bcd12-ccf8-5683-ac54-7753e3a6aebe  [fight]
+  Jake Craig vs Terence Jeffers-Harris  @ Unified MMA 54 [event-search]
+  https://ufcfightpass.com/video/563773
+
+fight_id: c384a7cb-8e9e-5d38-99d6-456f75b71791  [fight]
+  Harley King vs Cody Chovancek  @ Unified MMA 54 [event-search]
+  https://ufcfightpass.com/video/563775
+
+fight_id: 6b1cf6e9-8fd6-593d-8f57-271e2f4e2336  [fight]
+  Stephen Beaumont vs Guillaume Delorenzi  @ Unified MMA 54 [event-search]
+  https://ufcfightpass.com/video/563776
+
+fight_id: 805aba68-29fc-5db8-a3ee-36928f9e6fbd  [fight]
+  Paulo Henrique vs Ederson Neguinho  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979227
+
+fight_id: 46c9ff37-474c-58bb-974b-eaa83dea4ef7  [fight]
+  Monique Adriane vs Sthefanie Xama  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979224
+
+fight_id: a87a0fbf-7f32-53b4-b1ad-932cbea46ef7  [fight]
+  Guilherme Mendonça vs Wericson Almeida  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979223
+
+fight_id: eef021f4-158b-5314-b1e3-11e207716c25  [fight]
+  Janderson Nascimento vs Thiago Goularte  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979225
+
+fight_id: 7803bb2f-17cb-59f9-b189-bf48a4376afe  [fight]
+  Bruno Gafanhoto vs Jose Vagno Soares  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979229
+
+fight_id: 4fb077dc-974b-51ce-9593-cf715b3ddc28  [fight]
+  Gustavo Angelo vs Japa Gladiador  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979222
+
+fight_id: fb9d2b77-68ba-57e5-a8f0-e21f3640b541  [fight]
+  Daniel Felipe vs Pablo Correia  @ Bison Kombat 8 - Santos vs. Soares [event-search]
+  https://ufcfightpass.com/video/979221
+
+fight_id: 550d13d2-2cab-56ca-9cb7-0d716c0876af  [fight]
+  Harrison Woods vs Dan Baxter  @ BFL 83 [event-search]
+  https://ufcfightpass.com/video/790764
+
+fight_id: 842a9f83-83f5-5868-bbce-99ea92be2f19  [fight]
+  Valentyn Bulat vs Jordan Meloche  @ BFL 83 [event-search]
+  https://ufcfightpass.com/video/790765
+
+fight_id: 8e38bde8-d0be-5cda-97a8-dd0b1c475c9a  [fight]
+  Ash Mashreghi vs James Foster  @ BFL 83 [event-search]
+  https://ufcfightpass.com/video/790766
+
+fight_id: 5b082781-bba4-558c-a000-359f5fe54220  [fight]
+  Ali Wasuk vs Rick Zelada  @ BFL 83 [event-search]
+  https://ufcfightpass.com/video/790767
+
+fight_id: a8913f6b-e101-554b-9acf-0049a3daed51  [fight]
+  Adam Posener vs Zack Powell  @ BFL 83 [event-search]
+  https://ufcfightpass.com/video/790768
+
+fight_id: 9f04733c-9ffe-5a93-bd6e-aa64d37f36af  [fight]
+  Dario Singagoga vs Ashton Charlton  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534478
+
+fight_id: 53858706-42f6-52e5-b981-7ae23587c97e  [fight]
+  Ali Wasuk vs Josh Kwiatkowski  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534474
+
+fight_id: f14b9aaa-3856-5d77-9c18-84f400c985e4  [fight]
+  Radley Da Silva vs Mike McAllon  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534473
+
+fight_id: 463b40eb-73f5-5405-836f-460458886dfc  [fight]
+  Amin Almelik vs Mitch Strazzela  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534471
+
+fight_id: 14a567c6-afaf-5aed-a619-8cf2e430a829  [fight]
+  Navid Zanganeh vs David Briones  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534472
+
+fight_id: c1637727-a94f-5775-92ab-e42a77dea64b  [fight]
+  Gio Platon vs Jose Penaloza  @ BFL 78 [event-search]
+  https://ufcfightpass.com/video/534466
+
+fight_id: 5c9ce1ec-caae-5795-a37d-ef9d9f3afab3  [fight]
+  Juscelino Pantoja vs Jean Sevalho  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841175
+
+fight_id: 4e7144f3-d04d-5947-b6d4-70116df3e5a6  [fight]
+  Daniel Abdenour vs Raphael Ouellet  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970147
+
+fight_id: 7b122daa-3b3c-5384-8440-9fab5fba98b1  [fight]
+  Bernie Liu vs Albaraa Atmeh  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970149
+
+fight_id: ce2bd3ac-61dd-50b9-8540-ac6725b30b86  [fight]
+  Erfan Ahangarian vs Alfredo Muaiad  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970151
+
+fight_id: 3a5324a0-9cfd-5306-996b-d33e01c4dd56  [fight]
+  Gagan Gill vs Arturo Castaneda  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970150
+
+fight_id: 8c62a42e-1742-5426-b12a-58006e3bd34e  [fight]
+  Jayden Martin vs Mauricio Barbosa  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970154
+
+fight_id: 0f29af3f-f617-51cd-9389-152c924cde7b  [fight]
+  Mike De Chavez vs Gustavo Garcia  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970148
+
+fight_id: 76eacbe4-de1a-5d49-a355-44dd5e4321cc  [fight]
+  Dejan Kajic vs Jordan Mein  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970152
+
+fight_id: 8824016b-a9f5-52a2-9c67-44c172a550a4  [fight]
+  Austin Batra vs Alejandro Arboleda  @ BFL 87 [event-search]
+  https://ufcfightpass.com/video/970146
+
+fight_id: 84aef067-fc98-5162-98e9-345c750e3659  [fight]
+  Sina Maani vs Jordan Meloche  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855739
+
+fight_id: d000fc1a-04b4-5cb6-af5d-83cacfd82b3d  [fight]
+  Jo Maisonneuve vs Rachel Hofer  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855738
+
+fight_id: b878bcf2-10c1-5b21-9bd7-2792186c9d58  [fight]
+  Bernie Liu vs Raphael Ouellet  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855744
+
+fight_id: 25997f55-98f8-5a2c-9da1-678e3d4b9201  [fight]
+  Derek Bergen vs Dan Baxter  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855746
+
+fight_id: edede154-e643-54df-be3c-1cdb52925f56  [fight]
+  Josh Kwiatkowski vs Teshay Gouthro  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855745
+
+fight_id: 31fc51d1-88c1-5b07-931d-b9885f6fb8f7  [fight]
+  Mani El-Hefnawi vs Joshua Lam  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855747
+
+fight_id: 5066736a-18cd-5e78-85ab-f9c2102a928b  [fight]
+  Ashton Charlton vs Cole Faust  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855743
+
+fight_id: 6f7b4fe3-d013-5236-ba3b-6f6395a32e11  [fight]
+  Ali Wasuk vs Aso Palani  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855749
+
+fight_id: a75784d4-14ab-5dab-998a-6b24f0c5e375  [fight]
+  Jeremy Kennedy vs Jeremy Henry  @ BFL 84 [event-search]
+  https://ufcfightpass.com/video/855748
+
+fight_id: ea15f2fe-36a9-5170-b884-c25a0de8103c  [fight]
+  Tom O'Connor vs Craig Shintani  @ Unified MMA 54 [event-search]
+  https://ufcfightpass.com/video/563777
+
+fight_id: 8ddfd3a3-b31f-5593-bcce-7bb2098594b3  [fight]
+  Shane Campbell vs Darrell Horcher  @ Unified MMA 54 [event-search]
+  https://ufcfightpass.com/video/563778
+
+fight_id: 97ec9f1d-c7ad-5e73-991d-ca2a7eb6bee3  [fight]
+  Xavier Nash vs Alex O'Neil  @ Unified MMA 53 [event-search]
+  https://ufcfightpass.com/video/539635
+
+fight_id: b7981405-a595-55a1-b8c4-3e8a3578df17  [fight]
+  Mirza Hopovac vs Manuel Garcia  @ Unified MMA 53 [event-search]
+  https://ufcfightpass.com/video/539629
+
+fight_id: e46aaa96-10c4-563d-98b6-dcb584670741  [fight]
+  Julien Leblanc vs Chris Chapman  @ Unified MMA 53 [event-search]
+  https://ufcfightpass.com/video/539636
+
+fight_id: 673a4b96-deb8-53d0-b240-cc323abeb0f4  [fight]
+  Mo Ado vs Roman Cordoba  @ Unified MMA 53 [event-search]
+  https://ufcfightpass.com/video/539634
+
+fight_id: af6feffe-21e3-5e65-b62d-33f35396dd70  [fight]
+  Jake Geauvreau vs Jean-Luc Harrison  @ Unified MMA 53 [event-search]
+  https://ufcfightpass.com/video/539638
+
+fight_id: 7c06c1cf-8410-599e-b5f1-a81dd52592b7  [fight]
+  Mac Laursen vs Chris Chapman  @ Unified MMA 52 [event-search]
+  https://ufcfightpass.com/video/519123
+
+fight_id: 3065c926-7ce0-525b-bd5d-8d5b9fb8b985  [fight]
+  John Nguyen vs Maged Hammo  @ Unified MMA 52 [event-search]
+  https://ufcfightpass.com/video/519128
+
+fight_id: c0f09f2d-7885-5c6a-ab7e-0e1964b36343  [fight]
+  Tom O' Connor vs Tim Smith  @ Unified MMA 52 [event-search]
+  https://ufcfightpass.com/video/519127
+
+fight_id: 15bd475f-649d-5a71-bcfd-e362c37c941c  [fight]
+  Ramil Kamilov vs Roberto Pixley  @ Unified MMA 52 [event-search]
+  https://ufcfightpass.com/video/519126
+
+fight_id: 4c599f67-870d-5c99-9c40-15debe8f3b5f  [fight]
+  Nick Leblanc vs Diego Santos  @ Unified MMA 52 [event-search]
+  https://ufcfightpass.com/video/519121
+
+fight_id: e5d198f6-734b-5c3a-a397-a3777c0c296d  [fight]
+  Aso Palani vs Efran Ahangarian  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686440
+
+fight_id: 68622666-1748-531c-8a06-d9fd7ebb740e  [fight]
+  Drew Brokenshire vs Josh Kwiatkowski  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686439
+
+fight_id: 2a331ca9-8d13-5d25-b2e7-21af878d7af7  [fight]
+  Mac Laursen vs Ashton Charlton  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686438
+
+fight_id: 95b7196c-ba2f-5a79-9f9d-09814423d4d7  [fight]
+  Jamie Siraj vs David Briones  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686443
+
+fight_id: a074fc15-c0bd-5296-844d-bea66efe0482  [fight]
+  Radley Da Silva vs Drake Randall  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686441
+
+fight_id: 481a019a-92c5-5c25-b0c3-1cdff236356b  [fight]
+  Nic Ouellet vs David Moon  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686442
+
+fight_id: 4fed9aee-44c2-553f-ade6-92dd2e555b2b  [fight]
+  Dejan Kajić vs Ash Mashreghi  @ BFL 81 [event-search]
+  https://ufcfightpass.com/video/686437
+
+fight_id: af7d8296-c685-5f08-bfe2-d04ea7ff38b9  [fight]
+  Janderson Nascimento vs Ronaldo Cavalheiro  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969559
+
+fight_id: da3d10f1-99aa-5a17-a71e-cb7dbf3aa72e  [fight]
+  Matheus Freitas vs Amarildo Martinello  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969557
+
+fight_id: 9ac9466d-1928-5976-8054-cd5b38e4e536  [fight]
+  Rafael Dias vs Elvis Picanço  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969562
+
+fight_id: b155353f-da8d-5a0c-85c7-15d77ed0532b  [fight]
+  Rafael Atilio vs Alexandre Carmusi  @ Bison Kombat 6 - Gafanhoto vs. Sarafian [event-search]
+  https://ufcfightpass.com/video/969558
+
+fight_id: 6349397d-55e6-5e28-a4b4-b070296e6e0a  [fight]
+  Navid Zanganeh vs Austin Batra  @ BFL 73 [event-search]
+  https://ufcfightpass.com/video/374611
+
+fight_id: 601e2a67-bb85-5eb4-b4dd-0887746aba6d  [fight]
+  O’Shay Jordan vs Mark Currier  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792940
+
+fight_id: 3e8b5594-61c1-5a45-aaae-d710f5614d94  [fight]
+  Josh Emmett vs Rocky Johnson  @ KOTC - Total Elimination [event-search]
+  https://ufcfightpass.com/video/57146
+
+fight_id: ff169daa-f3df-57ef-a13d-5897d0534d92  [fight]
+  Jordan Griffin vs Ben Pierre-Saint  @ KOTC - Total Dominance [event-search]
+  https://ufcfightpass.com/video/56450
+
+fight_id: 7c43c549-c9c5-5ffa-9e21-02695d263c18  [fight]
+  David Goldenberg vs Xavier Martin  @ Tuff-N-Uff 150 [event-search]
+  https://ufcfightpass.com/video/900345
+
+fight_id: 13e67935-8403-5741-b39a-9d9976115095  [fight]
+  Guy Mezger vs Yoshihisa Yamamoto  @ Pride 22 - Beasts From The East 2 [event-search]
+  https://ufcfightpass.com/video/34001
+
+fight_id: ed9475de-dbaf-5a1e-abaf-46594a887a37  [fight]
+  Noah Kiszka vs Nasir Davis  @ Tuff-N-Uff 150 [event-search]
+  https://ufcfightpass.com/video/900344
+
+fight_id: 60cc2871-8e89-5c71-9f4d-48002ae64ba6  [fight]
+  Dominick Reyes vs Jose Rivas  @ KOTC - Fisticuffs [event-search]
+  https://ufcfightpass.com/video/46097
+
+fight_id: 8dfaf296-b851-5240-b3de-0ce0301b1509  [fight]
+  Chase Gibson vs David Hernandez  @ KOTC - Fisticuffs [event-search]
+  https://ufcfightpass.com/video/46093
+
+fight_id: 97473bd6-c829-55c1-9598-a389dc55378c  [fight]
+  Junior Magal vs Edilberto de Oliveira  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841173
+
+fight_id: 254449e4-3d3c-56d9-b484-9d06639295a5  [fight]
+  Valentyn Bulat vs James Torres  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749862
+
+fight_id: f6946ba1-7eda-5e84-9a33-aa9b3c9402ff  [fight]
+  Christian Strong vs Ali Wasuk  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749854
+
+fight_id: bd98f60b-5ead-531a-bc86-3ad4fbe14c5b  [fight]
+  Efran Ahangarian vs Nelson Spreeuw  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749855
+
+fight_id: f7d33b95-d197-514b-82fe-666e2a155be1  [fight]
+  Dany Mallette vs Dejan Kajic  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749857
+
+fight_id: 7ff356b1-b905-5552-a0d0-e78aeedc4bb6  [fight]
+  Aso Palani vs Luis Banuelos  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749859
+
+fight_id: 7024af46-4e61-5697-8bea-77fb9635dd4e  [fight]
+  Navid Zanganeh vs Jeremy Henry  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749860
+
+fight_id: b353a0f5-480e-5af3-aaa0-0a7d2af3607a  [fight]
+  Roman Tassone vs Derek Bergen  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749861
+
+fight_id: 713d729e-86d8-5c6f-bab4-db41548fddc7  [fight]
+  Radley Da Silva vs Drew Brokenshire  @ BFL 82 [event-search]
+  https://ufcfightpass.com/video/749863
+
+fight_id: cbc39bc4-a06d-5a6f-8cac-61c9392fd0df  [fight]
+  Dhiego Lima vs Jorge de Oliveira  @ UFC Fight Night 56 - Shogun vs. St. Preux [event-search]
+  https://ufcfightpass.com/video/35893
+
+fight_id: 0e63c28e-dbd4-511d-a776-852b0120ea85  [fight]
+  Alexandre Passos vs Felipe Rosa  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969576
+
+fight_id: e5f8ad45-8b10-5164-974a-f7ccb013c4c3  [fight]
+  Kauã Mattoso vs Alex Gomes  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969575
+
+fight_id: f3ad5c14-bcef-5dc7-81f4-ce4d1fc70e5c  [fight]
+  Gabriel Pitbull vs Yuri Bayblade  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969573
+
+fight_id: f1f04325-ca97-5fbc-a4b5-e242a470bb40  [fight]
+  Fabio Peroba vs Luiz Henrique Costa  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969572
+
+fight_id: 746a5362-621e-5a59-bd44-c58f34153a88  [fight]
+  Vitor Aquino vs Bruno Coelho  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969579
+
+fight_id: 7fc51714-4df9-5e87-9fa0-1171a51a721a  [fight]
+  Ronal Padilla vs Thiago Sousa  @ Bison Kombat 7 - Aquino vs. Sa [event-search]
+  https://ufcfightpass.com/video/969577
+
+fight_id: 6b8464d6-6469-56ca-baeb-f897db73a6ca  [fight]
+  Jailton Almeida vs Rizvan Kuniev  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917085
+
+fight_id: 75530f35-d83e-5307-adfd-f8826d09f357  [fight]
+  Wendel Almeida vs Renan Oliveira  @ Shooto Brazil 126 - Almeida vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/723861
+
+fight_id: a5f851e4-e4aa-5ce9-a587-d4f158f32ce4  [fight]
+  Ernesto Rodriguez vs Alexandre De Almeida  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702400
+
+fight_id: 12e6978c-7285-5a42-b833-891a87a2d8f2  [fight]
+  Rich Franklin vs Evan Tanner  @ UFC 42 - Sudden Impact [event-search]
+  https://ufcfightpass.com/video/28827
+
+fight_id: fc8f78ee-77f6-535f-8425-1d32d87ebaad  [fight]
+  Marcio Cruz vs Frank Mir  @ UFC 57 - Liddell vs. Couture 3 [event-search]
+  https://ufcfightpass.com/video/28928
+
+fight_id: 0d36646c-73e2-5179-8bf1-0e39d1f76eaa  [fight]
+  Teshay Gouthro vs Eric Shelton  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491968
+
+fight_id: eb5eb20f-c76a-52cb-a521-b0e69a02f2da  [fight]
+  Ergys Sigeta vs Bradley Desir  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491959
+
+fight_id: 84504a23-bf14-5d41-b82c-e4c655a59d7a  [fight]
+  Bobby Poulter vs Josh Jackson  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491951
+
+fight_id: 7be2f7e9-2c96-50bf-b585-0a1da2c12b80  [fight]
+  Vladimir Kazbekov vs Gary Konkol  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491947
+
+fight_id: 23724368-bf37-5f70-b2ed-0af088ed164c  [fight]
+  Tom Theocharis vs Nathan Pierce  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491942
+
+fight_id: 6b89f9f0-6c87-5e82-b287-a37779babb97  [fight]
+  Cody Chovancek vs Shawn Johnson  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491940
+
+fight_id: fa2dc598-daca-55ae-af69-4e145ba01024  [fight]
+  Mohamed Ado vs Taylor Cahill  @ Unified MMA 51 [event-search]
+  https://ufcfightpass.com/video/491927
+
+fight_id: 9c625f04-3a6f-5cc7-832b-6f18065fbfbb  [fight]
+  Naomi Tataroglu vs Claudia Alves  @ Shooto Brazil 126 - Almeida vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/723863
+
+fight_id: d29ef79a-d217-5215-bbb5-7edaea6ac24e  [fight]
+  Geraldo de Freitas vs Rogério Sobrinho  @ Shooto Brazil 132 - Sousa vs. Negueba [event-search]
+  https://ufcfightpass.com/video/862147
+
+fight_id: fcd4b902-5923-5330-a05f-64608b16de7d  [fight]
+  Ylies Djiroun vs Geraldo de Freitas  @ Ares 27 - Augen vs. Rocha [event-search]
+  https://ufcfightpass.com/video/737405
+
+fight_id: 263ae9f2-fd7d-5c37-b60a-eb58550465bb  [fight]
+  David Mgoyan vs John De Jesus  @ Tuff-N-Uff 141 [event-search]
+  https://ufcfightpass.com/video/761630
+
+fight_id: 529ee012-8bfd-5d26-bdaf-f013f5d3b30e  [fight]
+  Andrew Garrette vs Daniel Lacerda  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792944
+
+fight_id: f1618967-a7bf-52aa-a5af-081ddca6cdf1  [fight]
+  Daniel Lacerda vs Ahmet Kayretli  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702401
+
+fight_id: 52e44596-eac2-5149-85d6-d715d7fb0587  [fight]
+  Bryce Cook vs Chris Kingery  @ Tuff-N-Uff 150 [event-search]
+  https://ufcfightpass.com/video/900347
+
+fight_id: 7112b81f-6fe9-5eff-aeb4-752b60b28697  [fight]
+  Sal Everett vs Chris Kingery  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849520
+
+fight_id: 905d6382-2b43-5c3d-8a17-71fcf998dbda  [fight]
+  Vitor Oristanio vs Gabriel Fernandes  @ Shooto Brazil 120 - Perpetuo vs. Tamura [event-search]
+  https://ufcfightpass.com/video/552122
+
+fight_id: 365de53d-ba4d-5742-abba-cb071d448849  [fight]
+  Fernando Cuchani vs Steven Fernandez  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912774
+
+fight_id: 8f725fc4-a308-50f5-b3a1-59649635cdc9  [fight]
+  Enrique Coral vs Diego Vela  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912780
+
+fight_id: fa6887ab-4c16-5b74-ab20-b637fe7ac4c0  [fight]
+  Diego Martinez vs Cristian Espinoza  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912779
+
+fight_id: eaf30ee7-fde0-5ae1-a35f-ebae166d51a9  [fight]
+  Daniel Valderrama vs Leyker Gonzales  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912777
+
+fight_id: 51e8ef31-272b-5339-bd8e-753e713acee8  [fight]
+  Jhonatan Cieza vs Sebastian Noriega  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912776
+
+fight_id: b2d22ba7-4003-5c16-a4c7-a425d7aa0c64  [fight]
+  Luis Mendoza Cueto vs Fabian Sobrino  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912775
+
+fight_id: 2dd5c235-41ab-5bdb-8362-6220eede0bbc  [fight]
+  Kevin Navarro vs Maycon Alcino  @ Inka 53 - Navarro vs. Alcino [event-search]
+  https://ufcfightpass.com/video/912725
+
+fight_id: 77dab044-f6d3-533e-9c3c-ad378fa131a6  [fight]
+  Michal Oleksiejczuk vs Marc-Andre Barriault  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917076
+
+fight_id: ec581e61-91cc-5f42-b756-02b6eb12e9bc  [fight]
+  Amir Albazi vs Kyoji Horiguchi  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917094
+
+fight_id: dc42fcf4-5975-5a62-9ee2-0e8ebf46da81  [fight]
+  Mario Bautista vs Vinicius Oliveira  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917138
+
+fight_id: 6588ebf2-85c4-598b-b22e-45ac9fc8d5b1  [fight]
+  Jean Matsumoto vs Farid Basharat  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917059
+
+fight_id: d44331bd-fd56-59f3-a89a-b40a08143b23  [fight]
+  Dustin Jacoby vs Julius Walker  @ UFC Fight Night 266 - Bautista vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/917055
+
+fight_id: 70827dc9-1b52-5585-b4f3-2ecce60f80d0  [fight]
+  Jaeleen Robledo vs Evelyn Martins  @ Tuff-N-Uff 150 [event-search]
+  https://ufcfightpass.com/video/900348
+
+fight_id: e3945d9a-ba93-5c51-bdd0-81be26043e71  [fight]
+  Evelyn Martins vs Taylor Guardado  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849528
+
+fight_id: 0a285428-cc93-5e12-9d85-d787ae86b7e4  [fight]
+  Adam Vigil vs Alex Polizzi  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849535
+
+fight_id: c7eb14a9-dea3-5a26-af06-30d1112f05c3  [fight]
+  Eduardo Penha vs Dusty Shaffer  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849533
+
+fight_id: 8a1d1b7b-15e8-5b33-8bd8-6814e0b714ab  [fight]
+  Mijail Iberico vs Jose Tavera  @ Inka 56 - Ccanto vs. Antonio [event-search]
+  https://ufcfightpass.com/video/972116
+
+fight_id: 5f724107-b91a-5fce-ba70-84e7bb04105e  [fight]
+  Luis Sanchez vs Nicolas Posada  @ Inka 56 - Ccanto vs. Antonio [event-search]
+  https://ufcfightpass.com/video/972121
+
+fight_id: c71913ce-725c-5dae-a54e-6a7a6258dcb9  [fight]
+  Frank Mir vs Minotauro Nogueira  @ UFC 92 - The Ultimate 2008 [event-search]
+  https://ufcfightpass.com/video/28955
+
+fight_id: 73daa835-bb9f-527f-a174-f5a8d2b5cd29  [fight]
+  Demetrious Johnson vs Miguel Torres  @ UFC 130 - Rampage vs. Hamill [event-search]
+  https://ufcfightpass.com/video/29094
+
+fight_id: 29fa5951-4da5-50ae-8ad4-1766298f9974  [fight]
+  Freddy Vidal vs Levi Rodrigues  @ Contender Series 2025: Week 10 [event-search]
+  https://ufcfightpass.com/video/870385
+
+fight_id: 2a3143ef-9b98-5a71-8436-bcfd482c7df9  [fight]
+  Azamat Nuftillaev vs Jovan Leka  @ Contender Series 2025: Week 10 [event-search]
+  https://ufcfightpass.com/video/870364
+
+fight_id: 0ce3f63d-abaa-5988-a7bc-ce10b9a1db39  [fight]
+  Caio Machado vs Chris Larsen  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230379
+
+fight_id: db09a306-c515-5446-bdcd-2ddfcc8f4180  [fight]
+  Dejan Kajic vs Kyran Cameron  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230378
+
+fight_id: d8a4798f-ac25-523c-838f-065f7e8bcde7  [fight]
+  Dario Sinagoga vs Zack Powell  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230376
+
+fight_id: cbdab394-fae8-5f6e-b5c8-fd894913a27c  [fight]
+  Ivan Hryshchuk vs Gordon Cunningham  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230375
+
+fight_id: bb444a00-eaf2-5370-a765-324ced1b62db  [fight]
+  Justin Doege vs Anton Tokarchuk  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230373
+
+fight_id: ecbcfeac-591c-5edb-9142-33e684c47704  [fight]
+  Gio Platon vs Mattia Hovorka  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230371
+
+fight_id: 591db798-f9be-5d25-9bfa-3fc648ed8833  [fight]
+  Taylor Christopher vs Abderrahmane Haddad  @ BFL 67 [event-search]
+  https://ufcfightpass.com/video/230368
+
+fight_id: a938995f-83c0-5892-8b49-589c52343b8f  [fight]
+  Caio Machado vs Lee Mein  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257161
+
+fight_id: 08a290d9-e786-5c1f-bf2e-a5d37dcd9bcf  [fight]
+  Nic Ouellet vs Mike McAloon  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257160
+
+fight_id: 59817582-5e6b-59ae-940e-8def0461a550  [fight]
+  Leo Xavier vs Rafael Palmomeque  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257159
+
+fight_id: 7712099a-ad5a-5598-a34d-3d0117875e12  [fight]
+  Austin Russell vs Indroop Virk  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257157
+
+fight_id: 53811bdc-e3aa-5883-ad47-aa4699b1d6bf  [fight]
+  Jonathan Broad vs Kenny Pope  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257155
+
+fight_id: eff0c75d-a48a-5157-ad73-9f0da8684a63  [fight]
+  Gwyn Berry vs Seth Conner  @ BFL 69 [event-search]
+  https://ufcfightpass.com/video/257154
+
+fight_id: 1dccbc6e-71ca-5fc7-82a4-7857e3b23757  [fight]
+  Sina Maani vs David Chen  @ BFL 74 [event-search]
+  https://ufcfightpass.com/video/403532
+
+fight_id: 6a1772bc-d53b-5725-8182-cc25e96a8640  [fight]
+  Xavier Nash vs Tristan Connelly  @ BFL 74 [event-search]
+  https://ufcfightpass.com/video/403531
+
+fight_id: 6a51251a-cc4a-5082-97fb-f08400b1b095  [fight]
+  Mateo Vogel vs Taylor Christopher  @ BFL 74 [event-search]
+  https://ufcfightpass.com/video/403530
+
+fight_id: 151db996-9bed-5bf7-96ab-9814e35b0caf  [fight]
+  Makinde Adeyemi vs Brandon Labrecque  @ BFL 74 [event-search]
+  https://ufcfightpass.com/video/403528
+
+fight_id: f2b54eb9-9965-52c9-9de7-5af528754cd3  [fight]
+  Gagan Gill vs Adam De Freitas  @ BFL 74 [event-search]
+  https://ufcfightpass.com/video/403527
+
+fight_id: 14db2978-8b4f-560c-9c24-df14d8f8da0f  [fight]
+  Michael Costa vs Derick Borges  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841174
+
+fight_id: c41773c1-36c2-5ad1-99a7-d59bdb9cfcb4  [fight]
+  Amarsanaa Tsogookhuu vs Cesar Abad  @ Tuff-N-Uff 144 [event-search]
+  https://ufcfightpass.com/video/804326
+
+fight_id: 137f6fe6-ff0f-50d1-9e11-e32734af55c6  [fight]
+  Micah Haas vs Daniel Garcia  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500575
+
+fight_id: 4901e6b3-4e53-54c5-bc04-ba309b48eb2a  [fight]
+  Jorge Alcala vs Leonardo Morales  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500578
+
+fight_id: 7f134973-2033-5b7f-888e-e13240a3e9fb  [fight]
+  Taylor Guardado vs Jackie Cataline  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500576
+
+fight_id: aadb894d-39bb-59d3-a189-117ee11b90a2  [fight]
+  Max Leali vs Roberto Zambrano  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500577
+
+fight_id: 37d2afc8-5f83-58b9-85f7-12a4d4c12eb9  [fight]
+  Jeslen Mishelle vs Angelka Momcilovic  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500579
+
+fight_id: a95ccfed-1219-57ba-b6ff-27838d4265d5  [fight]
+  Desmond Manabat vs Andrew Slater  @ Tuff-N-Uff 132 [event-search]
+  https://ufcfightpass.com/video/500580
+
+fight_id: 455736b4-0480-5b45-8314-085948be92f4  [fight]
+  Brian Ortega vs Mike De La Torre  @ UFC on Fox 12 - Lawler vs. Brown [event-search]
+  https://ufcfightpass.com/video/37744
+
+fight_id: a30c376c-f860-5315-98b9-061891d746d3  [fight]
+  Francisco Flávio vs Aridriano Oliveira  @ Shooto Brazil 132 - Sousa vs. Negueba [event-search]
+  https://ufcfightpass.com/video/862146
+
+fight_id: ac767bb9-48a5-530e-ac30-d03724d3cd5f  [fight]
+  João Oliveira vs Willian Prado  @ Shooto Brazil 132 - Sousa vs. Negueba [event-search]
+  https://ufcfightpass.com/video/862141
+
+fight_id: 3c5ee1af-5d94-55b2-a723-9137fa7c6b64  [fight]
+  Rudy Garcia vs Xavier Vines  @ Tuff-N-Uff 133 [event-search]
+  https://ufcfightpass.com/video/521429
+
+fight_id: 8ebb69a6-6c38-5dac-a530-2fce9940004c  [fight]
+  Jonathan Wilson vs Marcos Brigagao  @ Tuff-N-Uff 133 [event-search]
+  https://ufcfightpass.com/video/521432
+
+fight_id: 659dad62-d5d9-553f-a633-3b210a7999e9  [fight]
+  Patrick Cornett vs Noah De La Calzada  @ Tuff-N-Uff 133 [event-search]
+  https://ufcfightpass.com/video/521428
+
+fight_id: 989d3b77-444e-57ff-a4db-a9463c84f263  [fight]
+  Ayadi Majdeddine vs Steven New  @ Tuff-N-Uff 133 [event-search]
+  https://ufcfightpass.com/video/521434
+
+fight_id: f0544bc5-46d0-5bab-8734-976923acc3cc  [fight]
+  Kale Moniz vs Anvar Boynazarov  @ Tuff-N-Uff 133 [event-search]
+  https://ufcfightpass.com/video/521430
+
+fight_id: e51b2070-7a24-5bce-be84-885b520cf723  [fight]
+  Pedro Falcao vs Chimmy Morales  @ Tuff-N-Uff 134 [event-search]
+  https://ufcfightpass.com/video/545764
+
+fight_id: d1d3cfad-e0fa-57f2-83e5-268658b27050  [fight]
+  Rensten Otgontulga vs Anvar Boynazarov  @ Tuff-N-Uff 134 [event-search]
+  https://ufcfightpass.com/video/545762
+
+fight_id: 042aabe5-767b-5215-b227-a62d7e441d23  [fight]
+  Desmond Manabat vs Alim Muhammad  @ Tuff-N-Uff 134 [event-search]
+  https://ufcfightpass.com/video/545760
+
+fight_id: b2560a12-66d9-547e-a22b-0a87b4aff938  [fight]
+  Eric McConico vs Maki Pitolo  @ Tuff-N-Uff 134 [event-search]
+  https://ufcfightpass.com/video/545763
+
+fight_id: ebd4b827-dea6-5d6c-8ee7-431dd9863f93  [fight]
+  Thomas Prestriedge vs Ethan Goodwin  @ Tuff-N-Uff 134 [event-search]
+  https://ufcfightpass.com/video/545761
+
+fight_id: cc24551b-6143-5ec9-87fe-2b97c6357593  [fight]
+  Cristian Soares vs Jefferson Pontes  @ Shooto Brazil 126 - Almeida vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/723859
+
+fight_id: af391b45-c890-5a98-9558-f7b82c6318e9  [fight]
+  Juancamilo Ronderos vs Mauro Gutierrez  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702403
+
+fight_id: b65c75a6-8c64-5e66-a550-b805070614ef  [fight]
+  Matheus Camilo vs Jhonaksy Sojo  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702404
+
+fight_id: 413eb98f-026e-5b1d-b241-238989c37ce2  [fight]
+  Daniel Keepers vs Cam Williamson  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702399
+
+fight_id: 4fa41ab2-4fd9-5302-8f43-97bd1fa1a576  [fight]
+  Arut Pogosjan vs Zachary Kraschinsky  @ Tuff-N-Uff 139 [event-search]
+  https://ufcfightpass.com/video/702402
+
+fight_id: 87e8acbf-d079-5d4e-978c-c28d0b41dc6e  [fight]
+  Isabella Araujo vs Graziela Silva  @ Shooto Brazil 126 - Almeida vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/723857
+
+fight_id: 8673d0b1-a69d-5219-af80-be3dc97335e5  [fight]
+  Guilherme Doin vs Patrick Gomes  @ Shooto Brazil 126 - Almeida vs. Oliveira [event-search]
+  https://ufcfightpass.com/video/723860
+
+fight_id: 892aeffe-958d-52a5-a8d8-80ef620c04d7  [fight]
+  Buddy Wallace vs Trent Miller  @ Tuff-N-Uff 140 [event-search]
+  https://ufcfightpass.com/video/736803
+
+fight_id: e60ce82e-fdf5-5360-92ad-65cab07a45e7  [fight]
+  Artiom Cula vs Michael Irizarry  @ Tuff-N-Uff 140 [event-search]
+  https://ufcfightpass.com/video/736801
+
+fight_id: 615925d5-dd9f-55e0-964a-570bbf659ed6  [fight]
+  Pablo Burgos vs Sean Pero  @ Tuff-N-Uff 140 [event-search]
+  https://ufcfightpass.com/video/736800
+
+fight_id: 53fe82c1-c622-5db0-829c-548e1e635a1a  [fight]
+  Miguel Suazo vs CJ Dean  @ Tuff-N-Uff 140 [event-search]
+  https://ufcfightpass.com/video/736804
+
+fight_id: 710ea9bb-041e-5dbd-931a-8177f19b4f73  [fight]
+  Jamie Siraj vs Nemat Abdrashitov  @ Tuff-N-Uff 140 [event-search]
+  https://ufcfightpass.com/video/736802
+
+fight_id: 5a437886-c1d1-5459-972d-ae99fc46e015  [fight]
+  Leon Shahbazyan vs Aireon Tavarres  @ Tuff-N-Uff 141 [event-search]
+  https://ufcfightpass.com/video/761631
+
+fight_id: 44b857b6-fd8c-5493-8ac3-a188ef16eae8  [fight]
+  Eduardo Penha vs Roy Benavides  @ Tuff-N-Uff 141 [event-search]
+  https://ufcfightpass.com/video/761632
+
+fight_id: fb0a5cf5-8f3c-5f9a-8320-98c4c21cdba9  [fight]
+  James Nakashima vs Josinaldo Silva  @ Tuff-N-Uff 141 [event-search]
+  https://ufcfightpass.com/video/761633
+
+fight_id: 8e701039-2653-5432-9321-51ffef1a83ee  [fight]
+  Jeong Wook Hwang vs Jae Hyeong Lee  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973258
+
+fight_id: f4cda165-760a-5996-9900-d2b03fc29ed2  [fight]
+  Min Chan Ji vs Ho Young Lee  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973257
+
+fight_id: 9d947456-d374-570b-813a-95fe49198917  [fight]
+  Brandon Burgos vs Hyeon Woo Kim  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973256
+
+fight_id: 5e6e9334-0458-5fa2-9058-0be9702c8107  [fight]
+  Du Ri Lee vs Hyo Jun Ham  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973255
+
+fight_id: ca263a07-f671-535a-b7a4-f879a5d6f49c  [fight]
+  Seung Ho Jung vs Tae Kyu Yun  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973261
+
+fight_id: 4997d5ab-37ca-545d-aac7-45255a77bf35  [fight]
+  Jin Min Kim vs Jeremy Santiago  @ ZFN - Origin 4 [event-search]
+  https://ufcfightpass.com/video/973260
+
+fight_id: 3955e7da-f094-53da-9ad4-37e6020b68c4  [fight]
+  Min Je Kim vs Gyu Tae Seo  @ ZFN - Origin 3 [event-search]
+  https://ufcfightpass.com/video/969533
+
+fight_id: 81eb5d3f-9327-57dc-81ab-b9db16901809  [fight]
+  Min Hyung Kim vs Jae Hyun Park  @ ZFN - Origin 3 [event-search]
+  https://ufcfightpass.com/video/969537
+
+fight_id: 5f8d0493-9bda-5179-8ac8-4e78cad1ade9  [fight]
+  John Moore vs Artiom Cula  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792942
+
+fight_id: cfa02144-fa51-5fe9-af87-88624d68ac05  [fight]
+  Cobey Fehr Jr vs Orlando Ortega  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792946
+
+fight_id: 4ba09683-7770-5ec5-8457-13a5ec1d3267  [fight]
+  Kai Kamaka vs Joshua Weems  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792945
+
+fight_id: 048c1867-f508-5f8b-b026-03d76cdb5cc4  [fight]
+  Ernesto Rodriguez vs Mahmoud Sebie  @ Tuff-N-Uff 143 [event-search]
+  https://ufcfightpass.com/video/792943
+
+fight_id: 660702d2-4a8a-5347-86ca-775eec8693de  [fight]
+  Trent Miller vs Said-Magomed Abdulgaziev  @ Tuff-N-Uff 144 [event-search]
+  https://ufcfightpass.com/video/804332
+
+fight_id: 7128a9ec-cd76-5a05-8601-e2ed377c0272  [fight]
+  Natasha Kuziutina vs Ashley Yoder  @ Tuff-N-Uff 144 [event-search]
+  https://ufcfightpass.com/video/804337
+
+fight_id: 7832ef7a-c781-5b8f-95df-68f043eb7694  [fight]
+  Renato Canuto vs Corey Stewart  @ Tuff-N-Uff 144 [event-search]
+  https://ufcfightpass.com/video/804354
+
+fight_id: 864bc33d-25ec-5f2c-8410-abf7bd759d4d  [fight]
+  Nabi Nabiev vs Da Hyun Kyung  @ ZFN - Z-Fight Night 4: Blood Moon [event-search]
+  https://ufcfightpass.com/video/969548
+
+fight_id: 6c4f34a4-c145-5cf8-8777-4ce7d479d97c  [fight]
+  Se Hoon Choi vs Jae Woong Yoon  @ ZFN - Z-Fight Night 4: Blood Moon [event-search]
+  https://ufcfightpass.com/video/969546
+
+fight_id: 9f8fcdf2-b159-57a7-8b03-8557af7de24f  [fight]
+  Myung Ho Bae vs Han Seul Kim  @ ZFN - Z-Fight Night 4: Blood Moon [event-search]
+  https://ufcfightpass.com/video/969552
+
+fight_id: fb4ced3a-8795-531b-bf39-1bf5d0387ae7  [fight]
+  Chan Soo Park vs Gyu Tae Seo  @ ZFN - Z-Fight Night 4: Blood Moon [event-search]
+  https://ufcfightpass.com/video/969547
+
+fight_id: 5ae94296-1bfc-5377-94df-efd2cc69945f  [fight]
+  Ji Won Kang vs Jun Hyeop Sung  @ ZFN - Z-Fight Night 4: Blood Moon [event-search]
+  https://ufcfightpass.com/video/969551
+
+fight_id: fcafae05-5be6-553b-89c9-42a1e6570196  [fight]
+  Dante Schiro vs Ray Cooper III  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823127
+
+fight_id: c5ab0454-54c6-5637-9917-788b8ea2b24b  [fight]
+  Magdi Amachov vs Elijah Ozuna  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823124
+
+fight_id: 5db0371a-260e-584f-8b34-ce61e7956c4f  [fight]
+  Kai Kamaka vs Sitik Muduev  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823128
+
+fight_id: 06c99af7-f25d-5067-b5e1-fdf903fb013a  [fight]
+  Jordi Maya vs Juancamilo Ronderos  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823126
+
+fight_id: ee7b9bc1-193f-5edd-8e72-2c403a381b74  [fight]
+  Diego Brandao vs Canaan Kawaihae  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823129
+
+fight_id: bef45ef0-7aba-5f4c-bef5-8a3d7f09003e  [fight]
+  Luis Hernandez vs Miles Hunsinger  @ Tuff-N-Uff 145 [event-search]
+  https://ufcfightpass.com/video/823125
+
+fight_id: 35e5fda4-0b3e-58dd-b143-b3886c83b9df  [fight]
+  Leon Shahbazyan vs Aaron Phillips  @ Tuff-N-Uff 146 [event-search]
+  https://ufcfightpass.com/video/833661
+
+fight_id: 39a82087-6752-5b1b-b2fe-36384ee94cb0  [fight]
+  Austin Clayton vs Zach Zane  @ Tuff-N-Uff 146 [event-search]
+  https://ufcfightpass.com/video/833659
+
+fight_id: 62594567-7b1d-561c-993a-1e6e8a73567a  [fight]
+  O'Shay Jordan vs Sean Rose  @ Tuff-N-Uff 146 [event-search]
+  https://ufcfightpass.com/video/833660
+
+fight_id: 25b9c834-f8f6-5ad7-a3cd-0d2952265223  [fight]
+  Chisom Ukoha vs El Hadji Ndao  @ Tuff-N-Uff 146 [event-search]
+  https://ufcfightpass.com/video/833658
+
+fight_id: 3bd1ca8b-dc1d-5d20-ae89-8f34286f1780  [fight]
+  Larry Gonzales Jr. vs Caleb Avila  @ Tuff-N-Uff 146 [event-search]
+  https://ufcfightpass.com/video/833657
+
+fight_id: fd806e68-2e0f-5413-9aa7-9a42a6ddba25  [fight]
+  Rodrigo Vera vs João Oliveira  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841177
+
+fight_id: 3095d5e2-d3d2-5cdf-b8e2-408c7df80e54  [fight]
+  João Vitor vs Tairone Neves  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841172
+
+fight_id: b1966681-ec4c-596c-bf59-a3ca1a5a236e  [fight]
+  Jóshuah Magalhães vs Ary Farias  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841176
+
+fight_id: f62152a1-7f41-5dc4-8d47-4cf40666cbb6  [fight]
+  Paulo Victor vs Gabriel Gomes  @ Shooto Brazil 131 - Farias vs. Reis [event-search]
+  https://ufcfightpass.com/video/841171
+
+fight_id: 1e84410e-4592-5e87-bafc-194bbc1e2524  [fight]
+  Jamal Pogues vs Dylan Potter  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849526
+
+fight_id: 23c08385-6276-5f93-b432-28c562ee3d14  [fight]
+  Darryl Walker vs Cole Jordan  @ Tuff-N-Uff 147 [event-search]
+  https://ufcfightpass.com/video/849518
+
+fight_id: 1850a3bb-28b8-5997-a21e-a442e244d4c8  [fight]
+  Ty Flores vs Jamal Pogues  @ Tuff-N-Uff 150 [event-search]
+  https://ufcfightpass.com/video/900346
+
+fight_id: 0ab1b6ce-7807-5d9e-9454-d46897c8340d  [fight]
+  Tyshawn Williams vs Habibullo Azizov  @ Tuff-N-Uff 151 [event-search]
+  https://ufcfightpass.com/video/912278
+
+fight_id: dd5ebb97-14cc-52bb-9984-59a7c9281e1e  [fight]
+  Diego Martinez vs Kevin Guerrero  @ Inka 55 - Night of Prospects [event-search]
+  https://ufcfightpass.com/video/943145
+
+fight_id: a2ff8ac2-ed3a-50bb-bd01-908eb986bcb9  [fight]
+  Enrique Coral vs Jhonatan Cieza  @ Inka 55 - Night of Prospects [event-search]
+  https://ufcfightpass.com/video/943144
+
+fight_id: 3de113bb-7dc6-51d3-b754-88b134fe7966  [fight]
+  Neyver Melendres vs Rodrigo de Moura  @ Inka 55 - Night of Prospects [event-search]
+  https://ufcfightpass.com/video/943141
+
+fight_id: 50b13a7b-9d93-50b3-9b80-43fb3eda83ba  [fight]
+  Alexander Chavez vs Francisco Neves  @ Inka 55 - Night of Prospects [event-search]
+  https://ufcfightpass.com/video/943142
+
 
 UNMATCHED EPISODES (11)
 ----------------------------------------------------------------------
@@ -34,7 +1534,7 @@ UNMATCHED EPISODES (11)
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (44)
+UNMATCHED PER-FIGHT VODs (39)
 ----------------------------------------------------------------------
   vod=871770  'Aoriqileng vs Cody Gibson UFC Vancouver'  — fighter not in DB
   vod=871767  'Bruno Silva vs HyunSung Park UFC Vancouver'  — no DB fight for this pair
@@ -75,8 +1575,3 @@ UNMATCHED PER-FIGHT VODs (44)
   vod=55814  'Takanori Gomi vs Leonardo Santos Shooto Japan: Treasure Hunt 7'  — no DB fight for this pair
   vod=59009  'Dong Hyun Kim vs Takanori Gomi UFC Fight Night'  — no DB fight for this pair
   vod=35733  'Myles Jury vs. Takanori Gomi UFC Fight Night'  — no DB fight for this pair
-  vod=990647  'Anthony Wint vs Matt Adams Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
-  vod=990648  'Fabrizio Escarrega vs Abe Alsaghir Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
-  vod=990649  'Bilal Hasan vs Mridul Saikia Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
-  vod=990650  'Jon Kunneman vs Joseph Kropschot Preview | DWCS Season 10, Week 1'  — scan: fighter not in DB
-  vod=990748  'Mackenzie Dern vs Gillian Robertson Preview | UFC 330'  — scan: fighter not in DB
