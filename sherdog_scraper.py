@@ -537,6 +537,43 @@ SHERDOG_ORGS = [
         'fight_prefix': 'zfnfight',
         'active':       True,
     },
+    {
+        # Fighting Alliance Championship (Kansas City, 2019-present), ~36
+        # events, still running (FAC 36 upcoming as of 2026-08). FP has
+        # full-event replays + per-fight clips. Names duplicate the abbrev
+        # ("FAC 36 - Fighting Alliance Championship 36") — strip the trailing
+        # copy.
+        'organization': 'FAC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Fighting-Alliance-Championship-15429',
+        'slug_keys':    ('fac-',),
+        'name_clean':   (r'\s*-\s*Fighting\s+Alliance\s+Championship.*$', ''),
+        'fight_prefix': 'facfight',
+        'active':       True,
+    },
+    {
+        # Warrior Xtreme Cagefighting / Warrior Xtreme Combat (Michigan,
+        # 2008-present), ~48 events (WXC 99 late 2025). Early Khaos Williams /
+        # Josh Parisian era lives on FP (event replays + clips). Names like
+        # "WXC 99 - Seasons Beatings" are already clean.
+        'organization': 'WXC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Warrior-Xtreme-Cagefighting-6015',
+        'slug_keys':    ('wxc-',),
+        'name_clean':   (r'^$', ''),
+        'fight_prefix': 'wxcfight',
+        'active':       True,
+    },
+    {
+        # Alaska Fighting Championship (Anchorage, 2003-present), ~186 events
+        # (AFC 175 in 2026). FP has event replays + clips for the 155-157 era.
+        # Names duplicate the abbrev ("AFC 175 - Alaska Fighting Championship
+        # 175") — strip the trailing copy.
+        'organization': 'Alaska FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Alaska-Fighting-Championship-492',
+        'slug_keys':    ('afc-',),
+        'name_clean':   (r'\s*-\s*Alaska\s+Fighting\s+Championship.*$', ''),
+        'fight_prefix': 'afcfight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────

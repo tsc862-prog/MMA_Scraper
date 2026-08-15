@@ -8,6 +8,8 @@
 -- appearing multiple times on one card. fight_position 1 = main event, so the
 -- highest fight_position is the bout fought first — that one is the debut. The
 -- old tie-break was fight_id (uuid), which picked an arbitrary fight.
+-- Incremental update (2026-08-15): only touch rows whose flags change — the
+-- old SET ... WHERE true rewrote all 64k+ rows and hit statement timeouts.
 create or replace function recalculate_debut_flags() returns void language plpgsql as $$
 begin
   with f as (
@@ -24,11 +26,25 @@ begin
            row_number() over (partition by fighter_id, organization
                               order by date nulls last, fight_position desc nulls last, fight_id) rn
       from long
+  ),
+  debut as (
+    select fight_id, fighter_id from ranked where rn = 1
+  ),
+  calc as (
+    select fi.id,
+           (d1.fighter_id is not null) as f1,
+           (d2.fighter_id is not null) as f2
+      from fights fi
+      left join debut d1 on d1.fight_id = fi.id and d1.fighter_id = fi.fighter1_id
+      left join debut d2 on d2.fight_id = fi.id and d2.fighter_id = fi.fighter2_id
   )
-  update fights fi set
-    fighter1_is_debut = exists(select 1 from ranked r where r.fight_id=fi.id and r.fighter_id=fi.fighter1_id and r.rn=1),
-    fighter2_is_debut = exists(select 1 from ranked r where r.fight_id=fi.id and r.fighter_id=fi.fighter2_id and r.rn=1)
-  where true;
+  update fights fi
+     set fighter1_is_debut = c.f1,
+         fighter2_is_debut = c.f2
+    from calc c
+   where c.id = fi.id
+     and (fi.fighter1_is_debut is distinct from c.f1
+       or fi.fighter2_is_debut is distinct from c.f2);
 end; $$;
 
 -- update_event_paramount_urls() cast the incoming id to ::UUID and compared it

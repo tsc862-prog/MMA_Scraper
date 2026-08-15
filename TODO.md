@@ -128,16 +128,22 @@ Active FP partners (live-streamed; added as `active: True`):
 - **Bison Kombat** — Sherdog `Bison-Kombat-10127` (8 events); Brazil; clips
   through Bison Kombat 8; #9 live 2026-08-21. Small but growing.
 - **ZFN** — Korean Zombie's Korean org; clips (ZFN Origin 04); #05 live
-  2026-08-22. **Not found on Sherdog** (Tapology only) — records blocked;
-  watchlist until Sherdog picks it up.
+  2026-08-22. Sherdog `ZFight-Night-18328` (found on second look — an
+  earlier search missed it).
 
-Defunct/historic with FP archives (one-shot backfill):
-- **FAC / Fighting Alliance Championship** — Sherdog covered; KC (Krause);
-  full-event replays (FAC 3–16) + per-fight clips.
-- **WXC / Warrior Xtreme Cagefighting** — Sherdog covered; Michigan; event
-  replays + 16 clips (early Khaos Williams / Parisian).
-- **Alaska Fighting Championship** — Sherdog covered; event replays 155–157
-  + clips.
+**WIRED IN 2026-08-15 (second wave)** — the three "defunct" survey orgs all
+turned out to be still running (FAC 36 upcoming; WXC 99 Dec 2025; AFC 175 in
+2026), so they were added as `active: True` (241 events / 2,083 fights
+backfilled; FP replays + clips matched, incl. `_EVENT_TITLE_ALIASES` /
+`_QUERY_EXPANSIONS` bridging the FAC↔Fighting Alliance Championship and
+AFC↔Alaska Fighting Championship naming split):
+- **FAC / Fighting Alliance Championship** — Sherdog
+  `Fighting-Alliance-Championship-15429`; KC; full-event replays + clips.
+- **WXC / Warrior Xtreme Cagefighting** — Sherdog
+  `Warrior-Xtreme-Cagefighting-6015`; Michigan; event replays + clips
+  (early Khaos Williams / Parisian).
+- **Alaska FC** — Sherdog `Alaska-Fighting-Championship-492`, 186 events;
+  event replays + clips for the 149–157 era.
 
 Re-confirmed NOT on FP: KSW, Oktagon, BAMMA, M-1, Combate Global, Sengoku,
 DREAM, DEEP (namesakes only). Grappling-only (out of scope): Submission
@@ -318,6 +324,20 @@ For each org we add:
   they're matched then dropped — 0 stored for a US audience. (8 of PFL's newer
   full events are US-blocked the same way.) This is the free-YouTube answer to
   the skipped Prime Video crawler: the content exists, but ONE blocks the US.
+- ~~Rematch VODs land on the wrong bout.~~ **DONE 2026-08-15:** a per-fight VOD
+  title's event hint is usually generic ("Amanda Ribas vs Mackenzie Dern UFC
+  Fight Night"), and it was substring-tested against each candidate event with
+  first-hit-wins — but *every* UFC rematch's event name contains "UFC Fight
+  Night", so the pick was effectively arbitrary and fight 1's video regularly
+  landed on the rematch. `pick_by_hint()` now requires the hint to single one
+  candidate out, else the VOD is reported unmatched instead of guessed at (all
+  three pick sites: bucket walk, vesper search, id scan). Pass 3 also resolves a
+  *specific* hint against all events before the "only one candidate" shortcut —
+  its candidates are filtered to the bucket's orgs, so a cross-org rematch
+  ("... Strikeforce: Rousey vs Kaufman" walked under a UFC bucket) left the
+  wrong bout as the sole candidate. 10 mis-assigned URLs repaired in the DB
+  (Dern/Ribas, McCann/Belbita, Nascimento/Mayes, Vera/Grant, Ngannou/Blaydes,
+  Edgar/Swanson, Davis/Carmouche, Benavidez/Formiga, Jacare/Brunson ×2).
 - KSW/Oktagon remain unwired (paywalled — no free channel).
 - **Prime Video / watch.onefc.com — evaluated & skipped (2026-07-10).** ONE's
   full-event replays live on Amazon Prime Video (US-only, subscription) and

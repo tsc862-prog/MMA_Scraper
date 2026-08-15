@@ -20,6 +20,11 @@ GitHub-Actions datacenter IPs. Same operational model as paramount_scraper.py
                                                # since --since (default 2025-01-01)
                                                # and event-level replay gaps for
                                                # UFC/PRIDE/Strikeforce/WEC
+  python fightpass_scraper.py --search-events --events 65387,69287
+                                               # scope PASS 5 to specific event ids
+                                               # (ignores --since, skips the series
+                                               # and bucket walks) — targeted backfill
+                                               # of a few known-incomplete cards
 
 .env needs: FIGHTPASS_EMAIL, FIGHTPASS_PASSWORD, SUPABASE_URL, SUPABASE_KEY
 """
@@ -496,6 +501,16 @@ def match_event_fuzzy(fp_title, events_for_org, events_by_norm):
             return cands[0]
     return None
 
+# Abbreviated DB names expanded for search — vesper tokenizes, so a query
+# 'FAC 3' can't find a VOD titled 'Fighting Alliance Championship 3'.
+# (The reverse direction — spelled-out VOD titles vs abbreviated DB names —
+# is handled by _EVENT_TITLE_ALIASES at match time.)
+_QUERY_EXPANSIONS = [
+    (re.compile(r'^FAC\b', re.I), 'Fighting Alliance Championship'),
+    (re.compile(r'^AFC\b', re.I), 'Alaska Fighting Championship'),
+    (re.compile(r'^CFFC\b', re.I), 'Cage Fury FC'),
+]
+
 def _event_queries(name):
     """Vesper search queries for a DB event name. Two angles:
       - the base before the subtitle separator ('Fury FC 122: King vs. Ivy'
@@ -515,6 +530,10 @@ def _event_queries(name):
             out.append(headliner)
     if not out:
         out.append((name or '').strip())
+    for q in list(out):
+        for rx, repl in _QUERY_EXPANSIONS:
+            if rx.match(q):
+                out.append(rx.sub(repl, q))
     return out
 
 def _season_year(season_title):
@@ -727,6 +746,8 @@ _EVENT_PREFIX = (
     # below so Brazil clips aren't read as the Japanese org.
     r'Shooto\s+Brazil|Battlefield\s+Fight\s+League|BFL|Tuff-?N-?Uff|'
     r'Unified\s+MMA|Inka(?:\s+MMA)?|Bison\s+Kombat|ZFN|'
+    r'Fighting\s+Alliance\s+Championship|Alaska\s+Fighting\s+Championship|'
+    r'FAC|WXC|AFC|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'
 )
@@ -765,6 +786,42 @@ def find_event_fight(fighter_pair_ids, event_id, fights_by_event):
             return fi
     return None
 
+def pick_by_hint(candidates, hint, ev_by_id):
+    """Disambiguate a rematch (same pair, >1 DB fight) using the VOD title's
+    event hint. Returns the fight only when the hint singles one out.
+
+    Most per-fight VOD titles carry a generic hint — "Amanda Ribas vs
+    Mackenzie Dern UFC Fight Night" — which is a substring of *every*
+    candidate's event name ("UFC Fight Night 161 - ...", "UFC Fight Night 249
+    - ..."). Taking the first substring hit then silently pins fight 1's video
+    on the rematch (or vice versa) depending on candidate order, so a hint
+    that matches more than one candidate is treated as no hint at all and the
+    VOD is reported unmatched rather than guessed at."""
+    if not hint:
+        return None
+    hint_n = _norm(hint)
+    if not hint_n:
+        return None
+    hits = [f for f in candidates
+            if hint_n in _norm((ev_by_id.get(f['event_id']) or {}).get('name', ''))]
+    if len(hits) == 1:
+        return hits[0]
+    if hits:
+        return None          # generic hint — ambiguous, don't guess
+    # No substring hit: fall back to fuzzy event matching over the candidates'
+    # own events (noise-word differences like "PRIDE: Final Conflict 2004" vs
+    # "Pride FC - Final Conflict 2004"). Its strategies all require an exact
+    # or unique match, so a generic hint yields None here too.
+    cand_events = [ev_by_id[f['event_id']] for f in candidates
+                   if f['event_id'] in ev_by_id]
+    matched_ev = match_event_fuzzy(hint, cand_events,
+                                   {_norm(e['name']): e for e in cand_events})
+    if matched_ev:
+        for f in candidates:
+            if f['event_id'] == matched_ev['id']:
+                return f
+    return None
+
 # ── Progress tracking ─────────────────────────────────────────────────────────
 
 def load_seen():
@@ -791,7 +848,7 @@ def save_scan_progress(vid):
 
 def main(push=False, force=False, scan_vods=False,
          scan_start=None, scan_end=None, search_vesper=False, only_orgs=None,
-         search_events=False, since='2025-01-01'):
+         search_events=False, since='2025-01-01', only_events=None):
     for var in ('SUPABASE_URL', 'SUPABASE_KEY', 'FIGHTPASS_EMAIL', 'FIGHTPASS_PASSWORD'):
         if not os.environ.get(var):
             print(f'Missing {var} in .env'); sys.exit(1)
@@ -847,7 +904,14 @@ def main(push=False, force=False, scan_vods=False,
     ev_by_id = {e['id']: e for e in events}
     all_events_by_norm = {_norm(e['name']): e for e in events}  # global, for vesper fallback
 
-    for series in SERIES:
+    # --events is a targeted backfill of named cards: the series and bucket
+    # walks below crawl the whole catalog and would match unrelated events, so
+    # skip straight to PASS 5.
+    if only_events:
+        print(f'--events given ({len(only_events)} event ids) — skipping the '
+              f'series and bucket walks')
+
+    for series in ([] if only_events else SERIES):
         org_events = [e for e in events if e['organization'] == series['organization']]
         events_by_norm = {_norm(e['name']): e for e in org_events}
         org_event_ids = {e['id'] for e in org_events}
@@ -1011,7 +1075,7 @@ def main(push=False, force=False, scan_vods=False,
                 for v in fp.playlist_vods(pl['id']):
                     yield v, pl_title
 
-    for bucket in PLAYLIST_BUCKETS:
+    for bucket in ([] if only_events else PLAYLIST_BUCKETS):
         print(f'\n=== bucket {bucket["exid"]}  {bucket["name"]} '
               f'({bucket["type"]}, level={bucket["level"]}, orgs={bucket["orgs"]}) ===')
         # Org-scoped event lookup — prevents a Sakuraba PRIDE fight matching
@@ -1110,27 +1174,25 @@ def main(push=False, force=False, scan_vods=False,
                 for f in candidates:
                     if f['event_id'] == scoped_event['id']:
                         picked = f; break
+            # A hint that names a specific event outranks the candidate list,
+            # which is filtered to the bucket's orgs: a pair whose rematch was
+            # in another promotion ("Ronaldo Souza vs Derek Brunson
+            # Strikeforce: Rousey vs Kaufman", walked under a UFC bucket) has
+            # only the wrong bout as a candidate, and the len == 1 shortcut
+            # below would take it.
+            if not picked and hint:
+                hint_ev = match_event_fuzzy(hint, events, all_events_by_norm)
+                if hint_ev:
+                    for x in ids_a:
+                        for y in ids_b:
+                            picked = find_event_fight((x, y), hint_ev['id'],
+                                                      fights_by_event)
+                            if picked: break
+                        if picked: break
             if not picked and len(candidates) == 1:
                 picked = candidates[0]
-            if not picked and hint:
-                # Fast path: hint normalized as substring of event name.
-                hint_n = _norm(hint)
-                for f in candidates:
-                    ev = ev_by_id.get(f['event_id'])
-                    if ev and hint_n and hint_n in _norm(ev['name']):
-                        picked = f; break
-                # Fall back to fuzzy event matching on the hint — handles
-                # noise-word differences like "PRIDE: Final Conflict 2004"
-                # (FP hint) vs "Pride FC - Final Conflict 2004" (DB name).
-                if not picked:
-                    cand_events = [ev_by_id[f['event_id']] for f in candidates
-                                   if f['event_id'] in ev_by_id]
-                    cand_by_norm = {_norm(e['name']): e for e in cand_events}
-                    matched_ev = match_event_fuzzy(hint, cand_events, cand_by_norm)
-                    if matched_ev:
-                        for f in candidates:
-                            if f['event_id'] == matched_ev['id']:
-                                picked = f; break
+            if not picked:
+                picked = pick_by_hint(candidates, hint, ev_by_id)
             if picked:
                 ev = ev_by_id.get(picked['event_id'])
                 url = WATCH_URL.format(vod_id)
@@ -1170,21 +1232,8 @@ def main(push=False, force=False, scan_vods=False,
         picked = None
         if len(candidates) == 1:
             picked = candidates[0]
-        elif len(candidates) > 1 and hint:
-            hint_n = _norm(hint)
-            for f in candidates:
-                ev = ev_by_id.get(f['event_id'])
-                if ev and hint_n and hint_n in _norm(ev['name']):
-                    picked = f; break
-            if not picked:
-                cand_events = [ev_by_id[f['event_id']] for f in candidates
-                               if f['event_id'] in ev_by_id]
-                cand_norm = {_norm(e['name']): e for e in cand_events}
-                ev_match = match_event_fuzzy(hint, cand_events, cand_norm)
-                if ev_match:
-                    for f in candidates:
-                        if f['event_id'] == ev_match['id']:
-                            picked = f; break
+        elif len(candidates) > 1:
+            picked = pick_by_hint(candidates, hint, ev_by_id)
         # Fallback: exact resolution missed (FP name spelling/nickname).
         # Pin the event from the hint, fuzzy-match the fight within it.
         if not picked and not candidates and hint:
@@ -1205,6 +1254,11 @@ def main(push=False, force=False, scan_vods=False,
     # ('Cage Fury FC 158' vs DB 'CFFC 158: ...' share no tokens otherwise).
     _EVENT_TITLE_ALIASES = [
         (re.compile(r'\bcage\s+fury\s+fc\b', re.I), 'CFFC'),
+        # FP spells these out; Sherdog names use the abbreviation.
+        (re.compile(r'\bfighting\s+alliance\s+championship\b', re.I), 'FAC'),
+        (re.compile(r'\balaska\s+fighting\s+championship\b', re.I), 'AFC'),
+        # Promoter possessive on FAC replay titles ("James Krause's FAC 16").
+        (re.compile(r"\bjames\s+krause['’]?s?\s+", re.I), ''),
     ]
 
     # Shared by passes 3 and 5: try a VOD as a full-event (or prelims) replay.
@@ -1319,13 +1373,8 @@ def main(push=False, force=False, scan_vods=False,
             picked = None
             if len(candidates) == 1:
                 picked = candidates[0]
-            elif hint:
-                hint_n = _norm(hint)
-                for f in candidates:
-                    ev = ev_by_id.get(f['event_id'])
-                    if ev and hint_n and hint_n in _norm(ev['name']):
-                        picked = f
-                        break
+            else:
+                picked = pick_by_hint(candidates, hint, ev_by_id)
             if picked:
                 ev = ev_by_id.get(picked['event_id'])
                 url = WATCH_URL.format(vod_id)
@@ -1407,6 +1456,8 @@ def main(push=False, force=False, scan_vods=False,
     if search_events:
         EVENT_LEVEL_ORGS = {'UFC', 'PRIDE', 'Strikeforce', 'WEC'}
         wanted = {o.strip().lower() for o in only_orgs} if only_orgs else None
+        wanted_events = ({str(x).strip() for x in only_events}
+                         if only_events else None)
         targets = []
         for e in events:
             if _event_is_future(e):
@@ -1417,13 +1468,19 @@ def main(push=False, force=False, scan_vods=False,
             ev_fights = fights_by_event.get(e['id'], [])
             missing_fight = any(not f.get('fightpass_url') for f in ev_fights)
             recent = (e.get('date') or '') >= since
+            if wanted_events is not None:
+                if str(e['id']) not in wanted_events:
+                    continue
+                recent = True     # an explicitly named card ignores --since
             needs_event_url = (org in EVENT_LEVEL_ORGS
                                and not e.get('fightpass_url'))
             if (recent and missing_fight) or needs_event_url:
                 targets.append(e)
-        print(f'\n=== PASS 5: vesper search by event name '
-              f'({len(targets)} events; per-fight gaps since {since}, '
-              f'event-level gaps for {sorted(EVENT_LEVEL_ORGS)}) ===')
+        scope = (f'{len(targets)} of {len(wanted_events)} named events'
+                 if wanted_events is not None else
+                 f'{len(targets)} events; per-fight gaps since {since}, '
+                 f'event-level gaps for {sorted(EVENT_LEVEL_ORGS)}')
+        print(f'\n=== PASS 5: vesper search by event name ({scope}) ===')
 
         seen_ev_search = set()
         for i, e in enumerate(sorted(targets, key=lambda x: x.get('date') or '')):
@@ -1570,9 +1627,15 @@ if __name__ == '__main__':
     parser.add_argument('--orgs', type=str, default=None,
                         help='Scope the vesper/event-search passes to these '
                              'orgs (comma-separated), e.g. --orgs "DWCS"')
+    parser.add_argument('--events', type=str, default=None,
+                        help='Scope --search-events to these event ids '
+                             '(comma-separated). Ignores --since and skips the '
+                             'series/bucket walks — targeted backfill of a few '
+                             'known-incomplete cards')
     args = parser.parse_args()
     main(push=args.push, force=args.force, scan_vods=args.scan_vods,
          scan_start=args.scan_start, scan_end=args.scan_end,
          search_vesper=args.search_vesper,
          only_orgs=args.orgs.split(',') if args.orgs else None,
-         search_events=args.search_events, since=args.since)
+         search_events=args.search_events, since=args.since,
+         only_events=args.events.split(',') if args.events else None)
