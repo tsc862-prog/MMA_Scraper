@@ -103,6 +103,41 @@ vesper-searched 34 org names; cross-referenced with a Sherdog org-ID scan.
 Buckets with ≥20 "X vs Y" titles for the org name are real per-fight content;
 buckets with 0–4 are noise / namesakes.
 
+#### 2026-08-15 re-survey — new viable orgs (not yet in DB)
+
+Sources: full upcoming live-schedule walk (current FP streaming partners) +
+vesper probe of 33 org names. All below have real per-fight VOD catalogs.
+
+Active FP partners (live-streamed; add as `active: True`):
+- **Shooto Brazil** — Sherdog `Shooto-Brazil-13715` (138 events, ~1,377
+  fights); clips through Shooto Brazil 138; #139 live 2026-08-28. Biggest
+  catch. Distinct from the Japanese Shooto already in DB.
+- **BFL / Battlefield Fight League** — Sherdog covered; Canada's largest
+  promotion; per-fight clips (BFL 87) AND full-event replays (BFL 66–71);
+  BFL 88 live 2026-08-28.
+- **Tuff-N-Uff** — Sherdog covered; Vegas; long-time FP partner; clips
+  through 155; #156 live 2026-08-20. Mixed amateur/pro — is_amateur matters.
+- **Unified MMA** — Sherdog covered; Edmonton; clips through Unified 62.
+- **INKA MMA** — Sherdog `Inka-MMA-1673` (59 events, ~327 fights); Peru;
+  clips through Inka 59; #60 live 2026-08-20 (Spanish + English feeds).
+- **Bison Kombat** — Sherdog `Bison-Kombat-10127` (8 events); Brazil; clips
+  through Bison Kombat 8; #9 live 2026-08-21. Small but growing.
+- **ZFN** — Korean Zombie's Korean org; clips (ZFN Origin 04); #05 live
+  2026-08-22. **Not found on Sherdog** (Tapology only) — records blocked;
+  watchlist until Sherdog picks it up.
+
+Defunct/historic with FP archives (one-shot backfill):
+- **FAC / Fighting Alliance Championship** — Sherdog covered; KC (Krause);
+  full-event replays (FAC 3–16) + per-fight clips.
+- **WXC / Warrior Xtreme Cagefighting** — Sherdog covered; Michigan; event
+  replays + 16 clips (early Khaos Williams / Parisian).
+- **Alaska Fighting Championship** — Sherdog covered; event replays 155–157
+  + clips.
+
+Re-confirmed NOT on FP: KSW, Oktagon, BAMMA, M-1, Combate Global, Sengoku,
+DREAM, DEEP (namesakes only). Grappling-only (out of scope): Submission
+Hunter Pro, UFC BJJ.
+
 #### Already in DB
 | Org | Sherdog ID | Fight Pass | Active |
 |---|---|---|---|
