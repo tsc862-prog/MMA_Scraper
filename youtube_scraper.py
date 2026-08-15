@@ -7,7 +7,9 @@ Supabase. Each channel in CHANNELS covers one or more DB orgs:
   - RIZIN channel → RIZIN (per-fight only)
   - ONE channel   → ONE Championship (per-fight, MMA bouts only)
   - BRAVE channel → Brave CF (per-fight)
-Stores the video URL in fights.youtube_url (per fight) and events.youtube_url
+Stores the video URL in fights.youtube_url (per fight), events.youtube_url
+(full main-card replays), and events.youtube_prelims_url (prelim-card
+replays, e.g. LFA's 'Full Prelim' uploads)
 (full-event videos). The full-event matcher is org-agnostic — any channel that
 posts '... Full Event' uploads gets matched; today only PFL does on YouTube
 (ONE/Brave post full events on their own paywalled platforms).
@@ -89,6 +91,19 @@ CHANNELS = [
         'channel_id': 'UCos8j6dB44G_nlNpdJdP8SQ',
         'orgs':       ['Brave CF'],
     },
+    {
+        # LFA — posts BOTH card halves as full replays:
+        #   'LFA 236 Main Card | Full Event - Five Exclusive Fights | LFA MMA'
+        #   'LFA 236 Full Prelim | Exclusive Fights | LFA Fights'
+        # The prelim titles carry no 'full event' marker — the variant logic
+        # (_full_card_variant) routes them to events.youtube_prelims_url.
+        # Busy channel (clips/interviews between replays) — scan deeper than
+        # the default 400 uploads so older replays backfill.
+        'name':       'LFA',
+        'channel_id': 'UCMssVoZVgjD4pyeG6Ic-_Nw',
+        'orgs':       ['LFA'],
+        'max_pages':  40,
+    },
 ]
 YT_API         = 'https://www.googleapis.com/youtube/v3'
 VIDEO_URL_TMPL = 'https://www.youtube.com/watch?v={}'
@@ -131,12 +146,11 @@ def update_youtube_url(fight_id, url):
     )
     return r.status_code in (200, 204)
 
-def update_event_youtube_url(event_id, url):
-    r = requests.patch(
-        f'{SUPABASE_URL}/rest/v1/events?id=eq.{event_id}',
-        headers=_sb_headers(),
-        data=json.dumps({'youtube_url': url}),
-    )
+def update_event_youtube_url(event_id, url, variant='main'):
+    column = 'youtube_prelims_url' if variant == 'prelims' else 'youtube_url'
+    r = requests.patch(f'{SUPABASE_URL}/rest/v1/events?id=eq.{event_id}',
+                       headers=_sb_headers(),
+                       data=json.dumps({column: url}))
     return r.status_code in (200, 204)
 
 # ── YouTube Data API ──────────────────────────────────────────────────────────
@@ -391,10 +405,15 @@ _ROMAN = {'ii': '2', 'iii': '3', 'iv': '4', 'v': '5', 'vi': '6',
           'vii': '7', 'viii': '8', 'ix': '9', 'x': '10'}
 
 def _is_full_event_title(title):
-    """A video that is a full event replay ('... | Full Event') rather than a
-    single bout. ONE files these inside its per-fight playlists; PFL posts them
-    to its uploads feed. Both routes send such titles to match_full_event."""
-    return bool(re.search(r'\bfull event\b', title, re.IGNORECASE))
+    """A video that is a full card replay — '... | Full Event' (main card) or
+    '... Full Prelim(s)' (LFA's prelim-half uploads) — rather than a single
+    bout. Both routes send such titles to match_full_event."""
+    return bool(re.search(r'\bfull (?:event|prelims?)\b', title, re.IGNORECASE))
+
+def _full_card_variant(title):
+    """'prelims' for prelim-card replays, else 'main'. Routed to
+    events.youtube_prelims_url / events.youtube_url respectively."""
+    return 'prelims' if re.search(r'\bprelims?\b', title, re.IGNORECASE) else 'main'
 
 def _sig_tokens(text):
     """Significant tokens: alpha words >2 chars + standalone numbers, with
@@ -433,9 +452,13 @@ def match_full_event(title, events):
     if _NOT_FULL_EVENT.search(title):
         return None, 'not a full event (highlights/recap/promo)'
 
-    key = re.split(r'\|?\s*full event\b', title, maxsplit=1, flags=re.IGNORECASE)[0]
+    key = re.split(r'\|?\s*full (?:event|prelims?)\b', title, maxsplit=1,
+                   flags=re.IGNORECASE)[0]
     key = re.sub(r'@\S+', ' ', key)          # drop @collab handles
     key = re.sub(r'\([^)]*\)', ' ', key)     # drop parentheticals
+    # 'Main Card' is card-half filler, not event identity ('LFA 236 Main
+    # Card | Full Event ...') — never part of the Sherdog name.
+    key = re.sub(r'\bmain\s+card\b', ' ', key, flags=re.IGNORECASE)
     ym = re.search(r'\b(?:19|20)\d{2}\b', key)
     year = ym.group(0) if ym else None
     if year:
@@ -493,20 +516,23 @@ def main(push=False):
     seen_event = set()
 
     def record_full_event(vid, vtitle, events):
-        """Match a '... Full Event' video to one of `events` and record it,
-        deduped by event. Used from both the playlist scan (ONE files full
-        events inside per-fight playlists) and the uploads scan (PFL)."""
+        """Match a full-card video ('Full Event' main card or 'Full Prelim')
+        to one of `events` and record it, deduped by (event, variant). Used
+        from both the playlist scan (ONE files full events inside per-fight
+        playlists) and the uploads scan (PFL, LFA)."""
         url = VIDEO_URL_TMPL.format(vid)
         event, reason = match_full_event(vtitle, events)
         if not event:
             ev_unmatched.append((reason, vtitle, url))
             return
-        if event['id'] in seen_event:
+        variant = _full_card_variant(vtitle)
+        if (event['id'], variant) in seen_event:
             return
-        seen_event.add(event['id'])
+        seen_event.add((event['id'], variant))
         ev_matched.append({
             'event_id': event['id'], 'event_name': event['name'],
             'video_title': vtitle, 'url': url, 'video_id': vid,
+            'variant': variant,
         })
 
     # Walk each channel independently — its DB scope is the events for its
@@ -569,8 +595,9 @@ def main(push=False):
 
         # Full-event pass — runs for every channel; org-agnostic matcher, so
         # channels that don't post full events simply yield nothing.
-        print(f'  Scanning {ch["name"]} recent uploads for "Full Event" videos...')
-        fe_videos = get_full_event_videos(ch['channel_id'])
+        print(f'  Scanning {ch["name"]} recent uploads for full-card videos...')
+        fe_videos = get_full_event_videos(ch['channel_id'],
+                                          max_pages=ch.get('max_pages', 8))
         print(f'    {len(fe_videos)} full-event candidate videos found')
         for vid, vtitle in fe_videos:
             record_full_event(vid, vtitle, events)
@@ -608,7 +635,7 @@ def main(push=False):
 
         out.write(f'\nMATCHED FULL EVENTS ({len(ev_matched)})\n' + '-' * 70 + '\n')
         for m in ev_matched:
-            out.write(f"event_id: {m['event_id']}\n")
+            out.write(f"event_id: {m['event_id']}  [{m.get('variant', 'main')}]\n")
             out.write(f"event:    {m['event_name']}\n")
             out.write(f"video:    {m['video_title']}\n")
             out.write(f"url:      {m['url']}\n\n")
@@ -639,7 +666,9 @@ def main(push=False):
             print(f'  updated {ok}/{len(matched)} fights')
         if ev_matched:
             print(f'Pushing {len(ev_matched)} event URLs to Supabase...')
-            ok = sum(update_event_youtube_url(m['event_id'], m['url']) for m in ev_matched)
+            ok = sum(update_event_youtube_url(m['event_id'], m['url'],
+                                              m.get('variant', 'main'))
+                     for m in ev_matched)
             print(f'  updated {ok}/{len(ev_matched)} events')
     else:
         print('\nDry run — pass --push to write youtube_url columns')

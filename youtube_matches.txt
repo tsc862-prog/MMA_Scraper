@@ -1,15 +1,15 @@
-YOUTUBE PFL MATCH RESULTS
-Fights  — matched: 773  unmatched: 615
-Events  — matched: 4  unmatched: 13
-Geo-blocked in US (not stored): 0 fights, 8 events
+YOUTUBE MATCH RESULTS
+Fights  — matched: 868  unmatched: 803
+Events  — matched: 8  unmatched: 14
+Geo-blocked in US (not stored): 29 fights, 23 events
 ======================================================================
 
-MATCHED FIGHTS (773)
+MATCHED FIGHTS (868)
 ----------------------------------------------------------------------
-fight_id: b5280e94-52d1-5286-8e0f-ecf2b0e088a8
-fight:    Corey Anderson vs Denis Goltsov @ PFL Road to Dubai Champions Series 2 & PFL Africa 2025 First Round
-video:    A Heavyweight CLASH!! | Corey Anderson v Denis Goltsov | Full Fight | PFL Champions Series 2 2025
-url:      https://www.youtube.com/watch?v=b2bKbGRUJoY
+fight_id: 656f5178-eb0d-5aa4-86a9-82601349f6a8
+fight:    Dalton Rosta vs Sadibou Sy @ 2025 PFL World Tournament 3: First Round
+video:    NO WAY OUT! | Dalton Rosta v Sadibou Sy | Full Fight | PFL World Tournament 3
+url:      https://www.youtube.com/watch?v=AYpvzUe5tkY
 
 fight_id: ef036bf1-385e-54ed-9a38-95b3e04f2a82
 fight:    Francis Ngannou vs Renan Ferreira @ PFL Super Fights - Battle of the Giants: Brace for Impact
@@ -86,11 +86,6 @@ fight:    Usman Nurmagomedov vs Alexandr Shabliy @ Bellator Champions Series San
 video:    Lightweight TITLE-DECIDER!! | Usman Nurmagomedov v Alexandr Shabliy | Full Fight | BCS San Diego
 url:      https://www.youtube.com/watch?v=jhVWO-UopC4
 
-fight_id: ca7b8c2d-3002-5bdf-acd2-db8fcc65c32f
-fight:    Corey Anderson vs Dovletdzhan Yagshimuradov @ Bellator 257 - Nemkov vs. Davis 2
-video:    UNBELIEVABLE Ground And Pound! | Corey Anderson v Dovlet Yagshimuradov | Full Fight | Bellator 257
-url:      https://www.youtube.com/watch?v=ZZF-tXYJK-k
-
 fight_id: 2caf97e1-a839-501a-a458-62e9238ce1c0
 fight:    Usman Nurmagomedov vs Mike Hamel @ Bellator 255 - Pitbull vs. Sanchez 2
 video:    Usman's Bellator Debut!! | Usman Nurmagomedov v Mike Hamel | Full Fight | Bellator 255
@@ -110,11 +105,6 @@ fight_id: d1bc3be5-245d-5afe-a32e-486bf45d6e55
 fight:    Jay-Jay Wilson vs Vladimir Tokov @ Bellator 286	 - Pitbull vs. Borics
 video:    Lightweight BANGER! | Jay Jay Wilson v Vladimir Tokov | Full Fight | Bellator 286
 url:      https://www.youtube.com/watch?v=vARriJ5f678
-
-fight_id: 810531f6-ec0b-5e49-9611-d06db41eb02c
-fight:    Corey Anderson vs Phil Davis @ Bellator 297 - Nemkov vs. Romero
-video:    Overtime Against Mr. Wonderful! | Corey Anderson v Phil Davis | Full Fight | Bellator 297
-url:      https://www.youtube.com/watch?v=0YLrVn-4Tb4
 
 fight_id: 45dd2b9c-1ed6-5eb3-92a8-80973545fef3
 fight:    Sergio Pettis vs Juan Archuleta @ Bellator 258 - Archuleta vs. Pettis
@@ -195,11 +185,6 @@ fight_id: d2553d5d-f16a-5fcb-b266-a990def21b5c
 fight:    Maira Mazar vs Kaytlin Neil @ PFL 8: 2023 Playoffs
 video:    Maíra Mazar vs Kaytlin Neil | PFL 8, 2023
 url:      https://www.youtube.com/watch?v=6CfrKibvd8E
-
-fight_id: 70364def-57df-579c-9687-3d17ea6e651a
-fight:    Danilo Marques vs Satoshi Ishii @ PFL 8: 2023 Playoffs
-video:    Danilo Marques vs Satoshi Ishii | PFL 8, 2023
-url:      https://www.youtube.com/watch?v=F4hoqgfdPYI
 
 fight_id: ae4da75a-e33d-5aab-80e3-410180b1d79b
 fight:    Nathan Kelly vs Damion Nelson @ PFL 8: 2023 Playoffs
@@ -291,6 +276,11 @@ fight:    Carlos Leal vs Dilano Taylor @ PFL 6: 2023 Regular Season
 video:    Carlos Leal vs Dilano Taylor | PFL 6, 2023
 url:      https://www.youtube.com/watch?v=9tt-YG2hDKQ
 
+fight_id: 09baa2e9-96ba-565f-9bf7-a7453079851a
+fight:    Bruno Miranda vs Alex Martinez @ PFL 6: 2023 Regular Season
+video:    Bruno Miranda vs Alex Martinez | PFL 6, 2023
+url:      https://www.youtube.com/watch?v=nVN3IDkuU6M
+
 fight_id: bea516bc-212e-5ae5-aded-2cbb8af80be9
 fight:    Solomon Renfro vs Jarrah Al-Silawi @ PFL 6: 2023 Regular Season
 video:    Solomon Renfro vs Jarrah Al-Silawi | PFL 6, 2023
@@ -345,11 +335,6 @@ fight_id: 8119175a-fe79-5f6f-9595-c7df3dd1fab8
 fight:    Biaggio Ali Walsh vs Travell Miller @ PFL 5: 2023 Regular Season
 video:    Biaggio Ali Walsh vs Travell Miller | PFL 5, 2023
 url:      https://www.youtube.com/watch?v=QSkWXAsgyVM
-
-fight_id: 6dce659d-9b4e-5a3b-b4bd-8985f7794a5c
-fight:    Marcelo Nunes vs Danilo Marques @ PFL 5: 2023 Regular Season
-video:    Marcelo Nunes vs Danilo Marques | PFL 5, 2023
-url:      https://www.youtube.com/watch?v=S3-DT7oPF_A
 
 fight_id: 2fa504a9-d61a-5459-899a-2fc1aa2f6ba0
 fight:    Jordan Heiderman vs Patrick Brady @ PFL 5: 2023 Regular Season
@@ -416,11 +401,6 @@ fight:    Alexei Pergande vs Akeem Bashir @ PFL 4: 2023 Regular Season
 video:    Alexei Pergande vs Akeem Bashir | PFL 4, 2023
 url:      https://www.youtube.com/watch?v=emRRjuib2E4
 
-fight_id: d99baf5d-0a71-5802-87be-31b09c62f212
-fight:    Andrew Sanchez vs Taylor Johnson @ PFL 4: 2023 Regular Season
-video:    Andrew Sanchez vs Taylor Johnson | PFL 4, 2023
-url:      https://www.youtube.com/watch?v=pGiT4M2GvUs
-
 fight_id: 898859ca-ead9-5c0d-b1d7-2f74abf44073
 fight:    Magomed Umalatov vs Dilano Taylor @ PFL 3: 2023 Regular Season
 video:    Magomed Umalatov vs Dilano Taylor | PFL 3, 2023
@@ -450,6 +430,11 @@ fight_id: ab374d8f-9e6c-5e34-887e-a3af1f4e54e9
 fight:    Bruno Miranda vs Ahmed Amir @ PFL 3: 2023 Regular Season
 video:    Bruno Miranda vs Ahmed Amir | PFL 3, 2023
 url:      https://www.youtube.com/watch?v=0DUo4-nW3X4
+
+fight_id: d2ca6b44-273d-57c0-ba71-d7f806df4846
+fight:    Raush Manfio vs Alex Martinez @ PFL 3: 2023 Regular Season
+video:    Raush Manfio vs Alex Martinez | PFL 3, 2023
+url:      https://www.youtube.com/watch?v=0L69jL-k2RQ
 
 fight_id: 22963d22-4ceb-549d-84ae-72c20939b4cf
 fight:    Zach Juusola vs Brandon Jenkins @ PFL 3: 2023 Regular Season
@@ -495,11 +480,6 @@ fight_id: 0fa13f2e-89bb-55f6-93f8-0cd5df2e34bc
 fight:    Amber Leibrock vs Martina Jindrova @ PFL 2: 2023 Regular Season
 video:    Amber Leibrock vs Martina Jindrova | PFL 2, 2023
 url:      https://www.youtube.com/watch?v=4PW9F-o9Bpk
-
-fight_id: 7690a1a2-dbfe-53b3-a46a-3884bd819ddf
-fight:    Danilo Marques vs Yorgan De Castro @ PFL 2: 2023 Regular Season
-video:    Danilo Marques vs Yorgan De Castro | PFL 2, 2023
-url:      https://www.youtube.com/watch?v=GytDiHRZIvE
 
 fight_id: 091a7985-0429-5506-8471-59d539d750ab
 fight:    Olena Kolesnyk vs Aspen Ladd @ PFL 2: 2023 Regular Season
@@ -776,15 +756,20 @@ fight:    Khurshed Kakhorov vs Moktar Benkaci @ PFL Europe 2: 2023 Regular Seaso
 video:    Khurshed Kakhorov vs Moktar Benkaci | PFL Berlin
 url:      https://www.youtube.com/watch?v=mYrpVip4WG8
 
+fight_id: 4b438095-fa6a-589f-bb94-c9c9278b7d56
+fight:    Dakota Ditcheva vs Cornelia Holm @ PFL Europe 3: 2023 Playoffs
+video:    Full Fight | Dakota Ditcheva vs Cornelia Holm | PFL Paris
+url:      https://www.youtube.com/watch?v=Sk6ouQpfQvY
+
 fight_id: 0f704fda-3e9b-5e4b-ab9e-b6bfcfd656f5
 fight:    Cedric Doumbe vs Jordan Zebo @ PFL Europe 3: 2023 Playoffs
 video:    (HD FULL FIGHT) Cedric Doumbe vs Jordan Zebo | PFL Paris (Walkout, Intros, KO, & Interview)
 url:      https://www.youtube.com/watch?v=SSpWyk-V1is
 
-fight_id: 4b438095-fa6a-589f-bb94-c9c9278b7d56
-fight:    Dakota Ditcheva vs Cornelia Holm @ PFL Europe 3: 2023 Playoffs
-video:    Full Fight | Dakota Ditcheva vs Cornelia Holm | PFL Paris
-url:      https://www.youtube.com/watch?v=Sk6ouQpfQvY
+fight_id: 5e5ef6b6-9b95-5471-b584-72a9a1f1983b
+fight:    Shanelle Dyer vs Luisa Fernanda Cifuentes @ PFL Europe 3: 2023 Playoffs
+video:    Shanelle Dyer vs Luisa Fernanda Cifuentes | PFL Paris
+url:      https://www.youtube.com/watch?v=eRe42-PPqIY
 
 fight_id: fed7060f-264b-595f-9163-cb579437a06c
 fight:    Abdoul Abdouraguimov vs Brad Wheeler @ PFL Europe 3: 2023 Playoffs
@@ -795,11 +780,6 @@ fight_id: 073f30d8-1577-5edb-8cec-9582d62b28b5
 fight:    Khurshed Kakhorov vs Ali Taleb @ PFL Europe 3: 2023 Playoffs
 video:    Full Fight | Khurshed Kakhorov vs Ali Taleb | PFL Paris
 url:      https://www.youtube.com/watch?v=ethoiJjC0bI
-
-fight_id: 5e5ef6b6-9b95-5471-b584-72a9a1f1983b
-fight:    Shanelle Dyer vs Luisa Fernanda Cifuentes @ PFL Europe 3: 2023 Playoffs
-video:    Shanelle Dyer vs Luisa Fernanda Cifuentes | PFL Paris
-url:      https://www.youtube.com/watch?v=eRe42-PPqIY
 
 fight_id: 4bdd0d6d-082b-5e17-9684-a99cea28656e
 fight:    Laureano Staropoli vs Boundjou Baba Nadjombe @ PFL Europe 3: 2023 Playoffs
@@ -876,11 +856,6 @@ fight:    Denzel Freeman vs Raiden Kovacs @ PFL Challenger Series 2023 Week 8: 2
 video:    Denzel Freeman vs Raiden Kovacs | 2023 PFL Challenger Series - Week 8
 url:      https://www.youtube.com/watch?v=8luXghTtLFE
 
-fight_id: 87820d96-f934-5b6d-b7c9-3106120c868a
-fight:    Taylor Johnson vs Trey Williams @ PFL Challenger Series 2023 Week 7: Light Heavyweights
-video:    Taylor Johnson vs Trey Williams | 2023 PFL Challenger Series - Week 7
-url:      https://www.youtube.com/watch?v=aLaPt95iJk4
-
 fight_id: 3c598ac6-320d-5648-8cd4-d3eed2f0ce08
 fight:    Roland Dunlap vs Monte Morrison @ PFL Challenger Series 2023 Week 7: Light Heavyweights
 video:    Roland Dunlap vs Monte Morrison | 2023 PFL Challenger Series - Week 7
@@ -950,11 +925,6 @@ fight_id: 4daa412c-48e5-5d68-903f-70dbfd8ef4fe
 fight:    Abraham Bably vs Hassan Graham @ PFL Challenger Series 2023 Week 3: Heavyweights
 video:    Abraham Bably vs Hassan Graham | 2023 PFL Challenger Series - Week 3
 url:      https://www.youtube.com/watch?v=EFvKHziVEmw
-
-fight_id: 42e2a64d-9354-58fa-8f62-19c98d86f210
-fight:    Danilo Marques vs Ras Hylton @ PFL Challenger Series 2023 Week 3: Heavyweights
-video:    Danilo Marques vs Ras Hylton | 2023 PFL Challenger Series - Week 3
-url:      https://www.youtube.com/watch?v=wttnq7vxRsk
 
 fight_id: 45ad3d01-ae7a-5266-bbce-9f750cdec12d
 fight:    Isaiah Pinson vs Vitor Resende @ PFL Challenger Series 2023 Week 3: Heavyweights
@@ -1131,6 +1101,11 @@ fight:    Marcelo Nunes vs Dylan Potter @ PFL 7: 2022 Playoffs
 video:    Marcelo Nunes vs Dylan Potter | PFL 7, 2022
 url:      https://www.youtube.com/watch?v=bpiGCTpE2Uw
 
+fight_id: ef52286f-0df9-57b2-b555-c032d9af7a32
+fight:    Olivier Aubin-Mercier vs Alex Martinez @ PFL 7: 2022 Playoffs
+video:    Olivier Aubin-Mercier vs Alex Martinez | 2022 PFL Playoffs
+url:      https://www.youtube.com/watch?v=fGi0Aj0EcRM
+
 fight_id: 4da6eaf3-071b-582a-a0c7-37ff6c628e72
 fight:    Omari Akhmedov vs Joshua Silveira @ PFL 7: 2022 Playoffs
 video:    Omari Akhmedov vs Josh Silveira | 2022 PFL Playoffs
@@ -1211,6 +1186,11 @@ fight:    Ante Delija vs Shelton Graves @ PFL 5: 2022 Regular Season
 video:    Ante Delija vs Shelton Graves | PFL 5, 2022
 url:      https://www.youtube.com/watch?v=qOT2I-lXETg
 
+fight_id: bb461cf9-8193-521e-8b2d-0e56ba417ea4
+fight:    Alex Martinez vs Clay Collard @ PFL 4: 2022 Regular Season
+video:    Alex Martinez vs Clay Collard | PFL 4, 2022
+url:      https://www.youtube.com/watch?v=sTNhQj4Mbgk
+
 fight_id: fa0bee18-5b42-58c5-9ce0-945c1a58424b
 fight:    Delan Monte vs Emiliano Sordi @ PFL 4: 2022 Regular Season
 video:    Delan Monte vs Emiliano Sordi | PFL 4, 2022
@@ -1240,6 +1220,11 @@ fight_id: d2a66eac-a743-572c-bf2a-bb6f6ca54b2f
 fight:    Nate Jennerman vs Jake Childers @ PFL 4: 2022 Regular Season
 video:    Nate Jennerman vs Jake Childers | PFL 4, 2022
 url:      https://www.youtube.com/watch?v=pQZ-_1jy7W8
+
+fight_id: d2ffaf68-71b0-54b9-bd18-da018bfbe96b
+fight:    Antonio Carlos Jr. vs Bruce Souto @ PFL 4: 2022 Regular Season
+video:    Antonio Carlos Jr. vs Bruce Souto | PFL 4, 2022
+url:      https://www.youtube.com/watch?v=l9ULNGnm_E8
 
 fight_id: 4f50a9c9-83e3-59ae-a515-bd95ce701914
 fight:    Omari Akhmedov vs Teodoras Aukstuolis @ PFL 4: 2022 Regular Season
@@ -1366,6 +1351,11 @@ fight:    Cory Hendricks vs Emiliano Sordi @ PFL 1: 2022 Regular Season
 video:    Cory Hendricks vs Emiliano Sordi | PFL 1, 2022
 url:      https://www.youtube.com/watch?v=Le8J-HJf46E
 
+fight_id: 751b2baf-d2da-5375-b50e-6c28739e2d42
+fight:    Antonio Carlos Jr. vs Delan Monte @ PFL 1: 2022 Regular Season
+video:    Antonio Carlos Jr. vs Delan Monte | PFL 1, 2022
+url:      https://www.youtube.com/watch?v=wxeiyOvnudc
+
 fight_id: 4d0ce35e-da9b-5568-aa41-9594830683d7
 fight:    Omari Akhmedov vs Viktor Pesta @ PFL 1: 2022 Regular Season
 video:    Omari Akhmedov vs Viktor Pesta | PFL 1, 2022
@@ -1486,6 +1476,11 @@ fight:    Damir Ferhatbegovic vs B.J. Bland @ PFL Challenger Series 5
 video:    Damir Ferhatbegovic vs BJ Bland | 2022 PFL Challenger Series - Week 5
 url:      https://www.youtube.com/watch?v=Z_5n5rO_tWU
 
+fight_id: 006f9390-6177-5c55-b084-16909bb4a676
+fight:    Yanal Ashmouz vs Dennis Hughes Jr. @ PFL Challenger Series 5
+video:    Yanal Ashmouz vs Dennis Hughes | 2022 PFL Challenger Series - Week 5
+url:      https://www.youtube.com/watch?v=tp0bu6c5J9Q
+
 fight_id: 8a0e6316-27a1-59cc-b3f3-4695609efb91
 fight:    Michael Dufort vs Arut Pogosjan @ PFL Challenger Series 5
 video:    Michael Dufort vs Arut Pogosjan | 2022 PFL Challenger Series - Week 5
@@ -1510,6 +1505,11 @@ fight_id: c5482ef6-7ca5-5c77-8308-c93bde7f9655
 fight:    Reinaldo Ekson vs Mike Barnett @ PFL Challenger Series 4
 video:    Reinaldo Ekson vs Mike Barnett | 2022 PFL Challenger Series - Week 4
 url:      https://www.youtube.com/watch?v=29CFxEmMlpA
+
+fight_id: 2c233494-49b2-5c9a-afde-852bf2d5885d
+fight:    Edwin Cooper Jr. vs Troy Lamson @ PFL Challenger Series 4
+video:    Edwin Cooper Jr. vs Troy Lamson | 2022 PFL Challenger Series - Week 4
+url:      https://www.youtube.com/watch?v=JqsGEuDXKiU
 
 fight_id: 2929200a-43f7-55d2-a4f3-7d9d59640dfe
 fight:    Michelle Montague vs Olivia Parker @ PFL Challenger Series 3
@@ -1551,11 +1551,6 @@ fight:    Joshua Silveira vs Mohamed Juma @ PFL Challenger Series 1
 video:    Josh Silveira vs Mohamed Juma | 2022 PFL Challenger Series - Week 1
 url:      https://www.youtube.com/watch?v=0blJ8YTG45E
 
-fight_id: 27f5aff5-185c-578d-9c52-8786e8686238
-fight:    Taylor Johnson vs Alexander Poppeck @ PFL Challenger Series 1
-video:    Taylor Johnson vs Alexander Poppeck | 2022 PFL Challenger Series - Week 1
-url:      https://www.youtube.com/watch?v=almT9UZD1zM
-
 fight_id: 18b00a85-4a41-5ed9-9b94-c21d7240c65c
 fight:    Karl Williams vs Miles Amos @ PFL Challenger Series 1
 video:    Karl Williams vs Miles Amos | 2022 PFL Challenger Series - Week 1
@@ -1596,6 +1591,16 @@ fight:    Julia Budd vs Kaitlin Young @ 2021 Season PFL Championships
 video:    Julia Budd vs Kaitlin Young | 2021 PFL Championship
 url:      https://www.youtube.com/watch?v=AFPTYVFaS74
 
+fight_id: fd9e620e-c9ed-5043-95e9-44d62a0ecce8
+fight:    Antonio Carlos Jr. vs Marthin Hamlet @ 2021 Season PFL Championships
+video:    Antonio Carlos Jr vs Marthin Hamlet (Light Heavyweight Title Bout) | 2021 PFL Championship
+url:      https://www.youtube.com/watch?v=-PyvY0KRE_Y
+
+fight_id: 567abf3d-a68f-5a83-abc2-695b7ef7b5b7
+fight:    Antonio Carlos Jr. vs Emiliano Sordi @ PFL 9: 2021 Playoffs
+video:    Antonio Carlos Jr vs Emiliano Sordi (Light Heavyweight Semifinals) | 2021 PFL Playoffs
+url:      https://www.youtube.com/watch?v=YT96QESRhDQ
+
 fight_id: 5a8b3049-9079-5a04-bd7b-e7c2439d2bd8
 fight:    Bobby Moffett vs Jason Knight @ PFL 9: 2021 Playoffs
 video:    Bobby Moffett vs Jason Knight | PFL 9, 2021
@@ -1605,6 +1610,11 @@ fight_id: de20660c-6ea3-55a5-8bf5-28b11a44212d
 fight:    Movlid Khaybulaev vs Brendan Loughnane @ PFL 9: 2021 Playoffs
 video:    Movlid Khaybulaev vs Brendan Loughnane (Featherweight Semifinals) | 2021 PFL Playoffs
 url:      https://www.youtube.com/watch?v=zZyPhvvGQ84
+
+fight_id: accc3b5a-0ba3-5849-b6e3-f94c47493343
+fight:    Alejandro Flores vs Carl Deaton @ PFL 9: 2021 Playoffs
+video:    Alejandro Flores vs Carl Deaton III | PFL 9, 2021
+url:      https://www.youtube.com/watch?v=m3gABuFBRK8
 
 fight_id: 6b9aa538-ef7e-5169-8afb-37969cc04e98
 fight:    Sheymon Moraes vs Lazar Stojadinovic @ PFL 9: 2021 Playoffs
@@ -1670,11 +1680,6 @@ fight_id: 81263d19-4b51-5ce6-b8de-a0c7906ad3db
 fight:    Michael Lombardo vs Kyron Bowen @ PFL 7: 2021 Playoffs
 video:    Michael Lombardo vs Kyron Bowen | PFL 7, 2021
 url:      https://www.youtube.com/watch?v=ZwoivaAkQjc
-
-fight_id: c78a2141-02e5-5c08-aadf-7586aa833137
-fight:    Magomed Umalatov vs Leandro Silva @ PFL 7: 2021 Playoffs
-video:    Magomed Umalatov vs Leandro Silva | PFL 7, 2021
-url:      https://www.youtube.com/watch?v=kzyLnWB9a5k
 
 fight_id: f6037c56-1f16-5f36-b3ad-35e834ab6c99
 fight:    Brett Cooper vs Tyler Hill @ PFL 7: 2021 Playoffs
@@ -1871,6 +1876,11 @@ fight:    Renan Ferreira vs Fabricio Werdum @ PFL 3: 2021 Regular Season
 video:    Fabricio Werdum vs Renan Ferreira | PFL 3, 2021
 url:      https://www.youtube.com/watch?v=CAgEtZBSTlU
 
+fight_id: 8e524c0e-9a2d-5a76-8c5b-c65161f8a996
+fight:    Antonio Carlos Jr. vs Tom Lawlor @ PFL 2: 2021 Regular Season
+video:    Antonio Carlos Jr. vs Tom Lawlor | PFL 2, 2021
+url:      https://www.youtube.com/watch?v=mZLcB1YilBY
+
 fight_id: 76f5c0a6-ba70-52ff-a1e8-e9e6430c4fbd
 fight:    Cezar Ferreira vs Nick Roehrick @ PFL 2: 2021 Regular Season
 video:    Cezar Ferreira vs Nick Roehrick | PFL 2, 2021
@@ -2051,11 +2061,6 @@ fight:    Bekbulat Magomedov vs Jesse Brock @ WSOF 33 - Branch vs. Magalhaes
 video:    Bekbulat Magomedov vs Jesse Brock | WSOF 33, 2016
 url:      https://www.youtube.com/watch?v=8GUMFjyVxaI
 
-fight_id: 3c0d7a82-a40c-5d60-9659-e6ab127e6dec
-fight:    Brian Foster vs Luiz Firmino @ WSOF 33 - Branch vs. Magalhaes
-video:    Brian Foster vs Luiz Firmino | WSOF 33, 2016
-url:      https://www.youtube.com/watch?v=q3r5nYv3nbU
-
 fight_id: 1b80c470-e4e1-5a66-98b8-2be92212d493
 fight:    Shawn Jordan vs Ashley Gooch @ WSOF 33 - Branch vs. Magalhaes
 video:    Shawn Jordan vs Ashley Gooch | WSOF 33, 2016
@@ -2065,11 +2070,6 @@ fight_id: 6520213e-3f01-5ecd-b205-42a9c6577449
 fight:    Louis Taylor vs Phil Hawes @ WSOF 32 - Moraes vs. Hill 2
 video:    Louis Taylor vs Phil Hawes | WSOF 32, 2016
 url:      https://www.youtube.com/watch?v=oG2HU6cMX5w
-
-fight_id: e8f47b33-17e8-5ace-ab25-80c69f205db7
-fight:    Marlon Moraes vs Josh Hill @ WSOF 32 - Moraes vs. Hill 2
-video:    Full Fight | Marlon Moraes vs Josh Hill 2 (Bantamweight Title Bout) | WSOF 32, 2016
-url:      https://www.youtube.com/watch?v=6JnmS357pHY
 
 fight_id: a2b120f1-7c7e-5911-ad27-d17b2aea9c09
 fight:    Lance Palmer vs Alexandre Almeida @ WSOF 32 - Moraes vs. Hill 2
@@ -2161,6 +2161,11 @@ fight:    Jon Fitch vs Joao Zeferino @ WSOF 30 - Branch vs. Starks
 video:    Jon Fitch vs Joao Zeferino (Welterweight Title Bout) | WSOF 30, 2016
 url:      https://www.youtube.com/watch?v=qeifMy6d6nk
 
+fight_id: b3cd6da9-e2a2-5fa7-a1f1-9f8a8534add4
+fight:    Abu Azaitar vs Danny Davis Jr. @ WSOF 30 - Branch vs. Starks
+video:    Abu Azaitar vs Danny Davis Jr. | WSOF 30, 2016
+url:      https://www.youtube.com/watch?v=HbI6v7A7L5A
+
 fight_id: bc1f2a51-68a4-5d86-99b2-880fc45eece2
 fight:    Abubakar Nurmagomedov vs Matthew Frincu @ WSOF 30 - Branch vs. Starks
 video:    Abubakar Nurmagomedov vs Matthew Frincu | WSOF 30, 2016
@@ -2205,11 +2210,6 @@ fight_id: b8cf16b1-40bf-5183-9a9f-be85cccdb519
 fight:    Louis Taylor vs Cory Devela @ WSOF 29 - Gaethje vs. Foster
 video:    Louis Taylor vs Cory Devela | WSOF 29, 2016
 url:      https://www.youtube.com/watch?v=MrPKz3o1wEU
-
-fight_id: 04993282-b2bd-56ec-89d6-0d60a36c7f7e
-fight:    Justin Gaethje vs Brian Foster @ WSOF 29 - Gaethje vs. Foster
-video:    Full Fight | Justin Gaethje vs Brian Foster (Lightweight Title Bout) | WSOF 29, 2016
-url:      https://www.youtube.com/watch?v=m7cceEoDUy4
 
 fight_id: e437dc5f-f75d-5038-98e1-3fff5f3ecf2b
 fight:    Brandon Royval vs Danny Mainus @ WSOF 29 - Gaethje vs. Foster
@@ -2296,20 +2296,10 @@ fight:    Jaleel Willis vs Chauncey Foxworth @ WSOF 27 - Firmino vs. Fodor
 video:    Jaleel Willis vs Chauncey Foxworth | WSOF 27, 2016
 url:      https://www.youtube.com/watch?v=pVRWOZHW43A
 
-fight_id: c851827c-b50a-5231-a31f-f78af6d1f3ab
-fight:    Brian Foster vs Joao Zeferino @ WSOF 25 - 8-Man Lightweight Tournament
-video:    João Zeferino vs Brian Foster 2 (Tournament Finals) | WSOF 25, 2015
-url:      https://www.youtube.com/watch?v=SsXqhA94Mfs
-
 fight_id: 1220df5a-8af7-50a7-b7c1-393b00f52df7
 fight:    Jason High vs Estevan Payan @ WSOF 25 - 8-Man Lightweight Tournament
 video:    Jason High vs Estevan Payan | WSOF 25, 2015
 url:      https://www.youtube.com/watch?v=IfuhfWuYOT4
-
-fight_id: ef1d801f-cba0-5b34-99db-d05d71a894e9
-fight:    Brian Foster vs Luis Palomino @ WSOF 25 - 8-Man Lightweight Tournament
-video:    Brian Foster vs Luis Palomino (Tournament Semifinals) | WSOF 25, 2015
-url:      https://www.youtube.com/watch?v=VAoSr_gjmpM
 
 fight_id: 2825e82a-bac6-507c-98aa-92400d7b661c
 fight:    Joao Zeferino vs Jorge Patino @ WSOF 25 - 8-Man Lightweight Tournament
@@ -2341,6 +2331,11 @@ fight:    Luis Palomino vs Richard Patishnock @ WSOF 25 - 8-Man Lightweight Tour
 video:    Luis Palomino vs Rich Patishnock (Tournament Quarterfinals) | WSOF 25, 2015
 url:      https://www.youtube.com/watch?v=Dt8XSYE6688
 
+fight_id: 61edbce4-6370-5065-b01c-dbc80fecdc82
+fight:    Abubakar Nurmagomedov vs Danny Davis Jr. @ WSOF 26 - Palmer vs. Almeida
+video:    Abubakar Nurmagomedov vs Danny Davis Jr. | WSOF 26, 2015
+url:      https://www.youtube.com/watch?v=i4pSkTQ2GLo
+
 fight_id: 3aa053a7-b94d-5256-b60a-f482ab16dd21
 fight:    Marat Magomedov vs Hakeem Dawodu @ WSOF 26 - Palmer vs. Almeida
 video:    Full Fight | Hakeem Dawodu vs Marat Magomedov 1 | WSOF 26, 2015
@@ -2355,11 +2350,6 @@ fight_id: 4fd2470a-38b4-5a88-87ad-ffab46d168a8
 fight:    Jake Heun vs Clinton Williams @ WSOF 26 - Palmer vs. Almeida
 video:    Jake Heun vs Clinton Williams | WSOF 26, 2015
 url:      https://www.youtube.com/watch?v=BJv6JZ-9nqo
-
-fight_id: 9e4c0eed-6c31-52bf-a0ae-5815e511aeab
-fight:    Josh Hill vs Bekbulat Magomedov @ WSOF 26 - Palmer vs. Almeida
-video:    Josh Hill vs Bekbulat Magomedov | WSOF 26, 2015
-url:      https://www.youtube.com/watch?v=SEe4myfNW0o
 
 fight_id: 81ce0fde-672d-596a-b11a-6884be091547
 fight:    Sheymon Moraes vs Robbie Peralta @ WSOF 26 - Palmer vs. Almeida
@@ -2380,11 +2370,6 @@ fight_id: 3770aa92-5e77-5409-b369-024287bbf920
 fight:    Ozzy Dugulubgov vs Nic Herron-Webb @ WSOF 26 - Palmer vs. Almeida
 video:    Ozzy Dugulubgov vs Nic Herron-Webb | WSOF 26, 2015
 url:      https://www.youtube.com/watch?v=5AnIf2hnwFk
-
-fight_id: 3451159c-a171-58ba-861e-bf5d5f7b05f6
-fight:    Bruce Boyington vs Rodrigo Almeida @ WSOF 24 - Fitch vs. Okami
-video:    Bruce Boyington vs Rodrigo Almeida | WSOF 24, 2015
-url:      https://www.youtube.com/watch?v=JIz-jR1ntHE
 
 fight_id: 3e07a5d1-62da-57c0-a654-a1010b4a68fe
 fight:    Rex Harris vs Justin Torrey @ WSOF 24 - Fitch vs. Okami
@@ -2446,6 +2431,11 @@ fight:    Clifford Starks vs Krasimir Mladenov @ WSOF 23 - Gaethje vs. Palomino 
 video:    Clifford Starks vs Krasimir Mladenov | WSOF 23, 2015
 url:      https://www.youtube.com/watch?v=1AMHNnLc9i8
 
+fight_id: fa01c990-51d6-57d1-bcfa-10ea180c171f
+fight:    Matthew Frincu vs Danny Davis Jr. @ WSOF 23 - Gaethje vs. Palomino 2
+video:    Matthew Frincu vs Danny Davis Jr | WSOF 23, 2015
+url:      https://www.youtube.com/watch?v=SZJAGOonna4
+
 fight_id: 8adf1a96-9a5b-5f4f-9794-99b776f657fb
 fight:    Timur Valiev vs Tito Jones @ WSOF 23 - Gaethje vs. Palomino 2
 video:    Timur Valiev vs Tito Jones | WSOF 23, 2015
@@ -2465,11 +2455,6 @@ fight_id: 441d1e13-2032-5add-99c2-c00b256189b0
 fight:    Benny Madrid vs Jeff Fletcher @ WSOF 23 - Gaethje vs. Palomino 2
 video:    Benny Madrid vs Jeff Fletcher | WSOF 23, 2015
 url:      https://www.youtube.com/watch?v=HY9i3vmvNfM
-
-fight_id: fcd03501-a19b-5bcb-8582-cc62dcb97894
-fight:    Brian Foster vs LaRue Burley @ WSOF 23 - Gaethje vs. Palomino 2
-video:    Brian Foster vs LaRue Burley | WSOF 23, 2015
-url:      https://www.youtube.com/watch?v=J7jQn8pa4J0
 
 fight_id: 96dc633c-aac5-5a25-bff5-7f434fa56b31
 fight:    Abubakar Nurmagomedov vs Jorge Moreno @ WSOF 22 - Palhares vs. Shields
@@ -2510,11 +2495,6 @@ fight_id: 7f0a5daa-7cb6-548d-b53a-40c1474b37af
 fight:    Gil Guardado vs Pete Martin @ WSOF 22 - Palhares vs. Shields
 video:    Gil Guardado vs Pete Martin | WSOF 22, 2015
 url:      https://www.youtube.com/watch?v=wgpdTGo35tI
-
-fight_id: f2f3413a-f49d-55f3-85b9-d3037cca19f0
-fight:    Donavon Frelow vs Carlos Garcia @ WSOF 22 - Palhares vs. Shields
-video:    Donavon Frelow vs Carlos Garcia | WSOF 22, 2015
-url:      https://www.youtube.com/watch?v=6EVOGP914N4
 
 fight_id: 82374f95-694d-5ed9-aa9c-c91743b1ef0e
 fight:    Cory Hendricks vs Julio Hinojosa @ WSOF 22 - Palhares vs. Shields
@@ -2656,11 +2636,6 @@ fight:    Andres Ponce vs Juan Archuleta @ WSOF 19 - Gaethje vs. Palomino
 video:    Andres Ponce vs Juan Archuleta | WSOF 19, 2015
 url:      https://www.youtube.com/watch?v=NQPUhAcFR_E
 
-fight_id: f3668c61-c204-5113-bd31-13a241fac37d
-fight:    Marlon Moraes vs Josh Hill @ WSOF 18 - Moraes vs. Hill
-video:    Full Fight | Marlon Moraes vs Josh Hill (Bantamweight Title Bout) | WSOF 18, 2015
-url:      https://www.youtube.com/watch?v=vBPydjtzCRE
-
 fight_id: 7cb7458a-867b-5608-b334-2404ee96a8ac
 fight:    Hakeem Dawodu vs Tristan Johnson @ WSOF 18 - Moraes vs. Hill
 video:    Full Fight | Hakeem Dawodu vs Tristan Johnson | WSOF 18, 2015
@@ -2701,6 +2676,11 @@ fight:    Donavon Frelow vs Taylor McCorriston @ WSOF 17 - Shields vs. Foster
 video:    Donavon Frelow vs Taylor McCorriston | WSOF 17, 2015
 url:      https://www.youtube.com/watch?v=4ycDrLry_S8
 
+fight_id: f8f33c5e-b508-5ab1-a9a0-81a1b69a6953
+fight:    Danny Davis Jr. vs Adam Cella @ WSOF 17 - Shields vs. Foster
+video:    Danny Davis Jr vs Adam Cella | WSOF 17, 2015
+url:      https://www.youtube.com/watch?v=VpEcq1EialI
+
 fight_id: c1cc15b3-64f6-53a6-b727-3f05158790ba
 fight:    Bryson Hansen vs Rudy Morales @ WSOF 17 - Shields vs. Foster
 video:    Bryson Hansen vs Rudy Morales | WSOF 17, 2015
@@ -2721,20 +2701,10 @@ fight:    Joe Condon vs Jonathan Nunez @ WSOF 17 - Shields vs. Foster
 video:    Joe Condon vs Johnny Nunez | WSOF 17, 2015
 url:      https://www.youtube.com/watch?v=peodirQWmDo
 
-fight_id: 7465cc95-8a53-5205-9a97-021353b5ad51
-fight:    Jake Shields vs Brian Foster @ WSOF 17 - Shields vs. Foster
-video:    Jake Shields vs Brian Foster | WSOF 17, 2015
-url:      https://www.youtube.com/watch?v=0bN6zImY2og
-
 fight_id: 1f10db02-8d6f-5645-9854-3370c2d046aa
 fight:    Rousimar Palhares vs Jon Fitch @ WSOF 16 - Palhares vs. Fitch
 video:    Rousimar Palhares vs Jon Fitch (Welterweight Title Bout) | WSOF 16, 2014
 url:      https://www.youtube.com/watch?v=bv_i-lWngt8
-
-fight_id: 212f7884-f301-53bf-a84c-7c862d645a03
-fight:    Jason Powell vs Chris Avila @ WSOF 16 - Palhares vs. Fitch
-video:    Jason Powell vs Chris Avila | WSOF 16, 2014
-url:      https://www.youtube.com/watch?v=6EBCIk8Mngs
 
 fight_id: f6603ce0-44c3-5341-af6d-90d2e759242d
 fight:    Dave Huckaba vs C.J. Leveque @ WSOF 16 - Palhares vs. Fitch
@@ -2961,11 +2931,6 @@ fight:    Derrick Mehmen vs Dave Huckaba @ WSOF 10 - Branch vs. Taylor
 video:    Derrick Mehmen vs Dave Huckaba | WSOF 10, 2014
 url:      https://www.youtube.com/watch?v=QRkGqUwL4eA
 
-fight_id: 90cb364b-81bd-52e8-9ed3-eab54b426084
-fight:    David Branch vs Jesse Taylor @ WSOF 10 - Branch vs. Taylor
-video:    David Branch vs Jesse Taylor (Middleweight Title Bout) | WSOF 10, 2014
-url:      https://www.youtube.com/watch?v=Rtvz4M1o-AM
-
 fight_id: e0bc11b4-0bd4-5bb9-8eac-254e2e4ee105
 fight:    Ashlee Evans-Smith vs Marciea Allen @ WSOF 10 - Branch vs. Taylor
 video:    Ashlee Evans-Smith vs Marciea Allen | WSOF 10, 2014
@@ -3141,11 +3106,6 @@ fight:    Chad Robichaux vs Andrew Yates @ WSOF 6 - Burkman vs. Carl
 video:    Chad Robichaux vs Andrew Yates | WSOF 6, 2013
 url:      https://www.youtube.com/watch?v=q5yP8YggxYc
 
-fight_id: 6c2f6d4f-1f88-5fd3-9829-da5b2fea3a90
-fight:    Pablo Alfonso vs Miguel Torres @ WSOF 6 - Burkman vs. Carl
-video:    Pablo Alfonso vs Miguel Torres | WSOF 6, 2013
-url:      https://www.youtube.com/watch?v=okQVe5uDnW0
-
 fight_id: 77f5d0a0-58d6-5863-910b-57cad5f2b3b9
 fight:    Alexandre Pimentel vs Jade Porter @ WSOF 6 - Burkman vs. Carl
 video:    Alexandre Pimentel vs Jade Porter | WSOF 6, 2013
@@ -3271,11 +3231,6 @@ fight:    Krasimir Mladenov vs Kendrick Miree @ WSOF 3 - Fitch vs. Burkman 2
 video:    Krasimir Mladenov vs Kendrick Miree | WSOF 3, 2013
 url:      https://www.youtube.com/watch?v=U0TocBXDmsA
 
-fight_id: 2df874c0-8810-52e4-8725-f1dbde758aa4
-fight:    Carson Beebe vs Joe Murphy @ WSOF 3 - Fitch vs. Burkman 2
-video:    Carson Beebe vs Joe Murphy | WSOF 3, 2013
-url:      https://www.youtube.com/watch?v=WdA3e8Len2Y
-
 fight_id: 783e9117-7ed1-5c7b-ab45-a8cfa582089d
 fight:    Jacob Volkmann vs Lyle Beerbohm @ WSOF 3 - Fitch vs. Burkman 2
 video:    Jacob Volkmann vs Lyle Beerbohm | WSOF 3, 2013
@@ -3351,11 +3306,6 @@ fight:    Bill Algeo vs Frank Buenafuente @ WSOF 2 - Arlovski vs. Johnson
 video:    Bill Algeo vs Frank Buenafuente | WSOF 2, 2013
 url:      https://www.youtube.com/watch?v=ouVymLQTpyY
 
-fight_id: b6e09d4b-4f0d-5ba3-970a-7422af2b83c1
-fight:    Anthony Johnson vs D.J. Linderman @ WSOF 1 - Arlovski vs. Cole
-video:    Anthony Johnson vs D.J. Linderman | WSOF 1, 2012
-url:      https://www.youtube.com/watch?v=urPg7bh_zBM
-
 fight_id: 1f70f6f8-eccd-5c3f-9b90-66de8ecdc68e
 fight:    Joshua Burkman vs Gerald Harris @ WSOF 1 - Arlovski vs. Cole
 video:    Josh Burkman vs Gerald Harris | WSOF 1, 2012
@@ -3370,11 +3320,6 @@ fight_id: bd1178be-10bb-5b76-9f68-0e52ae71d48b
 fight:    David Branch vs Dustin Jacoby @ WSOF 1 - Arlovski vs. Cole
 video:    David Branch vs Dustin Jacoby | WSOF 1, 2012
 url:      https://www.youtube.com/watch?v=pxQccCcnGac
-
-fight_id: 14526524-412d-5545-aba9-3260e9e5e954
-fight:    Marlon Moraes vs Miguel Torres @ WSOF 1 - Arlovski vs. Cole
-video:    Full Fight | Marlon Moraes vs Miguel Torres | WSOF 1, 2012
-url:      https://www.youtube.com/watch?v=ImJZ4VIYfAU
 
 fight_id: 288a2254-dc26-5dc8-baef-d7bef5851303
 fight:    Brian Cobb vs Ronys Torres @ WSOF 1 - Arlovski vs. Cole
@@ -3502,7 +3447,7 @@ video:    Full Fight | Natan Schulte vs Rashid Magomedov (Lightweight Title Bout
 url:      https://www.youtube.com/watch?v=kPU0yvl0x_U
 
 fight_id: a06ca48f-4932-599c-b5ea-101a921aa9e2
-fight:    Louis Taylor vs Abusupiyan Magomedov @ 2018 Season PFL Championships
+fight:    Louis Taylor vs Abus Magomedov @ 2018 Season PFL Championships
 video:    Full Fight | Louis Taylor vs Abus Magomedov (Middleweight Title Bout) | 2018 PFL Championship
 url:      https://www.youtube.com/watch?v=FXYDghtKsMc
 
@@ -3515,11 +3460,6 @@ fight_id: 5d3cd58b-76ad-579a-a386-78ad82204ec5
 fight:    Tony Laramie vs Yuki Motoya @ Rizin FF - Landmark Vol. 14
 video:    Full Fight | 元谷友貴 vs. トニー・ララミー / Yuki Motoya vs. Tony Laramie - 2026/6/6 RIZIN LANDMARK 14 in SENDAI
 url:      https://www.youtube.com/watch?v=nwCEfx_xnH8
-
-fight_id: be83980d-61b0-51d6-9e1a-aec82781aaaf
-fight:    Ryo Takagi vs Kaiwen Li @ Rizin FF - Rizin 53
-video:    Full Fight | 高木凌 vs. リー・カイウェン / Ryo Takagi vs. Kaiwen Li - 2026.5.10[RIZIN.53]
-url:      https://www.youtube.com/watch?v=H1QEN8AS4Gg
 
 fight_id: abc3acb6-a229-52e6-b1d7-1d71a84fe13d
 fight:    Ryan Cafaro vs Koyomi Matsushima @ Rizin FF - Rizin 53
@@ -3871,31 +3811,586 @@ fight:    Kai Asakura vs Kizaemon Saiga @ Rizin Fighting World Grand Prix 2017 -
 video:    Full Fight | 才賀紀左衛門 vs. 朝倉海 / Kizaemon Saiga vs. Kai Asakura - 12/29/2017
 url:      https://www.youtube.com/watch?v=zSxmRhRzZ4k
 
+fight_id: 08a90051-da90-52e0-bd25-b48678c962a2
+fight:    Marat Gafurov vs Lowen Tynanes @ Collision Course
+video:    Marat Gafurov vs. Lowen Tynanes | ONE Championship Full Fight
+url:      https://www.youtube.com/watch?v=xMDEDMq0aFo
 
-MATCHED FULL EVENTS (4)
+fight_id: 9aef6e67-b6f6-52ca-8328-846ca2ea4322
+fight:    Yodkaikaew Fairtex vs Tatsumitsu Wada @ Collision Course
+video:    Yodkaikaew Fairtex vs. Tatsumitsu Wada | ONE Championship Full Fight
+url:      https://www.youtube.com/watch?v=HnDlesdve_8
+
+fight_id: 77cc7fa5-f1c6-5a10-8678-0f6c52e1b7c6
+fight:    Yusup Saadulaev vs Troy Worthen @ Collision Course
+video:    Yusup Saadulaev vs. Troy Worthen | ONE Championship Full Fight
+url:      https://www.youtube.com/watch?v=cIQc6WalXvw
+
+fight_id: 9fb2d5b8-09dd-5d8c-87f1-82aa1ffaefb1
+fight:    Tyler McGuire vs Agilan Thani @ Big Bang 2
+video:    Agilan Thani vs. Tyler McGuire | ONE Championship Full Fight
+url:      https://www.youtube.com/watch?v=7cV40x5Md-g
+
+fight_id: d80d07ce-13bf-549a-9aa4-468ced94d348
+fight:    Antonio Caruso vs Eduard Folayang @ Inside the Matrix
+video:    Antonio Caruso vs. Eduard Folayang | ONE Championship Full Fight
+url:      https://www.youtube.com/watch?v=lKSq71TI46k
+
+fight_id: 56cb429c-fff1-5d15-912d-084df9e88f12
+fight:    Marcin Bandel vs Ismail Naurdiev @ Brave CF 63
+video:    Marcin Bandel vs Ismail Naurdiev | FREE MMA Fight | BRAVE CF 63
+url:      https://www.youtube.com/watch?v=ByloV7H60Wo
+
+fight_id: 77bab8ba-da5f-5a72-87b4-340633c7f06f
+fight:    Youssef Boughanem vs Saad Touijar @ Brave CF 83
+video:    Youssef Boughanem  vs  Saad Touijar | Full Fight | BRAVE CF 83
+url:      https://www.youtube.com/watch?v=vIjA8hDTlbQ
+
+fight_id: 6040a962-fc29-577a-b55b-7716d97940f8
+fight:    Tae Kyun Kim vs Erick da Silva @ Brave CF 29
+video:    Tae Kyun Kim Vs Erick da Silva | FREE FIGHT | BRAVE CF 29
+url:      https://www.youtube.com/watch?v=y1tvlJmRfhY
+
+fight_id: 5965e8bd-c359-59ed-9297-b2ad04af5af3
+fight:    Ilia Topuria vs Steven Goncalves @ Brave CF 29
+video:    Ilia Topuria vs Steven Goncalves | FULL FIGHT | BRAVE CF 29
+url:      https://www.youtube.com/watch?v=zFUjpIG4IMU
+
+fight_id: 55944248-dabf-51cc-a8ef-7c577adef42c
+fight:    Ismail Naurdiev vs Bekten Zheenbekov @ Brave CF 59
+video:    Ismail Naurdiev Vs Bekten Zheenbekov | Full Fight | BRAVE CF 59
+url:      https://www.youtube.com/watch?v=D4vLP2e0Qhg
+
+fight_id: da3f8c40-f992-5d42-9d65-6b64c0e25707
+fight:    Khamzat Chimaev vs Marko Kisic @ Brave CF 18 - Mineiro vs. Selwady
+video:    Khamzat Chimaev vs Marko Kisic | FREE FIGHT | BRAVE CF 18
+url:      https://www.youtube.com/watch?v=_4O3kAM8uiw
+
+fight_id: 383d912d-b5c6-5c4e-a74c-379129275d77
+fight:    Glenn McVeigh vs Bilal Tipsaev @ Brave CF 54
+video:    Bilal Tipsaev VS Glenn McVeigh | Free Fight | BRAVE CF 54
+url:      https://www.youtube.com/watch?v=QqfMWIobVXs
+
+fight_id: db4f30cd-18d3-596a-90d3-7889f1cc59c5
+fight:    Ilia Topuria vs Luis Gomez @ Brave CF 26 - Roa vs. Silva
+video:    Ilia Topuria vs Luis Gomez | FULL Fight | BRAVE CF 26
+url:      https://www.youtube.com/watch?v=wTNOVC0UgAA
+
+fight_id: 2e9f4196-eb8c-5b9a-95c5-dff1d02d277c
+fight:    Khamzat Chimaev vs Mzwandile Hlongwa @ Brave CF 27 - Abdouraguimov vs. Al-Silawi
+video:    Khamzat Chimaev vs Mzwandile Hlongwa | FREE FIGHT | BRAVE CF 27
+url:      https://www.youtube.com/watch?v=YLIm6I1eTLY
+
+fight_id: c33908dd-ba7c-5ac6-aa13-c1291570a9ed
+fight:    Zvonimir Kralj vs Fatih Aktas @ Brave CF 40
+video:    Zvonimir Kralj vs Fatih Aktas | Full Fight | BRAVE CF 40
+url:      https://www.youtube.com/watch?v=U6O-pnVJb9Y
+
+fight_id: 5e6405ce-62ba-5c4a-a8e2-a07d1295d914
+fight:    Hamza Kooheji vs Aidan James @ Brave CF 42
+video:    Hamza Kooheji vs Aidan James | FULL FIGHT | BRAVE CF 42
+url:      https://www.youtube.com/watch?v=f0-YWpRMgDo
+
+fight_id: 62eefa90-e8f9-5a38-84bd-1a3aa5b0de19
+fight:    Axel Sola vs Wawrzyniec Bartnik @ Brave CF 54
+video:    Axel Sola vs Wawrzyniec Bartnik | Full Fight | BRAVE CF 54
+url:      https://www.youtube.com/watch?v=O-7HAa8tOpE
+
+fight_id: a3f8352f-fa4a-5545-8a95-39e3ee376ed3
+fight:    Husein Kadimagomaev vs Sven Fortenbacher @ Brave CF 40
+video:    Husein Kadimagomaev VS Sven Fortenbacher | FREE FIGHT | BRAVE CF 40
+url:      https://www.youtube.com/watch?v=MEuemsDflyA
+
+fight_id: 753010aa-971a-57a8-be70-d9d27cba1d12
+fight:    Mahmoud Fawzy Sebie vs Wajdi Missaoui @ Brave CF 67
+video:    Mahmoud Fawzy Sebie vs Wajdi Missaoui | FULL Fight | BRAVE CF 67
+url:      https://www.youtube.com/watch?v=38CEfbKwY7s
+
+fight_id: 161f1983-5f0f-54b7-9e77-6432485c9dad
+fight:    David Forster vs Nemanja Nikolic @ Brave CF 70 / WFC 25
+video:    David Forster vs Nemanja Nikolic | FREE FIGHT | BRAVE CF 70
+url:      https://www.youtube.com/watch?v=6iAnS8j80iE
+
+fight_id: 8f66a50a-7fe0-51ee-965b-ef0c2ce8bafc
+fight:    Carlston Harris vs Carl Booth @ Brave CF 8 - The Rise of Champions
+video:    Carlston Harris vs Carl Booth | Full Fight | BRAVE CF Welterweight Championship
+url:      https://www.youtube.com/watch?v=6JZrJioAVXA
+
+fight_id: 3dd92bbc-a82c-5309-8c87-59e7eee890dc
+fight:    Magomed Gadzhiyasulov vs Mohamed Said Maalem @ Brave CF 65
+video:    Mohamed Said Maalem vs Magomed Gadzhiyasulov | FREE MMA Fight | BRAVE CF 65
+url:      https://www.youtube.com/watch?v=-np57uWUTOw
+
+fight_id: a0a62e62-f2b2-5468-a883-f2fa8e3bb6bd
+fight:    Nurzhan Akishev vs Mehmosh Raza @ Brave CF 62 - Brave CF 62 x Octagon 35
+video:    Nurzhan Akishev vs Mehmosh Raza | Full fight | BRAVE CF 62
+url:      https://www.youtube.com/watch?v=Lv1QB7rLZ4A
+
+fight_id: effbcc9d-8136-5a4f-a482-96720e4da439
+fight:    Yanis Ghemmouri vs Bair Shtepin @ Brave CF 67
+video:    Yanis Ghemmouri vs Bair Shtepin | Free Fight | BRAVE CF 67
+url:      https://www.youtube.com/watch?v=akbA965fmsY
+
+fight_id: f3e33fab-12a3-552b-abdb-f7bb2b192bc3
+fight:    Bernardo Sopai vs Tariq Ismail @ Brave CF 38
+video:    Benardo Sopaj vs Tariq Ismail | Full Fight BRAVE CF 38
+url:      https://www.youtube.com/watch?v=6fajOdZnm0c
+
+fight_id: eb7f3548-399e-5574-8357-f25b2480a50f
+fight:    Randi Febian vs Achterson Rumainum @ Brave CF 66
+video:    Achterson Andre Rumainum vs Randi Febian | Full MMA Fights | BRAVE CF 66
+url:      https://www.youtube.com/watch?v=YqNY_sylvbM
+
+fight_id: 41a8dd23-e0fb-546a-a46a-2ca65bd086ac
+fight:    Mohammed Farhad vs Ruel Panales @ Brave CF 66
+video:    Ruel Panales vs Mohammad Farhad | Full MMA Fight | BRAVE CF 66
+url:      https://www.youtube.com/watch?v=m6_z-hUDtMo
+
+fight_id: 19f9a0b3-b916-5375-b2df-11853437b611
+fight:    Usman Nurmagomedov vs Issei Moriyama @ Brave CF 21 - Saudi Arabia
+video:    Usman Nurmagomedov vs Issei Moriyama | Full MMA Fight | BRAVE CF 21
+url:      https://www.youtube.com/watch?v=0N2SEx3EPBE
+
+fight_id: 4992681a-29e3-5488-9295-f1b9a1d82ffe
+fight:    Abdul-Kareem Al-Selwady vs Lucas Martins @ Brave CF 18 - Mineiro vs. Selwady
+video:    Abdul-Kareem Al-Selwady vs Lucas Martins | Full Fight | BRAVE CF
+url:      https://www.youtube.com/watch?v=HUvDvuSZ38Q
+
+fight_id: 65840a55-43de-54e1-948e-3e7b2c0d2006
+fight:    Muhammad Mokaev vs Blaine O'Driscoll @ Brave CF 54
+video:    Muhammad Mokaev vs Blaine O'Driscoll | FULL FIGHT | BRAVE CF 54
+url:      https://www.youtube.com/watch?v=MJiROko1Bh4
+
+fight_id: e61b6bb4-dfc6-50eb-a5a5-dcbec642eeaa
+fight:    Edilceu Silva Alves vs Dansheel Moodley @ Brave CF 70 / WFC 25
+video:    Edilceu Alves vs Dansheel Moodley | Full Fight | BRAVE CF 70
+url:      https://www.youtube.com/watch?v=q3f52Ks9wtQ
+
+fight_id: c5314368-925c-5d35-8992-a5065884435e
+fight:    Ahmed Amir vs Amin Ayoub @ Brave CF 54
+video:    Amin Ayoub VS Ahmed Amir | Full Fight | BRAVE CF 54
+url:      https://www.youtube.com/watch?v=fyxN27pEz9s
+
+fight_id: d2fc3390-0d2a-59e6-80b9-5a14888739c4
+fight:    Maysara Mohamed vs Mohammed Farhad @ Brave CF 57
+video:    Maysara Mohamed vs Mohammad Farhad | Full Fight | BRAVE CF 57
+url:      https://www.youtube.com/watch?v=g056q5VRtUw
+
+fight_id: 45e6a4ed-bc56-5918-b736-bcd3aaca1d70
+fight:    Abusupiyan Alikhanov vs Mzwandile Hlongwa @ Brave CF 64
+video:    Abusupyan Alikhanov vs Mzwandile Hlongwa | Full Fight | BRAVE CF 64
+url:      https://www.youtube.com/watch?v=sWUdntr67mA
+
+fight_id: 523c78e4-a05b-5dce-b8a3-98abcdc1c9c5
+fight:    Ikram Aliskerov vs Joey Michael Berkenbosch @ Brave CF 14 - Azaitar vs. Kokora
+video:    Ikram Aliskerov vs Joey Michael Berkenbosch | Full Fight | BRAVE CF 14
+url:      https://www.youtube.com/watch?v=X2MiLy1oXEs
+
+fight_id: 104a76a1-1cd9-55d2-8fb0-6e19260712b0
+fight:    Nkosi Ndebele vs Zia Mashwani @ Brave CF 45
+video:    Nkosi Ndebele vs Zia Mashwani | Full Fight | BRAVE CF 45
+url:      https://www.youtube.com/watch?v=E7s6f6wpWqE
+
+fight_id: 98de54cb-eac1-580b-ad6b-6fe803083a11
+fight:    Shoaib Yousaf vs Hassan Talal @ Brave CF 33
+video:    Shoaib Yousaf vs Hassan Talal | Free Fight | BRAVE CF 33
+url:      https://www.youtube.com/watch?v=H52QRwS9zGk
+
+fight_id: a2e6bfd9-e832-51e4-ab5d-a96970aef088
+fight:    Rolando Dy vs John Brewin @ Brave CF 44
+video:    John Brewin vs Rolando Dy | Full Fight | BRAVE CF 44
+url:      https://www.youtube.com/watch?v=mX4L4zUAioc
+
+fight_id: 2973a034-ae94-527a-8221-8688fe1d6682
+fight:    Ali Abdulkhalikov vs Artur Aliev @ Brave CF 55
+video:    Ali Abdulkhalikov vs Artur Aliev| Full Fight | BRAVE CF 55
+url:      https://www.youtube.com/watch?v=YrT9RBWyqAk
+
+fight_id: e00b108c-ecca-5a7e-8675-ca809c2264c3
+fight:    Amin Ayoub vs Cleiton Silva @ Brave CF 44
+video:    Amin Ayoub vs Cleiton Silva | Full Fight | BRAVE CF 44
+url:      https://www.youtube.com/watch?v=mX4-j5WkXWA
+
+fight_id: 4da6b310-0ec9-573a-90eb-64486fdb6129
+fight:    Khalid Taha vs Hamza Kooheji @ Brave CF 12 - KHK Legacy
+video:    Khalid Taha vs Hamza Kooheji | Full Fight | BRAVE CF Classics
+url:      https://www.youtube.com/watch?v=Zfkjyr8zuc0
+
+fight_id: 72818fd2-451f-5f8c-8a1b-b9f291bfd3b5
+fight:    Velimurad Alkhasov vs Sean Santella @ Brave CF 14 - Azaitar vs. Kokora
+video:    Velimurad Alkhasov vs Sean Santella | Full Fight | BRAVE CF
+url:      https://www.youtube.com/watch?v=EptSsxe1JQE
+
+fight_id: 5a4f6c35-47fe-5347-9aa3-0bbd33e4b29e
+fight:    Aidan James vs Tommy Martin @ Brave CF 13 - European Evolution
+video:    Aidan James vs Tommy Martin | Full Fight | BRAVE CF Classics
+url:      https://www.youtube.com/watch?v=BCRbASqrI4Q
+
+fight_id: c21178b8-97e1-5335-88f6-a7781179f1d5
+fight:    Benoit St. Denis vs Arkaitz Ramos @ Brave CF 52
+video:    Benoit Saint Denis vs Arkaitz Ramos | Full Fight | BRAVE CF 52
+url:      https://www.youtube.com/watch?v=Huq0wmpG6VY
+
+fight_id: 42af4cbc-9684-5c8f-8035-358e8cd324ce
+fight:    Gamzat Magomedov vs Matiss Zaharovs @ Brave CF 49
+video:    Gamzat Magomedov vs Matiss Zaharovs  | Full Fight | BRAVE CF 49
+url:      https://www.youtube.com/watch?v=rV0K6yCvgn4
+
+fight_id: 92855b84-6d49-5be1-8ae1-8a8fa10cfb35
+fight:    Ahmed Labban vs Virgiliu Frasineac @ Brave CF 52
+video:    Ahmad Labban vs Virgiliu Frasineac | Full Fight | BRAVE CF 52
+url:      https://www.youtube.com/watch?v=8G2ZNPbZ7Hg
+
+fight_id: b8bcefd3-8a33-5aac-b058-0ba19a75ddb6
+fight:    Mashrabjon Ruziboev vs Niyazidin Risbaev @ Brave CF 59
+video:    Mashrabjon Ruziboev VS Niyazidin Risbaev | Free Fight | BRAVE CF 59
+url:      https://www.youtube.com/watch?v=LQ_YmzjlQ8E
+
+fight_id: a0984e7b-7f82-58e3-8bd1-471b515f9de7
+fight:    Murtaza Talha Ali vs Mikheil Sazhiniani @ Brave CF 57
+video:    Murtaza Talha Ali VS Mikheil Sazhiniani | Free Fight | BRAVE CF 57
+url:      https://www.youtube.com/watch?v=0LmX0wG9rKY
+
+fight_id: 77d99d39-85d9-5963-b2e4-c56248dca709
+fight:    Murad Bilarov vs Fedor Babich @ Brave CF 46
+video:    Murad Bilarov vs Fedor Babich | Free Fight | BRAVE CF 46
+url:      https://www.youtube.com/watch?v=6yYgc7eDJvQ
+
+fight_id: 965c91e3-3e09-5c60-a6eb-fd0a75644857
+fight:    Magomed Abdusalamov vs Andrey Lezhnev @ Brave CF 46
+video:    Magomed Abdusalamov vs Andrey Lezhnev | Free Fight | BRAVE CF 46
+url:      https://www.youtube.com/watch?v=4I_eUZrWSfs
+
+fight_id: 60d9336b-12b5-5cfc-b972-2070cf2bd367
+fight:    Anthony Zeidan vs Ayman Galal @ Brave CF 67
+video:    Anthony Zeidan vs Ayman Galal | Free Fight | BRAVE CF 67
+url:      https://www.youtube.com/watch?v=gs2qtWbtxnk
+
+fight_id: 2603545a-f534-5142-8cc3-648750517444
+fight:    Abdelghani Saber vs Aymene Souane @ Brave CF 67
+video:    Abdelghani Saber vs Aymene Souane | Free Fight | BRAVE CF 67
+url:      https://www.youtube.com/watch?v=e-ih4kuKhUc
+
+fight_id: d28656f7-cbb1-57c1-be66-1d9d15da280c
+fight:    Luana Pinheiro vs Helen Harper @ Brave CF 29
+video:    Luana Pinheiro vs Helen Harper | International Women's Day | Free Fight | BRAVE CF 29
+url:      https://www.youtube.com/watch?v=O32DZ2FB8qI
+
+fight_id: 9943e5cd-5289-54b0-aa68-148acacfbe8a
+fight:    Nikolay Nikolov vs Milos Cvetkovic @ Brave CF 56
+video:    Nikolay Nikolov vs Milos Cvetkovic | Free Fight | BRAVE CF 56
+url:      https://www.youtube.com/watch?v=bHCD2J1Lg5w
+
+fight_id: caee87de-545e-5d0b-9a93-6504f1171ce9
+fight:    Muhammad Mokaev vs Glenn McVeigh @ Brave CF 37
+video:    Muhammad Mokaev vs Glenn McVeigh | Free Fight |  BRAVE CF 37
+url:      https://www.youtube.com/watch?v=5lQ-OHZuOXA
+
+fight_id: c5476f77-341f-5fe3-a031-905bafdaa8d4
+fight:    Ahmed Labban vs Carl Booth @ Brave CF 65
+video:    Ahmad Labban VS Carl Booth | Free Fight | BRAVE CF 65
+url:      https://www.youtube.com/watch?v=jsQUYjCy1Yk
+
+fight_id: b335df24-fa7c-5215-ae95-888254dc0766
+fight:    Matheus Nicolau vs Felipe Efrain @ Brave CF 25 - Santiago vs. Silva
+video:    Felipe Efrain vs Matheus Nicolau | Free Fight | BRAVE CF 25
+url:      https://www.youtube.com/watch?v=Bpn64m2eKKU
+
+fight_id: b3117263-10a7-51ea-921a-179e4392cab2
+fight:    Issa Isakov vs Ruslan Tedeev @ Brave CF 69
+video:    Issa Isakov vs Ruslan Tedeev | Free Fight | BRAVE CF 69
+url:      https://www.youtube.com/watch?v=aP1i1UXH-Hs
+
+fight_id: 3567f0c4-2719-5296-b1b2-0feffadee11a
+fight:    Chad Hanekom vs In Jae La @ Brave CF 66
+video:    Chad Hanekom vs In Jae La | Free Fight | BRAVE CF 66
+url:      https://www.youtube.com/watch?v=3ZVlPzlNnQk
+
+fight_id: aae25517-a072-561b-ac65-6eaf42a8b8f9
+fight:    Hamza Kooheji vs Eduardo Mora @ Brave CF 65
+video:    Hamza Kooheji VS Eduardo Mora | Free Fight | BRAVE CF 65
+url:      https://www.youtube.com/watch?v=8KPwRPwUH0Y
+
+fight_id: 53f7090f-48c0-50e4-84d5-2e405c78ed70
+fight:    Nkosi Ndebele vs Eduardo Mora @ Brave CF 60
+video:    Nkosi Ndebele vs Eduardo Mora | Free Fight | BRAVE CF 60
+url:      https://www.youtube.com/watch?v=jgxEEZJyI_M
+
+fight_id: 7b08d16b-bdb7-56a6-80e8-31d8734d735e
+fight:    Gabriel Miranda vs Jon Zarate @ Brave CF 26 - Roa vs. Silva
+video:    Jon Zarate vs Gabriel Miranda | Free Fight | BRAVE CF 26
+url:      https://www.youtube.com/watch?v=TsiYnyeovWk
+
+fight_id: c2f3d34f-2922-535f-9345-29f30dfff24a
+fight:    Anton Turkalj vs Ibo Aslan @ Brave CF 40
+video:    Anton Turkalj vs Ibo Aslan | Free Fight | BRAVE CF 40
+url:      https://www.youtube.com/watch?v=6D5NVu-MnZc
+
+fight_id: e5fc4e82-0abb-5e8f-a247-ecd59f12dff7
+fight:    Mohamed Alsameea vs Ganesh Raj Srinivasan @ Brave CF 65
+video:    Mohammed Zuhair Alsameea vs Ganesh Raj Srinivasan | FULL FIGHT | BRAVE CF 65
+url:      https://www.youtube.com/watch?v=94CACK5IDuk
+
+fight_id: 8ab4a060-bd71-5f43-b7cc-c87fdfc788e5
+fight:    Yerin Hong vs Gillian Goh @ Brave CF 58
+video:    Yerin Hong vs Gillian Goh | Free Fight | BRAVE CF 58
+url:      https://www.youtube.com/watch?v=L7_Kq_076iw
+
+fight_id: 5ddafa87-5239-5234-8dfd-a3df93da32fb
+fight:    Lucas Martins vs Henrique Marques @ Brave CF 60
+video:    Lucas Martins VS Henrique Marques | Free Fight | BRAVE CF 60
+url:      https://www.youtube.com/watch?v=xuhGQPJXKCs
+
+fight_id: b799d9bd-c1f0-5250-9268-4da507fe421d
+fight:    Brad Katona vs Bair Shtepin @ Brave CF 53 / Octagon 22
+video:    Brad Katona VS Bair Shtepin | Free Fight | BRAVE CF 53
+url:      https://www.youtube.com/watch?v=5QB4jExOZ9s
+
+fight_id: 6ba3f44f-a1bf-5c1a-9f2f-7e99a98f19dd
+fight:    Bianca Antman vs Veera Nykanen @ Brave CF 37
+video:    Bianca Antman vs Veera Nykanen | Free Fight | BRAVE CF 37
+url:      https://www.youtube.com/watch?v=H1YARz7bC2I
+
+fight_id: 36afd1a3-fa3b-5fb1-9cff-0a4a240af385
+fight:    Jarrah Al-Silawi vs Ismail Naurdiev @ Brave CF 50
+video:    Jarrah Hussein Al-Silawi vs Ismail Naurdiev | Free Fight | BRAVE CF 50 | Super Welterweight Title
+url:      https://www.youtube.com/watch?v=xpObz2kfWcs
+
+fight_id: cb0e003f-a5e1-5719-949f-3b7f77aeb4fc
+fight:    Iler Bakhtiyar Uulu vs Abdullah Al-Qahtani @ Brave CF 62 - Brave CF 62 x Octagon 35
+video:    Abdullah Al-Qahtani vs Ilyor Bakhtiyar Uulu | Free Fight | BRAVE CF 62
+url:      https://www.youtube.com/watch?v=uV-BFS2jen8
+
+fight_id: d35c567d-117d-5f87-b513-b722acbf21ae
+fight:    Ali Bagautinov vs Oleg Lichkovakha @ Brave CF 46
+video:    Ali Bagautinov vs Oleg Lichkovakha | Free Fight | BRAVE CF 46
+url:      https://www.youtube.com/watch?v=0zAwo4YvN_w
+
+fight_id: 8837a3d8-c36c-5956-ad48-76d2d5381638
+fight:    Ylies Djiroun vs Rakhman Makhazhiev @ Brave CF 48
+video:    Ylies Djiroun vs Abdul Rakhman Makhazhiev | Free Fight | BRAVE CF 48
+url:      https://www.youtube.com/watch?v=L_9MKPBh-kg
+
+fight_id: 678db74e-5c52-5493-af00-8661331e8bd3
+fight:    Marcin Bandel vs Luis Felipe Dias @ Brave CF 58
+video:    Marcin Bandel Vs Luis Felipe Dias | Free Fight | BRAVE CF 58
+url:      https://www.youtube.com/watch?v=7_QRlwVOXv0
+
+fight_id: 761806af-c1c8-5886-931a-da822ca9b3d8
+fight:    Ikram Aliskerov vs Miro Jurkovic @ Brave CF 49
+video:    Ikram Aliskerov vs Miro Jurković | Free Fight | BRAVE CF 49
+url:      https://www.youtube.com/watch?v=1LeswPe9258
+
+fight_id: 161589ba-3314-5de5-8407-bd9c9d82d713
+fight:    Mehmosh Raza vs Callum Murrie @ Brave CF 43
+video:    Mehmosh Raza vs Calum Murrie | Free Fight | BRAVE CF 43
+url:      https://www.youtube.com/watch?v=jz0i4JbabL8
+
+fight_id: 08a94222-569e-5089-baa3-8733458d88e7
+fight:    Yousif Ghrairi vs Hassan Talal @ Brave CF 48
+video:    Youssef Ghrairi vs Hassan Talal | Free Fight | BRAVE CF 48
+url:      https://www.youtube.com/watch?v=C4t9TeoYrtE
+
+fight_id: b9ddaf4e-938e-5d03-bf7e-a3c61a140bf7
+fight:    Louis Glismann vs Henri Lintula @ Brave CF 37
+video:    Louis Glismann vs Henri Lintula | Free Fight | BRAVE CF 37
+url:      https://www.youtube.com/watch?v=EcQo16XbeHU
+
+fight_id: fcd34d3a-88e0-5204-8eba-4d8829bd03fd
+fight:    Chad Hanekom vs Mateusz Janur @ Brave CF 61
+video:    Chad Hanekom vs Mateusz Janur | Free Fight | BRAVE CF 61
+url:      https://www.youtube.com/watch?v=Vq_scvNUtD0
+
+fight_id: 4ae243c3-6fc0-5b73-a684-456161a0ff90
+fight:    Ikram Aliskerov vs Chad Hanekom @ Brave CF 10 - The Kingdom Rises
+video:    Ikram Aliskerov vs Chad Hanekom | Full Fight | BRAVE CF Classics
+url:      https://www.youtube.com/watch?v=YJ4TYbj3ZVk
+
+fight_id: bde1ad83-1453-5538-9ab9-8bf2b655ef7c
+fight:    Elias Boudegzdame vs Brice Picaud @ Brave CF 52
+video:    Elias Boudegzdame vs Brice Picaud | Free Fight | BRAVE CF 52
+url:      https://www.youtube.com/watch?v=eQUwUZalrnY
+
+fight_id: ab00669c-fabb-5278-807c-bbf73251f51e
+fight:    Abbas Khan vs Omar El Dafrawy @ Brave CF 48
+video:    Abbas Khan vs Omar El Dafrawy | Free Fight | BRAVE CF 48
+url:      https://www.youtube.com/watch?v=amz_KLDs2s0
+
+fight_id: c3a3732b-bcea-58f8-86a5-c0ad2fa6a8f1
+fight:    In Jae La vs Mzwandile Hlongwa @ Brave CF 58
+video:    In Jae La vs Mzwandile Hlongwa | Free Fight | BRAVE CF 58
+url:      https://www.youtube.com/watch?v=oumN6-Njd2w
+
+fight_id: c49e8db7-f8bc-5016-9d2c-fa46d7e48407
+fight:    Amin Ayoub vs Mashrabjon Ruziboev @ Brave CF 50
+video:    Amin Ayoub vs Mashrabjon Ruziboev | Free Fight | BRAVE CF 50
+url:      https://www.youtube.com/watch?v=4eoB6lmbJDQ
+
+fight_id: 28a6ce1b-ba2e-57be-8b2f-e83509fbd9af
+fight:    Tae Kyun Kim vs Husein Kadimagomaev @ Brave CF 47
+video:    Tae Kyun Kim vs Husein Kadimagomaev | Free Fight | BRAVE CF 47
+url:      https://www.youtube.com/watch?v=BIPzDGW8Ytw
+
+fight_id: c56a501e-8036-5063-8105-360b583ddc92
+fight:    Brad Katona vs Hamza Kooheji @ Brave CF 57
+video:    Hamza Kooheji vs Brad Katona | BRAVE CF 57 | One of the Greatest Battles in BRAVE History!
+url:      https://www.youtube.com/watch?v=8HxsOdyiTQI
+
+fight_id: d0f642c2-dd05-5d5b-b584-13a18615f6eb
+fight:    Tae Kyun Kim vs Nurzhan Akishev @ Brave CF 53 / Octagon 22
+video:    Tae Kyun Kim vs Nurzhan Akishev | Free Fight | BRAVE CF 53
+url:      https://www.youtube.com/watch?v=5l5mdqSPEe4
+
+fight_id: f4f400bc-9ae4-5254-a502-2f494bac5ce0
+fight:    Khamzat Chimaev vs Ikram Aliskerov @ Brave CF 23 - Pride & Honor
+video:    Khamzat Chimaev vs Ikram Aliskerov  | Free Fight | BRAVE CF 23
+url:      https://www.youtube.com/watch?v=2eHpLO1T2CI
+
+fight_id: 742c1778-2c57-5d13-b78f-146ecf3538ca
+fight:    Maysara Mohamed vs Frieh Harahsheh @ Brave CF 65
+video:    Maysara Mohamed vs Frieh Harahsheh | Free Fight | BRAVE CF 65
+url:      https://www.youtube.com/watch?v=ay5AqSJo5Cw
+
+fight_id: 071931fa-eaf3-5f07-82fe-6c6bf1342499
+fight:    Kamal Magomedov vs Olli Santalahti @ Brave CF 63
+video:    Kamal Magomedov vs Olli Santalahti | All-Out War | BRAVE CF 63
+url:      https://www.youtube.com/watch?v=IDvZVuJUpTM
+
+fight_id: 789cc9fe-a75d-5cbd-97c4-ad8cda83cfbd
+fight:    Jakob Nedoh vs Zarko Sedoglavic @ WFC 24 / Brave CF 34
+video:    Jakob Nedoh vs Zarko Sedoglavic | Free Fight | FNC Ljubljana Special
+url:      https://www.youtube.com/watch?v=b968-NrCnq4
+
+fight_id: ce983b02-7114-55ca-80d3-14e4ab13e3c8
+fight:    Ho Taek Oh vs Rolando Dy @ Brave CF 58
+video:    Ho Teak Oh Vs  Rolando Dy | South Korea vs Philippines | Full Fight | BRAVE CF 58
+url:      https://www.youtube.com/watch?v=FzE_SXvxg6U
+
+fight_id: 450f7eb1-65d3-597b-b1b8-0563cb966448
+fight:    Magomed Idrisov vs Rahmatullah Yousufzai @ Brave CF 57
+video:    Magomed Idrisov vs Rahmatullah Yousufzai | Free Fight | BRAVE CF 57
+url:      https://www.youtube.com/watch?v=jDacZ9yjjTw
+
+fight_id: ef35de34-8b74-5ef2-b3dc-a0bb799dd19d
+fight:    Spike Carlyle vs Matthew Colquhoun @ LFA 74 - Vanderaa vs. Ferreira
+video:    The Alpha Ginger! Spike Carlyle vs Matthew Colquhoun | LFA MMA
+url:      https://www.youtube.com/watch?v=ntMKg5PwOvU
+
+fight_id: 8f3af42d-fcb2-5461-9eef-baa8a3d0113e
+fight:    Kailan Hill vs Jhonoven Pati @ LFA 63 - Krantz vs. Patterson
+video:    The INSANE Action From Kailin Hill vs. Jhonoven Pati | LFA Full Fight
+url:      https://www.youtube.com/watch?v=nDFA1d1GgLs
+
+fight_id: ed71c7ce-7b28-502b-bda6-41c02ef714d9
+fight:    Mackenzie Dern vs Mandy Polk @ LFA 24 - Frincu vs. Millender
+video:    UFC STAR MACKENZIE DERN vs BODYBUILDER MANDY POLK | LFA MMA Full Fight
+url:      https://www.youtube.com/watch?v=K0losQMTdus
+
+fight_id: 9cd1f08f-610c-5c6b-b016-358089b26b69
+fight:    Chris Hatley Jr. vs Terry Britton @ LFA 67 - James vs. Martin
+video:    TALLEST FEATHERWEIGHT IN MMA HISTORY GETS KTFO!  Hatley vs  TJ Britton | Full LFA Fight
+url:      https://www.youtube.com/watch?v=jx1rRa9M--I
+
+fight_id: 264d5497-10b9-51d3-977a-adc7f411d4b3
+fight:    Brendan Allen vs Larry Crowe @ LFA 43 - Allen vs. Crowe
+video:    PERFECT Left Hook Faceplant! Brendan Allen vs. Larry Crowe | LFA Fighting
+url:      https://www.youtube.com/watch?v=V4JgERV3PEw
+
+fight_id: 27b077a2-2ed8-5600-91cd-f7a3ebd1de76
+fight:    Ryan Debelak vs Brian Peterson @ LFA 64 - Park vs. Jackson
+video:    THE VANILLA GORILLA | Ryan Debelak v Brian Peterson | LFA MMA
+url:      https://www.youtube.com/watch?v=FT0QyiJHZh0
+
+fight_id: fd4f645d-1e1b-5778-af47-d2bc9ad63541
+fight:    Tebaris Gordon vs Chandler Cole @ LFA 17 - Moises vs. Watley
+video:    Heavyweight BEATDOWN! Boom Gordon vs Chandler "The Hammer' Cole | LFA MMA Full Fight
+url:      https://www.youtube.com/watch?v=ppY4lYNywxM
+
+fight_id: dfdc7845-645d-53d1-8a5e-6baccdab4ec6
+fight:    Thanh Le vs Bobby Moffett @ LFA 31 - Moffett vs. Le
+video:    Thanh Le vs Bobby Moffett | LFA MMA FULL FIGHT
+url:      https://www.youtube.com/watch?v=ngpGKyG86AQ
+
+fight_id: 1498dc25-068c-58c9-9a37-cbf63940c8e4
+fight:    Jacob Thrall vs Eric Ellington @ LFA 76 - Ogden vs. Browne
+video:    Jacob Thrall vs Eric Ellington | Full Fight | LFA 76
+url:      https://www.youtube.com/watch?v=C1wIkX4hWsc
+
+fight_id: 06e19140-9f9a-51b7-a037-c3002c761e47
+fight:    Mackenzie Dern vs Katherine Roy @ LFA 6 - Junior vs. Rodriguez
+video:    Mackenzie Dern vs Katherine Roy | UFC hottest female BJJ talent | LFA MMA
+url:      https://www.youtube.com/watch?v=c8HI2Td0XUU
+
+fight_id: 3f652e88-2b06-5b39-9917-42b1a0a77edf
+fight:    Vanessa Demopoulos vs Nadine Mandiau @ LFA 69 - Perez vs. Moreno
+video:    Vanessa Demopoulos vs Nadine Mandiau | LFA | Full Fight Video
+url:      https://www.youtube.com/watch?v=ZHstHyUY0SE
+
+fight_id: 6636cdb6-a887-5e79-8fd1-7c4291926cab
+fight:    Levi Mowles vs Charles Cheeks III @ LFA 47 - Jackson vs. Jennerman
+video:    Levi Mowles vs Charles Cheeks | Full Fight Video
+url:      https://www.youtube.com/watch?v=lvlTO3uS2gI
+
+fight_id: a3b6c271-8743-5824-9e98-57e67ddd6c69
+fight:    Mario Bautista vs A.J. Robb @ LFA 44 - Frincu vs. Aguilera
+video:    PERFECT SUBMISSION FINISH | BAUTISTA v ROBB | *Full Fight* | LFA MMA
+url:      https://www.youtube.com/watch?v=FHIyEQ9EZic
+
+fight_id: 8b347a08-4f12-5468-864b-ce094037d746
+fight:    Jordan Wright vs Gabriel Checco @ LFA 80 - Garcia vs. Mariscal
+video:    Jordan Wright vs Gabriel Checco | *Full Fight* | LFA Fights
+url:      https://www.youtube.com/watch?v=rBrq264pApM
+
+fight_id: c87f0836-0ec1-5ebd-bbae-72bf831645b3
+fight:    Kai Kamaka III vs Michael Stack @ LFA 87 - Logan vs. Rosales
+video:    ICONIC FIGHT | Michael Stack vs Kai Kamaka | LFA Fights
+url:      https://www.youtube.com/watch?v=UUkiI__T5f4
+
+
+MATCHED FULL EVENTS (8)
 ----------------------------------------------------------------------
-event_id: 112510
+event_id: 112510  [main]
 event:    PFL Africa 2: 2026 First Round
 video:    2026 PFL Africa: Nigeria | Full Event
 url:      https://www.youtube.com/watch?v=uIYQboeQ7do
 
-event_id: 111505
+event_id: 112252  [main]
+event:    PFL MENA 9: Pride of Arabia
+video:    2026 MENA: PFL Dubai | Full Event
+url:      https://www.youtube.com/watch?v=J2nExjQx5Qg
+
+event_id: 111505  [main]
 event:    PFL Africa 1: 2026 First Round
 video:    2026 PFL Africa: Pretoria | Full Event
 url:      https://www.youtube.com/watch?v=P1eO07hMeSU
 
-event_id: 110143
-event:    PFL Africa 4: 2025 Finals
-video:    2025 PFL Africa: Finals | Full Event
-url:      https://www.youtube.com/watch?v=qO7KJaqctps
+event_id: 113079  [main]
+event:    LFA 236 - Ikei vs. Parra
+video:    LFA 236 Main Card | Full Event - Five Exclusive Fights | LFA MMA
+url:      https://www.youtube.com/watch?v=I6HeD15vlCE
 
-event_id: 109381
-event:    PFL Africa 3: 2025 Semifinals
-video:    2025 PFL Africa: SemiFinals | Full Event
-url:      https://www.youtube.com/watch?v=B-cscM6DKKo
+event_id: 113079  [prelims]
+event:    LFA 236 - Ikei vs. Parra
+video:    LFA 236 Full Prelim | Exclusive Fights | LFA Fights
+url:      https://www.youtube.com/watch?v=qBSQlEHQKKE
+
+event_id: 111560  [main]
+event:    LFA 228 - Natividad vs. Garcia
+video:    LFA 228 - FULL EVENT - Garcia vs Natividad | | LFA Fights
+url:      https://www.youtube.com/watch?v=U82FTfQ1vtc
+
+event_id: 107693  [prelims]
+event:    LFA 210 - Lawrence vs. Reyes
+video:    LFA 210 Full Prelims | Three live and free fights | LFA MMA
+url:      https://www.youtube.com/watch?v=FqmgV4_2KoY
+
+event_id: 90324  [main]
+event:    LFA 115 - Silveira vs. Cummins
+video:    LFA 115 | *Full Event* | LFA Fights
+url:      https://www.youtube.com/watch?v=YHRBrftP9xA
 
 
-UNMATCHED FIGHTS (615)
+UNMATCHED FIGHTS (803)
 ----------------------------------------------------------------------
 PARSE_FAIL                     | 31 Of The Most VIOLENT PFL Finishes From 2025! | Feat. Pettis, van Steenis, Edwards & MORE! | https://www.youtube.com/watch?v=U2Xy4wcv0bY
 PARSE_FAIL                     | Biggest Moments from PFL Champions Series: Dubai | https://www.youtube.com/watch?v=k6-JEBnThM4
@@ -3903,6 +4398,7 @@ PARSE_FAIL                     | Full Fight Highlights from the 2025 PFL World T
 PARSE_FAIL                     | Full Fight Highlights from World Tournament Finals | Davis Upsets Gadzhi, Liz & Alves WIN | https://www.youtube.com/watch?v=ZsmZYgvlC0c
 PARSE_FAIL                     | Full Fight Highlights from PFL Africa 1st Round: Flying Knee, Question Mark Kick KO, Brutal Finishes | https://www.youtube.com/watch?v=C_JVdBwrAkw
 PARSE_FAIL                     | Full Fight Highlight Recap from Welterweight & Featherweight Finals! | https://www.youtube.com/watch?v=4nHbx0mWyGA
+no fight for Corey Anderson vs Denis Goltsov | A Heavyweight CLASH!! | Corey Anderson v Denis Goltsov | Full Fight | PFL Champions Series 2 2025 | https://www.youtube.com/watch?v=b2bKbGRUJoY
 PARSE_FAIL                     | Full Fight Highlights from Champion Series: Cape Town & PFL Africa! | https://www.youtube.com/watch?v=vRtk5bLkkJY
 PARSE_FAIL                     | Full Fight Highlights from Chicago Semifinals | PFL World Tournament Week 7 | https://www.youtube.com/watch?v=QL78CpEyenk
 PARSE_FAIL                     | Full Fight Highlights from the Wichita Semifinals | https://www.youtube.com/watch?v=m1CA6D3knTk
@@ -3911,21 +4407,25 @@ PARSE_FAIL                     | Full Fight Highlights from PFL World Tournament
 PARSE_FAIL                     | Full Fight Highlights from PFL World Tournament Week 3 | Insane Finishes! | https://www.youtube.com/watch?v=yOLo5SlNLEw
 PARSE_FAIL                     | FULL FIGHT HIGHLIGHTS | PFL World Tournament 2 – Bantamweights & Women’s Flyweights | https://www.youtube.com/watch?v=AP9c2Jf9N2s
 fighter not found: "Cris Cyborg" | Featherweight Champion Showdown! | Cris Cyborg v Larissa Pacheco | Full Fight | Battle Of The Giants | https://www.youtube.com/watch?v=CMPZE4lo7us
+no fight for Corey Anderson vs Dovlet Yagshimuradov | UNBELIEVABLE Ground And Pound! | Corey Anderson v Dovlet Yagshimuradov | Full Fight | Bellator 257 | https://www.youtube.com/watch?v=ZZF-tXYJK-k
 PARSE_FAIL                     | Father And Son Fight On Same Card! | AJ & Antonio McKee | Full Fights | Bellator 228 | https://www.youtube.com/watch?v=n1jrLl62RLI
-fighter not found: "Patricio Pitbull" | Bantamweight Championship! | Sergio Pettis v Patricio Pitbull | Full Fight | Bellator 297 | https://www.youtube.com/watch?v=Xye7GGADSAU
+no fight for Corey Anderson vs Phil Davis | Overtime Against Mr. Wonderful! | Corey Anderson v Phil Davis | Full Fight | Bellator 297 | https://www.youtube.com/watch?v=0YLrVn-4Tb4
+no fight for Sergio Pettis vs Patricio Pitbull | Bantamweight Championship! | Sergio Pettis v Patricio Pitbull | Full Fight | Bellator 297 | https://www.youtube.com/watch?v=Xye7GGADSAU
 ambiguous (2 fights): Impa Kasanganay vs Josh Silveira | Impa Kasanganay v Josh Silveira (Light Heavyweight Final) | 2023 PFL Playoffs | https://www.youtube.com/watch?v=LpiL8EaHMzk
 ambiguous (2 fights): Sadibou Sy vs Carlos Leal | Sadibou Sy vs Carlos Leal 2 (Welterweight Semifinal) | 2023 PFL Playoffs | https://www.youtube.com/watch?v=1tFk3NEKoWU
 fighter not found: "Mostafa Rashed Neda" | Mostafa Rashed Neda vs Korey Kuppe | PFL 9, 2023 | https://www.youtube.com/watch?v=yEDQC57XO2A
 PARSE_FAIL                     | Portland's Finest! 🇺🇸 | Brent Primus Full Fight Live Stream | https://www.youtube.com/watch?v=9lu4Y-WGlcY
 PARSE_FAIL                     | Denis Goltsov - FULL FIGHT Compilation 👊 | PFL MMA | https://www.youtube.com/watch?v=62EosR1laLE
+no fight for Danilo Marques vs Satoshi Ishii | Danilo Marques vs Satoshi Ishii | PFL 8, 2023 | https://www.youtube.com/watch?v=F4hoqgfdPYI
 fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Amber Leibrock (W145 Semifinal) | 2023 PFL Playoffs | https://www.youtube.com/watch?v=ByQjNR0ZBy0
 ambiguous (3 fights): Larissa Pacheco vs Olena Kolesnyk | Larissa Pacheco vs Olena Kolesnyk 3 (W145 Semifinal) | 2023 PFL Playoffs | https://www.youtube.com/watch?v=MmEH0OpxxbA
 fighter not found: "Nayib Lpez" | Magomed Umalatov vs Nayib López | PFL 6, 2023 | https://www.youtube.com/watch?v=hW0GshhWXQs
-no fight for Bruno Miranda vs Alex Martinez | Bruno Miranda vs Alex Martinez | PFL 6, 2023 | https://www.youtube.com/watch?v=nVN3IDkuU6M
 fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Evelyn Martins | PFL 5, 2023 | https://www.youtube.com/watch?v=kA3MSHZHNJE
 fighter not found: "Martina Jindrov" | Julia Budd vs Martina Jindrová | PFL 5, 2023 | https://www.youtube.com/watch?v=HGa4CP6HR7U
-no fight for Raush Manfio vs Alex Martinez | Raush Manfio vs Alex Martinez | PFL 3, 2023 | https://www.youtube.com/watch?v=0L69jL-k2RQ
+no fight for Marcelo Nunes vs Danilo Marques | Marcelo Nunes vs Danilo Marques | PFL 5, 2023 | https://www.youtube.com/watch?v=S3-DT7oPF_A
+no fight for Andrew Sanchez vs Taylor Johnson | Andrew Sanchez vs Taylor Johnson | PFL 4, 2023 | https://www.youtube.com/watch?v=pGiT4M2GvUs
 fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Yoko Higashi | PFL 2, 2023 | https://www.youtube.com/watch?v=LQ9K4PUqAlY
+no fight for Danilo Marques vs Yorgan De Castro | Danilo Marques vs Yorgan De Castro | PFL 2, 2023 | https://www.youtube.com/watch?v=GytDiHRZIvE
 ambiguous (2 fights): Bruno Cappelozza vs Matheus Scheffel | Bruno Cappelozza vs Matheus Scheffel 2 | PFL 2, 2023 | https://www.youtube.com/watch?v=RszVhCK09Xg
 ambiguous (3 fights): Gabriel Braga vs Jesus Pinedo | Gabriel Braga vs Jesus Pinedo 1 | PFL 1, 2023 | https://www.youtube.com/watch?v=i-W7tv34Pks
 ambiguous (2 fights): Bubba Jenkins vs Chris Wade | Bubba Jenkins vs Chris Wade 2 | PFL 1, 2023 | https://www.youtube.com/watch?v=68EWMCly-s4
@@ -3952,79 +4452,87 @@ fighter not found: "Lewis McGrillen" | Full Fight | Lewis McGrillen vs Salih Kul
 fighter not found: "Daniel Ladero" | Anthony Salamone vs Daniel Ladero | PFL Newcastle | https://www.youtube.com/watch?v=yS3_ts3vSlo
 fighter not found: "Mdlin Prvulescu" | Abdellah Er-Ramy vs Mădălin Pîrvulescu | PFL Newcastle | https://www.youtube.com/watch?v=ubLRuDGVZNM
 fighter not found: "Sadeck Sanon" | Ali Omar vs Sadeck Sanon | 2023 PFL Challenger Series - Week 8 | https://www.youtube.com/watch?v=cY6v6yYi1Fc
+no fight for Taylor Johnson vs Trey Williams | Taylor Johnson vs Trey Williams | 2023 PFL Challenger Series - Week 7 | https://www.youtube.com/watch?v=aLaPt95iJk4
 fighter not found: "Osama Elsaidy" | Impa Kasanganay vs Osama Elsaidy | 2023 PFL Challenger Series - Week 7 | https://www.youtube.com/watch?v=UwO90_sZdVU
 fighter not found: "Vikas Singh Rhul" | James Gonzalez vs Vikas Singh Rhul | 2023 PFL Challenger Series - Week 6 | https://www.youtube.com/watch?v=M8Qhv7x8_Xw
+no fight for Danilo Marques vs Ras Hylton | Danilo Marques vs Ras Hylton | 2023 PFL Challenger Series - Week 3 | https://www.youtube.com/watch?v=wttnq7vxRsk
 fighter not found: "Naranjargal Tsend-Ayush" | Amanda Leve vs Naranjargal Tsend-Ayush | 2023 PFL Challenger Series - Week 2 | https://www.youtube.com/watch?v=IYRE3G8XgPE
 ambiguous (3 fights): Larissa Pacheco vs Olena Kolesnyk | Larissa Pacheco vs Olena Kolesnyk 2 | 2022 PFL Playoffs | https://www.youtube.com/watch?v=mZUgh-fNHEM
 ambiguous (2 fights): Sadibou Sy vs Carlos Leal | Sadibou Sy vs Carlos Leal | 2022 PFL Playoffs | https://www.youtube.com/watch?v=MJUwE46JN9w
 fighter not found: "Maxim Radu" | Maxim Radu vs Vojto Barborik | PFL 8, 2022 | https://www.youtube.com/watch?v=j5f4IFxadXo
-fighter not found: "Ricardo Jiminez" | Brahyan Zurcher vs Ricardo Jiminez | PFL 7, 2022 | https://www.youtube.com/watch?v=Dxmy9yaO9A8
+no fight for Brahyan Zurcher vs Ricardo Jiminez | Brahyan Zurcher vs Ricardo Jiminez | PFL 7, 2022 | https://www.youtube.com/watch?v=Dxmy9yaO9A8
 ambiguous (2 fights): Marthin Hamlet vs Cory Hendricks | Marthin Hamlet vs Cory Hendricks 2 | PFL 7, 2022 | https://www.youtube.com/watch?v=tVC8s07kxy4
 fighter not found: "Elvis Lebron-Quiles" | Alexei Pergande vs Elvis Lebron-Quiles | PFL 7, 2022 | https://www.youtube.com/watch?v=1P7fLraP-eA
-no fight for Olivier Aubin-Mercier vs Alex Martinez | Olivier Aubin-Mercier vs Alex Martinez | 2022 PFL Playoffs | https://www.youtube.com/watch?v=fGi0Aj0EcRM
 ambiguous (2 fights): Stevie Ray vs Anthony Pettis | Stevie Ray vs Anthony Pettis 2 | 2022 PFL Playoffs | https://www.youtube.com/watch?v=Gu7D2V_4lq8
 fighter not found: "Jarrah Al Silawi" | Magomed Umalatov vs Jarrah Al Silawi | PFL 6, 2022 | https://www.youtube.com/watch?v=Fkay9xfPRw4
 fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Abigail Montes | PFL 6, 2022 | https://www.youtube.com/watch?v=1E9WIB4GNhU
 ambiguous (2 fights): Bruno Cappelozza vs Matheus Scheffel | Bruno Cappelozza vs Matheus Scheffel 1 | PFL 5, 2022 | https://www.youtube.com/watch?v=JAhJn7GyyU4
 ambiguous (2 fights): Anthony Pettis vs Stevie Ray | Anthony Pettis vs Stevie Ray 1 | PFL 5, 2022 | https://www.youtube.com/watch?v=5J2S08nEfnI
-no fight for Alex Martinez vs Clay Collard | Alex Martinez vs Clay Collard | PFL 4, 2022 | https://www.youtube.com/watch?v=sTNhQj4Mbgk
 ambiguous (2 fights): Natan Schulte vs Marcin Held | Natan Schulte vs Marcin Held | PFL 4, 2022 | https://www.youtube.com/watch?v=zCvklaZS1Qk
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr. vs Bruce Souto | PFL 4, 2022 | https://www.youtube.com/watch?v=l9ULNGnm_E8
 fighter not found: "Marina Mokhnatkina" | Kayla Harrison vs Marina Mokhnatkina | PFL 3, 2022 | https://www.youtube.com/watch?v=pL6rv7uw_50
 fighter not found: "Jarrah Al Silawi" | Jarrah Al Silawi vs Gleison Tibau | PFL 3, 2022 | https://www.youtube.com/watch?v=2Dw8ByT6wPg
 ambiguous (2 fights): Sadibou Sy vs Nikolai Aleksakhin | Sadibou Sy vs Nikolai Aleksakhin | PFL 3, 2022 | https://www.youtube.com/watch?v=yg-wB09U8fo
 ambiguous (2 fights): Ante Delija vs Matheus Scheffel | Ante Delija vs Matheus Scheffel 1 | PFL 2, 2022 | https://www.youtube.com/watch?v=ZfNyHYOUMu0
 fighter not found: "Clinton Willams" | Simeon Powell vs Clinton Willams | PFL 1, 2022 | https://www.youtube.com/watch?v=4QJnlmpbxG8
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr. vs Delan Monte | PFL 1, 2022 | https://www.youtube.com/watch?v=wxeiyOvnudc
 ambiguous (3 fights): Larissa Pacheco vs Kayla Harrison | Larissa Pacheco vs Kayla Harrison 3 (Women's Lightweight Title Bout) | 2022 PFL Championship | https://www.youtube.com/watch?v=QXSlrvSKghY
 ambiguous (2 fights): Sheymon Moraes vs Marlon Moraes | Sheymon Moraes vs Marlon Moraes | 2022 PFL Championship | https://www.youtube.com/watch?v=pv3Jty2JQ3c
 ambiguous (2 fights): Ante Delija vs Matheus Scheffel | Ante Delija vs Matheus Scheffel 2 (Heavyweight Title Bout) | 2022 PFL Championship | https://www.youtube.com/watch?v=yjPtEKmlZVI
-no fight for Yanal Ashmouz vs Dennis Hughes | Yanal Ashmouz vs Dennis Hughes | 2022 PFL Challenger Series - Week 5 | https://www.youtube.com/watch?v=tp0bu6c5J9Q
-fighter not found: "Edwin Cooper Jr" | Edwin Cooper Jr. vs Troy Lamson | 2022 PFL Challenger Series - Week 4 | https://www.youtube.com/watch?v=JqsGEuDXKiU
 fighter not found: "Jarrah Al Silawi" | Jarrah Al Silawi vs Michael Lilly | 2022 PFL Challenger Series - Week 2 | https://www.youtube.com/watch?v=JE-Mb4xhupA
+no fight for Taylor Johnson vs Alexander Poppeck | Taylor Johnson vs Alexander Poppeck | 2022 PFL Challenger Series - Week 1 | https://www.youtube.com/watch?v=almT9UZD1zM
 ambiguous (2 fights): Bruno Cappelozza vs Ante Delija | Bruno Cappelozza vs Ante Delija 2 (Heavyweight Title Bout) | 2021 PFL Championship | https://www.youtube.com/watch?v=ICxHyrs50_I
 ambiguous (2 fights): Ray Cooper III vs Magomed Magomedkerimov | Ray Cooper III vs Magomed Magomedkerimov (Welterweight Title Bout) | 2021 PFL Championship | https://www.youtube.com/watch?v=QuMhGjZ7ZJc
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr vs Marthin Hamlet (Light Heavyweight Title Bout) | 2021 PFL Championship | https://www.youtube.com/watch?v=-PyvY0KRE_Y
 ambiguous (2 fights): Chris Wade vs Bubba Jenkins | Chris Wade vs Bubba Jenkins (Featherweight Semifinals) | 2021 PFL Playoffs | https://www.youtube.com/watch?v=OJTu6Yg0V2c
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr vs Emiliano Sordi (Light Heavyweight Semifinals) | 2021 PFL Playoffs | https://www.youtube.com/watch?v=YT96QESRhDQ
-no fight for Alejandro Flores vs Carl Deaton III | Alejandro Flores vs Carl Deaton III | PFL 9, 2021 | https://www.youtube.com/watch?v=m3gABuFBRK8
 fighter not found: "Marina Mokhnatkina" | Marina Mokhnatkina vs Claudia Zamora | PFL 8, 2021 | https://www.youtube.com/watch?v=H0spK3E_O0w
 fighter not found: "Jamelle Jones  2021 PFL Playoffs" | Bruno Cappelozza vs Jamelle Jones (Heavyweight Semifinals) 2021 PFL Playoffs | https://www.youtube.com/watch?v=0ugQbRVl0zM
-fighter not found: "Olivier Aubin Mercier" | Olivier Aubin Mercier vs Darrell Horcher | PFL 7, 2021 | https://www.youtube.com/watch?v=Rgl7brCJ8io
+no fight for Magomed Umalatov vs Leandro Silva | Magomed Umalatov vs Leandro Silva | PFL 7, 2021 | https://www.youtube.com/watch?v=kzyLnWB9a5k
+no fight for Olivier Aubin Mercier vs Darrell Horcher | Olivier Aubin Mercier vs Darrell Horcher | PFL 7, 2021 | https://www.youtube.com/watch?v=Rgl7brCJ8io
 ambiguous (2 fights): Loik Radzhabov vs Alexander Martinez | Loik Radzhabov vs Alexander Martinez 2 (Lightweight Semifinals) | 2021 PFL Playoffs | https://www.youtube.com/watch?v=rx9BfyURO8s
 ambiguous (2 fights): Magomed Magomedkerimov vs Sadibou Sy | Magomed Magomedkerimov vs Sadibou Sy (Welterweight Semifinals) | 2021 PFL Playoffs | https://www.youtube.com/watch?v=WDVrpuwIoBE
 ambiguous (3 fights): Larissa Pacheco vs Olena Kolesnyk | Larissa Pacheco vs Olena Kolesnyk | PFL 6, 2021 | https://www.youtube.com/watch?v=adP0s9UKVAA
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr. vs Vinny Magalhães | PFL 5, 2021 | https://www.youtube.com/watch?v=xqsCMrd3nlg
+fighter not found: "Vinny Magalhes" | Antonio Carlos Jr. vs Vinny Magalhães | PFL 5, 2021 | https://www.youtube.com/watch?v=xqsCMrd3nlg
 ambiguous (2 fights): Cory Hendricks vs Marthin Hamlet | Cory Hendricks vs Marthin Hamlet | PFL 5, 2021 | https://www.youtube.com/watch?v=Wr349WRs7_8
 ambiguous (2 fights): Bruno Cappelozza vs Ante Delija | Bruno Cappelozza vs Ante Delija | PFL 3, 2021 | https://www.youtube.com/watch?v=TotfEFa_ptE
-fighter not found: "Antonio Carlos Jr" | Antonio Carlos Jr. vs Tom Lawlor | PFL 2, 2021 | https://www.youtube.com/watch?v=mZLcB1YilBY
 ambiguous (2 fights): Sadibou Sy vs Nikolai Aleksakhin | Sadibou Sy vs Nikolai Aleksakhin | PFL 2, 2021 | https://www.youtube.com/watch?v=1bPnE0O72XA
 ambiguous (2 fights): Alexander Martinez vs Loik Radzhabov | Alexander Martinez vs Loik Radzhabov | PFL 1, 2021 | https://www.youtube.com/watch?v=onLgQzeFoj8
 fighter not found: "Jo Sungbin" | Tyler Diamond vs Jo Sungbin | PFL 1, 2021 | https://www.youtube.com/watch?v=r1Cmzp9DA2g
 ambiguous (2 fights): Marcin Held vs Natan Schulte | Marcin Held vs Natan Schulte | PFL 1, 2021 | https://www.youtube.com/watch?v=n_0leI0m6Ak
 no fight for Steven Rodriguez vs Alexandre Almeida | Steven Rodriguez vs Alexandre Almeida | WSOF 35, 2017 | https://www.youtube.com/watch?v=RJZei7sNMtA
+no fight for Brian Foster vs Luiz Firmino | Brian Foster vs Luiz Firmino | WSOF 33, 2016 | https://www.youtube.com/watch?v=q3r5nYv3nbU
+no fight for Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill 2 (Bantamweight Title Bout) | WSOF 32, 2016 | https://www.youtube.com/watch?v=6JnmS357pHY
 no fight for Caros Fodor vs Phoenix Jones | Caros Fodor vs Phoenix Jones | WSOF 32, 2016 | https://www.youtube.com/watch?v=mwi-XIFVUM4
-fighter not found: "Danny Davis Jr" | Abu Azaitar vs Danny Davis Jr. | WSOF 30, 2016 | https://www.youtube.com/watch?v=HbI6v7A7L5A
 fighter not found: "Vinny Magalhes" | Vinny Magalhães vs Jake Heun | WSOF 30, 2016 | https://www.youtube.com/watch?v=1uoxtGeivjo
+no fight for Justin Gaethje vs Brian Foster | Full Fight | Justin Gaethje vs Brian Foster (Lightweight Title Bout) | WSOF 29, 2016 | https://www.youtube.com/watch?v=m7cceEoDUy4
+no fight for Joo Zeferino vs Brian Foster | João Zeferino vs Brian Foster 2 (Tournament Finals) | WSOF 25, 2015 | https://www.youtube.com/watch?v=SsXqhA94Mfs
+no fight for Brian Foster vs Luis Palomino | Brian Foster vs Luis Palomino (Tournament Semifinals) | WSOF 25, 2015 | https://www.youtube.com/watch?v=VAoSr_gjmpM
 fighter not found: "Ramil Mustapayev" | Ramil Mustapayev vs LaRue Burley | WSOF 25, 2015 | https://www.youtube.com/watch?v=UD7ti0Ve864
-fighter not found: "Danny Davis Jr" | Abubakar Nurmagomedov vs Danny Davis Jr. | WSOF 26, 2015 | https://www.youtube.com/watch?v=i4pSkTQ2GLo
+no fight for Joo Zeferino vs Brian Foster | João Zeferino vs Brian Foster 1 (Tournament Quarterfinals) | WSOF 25, 2015 | https://www.youtube.com/watch?v=scWS_FxTqGA
+no fight for Josh Hill vs Bekbulat Magomedov | Josh Hill vs Bekbulat Magomedov | WSOF 26, 2015 | https://www.youtube.com/watch?v=SEe4myfNW0o
+no fight for Bruce Boyington vs Rodrigo Almeida | Bruce Boyington vs Rodrigo Almeida | WSOF 24, 2015 | https://www.youtube.com/watch?v=JIz-jR1ntHE
 fighter not found: "Vinny Magalhes" | Vinny Magalhães vs Matt Hamill | WSOF 24, 2015 | https://www.youtube.com/watch?v=7EWnkBSb9q0
 no fight for Phoenix Jones vs Roberto Yong | Phoenix Jones vs Roberto Yong | WSOF 23, 2015 | https://www.youtube.com/watch?v=kWjpdEpqhXQ
-fighter not found: "Danny Davis Jr" | Matthew Frincu vs Danny Davis Jr | WSOF 23, 2015 | https://www.youtube.com/watch?v=SZJAGOonna4
+no fight for Brian Foster vs LaRue Burley | Brian Foster vs LaRue Burley | WSOF 23, 2015 | https://www.youtube.com/watch?v=J7jQn8pa4J0
+no fight for Donavon Frelow vs Carlos Garcia | Donavon Frelow vs Carlos Garcia | WSOF 22, 2015 | https://www.youtube.com/watch?v=6EVOGP914N4
 no fight for Stephen Beaumont vs Jose Rodriguez | Stephen Beaumont vs Jose Rodriguez | WSOF 21, 2015 | https://www.youtube.com/watch?v=icIOpxnWO6c
 fighter not found: "Jesse McElligott  WSOF 20," | David Branch vs Jesse McElligott (Light Heavyweight Tournament Semifinals) WSOF 20, 2015 | https://www.youtube.com/watch?v=5z5XddjEt2A
 no fight for Emmanuel Walo vs Phoenix Jones | Emmanuel Walo vs Phoenix Jones | WSOF 20, 2015 | https://www.youtube.com/watch?v=FZBOaj9vdoQ
+no fight for Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill (Bantamweight Title Bout) | WSOF 18, 2015 | https://www.youtube.com/watch?v=vBPydjtzCRE
 no fight for Shane Campbell vs Derek Boyle | Shane Campbell vs Derek Boyle | WSOF 18, 2015 | https://www.youtube.com/watch?v=gegOB6yudbM
-fighter not found: "Danny Davis Jr" | Danny Davis Jr vs Adam Cella | WSOF 17, 2015 | https://www.youtube.com/watch?v=VpEcq1EialI
+no fight for Jake Shields vs Brian Foster | Jake Shields vs Brian Foster | WSOF 17, 2015 | https://www.youtube.com/watch?v=0bN6zImY2og
+no fight for Jason Powell vs Chris Avila | Jason Powell vs Chris Avila | WSOF 16, 2014 | https://www.youtube.com/watch?v=6EBCIk8Mngs
 fighter not found: "Justin Baseman" | David Mitchell vs Justin Baseman | WSOF 16, 2014 | https://www.youtube.com/watch?v=HUvZMISeVEw
-fighter not found: "Danny Davis Jr" | Danny Davis Jr. vs Jorge Lopez | WSOF 12, 2014 | https://www.youtube.com/watch?v=tcmp4_jex6I
+no fight for Danny Davis Jr vs Jorge Lopez | Danny Davis Jr. vs Jorge Lopez | WSOF 12, 2014 | https://www.youtube.com/watch?v=tcmp4_jex6I
 fighter not found: "Elvis Mutapi" | Elvis Mutapčić vs Kelvin Tiller | WSOF 12, 2014 | https://www.youtube.com/watch?v=CFqeR0WsqKw
 fighter not found: "Muhammed De'Reese" | Muhammed De'Reese vs Rashaun Spencer | WSOF 11, 2014 | https://www.youtube.com/watch?v=lgwlA1_ryXg
+no fight for David Branch vs Jesse Taylor | David Branch vs Jesse Taylor (Middleweight Title Bout) | WSOF 10, 2014 | https://www.youtube.com/watch?v=Rtvz4M1o-AM
 fighter not found: "Elvis Mutapi" | Jesse Taylor vs Elvis Mutapčić | WSOF 7, 2013 | https://www.youtube.com/watch?v=PNlETIQ_MYw
+no fight for Pablo Alfonso vs Miguel Torres | Pablo Alfonso vs Miguel Torres | WSOF 6, 2013 | https://www.youtube.com/watch?v=okQVe5uDnW0
 no fight for Ozzy Dugulubgov vs Andrew Osbourne | Ozzy Dugulubgov vs Andrew Osbourne | WSOF 5, 2013 | https://www.youtube.com/watch?v=hz2h9YXrp4s
 fighter not found: "Brandon Hampleman" | Marlon Moraes vs Brandon Hampleman | WSOF 4, 2013 | https://www.youtube.com/watch?v=_r1IoMToxu0
 no fight for Victor Valenzuela vs Isaac Gutierrez | Victor Valenzuela vs Isaac Gutierrez | WSOF 4, 2013 | https://www.youtube.com/watch?v=LPbzHWRXjGc
+no fight for Carson Beebe vs Joe Murphy | Carson Beebe vs Joe Murphy | WSOF 3, 2013 | https://www.youtube.com/watch?v=WdA3e8Len2Y
 fighter not found: "Tom Marcellino   WSOF 2," | Brenson Hansen vs Tom Marcellino   WSOF 2, 2013 | https://www.youtube.com/watch?v=LnLmyZoeB6o
+no fight for Anthony Johnson vs D.J. Linderman | Anthony Johnson vs D.J. Linderman | WSOF 1, 2012 | https://www.youtube.com/watch?v=urPg7bh_zBM
+no fight for Marlon Moraes vs Miguel Torres | Full Fight | Marlon Moraes vs Miguel Torres | WSOF 1, 2012 | https://www.youtube.com/watch?v=ImJZ4VIYfAU
 ambiguous (2 fights): Hakeem Dawodu vs Marat Magomedov | Full Fight | Hakeem Dawodu vs Marat Magomedov 1 | WSOF 26, 2015 | https://www.youtube.com/watch?v=pMLkchjtT4c
 ambiguous (2 fights): Hakeem Dawodu vs Marat Magomedov | Hakeem Dawodu vs Marat Magomedov 2 | WSOF 32, 2016 | https://www.youtube.com/watch?v=fv_JhCsmSVc
 fighter not found: "Jordan Johnson  2019 PFL Championship" | Full Fight | Emiliano Sordi vs Jordan Johnson (Light Heavyweight Title Bout) 2019 PFL Championship | https://www.youtube.com/watch?v=TBE9b_0LmxI
@@ -4042,17 +4550,28 @@ ambiguous (3 fights): Kayla Harrison vs Larissa Pacheco | Full Fight | Kayla Har
 fighter not found: "Jordan Johnson  2019 PFL Championship" | Full Fight | Emiliano Sordi vs Jordan Johnson (Light Heavyweight Title Bout) 2019 PFL Championship | https://www.youtube.com/watch?v=TBE9b_0LmxI
 ambiguous (3 fights): Lance Palmer vs Alex Gilpin | Full Fight | Lance Palmer vs Alex Gilpin 3 (Featherweight Title Bout) | 2019 PFL Championship | https://www.youtube.com/watch?v=A7OtydXIj5I
 no fight for Brendan Loughnane vs David Valente | Full Fight | Brendan Loughnane vs David Valente | 2019 PFL Championship | https://www.youtube.com/watch?v=Y50gEFXABNo
-ambiguous (2 fights): Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill (Bantamweight Title Bout) | WSOF 18, 2015 | https://www.youtube.com/watch?v=vBPydjtzCRE
-ambiguous (2 fights): Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill 2 (Bantamweight Title Bout) | WSOF 32, 2016 | https://www.youtube.com/watch?v=6JnmS357pHY
+no fight for Marlon Moraes vs Miguel Torres | Full Fight | Marlon Moraes vs Miguel Torres | WSOF 1, 2012 | https://www.youtube.com/watch?v=ImJZ4VIYfAU
+no fight for Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill (Bantamweight Title Bout) | WSOF 18, 2015 | https://www.youtube.com/watch?v=vBPydjtzCRE
+no fight for Marlon Moraes vs Josh Hill | Full Fight | Marlon Moraes vs Josh Hill 2 (Bantamweight Title Bout) | WSOF 32, 2016 | https://www.youtube.com/watch?v=6JnmS357pHY
 ambiguous (2 fights): Marlon Moraes vs Sheymon Moraes | Full Fight | Marlon Moraes vs Sheymon Moraes (Bantamweight Title Bout) | WSOF 22, 2015 | https://www.youtube.com/watch?v=x-vwq0c71r4
 ambiguous (2 fights): Justin Gaethje vs Luis Palomino | Full Fight | Justin Gaethje vs. Luis Palomino (Lightweight Title Bout) | WSOF 19, 2015 | https://www.youtube.com/watch?v=MiJR7VKTHc4
+no fight for Justin Gaethje vs Brian Foster | Full Fight | Justin Gaethje vs Brian Foster (Lightweight Title Bout) | WSOF 29, 2016 | https://www.youtube.com/watch?v=m7cceEoDUy4
 ambiguous (2 fights): Justin Gaethje vs Luis Palomino | Full Fight | Justin Gaethje vs Luis Palomino 2 (Lightweight Title Match) | WSOF 23, 2015 | https://www.youtube.com/watch?v=JFZ-cTXIZxY
 ambiguous (2 fights): Justin Gaethje vs Luis Palomino | [HD] Full Fight | Justin Gaethje vs Luis Palomino 1 (Lightweight Title Bout) | WSOF 19, 2015 | https://www.youtube.com/watch?v=J1cpGKua-W0
 fighter not found: "Vinny Magalhes" | Full Fight | Sean O'Connell vs Vinny Magalhães (Light Heavyweight Title) | 2018 PFL Championship | https://www.youtube.com/watch?v=-v52Ucl1KGA
 ambiguous (2 fights): Ray Cooper III vs Magomed Magomedkerimov | Full Fight | Ray Cooper III vs Magomed Magomedkerimov (Welterweight Title) | 2018 PFL Championship | https://www.youtube.com/watch?v=UZ8Zp85vWvE
 ambiguous (2 fights): Lance Palmer vs Steven Siler | Full Fight | Lance Palmer vs Steven Siler (Featherweight Title Bout) | 2018 PFL Championship | https://www.youtube.com/watch?v=W_urAuhzHL0
+fighter not found: "Hiroya"    | Full Fight | ヒロヤ vs. 山本アーセン / Hiroya vs. Erson Yamamoto - RIZIN LANDMARK 15 in HIROSHIMA - 2026.7.18 | https://www.youtube.com/watch?v=qdfXj9Hljes
+fighter not found: "Jinnosuke Kashimura - RIZIN LANDMARK" | Full Fight | ダニー・サバテロ vs. 鹿志村仁之介 / Danny Sabatello vs. Jinnosuke Kashimura - RIZIN LANDMARK 15 | https://www.youtube.com/watch?v=I845NxSV12o
+fighter not found: "Kyohei Hagiwara - RIZIN LANDMARK" | Full Fight | カルシャガ・ダウトベック vs. 萩原京平 / Karshyga Dautbek vs. Kyohei Hagiwara - RIZIN LANDMARK 15 | https://www.youtube.com/watch?v=GIWxAiGIaHU
+fighter not found: "Yrysbek Tilenov - RIZIN LANDMARK 15 in HIROSHIMA" | Full Fight | 太田忍 vs. イリスベク・ティレノフ / Shinobu Ota vs. Yrysbek Tilenov - RIZIN LANDMARK 15 in HIROSHIMA | https://www.youtube.com/watch?v=0OQUldlZZmE
+no fight for Moeri Suda vs NOEL | Full Fight | 須田萌里 vs. NOEL / Moeri Suda vs. NOEL - 2025.7.27[超RIZIN.4] | https://www.youtube.com/watch?v=NAlGMIZiEe8
+fighter not found: "Kintaro"   | Full Fight | 太田忍 vs. 金太郎 / Shinobu Ota vs. Kintaro - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=jfqXdnc7sbk
+fighter not found: "Kate Lotus" | Full Fight | 大島沙緒里 vs. ケイト・ロータス / Saori Oshima vs. Kate Lotus - 2026.3.7[RIZIN.52] | https://www.youtube.com/watch?v=RNOCW5Z6k6U
+no fight for Yuki Ito vs Erson Yamamoto | Full Fight | 伊藤裕樹 vs. 山本アーセン 2 / Yuki Ito vs. Erson Yamamoto - 2025.9.28[RIZIN.51] | https://www.youtube.com/watch?v=i9sfXmxCitc
 fighter not found: "BlackPantherBeynoah" | Full Fight | “ブラックパンサー”ベイノア vs. 芳賀ビラル海 / “BlackPanther”Beynoah vs. Bilal Kai Haga - 2026/6/6 | https://www.youtube.com/watch?v=BjfFrl1p3b0
 fighter not found: "Makoto Shinryu" | Full Fight | 扇久保博正 vs. 神龍誠 2 / Makoto Shinryu vs. Hiromasa Ougikubo - 2026/6/6[RIZIN LANDMARK 14] | https://www.youtube.com/watch?v=hHPzLEwZ2Ho
+no fight for Ryo Takagi vs Kaiwen Li | Full Fight | 高木凌 vs. リー・カイウェン / Ryo Takagi vs. Kaiwen Li - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=H1QEN8AS4Gg
 no fight for JOLLY vs Kenshin Kodama | Full Fight | ジョリー vs. 児玉兼慎 / JOLLY vs. Kenshin Kodama - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=Z1ylkMtZV3g
 fighter not found: "Kouzi"     | Full Fight | 平本蓮 vs. 皇治 / Ren Hiramoto vs. Kouzi - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=KRD6MC9ekVc
 fighter not found: "Ilkhom Nozimov" | Full Fight | イルホム・ノジモフ vs. ルイス・グスタボ / Ilkhom Nozimov vs. Luiz Gustavo - 2026.5.10[RIZIN.53] | https://www.youtube.com/watch?v=AZeVe_xWqYs
@@ -4095,7 +4614,7 @@ PARSE_FAIL                     | Full Fight | クレベル・コイケ vs. 朝�
 PARSE_FAIL                     | Full Fight | 伊澤星花 vs. ルシア・アプデルガリム / Seika Izawa vs.Lucia Apdelgarim - 2024/12/31[RIZIN.49] | https://www.youtube.com/watch?v=Bk4o03N6R-c
 fighter not found: "Yutaka Saito  [RIZIN 45" | Full Fight | クレベル・コイケ vs. 斎藤裕 / Kleber Koike vs. Yutaka Saito  [RIZIN 45] | https://www.youtube.com/watch?v=FeGpKi81qeI
 PARSE_FAIL                     | Full Fight | ルイス・グスタボ vs. 野村駿太 / Luiz Gustavo vs.Shunta Nomura - 2025/3/30[RIZIN.50] | https://www.youtube.com/watch?v=QCcraDiitOs
-fighter not found: "Patricky Pitbull" | Full Fight | ルイス・グスタボ vs. パトリッキー・ピットブル / Luiz Gustavo vs. Patricky Pitbull - 2019/12/31[RIZIN.20] | https://www.youtube.com/watch?v=gYPwmwcyeUY
+no fight for Luiz Gustavo vs Patricky Pitbull | Full Fight | ルイス・グスタボ vs. パトリッキー・ピットブル / Luiz Gustavo vs. Patricky Pitbull - 2019/12/31[RIZIN.20] | https://www.youtube.com/watch?v=gYPwmwcyeUY
 fighter not found: "Nisse"     | Full Fight | にっせー vs. 須田萌里 / Nisse vs. Moeri Suda - 2022/07/02[RIZIN.36] | https://www.youtube.com/watch?v=k8oKsIvGf8o
 fighter not found: "Makoto Shinryu" | Full Fight | 神龍誠 vs. ホセ・トーレス / Makoto Shinryu vs. Jose Torres - 2024/12/31[RIZIN.49] | https://www.youtube.com/watch?v=eNZ6NteFh1c
 PARSE_FAIL                     | Full Fight | 神龍誠 vs. 伊藤裕樹 / Makoto Shinryu vs.Yuki Ito - 2025/05/04[RIZIN男祭り] | https://www.youtube.com/watch?v=-tN6Sb1AqvM
@@ -4130,12 +4649,12 @@ fighter not found: "Taio Asahisa" | Full Fight | 朝久泰央 vs. ウザ強ヨ�
 fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. ダイキ・ライトイヤー / Kintaro vs. Daiki Lightyear - 2024/3/23 [RIZIN LANDMARK 9 in KOBE] | https://www.youtube.com/watch?v=A2OuMPowSYA
 no fight for Issa Hosokawa vs Sho Patrick Usami | Full Fight |  細川一颯 vs. 宇佐美正パトリック / Issa Hosokawa vs Sho Patrick Usami - 2024/12/31 [雷神番外地] | https://www.youtube.com/watch?v=hxRQejVqnJ8
 fighter not found: "Kouzi - RIZIN.45" | 【期間限定】Full Fight | 三浦孝太 vs. 皇治 / Kota Miura vs. Kouzi - RIZIN.45 | https://www.youtube.com/watch?v=ZFfpKfjsb9I
-fighter not found: "Kota Ossman - RIZIN LANDMARK 8 in SAGA" | Full Fight | 阿部大治 vs 押忍マン洸太/ Daichi Abe vs. Kota Ossman - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=u-66CeJMa0s
-fighter not found: "Masakazu Imanari - RIZIN LANDMARK 8 in SAGA" | Full Fight | 摩嶋一整 vs 今成正和/ Kazumasa Majima vs. Masakazu Imanari - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=QBana6ZJv2w
-fighter not found: "Shohei Nose - RIZIN LANDMARK 8 in SAGA" | Full Fight | 瀧澤謙太 vs 野瀬翔平 / Kenta Takizawa vs. Shohei Nose - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=h2RVGTJNb3o
-fighter not found: "Yoshinori Horie - RIZIN LANDMARK 8 in SAGA" | Full Fight | ルイス・グスタボ vs 堀江圭功 / Luiz Gustavo vs. Yoshinori Horie - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=5EUKwf9UbSo
-fighter not found: "Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA" | Full Fight | 矢地祐介 vs. 白川陸斗/ Yusuke Yachi vs. Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Df-04r1TrfA
-fighter not found: "Claire Lopez - RIZIN LANDMARK 8 in SAGA" | Full Fight | 大島沙緒里 vs クレア・ロペス/ Saori Oshima vs. Claire Lopez - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=DEwT_102V0Q
+no fight for Daichi Abe vs Kota Ossman - RIZIN LANDMARK 8 in SAGA | Full Fight | 阿部大治 vs 押忍マン洸太/ Daichi Abe vs. Kota Ossman - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=u-66CeJMa0s
+no fight for Kazumasa Majima vs Masakazu Imanari - RIZIN LANDMARK 8 in SAGA | Full Fight | 摩嶋一整 vs 今成正和/ Kazumasa Majima vs. Masakazu Imanari - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=QBana6ZJv2w
+no fight for Kenta Takizawa vs Shohei Nose - RIZIN LANDMARK 8 in SAGA | Full Fight | 瀧澤謙太 vs 野瀬翔平 / Kenta Takizawa vs. Shohei Nose - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=h2RVGTJNb3o
+no fight for Luiz Gustavo vs Yoshinori Horie - RIZIN LANDMARK 8 in SAGA | Full Fight | ルイス・グスタボ vs 堀江圭功 / Luiz Gustavo vs. Yoshinori Horie - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=5EUKwf9UbSo
+no fight for Yusuke Yachi vs Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA | Full Fight | 矢地祐介 vs. 白川陸斗/ Yusuke Yachi vs. Rikuto Shirakawa - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Df-04r1TrfA
+no fight for Saori Oshima vs Claire Lopez - RIZIN LANDMARK 8 in SAGA | Full Fight | 大島沙緒里 vs クレア・ロペス/ Saori Oshima vs. Claire Lopez - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=DEwT_102V0Q
 fighter not found: "Ryo Takagi - RIZIN LANDMARK 6 in NAGOYA" | Full Fight | ビクター・コレスニック vs. 高木凌 / Viktor Kolesnik vs. Ryo Takagi - RIZIN LANDMARK 6 in NAGOYA | https://www.youtube.com/watch?v=U7cBZr-Mpm8
 fighter not found: "Kyohei Hagiwara - RIZIN.44" | Full Fight | 牛久絢太郎 vs. 萩原京平 / Juntaro Ushiku vs. Kyohei Hagiwara - RIZIN.44 | https://www.youtube.com/watch?v=XPntuopp6yA
 fighter not found: "Yusaku Inoue - RIZIN LANDMARK 6 in NAGOYA" | Full Fight | 渡慶次幸平 vs. 井上雄策 / Kohei Tokeshi vs. Yusaku Inoue - RIZIN LANDMARK 6 in NAGOYA | https://www.youtube.com/watch?v=_QAcY4cx0Co
@@ -4145,7 +4664,7 @@ fighter not found: "Rikuto Shirakawa - RIZIN.44" | Full Fight | 中原由貴 vs.
 fighter not found: "Ryusei Ashizawa - RIZIN.45" | Full Fight | 太田忍 vs. 芦澤竜誠 / Shinobu Ota vs. Ryusei Ashizawa - RIZIN.45 | https://www.youtube.com/watch?v=jlkxg8zqKmc
 fighter not found: "Hiroto Uesako - BELLATOR JAPAN" | Full Fight | 矢地祐介 vs. 上迫博仁 / Yusuke Yachi vs. Hiroto Uesako - BELLATOR JAPAN | https://www.youtube.com/watch?v=U5UihDEbuFs
 fighter not found: "Kouzi - RIZIN.45" | Full Fight | 三浦孝太 vs. 皇治 / Kota Miura vs. Kouzi - RIZIN.45 | https://www.youtube.com/watch?v=Zk2RV3XbSEI
-fighter not found: "Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA" | Full Fight | 芦田崇宏 vs  鈴木博昭 / Takahiro Ashida vs. Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Ecqcgbc_kP8
+no fight for Takahiro Ashida vs Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA | Full Fight | 芦田崇宏 vs  鈴木博昭 / Takahiro Ashida vs. Hiroaki Suzuki - RIZIN LANDMARK 8 in SAGA | https://www.youtube.com/watch?v=Ecqcgbc_kP8
 fighter not found: "Hiroya - RIZIN.45" | Full Fight | 新井丈 vs  ヒロヤ / Jo Arai vs. Hiroya - RIZIN.45 | https://www.youtube.com/watch?v=iNIm9IpA_f8
 fighter not found: "SatoshiDominatorYamasu" | Full Fight | 弥益ドミネーター聡志 vs. 新居すぐる / Satoshi“Dominator”Yamasu vs. Suguru Nii - RIZIN.45 | https://www.youtube.com/watch?v=Im6EyX1EMOQ
 fighter not found: "YA-MAN - RIZIN.45" | Full Fight | 平本蓮 vs. YA-MAN / Ren Hiramoto vs. YA-MAN - RIZIN.45 | https://www.youtube.com/watch?v=CoXiPlUEBGU
@@ -4227,7 +4746,7 @@ fighter not found: "Chihiro Suzuki - RIZIN.43" | Full Fight | クレベル・コ
 fighter not found: "Taisei Nishitani - RIZIN.43" | Full Fight | 鈴木博昭 vs.  西谷大成 / Hiroaki Suzuki vs. Taisei Nishitani - RIZIN.43 | https://www.youtube.com/watch?v=QNJQvgYJPUw
 fighter not found: "AlanHiroYamaniha - RIZIN LANDMARK" | Full Fight | 所英男 vs. アラン“ヒロ”ヤマニハ / Hideo Tokoro vs. Alan“Hiro”Yamaniha - RIZIN LANDMARK 6 | https://www.youtube.com/watch?v=mYAtV-_pQU8
 fighter not found: "Vugar Karamov - RIZIN.2" | Full Fight | 朝倉未来 vs.  ヴガール・ケラモフ / Mikuru Asakura vs. Vugar Karamov - 超RIZIN.2 | https://www.youtube.com/watch?v=niq1AKbWOCk
-fighter not found: "Patricio Pitbull" | Full Fight | パトリシオ・ピットブル vs.  鈴木千裕 / Patricio Pitbull vs. Chihiro Suzuki - 超RIZIN.2 | https://www.youtube.com/watch?v=NnL1wfDTKas
+fighter not found: "Chihiro Suzuki - RIZIN.2" | Full Fight | パトリシオ・ピットブル vs.  鈴木千裕 / Patricio Pitbull vs. Chihiro Suzuki - 超RIZIN.2 | https://www.youtube.com/watch?v=NnL1wfDTKas
 fighter not found: "Chihiro Suzuki - RIZIN LANDMARK" | Full Fight | ヴガール・ケラモフ vs. 鈴木千裕 / Vugar Karamov vs. Chihiro Suzuki - RIZIN LANDMARK 7 | https://www.youtube.com/watch?v=-ftzKuKO1B4
 fighter not found: "Yoshinori Horie - RIZIN.41" | Full Fight | ヴガール・ケラモフ vs.  堀江圭功 / Vugar Karamov vs. Yoshinori Horie - RIZIN.41 | https://www.youtube.com/watch?v=Baq7RJ0MDWw
 fighter not found: "Shinobu Ota - RIZIN LANDMARK" | Full Fight | 倉本一真 vs. 太田忍 / Kazuma Kuramoto vs. Shinobu Ota - RIZIN LANDMARK 5 | https://www.youtube.com/watch?v=cykw80_Ti5Q
@@ -4386,7 +4905,7 @@ fighter not found: "Justin Scoggins - RIZIN.14" | Full Fight | 元谷友貴 vs. 
 fighter not found: "Kazuma Sone - RIZIN.12" | Full Fight | 元谷友貴 vs. 祖根寿麻 / Yuki Motoya vs. Kazuma Sone - RIZIN.12 | https://www.youtube.com/watch?v=g1uUAnTlNDw
 fighter not found: "C.B.Dollaway - RIZIN.20" | Full Fight | イリー・プロハースカ vs. C.B.ダラウェイ / Jiri Prochazka vs. C.B.Dollaway - RIZIN.20 | https://www.youtube.com/watch?v=s0EiEpos6oM
 fighter not found: "Fabio Maldonado - RIZIN.19" | Full Fight | イリー・プロハースカ vs. ファビオ・マルドナド / Jiri Prochazka vs. Fabio Maldonado - RIZIN.19 | https://www.youtube.com/watch?v=Om8TwID2X9g
-fighter not found: "King Mo"   | Full Fight | キング・モー vs. イリー・プロハースカ 2 / King Mo vs. Jiri Prochazka 2 - RIZIN.15 | https://www.youtube.com/watch?v=wpElfF70WlQ
+fighter not found: "Jiri Prochazka 2 - RIZIN.15" | Full Fight | キング・モー vs. イリー・プロハースカ 2 / King Mo vs. Jiri Prochazka 2 - RIZIN.15 | https://www.youtube.com/watch?v=wpElfF70WlQ
 fighter not found: "Brandon Halsey - RIZIN.14" | Full Fight | イリー・プロハースカ vs. ブランドン・ホールジー / Jiri Prochazka vs. Brandon Halsey - RIZIN.14 | https://www.youtube.com/watch?v=1oEkGys6oEs
 fighter not found: "Jake Heun - RIZIN.13" | Full Fight | イリー・プロハースカ vs. ジェイク・ヒューン / Jiri Prochazka vs. Jake Heun - RIZIN.13 | https://www.youtube.com/watch?v=_TbHo3nRE4Y
 fighter not found: "Bruno Cappelozza - RIZIN.11" | Full Fight | イリー・プロハースカ vs. ブルーノ・カッペローザ / Jiri Prochazka vs. Bruno Cappelozza - RIZIN.11 | https://www.youtube.com/watch?v=iXR0ae9yUik
@@ -4477,7 +4996,7 @@ fighter not found: "Hiromasa Ougikubo - RIZIN.20" | Full Fight | 石渡伸太郎
 fighter not found: "Melvin Guillard - RIZIN.11" | Full Fight | 五味隆典 vs. メルビン・ギラード / Takanori Gomi vs. Melvin Guillard - RIZIN.11 | https://www.youtube.com/watch?v=I269hWTCPgY
 fighter not found: "Osunaarashi" | Full Fight | 大砂嵐 vs. ボブ・サップ / Osunaarashi vs. Bob Sapp - RIZIN.13 | https://www.youtube.com/watch?v=US-VtK3FPMY
 fighter not found: "Tofiq Musayev - RIZIN.20" | Full Fight | ジョニー・ケース vs. トフィック・ムサエフ / Johnny Case vs. Tofiq Musayev - RIZIN.20 | https://www.youtube.com/watch?v=rslBLyrJwIY
-fighter not found: "King Mo"   | Full Fight | ミルコ・クロコップ vs. キング・モー / Mirko Cro Cop vs. King Mo - 12/29/2016 | https://www.youtube.com/watch?v=OrnHpxveXco
+no fight for Mirko Cro Cop vs King Mo | Full Fight | ミルコ・クロコップ vs. キング・モー / Mirko Cro Cop vs. King Mo - 12/29/2016 | https://www.youtube.com/watch?v=OrnHpxveXco
 fighter not found: "Taiju Shiratori" | Full Fight | 白鳥大珠 vs. 大雅 / Taiju Shiratori vs. Taiga - RIZIN.19 | https://www.youtube.com/watch?v=uMZSCi_QTYI
 fighter not found: "Seo Hee Ham - RIZIN.20" | Full Fight | 浜崎朱加 vs. ハム・ソヒ / Ayaka Hamasaki vs. Seo Hee Ham - RIZIN.20 | https://www.youtube.com/watch?v=IRiwK2g3jZE
 fighter not found: "Jinh Yu Frey - RIZIN.16" | Full Fight | 浜崎朱加 vs. ジン・ユ・フレイ / Ayaka Hamasaki vs. Jinh Yu Frey - RIZIN.16 | https://www.youtube.com/watch?v=z4luMl3Ac5A
@@ -4512,30 +5031,239 @@ fighter not found: "Kintaro"   | Full Fight | 金太郎 vs. 加藤ケンジ / Ki
 fighter not found: "Hideki "Shrek" Sekine - RIZIN.21" | Full Fight | ロッキー・マルティネス vs. 関根"シュレック"秀樹 / Roque Martinez vs. Hideki "Shrek" Sekine - RIZIN.21 | https://www.youtube.com/watch?v=_Vs8wSkitfs
 fighter not found: "Masanori Kanehara - RIZIN.21" | Full Fight | ビクター・ヘンリー vs. 金原正徳 / Victor Henry vs. Masanori Kanehara - RIZIN.21 | https://www.youtube.com/watch?v=dSpdIeJ8Ou4
 fighter not found: "Daniel Salas - RIZIN.21" | Full Fight | 朝倉未来 vs. ダニエル・サラス / Mikuru Asakura vs. Daniel Salas - RIZIN.21 | https://www.youtube.com/watch?v=LIPr5HKwhqg
+fighter not found: "Rodtang"   | Rodtang vs. Tagir Khalilov | ONE Championship Full Fight | https://www.youtube.com/watch?v=Hs7VpyeT74M
+fighter not found: "Kang Ji Won" | Amir Aliakbari vs. Kang Ji Won | ONE Championship Full Fight | https://www.youtube.com/watch?v=A44F7UULvp4
+fighter not found: "Sunisa Srisen" | Victoria Lee vs. Sunisa Srisen | ONE Championship Full Fight | https://www.youtube.com/watch?v=E5ghFmpDt9E
+fighter not found: "Jackie Buntan" | Wondergirl Fairtex vs. Jackie Buntan | ONE Championship Full Fight | https://www.youtube.com/watch?v=hFJemQFFZiM
+no fight for Alex Silva vs Hiroba Minowa | Alex Silva vs. Hiroba Minowa | ONE Championship Full Fight | https://www.youtube.com/watch?v=U8wJ0Dw6J6E
+fighter not found: "Ilias Ennahachi" | Ilias Ennahachi vs. Superlek | ONE Championship Full Fight | https://www.youtube.com/watch?v=fsSRY23GoYg
+fighter not found: "Davit Kiria" | Giorgio Petrosyan vs. Davit Kiria | ONE Championship Full Fight | https://www.youtube.com/watch?v=ywIO0YOv1kg
+no fight for Yodkaikaew Fairtex vs Hu Yong | Yodkaikaew Fairtex vs. Hu Yong | ONE Championship Full Fight | https://www.youtube.com/watch?v=G8jML5zaX08
+fighter not found: "Alma Juniku" | Alma Juniku vs. Janet Todd | ONE Championship Full Fight | https://www.youtube.com/watch?v=jmkDH--YXkw
+fighter not found: "Regian Eersel" | Regian Eersel vs. Mustapha Haida | ONE Championship Full Fight | https://www.youtube.com/watch?v=D8KC8t0073k
+fighter not found: "Tang Kai"  | Ryogo Takahashi vs. Tang Kai | ONE Championship Full Fight | https://www.youtube.com/watch?v=2NfT5WQcr78
+fighter not found: "Roshan Mainam" | Roshan Mainam vs. Aziz Calim | ONE Championship Full Fight | https://www.youtube.com/watch?v=fVCeUd4GKaU
+fighter not found: "Zhang Chenglong II" | Hiroki Akimoto vs. Zhang Chenglong II | ONE Championship Full Fight | https://www.youtube.com/watch?v=x4Bxod1x6IY
+fighter not found: "Adam Noi"  | Han Zi Hao vs. Adam Noi | ONE Championship Full Fight | https://www.youtube.com/watch?v=o1S-J_JznHk
+fighter not found: ""Reug Reug"" | Alain Ngalani vs. "Reug Reug" | ONE Championship Full Fight | https://www.youtube.com/watch?v=fRpX0ytnsZ8
+fighter not found: "Capitan"   | Alaverdi Ramazanov vs. Capitan | ONE Championship Full Fight | https://www.youtube.com/watch?v=-1uknXCusCc
+ambiguous (2 fights): Stamp Fairtex vs Alyona Rassohyna | Stamp Fairtex vs. Alyona Rassohyna | ONE Championship Full Fight | https://www.youtube.com/watch?v=9sSA-D630CE
+fighter not found: "Chen Rui"  | Chen Rui vs. Kwon Won Il | ONE Championship Full Fight | https://www.youtube.com/watch?v=omqpLOvXvMQ
+no fight for Sovannahry Em vs Choi Jeong Yun | Sovannahry Em vs. Choi Jeong Yun | ONE Championship Full Fight | https://www.youtube.com/watch?v=dyiexZ5GW1w
+fighter not found: "Mihajlo Kecojevic" | Mihajlo Kecojevic vs. Beybulat Isaev | ONE Championship Full Fight | https://www.youtube.com/watch?v=-d8S5NIooX0
+no fight for Zebaztian Kadestam vs Gadzhimurad Abdulaev | Zebaztian Kadestam vs. Gadzhimurad Abdulaev | ONE Championship Full Fight | https://www.youtube.com/watch?v=BMtVRIZpfNk
+fighter not found: "Rade Opacic" | Rade Opacic vs. Bruno Susano | ONE Championship Full Fight | https://www.youtube.com/watch?v=B5mB4YGQvz8
+fighter not found: "Kang Ji Won" | Mehdi Barghi vs. Kang Ji Won | ONE Championship Full Fight | https://www.youtube.com/watch?v=BlFTp4DY2G4
+fighter not found: "Meng Bo"   | Meng Bo vs. Samara Santos | ONE Championship Full Fight | https://www.youtube.com/watch?v=7zkhPhvHG_Q
+fighter not found: "Nong-O"    | Nong-O vs. Rodlek | ONE Championship Full Fight | https://www.youtube.com/watch?v=VF9OnHKiouk
+fighter not found: "Roman Kryklia" | Roman Kryklia vs. Andrei Stoica | ONE Championship Full Fight | https://www.youtube.com/watch?v=QYiB-R079k0
+no fight for Chan Rothana vs Xie Wei | Chan Rothana vs. Xie Wei | ONE Championship Full Fight | https://www.youtube.com/watch?v=-d-OO_k-3kI
+fighter not found: "Samy Sana" | Jamal Yusupov vs. Samy Sana | ONE Championship Full Fight | https://www.youtube.com/watch?v=dZwGaHHBaH4
+no fight for Senzo Ikeda vs Liang Hui | Senzo Ikeda vs. Liang Hui | ONE Championship Full Fight | https://www.youtube.com/watch?v=cMxHw-k9F3k
+fighter not found: "Momotaro"  | Momotaro vs. Walter Goncalves | ONE Championship Full Fight | https://www.youtube.com/watch?v=3fXUaytMBas
+fighter not found: "Jonathan Haggerty" | Taiki Naito vs. Jonathan Haggerty | ONE Championship Full Fight | https://www.youtube.com/watch?v=ngeVvCVWXCQ
+fighter not found: "Nieky Holzken" | Nieky Holzken vs. Elliot Compton | ONE Championship Full Fight | https://www.youtube.com/watch?v=IpWGW7-lMOo
+fighter not found: "Rade Opacic" | Errol Zimmerman vs. Rade Opacic | ONE Championship Full Fight | https://www.youtube.com/watch?v=ZJ5FcPTZOAo
+fighter not found: "Marat Grigorian" | Marat Grigorian vs. Ivan Kondratev | ONE Championship Full Fight | https://www.youtube.com/watch?v=eVAx0ERB4fE
+fighter not found: "Chen Rui"  | Ali Motamed vs. Chen Rui | ONE Championship Full Fight | https://www.youtube.com/watch?v=ZkgLq-LygTI
+fighter not found: "Zhang Chunyu" | Andy Souwer vs. Zhang Chunyu | ONE Championship Full Fight | https://www.youtube.com/watch?v=2jjQlMpmhgw
+fighter not found: "Murat Aygun" | Anderson Silva vs. Murat Aygun | ONE Championship Full Fight | https://www.youtube.com/watch?v=YFnzjQBUzas
+fighter not found: "Kim Jae Woong" | Tetsuya Yamada vs. Kim Jae Woong | ONE Championship Full Fight | https://www.youtube.com/watch?v=AjMrnuoNRXM
+ambiguous (2 fights): Aung La N Sang vs Reinier De Ridder | Aung La N Sang vs. Reinier De Ridder | ONE Championship Full Fight | https://www.youtube.com/watch?v=biZKvetIpIk
+no fight for Song Min Jong vs Geje Eustaquio | Song Min Jong vs. Geje Eustaquio | ONE Championship Full Fight | https://www.youtube.com/watch?v=x_8Fp_9AzBk
+no fight for Yuya Wakamatsu vs Kim Kyu Sung | Yuya Wakamatsu vs. Kim Kyu Sung | ONE Championship Full Fight | https://www.youtube.com/watch?v=tGJf-6IqC7M
+fighter not found: "Aslanbek Zikreev" | Aslanbek Zikreev vs. Wang Junguang | ONE Championship Full Fight | https://www.youtube.com/watch?v=TAGmm8mxVo8
+fighter not found: "Meng Bo"   | Priscilla Hertati Lumban Gaol vs. Meng Bo | ONE Championship Full Fight | https://www.youtube.com/watch?v=L5aYaYvejmA
+fighter not found: "Xiong Jing Nan" | Xiong Jing Nan vs. Tiffany Teo | ONE Championship Full Fight | https://www.youtube.com/watch?v=_6ax8tSrrXU
+fighter not found: "Kwon Won Il" | Bruno Pucci vs. Kwon Won Il | ONE Championship Full Fight | https://www.youtube.com/watch?v=XhhZUHOdNdw
+no fight for Ryogo Takahashi vs Yoon Chang Min | Ryogo Takahashi vs. Yoon Chang Min | ONE Championship Full Fight | https://www.youtube.com/watch?v=NmrTIrk2Dn8
+no fight for Maira Mazar vs Choi Jeong Yun | Maira Mazar vs. Choi Jeong Yun | ONE Championship Full Fight | https://www.youtube.com/watch?v=afDtU2j39qE
+fighter not found: "Joseph Lasiri" | Rocky Ogden vs. Joseph Lasiri | ONE Championship Full Fight | https://www.youtube.com/watch?v=HgUiRLlbBU8
+fighter not found: "Alex Lohor" | 🔴🔴🟢 BRAVE CF 83 Live: Marcin Bandel vs. Alex Lohoré | 5 Action-Packed Bouts Live from Netherlands 💥💥 | https://www.youtube.com/watch?v=s1zbSe57t7U
+PARSE_FAIL                     | BRAVE CF 83 | OFF the Record | Episode 4 | A day in Amsterdam with Noach Blyden | https://www.youtube.com/watch?v=jYbgXV-eIEE
+PARSE_FAIL                     | BRAVE CF 83 | OFF the Record | Episode 3 |Behind the scenes with Youssef Boughanem | https://www.youtube.com/watch?v=bapogKIP4UY
+PARSE_FAIL                     | BRAVE CF 83 | OFF the Record | Episode 2 |Behind the scenes in Alkmaar , Netherlands | https://www.youtube.com/watch?v=EtH-9FiSAfY
+PARSE_FAIL                     | BRAVE CF  83 off the Record | Episode 1| Behind the scenes in Alkmaar , Netherlands | https://www.youtube.com/watch?v=bDhP-oIBNf0
+PARSE_FAIL                     | BRAVE CF 83 | Epic MMA Showdown in Netherlands | May 25 | Event Promo | https://www.youtube.com/watch?v=fDLDy7G5eYk
+PARSE_FAIL                     | Marcin Bandel gets back on the road to #BRAVECF Super Welterweight title at #BRAVECF83 #shorts #mma | https://www.youtube.com/watch?v=IU7RHu9SZeU
+PARSE_FAIL                     | Night night!😴 Submission specialist Marcin "BOMBA" Bandel  #bravecf #bravetv #shorts #mma | https://www.youtube.com/watch?v=1qb7dqyFwCY
+PARSE_FAIL                     | 💪 Marcin Bandel is coming back to DEFEND  his title 👑 #BRAVECF77👀 #bravecf #bravetv #shorts #mma | https://www.youtube.com/watch?v=CllqYR43Uj8
+PARSE_FAIL                     | Title SECURED👑 Marcin "Bomba" Bandel 💪is a submission specialist💥👊 #bravecf #bravetv #shorts #mma | https://www.youtube.com/watch?v=qo8ZETp8ZBo
+PARSE_FAIL                     | Marcin Bandel | All MMA Fights | FREE MMA Fights | BRAVE TV | BRAVE CF Stars | https://www.youtube.com/watch?v=rrmohwl_qjw
+PARSE_FAIL                     | Best Submission by Marcin Bandel at BRAVE CF 54 #mma #shorts | https://www.youtube.com/watch?v=pc6hBF81CCg
+PARSE_FAIL                     | Marcin Bandel predicted his win at BRAVE CF 63... #mma #shorts | https://www.youtube.com/watch?v=6SjQmHciCYs
+PARSE_FAIL                     | Marcin Bandel 👊👊 in da House!!!! BRAVE 63 Main Event is NOW Ready #mma #shorts | https://www.youtube.com/watch?v=tIhxXDe7Apk
+PARSE_FAIL                     | Marcin Bandel Top Actions of the Day, | https://www.youtube.com/watch?v=b1sQumvTxCM
+PARSE_FAIL                     | BRAVE TALKS WITH MARCIN BANDEL AT BRAVE CF 58 | https://www.youtube.com/watch?v=231jDaYVVyA
+fighter not found: "Alex Lohor is going to be an absolute BANGER#bravecf #shorts #mma" | #BRAVECF83 🤩 Marcin Bandel vs Alex Lohoré is going to be an absolute BANGER💥#bravecf #shorts #mma | https://www.youtube.com/watch?v=NAcF47rYzXE
+PARSE_FAIL                     | 5 days to go!🔥 Chequina Pedro returns after his emphatic debut at #BRAVECF79 #bravecf #shorts #mma | https://www.youtube.com/watch?v=gn10-SK2A7U
+PARSE_FAIL                     | Hawk's Corner MMA Podcast | Mohammed "The Hawk" Shahid Talks BRAVE CF 83 Netherlands with Sam Brett | https://www.youtube.com/watch?v=9_ceyLYLdkw
+PARSE_FAIL                     | Stepping it up!🔥 TV sensation Noach Blyden is ready for his #BRAVECF debut💯 #bravecf #shorts #mma | https://www.youtube.com/watch?v=VjY6JxDa9AY
+PARSE_FAIL                     | Alex Lohoré is a smart man💡#bravecf president Mohammed Shahid speaks ahead of the HUGE main event 💯 | https://www.youtube.com/watch?v=u_SF-nV1xco
+PARSE_FAIL                     | The  debut of a SUPERSTAR 🌟 Youusef Boughanem will have his 2nd #MMA appearance at #BRAVECF83 🔥🇳🇱 | https://www.youtube.com/watch?v=C915xQCLS44
+PARSE_FAIL                     | "Bomba" Bandel: Deconstructing a Welterweight Enigma | https://www.youtube.com/watch?v=JXh86Vqefjg
+PARSE_FAIL                     | Alex Lohoré | The story behind the Da Killa King | https://www.youtube.com/watch?v=V8SSWxSdX4M
+PARSE_FAIL                     | The Muay Thai Mastermind: Youssef Boughanem's MMA Journey | https://www.youtube.com/watch?v=Q61x9XkInzw
+PARSE_FAIL                     | Did you know this about Alex Lohoré? #BRAVECF83 #mma #shorts #mma | https://www.youtube.com/watch?v=2P_rOKJLrGo
+PARSE_FAIL                     | Noach Blyden makes sure his opponent stays until the fight 😂 #BRAVECF83 #mma #shorts #alkmaar | https://www.youtube.com/watch?v=QKgxXBRhrcs
+PARSE_FAIL                     | Face off in Alkmaar 🇳🇱  😯 2 days MORE till it all goes down at #BRAVECF83 🔥#bravecf83 #shorts #mma | https://www.youtube.com/watch?v=S2-Zjfgm-Kg
+PARSE_FAIL                     | Rise from cage to #BRAVECF | Ali Isajew story #bravecf83 #shorts #mma | https://www.youtube.com/watch?v=azQsuDQTpUQ
+PARSE_FAIL                     | Tv sensation to MMA | Noach Blyden's Journey from Karate to an MMA star | https://www.youtube.com/watch?v=f1ZAji6J17c
+PARSE_FAIL                     | Trying to make weight before the fight like 👀😂 #bravecf83 #shorts #mma | https://www.youtube.com/watch?v=wOGOodEb8Tc
+fighter not found: "19 R1 submissions" | 19 R1 submissions vs a man that's never been submitted 🤯 Alex Lohoré speaks ahead of #bravecf83 | https://www.youtube.com/watch?v=9o1tM3VUAGM
+PARSE_FAIL                     | Ali Isajew is ready for his fight at #bravecf83 👊 #bravecf #shorts #mma | https://www.youtube.com/watch?v=SW-kTyI34T8
+PARSE_FAIL                     | The Face Offs are done! ull speed ahead #BRAVECF83 💥#bravecf83 #shorts #mma | https://www.youtube.com/watch?v=0lTLsECqVLw
+PARSE_FAIL                     | Return to #BRAVECF | Muhammad Idrisov | Fighter breakdown #bravecf83 | https://www.youtube.com/watch?v=vjnUajXDCKE
+PARSE_FAIL                     | Chequina Noso Pedro 👊🏻 took the VICTORY in R2 with a tight anaconda choke 🤯 #bravecf83 #shorts #mma | https://www.youtube.com/watch?v=z-v43cA91Vk
+PARSE_FAIL                     | One and done! Muhammad Idrisov took the W via arm-triangle choke in Round 1!💥#bravecf83 #shorts #mma | https://www.youtube.com/watch?v=G-k8HHVpWN0
+PARSE_FAIL                     | Muay Thai legend Youssef Boughanem gets it with a mounted ground & pound 💯🤯#bravecf83  #shorts #mma | https://www.youtube.com/watch?v=O0CkWZR_Zrw
+PARSE_FAIL                     | Liver hook for the win! 👊🏻Noach Blyden, take a bow!🤩 #bravecf83 #shorts #mma | https://www.youtube.com/watch?v=rlcgbv_ULtw
+PARSE_FAIL                     | Da Killa King got it done in R1 🤯 Taking the win via HUGE knockout 🔥#bravecf83 #shorts #mma | https://www.youtube.com/watch?v=7ikDYnCPaeQ
+PARSE_FAIL                     | The timing, the crowd, the charisma! Noach Blyden electrified the walkout at #BRAVECF83 #shorts #mma | https://www.youtube.com/watch?v=2blWvcX5xAQ
+PARSE_FAIL                     | Which KO was better?👀 Lohoré or Kubanza?🔥#bravecf #shorts #mma | https://www.youtube.com/watch?v=jws28wiO-_M
+PARSE_FAIL                     | When a Muay Thai fighter goes for a submission, then Youssef Boughanem realized his #1 skill #mma | https://www.youtube.com/watch?v=9-0mWSEsbFg
+PARSE_FAIL                     | POV: You're the ref for the #BRAVECF83 opener 💥#bravecf #shorts #mma | https://www.youtube.com/watch?v=2KxQUFIoa1o
+PARSE_FAIL                     | 🌟 Noach Blyden lit up #BRAVECF83 with his amazing showing in the co-main 🔥#bravecf83 #shorts #mma | https://www.youtube.com/watch?v=XJYbU6PYec4
+PARSE_FAIL                     | Alex Lohoré had a dream start on debut with the #KO that shook the arena 💥#bravecf #shorts #mma | https://www.youtube.com/watch?v=FhRH7KXrlCc
+PARSE_FAIL                     | BRAVE CF 83 Highlights | Boughanem stars | Lohoré stuns Bandel and more | Alkmaar, Netherlands | https://www.youtube.com/watch?v=ZWcprLkMA3E
+PARSE_FAIL                     | A memorable debut by Youssef Boughanem 💯Here are some highlights of The Terminator 👏🏻 #shorts #mma | https://www.youtube.com/watch?v=q05NaHzX8PE
+PARSE_FAIL                     | Here's a quick recap of Muhammad Idrisov's performance at #BRAVECF83 💯 #bravecf #shorts #mma | https://www.youtube.com/watch?v=zhRlfCsTFBg
+PARSE_FAIL                     | The Muay Thai legend delivered on his promise at #BRAVECF83 🔝#bravecf #shorts #mma | https://www.youtube.com/watch?v=9P2wg-q9owc
+PARSE_FAIL                     | Commentary reaction that Youssef Boughanem TKO 💥#bravecf #shorts #mma | https://www.youtube.com/watch?v=XUU3mbijnkA
+PARSE_FAIL                     | Youssef Boughanem lit up #BRAVECF83 👊 Fight news coming soon #bravecf #shorts #mma | https://www.youtube.com/watch?v=11MvFASHsCs
+fighter not found: "Anzor Abdulkhozhaev" | Anzor Abdulkhozhaev vs Rolando Dy | BRAVE CF 33 | https://www.youtube.com/watch?v=Qcq2_39Vdwc
+fighter not found: "Abdulllah Al Qahtani" | Abdulllah Al Qahtani VS Yong Soo Jung | FULL FIGHT | BRAVE CF 58 | https://www.youtube.com/watch?v=zHtzVKbnpIs
+fighter not found: "Vitaliy Yakimenko" | Vitaliy Yakimenko vs Mohammad Farhad | FULL FIGHT | BRAVE CF 70 | https://www.youtube.com/watch?v=FyMBwGGrqFE
+fighter not found: "Borislav Nikoli" | Borislav Nikolić vs Matiss Zaharovs | Full Fight | BRAVE CF 56 | https://www.youtube.com/watch?v=ivLsD0P67vY
+fighter not found: "Fajar   FREE MMA Fight   BRAVE CF" | Nkosi Ndebele vs Fajar   FREE MMA Fight   BRAVE CF 66 | https://www.youtube.com/watch?v=pqvSeWW8usU
+fighter not found: "Meguellati Dhia" | Mohsen Mohammadseifi  VS Meguellati Dhia | Full  Fight | BRAVE CF 67 | https://www.youtube.com/watch?v=alVDT0ORnI0
+fighter not found: "Osama El Seady" | Osama El Seady vs  Mohamed Ali Sellam | Full MMA Fight | BRAVE CF 67 | https://www.youtube.com/watch?v=LeWi36rHW-A
+fighter not found: "Mihail Kotru" | Joilton Lutterbach VS Mihail Kotruţă | Full  MMA Fight | BRAVE CF 68 | https://www.youtube.com/watch?v=V_V7ss1OKo4
+fighter not found: "Zagid Gaidarov" | Brendan Lesar vs Zagid Gaidarov | Full Fight | BRAVE CF 64 | https://www.youtube.com/watch?v=4zZ1kUCoFMU
+fighter not found: "Mohammed Zuhair" | Mohammed Zuhair vs Wissam Sandakli | Full Fight | BRAVE CF 47 | https://www.youtube.com/watch?v=6vEksbRKRzs
+no fight for Kubanychbek Abdisalam Uulu vs Olzhas Eskaraev | Kubanychbek Abdisalam Uulu Vs Olzhas Eskaraev | Free Fight | BRAVE CF 59 | https://www.youtube.com/watch?v=lxaNemKzQow
+fighter not found: "Luka Podkrajek" | Pavel Dailidko vs Luka Podkrajšek | Free Fight | BRAVE CF 70 | https://www.youtube.com/watch?v=S09fqlOWiRs
+ambiguous (2 fights): Mohammad Fakhreddine vs Mohamed Said Maalem | Mohammad Fakhreddine VS Mohamed Said Maalem | Free Fight | BRAVE CF 57 | https://www.youtube.com/watch?v=lsNR6VTmfjA
+ambiguous (2 fights): Velimurad Alkhasov vs Zach Makovsky | Velimurad Alkhasov vs Zach Makovsky | Free Fight | BRAVE CF 50 | https://www.youtube.com/watch?v=Rt-adjnWKzQ
+no fight for Guram Kutateladze vs Felipe Silva | Guram Kutateladze VS Felipe Silva | Free Fight | BRAVE CF 29 | https://www.youtube.com/watch?v=vbTWZ1RL10k
+PARSE_FAIL                     | Thank You, Nkosi Ndebele | A Tribute to the Former BRAVE CF Bantamweight Champion | https://www.youtube.com/watch?v=6nuZV5YtXAI
+no fight for Jarno Errens vs Alisher Abdullaev | Jarno Errens vs Alisher Abdullaev | Free Fight | BRAVE CF 61 | https://www.youtube.com/watch?v=2nGIu0OX7EA
+fighter not found: "Rasul Tezekbaev" | Ilyar Askhanov vs Rasul Tezekbaev | Free Fight | BRAVE CF 62 | https://www.youtube.com/watch?v=HGJPsEYMzX4
+no fight for Jose Torres vs Izzeddine Al Derbani | Jose Torres vs Izzeddine Al Derbani | FREE Fight | BRAVE CF 65 | https://www.youtube.com/watch?v=BcQ6tiHSUP0
+no fight for Kevin Ruart vs Ibrahima Man | Kevin Ruart vs Ibrahima Mané | Free Fight | BRAVE CF 31 | https://www.youtube.com/watch?v=Fwhac1p9fTw
+fighter not found: "Zeqiuduoji" | Rauan Bekbolat Vs Zeqiuduoji | Full Fight | BRAVE CF 93 | https://www.youtube.com/watch?v=exzfv4YM1wM
+no fight for Gerson Pereira vs Bair Shtepin | Gerson Pereira vs Bair Shtepin | Free Fight | BRAVE CF 44 | https://www.youtube.com/watch?v=EnrbRIP2M10
+fighter not found: "Vladislav Novitskiy" | Yanis Ghemmouri vs Vladislav Novitskiy | Free Fight | BRAVE CF 51 | https://www.youtube.com/watch?v=ycOflA0gDYg
+fighter not found: "Zagid Gaidarov" | Zagid Gaidarov vs Abel Brites | Free Fight | BRAVE CF 66 | https://www.youtube.com/watch?v=BzAHSrgQdC4
+fighter not found: "Nejc Prelonik" | Abdullah Al-Qahtani vs Nejc Preložnik | Free Fight | BRAVE CF 56 | https://www.youtube.com/watch?v=NwZUh1Ncx_k
+fighter not found: "Asu Almabaev" | Asu Almabaev vs Imram Magaramov  | Free Fight | BRAVE CF 53 | https://www.youtube.com/watch?v=OvfpyOUV8ko
+fighter not found: "Murtaza Talha" | Murtaza Talha vs Kirill Khomitsky | Free Fight | BRAVE CF 62 | https://www.youtube.com/watch?v=lQdG5lazS_w
+ambiguous (2 fights): Mohammad Fakhreddine vs Mohamed Said Maalem | Mohammad Fakhreddine vs Mohamed Said Maalem 1 | BRAVE CF 52 | https://www.youtube.com/watch?v=dIliYClM85o
+fighter not found: "Darko Stoi" | Shamil Gaziev vs Darko Stošić | Full Fight | UFC Perth Special | https://www.youtube.com/watch?v=5Ul1dmA5oOE
+no fight for Nursulton Ruziboev vs Ibrahima Man | Nursulton Ruziboev vs Ibrahima Mané | UFC Baku Recap | BRAVE CF Uzbekistan | https://www.youtube.com/watch?v=jKTlBQlG3xI
+no fight for Islam Dulatov vs Kleverson Silva | Islam Dulatov vs Kleverson Silva | UFC Fight Night Abu Dhabi Special | BRAVE CF 61 | Germany | https://www.youtube.com/watch?v=ek4Wq2Y70uA
+fighter not found: "Jorge Patino Full Fight" | When Intimidation Doesn't Work! Carlos Ferreira vs. Jorge Patino Full Fight | https://www.youtube.com/watch?v=eKn3WQnrExY
+fighter not found: "Esquivel Fight Video" | These Ladies Threw DOWN! Caliari vs  Esquivel Fight Video | https://www.youtube.com/watch?v=37_uPlOXa1I
+fighter not found: "Sanchez Was INSANE" | Talking Trash AFTER The Fight | Casey vs. Sanchez Was INSANE! | LFA World Title | https://www.youtube.com/watch?v=S0kKSkMh6i0
+no fight for Dave Was Nearly BURIED But Still Won! Burrow vs Njokuani | Dave Was Nearly BURIED But Still Won! Burrow vs. Njokuani | https://www.youtube.com/watch?v=wpFoOhf4FzA
+fighter not found: "Meachem Was CRAZY" | What Just Happened?! Macias vs. Meachem Was CRAZY! | LFA MMA | https://www.youtube.com/watch?v=3i_QuWl7yxY
+no fight for The INTENSE Action From Vinnie Lopez vs Lucas Rota | The INTENSE Action From Vinnie Lopez vs Lucas Rota | https://www.youtube.com/watch?v=5yrv9tXmVZI
+PARSE_FAIL                     | AWESOME DERRICK LEWIS KO! | HARDEST UFC PUNCHER EVER - BEFORE THE UFC | LFA | https://www.youtube.com/watch?v=heOGVOycWew
+no fight for DERRICK LEWIS vs JARED ROSHOLT | DERRICK LEWIS vs JARED ROSHOLT | EPIC Battle before they were stars | LFA MMA Full Fight | https://www.youtube.com/watch?v=PqP3UcHCeLc
+PARSE_FAIL                     | When Angry Heavyweights Go FULL SEND | https://www.youtube.com/watch?v=pNKZTuO8ilo
+PARSE_FAIL                     | King Bau FLATTENED Wildboy At LFA 68 | https://www.youtube.com/watch?v=9HhejMAs3Q0
+no fight for RYAN "SUPERMAN" SPANN vs LARRY CROWE | RYAN "SUPERMAN" SPANN vs LARRY CROWE | Full Fight | LFA MMA | https://www.youtube.com/watch?v=knvf5U98gY0
+fighter not found: "Thompson Full Fight" | He Was Out COLD! Hill vs Thompson Full Fight | https://www.youtube.com/watch?v=rssQJkluU4w
+fighter not found: "Jonathon Thomson Full Fight Video" | Darrius Flowers vs Jonathon Thomson Full Fight Video | https://www.youtube.com/watch?v=BSHEfSWGS2o
+fighter not found: "Audrey Perkins Full Fight Video" | Maycee Barber vs Audrey Perkins Full Fight Video | https://www.youtube.com/watch?v=4PP6YvrlgX4
+fighter not found: "Thomas Webb Full Fight" | Jason "Slim Reaper" Langellier vs Thomas Webb Full Fight | https://www.youtube.com/watch?v=VqodLBLhVUE
+no fight for Eric Silva vs Nick Barnes | Eric Silva vs Nick Barnes | Full Fight | LFA 45 | https://www.youtube.com/watch?v=fIc5uiQzYAA
+no fight for Nate Robinson vs Courtney Buck | Nate Robinson vs Courtney Buck | Full Fight | LFA MMA | https://www.youtube.com/watch?v=K1L9eruCHpE
+fighter not found: "Jordan Rinaldi Full Fight Video" | Brian Ortega vs Jordan Rinaldi Full Fight Video | https://www.youtube.com/watch?v=roLtctxkPQQ
+no fight for Damacio Page vs Brian Hall | Damacio Page vs Brian Hall | LFA | Full Fight Video | https://www.youtube.com/watch?v=1fvScTLcbak
+no fight for Dervin Lopez vs Joe Rodriguez | Dervin Lopez vs Joe Rodriguez | Full Fight | LFA Fighting | https://www.youtube.com/watch?v=ePDApvZRlLo
+fighter not found: "Toninho Marajo Full Fight Video" | Cory Sandhagen vs Toninho Marajo Full Fight Video | https://www.youtube.com/watch?v=tGDMNA6s3KM
+fighter not found: "HOLLY HOLM USES "RONDA KICK"" | HOLLY HOLM USES "RONDA KICK" vs LFA OPPONENT | LFA Full Fight | https://www.youtube.com/watch?v=Ic6jXhD4ig0
+no fight for BARNES vs DADOVIC | ALL OUT BRAWL! | BARNES Vs DADOVIC | *Full Fight* | LFA MMA | https://www.youtube.com/watch?v=Hs6FcOByT9o
+PARSE_FAIL                     | 30 SECONDS OF MAYHEM! ! *Must See* ESPN Fight of the Year | LFA MMA | https://www.youtube.com/watch?v=EFG3kix-wLA
+fighter not found: "JP Saint Louis *Full Fight*" | Korey Kuppe vs JP Saint Louis *Full Fight* | LFA Fights | https://www.youtube.com/watch?v=7fiNy1OOcMg
+PARSE_FAIL                     | MACHIDA's CRAZY FLYING KNEE FIGHT! | LFA MMA | https://www.youtube.com/watch?v=E1v1al2_OUo
+fighter not found: "Josh Quinian" | Josh Quinian vs Pete Keepers | * FULL FIGHT* | LFA Fights | https://www.youtube.com/watch?v=eJGB1Sw9xcY
+PARSE_FAIL                     | Kid Dynamite's massive knockout of Quentin Harry | *Full Fight* | LFA Fights | https://www.youtube.com/watch?v=hOXKe_URwPo
+no fight for MINNER vs SANDERS | MINNER vs SANDERS | *Classic Fight* | LFA MMA | https://www.youtube.com/watch?v=3vKAK3t1Ab0
+fighter not found: "CODY WALKER *FREE fight*" | RICARDO RAMOS vs CODY WALKER *FREE fight* | LFA Fights | https://www.youtube.com/watch?v=zS8l_cYqNv0
+fighter not found: "BEST BASE FOR MMA? CRAZY" | BEST BASE FOR MMA? CRAZY vs CONFIDENT! | LFA Fights | https://www.youtube.com/watch?v=k23H_GT-rco
+fighter not found: "Christine "Knuckles"" | Christine "Knuckles" vs Kelly Kobolo Schmit | CRAZY FIGHT | LFA Fights | https://www.youtube.com/watch?v=uGiSy2aQvoI
+PARSE_FAIL                     | CHAMA! ALEX PEREIRA showed he was FOR REAL in MMA | LFA Fights | https://www.youtube.com/watch?v=yIKBu55OX_M
 
-UNMATCHED FULL EVENTS (13)
+UNMATCHED FULL EVENTS (14)
 ----------------------------------------------------------------------
-unrecognized title format          | 2026 MENA: PFL Dubai | Full Event | https://www.youtube.com/watch?v=J2nExjQx5Qg
-unrecognized title format          | When Dakota Ditcheva And Kayla Harrison Fought On The Same Card! 🔥 | Full Event | PFL 9 2022 | https://www.youtube.com/watch?v=NPO4odBWgaE
-unrecognized title format          | This One's Personal! | Usman Nurmagomedov vs Paul Hughes! | Full Event | PFL Champions Series 1 | https://www.youtube.com/watch?v=b4OTlLBQCqw
-unrecognized title format          | 2025 MENA: Finals | Full Event | https://www.youtube.com/watch?v=WpCsWNSZ-9U
-unrecognized title format          | PFL Europe: Nantes - Full Event Highlight Recap | https://www.youtube.com/watch?v=Qi_lY_SG82w
-unrecognized title format          | World Tournament Finals | Edwards vs. Rosta | Full Event | https://www.youtube.com/watch?v=dZ6pZazeLw8
-unrecognized title format          | World Tournament Finals | Davis vs. Rabadanov | Full Event | https://www.youtube.com/watch?v=GeEZuukw-iI
-no event (2025 / africa+1st+round+170+145) | 2025 PFL Africa: 1st Round - WW (170) & FW (145) | Full Event | https://www.youtube.com/watch?v=86tZ7tSBZqY
-unrecognized title format          | Ireland v Dagestan Part Two! | Full Event | PFL Champions Series Road To Dubai | https://www.youtube.com/watch?v=s7tl565BqW0
-unrecognized title format          | 🔥 Yoel Romero, Claressa Shields, Vadim Nemkov & MUCH MORE! 🔥 | PFL v Bellator | Full Event | https://www.youtube.com/watch?v=eo8T8hGgvsc
-unrecognized title format          | Andrei Arlovski, Anthony Johnson, Marlon Moraes & MORE! | WSOF 1 | Full Event Re-Air | https://www.youtube.com/watch?v=GcufaNRk83w
-unrecognized title format          | Brendan Loughnane v Movlid Khaybulaev | PFL 9 | Full Event | https://www.youtube.com/watch?v=SIhvtAgnoHM
-unrecognized title format          | PFL: Fight Night Full Event | https://www.youtube.com/watch?v=m1SaGdwqLhM
+ambiguous (2 events: 2026 / mena+pfl+riyadh) | 2026 MENA: PFL Riyadh | Full Event | https://www.youtube.com/watch?v=q2HByMxX6CQ
+not a full event (highlights/recap/promo) | BRAVE 100 | Muhammad Mokaev and Borislav Nikolic | Full Event Highlights | https://www.youtube.com/watch?v=qWqypGFtAWI
+no event (any / 233+fight+lfa+mma+title+two+world) | LFA 233 Two LFA World MMA Title Fight | Full Event Replay | LFA Fights | https://www.youtube.com/watch?v=Tk-oP6F55JM
+no event (any / 4+mma+rfa)         | RFA MMA 4 | Full Event | LFA Fights | https://www.youtube.com/watch?v=v2ILaIIpoog
+no event (any / 35+mma+rfa)        | RFA MMA 35 *Full Event* | Feat. Curtis Blaydes and more | Classic LFA Fights | https://www.youtube.com/watch?v=605irCGtHqs
+no event (any / 57+championship+fighting+legacy) | LEGACY FIGHTING CHAMPIONSHIP 57 | *Full Event* | LFA Fights | https://www.youtube.com/watch?v=U0zolgHtbr0
+no event (any / lfa)               | LFA *FULL EVENT* | Main Event: Ary Farias vs John Sweeney: | https://www.youtube.com/watch?v=dcf1xbYfRNo
+no event (any / 21+rfa)            | RFA 21 | *Full Event# | LFA Fights | https://www.youtube.com/watch?v=CNZarcJbsdc
+no event (any / 33+rfa)            | RFA 33 * FULL EVENT* | KHALIL ROUNTEE wins a WAR! | LFA Fights | https://www.youtube.com/watch?v=50lfG5-DrNI
+no event (any / attitude+live+mma) | ATTITUDE MMA | *Live MMA* | FULL EVENT | | https://www.youtube.com/watch?v=vkTe1LyyOHY
+no event (any / 37+legacy)         | LEGACY FC 37 *FULL EVENT* | Garcia vs Pineda | Geoff Neal vs Charlie Ontiveros | https://www.youtube.com/watch?v=EOWB7lP9TEU
+no event (any / 3+lfa+mma)         | LFA MMA 3 | *Full Event* Featuring BRENDAN ALLEN vs JOE KIRK + WORLD TITLE fight | https://www.youtube.com/watch?v=d11QtgafK9k
+no event (any / 1+beginning+lfa+the) | LFA 1: The Beginning | *Full Event* | World Title Fight | LFA MAA | https://www.youtube.com/watch?v=KugbykrOnYI
+no event (any / 21+baghdad+juusola+rfa) | RFA 21: BAGHDAD vs JUUSOLA| *Full Event* *Two Title Fights* | LFA MMA | https://www.youtube.com/watch?v=oVHQveaSCaM
 
-GEO-BLOCKED IN US — NOT STORED (8)
+GEO-BLOCKED IN US — NOT STORED (52)
 ----------------------------------------------------------------------
+fight | Mark Abelardo vs Emilio Urrutia @ Fists of Fury 2 | https://www.youtube.com/watch?v=tFtK7qCWc3Y
+fight | Jennifer Olsim vs Maira Mazar @ Fists of Fury 3 | https://www.youtube.com/watch?v=6smI8yEbiuU
+fight | Yoshiki Nakahara vs Ruslan Emilbek Uulu @ Fists of Fury 2 | https://www.youtube.com/watch?v=GlnkPj5XVdY
+fight | Anatoly Malykhin vs Alexandre Machado @ Fists of Fury 2 | https://www.youtube.com/watch?v=dH-QRERSwbo
+fight | Lito Adiwang vs Namiki Kawahara @ Unbreakable | https://www.youtube.com/watch?v=PR2knzTIvqo
+fight | Shinya Aoki vs James Nakashima @ Unbreakable | https://www.youtube.com/watch?v=6Xnq01vHTY4
+fight | Tial Thang vs Paulus Lumihi @ Unbreakable 3 | https://www.youtube.com/watch?v=ZdBPpt17nrI
+fight | Mauro Cerilli vs Abdulbasir Vagabov @ Unbreakable 2 | https://www.youtube.com/watch?v=NUThiPP3V10
+fight | Ahmed Mujtaba vs Rahul K. Raju @ Unbreakable 3 | https://www.youtube.com/watch?v=OFCrTqilbsw
+fight | Daichi Takenaka vs Ivanildo Delfino @ Unbreakable 2 | https://www.youtube.com/watch?v=zTytjNsSUX4
+fight | Fabricio Andrade vs Shoko Sato @ Unbreakable 3 | https://www.youtube.com/watch?v=QOqGcrhoNGE
+fight | Ryuto Sawada vs Robin Catalan @ Unbreakable 3 | https://www.youtube.com/watch?v=CsJ8yt0D_40
+fight | Kairat Akhmetov vs Dae Hwan Kim @ Collision Course 2 | https://www.youtube.com/watch?v=HjSDzOJlAzM
+fight | Dae Sung Park vs Amir Khan @ Collision Course 2 | https://www.youtube.com/watch?v=6ZWJyu7hGgk
+fight | Raimond Magomedaliev vs Edson Marques @ Collision Course 2 | https://www.youtube.com/watch?v=KuJAjtv1lW8
+fight | Ritu Phogat vs Jomary Torres @ Big Bang | https://www.youtube.com/watch?v=66vphTGgs48
+fight | Garry Tonon vs Koyomi Matsushima @ Big Bang | https://www.youtube.com/watch?v=jOHOCz7Imi4
+fight | Bokang Masunyane vs Rene Catalan @ Big Bang | https://www.youtube.com/watch?v=6rJFdOK7qoY
+fight | Jihin Radzuan vs Bi Nguyen @ Big Bang | https://www.youtube.com/watch?v=-zdYaZesgwE
+fight | John Lineker vs Kevin Belingon @ Inside the Matrix 3 | https://www.youtube.com/watch?v=LJmQbZOVGss
+fight | Thanh Le vs Martin Nguyen @ Inside the Matrix | https://www.youtube.com/watch?v=ZyoTxjbzlI4
+fight | Koha Minowa vs Lito Adiwang @ Inside the Matrix 3 | https://www.youtube.com/watch?v=Nvn5mzoGOeY
+fight | Ritu Phogat vs Nou Srey Pov @ Inside the Matrix | https://www.youtube.com/watch?v=UdcM0zjvSyU
+fight | Kiamrian Abbasov vs James Nakashima @ Inside the Matrix 2 | https://www.youtube.com/watch?v=I-lVh5HzcEk
+fight | Eko Roni Saputra vs Ramon Gonzales @ Inside the Matrix 2 | https://www.youtube.com/watch?v=jHF2fVgAz4Y
+fight | Christian Lee vs Iuri Lapicus @ Inside the Matrix | https://www.youtube.com/watch?v=WtZWRlRgjag
+fight | Murad Ramazanov vs Hiroyuki Tetsuka @ Inside the Matrix 3 | https://www.youtube.com/watch?v=Gzx8FWmgyJQ
+fight | Timofey Nastyukhin vs Pieter Buist @ Inside the Matrix 2 | https://www.youtube.com/watch?v=kYUjx1wo5M4
+fight | Fan Rong vs Yuri Simoes @ Inside the Matrix 3 | https://www.youtube.com/watch?v=ekZNZ8I8an0
+event | PFL Charlotte: Battle vs. Rosta | https://www.youtube.com/watch?v=lLPhdivuDA0
+event | PFL New York: Nurmagomedov vs. Colgan | https://www.youtube.com/watch?v=XnyknydWass
+event | PFL Washington D.C.: Jean vs. Rodriguez | https://www.youtube.com/watch?v=RCbUaPnNMXk
+event | PFL Austin: Eblen vs. Kasanganay 2 | https://www.youtube.com/watch?v=irKGc1dlVjY
+event | PFL San Diego: McKee vs. Isbulaev | https://www.youtube.com/watch?v=YKfrdoHA29k
 event | PFL Brussels: Habirora vs. Henderson | https://www.youtube.com/watch?v=CKYBkzZTtm8
 event | PFL Sioux Falls: Storley vs. Zendeli | https://www.youtube.com/watch?v=Qeme0iq590Q
 event | PFL Belfast: Kelly vs. Wilson | https://www.youtube.com/watch?v=SbCXx8A8Bj0
 event | PFL Chicago: Pettis vs. McKee | https://www.youtube.com/watch?v=W3Nt23yEImo
-event | PFL Pittsburgh: Eblen vs. Battle | https://www.youtube.com/watch?v=FEN3LnqU66o
-event | PFL Madrid: Van Steenis vs. Edwards 2 | https://www.youtube.com/watch?v=E4yPuGvEUMs
-event | PFL Dubai: Nurmagomedov vs. Davis | https://www.youtube.com/watch?v=rPWWSDkAD2U
-event | PFL Lyon - Europe 2025 Finals | https://www.youtube.com/watch?v=0fB0A4Uwt70
+event | Fists of Fury | https://www.youtube.com/watch?v=j8Ycpt1th8c
+event | Fists of Fury 2 | https://www.youtube.com/watch?v=ue0rOo8kvrc
+event | Fists of Fury 3 | https://www.youtube.com/watch?v=vv6xetXl7xY
+event | Unbreakable | https://www.youtube.com/watch?v=BTJXYskacB0
+event | Unbreakable 2 | https://www.youtube.com/watch?v=n3otFcOzeco
+event | Unbreakable 3 | https://www.youtube.com/watch?v=kiVAtZKVAOU
+event | Collision Course | https://www.youtube.com/watch?v=IzaATlQAIoM
+event | Collision Course 2 | https://www.youtube.com/watch?v=YWDEhQLL3SY
+event | Big Bang | https://www.youtube.com/watch?v=J7y0x2kxx8A
+event | Big Bang 2 | https://www.youtube.com/watch?v=-fPXQcDpdCQ
+event | Inside the Matrix | https://www.youtube.com/watch?v=fH3kMBfShX0
+event | Inside the Matrix 2 | https://www.youtube.com/watch?v=dktDOCSJezQ
+event | Inside the Matrix 3 | https://www.youtube.com/watch?v=-jWsxn9CkKo
+event | Inside the Matrix 4 | https://www.youtube.com/watch?v=5B_HiHV5MCM

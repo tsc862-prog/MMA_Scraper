@@ -132,8 +132,11 @@ Scraper items needing a human decision (gender, alias suggestions).
 Denormalized join of fights + fighters + events + fight_results for
 app/lookup convenience. Carries the per-fight video URLs plus the
 event-level ones (`event_paramount_url`, `event_fightpass_url`,
-`event_fightpass_prelims_url`) so the app can fall back to the full-card
+`event_fightpass_prelims_url`, `event_youtube_url`,
+`event_youtube_prelims_url`) so the app can fall back to the full-card
 replay when a fight has no dedicated VOD. `security_invoker=on`.
+`events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
+replay uploads.
 
 ## Changes from current
 
