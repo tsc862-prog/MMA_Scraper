@@ -574,6 +574,50 @@ SHERDOG_ORGS = [
         'fight_prefix': 'afcfight',
         'active':       True,
     },
+    # ── 2026-08-15 playlist-discovery wave ───────────────────────────────────
+    {
+        # Combat Fighting Championship (Massachusetts), ~13 events. FP has a
+        # full-card replay playlist (REPLAY_PLAYLISTS 22703). Names duplicate
+        # the org ("Combat FC 13 - Combat Fighting Championship 13").
+        'organization': 'Combat FC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Combat-FC-1118',
+        'slug_keys':    ('combat-fc-',),
+        'name_clean':   (r'\s*-\s*Combat\s+(?:Fighting\s+Championship|FC).*$', ''),
+        'fight_prefix': 'combatfcfight',
+        'active':       True,
+    },
+    {
+        # Full Contact Contender (Bolton, England), ~46 events. FP replay
+        # playlist 22704. Names like "FCC 46 - Full Contact Contender 46".
+        'organization': 'FCC',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Full-Contact-Contender-4839',
+        'slug_keys':    ('fcc-',),
+        'name_clean':   (r'\s*-\s*Full\s+Contact\s+Contender.*$', ''),
+        'fight_prefix': 'fccfight',
+        'active':       True,
+    },
+    {
+        # Shuriken Fight Series (Auckland, NZ), ~24 events. FP replay playlist
+        # 22753. Sherdog names lead with the abbrev ("SFS 20 - Shuriken Fight
+        # Series 20") — strip it so FP's "Shuriken Fight Series 24" matches.
+        'organization': 'Shuriken Fight Series',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Shuriken-Fight-Series-16277',
+        'slug_keys':    ('sfs-', 'shuriken'),
+        'name_clean':   (r'^SFS\s+\d+\s*-\s*', ''),
+        'fight_prefix': 'sfsfight',
+        'active':       True,
+    },
+    {
+        # Fight Club Rush (Västerås, Sweden), ~29 events. FP replay playlist
+        # 21752. Names lead with the abbrev ("FCR 29 - Fight Club Rush 29") —
+        # strip it so FP's "Fight Club Rush 29" matches.
+        'organization': 'Fight Club Rush',
+        'org_url':      f'{SHERDOG_BASE}/organizations/Fight-Club-Rush-13287',
+        'slug_keys':    ('fcr-', 'fight-club-rush'),
+        'name_clean':   (r'^FCR\s+\d+\s*-\s*', ''),
+        'fight_prefix': 'fcrfight',
+        'active':       True,
+    },
 ]
 
 # ── Supabase REST helpers ─────────────────────────────────────────────────────

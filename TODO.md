@@ -158,12 +158,17 @@ surfaced Tuff-N-Uff's (22705). `REPLAY_PLAYLISTS` in `fightpass_scraper.py`
 now walks: 22701 A-1 Combat (32 cards), 22702 Anthony Pettis FC (26, incl.
 the APFC: IFL cards), 22705 Tuff-N-Uff (29), 22706 Unified MMA (25).
 
-New org candidates found the same way (real replay archives, orgs NOT in
-DB — next expansion wave; check Sherdog coverage first):
-- **Combat FC** — playlist 22703, 11 replays (Combat FC 3–13)
-- **FCC** — playlist 22704, 15 replays (FCC ~32–46)
-- **Shuriken Fight Series** — playlist 22753, 8 replays (17–24)
-- **Fight Club Rush** — playlist 21752, 22 replays (Sweden, ~8–29)
+**WIRED IN 2026-08-15 (third wave)** — the four playlist-discovered orgs,
+added to `SHERDOG_ORGS` (113 events / 1,565 fights backfilled), the
+amateur-flagging list, `_EVENT_PREFIX`, and `REPLAY_PLAYLISTS`:
+- **Combat FC** (Combat Fighting Championship, Massachusetts) — Sherdog
+  `Combat-FC-1118`; playlist 22703, 11 replays.
+- **FCC** (Full Contact Contender, Bolton, England) — Sherdog
+  `Full-Contact-Contender-4839`; playlist 22704, 15 replays.
+- **Shuriken Fight Series** (Auckland, NZ) — Sherdog
+  `Shuriken-Fight-Series-16277`; playlist 22753, 8 replays.
+- **Fight Club Rush** (Västerås, Sweden) — Sherdog `Fight-Club-Rush-13287`;
+  playlist 21752, 22 replays.
 
 Other playlist-id ranges likely hold more org playlists (per-event playlists
 for Fury FC / Shooto Brazil / LUX / UWC / Ares etc. were visible in the

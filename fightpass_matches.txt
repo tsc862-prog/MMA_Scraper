@@ -1,126 +1,50 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 29  prelims: 0
+Events  — main: 10  prelims: 0
 Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 39
+Unmatched — episodes: 1  sub-events: 0  per-fight VODs: 39
 ======================================================================
 
-MATCHED EVENTS — MAIN (29)
+MATCHED EVENTS — MAIN (10)
 ----------------------------------------------------------------------
-event:    Urijah Faber's A1 Combat 36 - Sandoval vs. Seronio
-episode:  Urijah Faber's A-1 Combat 36
-url:      https://ufcfightpass.com/video/976872
+event:    Pride FC - Pride Grand Prix 2000: Finals
+episode:  PRIDE: Grand Prix 2000 Finals
+url:      https://ufcfightpass.com/video/32429
 
-event:    Urijah Faber's A1 Combat 35 - Collins vs. Hammons
-episode:  Urijah Faber's A-1 Combat 35
-url:      https://ufcfightpass.com/video/952761
+event:    Pride FC - Pride Grand Prix 2000: Opening Round
+episode:  PRIDE: Grand Prix 2000 Opening Round
+url:      https://ufcfightpass.com/video/33328
 
-event:    Urijah Faber's A1 Combat 34 - Maximov vs. Wallace 2
-episode:  Urijah Faber's A-1 Combat 34
-url:      https://ufcfightpass.com/video/939416
+event:    Pride FC - Pride 8
+episode:  PRIDE 8
+url:      https://ufcfightpass.com/video/31435
 
-event:    Urijah Faber's A1 Combat 33 - Faber vs. Rivera
-episode:  Urijah Faber's A-1 Combat 33
-url:      https://ufcfightpass.com/video/913391
+event:    Pride FC - Pride 6
+episode:  PRIDE 6
+url:      https://ufcfightpass.com/video/31172
 
-event:    Urijah Faber's A1 Combat 32 - Brand vs. Ewing
-episode:  Urijah Faber's A-1 Combat 32
-url:      https://ufcfightpass.com/video/881469
+event:    Pride FC - Pride 5
+episode:  PRIDE 5
+url:      https://ufcfightpass.com/video/33326
 
-event:    Urijah Faber's A1 Combat 31 - Collins vs. Evangelista
-episode:  Urijah Faber's A-1 Combat 31
-url:      https://ufcfightpass.com/video/868851
+event:    Pride FC - Pride 4
+episode:  PRIDE 4
+url:      https://ufcfightpass.com/video/32803
 
-event:    Urijah Faber's A1 Combat 29 - Maximov vs. Indio
-episode:  Urijah Faber's A-1 Combat 29
-url:      https://ufcfightpass.com/video/838655
+event:    Pride FC - Pride 3
+episode:  PRIDE 3
+url:      https://ufcfightpass.com/video/31326
 
-event:    Urijah Faber's A1 Combat 28 - Vogels vs. Collins
-episode:  Urijah Faber's A-1 Combat 28
-url:      https://ufcfightpass.com/video/816521
+event:    Pride FC - Pride 2
+episode:  PRIDE 2
+url:      https://ufcfightpass.com/video/31785
 
-event:    Urijah Faber's A1 Combat 27 - Fajardo vs. Souza
-episode:  Urijah Faber's A-1 Combat 27
-url:      https://ufcfightpass.com/video/794754
+event:    Pride FC - Pride 1
+episode:  PRIDE 1
+url:      https://ufcfightpass.com/video/33305
 
-event:    Urijah Faber's A1 Combat 26 - Maximov vs. Abdulgaziev
-episode:  Urijah Faber's A-1 Combat 26
-url:      https://ufcfightpass.com/video/756997
-
-event:    Urijah Faber's A1 Combat 25 - Felipe vs. Maximov
-episode:  Urijah Faber's A-1 Combat 25
-url:      https://ufcfightpass.com/video/721576
-
-event:    Urijah Faber's A1 Combat 24 - Saeteurn vs. Puente Jr.
-episode:  Urijah Faber's A-1 Combat 24
-url:      https://ufcfightpass.com/video/684804
-
-event:    Urijah Faber's A1 Combat 23 - Avalos vs. Alvarez
-episode:  Urijah Faber's A-1 Combat 23
-url:      https://ufcfightpass.com/video/671468
-
-event:    Urijah Faber's A1 Combat 21 - Faber vs. Glover
-episode:  Urijah Faber's A-1 Combat 21: Faber vs Glover
-url:      https://ufcfightpass.com/video/640572
-
-event:    Urijah Faber's A1 Combat 19 - Juarez vs. Kaldar
-episode:  Urijah Faber's A-1 Combat 19
-url:      https://ufcfightpass.com/video/603481
-
-event:    Urijah Faber's A1 Combat 14 - Sanchez vs. Hoch
-episode:  Urijah Faber's A-1 Combat 14
-url:      https://ufcfightpass.com/video/516575
-
-event:    Urijah Faber's A1 Combat 13 - Alvarez vs. Creighton
-episode:  Urijah Faber's A-1 Combat 13
-url:      https://ufcfightpass.com/video/505813
-
-event:    Urijah Faber's A1 Combat 12 - Coyne vs. Juarez
-episode:  Urijah Faber's A-1 Combat 12
-url:      https://ufcfightpass.com/video/501926
-
-event:    Urijah Faber's A1 Combat 11 - Cosce vs. Wallace
-episode:  Urijah Faber's A-1 Combat 11
-url:      https://ufcfightpass.com/video/483187
-
-event:    Urijah Faber's A1 Combat 10 - Sanchez vs. Sanchez
-episode:  Urijah Faber's A-1 Combat 10
-url:      https://ufcfightpass.com/video/472218
-
-event:    Urijah Faber's A1 Combat 9 - Long Beach
-episode:  Urijah Faber's A-1 Combat 9
-url:      https://ufcfightpass.com/video/456111
-
-event:    Urijah Faber's A1 Combat 8 - Tachi Palace
-episode:  Urijah Faber's A-1 Combat 8
-url:      https://ufcfightpass.com/video/441322
-
-event:    Urijah Faber's A1 Combat 7 - Coyne vs. Cornell
-episode:  Urijah Faber's A-1 Combat 7
-url:      https://ufcfightpass.com/video/434410
-
-event:    Urijah Faber's A1 Combat 6 - Talbott vs. Jimenez
-episode:  Urijah Faber's A-1 Combat 6
-url:      https://ufcfightpass.com/video/408067
-
-event:    Urijah Faber's A1 Combat 5 - Reed vs. Cannon
-episode:  Urijah Faber's A-1 Combat 5
-url:      https://ufcfightpass.com/video/390668
-
-event:    Urijah Faber's A1 Combat 4 - Wallace vs. Batinich
-episode:  Urijah Faber's A-1 Combat 4
-url:      https://ufcfightpass.com/video/379493
-
-event:    Urijah Faber's A1 Combat 3 - Moyer vs. Duffy
-episode:  Urijah Faber’s A-1 Combat 3
-url:      https://ufcfightpass.com/video/363853
-
-event:    Urijah Faber's A1 Combat 2 - Talbott vs. Fajardo
-episode:  Urijah Faber's A-1 Combat 2
-url:      https://ufcfightpass.com/video/363801
-
-event:    Urijah Faber's A1 Combat 1 - Hernandez vs. Ishihara
-episode:  Urijah Faber's A1 Combat 1
-url:      https://ufcfightpass.com/video/353006
+event:    Strikeforce - Strikeforce at the Dome
+episode:  Strikeforce: At The Mansion II
+url:      https://ufcfightpass.com/video/33805
 
 
 MATCHED EVENTS — PRELIMS (0)
@@ -129,19 +53,9 @@ MATCHED EVENTS — PRELIMS (0)
 MATCHED FIGHTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED EPISODES (11)
+UNMATCHED EPISODES (1)
 ----------------------------------------------------------------------
-  vod=32429  'PRIDE: Grand Prix 2000 Finals'
-  vod=33328  'PRIDE: Grand Prix 2000 Opening Round'
-  vod=31435  'PRIDE 8'
-  vod=31172  'PRIDE 6'
-  vod=33326  'PRIDE 5'
-  vod=32803  'PRIDE 4'
-  vod=31326  'PRIDE 3'
-  vod=31785  'PRIDE 2'
-  vod=33305  'PRIDE 1'
   vod=125434  'Strikeforce Grand Prix Heavyweight Tournament: Overeem vs Werdum'
-  vod=33805  'Strikeforce: At The Mansion II'
 
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------

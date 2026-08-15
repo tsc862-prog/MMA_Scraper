@@ -122,8 +122,10 @@ REPLAY_PLAYLISTS = [
     {'id': 22702, 'name': 'Anthony Pettis FC Event Replays'},
     {'id': 22705, 'name': 'Tuff-N-Uff Event Replays'},
     {'id': 22706, 'name': 'Unified MMA Event Replays'},
-    # Also found (orgs not in DB yet — see TODO roadmap): 22703 Combat FC,
-    # 22704 FCC, 22753 Shuriken Fight Series, 21752 Fight Club Rush.
+    {'id': 22703, 'name': 'Combat FC Event Replays'},
+    {'id': 22704, 'name': 'FCC Event Replays'},
+    {'id': 22753, 'name': 'Shuriken Fight Series Event Replays'},
+    {'id': 21752, 'name': 'Fight Club Rush Event Replays'},
 ]
 
 OUTPUT_FILE     = 'fightpass_matches.txt'
@@ -469,8 +471,16 @@ _NOISE_TOKENS = frozenset({
 
 def _core_tokens(name):
     """Normalized + noise-stripped token list. 'Pride FC - Shockwave 2006' →
-    ['pride', 'shockwave', '2006']."""
-    return [t for t in _norm(name).split() if t not in _NOISE_TOKENS]
+    ['pride', 'shockwave', '2006']. Consecutive duplicates collapse so
+    Sherdog's org-prefixed names ('Pride FC - Pride 1' → pride pride 1)
+    still meet Fight Pass's plain titles ('PRIDE 1')."""
+    out = []
+    for t in _norm(name).split():
+        if t in _NOISE_TOKENS:
+            continue
+        if not out or out[-1] != t:
+            out.append(t)
+    return out
 
 def match_event_fuzzy(fp_title, events_for_org, events_by_norm):
     """Multi-strategy event matcher for non-UFC orgs where Fight Pass and
@@ -770,6 +780,8 @@ _EVENT_PREFIX = (
     r'Unified\s+MMA|Inka(?:\s+MMA)?|Bison\s+Kombat|ZFN|'
     r'Fighting\s+Alliance\s+Championship|Alaska\s+Fighting\s+Championship|'
     r'FAC|WXC|AFC|'
+    r'Fight\s+Club\s+Rush|Shuriken\s+Fight\s+Series|Combat\s+FC|'
+    r'FCC|FCR|SFS|'
     r'UFC|Strikeforce|PRIDE|WEC|Bellator|Affliction|VTJ|'
     r'LFA|CFFC|Pancrase|Shooto|KOTC|EliteXC)'
 )

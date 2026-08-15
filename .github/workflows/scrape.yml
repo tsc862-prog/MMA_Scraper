@@ -74,7 +74,7 @@ jobs:
       # running orgs to this list when they're added to SHERDOG_ORGS.
       - name: Flag amateur fights from fighter pages (daily only)
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
-        run: python amateur_scraper.py --orgs "Fury FC,King of the Cage,LFA,CFFC,Shooto,Pancrase,Invicta FC,Cage Warriors,EliteXC,Titan FC,UAE Warriors,Eternal MMA,Ares FC,A1 Combat,UWC,LUX,JCK,APFC,XFN,Legacy FC,CES MMA,iKON FC,Shooto Brazil,BFL,Tuff-N-Uff,Unified MMA,INKA MMA,Bison Kombat,ZFN,FAC,WXC,Alaska FC" --limit 2000
+        run: python amateur_scraper.py --orgs "Fury FC,King of the Cage,LFA,CFFC,Shooto,Pancrase,Invicta FC,Cage Warriors,EliteXC,Titan FC,UAE Warriors,Eternal MMA,Ares FC,A1 Combat,UWC,LUX,JCK,APFC,XFN,Legacy FC,CES MMA,iKON FC,Shooto Brazil,BFL,Tuff-N-Uff,Unified MMA,INKA MMA,Bison Kombat,ZFN,FAC,WXC,Alaska FC,Combat FC,FCC,Shuriken Fight Series,Fight Club Rush" --limit 2000
 
       - name: Save completed events trackers
         run: |
