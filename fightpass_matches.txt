@@ -1,357 +1,133 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 47  prelims: 2
-Fights  — matched: 36 (per-fight URL: 36, event URL fallback: 0)
+Events  — main: 29  prelims: 0
+Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
 Unmatched — episodes: 11  sub-events: 0  per-fight VODs: 39
 ======================================================================
 
-MATCHED EVENTS — MAIN (47)
+MATCHED EVENTS — MAIN (29)
 ----------------------------------------------------------------------
-event:    FAC 3
-episode:  Fighting Alliance Championship 3
-url:      https://ufcfightpass.com/video/164754
+event:    Urijah Faber's A1 Combat 36 - Sandoval vs. Seronio
+episode:  Urijah Faber's A-1 Combat 36
+url:      https://ufcfightpass.com/video/976872
 
-event:    FAC 4
-episode:  Fighting Alliance Championship 4
-url:      https://ufcfightpass.com/video/170324
+event:    Urijah Faber's A1 Combat 35 - Collins vs. Hammons
+episode:  Urijah Faber's A-1 Combat 35
+url:      https://ufcfightpass.com/video/952761
 
-event:    FAC 7
-episode:  Fighting Alliance Championship 7
-url:      https://ufcfightpass.com/video/208443
+event:    Urijah Faber's A1 Combat 34 - Maximov vs. Wallace 2
+episode:  Urijah Faber's A-1 Combat 34
+url:      https://ufcfightpass.com/video/939416
 
-event:    FAC 5
-episode:  Fighting Alliance Championship 5
-url:      https://ufcfightpass.com/video/186599
+event:    Urijah Faber's A1 Combat 33 - Faber vs. Rivera
+episode:  Urijah Faber's A-1 Combat 33
+url:      https://ufcfightpass.com/video/913391
 
-event:    AFC 6
-episode:  Alaska FIGHTING Championship 6
-url:      https://ufcfightpass.com/video/44860
+event:    Urijah Faber's A1 Combat 32 - Brand vs. Ewing
+episode:  Urijah Faber's A-1 Combat 32
+url:      https://ufcfightpass.com/video/881469
 
-event:    AFC 9
-episode:  Alaska FIGHTING Championship 9
-url:      https://ufcfightpass.com/video/46745
+event:    Urijah Faber's A1 Combat 31 - Collins vs. Evangelista
+episode:  Urijah Faber's A-1 Combat 31
+url:      https://ufcfightpass.com/video/868851
 
-event:    AFC 10
-episode:  Alaska FIGHTING Championship 10
-url:      https://ufcfightpass.com/video/45371
+event:    Urijah Faber's A1 Combat 29 - Maximov vs. Indio
+episode:  Urijah Faber's A-1 Combat 29
+url:      https://ufcfightpass.com/video/838655
 
-event:    AFC 157
-episode:  Alaska Fighting Championship 157
-url:      https://ufcfightpass.com/video/128201
+event:    Urijah Faber's A1 Combat 28 - Vogels vs. Collins
+episode:  Urijah Faber's A-1 Combat 28
+url:      https://ufcfightpass.com/video/816521
 
-event:    AFC 156
-episode:  Alaska Fighting Championship 156
-url:      https://ufcfightpass.com/video/112331
+event:    Urijah Faber's A1 Combat 27 - Fajardo vs. Souza
+episode:  Urijah Faber's A-1 Combat 27
+url:      https://ufcfightpass.com/video/794754
 
-event:    AFC 13
-episode:  Alaska FIGHTING Championship 13
-url:      https://ufcfightpass.com/video/43930
+event:    Urijah Faber's A1 Combat 26 - Maximov vs. Abdulgaziev
+episode:  Urijah Faber's A-1 Combat 26
+url:      https://ufcfightpass.com/video/756997
 
-event:    AFC 14
-episode:  Alaska FIGHTING Championship 14
-url:      https://ufcfightpass.com/video/46287
+event:    Urijah Faber's A1 Combat 25 - Felipe vs. Maximov
+episode:  Urijah Faber's A-1 Combat 25
+url:      https://ufcfightpass.com/video/721576
 
-event:    AFC 15
-episode:  Alaska FIGHTING Championship 15
-url:      https://ufcfightpass.com/video/46740
+event:    Urijah Faber's A1 Combat 24 - Saeteurn vs. Puente Jr.
+episode:  Urijah Faber's A-1 Combat 24
+url:      https://ufcfightpass.com/video/684804
 
-event:    AFC 17
-episode:  Alaska FIGHTING Championship 17
-url:      https://ufcfightpass.com/video/46909
+event:    Urijah Faber's A1 Combat 23 - Avalos vs. Alvarez
+episode:  Urijah Faber's A-1 Combat 23
+url:      https://ufcfightpass.com/video/671468
 
-event:    AFC 18
-episode:  Alaska FIGHTING Championship 18
-url:      https://ufcfightpass.com/video/46911
+event:    Urijah Faber's A1 Combat 21 - Faber vs. Glover
+episode:  Urijah Faber's A-1 Combat 21: Faber vs Glover
+url:      https://ufcfightpass.com/video/640572
 
-event:    AFC 19
-episode:  Alaska FIGHTING Championship 19
-url:      https://ufcfightpass.com/video/45749
+event:    Urijah Faber's A1 Combat 19 - Juarez vs. Kaldar
+episode:  Urijah Faber's A-1 Combat 19
+url:      https://ufcfightpass.com/video/603481
 
-event:    AFC 22
-episode:  Alaska FIGHTING Championship 22
-url:      https://ufcfightpass.com/video/49581
+event:    Urijah Faber's A1 Combat 14 - Sanchez vs. Hoch
+episode:  Urijah Faber's A-1 Combat 14
+url:      https://ufcfightpass.com/video/516575
 
-event:    AFC 25
-episode:  Alaska FIGHTING Championship 25
-url:      https://ufcfightpass.com/video/45301
+event:    Urijah Faber's A1 Combat 13 - Alvarez vs. Creighton
+episode:  Urijah Faber's A-1 Combat 13
+url:      https://ufcfightpass.com/video/505813
 
-event:    AFC 27
-episode:  Alaska FIGHTING Championship 27
-url:      https://ufcfightpass.com/video/49580
+event:    Urijah Faber's A1 Combat 12 - Coyne vs. Juarez
+episode:  Urijah Faber's A-1 Combat 12
+url:      https://ufcfightpass.com/video/501926
 
-event:    AFC 29
-episode:  Alaska FIGHTING Championship 29
-url:      https://ufcfightpass.com/video/53392
+event:    Urijah Faber's A1 Combat 11 - Cosce vs. Wallace
+episode:  Urijah Faber's A-1 Combat 11
+url:      https://ufcfightpass.com/video/483187
 
-event:    AFC 48 - Heavy Hits
-episode:  Alaska FIGHTING Championship 48
-url:      https://ufcfightpass.com/video/55214
+event:    Urijah Faber's A1 Combat 10 - Sanchez vs. Sanchez
+episode:  Urijah Faber's A-1 Combat 10
+url:      https://ufcfightpass.com/video/472218
 
-event:    AFC 56 - Welterweight War
-episode:  Alaska FIGHTING Championship 56
-url:      https://ufcfightpass.com/video/47240
+event:    Urijah Faber's A1 Combat 9 - Long Beach
+episode:  Urijah Faber's A-1 Combat 9
+url:      https://ufcfightpass.com/video/456111
 
-event:    AFC 57 - March Melee
-episode:  Alaska FIGHTING Championship 57
-url:      https://ufcfightpass.com/video/48051
+event:    Urijah Faber's A1 Combat 8 - Tachi Palace
+episode:  Urijah Faber's A-1 Combat 8
+url:      https://ufcfightpass.com/video/441322
 
-event:    AFC 63 - Extermination
-episode:  Alaska FIGHTING Championship 63
-url:      https://ufcfightpass.com/video/55305
+event:    Urijah Faber's A1 Combat 7 - Coyne vs. Cornell
+episode:  Urijah Faber's A-1 Combat 7
+url:      https://ufcfightpass.com/video/434410
 
-event:    AFC 64 - Cage Quake
-episode:  Alaska FIGHTING Championship 64
-url:      https://ufcfightpass.com/video/55382
+event:    Urijah Faber's A1 Combat 6 - Talbott vs. Jimenez
+episode:  Urijah Faber's A-1 Combat 6
+url:      https://ufcfightpass.com/video/408067
 
-event:    AFC 65 - Dooms Day
-episode:  Alaska FIGHTING Championship 65
-url:      https://ufcfightpass.com/video/55235
+event:    Urijah Faber's A1 Combat 5 - Reed vs. Cannon
+episode:  Urijah Faber's A-1 Combat 5
+url:      https://ufcfightpass.com/video/390668
 
-event:    AFC 68
-episode:  Alaska FIGHTING Championship 68
-url:      https://ufcfightpass.com/video/44479
+event:    Urijah Faber's A1 Combat 4 - Wallace vs. Batinich
+episode:  Urijah Faber's A-1 Combat 4
+url:      https://ufcfightpass.com/video/379493
 
-event:    AFC 97 - Cupid's Chokehold 2
-episode:  Alaska FIGHTING Championship 97
-url:      https://ufcfightpass.com/video/49690
+event:    Urijah Faber's A1 Combat 3 - Moyer vs. Duffy
+episode:  Urijah Faber’s A-1 Combat 3
+url:      https://ufcfightpass.com/video/363853
 
-event:    AFC 102 - Champion vs. Champion
-episode:  Alaska FIGHTING Championship 102
-url:      https://ufcfightpass.com/video/49390
+event:    Urijah Faber's A1 Combat 2 - Talbott vs. Fajardo
+episode:  Urijah Faber's A-1 Combat 2
+url:      https://ufcfightpass.com/video/363801
 
-event:    AFC 104 - Killa Gorilla vs. Kryptonite
-episode:  Alaska FIGHTING Championship 104
-url:      https://ufcfightpass.com/video/53291
-
-event:    AFC 111 - Veterans Salute
-episode:  Alaska FIGHTING Championship 111
-url:      https://ufcfightpass.com/video/49451
-
-event:    AFC 112 - Light Heavyweight Tournament
-episode:  Alaska FIGHTING Championship 112
-url:      https://ufcfightpass.com/video/48467
-
-event:    AFC 113 - Peligro vs. Naptime
-episode:  Alaska FIGHTING Championship 113
-url:      https://ufcfightpass.com/video/54261
-
-event:    AFC 114 - Novelli vs. Crawford
-episode:  Alaska FIGHTING Championship 114
-url:      https://ufcfightpass.com/video/46780
-
-event:    AFC 115 - Mitchell vs. Patterson
-episode:  Alaska FIGHTING Championship 115
-url:      https://ufcfightpass.com/video/48421
-
-event:    AFC 116 - Waalkes vs. Wiggins
-episode:  Alaska FIGHTING Championship 116
-url:      https://ufcfightpass.com/video/48830
-
-event:    AFC 118 - Novelli vs. Askew
-episode:  Alaska FIGHTING Championship 118
-url:      https://ufcfightpass.com/video/47599
-
-event:    AFC 120 - Fricilone vs. Jones
-episode:  Alaska FIGHTING Championship 120
-url:      https://ufcfightpass.com/video/48760
-
-event:    AFC 122 - Graff vs. Ide
-episode:  Alaska FIGHTING Championship 122
-url:      https://ufcfightpass.com/video/46699
-
-event:    AFC 139 - Mazurek vs. Ulroan
-episode:  AFC 139: Alaska FIGHTING Championship 139
-url:      https://ufcfightpass.com/video/64013
-
-event:    AFC 144
-episode:  AFC 144: Alaska FIGHTING Championship 144
-url:      https://ufcfightpass.com/video/65550
-
-event:    AFC 145
-episode:  AFC 145: Alaska FIGHTING Championship 145
-url:      https://ufcfightpass.com/video/102425
-
-event:    AFC 146
-episode:  AFC 146: Alaska FIGHTING Championship 146
-url:      https://ufcfightpass.com/video/102441
-
-event:    AFC 159
-episode:  Alaska Fighting Championship 159
-url:      https://ufcfightpass.com/video/232798
-
-event:    FAC 9
-episode:  Fighting Alliance Championship 9
-url:      https://ufcfightpass.com/video/239614
-
-event:    AFC 160
-episode:  Alaska Fighting Championship 160
-url:      https://ufcfightpass.com/video/243819
-
-event:    FAC 10
-episode:  Fighting Alliance Championship 10
-url:      https://ufcfightpass.com/video/257922
-
-event:    FAC 11
-episode:  Fighting Alliance Championship 11
-url:      https://ufcfightpass.com/video/275435
+event:    Urijah Faber's A1 Combat 1 - Hernandez vs. Ishihara
+episode:  Urijah Faber's A1 Combat 1
+url:      https://ufcfightpass.com/video/353006
 
 
-MATCHED EVENTS — PRELIMS (2)
+MATCHED EVENTS — PRELIMS (0)
 ----------------------------------------------------------------------
-event:    UFC 239 - Jones vs. Santos
-episode:  UFC 239: Fight Pass Prelims
-url:      https://ufcfightpass.com/video/208390
 
-event:    UFC 231 - Holloway vs. Ortega
-episode:  UFC 231: Fight Pass Prelims
-url:      https://ufcfightpass.com/video/65409
-
-
-MATCHED FIGHTS (36)
+MATCHED FIGHTS (0)
 ----------------------------------------------------------------------
-fight_id: 34b49042-b6f8-5ee8-9f4b-46554f74d81e  [fight]
-  Hunter Hickman vs Noah Abdill  @ AFC 151 [event-search]
-  https://ufcfightpass.com/video/102676
-
-fight_id: a2c2abef-5562-5701-84e9-2e73654d3f0c  [fight]
-  Mario Herrera vs Onosai Moana  @ AFC 151 [event-search]
-  https://ufcfightpass.com/video/102670
-
-fight_id: c212f8bc-4681-5636-82c0-32a6cec103e0  [fight]
-  Jacob Jones vs Zack McCone  @ AFC 151 [event-search]
-  https://ufcfightpass.com/video/102656
-
-fight_id: 639ca676-5739-5475-9e09-030420bd8d3d  [fight]
-  Kris Berberich vs Chance Staggs  @ AFC 151 [event-search]
-  https://ufcfightpass.com/video/102639
-
-fight_id: 7d518877-c460-5ca4-8ece-8dc87dfec7dd  [fight]
-  Daniel Cook vs Connor Riddell  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55790
-
-fight_id: 9c38be41-6ee6-523b-99d1-fb55af646cd9  [fight]
-  Kerby Coman vs Harry Caudle  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55787
-
-fight_id: e59ecfc6-b23a-5931-9349-4fafb71d2af8  [fight]
-  Lauren Murphy vs Leslie Wright  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55742
-
-fight_id: d2715709-271f-5d51-ae7c-9f59cd4f0b51  [fight]
-  Nic Herron-Webb vs Joshua Henry  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55540
-
-fight_id: 7c823143-4a01-5fde-b18c-71c3779196a3  [fight]
-  Anthony Collet vs David Crozier  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55462
-
-fight_id: 35ff3c77-fc3f-5ce9-8c5e-7b00796b72d4  [fight]
-  Hau Vu vs Nick Pekkala  @ AFC 76 [event-search]
-  https://ufcfightpass.com/video/55460
-
-fight_id: 5cbe47c8-93d2-5700-bd71-77821aba0f5b  [fight]
-  Robert Rivera vs Dillin Wiggins  @ AFC 125 - Herron-Webb vs. Dempsey [event-search]
-  https://ufcfightpass.com/video/45633
-
-fight_id: de2c1557-343b-5cd2-91ba-8fd5525fe19f  [fight]
-  Isahia Edwards vs Paul Brown  @ AFC 125 - Herron-Webb vs. Dempsey [event-search]
-  https://ufcfightpass.com/video/45632
-
-fight_id: ad62b455-7beb-54c0-97a2-60b57abfb602  [fight]
-  Toby Misech vs Jared Mazurek  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/54098
-
-fight_id: 98a5ef34-391b-5986-a3de-07a65f13166b  [fight]
-  Caleb Miller vs Ethan Schneider  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/54041
-
-fight_id: bdc94b5d-ebf9-5643-b656-5dd6690720f3  [fight]
-  Ricky Camp vs Josh Branham  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/53519
-
-fight_id: cfb0fbea-f900-5730-8d4b-815b087fff50  [fight]
-  Avril Straub vs Maura Tynanes  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/52374
-
-fight_id: 114c57c0-554e-51a7-b02a-ac8ef628224c  [fight]
-  Robby Ostovich vs Cody Rice  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/52241
-
-fight_id: 5926a164-2f0a-538a-aa75-a9208cc3a0ef  [fight]
-  John Stern vs Dennis Bryant  @ AFC 130 - Misech vs. Mazurek [event-search]
-  https://ufcfightpass.com/video/51798
-
-fight_id: 55a63d5d-e0fe-5608-a471-86243f5b9518  [fight]
-  Marv Alexie vs Clint Hawk  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55791
-
-fight_id: 29f22ef9-8117-56b9-8907-b1c3eacdfad0  [fight]
-  Train Rus Jr vs Julien Harris  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55537
-
-fight_id: 33bf568d-3b66-5bf1-9e1d-c6fd820337ee  [fight]
-  Onosai Moana vs Alton Prince  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55527
-
-fight_id: 1cd29fe6-2c23-5ca8-bb4c-7f7d9c26330e  [fight]
-  Seth Row vs Josh Gale  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55528
-
-fight_id: a73597bf-fc73-5e6e-94bd-00d779159b7f  [fight]
-  Pierre Daguzan vs Tevin Dyce  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55464
-
-fight_id: 54a86dcd-ac83-5622-a439-d835d33e2e5d  [fight]
-  Vince Fricilone vs Niko Novelli  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55434
-
-fight_id: f3b5b45d-0bbd-56e8-926a-1369b0f5abc5  [fight]
-  Jared Foust vs Daniel Wiggins  @ AFC 131 - Fricilone vs. Novelli [event-search]
-  https://ufcfightpass.com/video/55377
-
-fight_id: 384ec8dc-9f4d-59a8-9386-e021321d6a60  [fight]
-  Kris Berberich vs David Booker  @ AFC 147 [event-search]
-  https://ufcfightpass.com/video/97214
-
-fight_id: 96c3fb8e-2b96-5c8f-8aa1-76ea7da7f7c7  [fight]
-  Chance Staggs vs Chante Stafford  @ AFC 147 [event-search]
-  https://ufcfightpass.com/video/96046
-
-fight_id: 995361f2-2346-54ee-84ed-99c7235844e8  [fight]
-  Eremiah Sierra vs Isaac Baker  @ AFC 147 [event-search]
-  https://ufcfightpass.com/video/95929
-
-fight_id: 7f2a6a78-3fe7-5a73-b3be-0789fd321b50  [fight]
-  Patrik White vs Tre McClennaham  @ AFC 147 [event-search]
-  https://ufcfightpass.com/video/95927
-
-fight_id: a4140c5b-70c9-55d0-9c90-4601ef581b71  [fight]
-  Jeremiah Sierra vs Kyle De La Rosa  @ AFC 149 [event-search]
-  https://ufcfightpass.com/video/97267
-
-fight_id: 6c33675a-40bd-5db3-a837-cd87fb847427  [fight]
-  Kris Berberich vs Jared Mazurek  @ AFC 149 [event-search]
-  https://ufcfightpass.com/video/96888
-
-fight_id: fb75612d-a980-59e9-ac2e-621dea3d7f58  [fight]
-  Onosai Moana vs Daniel Zimmer  @ AFC 149 [event-search]
-  https://ufcfightpass.com/video/96718
-
-fight_id: 5322212c-e348-5c4e-babd-653f20c322e5  [fight]
-  Chad Kuamo'o-Malama vs Corey Dahlberg  @ AFC 149 [event-search]
-  https://ufcfightpass.com/video/96674
-
-fight_id: d1e2cf48-c091-5b64-82c1-b3c18534e9f6  [fight]
-  David Booker vs Tyson Duckworth  @ AFC 150 [event-search]
-  https://ufcfightpass.com/video/97165
-
-fight_id: 05ac0e36-6829-5669-94db-926ead677d89  [fight]
-  Jason Flowers vs Bear Rogers  @ AFC 150 [event-search]
-  https://ufcfightpass.com/video/96520
-
-fight_id: d37a3637-6b3c-57ef-86ce-ab08bc0fb4a9  [fight]
-  John George vs Chante Stafford  @ AFC 150 [event-search]
-  https://ufcfightpass.com/video/95861
-
 
 UNMATCHED EPISODES (11)
 ----------------------------------------------------------------------

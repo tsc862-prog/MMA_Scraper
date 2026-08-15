@@ -113,6 +113,19 @@ PLAYLIST_BUCKETS = [
      'type': 'PLAYLISTS', 'level': 'fight', 'orgs': ['PRIDE']},
 ]
 
+# Org event-replay playlists — dedicated playlists of full-card VODs that
+# appear in NO browse bucket or search index (found via playlistId= URL
+# params and playlist-id scans). Each VOD is run through try_event_replay,
+# so the usual title/date/duration guards apply.
+REPLAY_PLAYLISTS = [
+    {'id': 22701, 'name': 'A-1 Combat Event Replays'},
+    {'id': 22702, 'name': 'Anthony Pettis FC Event Replays'},
+    {'id': 22705, 'name': 'Tuff-N-Uff Event Replays'},
+    {'id': 22706, 'name': 'Unified MMA Event Replays'},
+    # Also found (orgs not in DB yet — see TODO roadmap): 22703 Combat FC,
+    # 22704 FCC, 22753 Shuriken Fight Series, 21752 Fight Club Rush.
+]
+
 OUTPUT_FILE     = 'fightpass_matches.txt'
 PROGRESS_FILE   = 'fightpass_seen_episodes.txt'
 SCAN_PROGRESS   = 'fightpass_scan_progress.txt'
@@ -489,6 +502,15 @@ def match_event_fuzzy(fp_title, events_for_org, events_by_norm):
         # (3) DB core is a contiguous prefix of FP core
         if len(db_core) >= 2 and fp_core[:len(db_core)] == db_core:
             return e
+
+    # (3b) FP core is a contiguous prefix of exactly one event's core — DB
+    # names carry a headliner subtitle the VOD title lacks ("Urijah Faber's
+    # A1 Combat 36 - Sandoval vs. Seronio" vs VOD "...A-1 Combat 36").
+    if len(fp_core) >= 3:
+        cands = [e for e in events_for_org
+                 if _core_tokens(e['name'])[:len(fp_core)] == fp_core]
+        if len(cands) == 1:
+            return cands[0]
 
     # (4) Leading-N: first 2..4 tokens of FP uniquely identify a DB event
     for n in (4, 3, 2):
@@ -1259,6 +1281,8 @@ def main(push=False, force=False, scan_vods=False,
         (re.compile(r'\balaska\s+fighting\s+championship\b', re.I), 'AFC'),
         # Promoter possessive on FAC replay titles ("James Krause's FAC 16").
         (re.compile(r"\bjames\s+krause['’]?s?\s+", re.I), ''),
+        # FP hyphenates A-1; Sherdog/DB write A1 (one token after _norm).
+        (re.compile(r'\ba-1\s+combat\b', re.I), 'A1 Combat'),
     ]
 
     # Shared by passes 3 and 5: try a VOD as a full-event (or prelims) replay.
@@ -1305,6 +1329,19 @@ def main(push=False, force=False, scan_vods=False,
                                WATCH_URL.format(vod_id), v_title))
         matched_vod_ids.append(vod_id)
         return True
+
+    # ── PASS 2b: org event-replay playlists ────────────────────────────────
+    for rp in REPLAY_PLAYLISTS:
+        print(f'\n=== replay playlist {rp["id"]}  {rp["name"]} ===')
+        count = 0
+        for v in fp.playlist_vods(rp['id']):
+            count += 1
+            vod_id = str(v['id'])
+            if vod_id in seen:
+                continue
+            try_event_replay(vod_id, v.get('title') or '', v)
+        print(f'  walked {count} VODs')
+        time.sleep(0.2)
 
     # ── PASS 3: brute-force VOD-ID scan (defined after the helpers above) ──
     # A huge batch of pre-2019 standalone fight VODs (e.g. video/30613 =

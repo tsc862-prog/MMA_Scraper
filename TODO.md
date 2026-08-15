@@ -149,6 +149,27 @@ Re-confirmed NOT on FP: KSW, Oktagon, BAMMA, M-1, Combate Global, Sengoku,
 DREAM, DEEP (namesakes only). Grappling-only (out of scope): Submission
 Hunter Pro, UFC BJJ.
 
+#### 2026-08-15 playlist discovery — org "Event Replays" playlists
+
+Full-card replays for regional orgs also live in dedicated playlists
+(`/video/<id>?playlistId=<pid>`) that appear in NO browse bucket and are NOT
+search-indexed. Found by scanning playlist ids 21500–23600 after the user
+surfaced Tuff-N-Uff's (22705). `REPLAY_PLAYLISTS` in `fightpass_scraper.py`
+now walks: 22701 A-1 Combat (32 cards), 22702 Anthony Pettis FC (26, incl.
+the APFC: IFL cards), 22705 Tuff-N-Uff (29), 22706 Unified MMA (25).
+
+New org candidates found the same way (real replay archives, orgs NOT in
+DB — next expansion wave; check Sherdog coverage first):
+- **Combat FC** — playlist 22703, 11 replays (Combat FC 3–13)
+- **FCC** — playlist 22704, 15 replays (FCC ~32–46)
+- **Shuriken Fight Series** — playlist 22753, 8 replays (17–24)
+- **Fight Club Rush** — playlist 21752, 22 replays (Sweden, ~8–29)
+
+Other playlist-id ranges likely hold more org playlists (per-event playlists
+for Fury FC / Shooto Brazil / LUX / UWC / Ares etc. were visible in the
+scanned window); a wider scan (e.g. 10000–21500, 23600–30000) is cheap
+(~1 req/id) if coverage gaps show up.
+
 #### Already in DB
 | Org | Sherdog ID | Fight Pass | Active |
 |---|---|---|---|
@@ -284,6 +305,13 @@ For each org we add:
    ~20-result cap on common surnames ('King', 'Garcia'). Covers per-fight
    gaps for events since `--since` (default 2025-01-01) plus event-level
    replay gaps for UFC/PRIDE/Strikeforce/WEC at any date.
+   `--events <ids>` (added 2026-08-15) scopes PASS 5 to named event ids at any
+   date and skips the series/bucket walks — a targeted backfill of a few
+   known-incomplete cards without a full catalog crawl. Note the pass queries
+   vesper by *Sherdog* event name, and Fight Pass doesn't use Sherdog's Fight
+   Night numbering, so on older cards only the `A vs B` headliner query bites;
+   for a specific missing bout, searching the fighters' surnames directly is
+   still the surer probe.
 6. **Brute-force scan** — `--scan-vods` covers the legacy 25k–60k VOD range.
    Already-scanned IDs are skipped via `fightpass_scan_progress.txt`.
    Re-run with a higher `--scan-end` (existing default is 60000; new VODs
@@ -337,7 +365,11 @@ For each org we add:
   ("... Strikeforce: Rousey vs Kaufman" walked under a UFC bucket) left the
   wrong bout as the sole candidate. 10 mis-assigned URLs repaired in the DB
   (Dern/Ribas, McCann/Belbita, Nascimento/Mayes, Vera/Grant, Ngannou/Blaydes,
-  Edgar/Swanson, Davis/Carmouche, Benavidez/Formiga, Jacare/Brunson ×2).
+  Edgar/Swanson, Davis/Carmouche, Benavidez/Formiga, Jacare/Brunson ×2). The
+  counterpart bouts were then backfilled by probing vesper per fighter pair:
+  6 filled, 2 genuinely have no per-fight VOD on Fight Pass (Ngannou/Blaydes 2
+  — full-event replay only, already on `events.fightpass_url`; Vera/Grant 2 —
+  absent from Marlon Vera's whole FP catalog).
 - KSW/Oktagon remain unwired (paywalled — no free channel).
 - **Prime Video / watch.onefc.com — evaluated & skipped (2026-07-10).** ONE's
   full-event replays live on Amazon Prime Video (US-only, subscription) and
