@@ -1,6 +1,6 @@
 YOUTUBE MATCH RESULTS
 Fights  — matched: 868  unmatched: 803
-Events  — matched: 8  unmatched: 14
+Events  — matched: 13  unmatched: 20
 Geo-blocked in US (not stored): 29 fights, 23 events
 ======================================================================
 
@@ -4347,7 +4347,7 @@ video:    ICONIC FIGHT | Michael Stack vs Kai Kamaka | LFA Fights
 url:      https://www.youtube.com/watch?v=UUkiI__T5f4
 
 
-MATCHED FULL EVENTS (8)
+MATCHED FULL EVENTS (13)
 ----------------------------------------------------------------------
 event_id: 112510  [main]
 event:    PFL Africa 2: 2026 First Round
@@ -4364,6 +4364,11 @@ event:    PFL Africa 1: 2026 First Round
 video:    2026 PFL Africa: Pretoria | Full Event
 url:      https://www.youtube.com/watch?v=P1eO07hMeSU
 
+event_id: 113533  [main]
+event:    LFA 238 - Distrito #1
+video:    LFA 238 Full Card | Seven exclusive fights | LFA Fights
+url:      https://www.youtube.com/watch?v=7u3joq5oCyA
+
 event_id: 113079  [main]
 event:    LFA 236 - Ikei vs. Parra
 video:    LFA 236 Main Card | Full Event - Five Exclusive Fights | LFA MMA
@@ -4374,10 +4379,30 @@ event:    LFA 236 - Ikei vs. Parra
 video:    LFA 236 Full Prelim | Exclusive Fights | LFA Fights
 url:      https://www.youtube.com/watch?v=qBSQlEHQKKE
 
+event_id: 112501  [main]
+event:    LFA 234 - Fernando vs. Soares
+video:    LFA 234 | TWO world title fight | Full Card | LFA Fights
+url:      https://www.youtube.com/watch?v=otdJXUiq0mg
+
+event_id: 111872  [main]
+event:    LFA 229 - Martins vs. Goncalves
+video:    LFA 229 Full Card | Seven exclusive fights | LFA Fights
+url:      https://www.youtube.com/watch?v=feM0pIsSMmE
+
 event_id: 111560  [main]
 event:    LFA 228 - Natividad vs. Garcia
 video:    LFA 228 - FULL EVENT - Garcia vs Natividad | | LFA Fights
 url:      https://www.youtube.com/watch?v=U82FTfQ1vtc
+
+event_id: 111172  [main]
+event:    LFA 225 - Degli vs. Aguiar
+video:    LFA 225 - Full Card - World Title fight | LFA MMA
+url:      https://www.youtube.com/watch?v=MP7j2aMdszw
+
+event_id: 111171  [main]
+event:    LFA 224 - Adams vs. Bilalov
+video:    LFA 224 Full Card (Jan 16, 2026 | The "Heavyweight Islam" is here!
+url:      https://www.youtube.com/watch?v=eYZIweKi_7U
 
 event_id: 107693  [prelims]
 event:    LFA 210 - Lawrence vs. Reyes
@@ -5196,19 +5221,25 @@ fighter not found: "BEST BASE FOR MMA? CRAZY" | BEST BASE FOR MMA? CRAZY vs CONF
 fighter not found: "Christine "Knuckles"" | Christine "Knuckles" vs Kelly Kobolo Schmit | CRAZY FIGHT | LFA Fights | https://www.youtube.com/watch?v=uGiSy2aQvoI
 PARSE_FAIL                     | CHAMA! ALEX PEREIRA showed he was FOR REAL in MMA | LFA Fights | https://www.youtube.com/watch?v=yIKBu55OX_M
 
-UNMATCHED FULL EVENTS (14)
+UNMATCHED FULL EVENTS (20)
 ----------------------------------------------------------------------
+no event (2026 / jean+pfl+rodriguez+series+show+summer+weigh) | PFL Summer Series DC 2026 Weigh-In Show: Jean vs Rodriguez | Predictions & Full Card Breakdown | https://www.youtube.com/watch?v=H7_yUmtPJYE
+no event (2026 / austin+eblen+kasanganay+pfl+series+show+summer+weigh) | PFL Summer Series Austin 2026 Weigh-In Show: Eblen vs Kasanganay | Predictions & Full Card Breakdown | https://www.youtube.com/watch?v=PaFP75W8spU
 ambiguous (2 events: 2026 / mena+pfl+riyadh) | 2026 MENA: PFL Riyadh | Full Event | https://www.youtube.com/watch?v=q2HByMxX6CQ
 not a full event (highlights/recap/promo) | BRAVE 100 | Muhammad Mokaev and Borislav Nikolic | Full Event Highlights | https://www.youtube.com/watch?v=qWqypGFtAWI
+no event (any / 239+lfa+live)      | LFA 239 Main Card *LIVE* | Seven Fight Full Card | LFA Fights | https://www.youtube.com/watch?v=B-Dt0_hYE4Q
+no event (any / 238+lfa+live)      | LFA 238 Main Card *LIVE* | Seven Fight Full Card | LFA Fights | https://www.youtube.com/watch?v=dTgmPClT9bM
+no event (any / 237+lfa+live)      | LFA 237 Main Card *LIVE* | Six Fight Full Card | LFA Fights | https://www.youtube.com/watch?v=zISafxmeGZQ
 no event (any / 233+fight+lfa+mma+title+two+world) | LFA 233 Two LFA World MMA Title Fight | Full Event Replay | LFA Fights | https://www.youtube.com/watch?v=Tk-oP6F55JM
+no event (any / event+lfa+title+world) | LFA World Title Event | LFA 232 Full Card | LFA Fights | https://www.youtube.com/watch?v=mTJ7phgazdA
 no event (any / 4+mma+rfa)         | RFA MMA 4 | Full Event | LFA Fights | https://www.youtube.com/watch?v=v2ILaIIpoog
-no event (any / 35+mma+rfa)        | RFA MMA 35 *Full Event* | Feat. Curtis Blaydes and more | Classic LFA Fights | https://www.youtube.com/watch?v=605irCGtHqs
+no event (any / 35+event+full+mma+rfa) | RFA MMA 35 *Full Event* | Feat. Curtis Blaydes and more | Classic LFA Fights | https://www.youtube.com/watch?v=605irCGtHqs
 no event (any / 57+championship+fighting+legacy) | LEGACY FIGHTING CHAMPIONSHIP 57 | *Full Event* | LFA Fights | https://www.youtube.com/watch?v=U0zolgHtbr0
-no event (any / lfa)               | LFA *FULL EVENT* | Main Event: Ary Farias vs John Sweeney: | https://www.youtube.com/watch?v=dcf1xbYfRNo
+no event (any / event+full+lfa)    | LFA *FULL EVENT* | Main Event: Ary Farias vs John Sweeney: | https://www.youtube.com/watch?v=dcf1xbYfRNo
 no event (any / 21+rfa)            | RFA 21 | *Full Event# | LFA Fights | https://www.youtube.com/watch?v=CNZarcJbsdc
-no event (any / 33+rfa)            | RFA 33 * FULL EVENT* | KHALIL ROUNTEE wins a WAR! | LFA Fights | https://www.youtube.com/watch?v=50lfG5-DrNI
-no event (any / attitude+live+mma) | ATTITUDE MMA | *Live MMA* | FULL EVENT | | https://www.youtube.com/watch?v=vkTe1LyyOHY
-no event (any / 37+legacy)         | LEGACY FC 37 *FULL EVENT* | Garcia vs Pineda | Geoff Neal vs Charlie Ontiveros | https://www.youtube.com/watch?v=EOWB7lP9TEU
+no event (any / 33+event+full+rfa) | RFA 33 * FULL EVENT* | KHALIL ROUNTEE wins a WAR! | LFA Fights | https://www.youtube.com/watch?v=50lfG5-DrNI
+no event (any / attitude+mma)      | ATTITUDE MMA | *Live MMA* | FULL EVENT | | https://www.youtube.com/watch?v=vkTe1LyyOHY
+no event (any / 37+event+full+legacy) | LEGACY FC 37 *FULL EVENT* | Garcia vs Pineda | Geoff Neal vs Charlie Ontiveros | https://www.youtube.com/watch?v=EOWB7lP9TEU
 no event (any / 3+lfa+mma)         | LFA MMA 3 | *Full Event* Featuring BRENDAN ALLEN vs JOE KIRK + WORLD TITLE fight | https://www.youtube.com/watch?v=d11QtgafK9k
 no event (any / 1+beginning+lfa+the) | LFA 1: The Beginning | *Full Event* | World Title Fight | LFA MAA | https://www.youtube.com/watch?v=KugbykrOnYI
 no event (any / 21+baghdad+juusola+rfa) | RFA 21: BAGHDAD vs JUUSOLA| *Full Event* *Two Title Fights* | LFA MMA | https://www.youtube.com/watch?v=oVHQveaSCaM

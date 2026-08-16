@@ -408,7 +408,7 @@ def _is_full_event_title(title):
     """A video that is a full card replay — '... | Full Event' (main card) or
     '... Full Prelim(s)' (LFA's prelim-half uploads) — rather than a single
     bout. Both routes send such titles to match_full_event."""
-    return bool(re.search(r'\bfull (?:event|prelims?)\b', title, re.IGNORECASE))
+    return bool(re.search(r'\bfull (?:event|card|prelims?)\b', title, re.IGNORECASE))
 
 def _full_card_variant(title):
     """'prelims' for prelim-card replays, else 'main'. Routed to
@@ -452,50 +452,62 @@ def match_full_event(title, events):
     if _NOT_FULL_EVENT.search(title):
         return None, 'not a full event (highlights/recap/promo)'
 
-    key = re.split(r'\|?\s*full (?:event|prelims?)\b', title, maxsplit=1,
-                   flags=re.IGNORECASE)[0]
-    key = re.sub(r'@\S+', ' ', key)          # drop @collab handles
-    key = re.sub(r'\([^)]*\)', ' ', key)     # drop parentheticals
-    # 'Main Card' is card-half filler, not event identity ('LFA 236 Main
-    # Card | Full Event ...') — never part of the Sherdog name.
-    key = re.sub(r'\bmain\s+card\b', ' ', key, flags=re.IGNORECASE)
-    ym = re.search(r'\b(?:19|20)\d{2}\b', key)
-    year = ym.group(0) if ym else None
-    if year:
-        key = key.replace(year, ' ')
-    vid = set(_sig_tokens(key))
-    if not vid:
-        return None, 'no key tokens'
+    # Two candidate keys, tried in order: (1) everything before the full-card
+    # marker; (2) just the first pipe-segment — LFA slots hype filler between
+    # the event name and the marker ('LFA 234 | TWO world title fight | Full
+    # Card | ...'), and the first segment alone carries the identity.
+    raw_keys = [re.split(r'\|?\s*full (?:event|card|prelims?)\b', title,
+                         maxsplit=1, flags=re.IGNORECASE)[0]]
+    first_seg = title.split('|')[0]
+    if first_seg.strip() and first_seg not in raw_keys:
+        raw_keys.append(first_seg)
 
-    exact, name_hits, hits = [], [], []
-    for e in events:
-        if year and year not in (e.get('date') or ''):
+    last_reason = 'no key tokens'
+    for key in raw_keys:
+        key = re.sub(r'@\S+', ' ', key)          # drop @collab handles
+        key = re.sub(r'\([^)]*\)', ' ', key)     # drop parentheticals
+        # 'Main Card' is card-half filler, not event identity ('LFA 236 Main
+        # Card | Full Event ...') — never part of the Sherdog name.
+        key = re.sub(r'\bmain\s+card\b', ' ', key, flags=re.IGNORECASE)
+        ym = re.search(r'\b(?:19|20)\d{2}\b', key)
+        year = ym.group(0) if ym else None
+        if year:
+            key = key.replace(year, ' ')
+        vid = set(_sig_tokens(key))
+        if not vid:
             continue
-        org  = set(re.split(r'[^a-z0-9]+', (e.get('organization') or '').lower()))
-        name = set(_sig_tokens(e['name']))
-        loc  = set(re.split(r'[^a-z0-9]+', (e.get('location') or '').lower()))
-        v = vid - org          # org name is implied by scope — don't require it
-        if not v:
-            continue
-        if v == (name - org):
-            exact.append(e)
-        if v <= name:
-            name_hits.append(e)
-        if v <= (name | loc):
-            hits.append(e)
 
-    label = f'{year or "any"} / {"+".join(sorted(vid))}'
-    if len(exact) == 1:
-        return exact[0], 'matched (exact)'
-    if len(name_hits) == 1:
-        return name_hits[0], 'matched'
-    if len(hits) == 1:
-        return hits[0], 'matched'
-    if exact:
-        return None, f'ambiguous exact ({len(exact)}): {label}'
-    if not hits:
-        return None, f'no event ({label})'
-    return None, f'ambiguous ({len(hits)} events: {label})'
+        exact, name_hits, hits = [], [], []
+        for e in events:
+            if year and year not in (e.get('date') or ''):
+                continue
+            org  = set(re.split(r'[^a-z0-9]+', (e.get('organization') or '').lower()))
+            name = set(_sig_tokens(e['name']))
+            loc  = set(re.split(r'[^a-z0-9]+', (e.get('location') or '').lower()))
+            v = vid - org      # org name is implied by scope — don't require it
+            if not v:
+                continue
+            if v == (name - org):
+                exact.append(e)
+            if v <= name:
+                name_hits.append(e)
+            if v <= (name | loc):
+                hits.append(e)
+
+        label = f'{year or "any"} / {"+".join(sorted(vid))}'
+        if len(exact) == 1:
+            return exact[0], 'matched (exact)'
+        if len(name_hits) == 1:
+            return name_hits[0], 'matched'
+        if len(hits) == 1:
+            return hits[0], 'matched'
+        if exact:
+            last_reason = f'ambiguous exact ({len(exact)}): {label}'
+        elif not hits:
+            last_reason = f'no event ({label})'
+        else:
+            last_reason = f'ambiguous ({len(hits)} events: {label})'
+    return None, last_reason
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
