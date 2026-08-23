@@ -361,9 +361,14 @@ def surname(name):
         toks = toks[:-1]
     return toks[-1].lower()
 
+def _name_key(name):
+    """Punctuation-insensitive name key: 'Georges St-Pierre' and Sherdog's
+    'Georges St. Pierre' both become 'georges st pierre'."""
+    return re.sub(r'\s+', ' ', re.sub(r"[-.'’]", ' ', (name or '').lower())).strip()
+
 def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter_by_last,
                event_by_id, event_name_hint=None, event_by_name_lower=None,
-               fighter_by_alias=None):
+               fighter_by_alias=None, fighter_by_norm=None):
     """
     Match a clip to a fight.
     Returns (fight, event, reason).
@@ -384,12 +389,26 @@ def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter
         ids = fighter_by_name.get(nl)
         if ids:
             return ids
-        # 2. Alias table
+        # 2. Punctuation-insensitive ('St-Pierre' vs Sherdog 'St. Pierre'),
+        #    then surname-first rotation — broadcast graphics use East-Asian
+        #    order ('Zhang Weili', 'Kim Sang-wook') where Sherdog stores
+        #    'Weili Zhang' / 'Sang Wook Kim'.
+        if fighter_by_norm:
+            key = _name_key(name)
+            ids = fighter_by_norm.get(key)
+            if ids:
+                return ids
+            toks = key.split()
+            if len(toks) >= 2:
+                ids = fighter_by_norm.get(' '.join(toks[1:] + toks[:1]))
+                if ids:
+                    return ids
+        # 3. Alias table
         if fighter_by_alias:
             fid = fighter_by_alias.get(nl)
             if fid:
                 return [fid]
-        # 3. Last name fallback (suffix-aware so '… Jr.' doesn't collide)
+        # 4. Last name fallback (suffix-aware so '… Jr.' doesn't collide)
         return fighter_by_last.get(surname(name), [])
 
     ids_a = lookup_ids(name_a)
@@ -508,8 +527,10 @@ def main(dry_run=False):
     # name → [ids]: distinct fighters can share a full name (e.g. UFC's
     # Anthony Hernandez vs KOTC's) — all ids become pair candidates and the
     # fight lookup + date/hint tiebreaks pick the real bout.
+    fighter_by_norm = {}
     for f in fighters:
         fighter_by_name.setdefault(f['name'].lower(), []).append(f['id'])
+        fighter_by_norm.setdefault(_name_key(f['name']), []).append(f['id'])
         fighter_by_last.setdefault(surname(f['name']), []).append(f['id'])
 
     fight_lookup = {}
@@ -556,6 +577,7 @@ def main(dry_run=False):
             event_name_hint=event_hint,
             event_by_name_lower=event_by_name_lower,
             fighter_by_alias=fighter_by_alias,
+            fighter_by_norm=fighter_by_norm,
         )
         if fight:
             matched_fights.append({

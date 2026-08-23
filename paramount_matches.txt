@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-08-23 10:42
-Fight clips matched: 1338  |  Event links matched: 279  |  Unmatched: 209
+Generated: 2026-08-23 13:02
+Fight clips matched: 1416  |  Event links matched: 279  |  Unmatched: 101
 ================================================================================
 
-MATCHED FIGHTS (1338)
+MATCHED FIGHTS (1416)
 --------------------------------------------------------------------------------
 fight_id:  c7f81da6-a6c1-51e8-a0ce-d0d34a7c521e
 fighters:  Anderson Silva vs. Chris Leben
@@ -564,6 +564,11 @@ fight_id:  3f2f54ca-2763-5057-942a-b277db2daa26
 fighters:  Chase Hooper vs. Steve Garcia
 event:     UFC Fight Night 213 - Kattar vs. Allen (2022-10-29)
 url:       https://www.paramountplus.com/shows/video/ALVE01KY80MXENESP8WHNDXB1MRFH1/
+
+fight_id:  ec9fcd66-7cac-58e3-ba84-96f4529ff943
+fighters:  Mackenzie Dern vs. Yan Xiaonan
+event:     UFC Fight Night 211 - Dern vs. Yan (2022-10-01)
+url:       https://www.paramountplus.com/shows/video/m4hObKJjO0ABlMFJdF4bF54U4ht34Jt8/
 
 fight_id:  5a8a37ad-2e20-584e-a783-e32a862a0468
 fighters:  Ciryl Gane vs. Tai Tuivasa
@@ -1260,6 +1265,16 @@ fighters:  Ketlen Souza vs. Ariane Carnelossi  [Prelims]
 event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
 url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4BWE3MB3PZ8EW0X8T6P/
 
+fight_id:  bb4faf85-5f20-5a31-89ff-946d8e92aefd
+fighters:  Song Yadong vs. Deiveson Figueiredo
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSYNE408AP0SGQB9P3VX/
+
+fight_id:  3b0f1677-b4b5-561f-aa21-6dd6102218ce
+fighters:  Zhang Mingyang vs. Alonzo Menifield
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRG8ENWS4MGFXEFD14R5/
+
 fight_id:  05064a31-0c48-5cfd-87b4-9415a2b00ef0
 fighters:  Sergei Pavlovich vs. Tallison Teixeira
 event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
@@ -1275,15 +1290,40 @@ fighters:  Jake Matthews vs. Carlston Harris
 event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
 url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7Z41E33B1X40PG91XGXB/
 
+fight_id:  8bea11b7-9a3f-5eaa-8c35-fc149a7de03e
+fighters:  Alex Perez vs. Sumudaerji
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRFZE8R8HRDCQZXKVZ3A/
+
 fight_id:  c36bd8de-cbf9-5fe4-9e9e-2728d91c8b15
 fighters:  Yi Sak Lee vs. Luis Felipe Dias  [Prelims]
 event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
 url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSZ3E0TSQVJ84K2297YP/
 
+fight_id:  875b9545-a79b-57bd-9702-04121ec26b6a
+fighters:  Ding Meng vs. Jose Souza  [Prelims]
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRN7EJTAY9335NB4AHKC/
+
+fight_id:  0cdc27ad-ef88-569d-be1f-c65ce8a2d4e9
+fighters:  Aoriqileng vs. Cody Haddon  [Prelims]
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRM3EFMV6Q1NC6NW7CMD/
+
 fight_id:  08dc21e6-9954-5b23-8d18-1d7c3ed3f278
 fighters:  Rei Tsuruya vs. Luis Gurule  [Prelims]
 event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
 url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7XX9EAASQ78JR811CNQX/
+
+fight_id:  9e3ac2cc-d7b0-5677-95ec-7725768d9552
+fighters:  Angela Hill vs. Xiong Jingnan  [Prelims]
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV4QEM1BTSBANEE44DXH/
+
+fight_id:  6b8176d5-a2a8-539f-92f0-8f2c6b432c3a
+fighters:  Zhu Kangjie vs. Rodrigo Vera  [Prelims]
+event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
+url:       https://www.paramountplus.com/shows/video/ALVE01KSN1B1HJEBYR145T4NTC54KF/
 
 fight_id:  19121f9d-48ab-559f-95fd-a0fb72c379d9
 fighters:  Arnold Allen vs. Melquizael Costa
@@ -1440,6 +1480,11 @@ fighters:  Montel Jackson vs. Raoni Barcelos
 event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
 url:       https://www.paramountplus.com/shows/video/ALVE01KP6629VPED59106WQF3VT5QF/
 
+fight_id:  ebb42b29-ea2e-5bf5-80de-a1cd2c0bb07a
+fighters:  Marcus Buchecha vs. Ryan Spann
+event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
+url:       https://www.paramountplus.com/shows/video/ALVE01KP662P8ZESDSXN2TMB4XR650/
+
 fight_id:  0a67f3d2-c206-5f2b-95dd-4104b9abed40
 fighters:  Rodolfo Vieira vs. Eric McConico  [Prelims]
 event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
@@ -1515,6 +1560,11 @@ fighters:  Tanner Boser vs. Gokhan Saricam  [Prelims]
 event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
 url:       https://www.paramountplus.com/shows/video/ALVE01KNMQYDWDEANAS8P8YBY8PVMD/
 
+fight_id:  7fbaebee-dfa5-5446-9e2e-c1a19fb8b702
+fighters:  Melissa Croden vs. Daria Zhelezniakova  [Prelims]
+event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
+url:       https://www.paramountplus.com/shows/video/ALVE01KNMQY2ESE63SB11DYAVEXQ2R/
+
 fight_id:  732df7a2-970f-539b-bbc5-39a7f195f0b4
 fighters:  JJ Aldrich vs. Jamey-Lyn Horth  [Prelims]
 event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
@@ -1529,6 +1579,11 @@ fight_id:  450eced7-e5ca-5619-99e4-8fa5e97f65b1
 fighters:  Jamie Siraj vs. John Yannis  [Prelims]
 event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
 url:       https://www.paramountplus.com/shows/video/ALVE01KNY9D7JYEB2AFGXHNTCRCNWJ/
+
+fight_id:  96d44934-bbc6-5671-8d7c-30d6fe3bc034
+fighters:  Renato Moicano vs. Chris Duncan
+event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
+url:       https://www.paramountplus.com/shows/video/ALVE01KMGNG8H3EA5AH3EEW6HHM8SR/
 
 fight_id:  2031b195-5c15-5942-b01b-be1e35fc3747
 fighters:  Virna Jandiroba vs. Tabatha Ricci
@@ -1975,6 +2030,11 @@ fighters:  Javid Basharat vs. Gianni Vazquez  [Prelims]
 event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
 url:       https://www.paramountplus.com/shows/video/ATMGPjgCgVbPJBCRFucyWdb5GqhWBOI4/
 
+fight_id:  9759edd1-d9a2-5ddb-b41e-b05ff482d22f
+fighters:  Wang Cong vs. Eduarda Moura  [Prelims]
+event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
+url:       https://www.paramountplus.com/shows/video/paafSVGNlbe5MiNfYaYi4DG7Qs_Hizvs/
+
 fight_id:  d1c02940-bc92-5a67-8c63-6bf7c4b45ef8
 fighters:  Muin Gafurov vs. Jakub Wiklacz  [Prelims]
 event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
@@ -2014,6 +2074,11 @@ fight_id:  84a8a08b-9d60-5ebf-bb37-14f8342eea1a
 fighters:  Joel Alvarez vs. Chidi Njokuani  [Prelims]
 event:     UFC 330 - Makhachev vs. Garry (2026-08-15)
 url:       https://www.paramountplus.com/shows/video/ALVE01KZA4D3WQEE3TH7SXDR01CC92/
+
+fight_id:  002b3a1b-013b-5cec-9c09-2dd0ab87f444
+fighters:  Eduardo Chapolin vs. Charles Johnson  [Prelims]
+event:     UFC 330 - Makhachev vs. Garry (2026-08-15)
+url:       https://www.paramountplus.com/shows/video/ALVE01KZV8E0W9ERDVSQ964AGT441J/
 
 fight_id:  4195bc7d-593a-5f4c-bd28-b48135375527
 fighters:  Donte Johnson vs. Eric McConico  [Prelims]
@@ -2065,6 +2130,11 @@ fighters:  Chris Lytle vs. Brian Foster
 event:     UFC 110 - Nogueira vs. Velasquez (2010-02-20)
 url:       https://www.paramountplus.com/shows/video/mh2iypEGabPlh2_q5HswE9alNMkSuXvM/
 
+fight_id:  a6e24e8e-f6d0-5245-8ec4-37f1750708d0
+fighters:  Georges St-Pierre vs. Dan Hardy
+event:     UFC 111 - St. Pierre vs. Hardy (2010-03-27)
+url:       https://www.paramountplus.com/shows/video/Inlzq6QOqiFM_MqsvLTxUbOsltKuwnnv/
+
 fight_id:  040ab440-2db6-5cfc-8e40-b7730a82602f
 fighters:  Nate Diaz vs. Rory Markham
 event:     UFC 111 - St. Pierre vs. Hardy (2010-03-27)
@@ -2100,6 +2170,11 @@ fighters:  Brock Lesnar vs. Cain Velasquez
 event:     UFC 121 - Lesnar vs. Velasquez (2010-10-23)
 url:       https://www.paramountplus.com/shows/video/Zi6mfbj2IWXFhOOhC3sdOG_FJ0aMXa3M/
 
+fight_id:  4e4633a0-260e-5649-b769-41cd1cecf574
+fighters:  Georges St-Pierre vs. Josh Koscheck
+event:     UFC 124 - St. Pierre vs. Koscheck 2 (2010-12-11)
+url:       https://www.paramountplus.com/shows/video/wdB9Ue8t8NQOa_u5LNrkbeEPktqLRxGc/
+
 fight_id:  fc41afaa-f6eb-522e-800e-7fb4e2b17ec5
 fighters:  Jim Miller vs. Charles Oliveira
 event:     UFC 124 - St. Pierre vs. Koscheck 2 (2010-12-11)
@@ -2124,6 +2199,11 @@ fight_id:  46ef91ae-09c5-5101-b7b4-892a8cbab77a
 fighters:  Mauricio Rua vs. Jon Jones
 event:     UFC 128 - Shogun vs. Jones (2011-03-19)
 url:       https://www.paramountplus.com/shows/video/JTYi4DgQkompSPvUGVqDKogbDJwG_0O1/
+
+fight_id:  6700069a-b2a5-572c-a09b-4c9178cb1ab4
+fighters:  Georges St-Pierre vs. Jake Shields
+event:     UFC 129 - St. Pierre vs. Shields (2011-04-30)
+url:       https://www.paramountplus.com/shows/video/tHpXCdb33n2K82NkwuCoIFzmHFIoddHI/
 
 fight_id:  3669ea5c-d6d6-55ea-a4c9-9922642ee936
 fighters:  Nate Diaz vs. Rory MacDonald
@@ -2200,6 +2280,11 @@ fighters:  Anderson Silva vs. Stephan Bonnar
 event:     UFC 153 - Silva vs. Bonnar (2012-10-13)
 url:       https://www.paramountplus.com/shows/video/bvBMwjOJvs7Bq2OEykvA__x3Ttqskhzg/
 
+fight_id:  df8dead7-b025-5b6f-a3b1-8b2ecc826aac
+fighters:  Georges St-Pierre vs. Carlos Condit
+event:     UFC 154 - St. Pierre vs. Condit (2012-11-17)
+url:       https://www.paramountplus.com/shows/video/5psKnJCUCHbF_fc38sdWLC38_gZJDf0f/
+
 fight_id:  d76ac280-5e62-5666-8368-3df320b753eb
 fighters:  Leonard Garcia vs. Max Holloway
 event:     UFC 155 - Dos Santos vs. Velasquez 2 (2012-12-29)
@@ -2209,6 +2294,11 @@ fight_id:  10be26c3-98f9-5ae2-b522-c728042b9a81
 fighters:  Ronda Rousey vs. Liz Carmouche
 event:     UFC 157 - Rousey vs. Carmouche (2013-02-23)
 url:       https://www.paramountplus.com/shows/video/4rv63SyTnkOdWIsl_HOp66r5PCrBw8kZ/
+
+fight_id:  e74cb425-01c2-5c12-96e5-5c1f3b4462e3
+fighters:  Georges St-Pierre vs. Nick Diaz
+event:     UFC 158 - St. Pierre vs. Diaz (2013-03-16)
+url:       https://www.paramountplus.com/shows/video/0jxvSTRhgcNnwOManxuuL_Z_BNSegELv/
 
 fight_id:  61de0c03-7bf1-50e3-8d85-bf03e0e6ddfe
 fighters:  Jon Jones vs. Chael Sonnen
@@ -2254,6 +2344,11 @@ fight_id:  49044685-3d02-5852-b26c-3a6a26bbd77f
 fighters:  Daniel Cormier vs. Roy Nelson
 event:     UFC 166 - Velasquez vs. Dos Santos 3 (2013-10-19)
 url:       https://www.paramountplus.com/shows/video/XTf5q11DCG4tr_gaSBfvjaYjWP57KXxQ/
+
+fight_id:  85c2c604-fde3-5803-9854-a15d2af49715
+fighters:  Georges St-Pierre vs. Johny Hendricks
+event:     UFC 167 - St. Pierre vs. Hendricks (2013-11-16)
+url:       https://www.paramountplus.com/shows/video/hXSZiuRokKzoC2WopF5wN2bf7mK38CBu/
 
 fight_id:  4a545c52-abbf-5586-9d42-468b2fa34173
 fighters:  Chris Weidman vs. Anderson Silva
@@ -2650,6 +2745,11 @@ fighters:  Lando Vannata vs. Bobby Green
 event:     UFC 216 - Ferguson vs. Lee (2017-10-07)
 url:       https://www.paramountplus.com/shows/video/f_kHV4Kynqs7oEdxiyLscxUC9LFtpYhs/
 
+fight_id:  77b2bd27-3684-557d-b839-a54c55f038cd
+fighters:  Michael Bisping vs. Georges St-Pierre
+event:     UFC 217 - Bisping vs. St. Pierre (2017-11-04)
+url:       https://www.paramountplus.com/shows/video/pNOHvk8gQ1U3F5IcTM_d35M_VqLluEl_/
+
 fight_id:  3b182c0c-0b68-59b0-a41b-1d32e82a5aad
 fighters:  Cody Garbrandt vs. TJ Dillashaw
 event:     UFC 217 - Bisping vs. St. Pierre (2017-11-04)
@@ -2785,6 +2885,11 @@ fighters:  Tai Tuivasa vs. Cyril Asker
 event:     UFC 221 - Romero vs. Rockhold (2018-02-10)
 url:       https://www.paramountplus.com/shows/video/AuAsR8v2c9zKkbKrZhEPdEsiCnIkiS_B/
 
+fight_id:  be96c881-0f78-59d9-894e-9e32792ebec9
+fighters:  Jake Matthews vs. Li Jingliang
+event:     UFC 221 - Romero vs. Rockhold (2018-02-10)
+url:       https://www.paramountplus.com/shows/video/GL_xCIsP5H9tS9SNjU6yTZEJfqi3dcOC/
+
 fight_id:  5c583719-6f3a-51a7-a846-d92607706e47
 fighters:  Tyson Pedro vs. Saparbeg Safarov
 event:     UFC 221 - Romero vs. Rockhold (2018-02-10)
@@ -2884,6 +2989,11 @@ fight_id:  c5948362-bfc3-5f46-9766-97247318279c
 fighters:  Vitor Belfort vs. Lyoto Machida
 event:     UFC 224 - Nunes vs. Pennington (2018-05-12)
 url:       https://www.paramountplus.com/shows/video/YuzNlXO0kT0ee9V7s8MziG9v305xEPTm/
+
+fight_id:  d98b5391-16de-5ede-a95d-71626b8a2ce2
+fighters:  Aleksei Oleinik vs. Junior Albini
+event:     UFC 224 - Nunes vs. Pennington (2018-05-12)
+url:       https://www.paramountplus.com/shows/video/Q6TwJlhTCy8xUiQkGZoLrtY2JLLO8dyC/
 
 fight_id:  c62888a4-1f28-516d-9cb3-d1ef4a10e4d9
 fighters:  Elizeu Zaleski dos Santos vs. Sean Strickland
@@ -3105,6 +3215,11 @@ fighters:  Robbie Lawler vs. Ben Askren
 event:     UFC 235 - Jones vs. Smith (2019-03-02)
 url:       https://www.paramountplus.com/shows/video/5hTGjsMiiHVmQ3oJ8g6EhzKikLml4fhY/
 
+fight_id:  6d6d0935-5bf0-5e66-9ed8-c2dc3ac19af7
+fighters:  Tecia Torres vs. Zhang Weili
+event:     UFC 235 - Jones vs. Smith (2019-03-02)
+url:       https://www.paramountplus.com/shows/video/lLwYH6ia9yC_4j_r4kwVh43ZNp6OoxU2/
+
 fight_id:  fe6074e4-0f49-56c4-8735-27d768965d03
 fighters:  Cody Garbrandt vs. Pedro Munhoz
 event:     UFC 235 - Jones vs. Smith (2019-03-02)
@@ -3239,6 +3354,11 @@ fight_id:  9607497d-442e-5b17-be9c-bff111bab2e9
 fighters:  Marlon Vera vs. Nohelin Hernandez
 event:     UFC 239 - Jones vs. Santos (2019-07-06)
 url:       https://www.paramountplus.com/shows/video/N8p9tcDH_Jah9rSyRoV80Umhf4i9XiGP/
+
+fight_id:  f2075f05-6453-5e9f-a19a-9cc557c3e743
+fighters:  Alejandro Perez vs. Song Yadong
+event:     UFC 239 - Jones vs. Santos (2019-07-06)
+url:       https://www.paramountplus.com/shows/video/248Jzguo6HIRPhHYKSlLI1OFdmSMVOiM/
 
 fight_id:  a70ab55d-f929-5add-baa6-71a0355f8929
 fighters:  Edmen Shahbazyan vs. Jack Marshman
@@ -3480,30 +3600,65 @@ fighters:  Randy Couture vs. Chuck Liddell
 event:     UFC 43 - Meltdown (2003-06-06)
 url:       https://www.paramountplus.com/shows/video/E4W_RI5lJmTDpqmq6wh2BOMYqLRBtHUv/
 
+fight_id:  0f704cb7-fd85-5613-aa72-4aae85967821
+fighters:  Georges St-Pierre vs. Karo Parisyan
+event:     UFC 46 - Supernatural (2004-01-31)
+url:       https://www.paramountplus.com/shows/video/IfcHVbWQqfDHNzAT3KP3eI0ZeWpFJOra/
+
 fight_id:  4a24ad38-6040-5d70-b953-aa851dabb144
 fighters:  Chuck Liddell vs. Tito Ortiz
 event:     UFC 47 - It's On (2004-04-02)
 url:       https://www.paramountplus.com/shows/video/jpxPhIWq0dJKdInYfPNSt4GtWun4HvE5/
+
+fight_id:  7f48c799-1d9f-54cb-902b-e97eaa1b2836
+fighters:  Georges St-Pierre vs. Jay Hieron
+event:     UFC 48 - Payback (2004-06-19)
+url:       https://www.paramountplus.com/shows/video/k_QQHwK1SQ0qzniuAL5ls791v3GNrsRa/
 
 fight_id:  0cb16b5a-b302-5878-b321-cef738b5937c
 fighters:  Chuck Liddell vs. Vernon White
 event:     UFC 49 - Unfinished Business (2004-08-21)
 url:       https://www.paramountplus.com/shows/video/s2qEGIu_fr6esZwh_c2nK_e_BNZm7Dqr/
 
+fight_id:  ba4a6f36-8faa-58b8-8765-501bc462e9a2
+fighters:  Matt Hughes vs. Georges St-Pierre
+event:     UFC 50 - The War of '04 (2004-10-22)
+url:       https://www.paramountplus.com/shows/video/Zhk_bgaF_RU3eNCjozs1ja6H7A9uCDwe/
+
 fight_id:  b0cf5cf2-af14-585b-b56b-ac5ee8968b80
 fighters:  Chuck Liddell vs. Randy Couture
 event:     UFC 52 - Couture vs. Liddell 2 (2005-04-16)
 url:       https://www.paramountplus.com/shows/video/uAqxUtNe53Wd8UQMbA_jl_YfQvfBR8Ue/
+
+fight_id:  e6e4a597-2640-5f23-99c8-4ab4030f2d3a
+fighters:  Georges St-Pierre vs. Jason Miller
+event:     UFC 52 - Couture vs. Liddell 2 (2005-04-16)
+url:       https://www.paramountplus.com/shows/video/kuH8HnB4j_KODTI03moo8eHpzU5mvtZh/
 
 fight_id:  f7147671-d88a-5b26-8680-21b703515b91
 fighters:  Chuck Liddell vs. Jeremy Horn
 event:     UFC 54 - Boiling Point (2005-08-20)
 url:       https://www.paramountplus.com/shows/video/ZFOEZl4DmD71hST0JbSPoOgBZFZkc76K/
 
+fight_id:  2779df8d-5547-5b56-989f-538a7904ddda
+fighters:  Georges St-Pierre vs. Frank Trigg
+event:     UFC 54 - Boiling Point (2005-08-20)
+url:       https://www.paramountplus.com/shows/video/_IMVGqUiLZ334Ai_y6roMYTNJGznRjtN/
+
+fight_id:  b7773c87-f44f-5b0e-879e-e7121919b339
+fighters:  Georges St-Pierre vs. Sean Sherk
+event:     UFC 56 - Full Force (2005-11-19)
+url:       https://www.paramountplus.com/shows/video/sn7Q7T2uYbHvRpxU91ktb3OR8D6wi49_/
+
 fight_id:  9ff30fc0-583e-55e2-9ca5-ebbe8f8c18a8
 fighters:  Chuck Liddell vs. Randy Couture
 event:     UFC 57 - Liddell vs. Couture 3 (2006-02-04)
 url:       https://www.paramountplus.com/shows/video/gXaERsZBJYZ7jzMJxvvKiQXYR7nmojEm/
+
+fight_id:  089fdbff-273f-5492-87a5-75c279b4b3fd
+fighters:  Georges St-Pierre vs. BJ Penn
+event:     UFC 58 - USA vs. Canada (2006-03-04)
+url:       https://www.paramountplus.com/shows/video/wzkYQ4AsZZTJaTP7P8zO4mRrZ7ND9RVl/
 
 fight_id:  b9ffe48d-7b78-5aba-b6e0-bc3b34651504
 fighters:  Chuck Liddell vs. Renato Sobral
@@ -3534,6 +3689,11 @@ fight_id:  7b5e356c-c1bc-52e3-ba24-db97eb3a7284
 fighters:  Anderson Silva vs. Rich Franklin
 event:     UFC 64 - Unstoppable (2006-10-14)
 url:       https://www.paramountplus.com/shows/video/KTGnXi0N_4duqjsnOMYGUKnq_YxUpXSw/
+
+fight_id:  008f2cb3-e68f-5429-86a0-0c3ece5b2539
+fighters:  Georges St-Pierre vs. Matt Hughes
+event:     UFC 65 - Bad Intentions (2006-11-18)
+url:       https://www.paramountplus.com/shows/video/Cabql9xOOIofcHug_bu0Dfz8HZGA4p7e/
 
 fight_id:  a99bd3ff-fc4f-5a5f-9900-099e9e2080fe
 fighters:  Chuck Liddell vs. Tito Ortiz
@@ -3574,6 +3734,11 @@ fight_id:  b3d2048b-4036-5c45-bcbc-589c96fb407a
 fighters:  Anderson Silva vs. Travis Lutter
 event:     UFC 67 - All or Nothing (2007-02-03)
 url:       https://www.paramountplus.com/shows/video/CGW1rCCOrOgcETcrcoJGrcVE9eInpbVT/
+
+fight_id:  b8d18a7f-2000-5e3c-aef6-a45cbdd523a2
+fighters:  Matt Serra vs. Georges St-Pierre
+event:     UFC 69 - Shootout (2007-04-07)
+url:       https://www.paramountplus.com/shows/video/zNtlfBgd2pBz_f2AokWNpMQmqSNuJXWy/
 
 fight_id:  524a6713-e327-58f2-ba31-b5d7ced0c621
 fighters:  Gabriel Gonzaga vs. Mirko Cro Cop
@@ -3625,6 +3790,11 @@ fighters:  Anderson Silva vs. Nate Marquardt
 event:     UFC 73 - Stacked (2007-07-07)
 url:       https://www.paramountplus.com/shows/video/7J3CnLyWitwTfdRf9c7icHr_08yHG1Eb/
 
+fight_id:  bc675c18-e8d8-5b80-bbba-e5a191d3dbf1
+fighters:  Georges St-Pierre vs. Josh Koscheck
+event:     UFC 74 - Respect (2007-08-25)
+url:       https://www.paramountplus.com/shows/video/arlFrv5HKFQ56ALrNBminanzviUbVtNa/
+
 fight_id:  516bf495-602a-58da-9e7a-dbd28da11cc8
 fighters:  Keith Jardine vs. Chuck Liddell
 event:     UFC 76 - Knockout (2007-09-22)
@@ -3634,6 +3804,11 @@ fight_id:  af3b3079-391e-50d5-a258-46a2645d0a7d
 fighters:  Anderson Silva vs. Rich Franklin
 event:     UFC 77 - Hostile Territory (2007-10-20)
 url:       https://www.paramountplus.com/shows/video/6jvJ7fajJBnlpuWutG4XyeHB_U94Z_hd/
+
+fight_id:  f29be9cf-e6ad-5b88-b67c-dfcc6ef734c7
+fighters:  Georges St-Pierre vs. Matt Hughes
+event:     UFC 79 - Nemesis (2007-12-29)
+url:       https://www.paramountplus.com/shows/video/76g_iOULtDYjnMUTXljoRBvLx_mU9vNV/
 
 fight_id:  3fbeaa31-b390-5ccd-96b4-4336377465ba
 fighters:  Chuck Liddell vs. Wanderlei Silva
@@ -3649,6 +3824,11 @@ fight_id:  5132c9e3-ad23-5c76-900f-3ae017820293
 fighters:  Anderson Silva vs. Dan Henderson
 event:     UFC 82 - Pride of a Champion (2008-03-01)
 url:       https://www.paramountplus.com/shows/video/bDBcN0C_W6cBkrA3o1oAqjCJk2rQg3uU/
+
+fight_id:  e4513913-aae9-5b63-aa50-fa940723f260
+fighters:  Georges St-Pierre vs. Matt Serra
+event:     UFC 83 - Serra vs. St. Pierre 2 (2008-04-19)
+url:       https://www.paramountplus.com/shows/video/Rk6CXTY6u_rVzGe6o_J1zN_FWXl4wdIc/
 
 fight_id:  b48799de-df7d-5027-95dd-7dfa2664013b
 fighters:  Forrest Griffin vs. Quinton Jackson
@@ -3675,6 +3855,11 @@ fighters:  Cole Miller vs. Jorge Gurgel
 event:     UFC 86 - Jackson vs. Griffin (2008-07-05)
 url:       https://www.paramountplus.com/shows/video/0hSNLVhM9Zb_GH0z_hCsQ6izc8N49ql7/
 
+fight_id:  b0fe5c9c-aeec-58a4-bcce-c4ebdbc3320e
+fighters:  Georges St-Pierre vs. Jon Fitch
+event:     UFC 87 - Seek and Destroy (2008-08-09)
+url:       https://www.paramountplus.com/shows/video/9uxu_OfS3bLSMPIFeg2ysFX_E4kUhV2q/
+
 fight_id:  ea2cf761-01ae-5872-a15c-86f2bd15c9fd
 fighters:  Brock Lesnar vs. Heath Herring
 event:     UFC 87 - Seek and Destroy (2008-08-09)
@@ -3700,6 +3885,11 @@ fighters:  Brock Lesnar vs. Randy Couture
 event:     UFC 91 - Couture vs. Lesnar (2008-11-15)
 url:       https://www.paramountplus.com/shows/video/is9s5Ejd_8R3vmIyydc319E8d0nZC9es/
 
+fight_id:  48ac3e7f-161f-5ae4-938e-06d2e1708df0
+fighters:  Georges St-Pierre vs. BJ Penn
+event:     UFC 94 - St. Pierre vs. Penn 2 (2009-01-31)
+url:       https://www.paramountplus.com/shows/video/ApKs8WgGwz9tUgNEedOrsvYWhiROnzDq/
+
 fight_id:  a17f4ae5-0153-5c21-987b-6b743a5e875a
 fighters:  Jon Jones vs. Stephan Bonnar
 event:     UFC 94 - St. Pierre vs. Penn 2 (2009-01-31)
@@ -3724,6 +3914,11 @@ fight_id:  482d14d5-b113-5f37-aa16-4debdfd59c5d
 fighters:  Brock Lesnar vs. Frank Mir
 event:     UFC 100 - Lesnar vs. Mir 2 (2009-07-11)
 url:       https://www.paramountplus.com/shows/video/2WvY_eAS29VyTHmsJoqeDjZsjssnj3a1/
+
+fight_id:  696d4701-397d-513a-94f4-6df1a3654c3c
+fighters:  Georges St-Pierre vs. Thiago Alves
+event:     UFC 100 - Lesnar vs. Mir 2 (2009-07-11)
+url:       https://www.paramountplus.com/shows/video/t_UXugtgXQA5w3KjIR5_UD4FSOBicYtm/
 
 fight_id:  b79704a0-f2d7-5b82-ab86-13044ad54afb
 fighters:  Jon Jones vs. Jake O'Brien
@@ -3795,6 +3990,11 @@ fighters:  Brian Kelleher vs. Ode Osbourne  [Main Card]
 event:     UFC 246 - McGregor vs. Cerrone (2020-01-18)
 url:       https://www.paramountplus.com/shows/video/_EyQUEGIG5K2pY7TFLFH6z0lY3jmOZC7/
 
+fight_id:  f33f6d5a-bbd7-53e1-bff8-69d61f597efe
+fighters:  Aleksei Oleinik vs. Maurice Greene  [Main Card]
+event:     UFC 246 - McGregor vs. Cerrone (2020-01-18)
+url:       https://www.paramountplus.com/shows/video/SlmX56oQXz3iaUFrCfMX5o9cXu2QLPQ7/
+
 fight_id:  413ee33a-f7e7-56e3-82ae-6a2419f8394d
 fighters:  Holly Holm vs. Raquel Pennington  [Main Card]
 event:     UFC 246 - McGregor vs. Cerrone (2020-01-18)
@@ -3845,10 +4045,20 @@ fighters:  Alex Oliveira vs. Max Griffin  [Main Card]
 event:     UFC 248 - Adesanya vs. Romero (2020-03-07)
 url:       https://www.paramountplus.com/shows/video/_nADIeIaVT5IuQu_NlM70MS7CW_gDKRj/
 
+fight_id:  55130294-9be1-5ee7-9377-5f92177965e9
+fighters:  Neil Magny vs. Li Jingliang  [Main Card]
+event:     UFC 248 - Adesanya vs. Romero (2020-03-07)
+url:       https://www.paramountplus.com/shows/video/0_AGi3A3DmcqC9XGaOdZOh1cVoGzVcLC/
+
 fight_id:  e88b856c-52c7-51ac-be23-e35db06c0c84
 fighters:  Beneil Dariush vs. Drakkar Klose  [Main Card]
 event:     UFC 248 - Adesanya vs. Romero (2020-03-07)
 url:       https://www.paramountplus.com/shows/video/CVrlYNgqVZLNzVtmS_WGqM1TLSd7PMSB/
+
+fight_id:  3cc0cb8a-7e67-59f9-a163-7c8d3442911e
+fighters:  Zhang Weili vs. Joanna Jedrzejczyk  [Main Card]
+event:     UFC 248 - Adesanya vs. Romero (2020-03-07)
+url:       https://www.paramountplus.com/shows/video/o36Bip2V5pWsvRx3GSyKspmGrrlEgoCT/
 
 fight_id:  a5efb287-5ac7-5d5c-86b6-80d8f69c78cc
 fighters:  Israel Adesanya vs. Yoel Romero  [Main Card]
@@ -4115,6 +4325,11 @@ fighters:  Deiveson Figueiredo vs. Alex Perez  [Main Card]
 event:     UFC 255 - Figueiredo vs. Perez (2020-11-21)
 url:       https://www.paramountplus.com/shows/video/znuCHa7xDMqbyN077k3vcHLTTAeOif3v/
 
+fight_id:  87c4b837-efa3-5378-a4db-8d8f64ba7954
+fighters:  Renato Moicano vs. Rafael Fiziev  [Prelims]
+event:     UFC 256 - Figueiredo vs. Moreno (2020-12-12)
+url:       https://www.paramountplus.com/shows/video/iECX04UoBstgpUocNMtgpAJm7fuKJZfQ/
+
 fight_id:  bd2b3b3f-f299-527f-9561-53be4f9c28a7
 fighters:  Cub Swanson vs. Daniel Pineda  [Prelims]
 event:     UFC 256 - Figueiredo vs. Moreno (2020-12-12)
@@ -4285,6 +4500,11 @@ fighters:  Stipe Miocic vs. Francis Ngannou  [Main Card]
 event:     UFC 260 - Miocic vs. Ngannou 2 (2021-03-27)
 url:       https://www.paramountplus.com/shows/video/R7crE0DsBhVGGorvHwqYQPbjYCzJXSMr/
 
+fight_id:  1d61fc97-1c5d-5c3a-b650-c5c1cb8cf4da
+fighters:  Aoriqileng vs. Jeff Molina  [Prelims]
+event:     UFC 261 - Usman vs. Masvidal 2 (2021-04-24)
+url:       https://www.paramountplus.com/shows/video/9yd_QyE23X3BASeYMiCr04wkM8uYO97M/
+
 fight_id:  7205bbdf-a2d3-51a5-9bac-0281b10adc34
 fighters:  Danaa Batgerel vs. Kevin Natividad  [Prelims]
 event:     UFC 261 - Usman vs. Masvidal 2 (2021-04-24)
@@ -4309,6 +4529,11 @@ fight_id:  9333012b-6c14-5bd3-b53a-b2f28e143657
 fighters:  Valentina Shevchenko vs. Jessica Andrade  [Main Card]
 event:     UFC 261 - Usman vs. Masvidal 2 (2021-04-24)
 url:       https://www.paramountplus.com/shows/video/aje2rPU3NsvTAaQVN3LvIhgppmi4nzaG/
+
+fight_id:  1bacf5cd-a6ba-5187-afb4-161fbc48a408
+fighters:  Zhang Weili vs. Rose Namajunas  [Main Card]
+event:     UFC 261 - Usman vs. Masvidal 2 (2021-04-24)
+url:       https://www.paramountplus.com/shows/video/d6sijWAr1OOmkMsJkyzxGZTuv8ISQ_ng/
 
 fight_id:  5c840774-d6d8-546e-b949-af6b7a9601a2
 fighters:  Kamaru Usman vs. Jorge Masvidal  [Main Card]
@@ -4415,6 +4640,11 @@ fighters:  Karolina Kowalkiewicz vs. Jessica Penne  [Prelims]
 event:     UFC 265 - Lewis vs. Gane (2021-08-07)
 url:       https://www.paramountplus.com/shows/video/Pd1BO_t3ukE7duvsybeL8jZZfznWyLLQ/
 
+fight_id:  6f2e0390-af5b-5787-a1a2-326eeb8b2750
+fighters:  Song Yadong vs. Casey Kenney  [Main Card]
+event:     UFC 265 - Lewis vs. Gane (2021-08-07)
+url:       https://www.paramountplus.com/shows/video/N204KHHwvfcbn1DAt_APGnKX3JLWIusV/
+
 fight_id:  5ad1f0fd-f777-54cf-92f2-a5670d9f2de6
 fighters:  Tecia Torres vs. Angela Hill  [Main Card]
 event:     UFC 265 - Lewis vs. Gane (2021-08-07)
@@ -4470,6 +4700,11 @@ fighters:  Magomed Ankalaev vs. Volkan Oezdemir  [Main Card]
 event:     UFC 267 - Blachowicz vs. Teixeira (2021-10-30)
 url:       https://www.paramountplus.com/shows/video/L8t2iRlrr4zr6tipd7Pph_XFl1FgY1UK/
 
+fight_id:  700fb578-6ea4-5ebf-8fb8-79c5204ad44a
+fighters:  Li Jingliang vs. Khamzat Chimaev  [Main Card]
+event:     UFC 267 - Blachowicz vs. Teixeira (2021-10-30)
+url:       https://www.paramountplus.com/shows/video/yZ_4Bjga_fsY83O0RqX6GL9aVwKrk0Rr/
+
 fight_id:  319fc403-fb67-5090-b482-a93857599fff
 fighters:  Alexander Volkov vs. Marcin Tybura  [Main Card]
 event:     UFC 267 - Blachowicz vs. Teixeira (2021-10-30)
@@ -4499,6 +4734,11 @@ fight_id:  70543ace-7803-5c0b-8ae5-25100be7c526
 fighters:  Frankie Edgar vs. Marlon Vera  [Main Card]
 event:     UFC 268 - Usman vs. Covington 2 (2021-11-06)
 url:       https://www.paramountplus.com/shows/video/ZYLT1ZFgvQ0qMhUY7PlULPmE8HgXgCCw/
+
+fight_id:  c514833d-1219-5834-a693-d939aec71766
+fighters:  Rose Namajunas vs. Zhang Weili  [Main Card]
+event:     UFC 268 - Usman vs. Covington 2 (2021-11-06)
+url:       https://www.paramountplus.com/shows/video/WpIrt3UHeDNOHYYpNix2wIF8AOIhq_Zx/
 
 fight_id:  d9f25c84-b117-58d1-b2f7-58067a9e87f8
 fighters:  Kamaru Usman vs. Colby Covington  [Main Card]
@@ -4580,6 +4820,11 @@ fighters:  Bobby Green vs. Nasrat Haqparast  [Main Card]
 event:     UFC 271 - Adesanya vs. Whittaker 2 (2022-02-12)
 url:       https://www.paramountplus.com/shows/video/aKXg2kar0YRH45qgsJgC4QQReVWkuWYZ/
 
+fight_id:  0da30c75-ade2-5932-beec-78dd1636bfe8
+fighters:  Alexander Hernandez vs. Renato Moicano  [Main Card]
+event:     UFC 271 - Adesanya vs. Whittaker 2 (2022-02-12)
+url:       https://www.paramountplus.com/shows/video/Db4C3_lr8CQmNZeau_HZz3W3F5EijODE/
+
 fight_id:  c297870f-8f8d-579c-b8f6-1c749387542c
 fighters:  Jared Cannonier vs. Derek Brunson  [Main Card]
 event:     UFC 271 - Adesanya vs. Whittaker 2 (2022-02-12)
@@ -4619,6 +4864,11 @@ fight_id:  75adebdc-5db3-54df-8007-51fbecc3f457
 fighters:  Edson Barboza vs. Bryce Mitchell  [Main Card]
 event:     UFC 272 - Covington vs. Masvidal (2022-03-05)
 url:       https://www.paramountplus.com/shows/video/EK6dCkZhdAEhgXSaCmiA9y7nwoBkB_eo/
+
+fight_id:  3db728d3-7f8e-5c53-8d1d-d08339203eaf
+fighters:  Rafael Dos Anjos vs. Renato Moicano  [Main Card]
+event:     UFC 272 - Covington vs. Masvidal (2022-03-05)
+url:       https://www.paramountplus.com/shows/video/LLTEe_6ecBbjNddyDsNXLcY4zKxq8lNl/
 
 fight_id:  40e42ce2-9652-5500-ad9d-a3aee80766f4
 fighters:  Colby Covington vs. Jorge Masvidal  [Main Card]
@@ -4690,6 +4940,11 @@ fighters:  Charles Oliveira vs. Justin Gaethje  [Main Card]
 event:     UFC 274 - Oliveira vs. Gaethje (2022-05-07)
 url:       https://www.paramountplus.com/shows/video/_tVnLFY_MIYONahJAryhNHk7mLgDWoEI/
 
+fight_id:  1f1aff33-07bd-5143-a4dd-871fcf0aa688
+fighters:  Maheshate vs. Steve Garcia  [Prelims]
+event:     UFC 275 - Teixeira vs. Prochazka (2022-06-12)
+url:       https://www.paramountplus.com/shows/video/367U930v2VDK7YBbOaVb7pdlOHpOdhOI/
+
 fight_id:  0b16e1f1-09eb-5279-b1bb-aa81474ca243
 fighters:  Jack Della Maddalena vs. Ramazan Emeev  [Main Card]
 event:     UFC 275 - Teixeira vs. Prochazka (2022-06-12)
@@ -4699,6 +4954,11 @@ fight_id:  b98a7370-b12c-59aa-9317-3249febf2f82
 fighters:  Andre Fialho vs. Jake Matthews  [Main Card]
 event:     UFC 275 - Teixeira vs. Prochazka (2022-06-12)
 url:       https://www.paramountplus.com/shows/video/VcJDGT2pFu34O3Ef6qRfIMfCGBNz6_M_/
+
+fight_id:  b8161b8b-2caf-59ef-85b1-1279ad311157
+fighters:  Zhang Weili vs. Joanna Jedrzejczyk  [Main Card]
+event:     UFC 275 - Teixeira vs. Prochazka (2022-06-12)
+url:       https://www.paramountplus.com/shows/video/1EVKCfHrzpBjL9NOV1A3jI9ExcyOHVbf/
 
 fight_id:  56af285f-5713-56bf-b46d-fe10dc6a9abb
 fighters:  Valentina Shevchenko vs. Taila Santos  [Main Card]
@@ -4790,6 +5050,11 @@ fighters:  Tyson Pedro vs. Harry Hunsucker  [Main Card]
 event:     UFC 278 - Usman vs. Edwards 2 (2022-08-20)
 url:       https://www.paramountplus.com/shows/video/GOukl4fnBDVdTEJidbeTUeO6jmTyePJB/
 
+fight_id:  da990547-eba3-5849-862c-f1a5fd4c1dd6
+fighters:  Wu Yanan vs. Lucie Pudilova  [Main Card]
+event:     UFC 278 - Usman vs. Edwards 2 (2022-08-20)
+url:       https://www.paramountplus.com/shows/video/4CiCSzaCpvHbVcQGP4Z3G9Er0Y1aDS0T/
+
 fight_id:  d4604496-e086-50a0-a473-e311a8bd9203
 fighters:  Jose Aldo vs. Merab Dvalishvili  [Main Card]
 event:     UFC 278 - Usman vs. Edwards 2 (2022-08-20)
@@ -4824,6 +5089,11 @@ fight_id:  fb9ad4a3-ab1d-51b9-9cf4-03a3f944efff
 fighters:  Irene Aldana vs. Macy Chiasson  [Main Card]
 event:     UFC 279 - Diaz vs. Ferguson (2022-09-10)
 url:       https://www.paramountplus.com/shows/video/vgr10a93Km8CPeBYPcKcIUH9e0UZQd73/
+
+fight_id:  82925932-959c-549f-a54a-1ad481b6e04d
+fighters:  Li Jingliang vs. Daniel Rodriguez  [Main Card]
+event:     UFC 279 - Diaz vs. Ferguson (2022-09-10)
+url:       https://www.paramountplus.com/shows/video/xpTa_pSfMaPprk98RaSJCIi6oMhfSh_o/
 
 fight_id:  6821a0d0-7dd5-5702-b3b5-d7c6e3c03288
 fighters:  Khamzat Chimaev vs. Kevin Holland  [Main Card]
@@ -4865,6 +5135,11 @@ fighters:  Charles Oliveira vs. Islam Makhachev  [Main Card]
 event:     UFC 280 - Oliveira vs. Makhachev (2022-10-22)
 url:       https://www.paramountplus.com/shows/video/oSPK6Jing1N0l7vMjKi4p9Vjxv6VQY8i/
 
+fight_id:  72defcd8-1477-5d7e-ab8f-24f8b78fe074
+fighters:  Brad Riddell vs. Renato Moicano  [Prelims]
+event:     UFC 281 - Adesanya vs. Pereira (2022-11-12)
+url:       https://www.paramountplus.com/shows/video/kzuinED7z2gBq1us5Y4o4z4CincdJgxu/
+
 fight_id:  b8a0710b-d756-5650-945b-ec30069f9ac8
 fighters:  Dan Hooker vs. Claudio Puelles  [Main Card]
 event:     UFC 281 - Adesanya vs. Pereira (2022-11-12)
@@ -4879,6 +5154,11 @@ fight_id:  7d92cadf-b5b3-572e-b79e-fe91288fdd11
 fighters:  Dustin Poirier vs. Michael Chandler  [Main Card]
 event:     UFC 281 - Adesanya vs. Pereira (2022-11-12)
 url:       https://www.paramountplus.com/shows/video/n_1zYsroEqDssFUurAOHP43tKAhicbeQ/
+
+fight_id:  7c064074-a644-5f15-ab0a-0161555e652f
+fighters:  Carla Esparza vs. Zhang Weili  [Main Card]
+event:     UFC 281 - Adesanya vs. Pereira (2022-11-12)
+url:       https://www.paramountplus.com/shows/video/7HHXpxxp9wCLxogLdhDPwjR_pYr6u0hR/
 
 fight_id:  82443bb1-2746-5b82-92f1-2bcf37e8997f
 fighters:  Israel Adesanya vs. Alex Pereira  [Main Card]
@@ -5020,6 +5300,11 @@ fighters:  Jon Jones vs. Ciryl Gane  [Main Card]
 event:     UFC 285 - Jones vs. Gane (2023-03-04)
 url:       https://www.paramountplus.com/shows/video/xuUONUgvD5NQ0Qt_OnXpesZq_4WL2yb2/
 
+fight_id:  a61c91c8-ab34-5b5b-aa65-621b11fbf545
+fighters:  Ian Garry vs. Song Kenan  [Prelims]
+event:     UFC 285 - Jones vs. Gane (2023-03-04)
+url:       https://www.paramountplus.com/shows/video/ALVE01KXP4FJY1EK3RRB1EPGZ0TGC1/
+
 fight_id:  91a0e69b-0263-54b0-8f7c-9d3d9ed83d91
 fighters:  Jake Hadley vs. Malcolm Gordon  [Prelims]
 event:     UFC 286 - Edwards vs. Usman 3 (2023-03-18)
@@ -5099,6 +5384,11 @@ fight_id:  b0f28a9f-3516-5c30-a5c3-37eb05d5a452
 fighters:  Movsar Evloev vs. Diego Lopes  [Main Card]
 event:     UFC 288 - Sterling vs. Cejudo (2023-05-06)
 url:       https://www.paramountplus.com/shows/video/lbW40IISwSEQEsinuJYel4JVuJiqFRhp/
+
+fight_id:  524bdfbe-b04d-5fde-b2f7-d312abd7b93a
+fighters:  Jessica Andrade vs. Yan Xiaonan  [Main Card]
+event:     UFC 288 - Sterling vs. Cejudo (2023-05-06)
+url:       https://www.paramountplus.com/shows/video/WojxxZaKQFcytAHC23lS_hDl6n4v5I5I/
 
 fight_id:  728105a3-5922-5239-a99d-d38f55d9d31a
 fighters:  Belal Muhammad vs. Gilbert Burns  [Main Card]
@@ -5244,6 +5534,11 @@ fight_id:  ef9954c6-dbde-583d-aa0a-bf2552b85ce4
 fighters:  Neil Magny vs. Ian Garry  [Main Card]
 event:     UFC 292 - Sterling vs. O'Malley (2023-08-19)
 url:       https://www.paramountplus.com/shows/video/7vd8T76GWwuHbCRb1HP_CcrVl54ErFKG/
+
+fight_id:  70f1b3cc-8cf6-5f03-ae0b-3c5871f4b2b0
+fighters:  Zhang Weili vs. Amanda Lemos  [Main Card]
+event:     UFC 292 - Sterling vs. O'Malley (2023-08-19)
+url:       https://www.paramountplus.com/shows/video/8YNBxHIiItyDp6wlf2Yp7IA9UGGHIqTJ/
 
 fight_id:  a1d1505c-8edf-5b76-a415-d317400603a2
 fighters:  Aljamain Sterling vs. Sean O'Malley  [Main Card]
@@ -5440,6 +5735,11 @@ fighters:  Sean Strickland vs. Dricus Du Plessis  [Main Card]
 event:     UFC 297 - Strickland vs. Du Plessis (2024-01-20)
 url:       https://www.paramountplus.com/shows/video/zrtrjRCoVkVyDvdgnTZhkNfiy17uAiJU/
 
+fight_id:  66aec264-2acc-528a-a75b-7029bcb00d40
+fighters:  Zhang Mingyang vs. Brendson Ribeiro  [Prelims]
+event:     UFC 298 - Volkanovski vs. Topuria (2024-02-17)
+url:       https://www.paramountplus.com/shows/video/OIBiNlnjFcNRnYzB3BAeK4WZVSV6i209/
+
 fight_id:  9cb4faa9-565e-51cf-a1a4-3508db953481
 fighters:  Marcos Rogerio de Lima vs. Junior Tafa  [Prelims]
 event:     UFC 298 - Volkanovski vs. Topuria (2024-02-17)
@@ -5490,6 +5790,11 @@ fighters:  Curtis Blaydes vs. Jailton Almeida  [Prelims]
 event:     UFC 299 - O'Malley vs. Vera 2 (2024-03-09)
 url:       https://www.paramountplus.com/shows/video/M4Galq_ZYGyucNqufcSA5WTNCnGVq5UB/
 
+fight_id:  35290ef5-7f10-55ec-bd46-887cb4d20700
+fighters:  Petr Yan vs. Song Yadong  [Main Card]
+event:     UFC 299 - O'Malley vs. Vera 2 (2024-03-09)
+url:       https://www.paramountplus.com/shows/video/bf37sVlRIvCk8i1k98STgvOT_jLG2xzn/
+
 fight_id:  8e87d704-8a73-58b6-99c5-89bdce56a62e
 fighters:  Gilbert Burns vs. Jack Della Maddalena  [Main Card]
 event:     UFC 299 - O'Malley vs. Vera 2 (2024-03-09)
@@ -5534,6 +5839,11 @@ fight_id:  58c5ca6f-b3c3-5873-b535-3e6b4dd089ce
 fighters:  Justin Gaethje vs. Max Holloway  [Main Card]
 event:     UFC 300 - Pereira vs. Hill (2024-04-13)
 url:       https://www.paramountplus.com/shows/video/aOWkMET_rnciLP0xncgV76sIXcG3h8CT/
+
+fight_id:  fb199661-0e3b-5728-a196-1a0690581c92
+fighters:  Zhang Weili vs. Yan Xiaonan  [Main Card]
+event:     UFC 300 - Pereira vs. Hill (2024-04-13)
+url:       https://www.paramountplus.com/shows/video/0NCXofZzevep6S_XAcsafmcQYEKyUh8N/
 
 fight_id:  984178d5-aa17-52bf-a7fb-a5db07606969
 fighters:  Alex Pereira vs. Jamahal Hill  [Main Card]
@@ -5704,6 +6014,11 @@ fight_id:  d67ce9cc-8c53-580f-aedf-b0ff3b57bd26
 fighters:  Junior Tafa vs. Valter Walker  [Prelims]
 event:     UFC 305 - Du Plessis vs. Adesanya (2024-08-17)
 url:       https://www.paramountplus.com/shows/video/vsz4HueklaDiOhOM8yVzEa4_2ZHF06Rn/
+
+fight_id:  cf3245c2-1578-5831-ba0c-ffa7be1bf943
+fighters:  Li Jingliang vs. Carlos Prates  [Main Card]
+event:     UFC 305 - Du Plessis vs. Adesanya (2024-08-17)
+url:       https://www.paramountplus.com/shows/video/QWvhm_awHAvgez4xL1cKTXM_QnRKdgwR/
 
 fight_id:  462973f3-d67e-5d0a-bdb2-641f33539947
 fighters:  Tai Tuivasa vs. Jairzinho Rozenstruik  [Main Card]
@@ -5930,6 +6245,11 @@ fighters:  Karol Rosa vs. Ailin Perez  [Prelims]
 event:     UFC 311 - Makhachev vs. Moicano (2025-01-18)
 url:       https://www.paramountplus.com/shows/video/zSGSGed_Ab_HEb1pI_5VCvvXNHkVOzpC/
 
+fight_id:  86814264-f21f-5f61-81b2-9e7b353c32ce
+fighters:  Islam Makhachev vs. Renato Moicano  [Main Card]
+event:     UFC 311 - Makhachev vs. Moicano (2025-01-18)
+url:       https://www.paramountplus.com/shows/video/lF03sF8I1NgWWzbDPzp4NxcFsS6t79Ai/
+
 fight_id:  77ab1570-2235-5dc0-8970-8e7fc3645ad6
 fighters:  Zachary Reese vs. Azamat Bekoev  [Prelims]
 event:     UFC 311 - Makhachev vs. Moicano (2025-01-18)
@@ -5954,6 +6274,11 @@ fight_id:  afb2543a-5a19-59d5-8c6f-23e7862fbf7a
 fighters:  Justin Tafa vs. Tallison Teixeira  [Main Card]
 event:     UFC 312 - Du Plessis vs. Strickland 2 (2025-02-08)
 url:       https://www.paramountplus.com/shows/video/IweXn5m6mWsemsj1HzEkrAaajKh_GNRw/
+
+fight_id:  be9cb88e-9f38-50ba-8d45-e64d1f642679
+fighters:  Zhang Weili vs. Tatiana Suarez  [Main Card]
+event:     UFC 312 - Du Plessis vs. Strickland 2 (2025-02-08)
+url:       https://www.paramountplus.com/shows/video/qT8q4Ef7XCDAH3b164diRStz9mtu4CxZ/
 
 fight_id:  755c51a2-66b6-5822-bbe3-1e33701a28bb
 fighters:  Dricus Du Plessis vs. Sean Strickland  [Main Card]
@@ -6009,6 +6334,11 @@ fight_id:  1cb36a6b-bc85-5abb-8fd6-d5ad48830f5f
 fighters:  Darren Elkins vs. Julian Erosa  [Prelims]
 event:     UFC 314 - Volkanovski vs. Lopes (2025-04-12)
 url:       https://www.paramountplus.com/shows/video/NHyyobnvarhIMT5qOHDVvuKJDwfriJEr/
+
+fight_id:  ae037eb8-4779-583a-b7e0-29acb7f29e48
+fighters:  Yan Xiaonan vs. Virna Jandiroba  [Prelims]
+event:     UFC 314 - Volkanovski vs. Lopes (2025-04-12)
+url:       https://www.paramountplus.com/shows/video/UYdkdFaZepivs9ZvQyRUVw9laE66__NJ/
 
 fight_id:  4a099e49-e10b-51db-8225-5feefcc89fea
 fighters:  Nikita Krylov vs. Dominick Reyes  [Main Card]
@@ -6130,6 +6460,11 @@ fighters:  Payton Talbott vs. Felipe Lima  [Main Card]
 event:     UFC 317 - Topuria vs. Oliveira (2025-06-28)
 url:       https://www.paramountplus.com/shows/video/6m43GVmYFyqu37oL7UQ3smnSjDQDwmyW/
 
+fight_id:  16b4f675-57eb-514d-8719-b7b3b02f79ba
+fighters:  Beneil Dariush vs. Renato Moicano  [Main Card]
+event:     UFC 317 - Topuria vs. Oliveira (2025-06-28)
+url:       https://www.paramountplus.com/shows/video/_vpVbLDWH__GP4iYqToEQ0UPyy4VL6_j/
+
 fight_id:  d10bd9a8-cb29-5a67-9d04-25994cb44760
 fighters:  Brandon Royval vs. Joshua Van  [Main Card]
 event:     UFC 317 - Topuria vs. Oliveira (2025-06-28)
@@ -6219,6 +6554,11 @@ fight_id:  da0a875e-fc80-5adc-ba2c-a7af2cf6725c
 fighters:  Edmen Shahbazyan vs. André Muniz  [Prelims]
 event:     UFC 320 - Ankalaev vs. Pereira 2 (2025-10-04)
 url:       https://www.paramountplus.com/shows/video/zTT8spMoaMvl_0PbCMZRxgoFKdMOFo86/
+
+fight_id:  42b39689-0819-585a-9455-0f59d5f01c5a
+fighters:  Daniel Santos vs. Yoo Joo-sang  [Prelims]
+event:     UFC 320 - Ankalaev vs. Pereira 2 (2025-10-04)
+url:       https://www.paramountplus.com/shows/video/b_JApoWXcO2i6w_5SbCuTrEttJeKwvoV/
 
 fight_id:  4e85200e-18b3-5ea6-b639-3c088267af27
 fighters:  Ateba Abega Gautier vs. Tre'ston Vines  [Prelims]
@@ -6320,6 +6660,11 @@ fighters:  Sean Brady vs. Michael Morales  [Main Card]
 event:     UFC 322 - Della Maddalena vs. Makhachev (2025-11-15)
 url:       https://www.paramountplus.com/shows/video/jwUAnE9tkFJvWRPaDILRPaxoFd9Z_vUC/
 
+fight_id:  5ad5c0bf-09cd-5785-a83c-b15de0570d55
+fighters:  Valentina Shevchenko vs. Zhang Weili  [Main Card]
+event:     UFC 322 - Della Maddalena vs. Makhachev (2025-11-15)
+url:       https://www.paramountplus.com/shows/video/ROosagCKLQ47bdgnWqGhlK3XiuquS_NQ/
+
 fight_id:  43c4d4c2-cb40-5cd8-9c88-9f660010f911
 fighters:  Della Maddalena vs. Makhachev  [Main Card]
 event:     UFC 322 - Della Maddalena vs. Makhachev (2025-11-15)
@@ -6369,6 +6714,16 @@ fight_id:  737d7350-2e97-54f9-b5ac-bbd40afaff33
 fighters:  Justin Gaethje vs. Paddy Pimblett
 event:     UFC 324 - Gaethje vs. Pimblett (2026-01-24)
 url:       https://www.paramountplus.com/shows/video/0iItSBuqTcFJNyi1O00WkhsgKmQZJPU7/
+
+fight_id:  ee7f4b3e-718a-57c2-9651-97cc3ef23011
+fighters:  Sean O'Malley vs. Song Yadong
+event:     UFC 324 - Gaethje vs. Pimblett (2026-01-24)
+url:       https://www.paramountplus.com/shows/video/HGpSLTCnjxsAfiK4NT1pJvkJ50oatGAH/
+
+fight_id:  14ea0587-a407-5814-b063-4f342c44f295
+fighters:  Waldo Cortes Acosta vs. Derrick Lewis
+event:     UFC 324 - Gaethje vs. Pimblett (2026-01-24)
+url:       https://www.paramountplus.com/shows/video/RsB6TaVBlteNWIFOfPR4ZrZGG1uze51D/
 
 fight_id:  23fbdfe9-10bf-5699-83ba-9234cb3d42af
 fighters:  Natalia Silva vs. Rose Namajunas
@@ -6455,10 +6810,25 @@ fighters:  Jonathan Micallef vs. Oban Elliott  [Prelims]
 event:     UFC 325 - Volkanovski vs. Lopes 2 (2026-01-31)
 url:       https://www.paramountplus.com/shows/video/EgQaH0nLedGLF60L1BErScTe11UuDM5M/
 
+fight_id:  67975e2a-e9ad-56c0-a452-21677777a0f2
+fighters:  Kaan Ofli vs. Yi Zha  [Prelims]
+event:     UFC 325 - Volkanovski vs. Lopes 2 (2026-01-31)
+url:       https://www.paramountplus.com/shows/video/bsXNc0WpOmQujCJdWCjmeYN5JB_ME372/
+
+fight_id:  630d55c4-e059-5edd-adb4-be11a98224fc
+fighters:  Kim Sang-wook vs. Dom Mar Fan  [Prelims]
+event:     UFC 325 - Volkanovski vs. Lopes 2 (2026-01-31)
+url:       https://www.paramountplus.com/shows/video/EdKEVRBOv_6rGAPyBhcCUQSrPORTDGhU/
+
 fight_id:  6582f674-0371-5dfd-8bca-71dd9739e1b2
 fighters:  Keiichiro Nakamura vs. Sebastian Szalay  [Prelims]
 event:     UFC 325 - Volkanovski vs. Lopes 2 (2026-01-31)
 url:       https://www.paramountplus.com/shows/video/fy7apy_MwIxOXA0D_CbQaEITPR_ls8CS/
+
+fight_id:  28767f99-358c-5dfe-9ff2-efaf1efad080
+fighters:  Sulang Rangbo vs. Lawrence Lui  [Prelims]
+event:     UFC 325 - Volkanovski vs. Lopes 2 (2026-01-31)
+url:       https://www.paramountplus.com/shows/video/44aMFUxlMv0sBJ9M8KbXBwbO8BAFPMn4/
 
 fight_id:  2c68a2ce-2785-5050-88ef-36ddb210fe65
 fighters:  Max Holloway vs. Charles Oliveira
@@ -6485,6 +6855,11 @@ fighters:  Gregory Rodrigues vs. Brunno Ferreira
 event:     UFC 326 - Holloway vs. Oliveira 2 (2026-03-07)
 url:       https://www.paramountplus.com/shows/video/70qCMfqMzc6rks_nkSvUnlkkjpb2wPpe/
 
+fight_id:  09c4a84d-ef03-5dd5-890e-3ac4a6180d14
+fighters:  Cody Garbrandt vs. Xiao Long  [Prelims]
+event:     UFC 326 - Holloway vs. Oliveira 2 (2026-03-07)
+url:       https://www.paramountplus.com/shows/video/8qo8m30xKdoQ_90pfmJ9Pglj5UzP5bZ1/
+
 fight_id:  bd9640c9-ac51-5eb9-ae4e-99a06d348610
 fighters:  Donte Johnson vs. Cody Brundage  [Prelims]
 event:     UFC 326 - Holloway vs. Oliveira 2 (2026-03-07)
@@ -6499,6 +6874,11 @@ fight_id:  63811c26-cad8-567c-8e42-bb88c631aef5
 fighters:  Cody Durden vs. Nyamjargal Tumendemberel  [Prelims]
 event:     UFC 326 - Holloway vs. Oliveira 2 (2026-03-07)
 url:       https://www.paramountplus.com/shows/video/kpS2S4jhQLleRdd7vSjjHyHrlHOrmZZ0/
+
+fight_id:  82b65442-369f-570d-bbdb-8f06941cd105
+fighters:  Sumudaerji vs. Jesus Aguilar  [Prelims]
+event:     UFC 326 - Holloway vs. Oliveira 2 (2026-03-07)
+url:       https://www.paramountplus.com/shows/video/avER83_zZMa7D7d6W6ez_VFXNtfTKW_h/
 
 fight_id:  7f0eae48-891d-51fa-9d1f-24e01e8675d4
 fighters:  Rafael Tobias vs. Diyar Nurgozhay  [Prelims]
@@ -6579,6 +6959,11 @@ fight_id:  55152587-f50c-55a0-832b-6365c91c29f9
 fighters:  Joshua Van vs. Tatsuro Taira
 event:     UFC 328 - Chimaev vs. Strickland (2026-05-09)
 url:       https://www.paramountplus.com/shows/video/ALVE01KQA625YVEKWV89M58DM0K2HC/
+
+fight_id:  732127f0-d799-54f8-9684-36059fcebfef
+fighters:  Alexander Volkov vs. Waldo Cortes Acosta
+event:     UFC 328 - Chimaev vs. Strickland (2026-05-09)
+url:       https://www.paramountplus.com/shows/video/ALVE01KQA62KK4E06TS0FZHTMEHSN8/
 
 fight_id:  6af28722-bdbc-55f8-ac89-32cf2894499e
 fighters:  Sean Brady vs. Joaquin Buckley
@@ -6674,6 +7059,11 @@ fight_id:  a0042803-413c-5482-aed9-fefba7b071de
 fighters:  Luke Riley vs. Kai Kamaka III  [Prelims]
 event:     UFC 329 - McGregor vs. Holloway 2 (2026-07-11)
 url:       https://www.paramountplus.com/shows/video/ALVE01KW2D8BA5EC8RK63EYPHBQ5BX/
+
+fight_id:  80f38a14-6adb-5af7-b2d5-e12cc96e7d13
+fighters:  Tracy Cortez vs. Wang Cong  [Prelims]
+event:     UFC 329 - McGregor vs. Holloway 2 (2026-07-11)
+url:       https://www.paramountplus.com/shows/video/ALVE01KW2D8C58E9GTKBZ21ZRZXM8C/
 
 fight_id:  65bb96bb-ca4d-551d-a2a0-fc08e635cbda
 fighters:  Damian Pinas vs. Cesar Almeida  [Prelims]
@@ -8094,161 +8484,96 @@ clip:      UFC 330: Makhachev vs Machado Garry - All The Fights
 url:       https://www.paramountplus.com/shows/video/ALVE01KZS1ZKVRE6V8BRJM6PR1TQGZ/
 
 
-UNMATCHED (209)
+UNMATCHED (101)
 --------------------------------------------------------------------------------
 ambiguous(2 fights)    | Conor McGregor vs. Max Holloway | Apr 17, 2013 | https://www.paramountplus.com/shows/video/fFEoi9GV07_bxa3mELUIl4OexhNMaO9J/
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
-no_fighter(Yan Xiaonan) | Mackenzie Dern vs. Yan Xiaonan | Oct 1, 2022 | https://www.paramountplus.com/shows/video/m4hObKJjO0ABlMFJdF4bF54U4ht34Jt8/
 no_fighter(Jose Montanha) | Louie Sutherland vs. Jose Montanha | Aug 8, 2026 | https://www.paramountplus.com/shows/video/ALVE01KYHV6Z1RE13RW3YMTAB1725W/
-no_fighter(Song Yadong) | Song Yadong vs. Deiveson Figueiredo | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XSYNE408AP0SGQB9P3VX/
-no_fighter(Zhang Mingyang) | Zhang Mingyang vs. Alonzo Menifield | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XRG8ENWS4MGFXEFD14R5/
-no_fighter(Sumudaerji) | Alex Perez vs. Sumudaerji | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XRFZE8R8HRDCQZXKVZ3A/
-no_fight               | Ding Meng vs. Jose Souza | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XRN7EJTAY9335NB4AHKC/
-no_fighter(Aoriqileng) | Aoriqileng vs. Cody Haddon | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XRM3EFMV6Q1NC6NW7CMD/
-no_fighter(Xiong Jingnan) | Angela Hill vs. Xiong Jingnan | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XV4QEM1BTSBANEE44DXH/
-no_fighter(Zhu Kangjie) | Zhu Kangjie vs. Rodrigo Vera | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KSN1B1HJEBYR145T4NTC54KF/
 no_fighter(Loma Lookboonmee) | Loma Lookboonmee vs. Jaqueline Amorim | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XV6PEVQ8PZ5NMENY9DD0/
-no_fighter(Marcus Buchecha) | Marcus Buchecha vs. Ryan Spann | Apr 25, 2026 | https://www.paramountplus.com/shows/video/ALVE01KP662P8ZESDSXN2TMB4XR650/
-no_fighter(Daria Zhelezniakova) | Melissa Croden vs. Daria Zhelezniakova | Apr 18, 2026 | https://www.paramountplus.com/shows/video/ALVE01KNMQY2ESE63SB11DYAVEXQ2R/
-no_fight               | Renato Moicano vs. Chris Duncan | Apr 4, 2026 | https://www.paramountplus.com/shows/video/ALVE01KMGNG8H3EA5AH3EEW6HHM8SR/
-no_fighter(Wang Cong)  | Wang Cong vs. Eduarda Moura | Feb 7, 2026 | https://www.paramountplus.com/shows/video/paafSVGNlbe5MiNfYaYi4DG7Qs_Hizvs/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Dan Hardy | Mar 27, 2010 | https://www.paramountplus.com/shows/video/Inlzq6QOqiFM_MqsvLTxUbOsltKuwnnv/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Josh Koscheck | Dec 11, 2010 | https://www.paramountplus.com/shows/video/wdB9Ue8t8NQOa_u5LNrkbeEPktqLRxGc/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Jake Shields | Apr 30, 2011 | https://www.paramountplus.com/shows/video/tHpXCdb33n2K82NkwuCoIFzmHFIoddHI/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Carlos Condit | Nov 17, 2012 | https://www.paramountplus.com/shows/video/5psKnJCUCHbF_fc38sdWLC38_gZJDf0f/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Nick Diaz | Mar 16, 2013 | https://www.paramountplus.com/shows/video/0jxvSTRhgcNnwOManxuuL_Z_BNSegELv/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Johny Hendricks | Nov 6, 2013 | https://www.paramountplus.com/shows/video/hXSZiuRokKzoC2WopF5wN2bf7mK38CBu/
 no_fight               | Amanda Cooper vs. Cynthia Calvillo | Mar 4, 2017 | https://www.paramountplus.com/shows/video/W39sAZXDy6EQpOOeSdZX42wh2DFJyRKk/
 no_fight               | Antonio Carlos Junior vs. Eric Spicely | Jun 3, 2017 | https://www.paramountplus.com/shows/video/3uBFku_oMooJlzeM4EHZYkg5sLQvrLGX/
-no_fighter(Georges St-Pierre) | Michael Bisping vs. Georges St-Pierre | Nov 4, 2017 | https://www.paramountplus.com/shows/video/pNOHvk8gQ1U3F5IcTM_d35M_VqLluEl_/
-no_fighter(Li Jingliang) | Jake Matthews vs. Li Jingliang | Feb 10, 2018 | https://www.paramountplus.com/shows/video/GL_xCIsP5H9tS9SNjU6yTZEJfqi3dcOC/
 no_fight               | Mackenzie Dern vs. Amanda Cooper | May 12, 2018 | https://www.paramountplus.com/shows/video/sq_IPEcCTgt3RtrMK1vW_PNYWq_ZTUeA/
-no_fighter(Aleksei Oleinik) | Aleksei Oleinik vs. Junior Albini | May 12, 2018 | https://www.paramountplus.com/shows/video/Q6TwJlhTCy8xUiQkGZoLrtY2JLLO8dyC/
-no_fighter(Zhang Weili) | Tecia Torres vs. Zhang Weili | Mar 2, 2019 | https://www.paramountplus.com/shows/video/lLwYH6ia9yC_4j_r4kwVh43ZNp6OoxU2/
-no_fighter(Song Yadong) | Alejandro Perez vs. Song Yadong | Jul 6, 2019 | https://www.paramountplus.com/shows/video/248Jzguo6HIRPhHYKSlLI1OFdmSMVOiM/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Karo Parisyan | Jan 31, 2004 | https://www.paramountplus.com/shows/video/IfcHVbWQqfDHNzAT3KP3eI0ZeWpFJOra/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Jay Hieron | Jun 19, 2004 | https://www.paramountplus.com/shows/video/k_QQHwK1SQ0qzniuAL5ls791v3GNrsRa/
-no_fighter(Georges St-Pierre) | Matt Hughes vs. Georges St-Pierre | Oct 22, 2004 | https://www.paramountplus.com/shows/video/Zhk_bgaF_RU3eNCjozs1ja6H7A9uCDwe/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Jason Miller | Apr 16, 2005 | https://www.paramountplus.com/shows/video/kuH8HnB4j_KODTI03moo8eHpzU5mvtZh/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Frank Trigg | Aug 20, 2005 | https://www.paramountplus.com/shows/video/_IMVGqUiLZ334Ai_y6roMYTNJGznRjtN/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Sean Sherk | Nov 19, 2005 | https://www.paramountplus.com/shows/video/sn7Q7T2uYbHvRpxU91ktb3OR8D6wi49_/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. BJ Penn | Mar 4, 2006 | https://www.paramountplus.com/shows/video/wzkYQ4AsZZTJaTP7P8zO4mRrZ7ND9RVl/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Matt Hughes | Nov 18, 2006 | https://www.paramountplus.com/shows/video/Cabql9xOOIofcHug_bu0Dfz8HZGA4p7e/
-no_fighter(Georges St-Pierre) | Matt Serra vs. Georges St-Pierre | Apr 7, 2007 | https://www.paramountplus.com/shows/video/zNtlfBgd2pBz_f2AokWNpMQmqSNuJXWy/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Josh Koscheck | Aug 25, 2007 | https://www.paramountplus.com/shows/video/arlFrv5HKFQ56ALrNBminanzviUbVtNa/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Matt Hughes | Dec 29, 2007 | https://www.paramountplus.com/shows/video/76g_iOULtDYjnMUTXljoRBvLx_mU9vNV/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Matt Serra | Apr 19, 2008 | https://www.paramountplus.com/shows/video/Rk6CXTY6u_rVzGe6o_J1zN_FWXl4wdIc/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Jon Fitch | Aug 9, 2008 | https://www.paramountplus.com/shows/video/9uxu_OfS3bLSMPIFeg2ysFX_E4kUhV2q/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. BJ Penn | Jan 31, 2009 | https://www.paramountplus.com/shows/video/ApKs8WgGwz9tUgNEedOrsvYWhiROnzDq/
-no_fighter(Georges St-Pierre) | Georges St-Pierre vs. Thiago Alves | Jul 11, 2009 | https://www.paramountplus.com/shows/video/t_UXugtgXQA5w3KjIR5_UD4FSOBicYtm/
 EVENT no_event_match('UFC at the White House: Topuria vs. Gaethje') | UFC at the White House: Topuria vs. Gaethje - All The Fights | Jun 14, 2026 | https://www.paramountplus.com/shows/video/ALVE01KTQ07CRAECGT3CDCMB7FPFE8/
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 7
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 6
@@ -8257,51 +8582,8 @@ PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 4
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 3
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 1
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 2
-no_fighter(Aleksei Oleinik) | Aleksei Oleinik vs. Maurice Greene | Jan 18, 2020 | https://www.paramountplus.com/shows/video/SlmX56oQXz3iaUFrCfMX5o9cXu2QLPQ7/
-no_fighter(Li Jingliang) | Neil Magny vs. Li Jingliang | Mar 7, 2020 | https://www.paramountplus.com/shows/video/0_AGi3A3DmcqC9XGaOdZOh1cVoGzVcLC/
-no_fighter(Zhang Weili) | Zhang Weili vs. Joanna Jedrzejczyk | Mar 7, 2020 | https://www.paramountplus.com/shows/video/o36Bip2V5pWsvRx3GSyKspmGrrlEgoCT/
 no_fight               | Brad Riddell vs. Alex Da Silva | Sep 27, 2020 | https://www.paramountplus.com/shows/video/vH6wlkmeS2wYjOmjrEsQuesSgez0EPku/
 no_fight               | Antonina Shevchenko vs. Ariane Lipski | Nov 21, 2020 | https://www.paramountplus.com/shows/video/V9cZIW_gqH4cjRWpW6nK7yo7C9DQn1mi/
-no_fight               | Renato Moicano vs. Rafael Fiziev | Dec 12, 2020 | https://www.paramountplus.com/shows/video/iECX04UoBstgpUocNMtgpAJm7fuKJZfQ/
-no_fighter(Aoriqileng) | Aoriqileng vs. Jeff Molina | Apr 24, 2021 | https://www.paramountplus.com/shows/video/9yd_QyE23X3BASeYMiCr04wkM8uYO97M/
-no_fighter(Zhang Weili) | Zhang Weili vs. Rose Namajunas | Apr 24, 2021 | https://www.paramountplus.com/shows/video/d6sijWAr1OOmkMsJkyzxGZTuv8ISQ_ng/
-no_fighter(Song Yadong) | Song Yadong vs. Casey Kenney | Aug 7, 2021 | https://www.paramountplus.com/shows/video/N204KHHwvfcbn1DAt_APGnKX3JLWIusV/
-no_fighter(Li Jingliang) | Li Jingliang vs. Khamzat Chimaev | Oct 30, 2021 | https://www.paramountplus.com/shows/video/yZ_4Bjga_fsY83O0RqX6GL9aVwKrk0Rr/
-no_fighter(Zhang Weili) | Rose Namajunas vs. Zhang Weili | Nov 6, 2021 | https://www.paramountplus.com/shows/video/WpIrt3UHeDNOHYYpNix2wIF8AOIhq_Zx/
-no_fight               | Alexander Hernandez vs. Renato Moicano | Feb 12, 2022 | https://www.paramountplus.com/shows/video/Db4C3_lr8CQmNZeau_HZz3W3F5EijODE/
-no_fight               | Rafael Dos Anjos vs. Renato Moicano | Mar 5, 2022 | https://www.paramountplus.com/shows/video/LLTEe_6ecBbjNddyDsNXLcY4zKxq8lNl/
-no_fighter(Maheshate)  | Maheshate vs. Steve Garcia | Jun 12, 2022 | https://www.paramountplus.com/shows/video/367U930v2VDK7YBbOaVb7pdlOHpOdhOI/
-no_fighter(Zhang Weili) | Zhang Weili vs. Joanna Jedrzejczyk | Jun 12, 2022 | https://www.paramountplus.com/shows/video/1EVKCfHrzpBjL9NOV1A3jI9ExcyOHVbf/
-no_fighter(Wu Yanan)   | Wu Yanan vs. Lucie Pudilova | Aug 20, 2022 | https://www.paramountplus.com/shows/video/4CiCSzaCpvHbVcQGP4Z3G9Er0Y1aDS0T/
-no_fighter(Li Jingliang) | Li Jingliang vs. Daniel Rodriguez | Sep 10, 2022 | https://www.paramountplus.com/shows/video/xpTa_pSfMaPprk98RaSJCIi6oMhfSh_o/
-no_fight               | Brad Riddell vs. Renato Moicano | Nov 12, 2022 | https://www.paramountplus.com/shows/video/kzuinED7z2gBq1us5Y4o4z4CincdJgxu/
-no_fighter(Zhang Weili) | Carla Esparza vs. Zhang Weili | Nov 12, 2022 | https://www.paramountplus.com/shows/video/7HHXpxxp9wCLxogLdhDPwjR_pYr6u0hR/
 no_fighter(Loma Lookboonmee) | Loma Lookboonmee vs. Elise Reed | Feb 12, 2023 | https://www.paramountplus.com/shows/video/fHP_YYPmoTgohTZoO0Fvg9yYaJ7kTyyp/
-no_fighter(Song Kenan) | Ian Garry vs. Song Kenan | Mar 4, 2023 | https://www.paramountplus.com/shows/video/ALVE01KXP4FJY1EK3RRB1EPGZ0TGC1/
-no_fighter(Yan Xiaonan) | Jessica Andrade vs. Yan Xiaonan | May 6, 2023 | https://www.paramountplus.com/shows/video/WojxxZaKQFcytAHC23lS_hDl6n4v5I5I/
-no_fighter(Zhang Weili) | Zhang Weili vs. Amanda Lemos | Aug 19, 2023 | https://www.paramountplus.com/shows/video/8YNBxHIiItyDp6wlf2Yp7IA9UGGHIqTJ/
-no_fighter(Zhang Mingyang) | Zhang Mingyang vs. Brendson Ribeiro | Feb 17, 2024 | https://www.paramountplus.com/shows/video/OIBiNlnjFcNRnYzB3BAeK4WZVSV6i209/
-no_fighter(Song Yadong) | Petr Yan vs. Song Yadong | Mar 9, 2024 | https://www.paramountplus.com/shows/video/bf37sVlRIvCk8i1k98STgvOT_jLG2xzn/
-no_fighter(Zhang Weili, Yan Xiaonan) | Zhang Weili vs. Yan Xiaonan | Apr 13, 2024 | https://www.paramountplus.com/shows/video/0NCXofZzevep6S_XAcsafmcQYEKyUh8N/
-no_fighter(Li Jingliang) | Li Jingliang vs. Carlos Prates | Aug 18, 2024 | https://www.paramountplus.com/shows/video/QWvhm_awHAvgez4xL1cKTXM_QnRKdgwR/
-no_fight               | Islam Makhachev vs. Renato Moicano | Jan 18, 2025 | https://www.paramountplus.com/shows/video/lF03sF8I1NgWWzbDPzp4NxcFsS6t79Ai/
 no_fighter(Rongzhu)    | Rongzhu vs. Kody Steele | Feb 8, 2025 | https://www.paramountplus.com/shows/video/UaUljZx9xiio4kXbdmd414urskaU6Acx/
-no_fighter(Zhang Weili) | Zhang Weili vs. Tatiana Suarez | Feb 8, 2025 | https://www.paramountplus.com/shows/video/qT8q4Ef7XCDAH3b164diRStz9mtu4CxZ/
-no_fighter(Yan Xiaonan) | Yan Xiaonan vs. Virna Jandiroba | Apr 12, 2025 | https://www.paramountplus.com/shows/video/UYdkdFaZepivs9ZvQyRUVw9laE66__NJ/
-no_fight               | Beneil Dariush vs. Renato Moicano | Jun 28, 2025 | https://www.paramountplus.com/shows/video/_vpVbLDWH__GP4iYqToEQ0UPyy4VL6_j/
 no_fight               | Dan Ige vs. Patricio Pitbull | Jul 19, 2025 | https://www.paramountplus.com/shows/video/L0RquRGyzGUWoyU6qg6y379r9ZgUSZxX/
-no_fighter(Yoo Joo-sang) | Daniel Santos vs. Yoo Joo-sang | Oct 4, 2025 | https://www.paramountplus.com/shows/video/b_JApoWXcO2i6w_5SbCuTrEttJeKwvoV/
-no_fighter(Zhang Weili) | Valentina Shevchenko vs. Zhang Weili | Nov 15, 2025 | https://www.paramountplus.com/shows/video/ROosagCKLQ47bdgnWqGhlK3XiuquS_NQ/
-no_fighter(Song Yadong) | Sean O'Malley vs. Song Yadong | Jan 24, 2026 | https://www.paramountplus.com/shows/video/HGpSLTCnjxsAfiK4NT1pJvkJ50oatGAH/
-no_fight               | Waldo Cortes Acosta vs. Derrick Lewis | Jan 24, 2026 | https://www.paramountplus.com/shows/video/RsB6TaVBlteNWIFOfPR4ZrZGG1uze51D/
-no_fighter(Yi Zha)     | Kaan Ofli vs. Yi Zha | Jan 31, 2026 | https://www.paramountplus.com/shows/video/bsXNc0WpOmQujCJdWCjmeYN5JB_ME372/
-no_fighter(Kim Sang-wook) | Kim Sang-wook vs. Dom Mar Fan | Jan 31, 2026 | https://www.paramountplus.com/shows/video/EdKEVRBOv_6rGAPyBhcCUQSrPORTDGhU/
-no_fighter(Sulang Rangbo) | Sulang Rangbo vs. Lawrence Lui | Jan 31, 2026 | https://www.paramountplus.com/shows/video/44aMFUxlMv0sBJ9M8KbXBwbO8BAFPMn4/
-no_fight               | Cody Garbrandt vs. Xiao Long | Mar 7, 2026 | https://www.paramountplus.com/shows/video/8qo8m30xKdoQ_90pfmJ9Pglj5UzP5bZ1/
-no_fighter(Sumudaerji) | Sumudaerji vs. Jesus Aguilar | Mar 7, 2026 | https://www.paramountplus.com/shows/video/avER83_zZMa7D7d6W6ez_VFXNtfTKW_h/
-no_fight               | Alexander Volkov vs. Waldo Cortes Acosta | May 9, 2026 | https://www.paramountplus.com/shows/video/ALVE01KQA62KK4E06TS0FZHTMEHSN8/
-no_fighter(Wang Cong)  | Tracy Cortez vs. Wang Cong | Jul 11, 2026 | https://www.paramountplus.com/shows/video/ALVE01KW2D8C58E9GTKBZ21ZRZXM8C/
-no_fighter(Eduardo Chapolin) | Eduardo Chapolin vs. Charles Johnson | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01KZV8E0W9ERDVSQ964AGT441J/
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
-no_fighter(Chapolin)   | Johnson vs. Chapolin | Aug 15, 2026 | https://www.paramountplus.com/shows/video/ALVE01M040H87QEQW80VDHAGNE1KCG/
