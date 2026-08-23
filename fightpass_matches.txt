@@ -1,50 +1,118 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 10  prelims: 0
+Events  — main: 27  prelims: 0
 Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 1  sub-events: 0  per-fight VODs: 39
+Unmatched — episodes: 1  sub-events: 0  per-fight VODs: 36
 ======================================================================
 
-MATCHED EVENTS — MAIN (10)
+MATCHED EVENTS — MAIN (27)
 ----------------------------------------------------------------------
-event:    Pride FC - Pride Grand Prix 2000: Finals
-episode:  PRIDE: Grand Prix 2000 Finals
-url:      https://ufcfightpass.com/video/32429
+event:    UAE Warriors 71 - Rudniev vs. Mezhlumyan
+episode:  UAE Warriors 71
+url:      https://ufcfightpass.com/video/956160
 
-event:    Pride FC - Pride Grand Prix 2000: Opening Round
-episode:  PRIDE: Grand Prix 2000 Opening Round
-url:      https://ufcfightpass.com/video/33328
+event:    UAE Warriors 70 - Medkouri vs. Neves
+episode:  UAE Warriors 70
+url:      https://ufcfightpass.com/video/955661
 
-event:    Pride FC - Pride 8
-episode:  PRIDE 8
-url:      https://ufcfightpass.com/video/31435
+event:    UAE Warriors 68 - Arabia 15
+episode:  UAE Warriors 68
+url:      https://ufcfightpass.com/video/939241
 
-event:    Pride FC - Pride 6
-episode:  PRIDE 6
-url:      https://ufcfightpass.com/video/31172
+event:    UAE Warriors 67 - Machado vs. Breese
+episode:  UAE Warriors 67
+url:      https://ufcfightpass.com/video/913788
 
-event:    Pride FC - Pride 5
-episode:  PRIDE 5
-url:      https://ufcfightpass.com/video/33326
+event:    UAE Warriors 62 - Boynazarov vs. Llontop
+episode:  UAE Warriors 62
+url:      https://ufcfightpass.com/video/834702
 
-event:    Pride FC - Pride 4
-episode:  PRIDE 4
-url:      https://ufcfightpass.com/video/32803
+event:    UAE Warriors 61 - AlQaisi vs. Chipfumbu
+episode:  UAE Warriors 61
+url:      https://ufcfightpass.com/video/834338
 
-event:    Pride FC - Pride 3
-episode:  PRIDE 3
-url:      https://ufcfightpass.com/video/31326
+event:    UAE Warriors 60 - Abubakar vs. Nunes
+episode:  UAE Warriors 60
+url:      https://ufcfightpass.com/video/812688
 
-event:    Pride FC - Pride 2
-episode:  PRIDE 2
-url:      https://ufcfightpass.com/video/31785
+event:    UAE Warriors 58 - Magomedov vs. Da Silva
+episode:  UAE Warriors 58
+url:      https://ufcfightpass.com/video/763092
 
-event:    Pride FC - Pride 1
-episode:  PRIDE 1
-url:      https://ufcfightpass.com/video/33305
+event:    UAE Warriors 56 - Arabia vs. Africa 3
+episode:  UAE Warriors 56
+url:      https://ufcfightpass.com/video/742367
 
-event:    Strikeforce - Strikeforce at the Dome
-episode:  Strikeforce: At The Mansion II
-url:      https://ufcfightpass.com/video/33805
+event:    UAE Warriors 54 - Jumaev vs. Sadygov
+episode:  UAE Warriors 54
+url:      https://ufcfightpass.com/video/693800
+
+event:    UAE Warriors 53 - Arabia vs. Africa 2
+episode:  UAE Warriors 53
+url:      https://ufcfightpass.com/video/693047
+
+event:    UAE Warriors 52 - Arabia 14
+episode:  UAE Warriors 52
+url:      https://ufcfightpass.com/video/671977
+
+event:    UAE Warriors 51 - Magomedov vs. Kabdulla
+episode:  UAE Warriors 51
+url:      https://ufcfightpass.com/video/671646
+
+event:    UAE Warriors 49 - Arabia vs. Africa
+episode:  UAE Warriors 49
+url:      https://ufcfightpass.com/video/632683
+
+event:    UAE Warriors 47 - Arabia 13
+episode:  UAE Warriors 47: Arabia 13
+url:      https://ufcfightpass.com/video/574399
+
+event:    UAE Warriors 46 - Da Silva vs. Kamavov
+episode:  UAE Warriors 46
+url:      https://ufcfightpass.com/video/574040
+
+event:    UAE Warriors 45 - Magomedov vs. Jumaev
+episode:  UAE Warriors 45
+url:      https://ufcfightpass.com/video/533377
+
+event:    UAE Warriors 44 - Magomedov vs. da Silva
+episode:  UAE Warriors 44
+url:      https://ufcfightpass.com/video/513495
+
+event:    UAE Warriors 42 - AlQaisi vs. Arnett
+episode:  UAE Warriors 42
+url:      https://ufcfightpass.com/video/480864
+
+event:    UAE Warriors 41 - Arabia 11
+episode:  UAE Warriors 41: Arabia 11
+url:      https://ufcfightpass.com/video/480450
+
+event:    UAE Warriors 40 - Arabia 10
+episode:  UAE Warriors 40: Arabia 10
+url:      https://ufcfightpass.com/video/456209
+
+event:    UAE Warriors 39 - Machaev vs. Olzhabay
+episode:  UAE Warriors 39
+url:      https://ufcfightpass.com/video/455760
+
+event:    UAE Warriors 38 - Africa 5
+episode:  UAE WARRIORS 38: Africa
+url:      https://ufcfightpass.com/video/455395
+
+event:    UAE Warriors 37 - Arabia 9
+episode:  UAE Warriors 37: Arabia
+url:      https://ufcfightpass.com/video/448723
+
+event:    UAE Warriors 34 - Martun vs. Acoidan
+episode:  UAE Warriors 34
+url:      https://ufcfightpass.com/video/406447
+
+event:    UAE Warriors 32 - Africa 3
+episode:  UAE Warriors 32: Africa
+url:      https://ufcfightpass.com/video/394090
+
+event:    UAE Warriors 31 - Arabia 8
+episode:  UAE Warriors 31: Arabia
+url:      https://ufcfightpass.com/video/373796
 
 
 MATCHED EVENTS — PRELIMS (0)
@@ -60,11 +128,9 @@ UNMATCHED EPISODES (1)
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (39)
+UNMATCHED PER-FIGHT VODs (36)
 ----------------------------------------------------------------------
-  vod=871770  'Aoriqileng vs Cody Gibson UFC Vancouver'  — fighter not in DB
-  vod=871767  'Bruno Silva vs HyunSung Park UFC Vancouver'  — no DB fight for this pair
-  vod=857629  'Jose Medina vs Dusko Todorovic Noche UFC'  — no DB fight for this pair
+  vod=887637  'Waldo Cortes Acosta vs Shamil Gaziev UFC Qatar'  — no DB fight for this pair
   vod=801800  'Park Hyun-sung vs Carlos Hernandez UFC Vegas 106'  — fighter not in DB
   vod=782601  'Cortavious Romious vs Lee Chang-ho UFC Vegas 105'  — fighter not in DB
   vod=776559  'Carlos Ulberg vs Jan Błachowicz UFC London'  — fighter not in DB
@@ -97,7 +163,6 @@ UNMATCHED PER-FIGHT VODs (39)
   vod=31520  'Demetrious Johnson vs. John Dodson UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
   vod=31119  'Demetrious Johnson vs. Joseph Benavidez UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
   vod=32360  'Nobuhiko Takada vs Mark Colemann PRIDE 5'  — fighter not in DB
-  vod=34059  'Takanori Gomi vs. Tatsuya Kawajira PRIDE: Bushido 9'  — fighter not in DB
   vod=55814  'Takanori Gomi vs Leonardo Santos Shooto Japan: Treasure Hunt 7'  — no DB fight for this pair
   vod=59009  'Dong Hyun Kim vs Takanori Gomi UFC Fight Night'  — no DB fight for this pair
   vod=35733  'Myles Jury vs. Takanori Gomi UFC Fight Night'  — no DB fight for this pair

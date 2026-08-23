@@ -126,6 +126,8 @@ REPLAY_PLAYLISTS = [
     {'id': 22704, 'name': 'FCC Event Replays'},
     {'id': 22753, 'name': 'Shuriken Fight Series Event Replays'},
     {'id': 21752, 'name': 'Fight Club Rush Event Replays'},
+    {'id': 27884, 'name': 'ZFN Event Replays'},
+    {'id': 18836, 'name': 'UAE Warriors Event Replays'},
 ]
 
 OUTPUT_FILE     = 'fightpass_matches.txt'

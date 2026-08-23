@@ -170,10 +170,17 @@ amateur-flagging list, `_EVENT_PREFIX`, and `REPLAY_PLAYLISTS`:
 - **Fight Club Rush** (Västerås, Sweden) — Sherdog `Fight-Club-Rush-13287`;
   playlist 21752, 22 replays.
 
-Other playlist-id ranges likely hold more org playlists (per-event playlists
-for Fury FC / Shooto Brazil / LUX / UWC / Ares etc. were visible in the
-scanned window); a wider scan (e.g. 10000–21500, 23600–30000) is cheap
-(~1 req/id) if coverage gaps show up.
+Wider scan done 2026-08-23 (10000–21500, 23600–31000; 2,016 playlists).
+Wired: 27884 ZFN Event Replays, 18836 UAE Warriors Event Replays. New-org
+candidates with real replay archives (next wave; check Sherdog coverage):
+- **RFA** (28427, Resurrection Fighting Alliance — LFA's predecessor)
+- **Fusion Fighting Championship** (18148, Mexico; Spanish-titled VODs)
+- **Cage Fight Series** (27882), **WOW FC** (23771, Spain),
+  **Samourai MMA** (27880, Quebec), **Medusa** (27903, women's league)
+Skipped as non-MMA: Karate Combat, Budo Striking/Sento, PGF, BJJ/grappling
+playlists, Hollywood Fight Nights (boxing). UFC 2022/2023/2024 Event
+Replays playlists exist (16220/20627/20628) but the series walk already
+covers those years.
 
 #### Already in DB
 | Org | Sherdog ID | Fight Pass | Active |
