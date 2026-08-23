@@ -480,6 +480,10 @@ def _core_tokens(name):
     for t in _norm(name).split():
         if t in _NOISE_TOKENS:
             continue
+        # strip zero-padding so 'ZFN Origin 04' / 'LUX 058' meet Sherdog's
+        # 'Origin 4' / 'LUX 58'
+        if t.isdigit():
+            t = t.lstrip('0') or '0'
         if not out or out[-1] != t:
             out.append(t)
     return out
@@ -1303,6 +1307,11 @@ def main(push=False, force=False, scan_vods=False,
         (re.compile(r"\bjames\s+krause['’]?s?\s+", re.I), ''),
         # FP hyphenates A-1; Sherdog/DB write A1 (one token after _norm).
         (re.compile(r'\ba-1\s+combat\b', re.I), 'A1 Combat'),
+        # ZFN numbers its non-Origin cards 'ZFN 04'; Sherdog names them
+        # 'ZFN - Z-Fight Night 4'. Order matters: expand 'ZFN NN' first,
+        # then prefix bare 'Z-Fight Night N' titles with the org token.
+        (re.compile(r'\bZFN\s+(?!origin)0*(\d+)\b', re.I), r'Z-Fight Night \1'),
+        (re.compile(r'\b(?<!zfn )z-?fight\s+night\b', re.I), 'ZFN Z-Fight Night'),
     ]
 
     # Shared by passes 3 and 5: try a VOD as a full-event (or prelims) replay.
@@ -1323,6 +1332,7 @@ def main(push=False, force=False, scan_vods=False,
         if any(kw in tl for kw in SKIP_EVENT_LEVEL):
             return False
         variant, base_t = classify_episode(v_title)
+        base_t = re.sub(r'\([^)]*\)', ' ', base_t)   # '(Korean Commentary)' etc.
         for rx, repl in _EVENT_TITLE_ALIASES:
             base_t = rx.sub(repl, base_t)
         ev2 = match_event_fuzzy(base_t, events, all_events_by_norm)
