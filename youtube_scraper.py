@@ -326,7 +326,9 @@ def build_lookups(fighters, aliases, channel_fights, events):
     for f in fighters:
         fid, name = f['id'], f['name']
         fighter_names[fid] = name
-        fighter_by_name[name.lower()] = fid
+        # name → [ids]: distinct fighters can share a full name — all ids
+        # become pair candidates; the fight lookup disambiguates.
+        fighter_by_name.setdefault(name.lower(), []).append(fid)
         fighter_by_last.setdefault(surname(name), []).append(fid)
     for a in aliases:
         fighter_by_alias[a['alias'].lower()] = a['fighter_id']
@@ -344,9 +346,9 @@ def build_lookups(fighters, aliases, channel_fights, events):
 
 def resolve_fighter(name, by_name, by_alias, by_last):
     nl = name.lower().strip()
-    fid = by_name.get(nl)
-    if fid:
-        return [fid]
+    ids = by_name.get(nl)   # list — same-name fighters all qualify
+    if ids:
+        return ids
     fid = by_alias.get(nl)
     if fid:
         return [fid]

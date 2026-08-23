@@ -379,10 +379,11 @@ def find_fight(name_a, name_b, clip_date, fight_lookup, fighter_by_name, fighter
     """
     def lookup_ids(name):
         nl = name.lower()
-        # 1. Exact full name
-        fid = fighter_by_name.get(nl)
-        if fid:
-            return [fid]
+        # 1. Exact full name — may be SEVERAL fighters sharing the name;
+        #    return all of them and let the pair lookup disambiguate.
+        ids = fighter_by_name.get(nl)
+        if ids:
+            return ids
         # 2. Alias table
         if fighter_by_alias:
             fid = fighter_by_alias.get(nl)
@@ -504,8 +505,11 @@ def main(dry_run=False):
     fighter_by_last  = {}
     fighter_by_alias = {a['alias'].lower(): a['fighter_id'] for a in aliases}
 
+    # name → [ids]: distinct fighters can share a full name (e.g. UFC's
+    # Anthony Hernandez vs KOTC's) — all ids become pair candidates and the
+    # fight lookup + date/hint tiebreaks pick the real bout.
     for f in fighters:
-        fighter_by_name[f['name'].lower()] = f['id']
+        fighter_by_name.setdefault(f['name'].lower(), []).append(f['id'])
         fighter_by_last.setdefault(surname(f['name']), []).append(f['id'])
 
     fight_lookup = {}

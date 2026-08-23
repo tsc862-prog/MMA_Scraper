@@ -674,9 +674,9 @@ def resolve_fighter(name, by_name, by_alias, by_last):
     for cand in (nl, _fold_accents(nl)):   # try exact, then ASCII-folded
         if not cand:
             continue
-        fid = by_name.get(cand)
-        if fid:
-            return [fid]
+        ids = by_name.get(cand)   # list — same-name fighters all qualify
+        if ids:
+            return ids
         fid = by_alias.get(cand)
         if fid:
             return [fid]
@@ -898,14 +898,20 @@ def main(push=False, force=False, scan_vods=False,
 
     # Lookups — store both original-cased and accent-folded keys so a Fight
     # Pass name with diacritics matches an ASCII ufcstats record.
+    # by_name maps name → [ids]: distinct fighters can share a full name
+    # (e.g. UFC's Anthony Hernandez vs KOTC's) — every id becomes a pair
+    # candidate and the fight lookup disambiguates.
     by_name, by_alias, by_last = {}, {}, {}
     for f in fighters:
         nl = f['name'].lower()
-        by_name.setdefault(nl, f['id'])
-        by_name.setdefault(_fold_accents(nl), f['id'])
+        by_name.setdefault(nl, []).append(f['id'])
+        folded = _fold_accents(nl)
+        if folded != nl:
+            by_name.setdefault(folded, []).append(f['id'])
         last = surname(nl)
         by_last.setdefault(last, []).append(f['id'])
-        by_last.setdefault(_fold_accents(last), []).append(f['id'])
+        if _fold_accents(last) != last:
+            by_last.setdefault(_fold_accents(last), []).append(f['id'])
     for a in aliases:
         al = a['alias'].lower()
         by_alias.setdefault(al, a['fighter_id'])
