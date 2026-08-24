@@ -949,6 +949,11 @@ def main(push=False, force=False, scan_vods=False,
 
     ev_by_id = {e['id']: e for e in events}
     all_events_by_norm = {_norm(e['name']): e for e in events}  # global, for vesper fallback
+    # Orgs reuse event names (two 'KOTC - Warranted Aggression's, 2016 and
+    # 2026) — the multimap lets the date guard pick the right same-named row.
+    events_by_norm_all = {}
+    for e in events:
+        events_by_norm_all.setdefault(_norm(e['name']), []).append(e)
 
     # --events is a targeted backfill of named cards: the series and bucket
     # walks below crawl the whole catalog and would match unrelated events, so
@@ -1350,11 +1355,30 @@ def main(push=False, force=False, scan_vods=False,
             try:
                 vd = datetime.strptime(
                     f'{m.group(1)} {m.group(2)} {m.group(3)}', '%B %d %Y').date()
-                ed = date.fromisoformat((ev2.get('date') or '')[:10])
-                if abs((vd - ed).days) > 3:
-                    return False
             except ValueError:
-                pass
+                vd = None
+            if vd is not None:
+                # ±45 days: FP descriptions often carry TV-broadcast air
+                # dates, not event dates (KOTC 'Episode 248 from December 9,
+                # 2016' vs Sherdog's Dec 18 event). The guard's real job is
+                # separating years-apart name reuse, which ±45d still does.
+                def _delta(e):
+                    try:
+                        return abs((vd - date.fromisoformat(
+                            (e.get('date') or '')[:10])).days)
+                    except ValueError:
+                        return None
+                d0 = _delta(ev2)
+                if d0 is None or d0 > 45:
+                    # Name-reuse: the fuzzy match landed on the wrong
+                    # same-named event — take the closest-dated sibling.
+                    sibs = [(d, e) for e in
+                            events_by_norm_all.get(_norm(ev2['name']), [])
+                            if not e.get(key)
+                            and (d := _delta(e)) is not None and d <= 45]
+                    if not sibs:
+                        return False
+                    ev2 = min(sibs, key=lambda de: de[0])[1]
         matched_events.append((ev2['id'], variant,
                                WATCH_URL.format(vod_id), v_title))
         matched_vod_ids.append(vod_id)

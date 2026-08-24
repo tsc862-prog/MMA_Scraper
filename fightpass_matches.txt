@@ -1,26 +1,38 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 4  prelims: 0
+Events  — main: 7  prelims: 0
 Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
 Unmatched — episodes: 1  sub-events: 0  per-fight VODs: 36
 ======================================================================
 
-MATCHED EVENTS — MAIN (4)
+MATCHED EVENTS — MAIN (7)
 ----------------------------------------------------------------------
-event:    ZFN - Z-Fight Night 4: Blood Moon
-episode:  ZFN 04 (Korean Commentary)
-url:      https://ufcfightpass.com/video/956044
+event:    FCC 34
+episode:  FCC 34
+url:      https://ufcfightpass.com/video/489937
 
-event:    ZFN - Z-Fight Night 3
-episode:  Z-Fight Night 3 (Korean Commentary)
-url:      https://ufcfightpass.com/video/884336
+event:    FCC 33
+episode:  FCC 33
+url:      https://ufcfightpass.com/video/469506
 
-event:    ZFN - Z-Fight Night 2
-episode:  Z-Fight Night 2 (Korean Commentary)
-url:      https://ufcfightpass.com/video/731766
+event:    UAE Warriors 35 - Africa 4
+episode:  UAE Warriors 35: Africa
+url:      https://ufcfightpass.com/video/447840
 
-event:    ZFN - Z-Fight Night 1
-episode:  Z-Fight Night 1 (Korean Commentary)
-url:      https://ufcfightpass.com/video/654892
+event:    KOTC - Heavy Trauma
+episode:  KOTC: Heavy Trauma
+url:      https://ufcfightpass.com/video/63822
+
+event:    KOTC - Frozen War
+episode:  KOTC: Frozen War
+url:      https://ufcfightpass.com/video/58761
+
+event:    KOTC - Warranted Aggression
+episode:  KOTC: Warranted Aggression
+url:      https://ufcfightpass.com/video/59779
+
+event:    KOTC - Stone Cold
+episode:  KOTC: Stone Cold
+url:      https://ufcfightpass.com/video/63885
 
 
 MATCHED EVENTS — PRELIMS (0)
