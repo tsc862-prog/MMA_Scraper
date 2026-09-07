@@ -25,6 +25,11 @@ has carried two #10s).
            Anything still unresolved is stored with a null fighter_id (name +
            ufc.com link only) and listed in rankings_unmatched.txt — fix with
            add_alias.py and the next run picks it up.
+           ufc.com sometimes serves a (partly) localized page — the 2026-09-07
+           nightly got Spanish division headers ("Peso pluma") from a GitHub
+           runner. Headers are translated back where known, and a header that
+           still isn't a known English division aborts the UFC snapshot rather
+           than storing it under a foreign name.
   sherdog  Sherdog has no rankings page (/rankings 404s); its rankings are a
            multi-page NEWS ARTICLE — one division per page, picked from the
            article's page <select> — plus two single-page P4P articles, all
@@ -67,7 +72,10 @@ from bs4 import BeautifulSoup
 import sherdog_scraper as s   # reuse _headers, USER_AGENT, SHERDOG_BASE, id_from_url, env load
 
 UFC_BASE = 'https://www.ufc.com'
-UFC_RANKINGS_URL = f'{UFC_BASE}/rankings'
+# language_content_entity=en is Drupal's explicit language switch; the page is
+# also requested with an English Accept-Language. Belt and braces — the parser
+# still validates every header below.
+UFC_RANKINGS_URL = f'{UFC_BASE}/rankings?language_content_entity=en'
 SHERDOG_LIST_URL = f'{s.SHERDOG_BASE}/news/rankings/list'
 UNMATCHED_FILE = 'rankings_unmatched.txt'
 SLEEP = 1.0                     # seconds between Sherdog article pages
@@ -78,6 +86,41 @@ LOCAL_TZ = ZoneInfo('America/Los_Angeles')
 
 MENS_P4P = "Men's Pound-for-Pound"
 WOMENS_P4P = "Women's Pound-for-Pound"
+
+# Every division ufc.com/rankings can legitimately produce. Anything else after
+# translation means we got a localized (or restructured) page — don't store it.
+UFC_DIVISIONS = {
+    MENS_P4P, WOMENS_P4P,
+    'Heavyweight', 'Light Heavyweight', 'Middleweight', 'Welterweight',
+    'Lightweight', 'Featherweight', 'Bantamweight', 'Flyweight',
+    "Women's Featherweight", "Women's Bantamweight", "Women's Flyweight",
+    "Women's Strawweight",
+}
+# Localized header text seen in the wild (lowercased) -> canonical division.
+UFC_DIVISION_ALIASES = {
+    # Spanish (2026-09-07 nightly)
+    'de peso pesado': 'Heavyweight', 'peso pesado': 'Heavyweight',
+    'peso semipesado': 'Light Heavyweight', 'peso medio': 'Middleweight',
+    'peso welter': 'Welterweight', 'peso wélter': 'Welterweight',
+    'ligero': 'Lightweight', 'peso ligero': 'Lightweight',
+    'peso pluma': 'Featherweight', 'peso gallo': 'Bantamweight',
+    'peso mosca': 'Flyweight',
+    'gallo de las mujeres': "Women's Bantamweight",
+    'peso gallo de las mujeres': "Women's Bantamweight",
+    'peso de la mujer': "Women's Strawweight",
+    'peso paja de la mujer': "Women's Strawweight",
+    'peso mosca de la mujer': "Women's Flyweight",
+    'peso pluma de la mujer': "Women's Featherweight",
+    # Portuguese, in case a runner lands there next
+    'meio-pesado': 'Light Heavyweight', 'peso meio-pesado': 'Light Heavyweight',
+    'peso médio': 'Middleweight',
+    'meio-médio': 'Welterweight', 'peso meio-médio': 'Welterweight',
+    'peso leve': 'Lightweight', 'peso pena': 'Featherweight',
+    'peso galo': 'Bantamweight', 'peso mosca feminino': "Women's Flyweight",
+    'peso galo feminino': "Women's Bantamweight",
+    'peso palha feminino': "Women's Strawweight",
+    'peso pena feminino': "Women's Featherweight",
+}
 
 # Refuse to snapshot a source with fewer rows than this — UFC is ~200 (13 lists
 # of 15 + 11 champions), Sherdog ~150 (15 lists of 10). A layout change that
@@ -100,11 +143,13 @@ def fold(name):
 def canonical_division(label):
     """'Women’s Flyweight' / "Men's Pound-for-Pound Top Rank" -> canonical name."""
     d = re.sub(r'\s+', ' ', (label or '').replace('’', "'")).strip()
-    return re.sub(r'\s*Top Rank$', '', d, flags=re.I)
+    d = re.sub(r'\s*Top Rank$', '', d, flags=re.I)
+    return UFC_DIVISION_ALIASES.get(d.lower(), d)
 
 
 def fetch_html(url):
-    r = requests.get(url, headers={'User-Agent': s.USER_AGENT}, timeout=30)
+    r = requests.get(url, headers={'User-Agent': s.USER_AGENT,
+                                   'Accept-Language': 'en-US,en;q=0.9'}, timeout=30)
     r.raise_for_status()
     return r.text
 
@@ -135,7 +180,7 @@ def _abs(base, href):
 def parse_ufc(html):
     """Ranking rows off ufc.com/rankings (fighter_id still unresolved)."""
     soup = BeautifulSoup(html, 'html.parser')
-    rows, seen = [], set()
+    rows, seen, unknown = [], set(), set()
     for g in soup.select('.view-grouping'):
         hdr = g.select_one('.view-grouping-header')
         if not hdr:
@@ -143,6 +188,9 @@ def parse_ufc(html):
         division = canonical_division(hdr.get_text(' ', strip=True))
         if not division or division in seen:
             continue            # the page repeats every division for its mobile layout
+        if division not in UFC_DIVISIONS:
+            unknown.add(division)
+            continue
         seen.add(division)
         p4p = 'pound' in division.lower()
 
@@ -176,7 +224,18 @@ def parse_ufc(html):
             rows.append({'division': division, 'rank': rank, 'fighter_name': name,
                          'previous_rank': prev, 'is_new': new,
                          'source_url': _abs(UFC_BASE, a.get('href')) if a else None})
+    if unknown:
+        # A localized or restructured page. Storing it would file the lists
+        # under foreign division names and break fight tagging, so refuse.
+        raise RuntimeError(f'unrecognized division headers {sorted(unknown)} '
+                           f'(page lang={_page_lang(soup)!r}) — localized page? '
+                           f'add to UFC_DIVISION_ALIASES')
     return rows
+
+
+def _page_lang(soup):
+    html = soup.find('html')
+    return html.get('lang') if html else None
 
 
 def ufc_roster():

@@ -382,8 +382,17 @@ For each org we add:
 - **Fight rank tags (2026-09-06).** The same run stamps `fights.fighter1_rank`
   / `fighter2_rank` on upcoming UFC fights from the latest UFC snapshot ('C',
   '1'..'15'); past fights are never touched, so the tag freezes at what the
-  fighter carried into the bout. The app shows it as the existing `#N` chip,
-  with a gold `C` for champions. UFC fights only for now.
+  fighter carried into the bout. The app shows it as a small raised number
+  ahead of the name (college-football style), gold `C` for champions. UFC
+  fights only for now.
+- **Localized ufc.com pages (hit 2026-09-07).** The first nightly run got a
+  partly Spanish rankings page from the GitHub runner ("Peso pluma", "Gallo de
+  las mujeres") and stored it as a snapshot under those names. Fixed: the
+  request forces English (`?language_content_entity=en` + Accept-Language),
+  known Spanish/Portuguese headers translate back via `UFC_DIVISION_ALIASES`,
+  and any header still outside `UFC_DIVISIONS` aborts the UFC snapshot. If the
+  nightly ever logs "unrecognized division headers", add the strings to the
+  alias map. The bad snapshot was deleted.
 
 ### TODO — historical fight ranks
 - Backfill `fighter1_rank` / `fighter2_rank` for past fights. Sherdog keeps a
