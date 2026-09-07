@@ -1,0 +1,1698 @@
+PLUTO TV MATCH RESULTS
+Events  — matched: 135  unmatched: 1
+Fights  — matched: 200  unmatched: 6
+======================================================================
+
+MATCHED FULL EVENTS (135)
+----------------------------------------------------------------------
+event_id: 58819  [matched (by headliners)]
+event:    Bellator 180 - Sonnen vs. Silva
+video:    Bellator NYC: Sonnen vs Silva
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648209eedc7a760008949d0b
+
+event_id: 16517  [matched]
+event:    BFC - Bellator Fighting Championships 58
+video:    Bellator 58: Chandler vs Alvarez
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fdcb536e0c0008a6bbc9
+
+event_id: 27029  [matched]
+event:    Bellator 85
+video:    Bellator 85: Chandler vs Hawn
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fdd8dc7a760008947144
+
+event_id: 27031  [matched]
+event:    Bellator 86
+video:    Bellator 86: Askren vs Amoussou
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fde78e3c0a0008dc8b28
+
+event_id: 27781  [matched]
+event:    Bellator 95
+video:    Bellator 95: Curran vs Shamhalaev
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe00536e0c0008a6bc48
+
+event_id: 30367  [matched]
+event:    Bellator 97
+video:    Bellator 97: Chandler vs Rickels
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe1bf77b6100082f3d25
+
+event_id: 31645  [matched]
+event:    Bellator 106
+video:    Bellator 106: Chandler vs Alvarez 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe2b4cfc2c0008acfbc0
+
+event_id: 31531  [matched]
+event:    Bellator 108
+video:    Bellator 108: Rampage vs Beltran
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe38a51cb80008e1ee36
+
+event_id: 35065  [matched]
+event:    Bellator 112
+video:    Bellator 112: Curran vs Straus
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe46a51cb80008e1ee67
+
+event_id: 38095  [matched]
+event:    Bellator 123
+video:    Bellator 123: Curran vs Pitbull 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe5bdc7a76000894724b
+
+event_id: 39407  [matched]
+event:    Bellator 124
+video:    Bellator 124: Newton vs Beltran
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fe91ee5cc40008b4e6cc
+
+event_id: 39519  [matched]
+event:    Bellator 125
+video:    Bellator 125: Manhoef vs Marshall
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6481fea0dc7a760008948694
+
+event_id: 40331  [matched]
+event:    Bellator 131 - Tito vs. Bonnar
+video:    Bellator 131: Ortiz vs. Bonnar
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648204ecdc7a760008949083
+
+event_id: 42151  [matched]
+event:    Bellator 135 - Warren vs. Galvao
+video:    Bellator 135: Warren vs Galvao 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482056edc7a7600089492b7
+
+event_id: 44463  [matched]
+event:    Bellator 138 - Unfinished Business
+video:    Bellator 138: Kimbo vs Shamrock
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820580dc7a7600089492e8
+
+event_id: 47333  [matched]
+event:    Bellator 144 - Halsey vs. Carvalho
+video:    Bellator 144: Halsey vs Carvalho
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648205f94cfc2c0008ad0aa6
+
+event_id: 49005  [matched]
+event:    Bellator 148 - Daley vs. Uhrich
+video:    Bellator 148: Daley vs Uhrich
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482061bdc7a760008949410
+
+event_id: 50409  [matched]
+event:    Bellator 153 - Koreshkov vs. Henderson
+video:    Bellator 153: Koreshkov vs Henderson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482064ea51cb80008e20d1b
+
+event_id: 50751  [matched]
+event:    Bellator 154 - Davis vs. King Mo
+video:    Bellator 154: Davis vs King Mo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482065e17f5e10008bebb44
+
+event_id: 51773  [matched]
+event:    Bellator 158 - Daley vs. Lima
+video:    Bellator 158: Lima v Daley
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482066d536e0c0008a6db8f
+
+event_id: 54911  [matched]
+event:    Bellator 162 - Shlemenko vs. Grove
+video:    Bellator 162: Shlemenko vs Grove
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482067bee5cc40008b50a9a
+
+event_id: 55131  [matched]
+event:    Bellator 164 - Koreshkov vs. Lima 2
+video:    Bellator 164: Koreshkov vs Lima 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482068a76a19300088165e7
+
+event_id: 54909  [matched]
+event:    Bellator 165 - Chandler vs. Henderson
+video:    Bellator 165: Chandler vs Henderson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648206974f5ba500088b88fe
+
+event_id: 55715  [matched]
+event:    Bellator 167 - Taimanglo vs. Caldwell 2
+video:    Bellator 167: Caldwell vs Taimanglo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648206a5a51cb80008e20d8a
+
+event_id: 55381  [matched]
+event:    Bellator 168 - Sakara vs. Beltran
+video:    Bellator 168: Sakara vs Beltran
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648206be4f5ba500088b8968
+
+event_id: 56373  [matched]
+event:    Bellator 172 - Thomson vs. Pitbull
+video:    Bellator 172: Thomson vs Pitbull
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648206e94f5ba500088b8a82
+
+event_id: 57393  [matched]
+event:    Bellator 173 - McGeary vs. McDermott
+video:    Bellator 173: McGeary vs McDermott
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482076c536e0c0008a6de4a
+
+event_id: 57375  [matched]
+event:    Bellator 174 - Coenen vs. Budd
+video:    Bellator 174: Coenen vs Budd
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482077b17f5e10008bebdf7
+
+event_id: 57535  [matched]
+event:    Bellator 175 - Rampage vs. King Mo 2
+video:    Bellator 175: Rampage vs King Mo 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648207f817f5e10008bec016
+
+event_id: 57987  [matched]
+event:    Bellator 176 - Carvalho vs. Manhoef 2
+video:    Bellator 176: Carvalho vs Manhoef
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482080eee5cc40008b50ee2
+
+event_id: 57989  [matched]
+event:    Bellator 177 - Dantas vs. Higo
+video:    Bellator 177: Dantas vs Higo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482098c8e3c0a0008dcaa1f
+
+event_id: 57991  [matched]
+event:    Bellator 178 - Straus vs. Pitbull 4
+video:    Bellator 178: Straus vs Pitbull 4
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6482099b4cfc2c0008ad13fc
+
+event_id: 57929  [matched]
+event:    Bellator 179 - Daley vs. MacDonald
+video:    Bellator 179: MacDonald vs Daley
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648209b44cfc2c0008ad1445
+
+event_id: 59595  [matched]
+event:    Bellator 181 - Campos vs. Girtz 3
+video:    Bellator 181: Girtz vs Campos 3
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820a5e76a1930008816d12
+
+event_id: 60549  [matched]
+event:    Bellator 182 - Koreshkov vs. Njokuani
+video:    Bellator 182: Koreshkov vs Njokuani
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820ae276a193000881724e
+
+event_id: 61647  [matched]
+event:    Bellator 183 - Henderson vs. Freire
+video:    Bellator 183: Henderson vs Pitbull
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820afb8e3c0a0008dcb331
+
+event_id: 62105  [matched]
+event:    Bellator 184 - Dantas vs. Caldwell
+video:    Bellator 184: Dantas vs Caldwell
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820f738e3c0a0008dcc20c
+
+event_id: 62107  [matched]
+event:    Bellator 185 - Mousasi vs. Shlemenko
+video:    Bellator 185: Mousasi vs. Shlemenko
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648336ebee5cc40008b97e37
+
+event_id: 62703  [matched]
+event:    Bellator 186 - Bader vs. Vassell
+video:    Bellator 186: Bader vs Vassell
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648336faee5cc40008b97e8e
+
+event_id: 62883  [matched]
+event:    Bellator 187 - McKee vs. Moore
+video:    Bellator 187: McKee vs Moore
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833707ee5cc40008b97ebf
+
+event_id: 63229  [matched]
+event:    Bellator 189 - Budd vs. Blencowe 2
+video:    Bellator 189: Budd vs Blencowe
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483371376a193000885f007
+
+event_id: 62705  [matched]
+event:    Bellator 190 - Carvalho vs. Sakara
+video:    Bellator 190: Carvalho vs Sakara
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337204f5ba50008901348
+
+event_id: 64167  [matched]
+event:    Bellator 191 - McDonald vs. Ligier
+video:    Bellator 191: McDonald vs. Ligier
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833737536e0c0008acd20e
+
+event_id: 63103  [matched]
+event:    Bellator 192 - Jackson vs. Sonnen
+video:    Bellator 192: Rampage vs Sonnen
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483374aa51cb80008e6edb5
+
+event_id: 64165  [matched]
+event:    Bellator 193 - Larkin vs. Gonzalez
+video:    Bellator 193: Larkin vs Gonzalez
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483375b536e0c0008acd293
+
+event_id: 64455  [matched]
+event:    Bellator 194 - Nelson vs. Mitrione
+video:    Bellator 194: Nelson vs Mitrione
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833769f77b61000833b62a
+
+event_id: 64877  [matched]
+event:    Bellator 195 - Caldwell vs. Higo
+video:    Bellator 195: Caldwell vs Higo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337a94cfc2c0008b12747
+
+event_id: 65519  [matched]
+event:    Bellator 196 - Henderson vs. Huerta
+video:    Bellator 196: Henderson vs Huerta
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337b54cfc2c0008b12774
+
+event_id: 65405  [matched]
+event:    Bellator 197 - Chandler vs. Girtz
+video:    Bellator 197: Chandler vs Girtz
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337c8f77b61000833b712
+
+event_id: 65337  [matched]
+event:    Bellator 198 - Fedor vs. Mir
+video:    Bellator 198: Fedor vs Mir
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337e117f5e10008c3f294
+
+event_id: 65407  [matched]
+event:    Bellator 199 - Bader vs. King Mo
+video:    Bellator 199: Bader vs King Mo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648337f28e3c0a0008e16ae8
+
+event_id: 65745  [matched]
+event:    Bellator 200 - Carvalho vs. Mousasi
+video:    Bellator 200: Carvalho vs Mousasi
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833812536e0c0008acd3ac
+
+event_id: 66825  [matched]
+event:    Bellator 201 - Macfarlane vs. Lara
+video:    Bellator 201: Macfarlane vs Lara
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833823f77b61000833b7d4
+
+event_id: 67423  [matched]
+event:    Bellator 202 - Budd vs. Nogueira
+video:    Bellator 202: Budd vs Nogueira
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833838f77b61000833b80d
+
+event_id: 69027  [matched]
+event:    Bellator 204 - Caldwell vs. Lahat
+video:    Bellator 204: Caldwell vs Lahat
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833846a51cb80008e6eff8
+
+event_id: 69585  [matched]
+event:    Bellator 205 - McKee vs. Macapa
+video:    Bellator 205: McKee vs Macapa
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833853dc7a7600089a342c
+
+event_id: 69637  [matched]
+event:    Bellator 206 - Mousasi vs. MacDonald
+video:    Bellator 206: Mousasi vs. MacDonald
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648338614f5ba5000890167c
+
+event_id: 69405  [matched]
+event:    Bellator 207 - Mitrione vs. Bader
+video:    Bellator 207: Mitrione vs Bader
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648338f34cfc2c0008b129da
+
+event_id: 69635  [matched]
+event:    Bellator 208 - Fedor vs. Sonnen
+video:    Bellator 208: Fedor vs Sonnen
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648338ff17f5e10008c3f465
+
+event_id: 70389  [matched]
+event:    Bellator 209 - Pitbull vs. Sanchez
+video:    Bellator 209: Pitbull vs Sanchez
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483390b76a193000885f4ca
+
+event_id: 71041  [matched]
+event:    Bellator 210 - Njokuani vs. Salter
+video:    Bellator 210: Njokuani vs Salter
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483391676a193000885f501
+
+event_id: 71423  [matched]
+event:    Bellator 211 - Sakara vs. Kauppinen
+video:    Bellator 211: Sakara vs. Kauppinen
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a53536e0c0008acdcbb
+
+event_id: 71465  [matched]
+event:    Bellator 212 - Primus vs. Chandler 2
+video:    Bellator 212: Primus vs Chandler 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a61f77b61000833bcb0
+
+event_id: 70955  [matched]
+event:    Bellator 213 - Macfarlane vs. Letourneau
+video:    Bellator 213: MacFarlane vs Letourneau
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a6dee5cc40008b985aa
+
+event_id: 71585  [matched]
+event:    Bellator 214 - Fedor vs. Bader
+video:    Bellator 214: Fedor vs Bader
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a7c4cfc2c0008b12d16
+
+event_id: 73641  [matched]
+event:    Bellator 215 - Mitrione vs. Kharitonov
+video:    Bellator 215: Mitrione vs Kharitonov
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a87dc7a7600089a3bec
+
+event_id: 73643  [matched]
+event:    Bellator 216 - MVP vs. Daley
+video:    Bellator 216: MVP vs Daley
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833a938e3c0a0008e172aa
+
+event_id: 73647  [matched]
+event:    Bellator 218 - Sanchez vs. Karakhanyan
+video:    Bellator 218: Sanchez vs Karakhanyan
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833aa34cfc2c0008b12d76
+
+event_id: 73649  [matched]
+event:    Bellator 219 - Awad vs. Girtz
+video:    Bellator 219: Awad vs Girtz
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833ab04cfc2c0008b12da2
+
+event_id: 74715  [matched]
+event:    Bellator 220 - MacDonald vs. Fitch
+video:    Bellator 220: MacDonald vs Fitch
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833abb8e3c0a0008e172ef
+
+event_id: 75299  [matched]
+event:    Bellator 221 - Chandler vs. Pitbull
+video:    Bellator 221: Chandler vs Pitbull
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833aca536e0c0008ace072
+
+event_id: 75617  [matched]
+event:    Bellator 222 - MacDonald vs. Gracie
+video:    Bellator 222: MacDonald vs Gracie
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b0076a193000885faf5
+
+event_id: 75301  [matched]
+event:    Bellator 224 - Budd vs. Rubin
+video:    Bellator 224: Budd vs Rubin
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b0f4cfc2c0008b12e2a
+
+event_id: 78611  [matched]
+event:    Bellator 226 - Bader vs. Kongo
+video:    Bellator 226: Bader vs Kongo
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b28ee5cc40008b98a9f
+
+event_id: 78613  [matched]
+event:    Bellator 228 - Pitbull vs. Archuleta
+video:    Bellator 228: Machida vs Mouasi 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b3ef77b61000833c196
+
+event_id: 78615  [matched]
+event:    Bellator 229 - Koreshkov vs. Larkin
+video:    Bellator 229: Koreshkov vs Larkin
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b4c4cfc2c0008b1311b
+
+event_id: 79755  [matched]
+event:    Bellator 231 - Mir vs. Nelson 2
+video:    Bellator 231: Mir vs Nelson 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833b5d536e0c0008ace25a
+
+event_id: 79757  [matched]
+event:    Bellator 232 - MacDonald vs. Lima 2
+video:    Bellator 232: MacDonald vs Lima 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833def4f5ba50008902434
+
+event_id: 79753  [matched]
+event:    Bellator 233 - Salter vs. van Steenis
+video:    Bellator 233: Salter vs. van Steenis
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653ae6fe2cf13100084f6f1c
+
+event_id: 81825  [matched]
+event:    Bellator 236 - Macfarlane vs. Jackson
+video:    Bellator 236: Macfarlane vs Jackson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833e1d536e0c0008ace74e
+
+event_id: 81827  [matched]
+event:    Bellator 237 - Fedor vs. Rampage
+video:    Bellator 237: Fedor vs Rampage
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833e2ba51cb80008e6fa58
+
+event_id: 81829  [matched]
+event:    Bellator 238 - Budd vs. Cyborg
+video:    Bellator 238: Budd vs Cyborg
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833e4e76a193000886081a
+
+event_id: 83113  [matched]
+event:    Bellator 239 - Ruth vs. Amosov
+video:    Bellator 239: Ruth vs Amosov
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833e5d4cfc2c0008b138eb
+
+event_id: 87097  [matched]
+event:    Bellator 242 - Bandejas vs. Pettis
+video:    Bellator 242: Bandejas vs Pettis
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f2e76a19300088609b9
+
+event_id: 87098  [matched]
+event:    Bellator 243 - Chandler vs. Henderson 2
+video:    Bellator 243: Chandler vs Henderson II
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653ae8bb770cf100085771ba
+
+event_id: 87100  [matched]
+event:    Bellator 244 - Bader vs. Nemkov
+video:    Bellator 244: Bader vs Nemkov
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f4b4cfc2c0008b139f0
+
+event_id: 87101  [matched]
+event:    Bellator 245 - Davis vs. Machida 2
+video:    Bellator 245: Machida vs Davis
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f588e3c0a0008e17e42
+
+event_id: 87395  [matched]
+event:    Bellator 246 - Archuleta vs. Mix
+video:    Bellator 246: Archuleta vs Mix
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f6517f5e10008c40082
+
+event_id: 88484  [matched]
+event:    Bellator 255 - Pitbull vs. Sanchez 2
+video:    Bellator 255: Pitbull vs Sanchez 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f7d8e3c0a0008e17e97
+
+event_id: 88626  [matched]
+event:    Bellator 256 - Bader vs. Machida 2
+video:    Bellator 256: Bader vs. Machida 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833f8ea51cb80008e6fbdc
+
+event_id: 88664  [matched]
+event:    Bellator 257 - Nemkov vs. Davis 2
+video:    Bellator 257: Nemkov vs. Davis 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833fa14cfc2c0008b13a6a
+
+event_id: 88670  [matched]
+event:    Bellator 258 - Archuleta vs. Pettis
+video:    Bellator 258: Archuleta vs. Pettis
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833fae4f5ba50008902641
+
+event_id: 88879  [matched]
+event:    Bellator 259 - Cyborg vs. Smith 2
+video:    Bellator 259: Cyborg vs. Smith 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833fbff77b61000833c962
+
+event_id: 89160  [matched]
+event:    Bellator 260 - Lima vs. Amosov
+video:    Bellator 260: Lima vs. Amosov
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833fd0a51cb80008e6fc59
+
+event_id: 89324  [matched]
+event:    Bellator 261 - Johnson vs. Moldavsky
+video:    Bellator 261: Johnson vs. Moldavsky
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64833fec76a1930008860c49
+
+event_id: 89446  [matched]
+event:    Bellator 262 - Velasquez vs. Kielholtz
+video:    Bellator 262: Velasquez vs Kielholtz
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64834008536e0c0008acea4c
+
+event_id: 89623  [matched]
+event:    Bellator 263 - Pitbull vs. McKee
+video:    Bellator 263: Pitbull vs McKee
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648340174f5ba50008902704
+
+event_id: 89721  [matched]
+event:    Bellator 264 - Mousasi vs. Salter
+video:    Bellator 264: Mousasi vs. Salter
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648340258e3c0a0008e18008
+
+event_id: 89944  [matched]
+event:    Bellator 265 - Kongo vs. Kharitonov
+video:    Bellator 265: Kongo vs. Kharitonov
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64834049ee5cc40008b99218
+
+event_id: 90191  [matched]
+event:    Bellator 266 - Romero vs. Davis
+video:    Bellator 266: Davis vs. Romero
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483406f536e0c0008aceb45
+
+event_id: 90051  [matched]
+event:    Bellator 267 - Lima vs. MVP 2
+video:    Bellator 267: MVP vs. Lima 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483425617f5e10008c40749
+
+event_id: 90090  [matched]
+event:    Bellator 268 - Nemkov vs. Anglickas
+video:    Bellator 268: Nemkov vs. Anglickas
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64834264f77b61000833d0eb
+
+event_id: 89720  [matched]
+event:    Bellator 269 - Fedor vs. Johnson
+video:    Bellator 269: Fedor vs. Johnson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64834275f77b61000833d12f
+
+event_id: 89998  [matched]
+event:    Bellator 270 - Queally vs. Pitbull 2
+video:    Bellator 270: Queally vs. Pitbull 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64834291a51cb80008e6ffc6
+
+event_id: 90726  [matched]
+event:    Bellator 271 - Cyborg vs. Kavanagh
+video:    Bellator 271: Cyborg vs. Kavanagh
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/6483429c76a19300088612f2
+
+event_id: 90729  [matched]
+event:    Bellator 272 - Pettis vs. Horiguchi
+video:    Bellator 272: Pettis vs Horiguchi
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/648342a9a51cb80008e70003
+
+event_id: 91488  [matched]
+event:    Bellator 273 - Bader vs. Moldavsky
+video:    Bellator 273: Bader vs. Moldavsky
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bf7d867bd1a0008560d5f
+
+event_id: 91678  [matched]
+event:    Bellator 274 - Gracie vs. Storley
+video:    Bellator 274: Gracie vs. Storley
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bf8f2045c3d000868ddd7
+
+event_id: 91509  [matched]
+event:    Bellator 275 - Mousasi vs. Vanderford
+video:    Bellator 275: Mousasi vs. Vanderford
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bf9a0cf349400080f6150
+
+event_id: 91869  [matched]
+event:    Bellator 276 - Borics vs. Burnell
+video:    Bellator 276: Borics vs Burnell
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bfc2590a74c000862e647
+
+event_id: 92105  [matched]
+event:    Bellator 277 - McKee vs. Pitbull 2
+video:    Bellator 277: McKee vs Pitbull 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bfcf3cf349400080f6853
+
+event_id: 92346  [matched]
+event:    Bellator 278 - Velasquez vs. Carmouche
+video:    Bellator 278: Velasquez vs Carmouche
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bfd38bfbaec0008993650
+
+event_id: 92345  [matched]
+event:    Bellator 279 - Cyborg vs. Blencowe 2
+video:    Bellator 279: Cyborg vs Blencowe 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bfd9e045c3d0008693e90
+
+event_id: 91959  [matched]
+event:    Bellator 280 - Bader vs. Kongo 2
+video:    Bellator 280: Bader vs Kongo 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bff78045c3d0008694793
+
+event_id: 91826  [matched]
+event:    Bellator 281 - MVP vs. Storley
+video:    Bellator 281: MVP vs Storley
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653bffd37312a400081f321f
+
+event_id: 92671  [matched]
+event:    Bellator 282 - Mousasi vs. Eblen
+video:    Bellator 282: Mousasi vs Eblen
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653c0098295b840008bb8a40
+
+event_id: 93333  [matched]
+event:    Bellator 283 - Lima vs. Jackson
+video:    Bellator 283: Lima vs Jackson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/653c010190a74c000862fcf6
+
+event_id: 93543  [matched]
+event:    Bellator 284 - Gracie vs. Yamauchi
+video:    Bellator 284: Gracie vs Yamauchi
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/654436db4d6d8f0008445e17
+
+event_id: 92619  [matched]
+event:    Bellator 285 - Henderson vs. Queally
+video:    Bellator 285: Henderson vs. Queally
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b97fde40c4a0008d00f8d
+
+event_id: 94087  [matched]
+event:    Bellator 286	 - Pitbull vs. Borics
+video:    Bellator 286: Pitbull vs. Borics
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b981e5534bb0008dc5383
+
+event_id: 94243  [matched]
+event:    Bellator 287 - Piccolotti vs. Barnaoui
+video:    Bellator 287: Piccolotti vs. Barnaoui
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b9829030a2c000815f6d3
+
+event_id: 94470  [matched]
+event:    Bellator 288 - Nemkov vs. Anderson 2
+video:    Bellator 288: Nemkov vs. Anderson 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b9854eeb337000829b590
+
+event_id: 94521  [matched]
+event:    Bellator 289 - Stots vs. Sabatello
+video:    Bellator 289: Stots vs. Sabatello
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98b33a61d400088b59f7
+
+event_id: 95557  [matched]
+event:    Bellator 290 - Bader vs. Fedor 2
+video:    Bellator 290: Emelianenko vs. Bader 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98bb49c40600083b414a
+
+event_id: 94896  [matched]
+event:    Bellator 291 - Amosov vs. Storley 2
+video:    Bellator 291: Amosov vs. Storley 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98c7daad7f0008abe09b
+
+event_id: 96174  [matched]
+event:    Bellator 292 - Nurmagomedov vs. Henderson
+video:    Bellator 292: Nurmagomedov vs. Henderson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98ce5534bb0008dc54ad
+
+event_id: 96285  [matched]
+event:    Bellator 293 - Golm vs. James
+video:    Bellator 293: Golm vs. James
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98d8daad7f0008abe0da
+
+event_id: 96605  [matched]
+event:    Bellator 294 - Carmouche vs. Bennett 2
+video:    Bellator 294: Carmouche vs. Bennett 2
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98dfafc24200081569d2
+
+event_id: 96606  [matched]
+event:    Bellator 295 - Stots vs. Mix
+video:    Bellator 295: Stots vs. Mix
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673b98efe40c4a0008d011d0
+
+event_id: 96175  [matched]
+event:    Bellator 296 - Mousasi vs. Edwards
+video:    Bellator 296: Mousasi vs. Edwards
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673cec69eeb33700082ebd64
+
+event_id: 97147  [matched]
+event:    Bellator 297 - Nemkov vs. Romero
+video:    Bellator 297: Nemkov vs. Romero
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673cec75030a2c00081b1ed6
+
+event_id: 97863  [matched]
+event:    Bellator 298 - Storley vs. Ward
+video:    Bellator 298: Storley vs. Ward
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673cec873a61d400088fc167
+
+event_id: 96868  [matched]
+event:    Bellator 299 - Eblen vs. Edwards
+video:    Bellator 299: Eblen vs. Edwards
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673ceca1cf55710008766caf
+
+event_id: 98827  [matched]
+event:    Bellator 300 - Nurmagomedov vs. Primus
+video:    Bellator 300: Nurmagomedov vs. Primus
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673cecaeafc242000819c56e
+
+event_id: 99439  [matched]
+event:    Bellator 301 - Amosov vs. Jackson
+video:    Bellator 301: Amosov vs. Jackson
+url:      https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/673cfc05daad7f0008b12314
+
+
+MATCHED FIGHTS (200)
+----------------------------------------------------------------------
+fight_id: c1c2d2f2-b021-5624-996d-75127b6a127f  [matched]
+fight:    Andrey Koreshkov vs Douglas Lima @ Bellator 140 - Lima vs. Koreshkov
+video:    Andrey Koreshkov vs. Douglas Lima I From Bellator 140
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/140/episode/64876f60a51cb80008ec642c
+
+fight_id: fc8ed2e6-a86a-5909-a8da-04932d9491d6  [matched]
+fight:    Tito Ortiz vs Chael Sonnen @ Bellator 170 - Sonnen vs. Ortiz
+video:    Tito Ortiz vs Chael Sonnen From Bellator 170
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/170/episode/64878f17536e0c0008b4cb0d
+
+fight_id: dcd7d5d9-e6cc-5c28-8b8d-c13aa93b2e92  [matched]
+fight:    Noad Lahat vs Jeremiah Labiano @ Bellator 188 - Lahat vs. Labiano
+video:    Noah Lahat vs. Jeremiah Labiano From Bellator 188
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/188/episode/64878ba817f5e10008cc1200
+
+fight_id: 297fc3c2-4304-52e0-9a85-5324109c4aa2  [matched]
+fight:    Julia Budd vs Arlene Blencowe @ Bellator 189 - Budd vs. Blencowe 2
+video:    Julia Budd vs. Arlene Blencowe From Bellator 189
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/189/episode/64878738a51cb80008eceb08
+
+fight_id: e8ede2b0-85e1-5943-8bd3-5c1d4a23c119  [matched]
+fight:    Brandon Phillips vs Jordan Howard @ Bellator 189 - Budd vs. Blencowe 2
+video:    Jordan Howard vs. Brandon Phillips From Bellator 189
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/189/episode/64878698ee5cc40008bfa3aa
+
+fight_id: fafc175f-35fc-5a66-a3e5-d8dbc29ac270  [matched]
+fight:    Chidi Njokuani vs Hisaki Kato @ Bellator 189 - Budd vs. Blencowe 2
+video:    Hisaki Kato vs. Chidi Njokuani From Bellator 189
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/189/episode/64878001a51cb80008eccd2f
+
+fight_id: a17d5249-d1b6-55a9-b460-c67ea9d669ed  [matched]
+fight:    Rafael Lovato Jr. vs Chris Honeycutt @ Bellator 189 - Budd vs. Blencowe 2
+video:    Rafael Lovato Jr. vs. Chris Honeycutt From Bellator 189
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/189/episode/64878db54cfc2c0008ba888e
+
+fight_id: e159ed95-fa93-50b9-8578-5de07ce0f07e  [matched]
+fight:    David Rickels vs Adam Piccolotti @ Bellator 189 - Budd vs. Blencowe 2
+video:    David Rickels vs. Adam Piccolotti From Bellator 189
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/189/episode/64877734536e0c0008b49c5c
+
+fight_id: 67f82c52-d823-5999-b573-68ba0a075083  [matched]
+fight:    Carlos Leal vs Mihail Nica @ Bellator 190 - Carvalho vs. Sakara
+video:    Mihail Nica vs. Carlos Leal Miranda From Bellator 190
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/190/episode/64878b4df77b6100083da74b
+
+fight_id: 0c7a442f-ee6b-536e-ac4f-95a623be504a  [matched]
+fight:    Alejandra Lara vs Lena Ovchynnikova @ Bellator 190 - Carvalho vs. Sakara
+video:    Lena Ovchynnikova vs. Alejandra Lara From Bellator 190
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/190/episode/64878a0aa51cb80008ecfb65
+
+fight_id: ac15a55f-d043-5239-83d6-75bb7c480c3a  [matched]
+fight:    Valerie Letourneau vs Kate Jackson @ Bellator 191 - McDonald vs. Ligier
+video:    Valerie Letourneau vs. Kate Jackson From Bellator 191
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/191/episode/64878f974f5ba5000896b32e
+
+fight_id: 04adc614-1100-5423-8880-2d27978eeeed  [matched]
+fight:    Jeremy Petley vs Lewis Monarch @ Bellator 191 - McDonald vs. Ligier
+video:    Jeremy Petley vs. Lewis Monarch From Bellator 191
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/191/episode/648784774cfc2c0008ba76b1
+
+fight_id: fea9460c-18cf-5d8c-a1d2-173eae64efc2  [matched]
+fight:    Michael Chandler vs Goiti Yamauchi @ Bellator 192 - Jackson vs. Sonnen
+video:    Michael Chandler vs. Goiti Yamauchi From Bellator 192
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/192/episode/64878b2fa51cb80008ed019a
+
+fight_id: 0e17874f-a3d7-5018-8237-80c0cb0817a0  [matched]
+fight:    Chael Sonnen vs Quinton Jackson @ Bellator 192 - Jackson vs. Sonnen
+video:    Rampage Jackson vs. Chael Sonnen From Bellator 192
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/192/episode/64878dc1ee5cc40008bfb683
+
+fight_id: 631c61e0-bbd0-5e0d-842d-0382f581ab7e  [matched]
+fight:    Henry Corrales vs Georgi Karakhanyan @ Bellator 192 - Jackson vs. Sonnen
+video:    Georgi Karakhanyan vs. Henry Corrales From Bellator 192
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/192/episode/64877e99536e0c0008b4a87a
+
+fight_id: e9c64bd9-a2de-5e4e-b38e-2b86b83c95cc  [matched]
+fight:    Rory MacDonald vs Douglas Lima @ Bellator 192 - Jackson vs. Sonnen
+video:    Douglas Lima vs. Rory MacDonald From Bellator 192
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/192/episode/64877790536e0c0008b49cfb
+
+fight_id: c40fd40c-fae7-5b41-9947-8822b462ea90  [matched]
+fight:    A.J. Matthews vs Kendall Grove @ Bellator 193 - Larkin vs. Gonzalez
+video:    Kendall Grove vs. AJ Matthews From Bellator 193
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/193/episode/6487876417f5e10008cc055d
+
+fight_id: 36d67ead-2f78-5a72-9fa8-8b463a2148d5  [matched]
+fight:    Lorenz Larkin vs Fernando Gonzalez @ Bellator 193 - Larkin vs. Gonzalez
+video:    Lorenz Larkin vs. Fernando Gonzalez From Bellator 193
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/193/episode/64878ac6536e0c0008b4be4f
+
+fight_id: 8a6e08ef-9e25-5341-a0f9-0daba0eb3d14  [matched]
+fight:    Heather Hardy vs Ana Julaton @ Bellator 194 - Nelson vs. Mitrione
+video:    Heather Hardy vs. Ana Julaton From Bellator 194
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/194/episode/64877ff417f5e10008cbf45f
+
+fight_id: 64a18d8c-4962-5fd0-8929-ef0684c4127b  [matched]
+fight:    Matt Mitrione vs Roy Nelson @ Bellator 194 - Nelson vs. Mitrione
+video:    Roy Nelson vs. Matt Mitrione From Bellator 194
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/194/episode/64878e53f77b6100083daf89
+
+fight_id: a1a3ea67-2926-5050-967c-e0887c787f0a  [matched]
+fight:    Ross Richardson vs Ronie Arana Leon @ Bellator 194 - Nelson vs. Mitrione
+video:    Ross Richardson vs. Ronie Arana Leon From Bellator 194
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/194/episode/64878e3017f5e10008cc1b93
+
+fight_id: 570098e1-9bd5-5313-8635-fc9a94aa5d3a  [matched]
+fight:    Marcus Surin vs Dean Hancock @ Bellator 194 - Nelson vs. Mitrione
+video:    Marcus Surin vs. Dean Hancock From Bellator 194
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/194/episode/64878b1fdc7a760008a152b9
+
+fight_id: 18399bfc-b93a-50f2-86b0-183f13a94abd  [matched]
+fight:    Jarod Trice vs Walter Howard @ Bellator 194 - Nelson vs. Mitrione
+video:    Jarod Trice vs. Walter Howard From Bellator 194
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/194/episode/6487840ff77b6100083d9d13
+
+fight_id: 65b5de50-26bf-58e2-b51a-cb2afd3dd29e  [matched]
+fight:    Juan Archuleta vs William Joplin @ Bellator 195 - Caldwell vs. Higo
+video:    Juan Archuleta vs. William Joplin From Bellator 195
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/195/episode/648786ecee5cc40008bfa4e5
+
+fight_id: 65ee9baa-6a0e-5088-8b17-7b85ee2a43b8  [matched]
+fight:    Romero Cotton vs Justin Reeser @ Bellator 195 - Caldwell vs. Higo
+video:    Romero Cotton vs. Justin Reeser From Bellator 195
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/195/episode/64878e21dc7a760008a15c5f
+
+fight_id: 5d2ab071-ce74-50f8-9634-022da553e5d6  [matched]
+fight:    Kristina Williams vs Emily Ducote @ Bellator 195 - Caldwell vs. Higo
+video:    Emily Ducote vs. Kristina Williams From Bellator 195
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/195/episode/64877d488e3c0a0008e8ded6
+
+fight_id: 9bcc4c58-92e8-52e7-bb40-715f53419b9d  [matched]
+fight:    Joe Taimanglo vs Joe Warren @ Bellator 195 - Caldwell vs. Higo
+video:    Joe Warren vs. Baby Joe Taimanglo From Bellator 195
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/195/episode/648784a976a19300088e8ce7
+
+fight_id: 494b46a0-ec90-5ffd-bd56-858502cd9e11  [matched (partial)]
+fight:    Daniel Carey vs Cris Lencioni @ Bellator 195 - Caldwell vs. Higo
+video:    Cris Williams vs. Daniel Carey From Bellator 195
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/195/episode/648776b2f77b6100083d58f8
+
+fight_id: d9eac623-f189-5554-a5ab-1927e83efad1  [matched]
+fight:    Adam Borics vs Teodor Nikolov @ Bellator 196 - Henderson vs. Huerta
+video:    Adám Borics vs. Teodor Nikolov From Bellator 196
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/196/episode/64876b15536e0c0008b462e4
+
+fight_id: c07641d8-496f-5357-a664-8f860e81cc80  [matched]
+fight:    Ed Ruth vs Ion Pascu @ Bellator 196 - Henderson vs. Huerta
+video:    Ed Ruth vs. Ion Pascu From Bellator 196
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/196/episode/648777d0ee5cc40008bf84eb
+
+fight_id: 1e4d7a69-58c4-5d5b-a86d-bfa202360a36  [matched]
+fight:    Derek Anderson vs Zak Bucia @ Bellator 197 - Chandler vs. Girtz
+video:    Derek Anderson vs. Zac Bucia From Bellator 197
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/197/episode/6487775976a19300088e6f4f
+
+fight_id: 6521e7e4-ddf3-5ef6-bdd1-25225bf26553  [matched]
+fight:    Eric Ellington vs Jordan Howard @ Bellator 197 - Chandler vs. Girtz
+video:    Jordan Howard vs. Eric Ellington From Bellator 197
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/197/episode/64878699dc7a760008a146ef
+
+fight_id: 58214274-7320-5482-8105-0d6ba6a46fcb  [matched]
+fight:    Dominic Mazzotta vs Josh Sampo @ Bellator 197 - Chandler vs. Girtz
+video:    Dominic Mazzotta vs. Josh Sampo From Bellator 197
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/197/episode/6487777d536e0c0008b49cc7
+
+fight_id: 8a6a62dc-fa56-5be3-94a8-89c731adc9f5  [matched]
+fight:    Juliana Velasquez vs Rebecca Ruth @ Bellator 197 - Chandler vs. Girtz
+video:    Rebecca Ruth vs. Juliana Velasquez From Bellator 197
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/197/episode/64878ddf4f5ba5000896ae48
+
+fight_id: fac7f122-bfb3-5810-92c5-c80e83e156db  [matched]
+fight:    Logan Storley vs Joaquin Buckley @ Bellator 197 - Chandler vs. Girtz
+video:    Logan Storley vs. Joaquin Buckley From Bellator 197
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/197/episode/64878aad8e3c0a0008e902a8
+
+fight_id: 8cb0c526-4760-5b04-8c90-d4aa67532e80  [matched]
+fight:    Neiman Gracie vs Javier Torres @ Bellator 198 - Fedor vs. Mir
+video:    Neiman Gracie vs. Javier Torres From Bellator 198
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/198/episode/64878b858e3c0a0008e9052b
+
+fight_id: 30ff882b-4d7b-5546-9431-c530e0496240  [matched]
+fight:    Jon Fitch vs Paul Daley @ Bellator 199 - Bader vs. King Mo
+video:    Paul Daley vs. Jon Fitch From Bellator 199
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/199/episode/64878ce9f77b6100083dabaa
+
+fight_id: aef2b86f-21a4-58f5-bbb9-d0505a63b3ef  [matched]
+fight:    Amber Leibrock vs Janay Harding @ Bellator 199 - Bader vs. King Mo
+video:    Amber Leibrock vs. Janay Harding From Bellator 199
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/199/episode/64876f254cfc2c0008ba197b
+
+fight_id: fef44980-4660-5c1d-becc-d3fe53b6f92b  [matched]
+fight:    Adam Piccolotti vs Carrington Banks @ Bellator 199 - Bader vs. King Mo
+video:    Adam Piccolotti vs. Carrington Banks From Bellator 199
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/199/episode/64876b25dc7a760008a0ca5a
+
+fight_id: a981f664-8870-5ecb-befa-2a44f10487b9  [matched]
+fight:    James Terry vs Danasabe Mohammed @ Bellator 199 - Bader vs. King Mo
+video:    James Terry vs. Danasabe Mohammed From Bellator 199
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/199/episode/648783ce4cfc2c0008ba7577
+
+fight_id: 13bb576f-22ef-5e03-9123-a85a6641f1a3  [matched]
+fight:    Aaron Chalmers vs Ashley Griffiths @ Bellator 200 - Carvalho vs. Mousasi
+video:    Aaron Chalmers vs. Ash Griffiths From Bellator 200
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/200/episode/64876ac1536e0c0008b46248
+
+fight_id: af1d32af-0c89-5ae7-8e3b-de8e50c0366b  [matched]
+fight:    Pedro Carvalho vs Daniel Crawford @ Bellator 200 - Carvalho vs. Mousasi
+video:    Daniel Crawford vs. Pedro Carvalho From Bellator 200
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/200/episode/6487770bf77b6100083d59d9
+
+fight_id: b988e13b-95eb-5e7c-8ba2-9358de34c081  [matched]
+fight:    Phil Davis vs Linton Vassell @ Bellator 200 - Carvalho vs. Mousasi
+video:    Phil Davis vs. Linton Vassell From Bellator 200
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/200/episode/64878d55536e0c0008b4c64a
+
+fight_id: 8e2145ed-adc2-5c51-b553-2fd3282469bb  [matched]
+fight:    Charlie Leary vs Tom Green @ Bellator 200 - Carvalho vs. Mousasi
+video:    Charlie Leary vs. Tom Green From Bellator 200
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/200/episode/648772714cfc2c0008ba1f56
+
+fight_id: 387aa90b-86d6-5406-8160-e5adf74cd6c4  [matched]
+fight:    Kate Jackson vs Anastasia Yankova @ Bellator 200 - Carvalho vs. Mousasi
+video:    Anastasia Yankova vs. Kate Jackson From Bellator 200
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/200/episode/64876f344f5ba50008965861
+
+fight_id: 452f9c38-6442-5b6d-b9c7-62b4ec13a8e4  [matched]
+fight:    Joey Davis vs Craig Plaskett @ Bellator 201 - Macfarlane vs. Lara
+video:    Joey Davis vs. Craig Plaskett From Bellator 201
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/201/episode/648784b78e3c0a0008e8f9f5
+
+fight_id: 36729fee-91a3-5a3d-b677-abe97b128b4a  [matched]
+fight:    Tyrell Fortune vs Giovanni Sarran @ Bellator 201 - Macfarlane vs. Lara
+video:    Tyrell Fortune vs. Giovanni Sarran From Bellator 201
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/201/episode/64878f584f5ba5000896b2a1
+
+fight_id: 41ad11c8-c80e-570b-b192-81681986e0fd  [matched]
+fight:    Valerie Letourneau vs Kristina Williams @ Bellator 201 - Macfarlane vs. Lara
+video:    Valérie Létourneau vs. Kristina Williams From Bellator 201
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/201/episode/64878fa98e3c0a0008e91531
+
+fight_id: c13f5a20-a1bd-58ab-9b6a-1815746bd48c  [matched]
+fight:    Ilima-Lei Macfarlane vs Alejandra Lara @ Bellator 201 - Macfarlane vs. Lara
+video:    Ilima-Lei Macfarlane vs. Alejandra Lara From Bellator 201
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/201/episode/64878040a51cb80008eccd69
+
+fight_id: e6ad92a0-973d-5985-8096-67f9792fd9cc  [matched]
+fight:    Ed Ruth vs Andy Murad @ Bellator 201 - Macfarlane vs. Lara
+video:    Ed Ruth vs. Andy Murad From Bellator 201
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/201/episode/648777b517f5e10008cbd32c
+
+fight_id: e50accac-41f4-52eb-b69e-785e5596d4bf  [matched]
+fight:    Veta Arteaga vs Emily Ducote @ Bellator 202 - Budd vs. Nogueira
+video:    Emily Ducote vs. Veta Arteaga From Bellator 202
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/202/episode/64877d554cfc2c0008ba4d74
+
+fight_id: 9fb0a6d2-ccde-533b-93ef-75ae84c8b278  [matched]
+fight:    Tyler Ingram vs Fernando Gonzalez Trevino @ Bellator 202 - Budd vs. Nogueira
+video:    Fernando Gonzalez vs. Tyler Ingram From Bellator 202
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/202/episode/64877e2cf77b6100083d8c6e
+
+fight_id: d4f06b3b-2342-5341-bdf1-8f70ca7da32f  [matched]
+fight:    Yaroslav Amosov vs Gerald Harris @ Bellator 202 - Budd vs. Nogueira
+video:    Gerald Harris vs. Yaroslav Amosov From Bellator 202
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/202/episode/64877fbbee5cc40008bf9665
+
+fight_id: 7f4c27a4-3b26-55b1-b018-f062bb409aa6  [matched]
+fight:    Chris Honeycutt vs Leo Leite @ Bellator 202 - Budd vs. Nogueira
+video:    Chris Honeycutt vs. Leo Leite From Bellator 202
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/202/episode/6487767b536e0c0008b49a20
+
+fight_id: 1359ed80-74d9-534d-ae35-b4c98ced221a  [matched]
+fight:    Will Morris vs Charles Williams @ Bellator 202 - Budd vs. Nogueira
+video:    Charles Williams vs. Will Morris From Bellator 202
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/202/episode/64877262536e0c0008b490b4
+
+fight_id: b5afb875-7288-5820-ba2b-0355e41c1b0d  [matched]
+fight:    Patricio Freire vs Daniel Weichel @ Bellator 203 - Pitbull vs. Weichel 2
+video:    Patricio Pitbull vs. Daniel Weichel 2 From Bellator 203
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/203/episode/64878cc84cfc2c0008ba8461
+
+fight_id: 2281187d-2c7d-5900-9b18-62304289ab3b  [matched]
+fight:    Darrion Caldwell vs Noad Lahat @ Bellator 204 - Caldwell vs. Lahat
+video:    Darrion Caldwell vs. Noad Lahat From Bellator 204
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/204/episode/64877718dc7a760008a12740
+
+fight_id: 29488ee4-c658-54aa-ae26-d64900f23c30  [matched]
+fight:    Tywan Claxton vs Cris Lencioni @ Bellator 204 - Caldwell vs. Lahat
+video:    Tywan Claxton vs. Chris Lencioni From Bellator 204
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/204/episode/64878f7017f5e10008cc1eae
+
+fight_id: b4dd7f64-ddc3-58d3-b01e-a1b187cac47c  [matched]
+fight:    Demarques Jackson vs Bryce Logan @ Bellator 204 - Caldwell vs. Lahat
+video:    Bryce Logan vs. Demarques Jackson From Bellator 204
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/204/episode/648772538e3c0a0008e8c96f
+
+fight_id: a7022a2c-e61c-51ec-b99e-591650d98e5a  [matched]
+fight:    Veta Arteaga vs Denise Kielholtz @ Bellator 205 - McKee vs. Macapa
+video:    Veta Arteaga vs. Denise Kielholtz From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/205/episode/64878fb876a19300088ea246
+
+fight_id: 3096d034-e75a-5da4-8b92-23b9d14f3076  [matched]
+fight:    Adam Borics vs Josinaldo Silva @ Bellator 205 - McKee vs. Macapa
+video:    Ádám Borics vs. Josenaldo Silva From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/205/episode/64876b018e3c0a0008e899fd
+
+fight_id: c4ee15c2-1391-5362-8c8c-c211bfeb7acd  [matched]
+fight:    Vince Morales vs Justin Williams-Hugo @ Bellator 205 - McKee vs. Macapa
+video:    Vince Morales vs. Justin Hugo From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/205/episode/64878fc6dc7a760008a15fe5
+
+fight_id: d97c1cae-bcfe-5409-ad16-8ac80b6578ad  [matched]
+fight:    Rafael Lovato Jr. vs John Salter @ Bellator 205 - McKee vs. Macapa
+video:    John Salter vs. Rafael Lovato Jr. From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/205/episode/6487855817f5e10008cc030e
+
+fight_id: 65d51743-2716-5f03-9c31-7fbcbdfdfd1d  [matched]
+fight:    Jarod Trice vs Sean Powers @ Bellator 205 - McKee vs. Macapa
+video:    Jarod Trice vs. Sean Powers From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/205/episode/6487840ea51cb80008ece44b
+
+fight_id: 2ddaf402-a834-5252-9dd4-7f278ffb2659  [matched]
+fight:    Andre Fialho vs Javier Torres @ Bellator 207 - Mitrione vs. Bader
+video:    Andre Fialho vs. Javier Torres From Bellator 207
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/207/episode/64876f53ee5cc40008bf6a69
+
+fight_id: 6b467a44-5a82-5730-8452-b2758467d94b  [matched]
+fight:    Lorenz Larkin vs Ion Pascu @ Bellator 207 - Mitrione vs. Bader
+video:    Lorenz Larkin vs. Ion Pascu From Bellator 207
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/207/episode/64878ac3a51cb80008ecfdb6
+
+fight_id: 64ae839b-74f1-5187-be7d-8cdc85042e83  [matched]
+fight:    Sarah Click vs Kristi Lopez @ Bellator 207 - Mitrione vs. Bader
+video:    Kristi Lopez vs. Sarah Click From Bellator 207
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/207/episode/648788ed4f5ba5000896a11b
+
+fight_id: 648aac4a-3fde-56f1-b486-a8ebf8589dac  [matched]
+fight:    Ryan Bader vs Matt Mitrione @ Bellator 207 - Mitrione vs. Bader
+video:    Matt Mitrione vs. Ryan Bader From Bellator 207
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/207/episode/64878afdee5cc40008bfad46
+
+fight_id: c3315642-c7b3-5fb6-9f70-b8782761af41  [matched]
+fight:    Pat Casey vs Kastriot Xhema @ Bellator 207 - Mitrione vs. Bader
+video:    Kastriot Xhema vs. Pat Casey From Bellator 207
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/207/episode/64878758a51cb80008ecebec
+
+fight_id: 13195ef0-9f58-5884-89c0-a910d044e3e9  [matched]
+fight:    Andrews Rodriguez vs Michael DiOrio @ Bellator 208 - Fedor vs. Sonnen
+video:    Mike DiOrio vs. Drews Rodriguez From Bellator 208
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/208/episode/64878b5c76a19300088e9742
+
+fight_id: 6c35dc3d-33ec-534c-9f16-d9b2eefcd4ac  [matched]
+fight:    Benson Henderson vs Saad Awad @ Bellator 208 - Fedor vs. Sonnen
+video:    Benson Henderson vs. Saad Awad From Bellator 208
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/208/episode/64876fe74cfc2c0008ba1baa
+
+fight_id: dd99f60f-25e2-55ef-b4c7-ab28c69776d8  [matched]
+fight:    Nick Fiore vs Jerome Mickle @ Bellator 208 - Fedor vs. Sonnen
+video:    Jerome Mickle vs. Nick Fiore From Bellator 208
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/208/episode/648784858e3c0a0008e8f8e7
+
+fight_id: 9bf08f1d-cd1f-53ec-acef-7a013a49a926  [matched (partial)]
+fight:    David Meskhoradze vs Shaquan Moore @ Bellator 208 - Fedor vs. Sonnen
+video:    Shaquan Moore vs. David Meshkhoradze From Bellator 208
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/208/episode/64878e9117f5e10008cc1c06
+
+fight_id: ea61e614-e615-5c84-8298-996dfde8fa7f  [matched]
+fight:    Anatoly Tokov vs Alexander Shlemenko @ Bellator 208 - Fedor vs. Sonnen
+video:    Alexander Shlemenko vs. Anatoly Tokov From Bellator 208
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/208/episode/64876ef3536e0c0008b47368
+
+fight_id: 08baa351-c08a-5c28-87ec-df17a0f1af6b  [matched]
+fight:    Vadim Nemkov vs Phil Davis @ Bellator 209 - Pitbull vs. Sanchez
+video:    Phil Davis vs. Vadim Nemkov From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64878d5717f5e10008cc19ca
+
+fight_id: 83e281f8-a19f-5e18-b61e-75a03d409647  [matched]
+fight:    Ryan Couture vs Haim Gozali @ Bellator 209 - Pitbull vs. Sanchez
+video:    Haim Gozali vs. Ryan Couture From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64877fe5ee5cc40008bf96b2
+
+fight_id: bebe0467-3976-576b-a0f8-e6f9f3e472a5  [matched]
+fight:    Khonry Gracie vs Ron Becker @ Bellator 209 - Pitbull vs. Sanchez
+video:    Khonry Gracie vs. Ron Becker From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/6487879817f5e10008cc074c
+
+fight_id: 3827408d-a34b-554c-9547-0eec6c8e22dc  [matched (partial)]
+fight:    Andrei Barbarosa vs Honor Kelesh @ Bellator 209 - Pitbull vs. Sanchez
+video:    Honor Kelesh vs. Andrey Barberoshe From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/648780104f5ba50008968073
+
+fight_id: 2c0be2cf-03d1-58ad-84ee-41fc442be95a  [matched]
+fight:    Denis Palancica vs Kirill Medvedovsky @ Bellator 209 - Pitbull vs. Sanchez
+video:    Kirill Medvedovsky vs. Denis Palancica From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/648788de76a19300088e919d
+
+fight_id: 59904ed9-2313-5605-9595-2289a816efa7  [matched]
+fight:    Patricio Freire vs Emmanuel Sanchez @ Bellator 209 - Pitbull vs. Sanchez
+video:    Patricio Pitbull vs. Emmanuel Sanchez From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64878cc7dc7a760008a156f7
+
+fight_id: c9b48d68-0789-5f03-bfeb-91972d57bd05  [matched]
+fight:    Itzik Rubinov vs Ion Pop @ Bellator 209 - Pitbull vs. Sanchez
+video:    Ion Pop vs. Itzik Rubinov From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/648783a64f5ba5000896960c
+
+fight_id: 2e95ad02-94ec-593e-a25c-f656bbf91cd7  [matched]
+fight:    Olga Rubin vs Cindy Dandois @ Bellator 209 - Pitbull vs. Sanchez
+video:    Olga Rubin vs. Cindy Dandois From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64878be7ee5cc40008bfaf94
+
+fight_id: 11ffcf79-8e7f-53de-9163-8750f1e0d893  [matched]
+fight:    Shimon Smotritsky vs Matan Levi @ Bellator 209 - Pitbull vs. Sanchez
+video:    Shimon Smotritsky vs. Matan Levi From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64878ecb4f5ba5000896b1f6
+
+fight_id: 06418acd-20d8-5b43-8daa-f817781f476c  [matched]
+fight:    Sidemar Honorio vs Liudvik Sholinian @ Bellator 209 - Pitbull vs. Sanchez
+video:    Liudvik Sholinian vs. Sidemar Honorio From Bellator 209
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/209/episode/64878a81f77b6100083da40a
+
+fight_id: b9b8d8f2-d1dd-5a05-9082-1cb407012d28  [matched]
+fight:    Juan Archuleta vs Jeremy Spoon @ Bellator 210 - Njokuani vs. Salter
+video:    Juan Archuleta vs. Jeremy Spoon From Bellator 210
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/210/episode/648786ff17f5e10008cc04cc
+
+fight_id: e2279a74-3f30-5ca9-a64a-02e2b681b1c5  [matched]
+fight:    Gerald Harris vs Hracho Darpinyan @ Bellator 210 - Njokuani vs. Salter
+video:    Gerald Harris vs. Hracho Darpinyan From Bellator 210
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/210/episode/64877ea34f5ba50008967e46
+
+fight_id: 73cf20f8-b4ec-52cf-ad42-13a5fc0d4d4a  [matched]
+fight:    Kristina Williams vs Bruna Ellen @ Bellator 210 - Njokuani vs. Salter
+video:    Kristina Williams vs. Bruna Ellen From Bellator 210
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/210/episode/648788fef77b6100083da289
+
+fight_id: 17364702-e24f-58a5-8e80-a28e8707b3f7  [matched]
+fight:    Kiefer Crosbie vs Orlando D'Ambrosio @ Bellator 211 - Sakara vs. Kauppinen
+video:    Kiefer Crosbie vs. Orlando D'Ambrosio From Bellator 211
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/211/episode/648788c317f5e10008cc0834
+
+fight_id: 024de266-001b-5f49-b108-411574e6441a  [matched]
+fight:    Sam Sicilia vs Derek Campos @ Bellator 212 - Primus vs. Chandler 2
+video:    Derek Campos vs. Sam Sicilia From Bellator 212
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/212/episode/6487776dee5cc40008bf83dc
+
+fight_id: 469fcd20-ba58-5495-a1d4-166f8b37a124  [matched (partial)]
+fight:    Robson Gracie Jr. vs Brysen Bolahao @ Bellator 212 - Primus vs. Chandler 2
+video:    Robson Gracie vs. Brysen Bolohao From Bellator 212
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/212/episode/64878e084cfc2c0008ba88ed
+
+fight_id: 1e9b69ad-0db9-5c85-8794-c3242de61dc7  [matched]
+fight:    Javy Ayala vs Frank Mir @ Bellator 212 - Primus vs. Chandler 2
+video:    Frank Mir vs. Javy Ayala From Bellator 212
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/212/episode/64877e388e3c0a0008e8e735
+
+fight_id: 81a6bd87-1bca-50c7-a236-afff39822a04  [matched]
+fight:    Michael Chandler vs Brent Primus @ Bellator 212 - Primus vs. Chandler 2
+video:    Brent Primus vs. Michael Chandler 2 From Bellator 212
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/212/episode/64877235f77b6100083d289f
+
+fight_id: 3cba41f4-b08f-53a9-ab75-2f9500ecd254  [matched]
+fight:    Juan Archuleta vs Ricky Bandejas @ Bellator 214 - Fedor vs. Bader
+video:    Juan Archuleta vs. Ricky Bandejas From Bellator 214
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/214/episode/648786f44cfc2c0008ba7a26
+
+fight_id: 6754cb04-9111-587b-ab1e-c2d0b29c6950  [matched]
+fight:    Craig Plaskett vs Ian Butler @ Bellator 214 - Fedor vs. Bader
+video:    Ian Butler vs. Craig Plaskett From Bellator 214
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/214/episode/6487801d76a19300088e7cff
+
+fight_id: 81b503f0-3d06-53f6-872c-f43f9a61d6dd  [matched]
+fight:    Zarrukh Adashev vs Ronie Arana Leon @ Bellator 215 - Mitrione vs. Kharitonov
+video:    Zarrukh Adashev vs. Ronie Arana From Bellator 215
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/215/episode/6487902dee5cc40008bfc3ba
+
+fight_id: 68e307f5-d070-5a10-8e8d-66149dca3509  [matched]
+fight:    Eduardo Dantas vs Toby Misech @ Bellator 215 - Mitrione vs. Kharitonov
+video:    Eduardo Dantas vs. Toby Misech From Bellator 215
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/215/episode/64877800f77b6100083d5cc1
+
+fight_id: c92fff72-7bcd-515a-8783-ace91fc4f397  [matched]
+fight:    Logan Storley vs Ion Pascu @ Bellator 215 - Mitrione vs. Kharitonov
+video:    Logan Storley vs. Ion Pascu From Bellator 215
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/215/episode/64878aa5a51cb80008ecfc9c
+
+fight_id: 33a94bc5-cca9-583f-b954-5848ce3735d9  [matched (partial)]
+fight:    Lindsey VanZandt vs Tabatha Ann Watkins @ Bellator 215 - Mitrione vs. Kharitonov
+video:    Tabatha Watkins vs. Lindsay Van Zandt From Bellator 215
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/215/episode/64878ee48e3c0a0008e90d5e
+
+fight_id: 3b5e1582-84e0-5367-bea1-cd5a94d55ab0  [matched]
+fight:    Kiefer Crosbie vs Oktawian Olejniczak @ Bellator 217 - Gallagher vs. Graham
+video:    Kiefer Crosbie vs. Daniel Olejniczak From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/648788c1536e0c0008b4ba64
+
+fight_id: 7c68a1f8-1679-57bd-9373-b252f806d3e1  [matched]
+fight:    Alfie Davis vs Daniele Scatizzi @ Bellator 217 - Gallagher vs. Graham
+video:    Alfie Davis vs. Daniele Scatizzi From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/64876f064cfc2c0008ba1945
+
+fight_id: fa1e06a0-b726-5887-8cff-a9208a21c11f  [matched]
+fight:    Will Fleury vs Shaun Taylor @ Bellator 217 - Gallagher vs. Graham
+video:    Will Fleury vs. Shaun Taylor From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/6487900a17f5e10008cc21f1
+
+fight_id: 2d28dc18-a049-5614-8682-0800905ebf9b  [matched]
+fight:    Myles Price vs Peter Queally @ Bellator 217 - Gallagher vs. Graham
+video:    Peter Queally vs. Myles Price From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/64878d3af77b6100083dad51
+
+fight_id: 36e760c6-a352-5b02-a7a2-b167d531c189  [matched]
+fight:    Paul Redmond vs Charlie Leary @ Bellator 217 - Gallagher vs. Graham
+video:    Paul Redmond vs. Charlie Leary From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/64878d06f77b6100083dac28
+
+fight_id: 67184e33-6c02-52e3-86fe-12813d8a0ab4  [matched]
+fight:    Olga Rubin vs Iony Razafiarison @ Bellator 217 - Gallagher vs. Graham
+video:    Olga Rubin vs. Iony Razafiarison From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/64878bec8e3c0a0008e906ec
+
+fight_id: 667bf45d-395b-577e-9653-7261d57b0fb1  [matched]
+fight:    Richie Smullen vs Adam Gustab @ Bellator 217 - Gallagher vs. Graham
+video:    Richie Smullen vs. Adam Gustab From Bellator 217
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/217/episode/64878ded76a19300088e9f50
+
+fight_id: a8b28804-19ac-5961-8c77-8ba60dd9d917  [matched]
+fight:    Deborah Kouzmin vs Ky Bennett @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Ky Bennett vs. Deborah Kouzmin From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/648789d04f5ba5000896a427
+
+fight_id: 3cf284ce-931f-5a61-be00-14d4ec4d6e2d  [matched]
+fight:    Johnny Eblen vs Chauncey Foxworth @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Johnny Eblen vs. Chauncey Foxworth From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/648785858e3c0a0008e8fadf
+
+fight_id: 8f6663d3-3a1a-5304-b080-cfa357f102ac  [matched (partial)]
+fight:    John Teixeira vs Kevin Croom @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    John Macapa vs. Kevin Croom From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/648784c576a19300088e8d25
+
+fight_id: 7a6b76bb-ff70-5568-bb88-0a396ffb69db  [matched]
+fight:    Valentin Moldavsky vs Linton Vassell @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Valentin Moldavsky vs. Linton Vassell From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/64878f8ba51cb80008ed0bbe
+
+fight_id: 257c6323-0692-5894-823b-4e4c311d0fca  [matched]
+fight:    Jordan Newman vs Joseph Holmes @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Jordan Newman vs. Joseph Holmes From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/648786afee5cc40008bfa471
+
+fight_id: 42c7b883-9ef5-5e9d-834f-64409a345e97  [matched]
+fight:    Norbert Novenyi Jr. vs Will Lavine @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Norbert Novenyi Jr. vs. Will Lavine From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/64878bbf17f5e10008cc123a
+
+fight_id: 6b15ed47-4824-5abe-9512-519eb7fbf4b3  [matched]
+fight:    Emmanuel Sanchez vs Georgi Karakhanyan @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Emmanuel Sanchez vs. Georgi Karakhanyan From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/64877d688e3c0a0008e8df28
+
+fight_id: b3c50906-03d9-54e2-b39a-b5b5749ea6b6  [matched]
+fight:    Isaiah Gutierrez vs Aaron Vickers @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Aaron Vickers vs. Isaiah Gutierrez From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/64876ae976a19300088e08a1
+
+fight_id: 47b6a6ea-1206-5e82-a378-e542890b8f9e  [matched]
+fight:    Vladimir Tokov vs Ryan Walker @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Vladimir Tokov vs. Ryan Walker From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/218/episode/64878fe94cfc2c0008ba8b9a
+
+fight_id: 49a118b7-2ddc-5834-b9d2-737aacab55b2  [matched]
+fight:    Brandon Girtz vs Saad Awad @ Bellator 219 - Awad vs. Girtz
+video:    Saad Awad vs. Brandon Girtz From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/64878e6e536e0c0008b4c799
+
+fight_id: d1dad9a7-144d-58ed-ab36-b7cc49e5a872  [matched]
+fight:    Shawn Bunch vs Dominic Mazzotta @ Bellator 219 - Awad vs. Girtz
+video:    Shawn Bunch vs. Dominic Mazzotta From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/64878ea88e3c0a0008e90cd3
+
+fight_id: 6668efc3-1d18-5bb4-b650-c42a6b2c2818  [matched]
+fight:    John Mercurio vs Johnny Cisneros @ Bellator 219 - Awad vs. Girtz
+video:    Johnny Cisneros vs. John Mercurio From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/64878575dc7a760008a14512
+
+fight_id: b6f2942c-81c3-5883-b2b4-75050f8a7a5a  [matched]
+fight:    Rickey Furar vs Roman Puga @ Bellator 219 - Awad vs. Girtz
+video:    Ricky Furar vs. Roman Puga From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/64878df917f5e10008cc1b48
+
+fight_id: 170caf0a-80b7-5d0e-ac79-4436e79a4354  [matched (partial)]
+fight:    Janay Harding vs Marina Spivac @ Bellator 219 - Awad vs. Girtz
+video:    Janay Harding vs. Marina Mokhnatkina From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/648783e84f5ba5000896979a
+
+fight_id: 5d4baed9-4589-5722-8633-ff0c7b69dbeb  [matched]
+fight:    David Rickels vs A.J. Matthews @ Bellator 219 - Awad vs. Girtz
+video:    David Rickels vs. A.J. Matthews From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/648777268e3c0a0008e8d3ac
+
+fight_id: 2614c544-a6ec-512e-beb6-da2943fb889d  [matched]
+fight:    Joe Schilling vs Keith Berry @ Bellator 219 - Awad vs. Girtz
+video:    Joe Schilling vs. Keith Berry From Bellator 219
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/219/episode/64878497a51cb80008ece576
+
+fight_id: 078b4668-ae46-5c07-8731-260611e6a147  [matched]
+fight:    Galore Bofando vs Keith McCabe @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Galore Bofando vs. Keith McCabe From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/64877e7e536e0c0008b4a848
+
+fight_id: 5f30d9f5-4d14-5075-a027-0a0732292c1c  [matched]
+fight:    Charlie Leary vs Chris Bungard @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Chris Bungard vs. Charlie Leary From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/648776598e3c0a0008e8d21c
+
+fight_id: 8e98ad3c-9351-5208-b1ba-e343a5f9b790  [matched]
+fight:    Paul Daley vs Erick Silva @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Paul Daley vs. Erick Silva From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/64878ce84cfc2c0008ba84a4
+
+fight_id: 00e0bd89-6e43-5417-b7c2-ff3dd4fe5e2c  [matched]
+fight:    Fabian Edwards vs Jonathan Bosuku @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Fabian Edwards vs. Jonathan Bosuku From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/64877e118e3c0a0008e8dfcb
+
+fight_id: f33d5827-e24d-5b72-988a-658a0203b306  [matched]
+fight:    Kevin Fryer vs John Redmond @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Kevin Fryer vs. John Redmond From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/6487878276a19300088e907b
+
+fight_id: 45f5c6f7-612b-57a2-a661-102147fbdeea  [matched]
+fight:    James Gallagher vs Jeremiah Labiano @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    James Gallagher vs. Jeremiah Labiano From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/648783bf76a19300088e855d
+
+fight_id: 6346fcbf-3e5c-57db-8fee-f72e5b1d06d8  [matched]
+fight:    Frans Mlambo vs Nathan Greyson @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Nathan Greyson vs. Frans Mlambo From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/64878b7876a19300088e9781
+
+fight_id: 087f8ae5-8ad7-5ef4-a7b8-8bf56f04e178  [matched]
+fight:    Denise Kielholtz vs Bryony Tyrell @ Bellator 223 - Mousasi vs. Lovato Jr.
+video:    Denise Kielholtz vs. Bryony Tyrell From Bellator 223
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/6487774176a19300088e6f15
+
+fight_id: 1142f424-35e9-5ee8-8d62-44828e9d1afc  [matched]
+fight:    Patricky Freire vs Roger Huerta @ Bellator 205 - McKee vs. Macapa
+video:    Patricky Pitbull vs. Roger Huerta From Bellator 205
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/6536e53f045c3d0008582caa
+
+fight_id: 18411cbb-bbe2-539e-9e18-5c03eb22cb9d  [matched]
+fight:    Anatoly Tokov vs Gerald Harris @ Bellator 218 - Sanchez vs. Karakhanyan
+video:    Anatoly Tokov vs. Gerald Harris From Bellator 218
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/6536e66d295b840008a979a4
+
+fight_id: a57e0d14-36e6-58c6-a2fd-d81612662f67  [matched]
+fight:    Rafael Carvalho vs Chidi Njokuani @ Bellator 224 - Budd vs. Rubin
+video:    Rafael Carvalho vs. Chidi Njokuani From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/64878d9f8e3c0a0008e90c16
+
+fight_id: 81377fcd-2513-5bf0-ab5c-143e353f7e3e  [matched]
+fight:    Nainoa Dung vs Brad Robison @ Bellator 224 - Budd vs. Rubin
+video:    Nainoa Dung vs. Brad Robison From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/64878b694f5ba5000896a737
+
+fight_id: 52a93de9-2238-5f5e-ba8b-af8102624167  [matched]
+fight:    Bruna Ellen vs Elina Kallionidou @ Bellator 224 - Budd vs. Rubin
+video:    Bruna Ellen vs. Elina Kallionidou from Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/6487724376a19300088e6485
+
+fight_id: 6ef3f9b6-b62e-5535-82b0-a45ab40cd2c2  [matched]
+fight:    Will Fleury vs Antonio Jones @ Bellator 224 - Budd vs. Rubin
+video:    Will Fleury vs. Antonio Jones From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/64878ffd4f5ba5000896b8fd
+
+fight_id: 1605aa80-42ac-5a72-b3ca-2436e2101af9  [matched]
+fight:    Ed Ruth vs Kiichi Kunimoto @ Bellator 224 - Budd vs. Rubin
+video:    Ed Ruth vs. Kiichi Kunimoto From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/648777f1ee5cc40008bf859f
+
+fight_id: d7c5fec8-09a7-5bd4-9abc-3c2ebfbd98c8  [matched]
+fight:    Leslie Smith vs Sinead Kavanagh @ Bellator 224 - Budd vs. Rubin
+video:    Leslie Smith vs. Sinead Kavanagh From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/64878a544cfc2c0008ba7eb1
+
+fight_id: 10af84cd-4854-525b-a104-b8c1c4e91d8e  [matched]
+fight:    Gabriel Varga vs Jamese Taylor III @ Bellator 224 - Budd vs. Rubin
+video:    Gabriel Varga vs. Jamese Taylor From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/64877e70dc7a760008a1385d
+
+fight_id: 7780e035-e188-5bc2-bc16-28a0dad2c4af  [matched]
+fight:    Juliana Velasquez vs Kristina Williams @ Bellator 224 - Budd vs. Rubin
+video:    Juliana Velasquez vs. Kristina Williams From Bellator 224
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/224/episode/6487874adc7a760008a14879
+
+fight_id: deb30666-0154-5a0c-8723-aa7656e732c2  [matched]
+fight:    Jon Manley vs Thiago Rela @ Bellator 225 - Mitrione vs. Kharitonov 2
+video:    Jon Manley vs. Thiago Rela From Bellator 225
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/225/episode/648786888e3c0a0008e8fbb1
+
+fight_id: 8e0e17d5-cfa2-513e-8bf4-43af6759036a  [matched]
+fight:    Sergei Kharitonov vs Matt Mitrione @ Bellator 225 - Mitrione vs. Kharitonov 2
+video:    Matt Mitrione vs. Sergei Kharitonov From Bellator 225
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/225/episode/64878afb4f5ba5000896a633
+
+fight_id: 3f4fe5a5-9437-5a58-b3e1-c40ab037daae  [matched]
+fight:    Karl Moore vs Lee Chadwick @ Bellator 227 - Gallagher vs. Salazar
+video:    Lee Chadwick vs. Karl Moore From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/648789f48e3c0a0008e90152
+
+fight_id: f2c57e3b-1c35-559d-8a66-5cd5b7580daa  [matched (partial)]
+fight:    Constantin Gnusarev vs Ian Coughlan @ Bellator 227 - Gallagher vs. Salazar
+video:    Ian Coughlan vs. Constantin Gnusariev From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64878031dc7a760008a13a95
+
+fight_id: cb2e5cdd-465c-5dcc-9ebb-f37e003ca1a3  [matched]
+fight:    Kiefer Crosbie vs Hugo Pereira @ Bellator 227 - Gallagher vs. Salazar
+video:    Kiefer Crosbie vs. Hugo Pereira From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/648788c94f5ba5000896a0e5
+
+fight_id: 52e06ebb-c555-5ad0-859e-f7c213c6556d  [matched]
+fight:    Benson Henderson vs Myles Jury @ Bellator 227 - Gallagher vs. Salazar
+video:    Benson Henderson vs. Myles Jury From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64876fd417f5e10008cb7875
+
+fight_id: d4cc911b-78de-5059-a7e6-51470f80cbdc  [matched]
+fight:    Dylan Logan vs Adam Gustab @ Bellator 227 - Gallagher vs. Salazar
+video:    Dylan Logan vs. Adam Gustab From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/6487779e4cfc2c0008ba2bab
+
+fight_id: 46515df2-533e-5042-8db5-503a378a4883  [matched]
+fight:    Frans Mlambo vs Dominique Wooding @ Bellator 227 - Gallagher vs. Salazar
+video:    Frans Mlambo vs. Dominique Wooding From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64877e554cfc2c0008ba4f94
+
+fight_id: 95f97b66-dff8-5e4c-bcde-5e4fb740a107  [matched]
+fight:    Philip Mulpeter vs Keith McCabe @ Bellator 227 - Gallagher vs. Salazar
+video:    Philip Mulpeter vs. Keith McCabe From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64878d7f4cfc2c0008ba8813
+
+fight_id: d2381cba-75d3-5627-bb8c-c986edc4cb5a  [matched]
+fight:    Norbert Novenyi Jr. vs Will Fleury @ Bellator 227 - Gallagher vs. Salazar
+video:    Norbert Novenyi Jr. vs. Will Fleury From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64878bb4dc7a760008a15424
+
+fight_id: 7ff4f9e2-c0c1-5f24-8fac-42362a0941fa  [matched]
+fight:    Jake Hadley vs Blaine O'Driscoll @ Bellator 227 - Gallagher vs. Salazar
+video:    Blaine O'Driscoll vs. Jake Hadley From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64877225ee5cc40008bf6ed3
+
+fight_id: e9f0e00e-acdf-5b4f-8256-505ae484b5ba  [matched (partial)]
+fight:    Ryan Roddy vs Patrik Pietila @ Bellator 227 - Gallagher vs. Salazar
+video:    Ryan Roddy vs. Patrik Pietilla From Bellator 227
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/227/episode/64878e5e4f5ba5000896b079
+
+fight_id: 5b9d8501-3d81-503f-b66e-26205006e802  [matched]
+fight:    Salim Mukhidinov vs Adel Altamimi @ Bellator 229 - Koreshkov vs. Larkin
+video:    Adel Altamimi vs. Salim Mukhidinov From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64876b3817f5e10008cb6e0a
+
+fight_id: 1d3f4645-fd66-5077-a10c-3a0bfd918462  [matched (partial)]
+fight:    Derek Anderson vs Guilherme Vasconcelos @ Bellator 229 - Koreshkov vs. Larkin
+video:    Derek Anderson vs. Guilherme Bomba From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/6487774e536e0c0008b49c91
+
+fight_id: f03eba1a-d03a-5184-a8e3-d1ec2dc8e72d  [matched]
+fight:    Johnny Eblen vs Mauricio Alonso @ Bellator 229 - Koreshkov vs. Larkin
+video:    Johnny Eblen vs. Mauricio Alonso From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64878593a51cb80008ece664
+
+fight_id: b32dfcd6-7c24-51b8-a863-989d81488fe8  [matched]
+fight:    Vladimir Tokov vs Brandon Hastings @ Bellator 229 - Koreshkov vs. Larkin
+video:    Vladimir Tokov vs. Brandon Hastings From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64878fd917f5e10008cc204b
+
+fight_id: d9673fd3-7ff9-5dbb-819c-ff376ecb06e6  [matched]
+fight:    Kelvin Gentapanan vs Sunni Imhotep @ Bellator 229 - Koreshkov vs. Larkin
+video:    Sunni Imhotep vs. Kelvin Gentapanan From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64878ed94cfc2c0008ba8991
+
+fight_id: 456102a6-d884-5d6a-8a8a-a9b175e45461  [matched]
+fight:    Lorenz Larkin vs Andrey Koreshkov @ Bellator 229 - Koreshkov vs. Larkin
+video:    Andrey Koreshkov vs. Lorenz Larkin From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64876f8d536e0c0008b474c5
+
+fight_id: a4c847dc-ccf9-580e-bf3a-bb2a4e7a663b  [matched]
+fight:    Keri Melendez vs Mandy Polk @ Bellator 229 - Koreshkov vs. Larkin
+video:    Keri Taylor Melendez vs. Mandy Polk From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64878773536e0c0008b4b930
+
+fight_id: 102b63bd-db00-5788-a790-142fae762299  [matched]
+fight:    Anatoly Tokov vs Hracho Darpinyan @ Bellator 229 - Koreshkov vs. Larkin
+video:    Anatoly Tokov vs. Hracho Darpinyan From Bellator 229
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/229/episode/64876f42f77b6100083d0b6f
+
+fight_id: 99268e05-e4d5-54e7-a333-9f3729dfeb97  [matched]
+fight:    Vadim Nemkov vs Rafael Carvalho @ Bellator 230 - Carvalho vs. Nemkov
+video:    Rafael Carvalho vs. Vadim Nemkov From Bellator 230
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/230/episode/64878da14f5ba5000896adb5
+
+fight_id: f0e1f528-732a-569e-869b-930051cfb69e  [matched]
+fight:    Tim Caron vs Lucas Pimenta Borges @ Bellator 231 - Mir vs. Nelson 2
+video:    Tim Caron vs. Lucas Pimenta Borges From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64878f074cfc2c0008ba8a57
+
+fight_id: 48dd4917-00b5-512e-9c35-04ee5674b43f  [matched]
+fight:    Phil Davis vs Karl Albrektsson @ Bellator 231 - Mir vs. Nelson 2
+video:    Phil Davis vs. Karl Albrektsson From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64878d524cfc2c0008ba8731
+
+fight_id: 3d31884e-9214-542a-879e-48059d00769b  [matched]
+fight:    Phumi Nkuta vs Adrian Haley @ Bellator 231 - Mir vs. Nelson 2
+video:    Adrian Haley vs. Phumi Nkuta From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64876edc4f5ba500089657c8
+
+fight_id: 67dfe0cc-cc2f-5b44-945e-4cb2d40f40e9  [matched]
+fight:    Jon Manley vs Thiago Oliveira @ Bellator 231 - Mir vs. Nelson 2
+video:    Jon Manley vs. Thiago Oliveira From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/6487868717f5e10008cc040e
+
+fight_id: 7386c49c-a3ad-52a7-bbc3-591f83c589d9  [matched]
+fight:    Frank Mir vs Roy Nelson @ Bellator 231 - Mir vs. Nelson 2
+video:    Frank Mir vs. Roy Nelson From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64877e458e3c0a0008e8e758
+
+fight_id: 3fcd40f9-30c2-5df1-bc0e-ba95674d1c95  [matched]
+fight:    Killys Mota vs Mandel Nallo @ Bellator 231 - Mir vs. Nelson 2
+video:    Mandel Nallo vs. Killys Mota From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64878b1417f5e10008cc0f5e
+
+fight_id: b5c3c095-e939-5390-a8db-c0e17f6418c4  [matched]
+fight:    Jessy Miele vs Talita Nogueira @ Bellator 231 - Mir vs. Nelson 2
+video:    Talita Nogueira vs. Jessica Miele From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64878ef876a19300088ea13e
+
+fight_id: 09d308e2-e1c7-5b85-ae1d-cbd97d67707a  [matched]
+fight:    Ilara Joanne vs Bec Rawlings @ Bellator 231 - Mir vs. Nelson 2
+video:    Bec Rawlings vs. Ilara Joanne From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/64876fba8e3c0a0008e8acf3
+
+fight_id: b1a1476c-2112-5b0a-9344-932eff6cf2a3  [matched]
+fight:    Dalton Rosta vs Claude Wilcox @ Bellator 231 - Mir vs. Nelson 2
+video:    Dalton Rosta vs. Claude Wilcox From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/648776f9ee5cc40008bf8349
+
+fight_id: 3d06d813-4116-5a16-9783-921210bfa27e  [matched]
+fight:    Ed Ruth vs Jason Jackson @ Bellator 231 - Mir vs. Nelson 2
+video:    Ed Ruth vs. Jason Jackson From Bellator 231
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/231/episode/648777e0a51cb80008eca217
+
+fight_id: a809f702-36a0-59ca-b5ac-076b2ca4ca09  [matched]
+fight:    Tyrell Fortune vs Azunna Anyanwu @ Bellator 233 - Salter vs. van Steenis
+video:    Tyrell Fortune vs. Zu Anyanwu From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/64878f578e3c0a0008e91095
+
+fight_id: 12b85a39-2168-5c8f-9071-8f98ca652ff2  [matched]
+fight:    Tyree Fortune vs Chuck Campbell @ Bellator 233 - Salter vs. van Steenis
+video:    Tyree Fortune vs. Chuck Campbell From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/64878f44f77b6100083db20b
+
+fight_id: 699ca459-f65a-56ae-986f-64e995c16afe  [matched]
+fight:    Amanda Bell vs Janay Harding @ Bellator 233 - Salter vs. van Steenis
+video:    Janay Harding vs. Amanda Bell From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/648783eeee5cc40008bf9f70
+
+fight_id: 2b48a9af-10c9-58b7-adda-3444fd25fc25  [matched]
+fight:    Aaron McKenzie vs Sean Clements @ Bellator 233 - Salter vs. van Steenis
+video:    Aaron McKenzie vs. Sean Clements From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/64876ad5a51cb80008ec58f0
+
+fight_id: 9a8e3101-1095-5bf4-92a0-9ffe4d9a01a0  [matched]
+fight:    Grant Neal vs Jimmy Lugo @ Bellator 233 - Salter vs. van Steenis
+video:    Grant Neal vs. Jimmy Lugo From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/64877fd717f5e10008cbf42e
+
+fight_id: a8914663-7514-59c6-bdca-1ebb3ba7e0e4  [matched]
+fight:    Kyle Crutchmer vs Robert Gidron @ Bellator 233 - Salter vs. van Steenis
+video:    Kyle Crutchmer vs. Robert Gidron From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/648789dd76a19300088e9375
+
+fight_id: e10ca6e3-46fe-5302-ab4d-a1ea41f134b2  [matched]
+fight:    Arlene Blencowe vs Leslie Smith @ Bellator 233 - Salter vs. van Steenis
+video:    Leslie Smith vs. Arlene Blencowe From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/64878a5576a19300088e9431
+
+fight_id: ac8436c0-ad70-5453-9ce0-96d4115fa74e  [matched]
+fight:    Julius Anglickas vs Jordan Young @ Bellator 233 - Salter vs. van Steenis
+video:    Jordan Young vs. Julius Anglickas From Bellator 233
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/233/episode/648786c2536e0c0008b4b6db
+
+fight_id: 31bbc6d9-170a-5c83-8351-63e614b5c0a2  [matched (partial)]
+fight:    Raz Bring vs Nazariy Danylyuk @ Bellator 234 - Kharitonov vs. Vassell
+video:    Raz Bring vs. Naziri Daniliuk From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878dd2a51cb80008ed0907
+
+fight_id: b90578cd-e0e9-5c91-b444-9553366697e8  [matched]
+fight:    Sidney Outlaw vs Roger Huerta @ Bellator 234 - Kharitonov vs. Vassell
+video:    Roger Huerta vs. Sidney Outlaw From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878e13f77b6100083daf40
+
+fight_id: c660a25b-68ce-584f-9220-79d652b568a8  [matched]
+fight:    Linton Vassell vs Sergei Kharitonov @ Bellator 234 - Kharitonov vs. Vassell
+video:    Sergei Kharitonov vs. Linton Vassell From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878e7edc7a760008a15e11
+
+fight_id: 018db130-337b-5692-9070-a6a9dbb96a50  [matched (partial)]
+fight:    Michael Dulger vs Ofir Leibel @ Bellator 234 - Kharitonov vs. Vassell
+video:    Ofir Leibel vs. Mikail Dulgher From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878bcbee5cc40008bfaf4f
+
+fight_id: 655cfe41-bc31-5555-ab33-be3511375858  [matched]
+fight:    Tomer Maslis vs David Malka @ Bellator 234 - Kharitonov vs. Vassell
+video:    Tomer Maslis vs. David Malka From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878f29ee5cc40008bfb8d8
+
+fight_id: 2c3fca62-e8af-590a-b91f-1da55cd1255c  [matched]
+fight:    Eli Aronov vs Sari Hleihil @ Bellator 234 - Kharitonov vs. Vassell
+video:    Eli Aronov vs. Sari Hleihil From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64877d3976a19300088e798a
+
+fight_id: e774bc25-fb6f-5940-ac8a-643233d0c6c9  [matched (partial)]
+fight:    Noam Voldman vs Nizim Rosales @ Bellator 234 - Kharitonov vs. Vassell
+video:    Nisim Rozalis vs. Noam Voldman From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878b94dc7a760008a153da
+
+fight_id: e50d9fdf-4e1b-5f82-a129-197f129008ea  [matched]
+fight:    Sinead Kavanagh vs Olga Rubin @ Bellator 234 - Kharitonov vs. Vassell
+video:    Olga Rubin vs. Sinead Kavanagh From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64878bf0a51cb80008ed030a
+
+fight_id: ee43b1af-531e-5964-a43d-a2ecec6111f0  [matched]
+fight:    Elias Mamadov vs Itay Tratner @ Bellator 234 - Kharitonov vs. Vassell
+video:    Itay Tratner vs. Elias Mamadov From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/648783b1dc7a760008a140bd
+
+fight_id: 413a7a5c-7db7-5b11-99d7-8956978def06  [matched]
+fight:    Austin Vanderford vs Grachik Bozinyan @ Bellator 234 - Kharitonov vs. Vassell
+video:    Austin Vanderford vs. Grachik Bozinyan From Bellator 234
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/234/episode/64876fa6a51cb80008ec6499
+
+fight_id: 27b333ef-bb45-558f-b77e-517fcef0cada  [matched]
+fight:    Tywan Claxton vs Braydon Akeo @ Bellator 235 - Salute the Troops: Barnett vs. Markes
+video:    Tywan Claxton vs. Braydon Akeo From Bellator 235
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/235/episode/64878f754f5ba5000896b2db
+
+fight_id: a5745f9c-a4e3-51c5-b7f3-5d0940f8b871  [matched]
+fight:    Joseph Creer vs Ty Gwerder @ Bellator 235 - Salute the Troops: Barnett vs. Markes
+video:    Ty Gwerder vs. Joseph Creer From Bellator 235
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/235/episode/64878f378e3c0a0008e9105b
+
+fight_id: 7c8b0896-70c8-5c3c-83e6-1b31a20ac852  [matched]
+fight:    Fedor Emelianenko vs Quinton Jackson @ Bellator 237 - Fedor vs. Rampage
+video:    Fedor Emelianenko vs. Quinton Jackson From Bellator 237
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/237/episode/64877e1f4cfc2c0008ba4f51
+
+fight_id: 898bb7de-cab3-5949-88b6-334b9ec5d096  [matched]
+fight:    Michael Page vs Shinsho Anzai @ Bellator 237 - Fedor vs. Rampage
+video:    Michael Page vs. Shinsho Anzai From Bellator 237
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/237/episode/64878b40ee5cc40008bfae11
+
+fight_id: aaddb566-f61d-53a8-8494-b68593935209  [matched]
+fight:    Kevin Croom vs Adil Benjilany @ Bellator 239 - Ruth vs. Amosov
+video:    Adil Benjilany vs. Kevin Croom From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/64876d89f77b6100083cf320
+
+fight_id: 26afa258-cebd-5330-8c4b-403a9bfd9bb4  [matched]
+fight:    Chris Hatley Jr. vs Gaston Bolanos @ Bellator 239 - Ruth vs. Amosov
+video:    Gaston Bolanos vs. Solo Hatley From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/64877e8bdc7a760008a13887
+
+fight_id: 18a1c397-9174-568f-a70d-a19338a6bd26  [matched]
+fight:    Keith Lee vs Shawn Bunch @ Bellator 239 - Ruth vs. Amosov
+video:    Shawn Bunch vs. Keith Lee From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/64878ea617f5e10008cc1d11
+
+fight_id: 1de3bcf2-9673-54f1-b5b4-cc9701c72c48  [matched]
+fight:    Cris Lencioni vs Salim Mukhidinov @ Bellator 239 - Ruth vs. Amosov
+video:    Cris Lencioni vs. Salim Mukhidinov From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/648776a34f5ba50008967275
+
+fight_id: 6d5b0005-43ff-54a5-a635-e11bd7de49d9  [matched]
+fight:    Christopher Gonzalez vs Aaron McKenzie @ Bellator 239 - Ruth vs. Amosov
+video:    Chris Gonzalez vs. Aaron McKenzie From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/6487766676a19300088e6d05
+
+fight_id: eb273ec9-5e9b-5631-a0e1-46d6df734098  [matched]
+fight:    Josh Hill vs Vinicius Zani @ Bellator 239 - Ruth vs. Amosov
+video:    Josh Hill vs. Vinicius Zani From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/648786d9dc7a760008a1473e
+
+fight_id: 55d382ad-ad1e-5794-86fe-6edbe0a6512e  [matched]
+fight:    Grant Neal vs Claude Wilcox @ Bellator 239 - Ruth vs. Amosov
+video:    Grant Neal vs. Claude Wilcox From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/64877fc976a19300088e7cb3
+
+fight_id: 5cb2fad3-ed4a-5b53-8dab-668375b0118f  [matched]
+fight:    Terry Britton vs Gabriel Varga @ Bellator 239 - Ruth vs. Amosov
+video:    Gabriel Varga vs. TeeJay Britton From Bellator 239
+url:      https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/64877e6117f5e10008cbf249
+
+
+UNMATCHED FULL EVENTS (1)
+----------------------------------------------------------------------
+duplicate: event 58819 already matched   | Bellator 180: Davis vs. Bader | https://pluto.tv/us/on-demand/series/6481fba18e3c0a0008dc870a/season/1/episode/64820a024f5ba500088ba075
+
+UNMATCHED FIGHTS (6)
+----------------------------------------------------------------------
+no fight on card for Alfie Davis vs Jorge Kanella @ Bellator 223 - Mousasi vs. Lovato Jr. | Alfie Davis vs. Jorge Kanella From Bellator 223 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/64876f158e3c0a0008e8ab8d
+no fight on card for John Salter vs Costello van Steenis @ Bellator 223 - Mousasi vs. Lovato Jr. | John Salter vs. Costello van Steenis From Bellator 223 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/223/episode/6536e3e34f123d0008792d05
+no fight on card for Chingiz Allazov vs Sudsakorn Sor Klinmee @ Bellator 230 - Carvalho vs. Nemkov | Chingiz Allazov vs. Sudsakorn Sor Klinmee From Bellator Kickboxing 12 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/230/episode/648772814f5ba50008965e28
+no fight on card for Yuri Bessmertny vs Giuseppe De Domenico @ Bellator 230 - Carvalho vs. Nemkov | Yuri Bessmertny vs. Giuseppe De Domenico From Bellator Kickboxing 12 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/230/episode/6487901af77b6100083db3d6
+no fight on card for Endy Bonat vs Kebrom Neguse @ Bellator 230 - Carvalho vs. Nemkov | Endy Bonat vs. Kebrom Neguse From Bellator Kickboxing 12 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/230/episode/64877d7c4cfc2c0008ba4e55
+no fight on card for Christian Edwards vs Marco Hutch @ Bellator 239 - Ruth vs. Amosov | Christian Edwards vs. Marco Hutch From Bellator 239 | https://pluto.tv/us/on-demand/series/64876a21f77b6100083ceb27/season/239/episode/6487768cdc7a760008a12604

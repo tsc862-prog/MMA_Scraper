@@ -36,8 +36,25 @@ Promotions. New table — replaces the free-text `events.organization`.
 | name           | text |
 | gender         | text | 'M' / 'F' — from propagation + Wikidata |
 | gender_checked | bool | Wikidata lookup done |
+| image_url      | text | Sherdog portrait (200×300); null when Sherdog has no photo |
 | nationality    | text | optional, from fighter page |
 | date_of_birth  | date | optional |
+| height         | text | as displayed, e.g. `6'4"` |
+| association    | text | camp / team |
+| profile_scraped_at | timestamptz | null = fighter page never crawled |
+
+The five profile columns plus `profile_scraped_at` are filled by
+`fighter_profile_scraper.py` (added 2026-09-05, `migrate/add_fighter_profile.sql`),
+which crawls `/fighter/<id>` — `sherdog_scraper.py` only reads event pages, which
+carry nothing but a fighter's name and id. `profile_scraped_at` doubles as the
+crawler's resume marker, so there's no tracker file.
+
+There is deliberately **no** `sherdog_url` column: `fighters.id` *is* the Sherdog
+fighter id and `https://www.sherdog.com/fighter/<id>` redirects to the canonical
+slug URL, so the app builds the link from the id it already has.
+
+Sherdog **403s hotlinked images when a `Referer` is sent**, so any `<img>` using
+`image_url` must carry `referrerpolicy="no-referrer"`.
 
 ### fighter_aliases
 | column     | type | notes |
@@ -128,23 +145,6 @@ Audit of inserts/updates/deletes on fights, events, fight_results.
 ### review_queue
 Scraper items needing a human decision (gender, alias suggestions).
 
-### fight_search (view)
-Denormalized join of fights + fighters + events + fight_results for
-app/lookup convenience. Carries the per-fight video URLs plus the
-event-level ones (`event_paramount_url`, `event_fightpass_url`,
-`event_fightpass_prelims_url`, `event_youtube_url`,
-`event_youtube_prelims_url`) so the app can fall back to the full-card
-replay when a fight has no dedicated VOD. `security_invoker=on`.
-`events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
-replay uploads.
-
-## Changes from current
-
-| area | current | target |
-|------|---------|--------|
-| fighter / event ids | UUID hashed from name(+date) | **Sherdog numeric ids** |
-| organization | free-text column on events | **`organizations` table** + FK |
-| event date | text ("April 11, 2026") | `date` type |
 ### rankings
 History of published rankings for the app's Rankings page — added 2026-09-06
 via `migrate/add_rankings.sql`, filled nightly by `rankings_scraper.py`. The
@@ -174,7 +174,28 @@ the newest snapshot per source (what the app shows by default); and
 **`rankings_snapshots`** — one row per (source, snapshot_date) with an entry
 count, feeding the app's "as of" date picker.
 
-| video links | per-platform columns (`paramount_url`, `espn_url`, `youtube_url`, `netflix_url`, `espn_prelims_url`) on events + fights | one **`video_links`** table |
+### fight_search (view)
+Denormalized join of fights + fighters + events + fight_results for
+app/lookup convenience. Carries the per-fight video URLs plus the
+event-level ones (`event_paramount_url`, `event_fightpass_url`,
+`event_fightpass_prelims_url`, `event_youtube_url`,
+`event_youtube_prelims_url`, `event_pluto_url`) so the app can fall back to
+the full-card replay when a fight has no dedicated VOD. `security_invoker=on`.
+`events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
+replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
+/ `event_pluto_url` on the view) was added 2026-09-06 via
+`migrate/add_pluto_url.sql` for Pluto TV's free Bellator replays, filled by
+`pluto_scraper.py` — a one-off backfill (Bellator is defunct), not a nightly
+step. No prelims variant: Pluto posts one replay per card.
+
+## Changes from current
+
+| area | current | target |
+|------|---------|--------|
+| fighter / event ids | UUID hashed from name(+date) | **Sherdog numeric ids** |
+| organization | free-text column on events | **`organizations` table** + FK |
+| event date | text ("April 11, 2026") | `date` type |
+| video links | per-platform columns (`paramount_url`, `espn_url`, `youtube_url`, `netflix_url`, `fightpass_url`, `pluto_url`, `espn_prelims_url`, …) on events + fights | one **`video_links`** table |
 | weight class | free-text column, `"Women's "` prefixed in | **`weight_classes`** lookup + FK + `catch_weight_lbs`; men's & women's are separate rows |
 | amateur fights | not distinguished | `is_amateur` flag (or excluded) |
 

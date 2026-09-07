@@ -1,9 +1,9 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-08-23 13:02
-Fight clips matched: 1416  |  Event links matched: 279  |  Unmatched: 101
+Generated: 2026-09-05 15:01
+Fight clips matched: 1260  |  Event links matched: 281  |  Unmatched: 103
 ================================================================================
 
-MATCHED FIGHTS (1416)
+MATCHED FIGHTS (1260)
 --------------------------------------------------------------------------------
 fight_id:  c7f81da6-a6c1-51e8-a0ce-d0d34a7c521e
 fighters:  Anderson Silva vs. Chris Leben
@@ -770,6 +770,131 @@ fighters:  Mackenzie Dern vs. Amanda Ribas
 event:     UFC Fight Night 249 - Dern vs. Ribas 2 (2025-01-11)
 url:       https://www.paramountplus.com/shows/video/zv2AFWU36WbJBvSUPTjFqzcEjrKzEUaE/
 
+fight_id:  f4b540b7-9088-5f64-81c7-4cbf9ebec9cc
+fighters:  Michael Page vs. Nursulton Ruziboev
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVNYDEJSTAXTN57B1DPAZ/
+
+fight_id:  14d1cded-95b6-5db4-814d-2b433d4b3cdc
+fighters:  Daniil Donchenko vs. Punahele Soriano
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M10NCDBJE1TSQXT1NW0J7A3E/
+
+fight_id:  7fa6cc6c-b296-587c-bc4a-8f650c77951e
+fighters:  Morgan Charriere vs. Felipe Lima  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVRMCEGZAST3X42KBB6WZ/
+
+fight_id:  7dd37855-d393-5657-9049-7234075d76e5
+fighters:  Losene Keita vs. Muhammad Naimov
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVQPAEKN8WCHKTR6E0YPG/
+
+fight_id:  58d86be4-1ef4-57fc-855a-08e8bc32df9e
+fighters:  Mario Pinto vs. Ryan Spann  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVPT8E809TZGRYCN27V52/
+
+fight_id:  bbe7f77f-1309-5351-be7a-f1ccaebbb1c0
+fighters:  Kurtis Campbell vs. Trevor Peek
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVMG2E9RVKQQ6H8FEV4AK/
+
+fight_id:  fdcec9da-03af-56eb-9151-23f5df26969c
+fighters:  Oumar Sy vs. Modestas Bukauskas  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVP1DEGPB2EAJBSAP79Y6/
+
+fight_id:  a2c9c242-d16a-5dd1-85be-f0bf357b3b20
+fighters:  Michael Aljarouj vs. Fabia Sintes  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0V0ZXEVE3NA4GT704RCGJB0/
+
+fight_id:  0856a2c1-3dc7-5ea9-ae71-1c13d7cdde49
+fighters:  Nora Cornolle vs. Klaudia Sygula  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVMKVECFABZBKA79FR9TS/
+
+fight_id:  752b3ad0-d35b-5a94-a75c-b42550071594
+fighters:  Matthieu Duclos vs. Luis Felipe Dias  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVM80EXATM4YP9PXYEJ22/
+
+fight_id:  05d4fdeb-bcad-541e-8c46-e389ac598c90
+fighters:  Delphine Benouaich vs. Sofia Montenegro  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVMK3E1TBSQHDQCEW9HP2/
+
+fight_id:  8f41bca9-c2d7-5474-9f4d-c71e2ccdd718
+fighters:  Nathaniel Wood vs. Pavel Andrusca  [Prelims]
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1F1NXV2EWMAA5Q2Y418NGB9/
+
+fight_id:  0c075930-8b62-59b3-a7b0-614dc6acb036
+fighters:  Umar Nurmagomedov vs. Song Yadong
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJW4YEZ69X9XFKB0Y9RWH/
+
+fight_id:  549a4490-20a3-52a9-9bf2-eb06663ee15e
+fighters:  Yan Xiaonan vs. Denise Gomes
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJW6GERK9J6ADV2KP0ANA/
+
+fight_id:  0cb7f48e-130d-5f40-80f3-7fb268c8970d
+fighters:  Aoriqileng vs. Kai Asakura
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJTYJEZHAWQKSMYFTW99C/
+
+fight_id:  9805a70e-5bbd-54a4-8de6-a052fc83c633
+fighters:  Alex Perez vs. Sumudaerji
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJW4BECNAVDZ9AF20B6TR/
+
+fight_id:  3fb20a01-56f4-5522-a9b5-55f8647b6871
+fighters:  Liu Ce vs. Levi Rodrigues Jr.
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0TFWNB2E31R1GMSQ8BNFARF/
+
+fight_id:  ea0554fb-6f4c-5cce-8ceb-089130dc820d
+fighters:  Bilal Hasan vs. Nilson Rojas
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0E47BFEECGTNKKAX7RH4DVC/
+
+fight_id:  2fe22f38-7e17-5bc5-8207-6d4f9876d547
+fighters:  Namsrai Batbayar vs. Andre Lima  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJTXZEVEB9EVSBHBR3K0B/
+
+fight_id:  03cb87eb-fcf3-5f50-aeb4-4fdb86110397
+fighters:  Rei Tsuruya vs. Kevin Borjas  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJVRNEQMVQTWSA7C50QGK/
+
+fight_id:  9c5962ee-3ddf-5497-b93e-6bbaca783a1c
+fighters:  Jack Jenkins vs. Sean Woodson  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJTJVEAFASZC6NZRH4VJF/
+
+fight_id:  48b5a110-958f-5dc2-bb21-d66d343ba9c1
+fighters:  Xiao Long vs. Francesco Nuzzi  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0GQEV7KE5RVSW611YQZGKP6/
+
+fight_id:  a97a17a7-5cca-509d-8f95-9470efd4c235
+fighters:  Lawrence Lui vs. Hector Santiago  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0GQETD1EEXT4WSHYPJZFXG4/
+
+fight_id:  2c10ac1a-f626-5111-83a5-d9217a2bdcc5
+fighters:  Xiong Jingnan vs. Julia Polastri  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M07WJX0GENF9NW3527KB3C89/
+
+fight_id:  b32aceb2-d997-5160-8226-fa671f07a724
+fighters:  Ding Meng vs. Cameron Nelson  [Prelims]
+event:     UFC Fight Night 286 - Nurmagomedov vs. Song (2026-08-29)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0GQETHAE80BZ9VRG38W7A5R/
+
 fight_id:  1438c744-a280-5082-99e2-6077e46acc41
 fighters:  Anthony Hernandez vs. Gregory Rodrigues
 event:     UFC Fight Night 285 - Hernandez vs. Rodrigues (2026-08-22)
@@ -1139,911 +1264,6 @@ fight_id:  e6ed3f8a-477b-5a06-a636-96e3b9cf133f
 fighters:  Bekzat Almakhan vs. Jean Matsumoto  [Prelims]
 event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
 url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ01CE7BT1FQ3F80TCNRQ/
-
-fight_id:  f9ecbedb-2aa5-5ec2-9af1-eedd0b59b726
-fighters:  Tahir Abdullayev vs. Jefferson Nascimento  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KVKBQHGKEMH84DNS437R4DHQ/
-
-fight_id:  404c95e5-1a92-5813-83de-f70df4420c00
-fighters:  Manel Kape vs. Kyoji Horiguchi
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8F09ER0A2J4VQP8Y696V/
-
-fight_id:  597b1d59-0150-50f7-88f4-191e1705b830
-fighters:  Ion Cutelaba vs. Navajo Stirling
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8DRAE3VTPG54D6QSVPCP/
-
-fight_id:  a1ede313-37a3-5ac1-a6a8-a8b565728af9
-fighters:  Hyder Amil vs. Christian Rodriguez
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8EZ0EVC8ZJVMZZJG3QFB/
-
-fight_id:  34441cfd-6570-5866-9e5e-8e2abdec3dd5
-fighters:  Melsik Baghdasaryan vs. Murtazali Magomedov
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8F5PESCBVMNWQ7SXJ0SM/
-
-fight_id:  4081f0c1-bc10-5281-a843-cd29d4296aff
-fighters:  Vinicius Oliveira vs. Andre Fili
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV1P5SZ2EXZT41AQFZ4G1PR2/
-
-fight_id:  aa6ddf47-b5a6-5ada-a124-76b5d2908f91
-fighters:  Andre Lima vs. Kevin Borjas  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8G58EJPT4RPTHGSW70KX/
-
-fight_id:  906b966c-8ed8-5a7c-be1b-bdf49d428d08
-fighters:  Bia Mesquita vs. Melissa Mullins  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8DZME7ZSDJ7TRJX60MCP/
-
-fight_id:  bd3c71db-f662-5b2e-a46b-3c8ba1274489
-fighters:  Allan Nascimento vs. Mitch Raposo  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8EZJE239W8XRFZ156SW6/
-
-fight_id:  ae959341-7db6-5d05-af0e-98b2c5ece545
-fighters:  Gaston Bolanos vs. Michael Aswell Jr.  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8DR9E2V8WGR9SHAM6NCY/
-
-fight_id:  e2f64c30-ee3e-589e-8b76-71e37cac1b36
-fighters:  Leon Shahbazyan vs. Levan Chokheli  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV1MCZ8YEMYTW8B7CWGXJR0Q/
-
-fight_id:  95e11348-89a9-5c8f-aa43-d68265158281
-fighters:  Karol Rosa vs. Luana Santos  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KTKN8G5WEVASRV02WE5AHARY/
-
-fight_id:  b37f095b-59bb-5c76-857d-bd75fd7ba260
-fighters:  Shane Collins vs. Otari Tanzilovi  [Prelims]
-event:     UFC Fight Night 279 - Kape vs. Horiguchi 2 (2026-06-20)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV1MCZ9QEXGT5MM95XD3EEH6/
-
-fight_id:  fe6008c0-b555-51cf-8fc4-7361e09f65d4
-fighters:  Belal Muhammad vs. Gabriel Bonfim
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ3EGEPZB9AG1VKJ147HC/
-
-fight_id:  b5b946a1-222a-5557-a924-7ead5b9a7cb3
-fighters:  Brendan Allen vs. Edmen Shahbazyan
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5W5E6PRT6VS6FRNRS93/
-
-fight_id:  3968875a-9148-52d4-b3da-9e1a67a96104
-fighters:  Fares Ziam vs. Tom Nolan
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4RNECJB95NT3DA7EX5A/
-
-fight_id:  d1a47a40-86d6-5af2-997c-265794845eb0
-fighters:  Bryce Mitchell vs. Santiago Luna
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVCRNEQCRZ7VX5GARVZ7K/
-
-fight_id:  522b51df-41f6-5954-90b2-3446eb70f423
-fighters:  Iwo Baraniewski vs. Junior Tafa
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVDDZEJXA0ET5GAASVPK3/
-
-fight_id:  d0910e5d-ef95-5ca0-bdd7-ef4bb0210265
-fighters:  Matt Schnell vs. Alessandro Costa  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSVWVE60E7TTKDGFN5T32MTZ/
-
-fight_id:  06428608-4f63-5c1b-88fd-958f42fcc90d
-fighters:  Marcus McGhee vs. John Yannis  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSVWBVDDE8YSK2QHQ7R6T448/
-
-fight_id:  3be838e4-7db6-5992-ad84-b5dab777aafe
-fighters:  Bruno Silva vs. Edgar Chairez  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ393ET3BCTJK0DC2Z6SY/
-
-fight_id:  b54ed0cb-d8aa-56cc-838a-2e917ad95c65
-fighters:  Priscila Cachoeira vs. Chelsea Chandler  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5K0EQ2BS79ZR3RD48CZ/
-
-fight_id:  e7ac8ce3-6bad-51f2-b038-54dc73828c22
-fighters:  Jordan Leavitt vs. Joanderson Brito  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4QTE858YNMQJ8JC9JQE/
-
-fight_id:  969b9cf4-6441-5ad1-81b2-97bb18a91917
-fighters:  Jeisla Chaves vs. Yuneisy Duben  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ5DBEQ0SK4FDWQBN7373/
-
-fight_id:  38724e06-ff96-54c8-be57-9239dcdac981
-fighters:  Ketlen Souza vs. Ariane Carnelossi  [Prelims]
-event:     UFC Fight Night 278 - Muhammad vs. Bonfim (2026-06-06)
-url:       https://www.paramountplus.com/shows/video/ALVE01KS3GJ4BWE3MB3PZ8EW0X8T6P/
-
-fight_id:  bb4faf85-5f20-5a31-89ff-946d8e92aefd
-fighters:  Song Yadong vs. Deiveson Figueiredo
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSYNE408AP0SGQB9P3VX/
-
-fight_id:  3b0f1677-b4b5-561f-aa21-6dd6102218ce
-fighters:  Zhang Mingyang vs. Alonzo Menifield
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRG8ENWS4MGFXEFD14R5/
-
-fight_id:  05064a31-0c48-5cfd-87b4-9415a2b00ef0
-fighters:  Sergei Pavlovich vs. Tallison Teixeira
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV9CEFSBDQZE2JFSXVJ1/
-
-fight_id:  8a062a3c-8abd-572a-a308-7f4acd103934
-fighters:  Kai Asakura vs. Cameron Smotherman
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRJQE5STDRR1K341MPCB/
-
-fight_id:  a50e9b2c-3fc3-5493-ba20-30cd202c8206
-fighters:  Jake Matthews vs. Carlston Harris
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7Z41E33B1X40PG91XGXB/
-
-fight_id:  8bea11b7-9a3f-5eaa-8c35-fc149a7de03e
-fighters:  Alex Perez vs. Sumudaerji
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRFZE8R8HRDCQZXKVZ3A/
-
-fight_id:  c36bd8de-cbf9-5fe4-9e9e-2728d91c8b15
-fighters:  Yi Sak Lee vs. Luis Felipe Dias  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XSZ3E0TSQVJ84K2297YP/
-
-fight_id:  875b9545-a79b-57bd-9702-04121ec26b6a
-fighters:  Ding Meng vs. Jose Souza  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRN7EJTAY9335NB4AHKC/
-
-fight_id:  0cdc27ad-ef88-569d-be1f-c65ce8a2d4e9
-fighters:  Aoriqileng vs. Cody Haddon  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XRM3EFMV6Q1NC6NW7CMD/
-
-fight_id:  08dc21e6-9954-5b23-8d18-1d7c3ed3f278
-fighters:  Rei Tsuruya vs. Luis Gurule  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSJF7XX9EAASQ78JR811CNQX/
-
-fight_id:  9e3ac2cc-d7b0-5677-95ec-7725768d9552
-fighters:  Angela Hill vs. Xiong Jingnan  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC3XV4QEM1BTSBANEE44DXH/
-
-fight_id:  6b8176d5-a2a8-539f-92f0-8f2c6b432c3a
-fighters:  Zhu Kangjie vs. Rodrigo Vera  [Prelims]
-event:     UFC Fight Night 277 - Song vs. Figueiredo (2026-05-30)
-url:       https://www.paramountplus.com/shows/video/ALVE01KSN1B1HJEBYR145T4NTC54KF/
-
-fight_id:  19121f9d-48ab-559f-95fd-a0fb72c379d9
-fighters:  Arnold Allen vs. Melquizael Costa
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CS4EKYBN3WEFBM1DBN7/
-
-fight_id:  adee52f8-27c9-58b6-8211-d7a52f9e0900
-fighters:  Dooho Choi vs. Daniel Santos
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DQXE32AFTSYECV2VEYM/
-
-fight_id:  c7b11b82-0a9b-579b-a797-600ca0a64c58
-fighters:  Malcolm Wellmaker vs. Juan Diaz
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DP1EXV9RFHS4NNBX7H1/
-
-fight_id:  5b816b8f-ce0c-51fd-9091-cd964b6d6834
-fighters:  Modestas Bukauskas vs. Christian Edwards
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KREP7675EQSAHGMDAB3P11P2/
-
-fight_id:  0d2f109c-3e55-52b3-a0ad-2a982bcf119c
-fighters:  Timmy Cuamba vs. Benardo Sopaj
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CSBENF83CZVXVBBPT1B/
-
-fight_id:  61801b95-4a80-53d5-885e-532aa884ad6f
-fighters:  Nikolay Veretennikov vs. Khaos Williams
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KRC7MYJQE0QTJ8H58FSJ1N15/
-
-fight_id:  edaa1575-29c7-545c-84f6-c1df816d7158
-fighters:  Tuco Tokkos vs. Ivan Erslan  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BJSECEAEBKH7T6M1QVN/
-
-fight_id:  85fd5caf-64ed-57eb-b90a-5ae437e69c0e
-fighters:  Tommy Gantt vs. Artur Minev  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KREP75F9E4D966XRH82KV4A2/
-
-fight_id:  2aef67eb-15d2-5e10-8cf6-2a0b8c63bd5c
-fighters:  Ketlen Vieira vs. Jacqueline Cavalcanti  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4DX9EWMTKSY9ECEDJXSK/
-
-fight_id:  a96f14c2-8c99-56b5-9835-543c2da298d7
-fighters:  Cody Brundage vs. Andre Petroski  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BE9EQ9V6TBE2TDEJX2S/
-
-fight_id:  9069aee0-2773-57c9-a2b4-14969b42e4e8
-fighters:  Alice Ardelean vs. Polyana Viana  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4CKGEZ8TYGDKJHRPYXZJ/
-
-fight_id:  74e9695d-ebca-5233-a8e8-e4467cc5a5fb
-fighters:  Daniel Barez vs. Luis Gurule  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BDGE61RR27ZJKAHFQX9/
-
-fight_id:  58f551f2-0519-5259-9382-b513716a3035
-fighters:  Shauna Bannon vs. Nicolle Caliari  [Prelims]
-event:     UFC Fight Night 276 - Allen vs. Costa (2026-05-16)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQWQ4BK1EP898QPM6BXGQ1YP/
-
-fight_id:  367c20e4-7041-5325-aac9-dc3012b9acc6
-fighters:  Jack Della Maddalena vs. Carlos Prates
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGSJKGERJA4ECYQJB0C23B/
-
-fight_id:  1f6a2efc-170b-50cc-84e3-f32f0fd34c63
-fighters:  Beneil Dariush vs. Quillan Salkilld
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGRPTJEJF9115RTPHV7PZ1/
-
-fight_id:  acf5d805-94b7-59f4-b102-75b785ddf755
-fighters:  Tim Elliott vs. Steve Erceg
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGR3T6EMJBWZA1423AYEHA/
-
-fight_id:  c11bda39-cb47-536a-8c78-55515196bb81
-fighters:  Marwan Rahiki vs. Ollie Schmid
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQAY402BE2B96D7T3MMR114Y/
-
-fight_id:  06ec58a4-2f0f-5696-8f04-f696d7adec35
-fighters:  Shamil Gaziev vs. Brando Pericic
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGRF37E90TS4G98SA20DC7/
-
-fight_id:  601b98c5-896f-5d1e-8602-3476d394ffc1
-fighters:  Tai Tuivasa vs. Louie Sutherland
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KQ068N7CE1FVSQ68ZT3M392S/
-
-fight_id:  05c6607c-acc2-5e17-93d8-0c5632293122
-fighters:  Cam Rowston vs. Robert Bryczek  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGSRMCE42VZ8YAJ04S6YPV/
-
-fight_id:  f718a4db-dca1-5b3c-9781-15065c0a0b22
-fighters:  Junior Tafa vs. Kevin Christian  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGS353EP38A0F56EGGN1SG/
-
-fight_id:  9d749655-4116-51f9-b9ff-db935b044e58
-fighters:  Jacob Malkoun vs. Gerald Meerschaert  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGR50TEKRA2YFT0RF7B5NC/
-
-fight_id:  751874a0-a444-56e6-9d06-868cfa34084a
-fighters:  Colby Thicknesse vs. Vince Morales  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGS3FWEQ7AFJM2YD18EM6F/
-
-fight_id:  5634476a-0818-5f69-b7c4-f3ba514eb24f
-fighters:  Benjamin Johnston vs. Wes Schultz  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGT0MYEVK9003JQN4FBDZY/
-
-fight_id:  ce1257c1-5674-510f-a68a-f24641fba0a1
-fighters:  Jonathan Micallef vs. Themba Gorimbo  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGRB42E2SBWYGVGAQNPM23/
-
-fight_id:  d3a0ae2f-66f3-54fa-816d-466d243adce9
-fighters:  Dom Mar Fan vs. Kody Steele  [Prelims]
-event:     UFC Fight Night 275 - Della Maddalena vs. Prates (2026-05-02)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPNGSSWHEAX8QP6V13Z4WWHA/
-
-fight_id:  bd426b0d-54a3-5611-9c7f-30cee17e9b37
-fighters:  Aljamain Sterling vs. Youssef Zalal
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP662FZME87VA5H9W3DSBSSW/
-
-fight_id:  7db52857-d08e-5226-b476-f495995dc40f
-fighters:  Norma Dumont vs. Joselyne Edwards
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP663DYKEGTBD2251F88J12N/
-
-fight_id:  0d04c663-dab1-5a59-b469-6300bd2d7620
-fighters:  Rafa Garcia vs. Alexander Hernandez
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP662XB9E3AAVKXZAFKZS28D/
-
-fight_id:  89e599f3-1f91-550e-b8fe-707ee902ccd2
-fighters:  Davey Grant vs. Adrian Luna Martinetti
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP662AV5E22V7N61H8VJV1CN/
-
-fight_id:  a49e09e6-dc60-5dc0-8483-8200fd68fea6
-fighters:  Montel Jackson vs. Raoni Barcelos
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP6629VPED59106WQF3VT5QF/
-
-fight_id:  ebb42b29-ea2e-5bf5-80de-a1cd2c0bb07a
-fighters:  Marcus Buchecha vs. Ryan Spann
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP662P8ZESDSXN2TMB4XR650/
-
-fight_id:  0a67f3d2-c206-5f2b-95dd-4104b9abed40
-fighters:  Rodolfo Vieira vs. Eric McConico  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP662MWYEMPBDXWZ5BDKQV9Q/
-
-fight_id:  64e39e94-fe57-584c-9865-65da816e3d18
-fighters:  Jackson McVey vs. Sedriques Dumas  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP6640GYER2TXX6S2DC29GVX/
-
-fight_id:  f9d3494b-f8d9-5523-b772-037279419ebf
-fighters:  Mayra Bueno Silva vs. Michelle Montague  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP663JEBE0XT3CF13WW4NZSD/
-
-fight_id:  db4c5883-3356-5a4b-8598-a4a7234cafcd
-fighters:  Jafel Filho vs. Cody Durden  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPP10WTREHQ8CZGFNNDR5T9B/
-
-fight_id:  cf61ca84-7cf2-5900-8b04-bd412e6eb745
-fighters:  Francis Marshall vs. Lucas Brennan  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPS392Q4ERD8TECGX2HK0Z5Q/
-
-fight_id:  7b821994-85cf-5182-86db-af709246c817
-fighters:  Max Griffin vs. Victor Valenzuela  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPPJ858HE8V91TSQAK8CQ0TG/
-
-fight_id:  d2a0305d-e683-51a0-9132-cf72819413bc
-fighters:  Talita Alencar vs. Julia Polastri  [Prelims]
-event:     UFC Fight Night 274 - Sterling vs. Zalal (2026-04-25)
-url:       https://www.paramountplus.com/shows/video/ALVE01KP66433SE629JDRMTK03A3PE/
-
-fight_id:  3e29bd29-6d5b-54c4-8964-d85a011c97a8
-fighters:  Gilbert Burns vs. Mike Malott
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQXP0FERYR969YBZWC4BF1/
-
-fight_id:  6f463a3d-0c30-5854-ac8a-147a7a3e906c
-fighters:  Kyler Phillips vs. Charles Jourdain
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQXDZPE9CRHCPNYY3N4TYS/
-
-fight_id:  9b655b83-0f45-522c-93a0-3b38a2dd4031
-fighters:  Mandel Nallo vs. Jai Herbert
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQWRYWEHR8RZACWEBM3YN2/
-
-fight_id:  7e18e0e0-59ac-5daa-9fd4-97e761b00aa7
-fighters:  Jasmine Jasudavicius vs. Karine Silva
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQWCBCETRRH12SWGAN82CB/
-
-fight_id:  5740066d-eef5-50e5-9967-6a9333da0651
-fighters:  Thiago Moises vs. Gauge Young
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNPZ3WV7E889PB709ARC6PJV/
-
-fight_id:  f6874827-5035-5848-8247-167f19d4758d
-fighters:  Dennis Buzukja vs. Marcio Barbosa
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQWYC7EHZRVF8K0MY36CKP/
-
-fight_id:  cdd5b54c-2010-59f3-96d0-6d688b37399c
-fighters:  Julien Leblanc vs. Robert Valentin  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQWYENEVPA3T4EF0NDZ0QG/
-
-fight_id:  720ebccc-7156-59aa-baac-681581bb9ad4
-fighters:  Tanner Boser vs. Gokhan Saricam  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQYDWDEANAS8P8YBY8PVMD/
-
-fight_id:  7fbaebee-dfa5-5446-9e2e-c1a19fb8b702
-fighters:  Melissa Croden vs. Daria Zhelezniakova  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQY2ESE63SB11DYAVEXQ2R/
-
-fight_id:  732df7a2-970f-539b-bbc5-39a7f195f0b4
-fighters:  JJ Aldrich vs. Jamey-Lyn Horth  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNMQXNDPEDE9JRJJ0ZXTE43P/
-
-fight_id:  d618456e-13cb-5a29-a6cd-a16efcbd5299
-fighters:  John Castaneda vs. Mark Vologdin  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KPE3SYCKE0MA3EYFR5CWW7V5/
-
-fight_id:  450eced7-e5ca-5619-99e4-8fa5e97f65b1
-fighters:  Jamie Siraj vs. John Yannis  [Prelims]
-event:     UFC Fight Night 273 - Burns vs. Malott (2026-04-18)
-url:       https://www.paramountplus.com/shows/video/ALVE01KNY9D7JYEB2AFGXHNTCRCNWJ/
-
-fight_id:  96d44934-bbc6-5671-8d7c-30d6fe3bc034
-fighters:  Renato Moicano vs. Chris Duncan
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNG8H3EA5AH3EEW6HHM8SR/
-
-fight_id:  2031b195-5c15-5942-b01b-be1e35fc3747
-fighters:  Virna Jandiroba vs. Tabatha Ricci
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNJ1FSEQ2AH7YZRF3KF1AS/
-
-fight_id:  05ddb794-e07b-5ac6-97bf-defca217e8c0
-fighters:  Abdul Rakhman Yakhyaev vs. Brendson Ribeiro
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNGN9GE4NBTZ7QBJ798Z0Q/
-
-fight_id:  e0ce017e-b6d1-57a5-be07-bf3031ca53ca
-fighters:  Ethyn Ewing vs. Rafael Estevam
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNJ3KTERAVE8CHBFSZ103Q/
-
-fight_id:  56f2e51a-0c5f-5fac-b7dd-2236cb9f89f1
-fighters:  Tommy McMillen vs. Manolo Zecchini
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNHN02E80831EJDTPN9BP9/
-
-fight_id:  c0fe6492-c463-5cd1-be77-d4df69fc3bb7
-fighters:  Jose Delano vs. Robert Ruchala
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNH0VEEGT9XNXNPHX1CANW/
-
-fight_id:  a679da51-cc07-5164-ae25-2195658e7b79
-fighters:  Guilherme Pat vs. Thomas Petersen  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNGV03E6EARTVY18T4F2XS/
-
-fight_id:  f8d666f9-2e45-52a4-ae7c-bfccdb962657
-fighters:  Alessandro Costa vs. Stewart Nicoll  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNG9MNEZ6TCA7CVV56ZBAG/
-
-fight_id:  2d81143e-b6bd-5e2d-a332-7d3883d2d056
-fighters:  Lando Vannata vs. Darrius Flowers  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNH7Q7E6X90KCGG3DZGDDK/
-
-fight_id:  ed95707e-a3ca-5088-b90c-640094d20b35
-fighters:  Alice Pereira vs. Hailey Cowan  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNJ182ECRSS0FW03CM5EAX/
-
-fight_id:  278af99d-22c5-51ad-93d8-847e26083b74
-fighters:  Azamat Bekoev vs. Tresean Gore  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNGV9BE4JR26MP9FH8Q2H3/
-
-fight_id:  29638c26-8a97-536c-845d-c36f0ab97dab
-fighters:  Dione Barbosa vs. Melissa Gatto  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGNGNY3E57V24D8Q4FM5PNP/
-
-fight_id:  a6b1e07e-97cb-5f95-afbf-a54c9565641a
-fighters:  Kai Kamaka III vs. Dakota Hope  [Prelims]
-event:     UFC Fight Night 272 - Moicano vs. Duncan (2026-04-04)
-url:       https://www.paramountplus.com/shows/video/ALVE01KN7W5VX3E5EVNC2ZQWAYKEK6/
-
-fight_id:  d52bcd7f-b653-5f8b-b1d4-506c07bea84a
-fighters:  Israel Adesanya vs. Joe Pyfer
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH7MAZEBVSA0PHV2SETAQG/
-
-fight_id:  70ce9055-7120-5940-a55e-5ce7e855796a
-fighters:  Alexa Grasso vs. Maycee Barber
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH7DZSEV5VYBEXPHV91BZE/
-
-fight_id:  0cf15743-5849-5751-a190-ddc7b2f84855
-fighters:  Michael Chiesa vs. Niko Price
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KMGZ78XCENG8DG5GJHQ519KH/
-
-fight_id:  330c83a8-cfb2-505e-848b-7ff8ce512280
-fighters:  Julian Erosa vs. Lerryan Douglas
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH5H2JETFS3ZZZJ997XY8H/
-
-fight_id:  6d1ef89b-88bf-5d2e-8cc3-ebb6ea6b7c9f
-fighters:  Mansur Abdul-Malik vs. Yousri Belgaroui
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH62N5EP1VE181NFBS7V1T/
-
-fight_id:  b3d6553a-8265-5d1b-a47c-2af836a4937c
-fighters:  Terrance McKinney vs. Kyle Nelson
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH7TPMERS94WKHA1GS4P6T/
-
-fight_id:  ada29f17-8a6f-5854-a640-103f60035685
-fighters:  Ignacio Bahamondes vs. Tofiq Musayev  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH5SJ1ERH8HS479E14S22M/
-
-fight_id:  2818a4ab-fad6-562c-a1b4-d7735efc55a3
-fighters:  Chase Hooper vs. Lance Gibson Jr.  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH5HSAEHDV3XGJY6N0R0K3/
-
-fight_id:  5fcf77ad-0d41-568e-8fd0-4a16521011ef
-fighters:  Marcin Tybura vs. Tyrell Fortune  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KM6QZPYCEGAR2J9XRN4YASAR/
-
-fight_id:  d0a3ef11-2663-595c-adc8-878848590b42
-fighters:  Casey O’Neill vs. Gabriella Fernandes  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH5ZWXEWJSMMWMQF99X62W/
-
-fight_id:  0104a2f0-4446-5ed5-8d1d-d26340c53b97
-fighters:  Navajo Stirling vs. Bruno Lopes  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH6W87EKXTAEVGSRMZPW8M/
-
-fight_id:  7afa9835-7d98-55b3-9a50-f23a88edce08
-fighters:  Ricky Simon vs. Adrian Yanez  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KM6QZCVSE10B9X77TXQ96EVV/
-
-fight_id:  9f3d878c-4152-53e8-8a0c-05317df71468
-fighters:  Alexia Thainara vs. Bruna Brasil  [Prelims]
-event:     UFC Fight Night 271 - Adesanya vs. Pyfer (2026-03-28)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKYH6TFNEF0TBV41J1KSH3S8/
-
-fight_id:  6b76371f-99bd-5560-bb6b-7cfa1f7bd934
-fighters:  Movsar Evloev vs. Lerone Murphy
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRMT9WEERTMM6YW99FBQ6V/
-
-fight_id:  888e4285-d114-5f94-841d-12e3177676e8
-fighters:  Luke Riley vs. Michael Aswell Jr.
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRMM0JEWGR1M4DN2EHBEMN/
-
-fight_id:  ca877511-0159-517d-b3fe-f7207070351c
-fighters:  Michael “Venom” Page vs. Sam Patterson
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRMKTMENFRSZ6BC0F79HYS/
-
-fight_id:  c1c6e2e2-726b-57c5-9860-4beddd6d0206
-fighters:  Iwo Baraniewski vs. Austen Lane
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRNK3NED9873PRGK827TT5/
-
-fight_id:  86e9fd0d-f372-590c-9597-2efecab851fd
-fighters:  Roman Dolidze vs. Christian Leroy Duncan
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRN8KSER6V5QB1M5MDXDY2/
-
-fight_id:  09dc93b8-f3b0-5306-9f5e-273b317582c9
-fighters:  Kurtis Campbell vs. Danny Silva
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRMNS8EZ7RAJVR9MC43140/
-
-fight_id:  e46fa83f-4b24-5339-8c01-882854c8cd63
-fighters:  Mason Jones vs. Axel Sola  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRPHCQEHDB2Z5DW27AFM4C/
-
-fight_id:  d61e25ec-685e-5563-aec7-ed5506bb1119
-fighters:  Nathaniel Wood vs. Losene Keita  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRNRPGE7JR1X9K66EB40R1/
-
-fight_id:  53fae693-b306-594e-ba83-636e9d0c9328
-fighters:  Mario Pinto vs. Felipe Franco  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRPW3YE7F8KC97T5796AZ9/
-
-fight_id:  8194caf9-9093-5676-a5d4-311ad807680b
-fighters:  Mantas Kondratavicius vs. Antonio Trocoli  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRN7SQEFVT6TK4YZ1Q9GDN/
-
-fight_id:  6697dc37-60b6-5710-bd8b-bb98ad050fc8
-fighters:  Louie Sutherland vs. Brando Pericic  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRNQRDE4FVRA6193SBV0RH/
-
-fight_id:  5823e771-a834-5969-a092-971534a16409
-fighters:  Shem Rock vs. Abdul-Kareem Al-Selwady  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRNXARE9691YW82GW6K611/
-
-fight_id:  dc6f0857-53e5-57f3-9fdc-8622f10a105e
-fighters:  Shanelle Dyer vs. Ravena Oliveira  [Prelims]
-event:     UFC Fight Night 270 - Evloev vs. Murphy (2026-03-21)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKVRP9T1EA4A7QV52B9GVDGP/
-
-fight_id:  b5319c5c-c3af-5178-90fd-c04c3e6b1b5a
-fighters:  Marwan Rahiki vs. Harry Hardwick
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYC1PHENQBHPVVWEWDFGV2/
-
-fight_id:  d4996489-d9a1-52df-8eb7-f58a33535da5
-fighters:  Ion Cutelaba vs. Oumar Sy
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF6WCJNEV0R3DE1Z4QEETK0/
-
-fight_id:  81371cc1-3b88-5bd5-bda3-7e59d60008be
-fighters:  Charles Johnson vs. Bruno Silva
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYCR7TEVXR43Q7TB0C0TAN/
-
-fight_id:  3061232c-6b93-57b0-963f-9ba330a9d1cb
-fighters:  Chris Curtis vs. Myktybek Orolbai  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYC5FYEEEBZ3PN3DKQWTS9/
-
-fight_id:  d4a452d7-3354-51d8-95e6-4df707b57c58
-fighters:  Vitor Petrino vs. Steven Asplund  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF7NQSREF0A4N7KAPRGD5SK/
-
-fight_id:  2058b6b5-081a-55ec-98e6-61cc3366ad48
-fighters:  Elijah Smith vs. SuYoung You  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF8H2SPE2GB79M4SWA3D72W/
-
-fight_id:  5a95a8bf-b8d6-546e-8d6f-5c0a11686422
-fighters:  Bolaji Oki vs. Manoel Sousa  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYCTB2E6YVC7M1DGG6XKKJ/
-
-fight_id:  479e9d59-ad77-5713-9c63-8b0dd5513e4d
-fighters:  Brad Tavares vs. Eryk Anders  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKFVQSJ9ERABJG0SPCR4WPNP/
-
-fight_id:  9d51bee8-33a8-5924-8a8f-62cbe9b57a0c
-fighters:  Bia Mesquita vs. Montse Rendon  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF8469AEJBSDY9YW684526B/
-
-fight_id:  4ebf2194-8a1c-5e8e-ac9e-25e63ed92f28
-fighters:  Luan Lacerda vs. Hecher Sosa  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYC53SEH09Y07PCPAKKHTR/
-
-fight_id:  f1e580bf-c64c-56f1-840e-9551a3f1c198
-fighters:  Piera Rodriguez vs. Sam Hughes  [Prelims]
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYDNV6EZA8SVK6C66SJJH2/
-
-fight_id:  c3d31332-432b-5fb1-8ce8-0d8a27b389d3
-fighters:  Josh Emmett vs. Kevin Vallejos
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYCZFSEAD9EQX15HVDT37W/
-
-fight_id:  4d992b1c-e9f1-5ea9-937b-15599b7a9214
-fighters:  Amanda Lemos vs. Gillian Robertson
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKEYD0PDEJFBW70XZ7TKD31N/
-
-fight_id:  a246946d-567b-5ea3-a0d0-974c8f1b8f81
-fighters:  Andre Fili vs. Jose Delgado
-event:     UFC Fight Night 269 - Emmett vs. Vallejos (2026-03-14)
-url:       https://www.paramountplus.com/shows/video/ALVE01KKF7DM1GEG3TET655G37KF4G/
-
-fight_id:  ec731581-2439-51f1-929d-7a154576b5a0
-fighters:  Brandon Moreno vs. Lone'er Kavanagh
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/cBmgXu39s0CM1P3iD0EosdhETsVAY85A/
-
-fight_id:  374c94d0-b22c-5036-a504-32897d6fd11a
-fighters:  Marlon Vera vs. David Martinez
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/d1smtBicS_NJTMCRmi7jlZc800zVBYVA/
-
-fight_id:  d19c3b2a-ebfc-55ce-b97c-d8adebf77b4d
-fighters:  Daniel Zellhuber vs. King Green
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/aQQLoH6xIxla7DRIsaV90U3Z_gmop1NG/
-
-fight_id:  5bd9b8ca-26df-511c-b128-472b60e95a7b
-fighters:  Edgar Chairez vs. Felipe Bunes
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/IVPYd6pIUwWARgain_1dSzpBhTcrZAG8/
-
-fight_id:  6139db75-a5e3-5a0f-a6a6-d1e18d7b2dd3
-fighters:  Imanol Rodriguez vs. Kevin Borjas
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/7x4c9_OOnrOb05GoDtu7_vMpB24ZHLgE/
-
-fight_id:  1643f9e9-9a8b-5ebf-a126-80786361c6cf
-fighters:  Santiago Luna vs. Angel Pacheco
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/7efif5Yf4io7FdztG0t0wMUP5rwTdJ_q/
-
-fight_id:  5d51ee6d-ca07-57d6-a657-6b804e96e315
-fighters:  Ryan Gandra vs. Jose Daniel Medina  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/lp4dukWmoviyJEy1CZcfZmMJ8e_6zKva/
-
-fight_id:  32fb08c2-3f1d-532d-8e31-c444fdd15cd1
-fighters:  Ailin Perez vs. Macy Chiasson  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/wm6QuzURJ2c0ejCmwXuYzaAF18PWGaV7/
-
-fight_id:  9e17c132-6e89-5eb2-bb58-840f4d86fbda
-fighters:  Cristian Quinonez vs. Kris Moutinho  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/xEfZmxNxkPMWjB10ePJ51YLZgZ5tOD3k/
-
-fight_id:  cdaddc63-1f59-52a0-94c9-d31b19c9ab86
-fighters:  Douglas Silva de Andrade vs. Javier Reyes  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/guPx8_Qk56mwduwwU8B4TFlASLWDiC7b/
-
-fight_id:  6dc34ebe-1c08-59ca-a2da-3b5298cda730
-fighters:  Regina Tarin vs. Ernesta Kareckaite  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/JcvSC6dFp8B2BQjntDtewVOK7CfzQGrl/
-
-fight_id:  fc1d0db6-ca74-5001-88df-80ca76f8e8e4
-fighters:  Erik Silva vs. Francis Marshall  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/wAawh6glavxbcTVqWsTKT_SzOR9fASta/
-
-fight_id:  0f22dc9f-2710-5d39-82ee-015c8eafd8e7
-fighters:  Damian Pinas vs. Wes Schultz  [Prelims]
-event:     UFC Fight Night 268 - Moreno vs. Kavanagh (2026-02-28)
-url:       https://www.paramountplus.com/shows/video/EjKJkiurYvgeMCTIXe00UQsi84LAuFYV/
-
-fight_id:  f6679572-452e-54ff-abe4-1c7f692266c8
-fighters:  Sean Strickland vs. Anthony Hernandez
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/TImMSe4J8nl5r0uyGhmOA09tdgsVlxVU/
-
-fight_id:  6e53b0d1-20ca-5683-acf2-937e11f88a81
-fighters:  Geoff Neal vs. Uros Medic
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/NVF2kXimGlQIA9wM2SRvizdAIpPO2nZJ/
-
-fight_id:  a0475e13-f30a-5ae9-83f7-87c273bd96c7
-fighters:  Dan Ige vs. Melquizael Costa
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/reMyhX447HtN4n_qJccBa5hWH5OJwqhc/
-
-fight_id:  ac5b2573-ab94-5e35-8735-7d23d256538b
-fighters:  Serghei Spivac vs. Ante Delija
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/GBIMCp36UpF7sgrHIRfP49bOkeQnxxZY/
-
-fight_id:  54f48bb7-3070-5dcc-ab47-e9d54fa8ae84
-fighters:  Jacobe Smith vs. Josiah Harrell
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/AilN82Rwb201qYowUaDtLw_9GZwmhrpA/
-
-fight_id:  61b49756-6635-5a03-9167-3173ad26ac4e
-fighters:  Zach Reese vs. Michel Pereira
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/8GSbg_NensZh9m_YGfv1Qp5lj4jYcXYo/
-
-fight_id:  4896fdca-b50c-56c6-bb04-2e173cc8a33c
-fighters:  Chidi Njokuani vs. Carlos Leal  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/e4hRXBfTsi3dRP3sAgkNK03nFTqWXAmP/
-
-fight_id:  4ba1f4d0-4cfe-52d1-8f5f-488b079d1a1b
-fighters:  Ode Osbourne vs. Alibi Idiris  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/TQ854m_14W_GOFS_RMiX1fxnIuREP3kD/
-
-fight_id:  3046fd62-65bf-5af5-93d1-1b00f39db325
-fighters:  Alden Coria vs. Luis Gurule  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/m54TiwHxQPs5kRves2CZ6X2hJKfX2tVk/
-
-fight_id:  5f3e3e68-a399-590c-bbf6-2777e1e7ce26
-fighters:  Nora Cornolle vs. Joselyne Edwards  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/zIlmoS7w4EpVq5CAuzHWChb7KbPJG3_m/
-
-fight_id:  9ad9d106-a39c-58ec-bb56-6c8deb21b346
-fighters:  Ramiz Brahimaj vs. Punahele Soriano  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/WUC_PQpOMLP1GCIYqblwRC1mUxzlSRXi/
-
-fight_id:  3ad8a023-8cdf-515f-9bdb-8e62b664895f
-fighters:  Phil Rowe vs. Jean-Paul Lebosnoyani  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/_K8pyrOZcL5hX0W6TS_WBRZGBUAOmv_A/
-
-fight_id:  eab34547-19c8-56f7-a07d-7ad09b9a6bc9
-fighters:  Jordan Leavitt vs. Yadier del Valle  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/mg6EcYlLkzkw7dHYfUpgEFbzyjPS4kAe/
-
-fight_id:  968f0e9f-7e84-5a2c-a72e-bc8529d25adb
-fighters:  Juliana Miller vs. Carli Judice  [Prelims]
-event:     UFC Fight Night 267 - Strickland vs. Hernandez (2026-02-21)
-url:       https://www.paramountplus.com/shows/video/AbF_Pw8sO9bQUwSi7_xzZTLo1XPqUCJu/
-
-fight_id:  dc42fcf4-5975-5a62-9ee2-0e8ebf46da81
-fighters:  Mario Bautista vs. Vinicius Oliveira
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/NGbMk_pwGhbIqTh5k9dFUKS8gxtkq707/
-
-fight_id:  ec581e61-91cc-5f42-b756-02b6eb12e9bc
-fighters:  Amir Albazi vs. Kyoji Horiguchi
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/7XrPAopc8QEqpwAED7L9lX_9VaUyeJD7/
-
-fight_id:  6b8464d6-6469-56ca-baeb-f897db73a6ca
-fighters:  Jailton Almeida vs. Rizvan Kuniev
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/nqyekZI8vkHEz5n4v00OIsJ5bakKEK_L/
-
-fight_id:  77dab044-f6d3-533e-9c3c-ad378fa131a6
-fighters:  Michal Oleksiejczuk vs. Marc-Andre Barriault
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/hYZo3AsKeEiBdNbrrL2D93zqeVBxs1gf/
-
-fight_id:  6588ebf2-85c4-598b-b22e-45ac9fc8d5b1
-fighters:  Jean Matsumoto vs. Farid Basharat
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/JKefS34JWeazuxoda3jGb1ynK_fvyPk1/
-
-fight_id:  d44331bd-fd56-59f3-a89a-b40a08143b23
-fighters:  Dustin Jacoby vs. Julius Walker
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/o83qXHmYdR5E7BLijPCeChLbcsiS20HA/
-
-fight_id:  f34beaf5-0c1a-5b36-a0c9-29a4b478d69b
-fighters:  Alex Morono vs. Daniil Donchenko  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/Io3MT0J2oCJVITAm6Qs6cklbL_3Ti_2k/
-
-fight_id:  dcd8a5a8-a51f-5062-ba92-a1ffcd42b663
-fighters:  Nikolay Veretennikov vs. Niko Price  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/R0Aukjf__EPkLaFN1qU65O6qy28J_O5z/
-
-fight_id:  d2c02c16-f39f-5493-81f7-02227e12fc35
-fighters:  Bruna Brasil vs. Ketlen Souza  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/o5WiSVvn_vgwTOlqgarMKY0EVwQZ5CY7/
-
-fight_id:  454f0e54-a92f-544a-9959-7a1540b96bf0
-fighters:  Javid Basharat vs. Gianni Vazquez  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/ATMGPjgCgVbPJBCRFucyWdb5GqhWBOI4/
-
-fight_id:  9759edd1-d9a2-5ddb-b41e-b05ff482d22f
-fighters:  Wang Cong vs. Eduarda Moura  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/paafSVGNlbe5MiNfYaYi4DG7Qs_Hizvs/
-
-fight_id:  d1c02940-bc92-5a67-8c63-6bf7c4b45ef8
-fighters:  Muin Gafurov vs. Jakub Wiklacz  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/Ux1CIZEh3Y_ag2LH8XfvX2Xm6wJvWXLD/
-
-fight_id:  ed313c66-8745-50a0-ba3d-e85c4edbe7b8
-fighters:  Klaudia Sygula vs. Priscila Cachoeira  [Prelims]
-event:     UFC Fight Night 266 - Bautista vs. Oliveira (2026-02-07)
-url:       https://www.paramountplus.com/shows/video/AUgwEiWeIfIt_xwl5SMBofcMpsfQ03aH/
 
 fight_id:  2367e76d-d26f-59f3-aef3-58ea62272595
 fighters:  Islam Makhachev vs. Ian Machado Garry
@@ -7086,7 +6306,7 @@ event:     UFC 329 - McGregor vs. Holloway 2 (2026-07-11)
 url:       https://www.paramountplus.com/shows/video/ALVE01KWHR5N1BERP8YN2BKPZJF1GT/
 
 
-MATCHED EVENTS (279)
+MATCHED EVENTS (281)
 --------------------------------------------------------------------------------
 event_id:  11792
 event:     UFC 110 - Nogueira vs. Velasquez (2010-02-20)
@@ -8048,6 +7268,16 @@ event:     Contender Series 2025: Week 1 (2025-08-12)
 clip:      Week 1
 url:       https://www.paramountplus.com/shows/video/ALVE01KXPCK5PXE7KRNDQA03XS8SAZ/
 
+event_id:  112630
+event:     Contender Series 2026: Week 4 (2026-09-01)
+clip:      Week 4
+url:       https://www.paramountplus.com/shows/video/ALVE01M0DK0KZWE72VJ6WTSZ9HM55A/
+
+event_id:  112628
+event:     Contender Series 2026: Week 3 (2026-08-25)
+clip:      Week 3
+url:       https://www.paramountplus.com/shows/video/ALVE01KZVRMT5BEFMTRVWQDE1S068S/
+
 event_id:  112629
 event:     Contender Series 2026: Week 2 (2026-08-18)
 clip:      Week 2
@@ -8484,12 +7714,11 @@ clip:      UFC 330: Makhachev vs Machado Garry - All The Fights
 url:       https://www.paramountplus.com/shows/video/ALVE01KZS1ZKVRE6V8BRJM6PR1TQGZ/
 
 
-UNMATCHED (101)
+UNMATCHED (103)
 --------------------------------------------------------------------------------
 ambiguous(2 fights)    | Conor McGregor vs. Max Holloway | Apr 17, 2013 | https://www.paramountplus.com/shows/video/fFEoi9GV07_bxa3mELUIl4OexhNMaO9J/
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
 no_fighter(Jose Montanha) | Louie Sutherland vs. Jose Montanha | Aug 8, 2026 | https://www.paramountplus.com/shows/video/ALVE01KYHV6Z1RE13RW3YMTAB1725W/
-no_fighter(Loma Lookboonmee) | Loma Lookboonmee vs. Jaqueline Amorim | May 30, 2026 | https://www.paramountplus.com/shows/video/ALVE01KRC3XV6PEVQ8PZ5NMENY9DD0/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 Must-See Finishes
@@ -8582,6 +7811,9 @@ PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 4
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 3
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 1
 PARSE_FAIL             | UFC Embedded (Topuria vs. Gaethje) - Episode 2
+UNKNOWN_TYPE           | UFC Freedom 250 in 60-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC Freedom 250 in 25-Min. All Fights. No Filler.
+UNKNOWN_TYPE           | UFC Freedom 250 Must-See Finishes
 no_fight               | Brad Riddell vs. Alex Da Silva | Sep 27, 2020 | https://www.paramountplus.com/shows/video/vH6wlkmeS2wYjOmjrEsQuesSgez0EPku/
 no_fight               | Antonina Shevchenko vs. Ariane Lipski | Nov 21, 2020 | https://www.paramountplus.com/shows/video/V9cZIW_gqH4cjRWpW6nK7yo7C9DQn1mi/
 no_fighter(Loma Lookboonmee) | Loma Lookboonmee vs. Elise Reed | Feb 12, 2023 | https://www.paramountplus.com/shows/video/fHP_YYPmoTgohTZoO0Fvg9yYaJ7kTyyp/

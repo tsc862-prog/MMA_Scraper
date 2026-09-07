@@ -1,88 +1,59 @@
 UFC FIGHT PASS MATCH RESULTS
-Events  — main: 7  prelims: 0
-Fights  — matched: 0 (per-fight URL: 0, event URL fallback: 0)
-Unmatched — episodes: 1  sub-events: 0  per-fight VODs: 36
+Events  — main: 0  prelims: 0
+Fights  — matched: 9 (per-fight URL: 9, event URL fallback: 0)
+Unmatched — episodes: 0  sub-events: 0  per-fight VODs: 0
 ======================================================================
 
-MATCHED EVENTS — MAIN (7)
+MATCHED EVENTS — MAIN (0)
 ----------------------------------------------------------------------
-event:    FCC 34
-episode:  FCC 34
-url:      https://ufcfightpass.com/video/489937
-
-event:    FCC 33
-episode:  FCC 33
-url:      https://ufcfightpass.com/video/469506
-
-event:    UAE Warriors 35 - Africa 4
-episode:  UAE Warriors 35: Africa
-url:      https://ufcfightpass.com/video/447840
-
-event:    KOTC - Heavy Trauma
-episode:  KOTC: Heavy Trauma
-url:      https://ufcfightpass.com/video/63822
-
-event:    KOTC - Frozen War
-episode:  KOTC: Frozen War
-url:      https://ufcfightpass.com/video/58761
-
-event:    KOTC - Warranted Aggression
-episode:  KOTC: Warranted Aggression
-url:      https://ufcfightpass.com/video/59779
-
-event:    KOTC - Stone Cold
-episode:  KOTC: Stone Cold
-url:      https://ufcfightpass.com/video/63885
-
 
 MATCHED EVENTS — PRELIMS (0)
 ----------------------------------------------------------------------
 
-MATCHED FIGHTS (0)
+MATCHED FIGHTS (9)
 ----------------------------------------------------------------------
+fight_id: 85fa3ffd-6121-561e-affb-9c1b40f4fbc1  [fight]
+  Mallory Martin vs Micol Di Segni  @ Season 3, Episode 9 [event-search date-anchored]
+  https://ufcfightpass.com/video/102667
 
-UNMATCHED EPISODES (1)
+fight_id: 1f11bbe7-aa1a-5d88-bb92-b820e359bc88  [fight]
+  Leon Shabazyan vs Phil Rowe  @ Season 3, Episode 9 [event-search date-anchored]
+  https://ufcfightpass.com/video/102608
+
+fight_id: c677cfc7-ff77-5cdd-b391-d39973aa38a2  [fight]
+  Herdem Alecabek vs William Knight  @ Season 3, Episode 8 [event-search date-anchored]
+  https://ufcfightpass.com/video/102445
+
+fight_id: 1f85aa4f-f5cd-5fc8-bc72-53b8ccb997bc  [fight]
+  Julius Angickas vs Karl Reed  @ Season 3, Episode 8 [event-search date-anchored]
+  https://ufcfightpass.com/video/102444
+
+fight_id: 7ad4bcd8-cdbb-57ea-bcfd-6c79add251ac  [fight]
+  Mario Mingaj vs Wes Schultz  @ Contender Series 2025: Week 10 [event-search]
+  https://ufcfightpass.com/video/870359
+
+fight_id: 0d768958-2bf5-5e47-8ce7-1c15204750fa  [fight]
+  Kwon Wonil vs Juan Diaz  @ Contender Series 2025: Week 10 [event-search date-anchored]
+  https://ufcfightpass.com/video/870377
+
+fight_id: c09f801d-6589-5b3c-b509-91a3a4e82b85  [fight]
+  Marwan Rahiki vs Ananias Mulumba  @ Contender Series 2025: Week 10 [event-search]
+  https://ufcfightpass.com/video/870375
+
+fight_id: 241e52cb-541e-5ee3-9b15-c7f03915c9d0  [fight]
+  Manoel Sosa vs Cristian Perez  @ Contender Series 2025: Week 3 [event-search date-anchored]
+  https://ufcfightpass.com/video/849228
+
+fight_id: b55283d4-754f-5fa6-b0f6-a4c6d8bebe74  [fight]
+  Junior Pino vs Ed Schultz  @ AFC 2 [event-search]
+  https://ufcfightpass.com/video/44912
+
+
+UNMATCHED EPISODES (0)
 ----------------------------------------------------------------------
-  vod=125434  'Strikeforce Grand Prix Heavyweight Tournament: Overeem vs Werdum'
 
 UNMATCHED SUB-EVENTS (0)
 ----------------------------------------------------------------------
 
-UNMATCHED PER-FIGHT VODs (36)
+UNMATCHED PER-FIGHT VODs (0)
 ----------------------------------------------------------------------
-  vod=887637  'Waldo Cortes Acosta vs Shamil Gaziev UFC Qatar'  — no DB fight for this pair
-  vod=801800  'Park Hyun-sung vs Carlos Hernandez UFC Vegas 106'  — fighter not in DB
-  vod=782601  'Cortavious Romious vs Lee Chang-ho UFC Vegas 105'  — fighter not in DB
-  vod=776559  'Carlos Ulberg vs Jan Błachowicz UFC London'  — fighter not in DB
-  vod=773123  'Choi Seung-Woo vs Kevin Vallejos UFC Vegas 104'  — fighter not in DB
-  vod=740183  'Nurullo Aliyev vs Joe Solecki UFC Vegas 101'  — no DB fight for this pair
-  vod=723991  'Su Young You vs Balgyn Jenisuly UFC Macau'  — fighter not in DB
-  vod=718787  'Melissa Mullins vs Klaudia Syguła UFC Vegas 100'  — fighter not in DB
-  vod=685033  'Rong Zhu vs Chris Padilla UFC Vegas 97'  — no DB fight for this pair
-  vod=597901  'Gerald Meerschaert vs Bryan Barbarena UFC Vegas 88'  — fighter not in DB
-  vod=588869  'Brandon Moreno vs Brandon Royval UFC México'  — 2 candidates; hint='UFC México'
-  vod=588862  'Yair Rodriguez vs Brian Ortega UFC México'  — 2 candidates; hint='UFC México'
-  vod=588789  'Edgar Chairez vs Daniel Lacerda UFC México'  — 2 candidates; hint='UFC México'
-  vod=579997  'Lee Jeong Yeong vs Blake Bilder UFC Vegas 85'  — fighter not in DB
-  vod=557972  'Rayanne Amanda vs Talita Alencar UFC Vegas 83'  — fighter not in DB
-  vod=532649  'Irina Alekseeva vs Melissa Dixon UFC Vegas 81'  — no DB fight for this pair
-  vod=521107  'Edgar Chairez vs Daniel Lacerda Noche UFC'  — 2 candidates; hint='Noche UFC'
-  vod=516488  'Ciryl Gane vs Sergey Spivak UFC Paris'  — fighter not in DB
-  vod=516465  'Benoit Saint-Denis vs Thiago Moises UFC Paris'  — fighter not in DB
-  vod=508267  'Jaqueline Amorim vs Montserrat Conejo UFC Vegas 78'  — fighter not in DB
-  vod=503916  'Alex Pereira vs Jan Błachowicz UFC 291'  — fighter not in DB
-  vod=469561  'Brady Hiesand vs Batgerel Danaa UFC Vegas 71'  — fighter not in DB
-  vod=446246  'Jamall Emmers vs Khusein Ashkabov UFC Vegas 69'  — fighter not in DB
-  vod=441909  'Devin Clark vs Jung Da Un UFC Vegas 68'  — fighter not in DB
-  vod=441862  'Park Hyun-sung vs Choi Seung-guk UFC Vegas 68'  — fighter not in DB
-  vod=29817  'Junior Dos Santos vs. Cain Velasquez UFC Fight Night'  — 3 candidates; hint='UFC Fight Night'
-  vod=167859  'Dominick Reyes vs Jan Błachowicz UFC 253'  — fighter not in DB
-  vod=41937  'TJ Dillashaw vs Renan Barao UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
-  vod=30558  'Dominick Cruz vs. Scott Jorgensen WEC 53'  — no DB fight for this pair
-  vod=157136  'Deiveson Figueiredo vs Joseph Benavidez UFC Fight Island 2'  — 2 candidates; hint='UFC Fight Island 2'
-  vod=31520  'Demetrious Johnson vs. John Dodson UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
-  vod=31119  'Demetrious Johnson vs. Joseph Benavidez UFC Fight Night'  — 2 candidates; hint='UFC Fight Night'
-  vod=32360  'Nobuhiko Takada vs Mark Colemann PRIDE 5'  — fighter not in DB
-  vod=55814  'Takanori Gomi vs Leonardo Santos Shooto Japan: Treasure Hunt 7'  — no DB fight for this pair
-  vod=59009  'Dong Hyun Kim vs Takanori Gomi UFC Fight Night'  — no DB fight for this pair
-  vod=35733  'Myles Jury vs. Takanori Gomi UFC Fight Night'  — no DB fight for this pair

@@ -82,7 +82,11 @@ def supabase_get(table, params=''):
     }
     while True:
         sep = '&' if params else ''
-        url = f'{SUPABASE_URL}/rest/v1/{table}?{params}{sep}limit={PAGE}&offset={offset}'
+        # order= is required: PostgREST offset paging without an ORDER BY is
+        # not stable — rows get skipped/repeated between pages (2026-09-06 fix).
+        order = 'alias' if table == 'fighter_aliases' else 'id'
+        url = (f'{SUPABASE_URL}/rest/v1/{table}?{params}{sep}'
+               f'order={order}&limit={PAGE}&offset={offset}')
         resp = requests.get(url, headers=headers)
         if not resp.ok:
             return out

@@ -3,21 +3,32 @@
 youtube_scraper.py
 Matches full-fight videos from official promotion YouTube channels to fights in
 Supabase. Each channel in CHANNELS covers one or more DB orgs:
-  - PFL channel   → PFL, Bellator, WSOF (PFL absorbed both); full-event uploads
-  - RIZIN channel → RIZIN (per-fight only)
-  - ONE channel   → ONE Championship (per-fight, MMA bouts only)
-  - BRAVE channel → Brave CF (per-fight)
+  - PFL channel      → PFL, Bellator, WSOF (PFL absorbed both); full-event uploads
+  - RIZIN channel    → RIZIN (per-fight only)
+  - ONE channel      → ONE Championship (per-fight, MMA bouts only)
+  - BRAVE channel    → Brave CF (per-fight)
+  - LFA channel      → LFA + Legacy FC (per-fight + main-card / prelim full
+                       replays; most content sits in playlists that aren't
+                       titled 'full fight', so the entry names them)
+  - Bellator channel → Bellator, PFL, RIZIN cross-cards (per-fight archive of
+                       ~1000 videos + 'Re-Air' full cards)
 Stores the video URL in fights.youtube_url (per fight), events.youtube_url
 (full main-card replays), and events.youtube_prelims_url (prelim-card
-replays, e.g. LFA's 'Full Prelim' uploads)
-(full-event videos). The full-event matcher is org-agnostic — any channel that
-posts '... Full Event' uploads gets matched; today only PFL does on YouTube
-(ONE/Brave post full events on their own paywalled platforms).
+replays, e.g. LFA's 'Full Prelim' uploads). The full-event matcher is
+org-agnostic — any channel that posts '... Full Event' / 'Re-Air' uploads
+gets matched (ONE/Brave post full events on their own paywalled platforms).
+
+Per-fight matching: fighter names are resolved exact → alias → surname; when
+an exact-name hit yields no bout the surname pool is widened (namesakes).
+Rematches are split by the event hint — the playlist title, or the video
+title's own trailing event tag ('… | Bellator 238') — and failing that by the
+series ordinal in the title ('Carvalho v Manhoef II' → 2nd meeting by date).
 
 Uses the YouTube Data API v3 — set YOUTUBE_API_KEY in .env.
 
-  python youtube_scraper.py            # dry run, writes txt only
-  python youtube_scraper.py --push     # also update youtube_url columns
+  python youtube_scraper.py                     # dry run, writes txt only
+  python youtube_scraper.py --push              # also update youtube_url columns
+  python youtube_scraper.py --channel Bellator  # scan one CHANNELS entry only
 """
 
 import os
@@ -25,6 +36,7 @@ import re
 import sys
 import json
 import argparse
+import unicodedata
 import requests
 from datetime import date
 
@@ -92,23 +104,65 @@ CHANNELS = [
         'orgs':       ['Brave CF'],
     },
     {
-        # LFA — posts BOTH card halves as full replays:
+        # LFA (@lfafights) — posts BOTH card halves as full replays:
         #   'LFA 236 Main Card | Full Event - Five Exclusive Fights | LFA MMA'
         #   'LFA 236 Full Prelim | Exclusive Fights | LFA Fights'
+        #   'LFA 241 Prelims Card *live* | 3 x Live Prelims | LFA Fights'
         # The prelim titles carry no 'full event' marker — the variant logic
         # (_full_card_variant) routes them to events.youtube_prelims_url.
+        # Only one of its 19 playlists is titled 'Full Fights'; the rest of
+        # the full-fight archive is filed under 'BEFORE THE UFC', 'WOMEN OF
+        # MMA', 'Best of LFA' etc., and the full cards under 'LFA FULL EVENTS',
+        # 'LFA Main Cards 2026' and the prelim-replay list — so they're named
+        # here explicitly. Card playlists mix in single-bout clips, hence the
+        # duration gate (MIN_FULL_CARD_SECS). The channel also re-airs Legacy
+        # FC cards (LFA's predecessor; RFA, the other half, isn't in the DB).
         # Busy channel (clips/interviews between replays) — scan deeper than
         # the default 400 uploads so older replays backfill.
         'name':       'LFA',
         'channel_id': 'UCMssVoZVgjD4pyeG6Ic-_Nw',
-        'orgs':       ['LFA'],
+        'orgs':       ['LFA', 'Legacy FC'],
         'max_pages':  40,
+        'fight_playlists': [
+            'PL6_GVS5dt2AUgdgMsaJuP28ATHqip8CPM',   # BEFORE THE UFC | LFA FIGHTERS
+            'PL6_GVS5dt2AWhHMOFS2ls6jNP0oF5OEsZ',   # WOMEN OF MMA | LFA MMA
+            'PL6_GVS5dt2AVXlzavNUaCOBesOsXIwUGP',   # Best of LFA
+            'PL6_GVS5dt2AVvx4KursrXYLdO_uIXBkeW',   # LFA Classics
+            'PL6_GVS5dt2AW3QjmYgwv3jQZd9KTrMKr6',   # Best fights
+        ],
+        # id → card half to assume when the title names neither ('main' /
+        # 'prelims'); a title that does say 'Prelims' / 'Main Card' wins.
+        'card_playlists': {
+            'PL6_GVS5dt2AWUNLYLf_-KbYi7O3iS6MDR': 'main',      # LFA FULL EVENTS | Full Cards
+            'PL6_GVS5dt2AXKqlsB2Jvn-csz4QmbIeL_': 'main',      # LFA Main Cards 2026 | Full MMA event
+            'PL6_GVS5dt2AU-XD8KVqVnhhyes5pOz9WM': 'prelims',   # LFA Fight | *LIVE* LFA Prelim Replays
+        },
+    },
+    {
+        # Bellator's own channel (kept alive by PFL after the 2023 buyout, so
+        # it also posts PFL bouts). One giant 'Full Fights | Bellator MMA'
+        # playlist (~1000 videos, ~150 private) plus per-card 'Bellator 300 |
+        # Full Fights' playlists. Titles are hype-first:
+        #   'CYBORG ARRIVES! | Cris Cyborg v Julia Budd | Full Fight | Bellator 238'
+        # — the A-v-B segment is found by the segment walk; the trailing
+        # event tag becomes the per-video hint (title_event_hint) so rematches
+        # ('Carvalho v Manhoef II') resolve. 'Bellator Kickboxing | Full
+        # Fights' is scanned too but its kickboxers aren't in the MMA DB, so
+        # they drop out as unmatched. Cross-promotion cards (Bellator vs
+        # Rizin) live under RIZIN in the DB. Added 2026-09-06.
+        'name':       'Bellator',
+        'channel_id': 'UCnkMTsKYqhHm6l6GQzg4szg',
+        'orgs':       ['Bellator', 'PFL', 'RIZIN'],
     },
 ]
 YT_API         = 'https://www.googleapis.com/youtube/v3'
 VIDEO_URL_TMPL = 'https://www.youtube.com/watch?v={}'
 OUTPUT_FILE    = 'youtube_matches.txt'
 COUNTRY        = 'US'   # only store videos viewable from this country
+# A full-card replay runs hours; a single bout rarely passes 40 min even with
+# walkouts. Full-card candidates shorter than this are single-fight clips or
+# highlight reels that slipped past the title markers.
+MIN_FULL_CARD_SECS = 40 * 60
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -122,11 +176,14 @@ def _sb_headers():
         'Prefer': 'return=minimal',
     }
 
-def fetch_all(table, select='*', extra=''):
+def fetch_all(table, select='*', extra='', order='id'):
+    # order=id: PostgREST offset paging without an ORDER BY is not stable —
+    # rows can be skipped or repeated between pages (fighters is ~39 pages),
+    # which surfaced as spurious 'fighter not found' misses.
     PAGE, offset, out = 1000, 0, []
     while True:
         url = (f'{SUPABASE_URL}/rest/v1/{table}'
-               f'?select={select}&limit={PAGE}&offset={offset}{extra}')
+               f'?select={select}&order={order}&limit={PAGE}&offset={offset}{extra}')
         r = requests.get(url, headers=_sb_headers())
         if not r.ok:
             print(f'  [WARN] fetch {table} failed ({r.status_code}): {r.text[:200]}')
@@ -174,14 +231,17 @@ def yt_paginated(endpoint, params):
         if not page_token:
             break
 
-def get_full_fight_playlists(channel_id):
-    """All playlists for `channel_id` whose title mentions 'full fight'."""
+def get_full_fight_playlists(channel_id, extra_ids=()):
+    """All playlists for `channel_id` whose title mentions 'full fight', plus
+    any whose id is in `extra_ids` (a channel's hand-picked per-fight lists
+    that aren't titled that way — LFA's 'BEFORE THE UFC', 'WOMEN OF MMA')."""
     playlists = []
+    extra = set(extra_ids)
     for pl in yt_paginated('playlists', {
         'part': 'snippet', 'channelId': channel_id, 'maxResults': 50,
     }):
         title = pl['snippet']['title']
-        if 'full fight' in title.lower():
+        if 'full fight' in title.lower() or pl['id'] in extra:
             playlists.append({'id': pl['id'], 'title': title})
     return playlists
 
@@ -238,20 +298,47 @@ def _viewable(region_restriction, country):
         return False
     return True
 
-def get_blocked_video_ids(video_ids, country=COUNTRY):
-    """Return the set of video IDs that are NOT viewable from `country`."""
-    blocked = set()
+def get_video_details(video_ids, country=COUNTRY):
+    """(blocked, durations): the set of video IDs NOT viewable from `country`,
+    and {video_id: seconds} for every id with a known, non-zero duration.
+    One videos.list call per 50 ids serves both."""
+    blocked, durations = set(), {}
     ids = list(dict.fromkeys(video_ids))   # dedupe, preserve order
     for i in range(0, len(ids), 50):       # videos.list accepts 50 ids/call
         batch = ids[i:i + 50]
         data = yt_get('videos', {'part': 'contentDetails', 'id': ','.join(batch)})
         for item in data.get('items', []):
-            rr = item.get('contentDetails', {}).get('regionRestriction')
-            if not _viewable(rr, country):
+            cd = item.get('contentDetails', {})
+            if not _viewable(cd.get('regionRestriction'), country):
                 blocked.add(item['id'])
-    return blocked
+            secs = _iso_duration_secs(cd.get('duration'))
+            if secs:
+                durations[item['id']] = secs
+    return blocked, durations
+
+_ISO_DUR = re.compile(r'^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$')
+
+def _iso_duration_secs(s):
+    """'PT2H13M5S' → 7985. None if the string doesn't parse (live streams
+    report 'P0D' — that parses to 0, which the caller treats as unknown)."""
+    m = _ISO_DUR.match(s or '')
+    if not m:
+        return None
+    d, h, mi, se = (int(x or 0) for x in m.groups())
+    return d * 86400 + h * 3600 + mi * 60 + se
+
+def get_video_durations(video_ids):
+    """{video_id: seconds}. Ids YouTube doesn't return (deleted) or whose
+    duration is 0/unparseable (upcoming/live streams) are absent — callers
+    treat absent as 'unknown', not 'short'."""
+    return get_video_details(video_ids)[1]
 
 # ── Title parsing ─────────────────────────────────────────────────────────────
+
+# Title segment delimiters: pipes, slashes, and a spaced dash — Bellator tags
+# events as '… vs. Brandon Girtz 3 - Bellator 181'. Spaced only, so hyphenated
+# names ('Taylor-Melendez') survive.
+_SEG_SPLIT = re.compile(r'[|/]|\s+[-–—]\s+')
 
 def parse_fight_candidates(title):
     """
@@ -272,10 +359,17 @@ def parse_fight_candidates(title):
     """
     candidates = []
     # Split on '|' AND '/' so RIZIN's romanized pair gets its own segment.
-    for seg in re.split(r'[|/]', title):
+    for seg in _SEG_SPLIT.split(title):
         seg = re.sub(r'\([^)]*\)', '', seg)         # drop parentheticals
+        # Fold accents first ('Patrício' -> 'Patricio') so the non-ASCII strip
+        # below only removes CJK/emoji, not letters inside Latin names.
+        seg = unicodedata.normalize('NFKD', seg)
+        seg = ''.join(c for c in seg if not unicodedata.combining(c))
         seg = re.sub(r'[^\x00-\x7F]+', '', seg)     # drop non-ASCII (CJK names)
-        seg = re.sub(r'\s+\d+\s*$', '', seg).strip()  # drop trailing rematch num
+        # Drop a trailing rematch marker — '… 2', '… II', '… I' (Bellator
+        # labels first meetings 'I'). The ordinal itself is recovered by
+        # rematch_ordinal() to pick the right bout of a series.
+        seg = re.sub(r'\s+(?:\d+|[IVX]+)\s*$', '', seg).strip()
         # "A vs B" or Bellator-style "A v B"
         m = re.search(r'(.+?)\s+vs?\.?\s+(.+)$', seg, re.IGNORECASE)
         if not m:
@@ -291,10 +385,55 @@ def parse_fight_candidates(title):
             candidates.append((a, b))
     return candidates
 
+_ORDINAL = {'i': 1, 'ii': 2, 'iii': 3, 'iv': 4, 'v': 5, 'vi': 6}
+
+def rematch_ordinal(title):
+    """Which bout of a series a title names — 'Carvalho v Manhoef II' -> 2,
+    'Straus vs. Pitbull 4' -> 4, 'Davis vs. McGeary I' -> 1; None if untagged.
+    Read off the A-vs-B segment only, so an event number elsewhere in the
+    title ('… | Bellator 238') is never mistaken for an ordinal."""
+    for seg in _SEG_SPLIT.split(title):
+        if not re.search(r'\s+vs?\.?\s+', seg, re.IGNORECASE):
+            continue
+        seg = re.sub(r'\([^)]*\)', '', seg).strip(' !?.')
+        m = re.search(r'\s+(\d{1,2}|[ivx]+)$', seg, re.IGNORECASE)
+        if m:
+            tok = m.group(1).lower()
+            return int(tok) if tok.isdigit() else _ORDINAL.get(tok)
+    return None
+
 def playlist_event_hint(playlist_title):
-    """'PFL Paris: Full Fight Videos' -> 'pfl paris'."""
+    """'PFL Paris: Full Fight Videos' -> 'pfl paris'. Empty for catch-all
+    playlists whose title is just the marker ('Full Fights | Bellator MMA')."""
     name = re.split(r'\s*:?\s*full fight', playlist_title, flags=re.IGNORECASE)[0]
     return name.strip().lower()
+
+# Filler that can share a segment with the event tag ('Bellator 301 Full
+# Fight', 'Full Event Re-Air') — stripped before the segment is judged.
+_HINT_FILLER = re.compile(
+    r'\b(?:ful?l\s+fights?(?:\s+videos?)?|full\s+event|re-?air|no\s+comms?)\b[!]*',
+    re.IGNORECASE)
+# Segments that are never an event tag: hashtag spam and the A-vs-B matchup
+# (handled by parse_fight_candidates).
+_NOT_HINT_SEG = re.compile(r'^\s*#|\s+vs?\.?\s+', re.IGNORECASE)
+
+def title_event_hint(title):
+    """Per-video event tag for channels whose playlists don't name the event —
+    Bellator files everything in one 'Full Fights' list but tags each title:
+      'CYBORG ARRIVES! | Cris Cyborg v Julia Budd | Full Fight | Bellator 238'
+        -> 'bellator 238'
+      'Raufeon Stots vs Danny Sabatello | Bellator 301 Full Fight'
+        -> 'bellator 301'
+    Walks the pipe segments from the end, strips marker filler, and returns
+    the first segment that still has content and isn't the matchup; '' if
+    none. A hype segment ('HEAD KICK KO!') can come back when the title has
+    no tag — harmless, it matches no event name."""
+    for seg in reversed(_SEG_SPLIT.split(title)):
+        seg = re.sub(r'[^\x00-\x7F]+', '', seg)
+        seg = _HINT_FILLER.sub(' ', seg).strip(' -–—:!?.')
+        if seg and not _NOT_HINT_SEG.search(seg):
+            return seg.lower()
+    return ''
 
 # ── Matching ──────────────────────────────────────────────────────────────────
 
@@ -354,7 +493,14 @@ def resolve_fighter(name, by_name, by_alias, by_last):
         return [fid]
     return by_last.get(surname(nl), [])
 
-def find_fight(name_a, name_b, event_hint, lookups):
+def _pair_candidates(ids_a, ids_b, fight_lookup):
+    out = []
+    for a in ids_a:
+        for b in ids_b:
+            out.extend(fight_lookup.get(frozenset((a, b)), []))
+    return out
+
+def find_fight(name_a, name_b, event_hint, lookups, ordinal=None):
     (by_name, by_last, by_alias, fighter_names, event_by_id, fight_lookup) = lookups
 
     ids_a = resolve_fighter(name_a, by_name, by_alias, by_last)
@@ -364,10 +510,15 @@ def find_fight(name_a, name_b, event_hint, lookups):
     if not ids_b:
         return None, f'fighter not found: "{name_b}"'
 
-    candidates = []
-    for a in ids_a:
-        for b in ids_b:
-            candidates.extend(fight_lookup.get(frozenset((a, b)), []))
+    candidates = _pair_candidates(ids_a, ids_b, fight_lookup)
+    if not candidates:
+        # An exact full-name hit can be the WRONG namesake ('Chris Gonzalez'
+        # is two fighters, neither the Bellator 'Christopher Gonzalez').
+        # Widen both sides to every fighter with that surname — the pair
+        # lookup still has to find an actual bout between them.
+        loose_a = sorted(set(ids_a) | set(by_last.get(surname(name_a), [])))
+        loose_b = sorted(set(ids_b) | set(by_last.get(surname(name_b), [])))
+        candidates = _pair_candidates(loose_a, loose_b, fight_lookup)
     if not candidates:
         return None, f'no fight for {name_a} vs {name_b}'
 
@@ -383,12 +534,29 @@ def find_fight(name_a, name_b, event_hint, lookups):
     if len(candidates) == 1:
         return candidates[0], 'matched'
 
-    # Multiple (rematch) → disambiguate by playlist event hint
+    # Multiple (rematch) → disambiguate by the event hint (playlist title or
+    # the video title's trailing event tag). Every hint token must appear as
+    # a whole word in the event name — token-wise so 'bellator 58' finds
+    # 'BFC - Bellator Fighting Championships 58', whole-word so 'bellator 23'
+    # can't hit 'Bellator 238'.
     if event_hint:
+        toks = [t for t in re.split(r'[^a-z0-9]+', event_hint.lower()) if t]
+        def _hint_hits(ev_name):
+            words = set(re.split(r'[^a-z0-9]+', ev_name.lower()))
+            return bool(toks) and all(t in words for t in toks)
         hits = [c for c in candidates
-                if event_hint in event_by_id.get(c['event_id'], {}).get('name', '').lower()]
+                if _hint_hits(event_by_id.get(c['event_id'], {}).get('name', ''))]
         if len(hits) == 1:
             return hits[0], 'matched (by event)'
+
+    # Series ordinal ('Carvalho v Manhoef II' → the 2nd meeting). Sherdog
+    # holds every pro bout, so the candidate list IS the series; sort by date
+    # and take the Nth. An ordinal past the end means the DB is missing a bout
+    # (or the title is wrong) — refuse rather than guess.
+    if ordinal and ordinal <= len(candidates):
+        ordered = sorted(candidates,
+                         key=lambda c: (event_by_id.get(c['event_id'], {}).get('date') or ''))
+        return ordered[ordinal - 1], f'matched (bout {ordinal} of {len(candidates)})'
 
     return None, f'ambiguous ({len(candidates)} fights): {name_a} vs {name_b}'
 
@@ -396,7 +564,10 @@ def find_fight(name_a, name_b, event_hint, lookups):
 # full-event upload. A title like 'BRAVE 100 ... | Full Event Highlights' carries
 # 'full event' but is NOT one — reject it so it never attaches to an event.
 _NOT_FULL_EVENT = re.compile(
-    r'\b(highlights?|recap|vlog|preview|promo|trailer|teaser)\b', re.IGNORECASE)
+    r'\b(highlights?|recap|vlog|preview|promo|trailer|teaser|'
+    # Fight-week streams — LFA's 'LFA 229 *live* weigh-ins' runs 36 min and
+    # a long presser would clear the duration gate.
+    r'weigh-?ins?|press\s+conference|face-?offs?|media\s+day)\b', re.IGNORECASE)
 
 # Roman numerals 2-10 → arabic. ONE files its themed cards as 'FISTS OF FURY II'
 # on YouTube but 'Fists of Fury 2' on Sherdog; the numeral is often the only
@@ -406,16 +577,50 @@ _NOT_FULL_EVENT = re.compile(
 _ROMAN = {'ii': '2', 'iii': '3', 'iv': '4', 'v': '5', 'vi': '6',
           'vii': '7', 'viii': '8', 'ix': '9', 'x': '10'}
 
+# YouTube-title org spellings folded to the DB org token before matching, so
+# the numbered-event tier sees 'LFA 3' in 'LFA MMA 3 | *Full Event* ...' and
+# 'Legacy FC 57' in 'LEGACY FIGHTING CHAMPIONSHIP 57'.
+_TITLE_ORG_ALIASES = [
+    (re.compile(r'\blegacy\s+fighting\s+alliance\b', re.I), 'LFA'),
+    (re.compile(r'\blegacy\s+fighting\s+championships?\b', re.I), 'Legacy FC'),
+    (re.compile(r'\bLFA\s+(?:MMA|Fighting)\s+(\d+)\b', re.I), r'LFA \1'),
+]
+
+_NUMBERED_NAME = re.compile(r'^\s*(.+?)\s+(\d+)\b')
+
+def _numbered_key(event_name):
+    """('lfa', '241') for 'LFA 241 - Pires vs Pereira'; None when the name
+    doesn't lead with '<words> <number>'. Prefix is lowercased with
+    punctuation folded to single spaces, matching the title normalization
+    in match_full_event."""
+    m = _NUMBERED_NAME.match(event_name or '')
+    if not m:
+        return None
+    prefix = ' '.join(re.split(r'[^a-z0-9]+', m.group(1).lower())).strip()
+    return (prefix, m.group(2)) if prefix else None
+
 def _is_full_event_title(title):
     """A video that is a full card replay — '... | Full Event' (main card) or
     '... Full Prelim(s)' (LFA's prelim-half uploads) — rather than a single
     bout. Both routes send such titles to match_full_event."""
-    return bool(re.search(r'\bfull (?:event|card|prelims?)\b', title, re.IGNORECASE))
+    # Bellator's channel labels whole-card replays 'Re-Air' with no other
+    # marker ('Re-Air | Bellator 195 Caldwell vs. Higo'); LFA's prelim halves
+    # are 'LFA 241 Prelims Card *live* | 3 x Live Prelims'.
+    return bool(re.search(r'\bfull (?:event|card|prelims?)\b|\bre-?air\b'
+                          r'|\bprelims?\s+card\b',
+                          title, re.IGNORECASE))
 
-def _full_card_variant(title):
-    """'prelims' for prelim-card replays, else 'main'. Routed to
-    events.youtube_prelims_url / events.youtube_url respectively."""
-    return 'prelims' if re.search(r'\bprelims?\b', title, re.IGNORECASE) else 'main'
+def _full_card_variant(title, default='main'):
+    """'prelims' for prelim-card replays, 'main' for main-card/full-event
+    replays, else `default` — the playlist's nature when the title says
+    neither ('LFA 204: | Reylan Gracie pro debut | ...' inside the prelim
+    replay list). Routed to events.youtube_prelims_url / events.youtube_url."""
+    if re.search(r'\bprelim(?:s|inary)?\b', title, re.IGNORECASE):
+        return 'prelims'
+    if re.search(r'\b(?:main|full)\s+card\b|\bfull\s+event\b|\bre-?air\b',
+                 title, re.IGNORECASE):
+        return 'main'
+    return default
 
 def _sig_tokens(text):
     """Significant tokens: alpha words >2 chars + standalone numbers, with
@@ -454,6 +659,25 @@ def match_full_event(title, events):
     if _NOT_FULL_EVENT.search(title):
         return None, 'not a full event (highlights/recap/promo)'
 
+    for rx, repl in _TITLE_ORG_ALIASES:
+        title = rx.sub(repl, title)
+
+    # Tier 0 — numbered event. Most orgs name cards '<Org> <N> - A vs. B', and
+    # the '<Org> <N>' pair is the whole identity: 'LFA 241 Main Card *LIVE* |
+    # 6 x Fight Full Card | LFA Fights' is LFA 241 no matter how much filler
+    # surrounds it, and 'Re-Air | Bellator 196 & Kickboxing 9' is Bellator
+    # 196. Whole-word on both sides so 'LFA 1' can't hit 'LFA 18'. Only when
+    # exactly one in-scope event owns that pair; otherwise fall through to
+    # the token tiers.
+    tl = ' ' + re.sub(r'[^a-z0-9]+', ' ', title.lower()) + ' '
+    numbered = []
+    for e in events:
+        key = _numbered_key(e['name'])
+        if key and f' {key[0]} {key[1]} ' in tl:
+            numbered.append(e)
+    if len(numbered) == 1:
+        return numbered[0], 'matched (numbered event)'
+
     # Two candidate keys, tried in order: (1) everything before the full-card
     # marker; (2) just the first pipe-segment — LFA slots hype filler between
     # the event name and the marker ('LFA 234 | TWO world title fight | Full
@@ -463,10 +687,26 @@ def match_full_event(title, events):
     first_seg = title.split('|')[0]
     if first_seg.strip() and first_seg not in raw_keys:
         raw_keys.append(first_seg)
+    # (3) every other pipe segment on its own — Bellator's re-airs put hype
+    # first and the event tag anywhere ('HEAVYWEIGHT MAYHEM! | Bellator 52
+    # Full Event | When Heavyweights OWN the Main Card', 'Rampage Jackson,
+    # King Mo & MORE!! | Bellator 110 | Full Event Re-Air'). Marker filler
+    # ('Full Event', 'Re-Air') is stripped so 'Bellator 52 Full Event' keys
+    # as 'Bellator 52'.
+    for seg in title.split('|')[1:]:
+        seg = _HINT_FILLER.sub(' ', seg).strip()
+        if seg and seg not in raw_keys:
+            raw_keys.append(seg)
 
     last_reason = 'no key tokens'
     for key in raw_keys:
         key = re.sub(r'@\S+', ' ', key)          # drop @collab handles
+        key = _HINT_FILLER.sub(' ', key)         # 'Re-Air', 'Full Fight' …
+        # ' v ' is 'vs', not the roman numeral 5 ('Bellator v Rizin 2').
+        key = re.sub(r'\s+v\s+', ' vs ', key, flags=re.IGNORECASE)
+        # 'Bellator 221 Full Event Feat. Page, Lima & MORE!' — the line-up
+        # after 'feat' is filler, not identity.
+        key = re.sub(r'\bfeat\.?\b.*$', ' ', key, flags=re.IGNORECASE)
         key = re.sub(r'\([^)]*\)', ' ', key)     # drop parentheticals
         # 'Main Card' is card-half filler, not event identity ('LFA 236 Main
         # Card | Full Event ...') — never part of the Sherdog name.
@@ -479,7 +719,7 @@ def match_full_event(title, events):
         if not vid:
             continue
 
-        exact, name_hits, hits = [], [], []
+        exact, num_hits, rev_hits, name_hits, hits = [], [], [], [], []
         for e in events:
             if year and year not in (e.get('date') or ''):
                 continue
@@ -489,16 +729,38 @@ def match_full_event(title, events):
             v = vid - org      # org name is implied by scope — don't require it
             if not v:
                 continue
+            # Reverse subset: the EVENT's tokens all appear in the video key
+            # and the numbers agree — for re-airs titled with full names
+            # ('Bellator 182 Andrey Koreshkov vs. Chidi Njokuani' against
+            # 'Bellator 182 - Koreshkov vs. Njokuani').
+            # Guarded: when the event name is just '<Org> <N>' ('Legacy FC
+            # 31') its non-org tokens are only the number, and any title
+            # carrying that number would qualify — 'ATTITUDE MMA 31 *FULL*
+            # EVENT', 'RFA 33 * FULL EVENT*' (promotions not in the DB). So
+            # the org must then appear in the title too.
+            name_core = name - org
+            if (name_core <= v
+                    and {t for t in v if t.isdigit()} == {t for t in name if t.isdigit()}
+                    and (any(not t.isdigit() for t in name_core) or (org & vid))):
+                rev_hits.append(e)
             if v == (name - org):
                 exact.append(e)
             if v <= name:
                 name_hits.append(e)
+                # Same numbers on both sides: 'Bellator 4' must not also
+                # satisfy 'Bellator 178 - Straus vs. Pitbull 4'.
+                if {t for t in v if t.isdigit()} == {t for t in name if t.isdigit()}:
+                    num_hits.append(e)
             if v <= (name | loc):
                 hits.append(e)
 
         label = f'{year or "any"} / {"+".join(sorted(vid))}'
         if len(exact) == 1:
             return exact[0], 'matched (exact)'
+        if len(num_hits) == 1:
+            return num_hits[0], 'matched (numbers)'
+        if len(rev_hits) == 1:
+            return rev_hits[0], 'matched (event tokens in title)'
         if len(name_hits) == 1:
             return name_hits[0], 'matched'
         if len(hits) == 1:
@@ -521,7 +783,7 @@ def main(push=False):
 
     print('Loading data from Supabase...')
     fighters = fetch_all('fighters', 'id,name')
-    aliases  = fetch_all('fighter_aliases', 'alias,fighter_id')
+    aliases  = fetch_all('fighter_aliases', 'alias,fighter_id', order='alias')
     all_fights = fetch_all('fights', 'id,event_id,fighter1_id,fighter2_id')
 
     matched, unmatched = [], []
@@ -529,17 +791,24 @@ def main(push=False):
     seen_fight = set()
     seen_event = set()
 
-    def record_full_event(vid, vtitle, events):
+    def record_full_event(vid, vtitle, events, default_variant='main'):
         """Match a full-card video ('Full Event' main card or 'Full Prelim')
         to one of `events` and record it, deduped by (event, variant). Used
         from both the playlist scan (ONE files full events inside per-fight
-        playlists) and the uploads scan (PFL, LFA)."""
+        playlists) and the uploads scan (PFL, LFA). `default_variant` is the
+        card half assumed when the title names neither."""
         url = VIDEO_URL_TMPL.format(vid)
         event, reason = match_full_event(vtitle, events)
         if not event:
             ev_unmatched.append((reason, vtitle, url))
             return
-        variant = _full_card_variant(vtitle)
+        # A scheduled live stream ('LFA 241 Main Card *LIVE*') is listed days
+        # ahead of the card. Don't attach it until the event has happened —
+        # the next daily run picks it up once the date passes.
+        if _is_future_event(event):
+            ev_unmatched.append((f'event not yet held ({event["name"]})', vtitle, url))
+            return
+        variant = _full_card_variant(vtitle, default_variant)
         if (event['id'], variant) in seen_event:
             return
         seen_event.add((event['id'], variant))
@@ -565,31 +834,57 @@ def main(push=False):
             fighters, aliases, channel_fights, events)
         lookups = (by_name, by_last, by_alias, fighter_names, event_by_id, fight_lookup)
 
-        playlists = get_full_fight_playlists(ch['channel_id'])
-        print(f'  {len(playlists)} full-fight playlists')
+        # Full-card candidates are collected per channel and matched after a
+        # duration check (one videos.list per 50) — see MIN_FULL_CARD_SECS.
+        card_pending = []
 
+        card_ids = dict(ch.get('card_playlists', {}))   # id → default variant
+        playlists = get_full_fight_playlists(
+            ch['channel_id'], extra_ids=list(ch.get('fight_playlists', [])) + list(card_ids))
+        print(f'  {len(playlists)} playlists to scan')
+
+        fight_ids = set(ch.get('fight_playlists', []))
         for pl in playlists:
-            hint = playlist_event_hint(pl['title'])
+            # Hand-picked playlists are themed ('BEFORE THE UFC'), not named
+            # for an event — leave the hint empty so each video's own tag
+            # ('... | LFA 146') disambiguates rematches instead.
+            hint = '' if pl['id'] in fight_ids else playlist_event_hint(pl['title'])
             videos = get_playlist_videos(pl['id'])
-            print(f'    [{pl["title"]}] — {len(videos)} videos')
+            is_card_list = pl['id'] in card_ids
+            print(f'    [{pl["title"]}] — {len(videos)} videos'
+                  + (' (full cards)' if is_card_list else ''))
             for vid, vtitle in videos:
                 url = VIDEO_URL_TMPL.format(vid)
                 # A playlist can hold event replays alongside single bouts
                 # (ONE's themed 'Full Fights' playlists include a '... | Full
                 # Event' video). Route those to the full-event matcher, not the
-                # A-vs-B parser (which would just PARSE_FAIL on them).
-                if _is_full_event_title(vtitle):
-                    record_full_event(vid, vtitle, events)
+                # A-vs-B parser (which would just PARSE_FAIL on them). In a
+                # channel's designated card playlists every video is a
+                # full-card candidate — LFA's prelim replays carry no marker
+                # at all ('LFA 162 Prelims | Unbeaten Michael Oliveira vs ...').
+                if is_card_list or _is_full_event_title(vtitle):
+                    card_pending.append((vid, vtitle, card_ids.get(pl['id'], 'main')))
+                    continue
+                # Highlight reels share the A-vs-B shape ('Ahmet Kayretli vs
+                # Andrew Salas | LFA 49 Fight Highlight') and would otherwise
+                # be stored as the bout's video.
+                if _NOT_FULL_EVENT.search(vtitle) and not re.search(
+                        r'\bfull\s+fight', vtitle, re.IGNORECASE):
+                    unmatched.append(('highlight/recap clip', vtitle, url))
                     continue
                 cand_pairs = parse_fight_candidates(vtitle)
                 if not cand_pairs:
                     unmatched.append(('PARSE_FAIL', vtitle, url))
                     continue
 
+                # Playlist-level hint first; fall back to the video's own
+                # trailing event tag for catch-all playlists.
+                vhint = hint or title_event_hint(vtitle)
+                ordinal = rematch_ordinal(vtitle)
                 fight = None
                 reason = 'no candidate matched'
                 for name_a, name_b in cand_pairs:
-                    fight, reason = find_fight(name_a, name_b, hint, lookups)
+                    fight, reason = find_fight(name_a, name_b, vhint, lookups, ordinal)
                     if fight:
                         break
 
@@ -613,8 +908,27 @@ def main(push=False):
         fe_videos = get_full_event_videos(ch['channel_id'],
                                           max_pages=ch.get('max_pages', 8))
         print(f'    {len(fe_videos)} full-event candidate videos found')
-        for vid, vtitle in fe_videos:
-            record_full_event(vid, vtitle, events)
+        card_pending.extend((v, t, 'main') for v, t in fe_videos)
+
+        # Duration gate, then match. Unknown durations (upcoming/live
+        # streams, deleted videos) pass through — the title tiers and the
+        # future-event guard still apply to them.
+        seen_pending = set()
+        durations = get_video_durations([v for v, _, _ in card_pending])
+        short = 0
+        for vid, vtitle, default_variant in card_pending:
+            if vid in seen_pending:
+                continue
+            seen_pending.add(vid)
+            secs = durations.get(vid)
+            if secs is not None and secs < MIN_FULL_CARD_SECS:
+                short += 1
+                ev_unmatched.append((f'too short for a full card ({secs // 60} min)',
+                                     vtitle, VIDEO_URL_TMPL.format(vid)))
+                continue
+            record_full_event(vid, vtitle, events, default_variant)
+        print(f'    {len(seen_pending)} full-card candidates matched '
+              f'({short} rejected as too short)')
 
     # 'events' is per-channel above; for the geo-block + write-file passes
     # below we use a unified event_by_id keyed off matched results.
@@ -622,8 +936,20 @@ def main(push=False):
 
     # ── Drop videos geo-blocked in COUNTRY ────────────────────────────────────
     print(f'\nChecking region restrictions ({COUNTRY})...')
-    blocked_ids = get_blocked_video_ids(
+    blocked_ids, durations = get_video_details(
         [m['video_id'] for m in matched] + [m['video_id'] for m in ev_matched])
+    # A single bout never runs 40+ min; a 'fight' video that long is a card
+    # stream whose title happened to name one matchup ('LFA 204: | Reylan
+    # Gracie pro debut | Kyle Pufahl vs Kevin Carrier'). Don't pin it on the
+    # bout.
+    long_fights = [m for m in matched
+                   if durations.get(m['video_id'], 0) >= MIN_FULL_CARD_SECS]
+    for m in long_fights:
+        unmatched.append((f'multi-fight video ({durations[m["video_id"]] // 60} min)',
+                          m['video_title'], m['url']))
+    matched = [m for m in matched if m not in long_fights]
+    if long_fights:
+        print(f'  {len(long_fights)} fight videos dropped as multi-fight streams')
     geo_fights = [m for m in matched    if m['video_id'] in blocked_ids]
     geo_events = [m for m in ev_matched if m['video_id'] in blocked_ids]
     matched    = [m for m in matched    if m['video_id'] not in blocked_ids]
@@ -692,5 +1018,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--push', action='store_true',
                         help='Write matched URLs to fights.youtube_url')
+    parser.add_argument('--channel', metavar='NAME',
+                        help='Only scan the CHANNELS entry with this name '
+                             '(e.g. Bellator) — for testing a new channel '
+                             'without spending quota on the rest')
     args = parser.parse_args()
+    if args.channel:
+        CHANNELS[:] = [c for c in CHANNELS if c['name'].lower() == args.channel.lower()]
+        if not CHANNELS:
+            sys.exit(f'No CHANNELS entry named {args.channel!r}')
     main(push=args.push)

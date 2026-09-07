@@ -653,7 +653,7 @@ def fetch_female_fighter_names():
     while True:
         resp = requests.get(
             f'{SUPABASE_URL}/rest/v1/fighters'
-            f'?gender=eq.F&select=name&limit=1000&offset={offset}',
+            f'?gender=eq.F&select=name&order=id&limit=1000&offset={offset}',
             headers=_headers(),
         )
         if not resp.ok:

@@ -19,7 +19,14 @@ GitHub-Actions datacenter IPs. Same operational model as paramount_scraper.py
                                                # fills per-fight URL gaps for events
                                                # since --since (default 2025-01-01)
                                                # and event-level replay gaps for
-                                               # UFC/PRIDE/Strikeforce/WEC
+                                               # UFC/PRIDE/Strikeforce/WEC. DWCS
+                                               # cards (clips titled 'A vs B DWCS',
+                                               # no week) are also searched by the
+                                               # bare 'DWCS' tag and by the surname
+                                               # of each fighter still missing a URL;
+                                               # clips whose fighter name drifts from
+                                               # the DB are pinned to the card by the
+                                               # description date instead
   python fightpass_scraper.py --search-events --events 65387,69287
                                                # scope PASS 5 to specific event ids
                                                # (ignores --since, skips the series
@@ -37,7 +44,7 @@ import time
 import argparse
 import unicodedata
 import requests
-from datetime import date
+from datetime import date, datetime
 from collections import Counter
 
 # ── Load .env ─────────────────────────────────────────────────────────────────
@@ -335,11 +342,14 @@ def _sb_headers():
     }
 
 def fetch_all(table, select='*', extra=''):
+    # order= is required: PostgREST offset paging without an ORDER BY is not
+    # stable — rows get skipped/repeated between pages (2026-09-06 fix).
+    order = 'alias' if table == 'fighter_aliases' else 'id'
     PAGE, offset, out = 1000, 0, []
     while True:
         r = requests.get(
             f'{SUPABASE_URL}/rest/v1/{table}'
-            f'?select={select}&limit={PAGE}&offset={offset}{extra}',
+            f'?select={select}&order={order}&limit={PAGE}&offset={offset}{extra}',
             headers=_sb_headers())
         if not r.ok:
             print(f'  [WARN] fetch {table} failed ({r.status_code})')
@@ -547,6 +557,13 @@ _QUERY_EXPANSIONS = [
     (re.compile(r'^FAC\b', re.I), 'Fighting Alliance Championship'),
     (re.compile(r'^AFC\b', re.I), 'Alaska Fighting Championship'),
     (re.compile(r'^CFFC\b', re.I), 'Cage Fury FC'),
+    # Reverse case: DB spells the org out but Fight Pass titles the per-fight
+    # clips with the abbreviation ('Arlind Berisha vs Wesley Silva FCR 27'),
+    # so a 'Fight Club Rush 27' query only surfaces the full-card replay.
+    (re.compile(r'^Fight\s+Club\s+Rush\b', re.I), 'FCR'),
+    (re.compile(r'^Shuriken\s+Fight\s+Series\b', re.I), 'SFS'),
+    (re.compile(r'^Battlefield\s+Fight\s+League\b', re.I), 'BFL'),
+    (re.compile(r'^Anthony\s+Pettis\s+FC\b', re.I), 'APFC'),
 ]
 
 def _event_queries(name):
@@ -725,21 +742,36 @@ def _name_tokens(name):
     s = re.sub(r'[^a-z0-9 ]', ' ', s)
     return {t for t in s.split() if t and t not in _NAME_SUFFIX}
 
-def event_anchored_fight(a, b, hint, events, events_by_norm, fights_by_event, fighter_names):
-    """Fallback for Fight Pass name misspellings/nicknames the exact resolver
-    misses: pin the event from the title's event hint, then fuzzy-match the
-    fight within that event's (few) bouts by name-token overlap. Requires a
-    clear, unambiguous winner so it won't mis-assign."""
-    if not hint:
-        return None
-    ev = match_event_fuzzy(hint, events, events_by_norm)
-    if not ev:
-        return None
+# Per-fight VOD titles abbreviate orgs whose DB names are spelled out
+# ('Arlind Berisha vs Wesley Silva FCR 27' vs DB 'Fight Club Rush 27'). The
+# hint shares no tokens with the event name, so event_anchored_fight — the
+# only path that survives a Fight Pass name drift like 'Wesley Silva' for
+# 'Wesley da Silva Marques' — could never pin the card. Expand before fuzzy
+# matching. Orgs whose DB names already use the abbreviation (FCC, FAC, AFC,
+# CFFC, LFA, KOTC) need no entry.
+_HINT_ALIASES = [
+    (re.compile(r'^FCR\b', re.I), 'Fight Club Rush'),
+    (re.compile(r'^SFS\b', re.I), 'Shuriken Fight Series'),
+    (re.compile(r'^BFL\b', re.I), 'Battlefield Fight League'),
+    (re.compile(r'^APFC\b', re.I), 'Anthony Pettis FC'),
+    (re.compile(r'^VTJ\b', re.I), 'Vale Tudo Japan'),
+]
+
+def expand_hint(hint):
+    """Spell out an abbreviated org in a per-fight VOD's event hint."""
+    for rx, repl in _HINT_ALIASES:
+        if rx.match(hint or ''):
+            return rx.sub(repl, hint)
+    return hint
+
+def fight_in_event_by_tokens(a, b, event_id, fights_by_event, fighter_names):
+    """Fuzzy-match 'a vs b' against one event's (few) bouts by name-token
+    overlap. Requires a clear, unambiguous winner so it won't mis-assign."""
     ta, tb = _name_tokens(a), _name_tokens(b)
     if not ta or not tb:
         return None
     best, best_score, tie = None, 0, False
-    for fi in fights_by_event.get(ev['id'], []):
+    for fi in fights_by_event.get(event_id, []):
         n1 = _name_tokens(fighter_names.get(fi['fighter1_id'], ''))
         n2 = _name_tokens(fighter_names.get(fi['fighter2_id'], ''))
         score = max(len(ta & n1) + len(tb & n2), len(ta & n2) + len(tb & n1))
@@ -750,6 +782,70 @@ def event_anchored_fight(a, b, hint, events, events_by_norm, fights_by_event, fi
     if best and best_score >= 2 and not tie:
         return best
     return None
+
+def event_anchored_fight(a, b, hint, events, events_by_norm, fights_by_event, fighter_names):
+    """Fallback for Fight Pass name misspellings/nicknames the exact resolver
+    misses: pin the event from the title's event hint, then fuzzy-match the
+    fight within that event's bouts."""
+    if not hint:
+        return None
+    ev = match_event_fuzzy(expand_hint(hint), events, events_by_norm)
+    if not ev:
+        return None
+    return fight_in_event_by_tokens(a, b, ev['id'], fights_by_event, fighter_names)
+
+# Some orgs' per-fight clips are titled with the org alone and never the card
+# ('Kwon Wonil vs Juan Diaz DWCS'). Such a hint can't pin an event by name, so
+# when a fighter name drifts from the DB ('Kwon Wonil' for 'Won Il Kwon',
+# 'Paulo Henrique' for 'Paulo da Silva') the clip's description date ('... at
+# DWCS from Las Vegas, Nevada on October 14, 2025.') is the only handle on the
+# card. Maps the normalized hint to the DB organization it stands for.
+_BARE_ORG_HINTS = {
+    'dwcs': 'DWCS',
+    'contender series': 'DWCS',
+    'dana white s contender series': 'DWCS',
+}
+
+# 'From July 24th, 2026' / 'August 12, 2017' — the date Fight Pass writes into
+# VOD descriptions. Used by the event-replay guard and the bare-org fallback.
+_DESC_DATE_RE = re.compile(
+    r'\b(January|February|March|April|May|June|July|August|September|'
+    r'October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})')
+
+def desc_date(detail):
+    """The date named in a VOD's description, or None."""
+    m = _DESC_DATE_RE.search((detail or {}).get('description') or '')
+    if not m:
+        return None
+    try:
+        return datetime.strptime(
+            f'{m.group(1)} {m.group(2)} {m.group(3)}', '%B %d %Y').date()
+    except ValueError:
+        return None
+
+def date_anchored_fight(a, b, hint, detail, events, fights_by_event, fighter_names):
+    """Bare-org hint ('DWCS') + description date -> the org's card on that
+    date (+/-1 day) -> token-overlap fight match within it. Returns the fight
+    only when exactly one card on that date yields a match."""
+    org = _BARE_ORG_HINTS.get(_norm(hint))
+    if not org:
+        return None
+    vd = desc_date(detail)
+    if vd is None:
+        return None
+    hits = []
+    for e in events:
+        if (e.get('organization') or '') != org:
+            continue
+        try:
+            ed = date.fromisoformat((e.get('date') or '')[:10])
+        except ValueError:
+            continue
+        if abs((vd - ed).days) <= 1:
+            fi = fight_in_event_by_tokens(a, b, e['id'], fights_by_event, fighter_names)
+            if fi:
+                hits.append(fi)
+    return hits[0] if len(hits) == 1 else None
 
 # Fight Pass per-fight VOD titles look like:
 #   "Conor McGregor vs Chad Mendes UFC 189"
@@ -839,6 +935,7 @@ def pick_by_hint(candidates, hint, ev_by_id):
     VOD is reported unmatched rather than guessed at."""
     if not hint:
         return None
+    hint = expand_hint(hint)
     hint_n = _norm(hint)
     if not hint_n:
         return None
@@ -1232,7 +1329,8 @@ def main(push=False, force=False, scan_vods=False,
             # only the wrong bout as a candidate, and the len == 1 shortcut
             # below would take it.
             if not picked and hint:
-                hint_ev = match_event_fuzzy(hint, events, all_events_by_norm)
+                hint_ev = match_event_fuzzy(expand_hint(hint), events,
+                                            all_events_by_norm)
                 if hint_ev:
                     for x in ids_a:
                         for y in ids_b:
@@ -1291,6 +1389,14 @@ def main(push=False, force=False, scan_vods=False,
             picked = event_anchored_fight(a, b, hint, events,
                                           all_events_by_norm,
                                           fights_by_event, fighter_names)
+        # Bare-org hint ('... DWCS'): the title names no card, so pin it from
+        # the clip's description date instead (one extra detail fetch, only
+        # for VODs nothing else could place).
+        if not picked and not candidates and _norm(hint) in _BARE_ORG_HINTS:
+            picked = date_anchored_fight(a, b, hint, fp.vod_quiet(vod_id),
+                                         events, fights_by_event, fighter_names)
+            if picked:
+                tag = tag.rstrip(']') + ' date-anchored]'
         if picked:
             ev = ev_by_id.get(picked['event_id'])
             url = WATCH_URL.format(vod_id)
@@ -1325,9 +1431,6 @@ def main(push=False, force=False, scan_vods=False,
     # the id scan is the only thing that finds them. Guards: the description's
     # date ('From July 24th, 2026' / 'August 12, 2017') must sit within 3
     # days of the event date, and the VOD must run at least an hour.
-    _DESC_DATE_RE = re.compile(
-        r'\b(January|February|March|April|May|June|July|August|September|'
-        r'October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})')
 
     def try_event_replay(vod_id, v_title, detail=None):
         from datetime import datetime
@@ -1574,32 +1677,62 @@ def main(push=False, force=False, scan_vods=False,
         print(f'\n=== PASS 5: vesper search by event name ({scope}) ===')
 
         seen_ev_search = set()
+
+        def run_event_query(q):
+            try:
+                results = fp.vesper_search(q)
+            except Exception as ex:
+                print(f'  [WARN] vesper {q!r}: {ex}')
+                return
+            for vid, v_title in results:
+                vod_id = str(vid)
+                if vod_id in seen or vod_id in seen_ev_search:
+                    continue
+                seen_ev_search.add(vod_id)
+                if _is_spanish(v_title):
+                    continue
+                # Prelims replays first — SKIP_KEYWORDS would drop them.
+                if re.search(r'\bprelim', v_title.lower()):
+                    try_event_replay(vod_id, v_title)
+                    continue
+                status = process_search_vod(vod_id, v_title, '[event-search]')
+                if status in ('matched', 'skip'):
+                    continue
+                # Not a matched per-fight VOD — try as full-event replay.
+                try_event_replay(vod_id, v_title)
+            time.sleep(0.15)
+
+        # Orgs whose per-fight clips are titled with the org alone ('Kwon
+        # Wonil vs Juan Diaz DWCS' — no week, no card): no event-name query
+        # can surface them, and vesper caps at ~20 hits. For these orgs (and
+        # any card named via --events) also query the bare org tag (returns
+        # the ~20 newest clips, i.e. the current season's) and the surname
+        # of every fighter on the card still missing a per-fight URL.
+        FIGHTER_QUERY_ORGS = {'DWCS'}
+        ORG_CLIP_QUERIES   = {'DWCS': ['DWCS']}
+        fighter_queries_done = set()
+
         for i, e in enumerate(sorted(targets, key=lambda x: x.get('date') or '')):
             if i % 25 == 0 and i:
                 print(f'  ...{i}/{len(targets)} events searched')
             for q in _event_queries(e['name']):
-                try:
-                    results = fp.vesper_search(q)
-                except Exception as ex:
-                    print(f'  [WARN] vesper {q!r}: {ex}')
-                    continue
-                for vid, v_title in results:
-                    vod_id = str(vid)
-                    if vod_id in seen or vod_id in seen_ev_search:
+                run_event_query(q)
+            org = e.get('organization') or ''
+            if org in FIGHTER_QUERY_ORGS or wanted_events is not None:
+                matched_ids = {m[0] for m in matched_fights}
+                extra = list(ORG_CLIP_QUERIES.get(org, []))
+                for fi in fights_by_event.get(e['id'], []):
+                    if fi.get('fightpass_url') or fi['id'] in matched_ids:
                         continue
-                    seen_ev_search.add(vod_id)
-                    if _is_spanish(v_title):
+                    for fid_ in (fi['fighter1_id'], fi['fighter2_id']):
+                        ln = surname(fighter_names.get(fid_, ''))
+                        if ln and ln not in extra:
+                            extra.append(ln)
+                for q in extra:
+                    if q in fighter_queries_done:
                         continue
-                    # Prelims replays first — SKIP_KEYWORDS would drop them.
-                    if re.search(r'\bprelim', v_title.lower()):
-                        try_event_replay(vod_id, v_title)
-                        continue
-                    status = process_search_vod(vod_id, v_title, '[event-search]')
-                    if status in ('matched', 'skip'):
-                        continue
-                    # Not a matched per-fight VOD — try as full-event replay.
-                    try_event_replay(vod_id, v_title)
-                time.sleep(0.15)
+                    fighter_queries_done.add(q)
+                    run_event_query(q)
         print(f'  event-search pass complete — {len(seen_ev_search)} unique VODs evaluated')
 
     # ── Dedupe per-event by variant (keep first per (event,variant)) ──────────

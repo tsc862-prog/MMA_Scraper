@@ -99,11 +99,14 @@ def _sb_headers():
     }
 
 def fetch_all(table, select='*', extra=''):
+    # order= is required: PostgREST offset paging without an ORDER BY is not
+    # stable — rows get skipped/repeated between pages (2026-09-06 fix).
+    order = 'alias' if table == 'fighter_aliases' else 'id'
     PAGE, offset, out = 1000, 0, []
     while True:
         r = requests.get(
             f'{SUPABASE_URL}/rest/v1/{table}'
-            f'?select={select}&limit={PAGE}&offset={offset}{extra}',
+            f'?select={select}&order={order}&limit={PAGE}&offset={offset}{extra}',
             headers=_sb_headers())
         if not r.ok:
             print(f'  [WARN] fetch {table} failed ({r.status_code})')

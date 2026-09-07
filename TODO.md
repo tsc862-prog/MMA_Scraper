@@ -70,6 +70,13 @@ permanent fork.
   `active: false` in `SHERDOG_ORGS` (defunct — one-time scrape, skipped daily).
 - Re-run with `python sherdog_scraper.py --all` if ever needed.
 
+- **Non-MMA events under Bellator (found 2026-09-06).** Sherdog's Bellator
+  promoter page carries five NASCAR races that were scraped as events:
+  "2014 Monster Energy Cup" (41541), "Monster Energy All-Star Race" (59155),
+  "Bass Pro Shops NRA Night Race" (59157), "Alabama 500" (59159), "Ford
+  EcoBoost 400" (59161). Delete them (and add their ids to a skip list in
+  `sherdog_scraper.py` so a re-scrape doesn't resurrect them).
+
 ### TODO — PRIDE / Strikeforce / WEC (and other Fight Pass orgs)
 Incorporate every org with content on Fight Pass into the DB. Two halves:
 1. **Fight records** — extend `sherdog_scraper.py` with new `SHERDOG_ORGS`
@@ -341,13 +348,19 @@ For each org we add:
   the orphan-cleanup pattern we used for "Yi Sak Lee".
 - **Catchweight / open-weight** — PRIDE/early UFC fights need the
   `catch_weight_lbs` column from the target schema; current DB doesn't have it.
+- ~~Fighter pages have no photo or link out to Sherdog.~~ **DONE 2026-09-05:**
+  `migrate/add_fighter_profile.sql` added `fighters.image_url / nationality /
+  date_of_birth / height / association / profile_scraped_at`, filled by the new
+  `fighter_profile_scraper.py` (crawls `/fighter/<id>`; resumes off
+  `profile_scraped_at`, wired into the nightly at `--limit 2000`). The app's
+  fighter page renders the portrait, a bio chip row and a Sherdog link — the
+  link needs no stored column since `fighters.id` *is* the Sherdog id and
+  `/fighter/<id>` redirects to the canonical slug. Photos are hotlinked with
+  `referrerpolicy="no-referrer"` (Sherdog 403s a foreign `Referer`); mirroring
+  38k portraits into Supabase Storage would be ~1.4 GB, over the 1 GB free tier.
+  Sherdog has no photo for a large share of regional fighters — those render as
+  initials.
 
-## Video sources
-- ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
-  2026-07-10:** `CHANNELS` in `youtube_scraper.py` now covers PFL (+Bellator/
-  WSOF), RIZIN, ONE Championship, and Brave CF. Adding an org's channel = one
-  `CHANNELS` entry — nothing else to configure.
-- ~~Full-event matching is PFL-only.~~ **DONE 2026-07-10:** `match_full_event`
 ## Rankings
 
 ### DONE — Rankings page: UFC + Sherdog  (added 2026-09-06)
@@ -394,6 +407,13 @@ For each org we add:
   small sparkline / "peaked at #3 (Mar 2026)" line is a frontend-only add.
 - Snapshot diffing in the app: with two dates selected, highlight who moved
   in / out between them.
+
+## Video sources
+- ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
+  2026-07-10:** `CHANNELS` in `youtube_scraper.py` now covers PFL (+Bellator/
+  WSOF), RIZIN, ONE Championship, and Brave CF. Adding an org's channel = one
+  `CHANNELS` entry — nothing else to configure.
+- ~~Full-event matching is PFL-only.~~ **DONE 2026-07-10:** `match_full_event`
   is now org-agnostic (no promotion name hard-coded) and runs for every channel;
   it also fixed a latent PFL bug — the old `^YYYY PFL <key>` regex silently
   dropped PFL's newer regional names ("2026 MENA: PFL Riyadh", "2026 PFL Africa:
@@ -428,6 +448,42 @@ For each org we add:
   6 filled, 2 genuinely have no per-fight VOD on Fight Pass (Ngannou/Blaydes 2
   — full-event replay only, already on `events.fightpass_url`; Vera/Grant 2 —
   absent from Marlon Vera's whole FP catalog).
+- ~~FCR 27 Berisha vs da Silva Marques had no per-fight URL.~~ **DONE
+  2026-09-06:** Fight Pass abbreviates some orgs in per-fight clip titles
+  ("Arlind Berisha vs Wesley Silva FCR 27") while the DB spells them out
+  ("Fight Club Rush 27"). Exact-name matching still worked for the rest of the
+  card, but any bout with Fight Pass name drift ("Wesley Silva" for "Wesley da
+  Silva Marques") depends on `event_anchored_fight()` pinning the card from the
+  title hint, and "FCR 27" shared no tokens with the DB name. `_HINT_ALIASES` +
+  `expand_hint()` now spell out FCR/SFS/BFL/APFC/VTJ before every hint-based
+  event match (`event_anchored_fight`, `pick_by_hint`, the bucket-walk hint
+  path). `_QUERY_EXPANSIONS` gained the reverse direction so `--search-events`
+  also queries vesper by the abbreviation — "Fight Club Rush 27" alone only
+  surfaced the full-card replay. Backfilled 3 fights (FCR 27 Berisha/Silva
+  Marques, FCR 29 Al-Jasim/Silva do Nascimento, FCR 29 Kveldstadt/Grabowski).
+- ~~LFA's YouTube channel (@lfafights) barely matched anything.~~ **DONE
+  2026-09-06:** the channel was wired but only 16 of 2,658 LFA fights and 9
+  events had links, because (a) the playlist scan only takes playlists titled
+  "full fight" and LFA files its archive under 'BEFORE THE UFC', 'WOMEN OF
+  MMA', 'Best of LFA', 'LFA Classics' and the full cards under 'LFA FULL
+  EVENTS', 'LFA Main Cards 2026' and a prelim-replay list; (b) full-card titles
+  are buried in filler ('LFA 241 Main Card *LIVE* | 6 x Fight Full Card') that
+  the token tiers couldn't see through; (c) prelim replays carry no 'full'
+  marker at all. Fixes in `youtube_scraper.py`: per-channel `fight_playlists`
+  (extra per-fight lists) and `card_playlists` (id → default card half; every
+  video is a full-card candidate, gated by `MIN_FULL_CARD_SECS` = 40 min via
+  one videos.list call); a tier-0 *numbered event* matcher ('<Org> <N>' unique
+  in scope) with `_TITLE_ORG_ALIASES` folding 'Legacy Fighting Championship'
+  → 'Legacy FC' and 'LFA MMA 3' → 'LFA 3'; the reverse-subset tier now needs
+  the org in the title when the event name is bare '<Org> <N>' (RFA 33 and
+  Attitude MMA 31 re-airs were landing on Legacy FC 33/31); weigh-ins /
+  pressers rejected by title; 'Preliminary' counts as prelims; scheduled live
+  streams for future-dated events are skipped until the card happens; a
+  matched per-fight video ≥ 40 min is dropped as a card stream; highlight
+  clips are rejected before the A-vs-B parse. The channel now also covers
+  Legacy FC (its re-aired predecessor; RFA isn't in the DB, so those stay
+  unmatched). LFA-only push: 119 fights, 84 event entries (26 main + 58
+  prelim), 9 recent main cards matched but US geo-blocked.
 - KSW/Oktagon remain unwired (paywalled — no free channel).
 - **Prime Video / watch.onefc.com — evaluated & skipped (2026-07-10).** ONE's
   full-event replays live on Amazon Prime Video (US-only, subscription) and
@@ -438,6 +494,63 @@ For each org we add:
   behind an auth-gated client API. Both would store paywalled, geo-locked links
   (lower value than the free ONE YouTube per-fight coverage already wired). Not
   worth a crawler; revisit only if a public/free endpoint appears.
+- **Pluto TV — Bellator replays, DONE 2026-09-06 (one-off backfill).** Pluto
+  (free, ad-supported, Paramount-owned, US region) carries two Bellator series:
+  "Bellator MMA Full Fight Cards" (136 full-event replays, Bellator 58–301 +
+  Bellator NYC) and "Bellator MMA Individual Fights" (206 single-bout VODs,
+  Bellator 140–239). `migrate/add_pluto_url.sql` added `pluto_url` to `events`
+  + `fights` (+ `fight_search`); `pluto_scraper.py` pulls both series from the
+  unauthenticated boot endpoint (one call, no paging) and matches by **event
+  number** (Pluto's air dates are TV dates, months off) — per-fight bouts are
+  anchored to the card by the Pluto season number, so surname / nickname /
+  fuzzy-spelling matches are safe. Result: **135/136 events, 200/206 fights**
+  stored. Leftovers, all expected: Bellator 180 "Davis vs. Bader" is the same
+  MSG night as Bellator NYC (Sherdog has one event; NYC's PPV card wins), 3
+  Bellator Kickboxing bouts (not MMA), 2 Pluto mislabels (Salter/van Steenis
+  filed under 223 — happened at 233; "Alfie Davis vs. Jorge Kanella" @223 —
+  Sherdog has Davis vs. da Paz), and "Marco Hutch" for DiMarcco Hutchison.
+  **Not wired into the nightly** — Bellator is defunct, the catalog is static;
+  re-run `python pluto_scraper.py --push` by hand if Pluto adds episodes (it
+  only writes rows whose URL changed). "Best of Bellator" (compilations) and
+  PFL's Pluto channel/timelines (no full events) were skipped.
+- **Bellator YouTube channel wired, DONE 2026-09-06.** `CHANNELS` in
+  `youtube_scraper.py` now includes BellatorMMA (UCnkMTsKYqhHm6l6GQzg4szg —
+  orgs Bellator/PFL/RIZIN): one 1020-video 'Full Fights | Bellator MMA'
+  playlist (~150 private) plus per-card 'Bellator 300 | Full Fights' lists and
+  'Re-Air' full cards. Titles are hype-first ('CYBORG ARRIVES! | Cris Cyborg v
+  Julia Budd | Full Fight | Bellator 238'), which drove four general matcher
+  upgrades: (1) per-video event hint from the title's trailing tag
+  (`title_event_hint`) with token-wise whole-word matching, so 'bellator 58'
+  finds 'BFC - Bellator Fighting Championships 58' but 'bellator 23' can't hit
+  238; (2) series ordinal ('… II', '… 4', '… I') picks the Nth meeting by date
+  (`rematch_ordinal`); (3) an exact full-name hit that yields no bout widens
+  to the surname pool ('Chris Gonzalez' ≠ Bellator's 'Christopher Gonzalez');
+  (4) full-event keys try every pipe segment, treat 'Re-Air' as a full-card
+  marker, fold ' v ' to 'vs' (was read as roman 5), and add a numbers-equal
+  tier plus a reverse-subset tier for re-airs titled with full names. Also a
+  spaced-dash segment delimiter ('… Girtz 3 - Bellator 181') and accent
+  folding before the non-ASCII strip ('Patrício' was becoming 'Patrcio').
+  Nickname aliases added via `add_alias.py`: Patricio/Patricky Pitbull, King
+  Mo, Cris Cyborg, Kimbo Slice, Marina Mokhnatkina, John Macapa, + spelling
+  variants (Shabliy, Taylor-Melendez, Macfarlane, Yagshimuradov). Bellator
+  channel alone: **758/826 fights, 36 events**. Leftovers: kickboxing bouts,
+  one-off typos ('Ronnie Man', 'Rene Nazar', 'R. Cavalheiro'), EuroSeries
+  re-airs (no Sherdog event of that name), 'Bellator NYC' (Sherdog: 180).
+- **Real bug fixed 2026-09-06 — unordered PostgREST paging.** `fetch_all()` in
+  `youtube_scraper.py` (and the new `pluto_scraper.py`) paged with
+  `limit/offset` and **no `order`**, so rows were skipped/repeated between
+  pages — on the 39-page `fighters` table this silently dropped fighters and
+  showed up as "fighter not found". With `order=id` (`order=alias` for
+  `fighter_aliases`, which has no id) the full YouTube run went from
+  868 → **1943 matched fights** and 13 → **49 events** across all channels.
+  The same one-line fix was applied to the other nightly scripts' own paging
+  helpers — `fightpass_scraper.py`, `gender_scraper.py`,
+  `paramount_scraper.py` (`supabase_get`) and the women's-name walk in
+  `sherdog_scraper.py` (which feeds the women's-division labelling — a
+  skipped page there mislabels divisions). Expect the next nightly Fight Pass
+  / gender passes to pick up rows they were silently missing. Still unpatched
+  (not nightly): `research_unmatched.py`, `import_ratings.py`, `migrate/*.py`
+  — fix before the next use.
 - Per source, note free vs. paywalled.
 
 ## Ground rules (carried over from prior decisions)

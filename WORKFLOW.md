@@ -43,8 +43,9 @@ dispatch via `if: github.event.schedule == '30 7 * * *' || github.event_name == 
 | Propagate genders | `gender_propagate.py --apply` | daily / manual | Cheap, no-API opponent-graph propagation: pro MMA is gender-segregated, so each fight-graph component is single-gender — seed from checked fighters and propagate to unchecked ones, auto-resolving the matching gender review items. Runs after the Wikidata pass so it uses its fresh seeds. |
 | Email digest | `review_email.py` | daily / manual | Emails the pending `review_queue` via Gmail SMTP with one-click resolve links (Supabase edge function). |
 | ESPN PFL videos | `espn_pfl_scraper.py --push` | daily / manual | Matches PFL event replays from ESPN's Watch API into `events.espn_url`. |
-| YouTube videos | `youtube_scraper.py --push` | daily / manual | Matches full-fight/event videos from official promotion channels — PFL (PFL/Bellator/WSOF, full events), RIZIN, ONE Championship, and Brave CF (per-fight) — into `fights.youtube_url` / `events.youtube_url`. |
+| YouTube videos | `youtube_scraper.py --push` | daily / manual | Matches full-fight/event videos from official promotion channels — PFL (PFL/Bellator/WSOF, full events), RIZIN, ONE Championship, Brave CF, LFA (+ its re-aired Legacy FC cards; since 2026-09-06 the entry names the channel's themed per-fight playlists and its full-card / prelim-replay playlists explicitly, with a 40-min duration gate on full-card candidates), and (since 2026-09-06) the Bellator channel's ~1000-video full-fight archive + 'Re-Air' full cards — into `fights.youtube_url` / `events.youtube_url` / `events.youtube_prelims_url`. Full-card titles are matched first by their '<Org> <N>' number when that is unique in scope. `--channel NAME` scans one channel for testing. |
 | Flag amateur fights | `amateur_scraper.py --orgs "…" --limit 2000` | daily / manual | Flags amateur bouts on otherwise-pro regional cards by reading Sherdog fighter pages; incremental via `amateur_checked.txt`. |
+| Fighter profiles | `fighter_profile_scraper.py --limit 2000` | daily / manual | Fills `fighters.image_url` / `nationality` / `date_of_birth` / `height` / `association` from Sherdog fighter pages, for the app's fighter page. Incremental via the `fighters.profile_scraped_at` column (not a tracker file), so a nightly run only touches fighters added that day. |
 | Rankings | `rankings_scraper.py` | daily / manual | Divisional + pound-for-pound rankings from ufc.com (champion + top 15, names resolved to `fighters.id` via alias / accent-fold / surname-flip / UFC-roster match) and Sherdog (its multi-page rankings article + two P4P articles, exact fighter ids) into the `rankings` table as **dated snapshots** — a source's lists are compared with its latest stored snapshot and stored under today's date only when something changed (older snapshots are never touched); a source that parses to too few rows records nothing. Then stamps every **upcoming UFC fight's** `fighter1_rank` / `fighter2_rank` from the latest UFC snapshot ('C' / '1'..'15' / null); past fights are never touched, so tags freeze at fight-night values. Unmatched names go to `rankings_unmatched.txt` (not committed). Added 2026-09-06. |
 | Save trackers | inline git | **every** trigger | Commits updated state files back to `main` (see below). |
 
@@ -67,6 +68,16 @@ resumable. The workflow commits two of them back to the repo at the end:
 Other trackers (`*_matches.txt`, `fightpass_*`, `youtube_*matches.txt`, etc.) are
 written for human review and are **not** committed by the workflow.
 
+Not every scraper is in the nightly. `pluto_scraper.py` (Pluto TV's Bellator
+replays → `pluto_url`) was a one-off backfill on 2026-09-06 — Bellator is
+defunct and the catalog is static, so it's run by hand (`--push`) if Pluto ever
+adds episodes, not on a schedule.
+
+`fighter_profile_scraper.py` deliberately has **no** tracker file — it resumes
+off `fighters.profile_scraped_at` in the DB. A 38k-id text file rewritten and
+committed every night would be pure churn, and it would widen the push race
+below.
+
 The final step commits with `[skip ci]` in the message so the bot's own push
 doesn't trigger another run.
 
@@ -87,6 +98,15 @@ the bot, the rebase doesn't conflict with human pushes to other files.
 Potential future improvement: make `gender_scraper.py` incremental (only check
 fighters added since the last run, like `amateur_scraper.py` does) to shrink the
 3-hour window that creates the race in the first place.
+
+**Unordered paging (fixed 2026-09-06).** Every scraper walks Supabase tables in
+1000-row pages via `limit`/`offset`. Without an `order=` PostgREST does not
+guarantee a stable row order between pages, so large tables (`fighters` is
+~39 pages) silently lost rows — surfacing as "fighter not found" in the video
+matchers and, worse, as gaps in the women's-name list `sherdog_scraper.py`
+uses for division labels. All nightly scripts now pass `order=id`
+(`order=alias` for `fighter_aliases`). If you add a new paging helper, include
+an `order=`.
 
 ## Operating it
 
