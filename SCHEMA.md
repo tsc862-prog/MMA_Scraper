@@ -82,7 +82,7 @@ men's or women's division row.
 | is_main / is_title   | bool |
 | fight_position       | int  | 1 = main event |
 | fight_position_type  | text |
-| fighter1_rank / 2    | int  | UFC ranking, nullable |
+| fighter1_rank / 2    | text | the UFC rank each fighter carried **into** the bout — `'C'` champion, `'1'`..`'15'`, null unranked. Since 2026-09-06 `rankings_scraper.py` stamps these on **upcoming UFC fights** from the latest UFC rankings snapshot and never touches a fight dated before today, so they freeze at fight-night values. Not backfilled for past fights (historical ranks are a separate job). |
 | fighter1_is_debut / 2| bool | first fight in that org — computed; same-date ties (early UFC tournaments) resolve to the fight lowest on the card (highest fight_position) |
 | is_amateur           | bool | amateur bouts flagged (or excluded entirely) |
 | notes                | text |
@@ -145,6 +145,35 @@ replay uploads.
 | fighter / event ids | UUID hashed from name(+date) | **Sherdog numeric ids** |
 | organization | free-text column on events | **`organizations` table** + FK |
 | event date | text ("April 11, 2026") | `date` type |
+### rankings
+History of published rankings for the app's Rankings page — added 2026-09-06
+via `migrate/add_rankings.sql`, filled nightly by `rankings_scraper.py`. The
+table is a set of **dated snapshots**: every run scrapes the current lists and,
+when they differ from the latest stored snapshot for that source, stores them
+under today's `snapshot_date`. Earlier snapshots are never modified, so the
+app can show the rankings "as of" any stored date. RLS on, anon `select` only.
+| column        | type | notes |
+|---------------|------|-------|
+| id            | bigserial PK |
+| source        | text | `ufc` (ufc.com/rankings) or `sherdog` (Sherdog's rankings articles) |
+| snapshot_date | date | the day (Pacific) this set was captured; a same-day re-run replaces that day's set |
+| division      | text | canonical: "Heavyweight", "Women's Flyweight", "Men's Pound-for-Pound", "Women's Pound-for-Pound", … |
+| rank          | int  | **0 = champion** (UFC divisions only; Sherdog and P4P lists have no champion slot) |
+| fighter_id    | bigint FK → fighters, nullable | null when the name couldn't be matched (UFC) or the fighter isn't in the DB (Sherdog) |
+| fighter_name  | text | as the source displays it — shown when `fighter_id` is null |
+| previous_rank | int, nullable | from the source's movement marker; null for champions / new entries |
+| is_new        | bool | NR / new entry this period |
+| record        | text, nullable | Sherdog only, e.g. "14-2, 1 NC" |
+| promotion     | text, nullable | Sherdog only — the fighter's current org ("UFC", "PFL", "Rizin") |
+| source_url    | text | the fighter's page on the source site (ufc.com/athlete/… or sherdog.com/fighter/…) |
+| scraped_at    | timestamptz | when this snapshot was taken |
+| unique (source, snapshot_date, division, rank, fighter_name) — the name is in the key so a published tie (ufc.com has shown two #10s) keeps both rows |
+
+Two helper views (`security_invoker=on`): **`rankings_current`** — the rows of
+the newest snapshot per source (what the app shows by default); and
+**`rankings_snapshots`** — one row per (source, snapshot_date) with an entry
+count, feeding the app's "as of" date picker.
+
 | video links | per-platform columns (`paramount_url`, `espn_url`, `youtube_url`, `netflix_url`, `espn_prelims_url`) on events + fights | one **`video_links`** table |
 | weight class | free-text column, `"Women's "` prefixed in | **`weight_classes`** lookup + FK + `catch_weight_lbs`; men's & women's are separate rows |
 | amateur fights | not distinguished | `is_amateur` flag (or excluded) |

@@ -348,6 +348,52 @@ For each org we add:
   WSOF), RIZIN, ONE Championship, and Brave CF. Adding an org's channel = one
   `CHANNELS` entry — nothing else to configure.
 - ~~Full-event matching is PFL-only.~~ **DONE 2026-07-10:** `match_full_event`
+## Rankings
+
+### DONE — Rankings page: UFC + Sherdog  (added 2026-09-06)
+- `rankings` table (`migrate/add_rankings.sql`) + `rankings_scraper.py` in the
+  nightly. UFC: champion + top 15 per division and both P4P lists off
+  ufc.com/rankings, names resolved to `fighters.id`. Sherdog: its multi-page
+  rankings article + the two P4P articles (exact fighter ids). The table is a
+  **history of dated snapshots**: a run stores a new `snapshot_date` set only
+  when a source's lists changed, and never touches earlier ones.
+- App side (Rewatch repo): new **Rankings** nav tab (`js/rankings.js`) — UFC /
+  Sherdog toggle, one card per division, champion on top, movement arrows,
+  Sherdog record + promotion, click-through to the fighter page; entries with
+  no `fighter_id` link out to the source instead. An "as of" date picker
+  (from the `rankings_snapshots` view) opens any earlier snapshot.
+- Unmatched UFC names land in `rankings_unmatched.txt` — fix with
+  `add_alias.py`. Nine aliases were added up front (Loopy Godinez, Bia
+  Mesquita, Ian Machado Garry, Michael Venom Page, Khalil Rountree Jr.,
+  Benoît Saint Denis, Jan Błachowicz, Ramazan Temirov).
+- **Fight rank tags (2026-09-06).** The same run stamps `fights.fighter1_rank`
+  / `fighter2_rank` on upcoming UFC fights from the latest UFC snapshot ('C',
+  '1'..'15'); past fights are never touched, so the tag freezes at what the
+  fighter carried into the bout. The app shows it as the existing `#N` chip,
+  with a gold `C` for champions. UFC fights only for now.
+
+### TODO — historical fight ranks
+- Backfill `fighter1_rank` / `fighter2_rank` for past fights. Sherdog keeps a
+  monthly rankings archive (`/monthly-archive/rankings/YYYYMM`, articles back
+  years), so each past fight can be tagged with the Sherdog rank in force at
+  the time. Decide first whether past UFC fights should carry the *UFC* rank
+  (Wayback Machine copies of ufc.com/rankings) or the Sherdog rank — the two
+  disagree, and today's upcoming-fight tags are UFC ranks.
+- Non-UFC upcoming fights (PFL, ONE, RIZIN…) could carry the Sherdog top-10
+  rank the same way; needs a per-fight source marker so a `#5` on a PFL card
+  isn't read as a UFC rank.
+
+### TODO — more ranking sources
+- Fight Matrix (fightmatrix.com — algorithmic, deep top-250s, all orgs) and
+  Tapology (tapology.com/rankings — community-voted) are the obvious next two;
+  both have stable per-division URLs. Add as new `source` values — the table
+  and the app's source tabs need no schema change. ESPN and MMA Fighting
+  publish media-panel lists too but only as articles.
+- Rank-over-time on the fighter page: the snapshot history already holds the
+  data (`rankings` filtered by `fighter_id`, ordered by `snapshot_date`) — a
+  small sparkline / "peaked at #3 (Mar 2026)" line is a frontend-only add.
+- Snapshot diffing in the app: with two dates selected, highlight who moved
+  in / out between them.
   is now org-agnostic (no promotion name hard-coded) and runs for every channel;
   it also fixed a latent PFL bug — the old `^YYYY PFL <key>` regex silently
   dropped PFL's newer regional names ("2026 MENA: PFL Riyadh", "2026 PFL Africa:

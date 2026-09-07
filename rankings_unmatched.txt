@@ -1,0 +1,1 @@
+# Ranking entries with no fighters.id — add an alias (add_alias.py) or scrape the org, then re-run.
