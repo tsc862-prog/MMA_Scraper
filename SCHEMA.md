@@ -176,11 +176,16 @@ count, feeding the app's "as of" date picker.
 
 ### fight_search (view)
 Denormalized join of fights + fighters + events + fight_results for
-app/lookup convenience. Carries the per-fight video URLs plus the
-event-level ones (`event_paramount_url`, `event_fightpass_url`,
+app/lookup convenience. Carries the per-fight video URLs plus **every**
+event-level one (`event_paramount_url`, `event_espn_url`,
+`event_espn_prelims_url`, `event_fightpass_url`,
 `event_fightpass_prelims_url`, `event_youtube_url`,
-`event_youtube_prelims_url`, `event_pluto_url`) so the app can fall back to
-the full-card replay when a fight has no dedicated VOD. `security_invoker=on`.
+`event_youtube_prelims_url`, `event_netflix_url`, `event_pluto_url`) so a
+fight row is self-contained: when a fight has no dedicated VOD the app shows
+the event replay in its place (full-card link preferred over prelims) and
+hides the result as a spoiler, wherever the row renders. The ESPN / Netflix
+event columns were appended 2026-09-07 via
+`migrate/add_event_vod_columns.sql`. `security_invoker=on`.
 `events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
 replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
 / `event_pluto_url` on the view) was added 2026-09-06 via
