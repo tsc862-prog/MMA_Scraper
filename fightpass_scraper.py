@@ -135,6 +135,14 @@ REPLAY_PLAYLISTS = [
     {'id': 21752, 'name': 'Fight Club Rush Event Replays'},
     {'id': 27884, 'name': 'ZFN Event Replays'},
     {'id': 18836, 'name': 'UAE Warriors Event Replays'},
+    # 2026-09-07: found via vesper 'Event Replays' search. These orgs were
+    # previously reached only through the brute-force scan and PASS 5 side
+    # effects, which is why LUX sat at 0/67 event URLs despite 85 replays.
+    {'id': 2620,  'name': 'LUX Fight League Event Replays'},
+    {'id': 1633,  'name': 'Cage Warriors Event Replays'},
+    {'id': 2543,  'name': 'LFA Event Replays'},
+    {'id': 2544,  'name': 'Cage Fury FC Event Replays'},
+    {'id': 9823,  'name': 'Ares FC Event Replays'},
 ]
 
 OUTPUT_FILE     = 'fightpass_matches.txt'

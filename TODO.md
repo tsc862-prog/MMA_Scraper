@@ -178,6 +178,15 @@ amateur-flagging list, `_EVENT_PREFIX`, and `REPLAY_PLAYLISTS`:
   playlist 21752, 22 replays.
 
 Wider scan done 2026-08-23 (10000–21500, 23600–31000; 2,016 playlists).
+
+**2026-09-07 — low-id replay playlists surfaced by vesper.** Searching
+vesper for `'<Org> Event Replays'` returns PLAYLIST cards that the id scans
+above never reached (ids < 10000). Added to `REPLAY_PLAYLISTS`: 2620 LUX
+Fight League (85 replays; LUX had 0/67 event URLs because it was only ever
+reached as a PASS 5 side effect), 1633 Cage Warriors (242), 2543 LFA (216),
+2544 Cage Fury FC (89), 9823 Ares FC (32). Reminder: the Fight Pass scraper
+is manual and local — a dry run writes `fightpass_matches.txt` only; nothing
+reaches the DB without `--push`.
 Wired: 27884 ZFN Event Replays, 18836 UAE Warriors Event Replays. New-org
 candidates with real replay archives (next wave; check Sherdog coverage):
 - **RFA** (28427, Resurrection Fighting Alliance — LFA's predecessor)
