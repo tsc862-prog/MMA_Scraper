@@ -205,6 +205,12 @@ def resolve_name(name, by_exact, by_fold, by_last, aliases, known):
     pref = {i for k, v in by_fold.items() if k.startswith(f + ' ') for i in v}
     if len(pref) == 1:
         return pref
+    # ...or its first + last tokens ("Chequina Pedro" → "Chequina Noso Pedro")
+    if len(toks) == 2:
+        fl = {i for k, v in by_fold.items() if (kt := k.split()) and len(kt) > 2
+              and kt[0] == toks[0] and kt[-1] == toks[1] for i in v}
+        if len(fl) == 1:
+            return fl
     ids = by_last.get(surname(name), set())
     return ids if len(ids) == 1 else set()
 
