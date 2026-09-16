@@ -58,14 +58,23 @@ DATE_SLACK = 1         # days either side of Verdict's date when finding the DB 
 
 # ── HTTP ──────────────────────────────────────────────────────────────────────
 
-def fetch(url):
-    r = requests.get(url, headers={'User-Agent': s.USER_AGENT,
-                                   'Accept-Language': 'en-US,en;q=0.9'}, timeout=40)
-    time.sleep(DELAY)
-    if r.status_code == 404:
-        return None
-    r.raise_for_status()
-    return r.text
+def fetch(url, attempts=3):
+    """GET with a polite delay; a dropped connection (the sweep hit a
+    ConnectionReset ~120 pages in) is retried with a growing pause."""
+    for i in range(attempts):
+        try:
+            r = requests.get(url, headers={'User-Agent': s.USER_AGENT,
+                                           'Accept-Language': 'en-US,en;q=0.9'}, timeout=40)
+            time.sleep(DELAY)
+            if r.status_code == 404:
+                return None
+            r.raise_for_status()
+            return r.text
+        except (requests.ConnectionError, requests.Timeout, requests.exceptions.ChunkedEncodingError) as e:
+            if i == attempts - 1:
+                raise
+            print(f'  retry {i + 1} after {type(e).__name__}')
+            time.sleep(5 * (i + 1))
 
 def fetch_all(table, select, extra='', order=None):
     """Page through a Supabase table."""
@@ -338,8 +347,8 @@ def main():
         try:
             res = process_event(vid, aliases, dry_run=args.dry_run, unmatched=unmatched,
                                 since=since, quiet=bool(args.sweep))
-        except requests.HTTPError as e:
-            print(f'  [{vid}] HTTP error: {e}')
+        except requests.RequestException as e:
+            print(f'  [{vid}] request failed, skipped: {e}')
             continue
         if res:
             matched += res[0]
