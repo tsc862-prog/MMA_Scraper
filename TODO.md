@@ -455,7 +455,9 @@ event name, 10px (user's placement and size, 2026-09-16). Both sit behind the ro
 result until the fight is rated — a crowd score says whether the fight was
 good, a bonus name says it was a finish). `node tests/crowd-blend.cjs`
 covers the rule. Back-catalog:
-Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16.
+Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16,
+then a pre-2025 Verdict pass (`--since 2001-01-01 --min-count 10`) for the
+famous old fights fans went back to rate.
 The Community tab now reads these crowd ratings as its "other users"
 (`migrate/community_crowd_ratings.sql` swaps `community_dashboard()`'s source
 from `ratings` to `fight_crowd_ratings`; user's call 2026-09-16 — no real

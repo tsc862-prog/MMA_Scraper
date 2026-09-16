@@ -35,7 +35,11 @@ bouts. Run it once, in the background, with the default 1 s delay.
   python verdict_scraper.py                  # nightly: recent + settling events
   python verdict_scraper.py --dry-run        # parse + match, write nothing
   python verdict_scraper.py --event 1919     # one Verdict event id
-  python verdict_scraper.py --sweep 1-2000   # one-off back-catalog walk
+  python verdict_scraper.py --sweep 1-2000   # one-off back-catalog walk (2025 on)
+  python verdict_scraper.py --sweep 1-2000 --since 2001-01-01 --min-count 10
+                                             # pre-2025 cards: only bouts 10+ fans went
+                                             # back to rate (run 2026-09-16); ids above
+                                             # ~2000 are empty placeholders
 """
 import os
 import re
@@ -285,7 +289,7 @@ def settling_event_ids(days):
     recent = {e['id'] for e in fetch_all('events', 'id', f'&id=in.({ids})&date=gte.{since}')}
     return [r['source_key'] for r in rows if r['event_id'] in recent and r['source_key']]
 
-def process_event(vid, aliases, dry_run=False, unmatched=None, since=None, quiet=False):
+def process_event(vid, aliases, dry_run=False, unmatched=None, since=None, quiet=False, min_count=1):
     """Fetch + match + upsert one Verdict event. Returns (matched, total) or None."""
     html = fetch(f'{BASE}/event/{vid}')
     if html is None:
@@ -297,7 +301,7 @@ def process_event(vid, aliases, dry_run=False, unmatched=None, since=None, quiet
         if not quiet:
             print(f'  [{vid}] {ev["name"]} ({ev["date"]}) — before {since}, skipped')
         return None
-    rated = [f for f in ev['fights'] if f['count'] > 0]
+    rated = [f for f in ev['fights'] if f['count'] >= max(1, min_count)]
     if not rated and not ev['rating_count']:
         if not quiet:
             print(f'  [{vid}] {ev["name"]} ({ev["date"]}) — no ratings yet')
@@ -339,6 +343,7 @@ def main():
     ap.add_argument('--sweep', help='id range A-B: one-off back-catalog walk')
     ap.add_argument('--since', default='2025-01-01', help='sweep: skip events dated before this (YYYY-MM-DD)')
     ap.add_argument('--settle', type=int, default=30, help='re-fetch stored events dated within N days (default 30)')
+    ap.add_argument('--min-count', type=int, default=1, help='store a bout only with at least N ratings (default 1; use ~10 for a pre-2025 sweep)')
     args = ap.parse_args()
     if not s.SUPABASE_URL or not s.SUPABASE_KEY:
         sys.exit('Missing SUPABASE creds in .env')
@@ -363,7 +368,7 @@ def main():
 
     for vid in ids:
         try:
-            res = process_event(vid, aliases, dry_run=args.dry_run, unmatched=unmatched,
+            res = process_event(vid, aliases, dry_run=args.dry_run, unmatched=unmatched, min_count=args.min_count,
                                 since=since, quiet=bool(args.sweep))
         except requests.RequestException as e:
             print(f'  [{vid}] request failed, skipped: {e}')
