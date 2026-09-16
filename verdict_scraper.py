@@ -54,7 +54,10 @@ BASE = 'https://verdictmma.com'
 SOURCE = 'verdict'
 UNMATCHED_FILE = 'verdict_unmatched.txt'
 DELAY = 1.0            # seconds between page fetches
-DATE_SLACK = 1         # days either side of Verdict's date when finding the DB event
+DATE_SLACK = 3         # days either side of Verdict's date when finding the DB event
+                       # (Verdict has mis-dated pages — DWCS S10 W5 sat three days early;
+                       # safe because a bout must still match both names AND a fight
+                       # between them inside the window)
 
 # ── HTTP ──────────────────────────────────────────────────────────────────────
 
