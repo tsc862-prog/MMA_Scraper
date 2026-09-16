@@ -456,8 +456,11 @@ result until the fight is rated — a crowd score says whether the fight was
 good, a bonus name says it was a finish). `node tests/crowd-blend.cjs`
 covers the rule. Back-catalog:
 Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16.
-Still open: show `event_crowd_ratings` (event score + hype) on the event
-header; Verdict's non-UFC name spellings (RIZIN, ONE) land in
+The Community tab now reads these crowd ratings as its "other users"
+(`migrate/community_crowd_ratings.sql` swaps `community_dashboard()`'s source
+from `ratings` to `fight_crowd_ratings`; user's call 2026-09-16 — no real
+users yet). Still open: show `event_crowd_ratings` (event score + hype) on
+the event header; Verdict's non-UFC name spellings (RIZIN, ONE) land in
 `verdict_unmatched.txt` — add aliases as they appear.
 
 Original plan (kept for the reasoning):

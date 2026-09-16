@@ -156,6 +156,11 @@ Separate from `ratings` on purpose — nothing here is yours. RLS on, anon
 | scraped_at   | timestamptz | last refresh — pages are re-fetched for 30 days after the card |
 | primary key (fight_id, source) |
 
+Since 2026-09-16 (`migrate/community_crowd_ratings.sql`) the app's
+`community_dashboard()` RPC reads its per-fight average / count from this
+table (rating ÷ 2, `rating_count`) instead of `ratings` — the crowd stands in
+for "other users" until the app has real ones.
+
 ### event_crowd_ratings
 Same source, per event: `event_id` FK → events (cascade), `source`, `rating`
 / `rating_count` (post-event score 0–10), `hype` / `hype_count` (pre-event
