@@ -127,6 +127,9 @@ def parse_bonuses(html):
                 continue
             body = m.group(2).strip().rstrip('.')
             body = re.sub(r'\s*\(.*?\)', '', body)          # "(replaced …)", "($50,000)"
+            body = re.sub(r'\s*\[.*?\]', '', body)          # "[a]" footnote markers
+            body = body.replace('*', '')                    # "Rony Jason*"
+            body = re.sub(r'\s+\d$', '', body)              # "Vera vs. Font 1" rematch numbering
             if code == 'FOTN':
                 parts = re.split(r'\s+and\s+(?=[A-Z][^,]+\s+vs\.?\s)', body)
                 out.append((code, [p.strip() for p in parts if 'vs' in p.lower()]))
@@ -135,7 +138,7 @@ def parse_bonuses(html):
                 # Oxford comma is dropped; "No bonus awarded" isn't a name
                 parts = re.split(r',\s*(?:and\s+)?|\s+and\s+|\s*&\s*', body)
                 names = [re.sub(r'^and\s+', '', p.strip()) for p in parts]
-                out.append((code, [p for p in names if p and not p.lower().startswith('no bonus')]))
+                out.append((code, [p for p in names if p and not re.match(r'no(ne)?\s+(bonus|award)', p, re.I)]))
     return out
 
 # ── DB matching ───────────────────────────────────────────────────────────────
@@ -221,8 +224,15 @@ def process(wp, db_event, aliases, dry_run, unmatched):
                     continue
                 rows.append({'fight_id': fight['id'], 'award': code, 'fighter_id': fid,
                              'source_url': wp['url'], 'scraped_at': now})
-    print(f'  {wp["date"]} {wp["name"]}: {len(rows)} awards'
-          + ('' if len(rows) == sum(len(n) for _, n in awards) else f' ({sum(len(n) for _, n in awards) - len(rows)} unmatched)'))
+    # The table's key is a bigserial, so a REST upsert can't merge on
+    # (fight_id, award, fighter_id) — insert only what isn't there yet.
+    if rows:
+        ids = ','.join(f['id'] for f in card.fights)
+        have = {(b['fight_id'], b['award'], b['fighter_id'])
+                for b in fetch_all('fight_bonuses', 'fight_id,award,fighter_id', f'&fight_id=in.({ids})', order='id')}
+        rows = [r for r in rows if (r['fight_id'], r['award'], r['fighter_id']) not in have]
+    print(f'  {wp["date"]} {wp["name"]}: {len(rows)} new awards'
+          + ('' if len(rows) + len(have) == sum(len(n) for _, n in awards) else f' ({sum(len(n) for _, n in awards) - len(rows) - len(have)} unmatched)'))
     if rows and not dry_run:
         s.upsert('fight_bonuses', rows)
     return len(rows)
