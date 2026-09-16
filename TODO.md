@@ -450,7 +450,10 @@ Built as planned below: `migrate/add_crowd_ratings.sql` (tables
 stars, weight `min(1, count/50)` against your rating, +0.25 star for FOTN /
 +0.1 for the per-fighter bonuses — rendered as a quiet grey number after the
 stars with the detail in its tooltip; the bonus name is muted italic text in
-the sub-meta line. `node tests/crowd-blend.cjs` covers the rule. Back-catalog:
+the sub-meta line. Both sit behind the row's spoiler gate (hidden with the
+result until the fight is rated — a crowd score says whether the fight was
+good, a bonus name says it was a finish). `node tests/crowd-blend.cjs`
+covers the rule. Back-catalog:
 Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16.
 Still open: show `event_crowd_ratings` (event score + hype) on the event
 header; Verdict's non-UFC name spellings (RIZIN, ONE) land in
