@@ -450,7 +450,8 @@ Built as planned below: `migrate/add_crowd_ratings.sql` (tables
 stars, weight `min(1, count/50)` against your rating, +0.25 star for FOTN /
 +0.1 for the per-fighter bonuses — rendered as a quiet grey number after the
 stars with the detail in its tooltip; each award is a small FOTN / POTN /
-KOTN / SOTN tag in the sub-meta line (user asked for tags, 2026-09-16). Both sit behind the row's spoiler gate (hidden with the
+KOTN / SOTN tag on its own line under the result / watch links (user asked
+for tags there, 2026-09-16). Both sit behind the row's spoiler gate (hidden with the
 result until the fight is rated — a crowd score says whether the fight was
 good, a bonus name says it was a finish). `node tests/crowd-blend.cjs`
 covers the rule. Back-catalog:
