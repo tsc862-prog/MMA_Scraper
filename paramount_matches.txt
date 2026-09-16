@@ -1,6 +1,6 @@
 PARAMOUNT+ MATCH RESULTS
-Generated: 2026-09-05 15:01
-Fight clips matched: 1260  |  Event links matched: 281  |  Unmatched: 103
+Generated: 2026-09-12 16:40
+Fight clips matched: 1260  |  Event links matched: 282  |  Unmatched: 103
 ================================================================================
 
 MATCHED FIGHTS (1260)
@@ -770,6 +770,56 @@ fighters:  Mackenzie Dern vs. Amanda Ribas
 event:     UFC Fight Night 249 - Dern vs. Ribas 2 (2025-01-11)
 url:       https://www.paramountplus.com/shows/video/zv2AFWU36WbJBvSUPTjFqzcEjrKzEUaE/
 
+fight_id:  4eb8fc90-9011-5f68-b3c9-dff7f41d0335
+fighters:  Waldo Cortes Acosta vs. Curtis Blaydes
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKWZV7EAY9V4NYJY0VEFET/
+
+fight_id:  05ae9372-98a8-53a7-84e8-5e9b93938b71
+fighters:  David Martinez vs. Dan Ige
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKWYYEETP9H8CYAWYVY5AM/
+
+fight_id:  58272216-bc58-5e17-8442-2c078853ec51
+fighters:  Sean King III vs. Jessie Rosas  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1QANZRAE6V9X0QY1NKH5DAG/
+
+fight_id:  f2ccc2a7-1e15-5c1f-a5b3-2d3d4fee056a
+fighters:  Drakkar Klose vs. Tommy Gantt  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1QANZCJECH8QNSJZ917H34P/
+
+fight_id:  b1df3101-4e1e-50bd-87a2-6ea016754899
+fighters:  JJ Aldrich vs. Regina Tarin  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKX1BEEAABCWDY9KVSD411/
+
+fight_id:  21cfcaeb-e05d-5c69-993a-24c1ee93de61
+fighters:  Tim Elliott vs. Edgar Chairez  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKX149E0KT7Z61KFHDK40W/
+
+fight_id:  5b1a3b9e-81e3-5e75-917d-7a307cb09ad1
+fighters:  Yousri Belgaroui vs. Djorden Santos  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKWZZSE73BNWR7GE1EGPCA/
+
+fight_id:  6ef23cbc-bcce-5a34-982b-7ed0537b7f10
+fighters:  Ignacio Bahamondes vs. Muslim Salikhov  [Prelims]
+event:     UFC Fight Night 288 - Noche UFC 4 (2026-09-12)
+url:       https://www.paramountplus.com/shows/video/ALVE01M1HKWZ2XEHFVH7WF7T42C7AZ/
+
+fight_id:  8d124eef-b6de-5151-9ffe-1fc538af234f
+fighters:  Dan Hooker vs. Salahdine Parnasse
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVPPGEJXV8P0D14Y9PVHX/
+
+fight_id:  aa7c0018-6659-5edf-9fc5-8b8203c9e856
+fighters:  Fares Ziam vs. Axel Sola
+event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JBVNTGESBSBM65VWKT9XHJ/
+
 fight_id:  f4b540b7-9088-5f64-81c7-4cbf9ebec9cc
 fighters:  Michael Page vs. Nursulton Ruziboev
 event:     UFC Fight Night 287 - Hooker vs. Parnasse (2026-09-05)
@@ -1209,61 +1259,6 @@ fight_id:  f23b22d7-a49d-5fcf-87e1-c8c799adaac5
 fighters:  Rafael Fiziev vs. Manuel Torres
 event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
 url:       https://www.paramountplus.com/shows/video/ALVE01KV5NHZ8YEXHA502EBMXCN2MA/
-
-fight_id:  60e93dd0-7905-5d1e-aa41-04c901794f4a
-fighters:  Shara Magomedov vs. Michel Pereira
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ0AFEBVTYPTGBF0585A7/
-
-fight_id:  8968069b-8647-56b8-8057-2e3ffaaef47c
-fighters:  Nazim Sadykhov vs. Matheus Camilo
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ0ADE1HB2WJ1K8A16YVQ/
-
-fight_id:  2b3d44e1-e06d-503a-acfc-86ed9d26384c
-fighters:  Asu Almabayev vs. Charles Johnson
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ043EDXS6H2RW7JZEE0M/
-
-fight_id:  7b897a72-2c92-56b4-b2cd-b45058618fc0
-fighters:  Ikram Aliskerov vs. Brunno Ferreira
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ08JESYS782TS5492ZP0/
-
-fight_id:  569114a7-5bf1-56ef-b823-095923f6e9e6
-fighters:  Abus Magomedov vs. Michal Oleksiejczuk
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ17REDKAE9EX5VEBTRZE/
-
-fight_id:  989346fb-00da-5dce-872f-00131b4f3788
-fighters:  Farman Hasanov vs. Eric Nolan  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ138E3TAXYT26S9HGENH/
-
-fight_id:  49e729ae-f87f-530d-afee-91df16cdef21
-fighters:  Abdul Rakhman Yakhyaev vs. Julius Walker  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ0WMEFVBKSWEJG81CHND/
-
-fight_id:  c1fa2694-014d-5210-a41a-2c06796abe8f
-fighters:  Nursulton Ruziboev vs. Andrey Pulyaev  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NHZB3EQQ8XMQQZ36PEP7Y/
-
-fight_id:  c42eb3d2-f547-50ad-9f91-8225281cf819
-fighters:  Kaan Ofli vs. Javier Reyes  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NHZ5RE2894REY2MPRQ4AQ/
-
-fight_id:  8e2ded0b-a2c0-51ee-b536-44bcd2a26646
-fighters:  Daniil Donchenko vs. Theodor Berggren  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KVKBQHJ6EH2BVTT0ZEMGXASK/
-
-fight_id:  e6ed3f8a-477b-5a06-a636-96e3b9cf133f
-fighters:  Bekzat Almakhan vs. Jean Matsumoto  [Prelims]
-event:     UFC Fight Night 280 - Fiziev vs. Torres (2026-06-27)
-url:       https://www.paramountplus.com/shows/video/ALVE01KV5NJ01CE7BT1FQ3F80TCNRQ/
 
 fight_id:  2367e76d-d26f-59f3-aef3-58ea62272595
 fighters:  Islam Makhachev vs. Ian Machado Garry
@@ -5705,6 +5700,11 @@ fighters:  Michael Johnson vs. Daniel Zellhuber  [Main Card]
 event:     UFC 318 - Holloway vs. Poirier 3 (2025-07-19)
 url:       https://www.paramountplus.com/shows/video/MbbefCs7xM_YgimNzQWh2DR93DycOliF/
 
+fight_id:  34f2cdc9-2219-5775-87fb-e9c967fbe443
+fighters:  Dan Ige vs. Patricio Pitbull  [Main Card]
+event:     UFC 318 - Holloway vs. Poirier 3 (2025-07-19)
+url:       https://www.paramountplus.com/shows/video/L0RquRGyzGUWoyU6qg6y379r9ZgUSZxX/
+
 fight_id:  f3b78bcb-36ca-5126-add5-b6a36d83f16f
 fighters:  Kevin Holland vs. Daniel Rodriguez  [Main Card]
 event:     UFC 318 - Holloway vs. Poirier 3 (2025-07-19)
@@ -6306,7 +6306,7 @@ event:     UFC 329 - McGregor vs. Holloway 2 (2026-07-11)
 url:       https://www.paramountplus.com/shows/video/ALVE01KWHR5N1BERP8YN2BKPZJF1GT/
 
 
-MATCHED EVENTS (281)
+MATCHED EVENTS (282)
 --------------------------------------------------------------------------------
 event_id:  11792
 event:     UFC 110 - Nogueira vs. Velasquez (2010-02-20)
@@ -7268,6 +7268,11 @@ event:     Contender Series 2025: Week 1 (2025-08-12)
 clip:      Week 1
 url:       https://www.paramountplus.com/shows/video/ALVE01KXPCK5PXE7KRNDQA03XS8SAZ/
 
+event_id:  112631
+event:     Contender Series 2026: Week 5 (2026-09-08)
+clip:      Week 5
+url:       https://www.paramountplus.com/shows/video/ALVE01M0JCJSWFEDARHVVCKJJJN06D/
+
 event_id:  112630
 event:     Contender Series 2026: Week 4 (2026-09-01)
 clip:      Week 4
@@ -7718,6 +7723,7 @@ UNMATCHED (103)
 --------------------------------------------------------------------------------
 ambiguous(2 fights)    | Conor McGregor vs. Max Holloway | Apr 17, 2013 | https://www.paramountplus.com/shows/video/fFEoi9GV07_bxa3mELUIl4OexhNMaO9J/
 UNKNOWN_TYPE           | Ilia Topuria  s. Damon Jackson
+no_fighter(Rongzhu)    | Rafa Garcia vs. Rongzhu | Sep 12, 2026 | https://www.paramountplus.com/shows/video/ALVE01M1HKWYVJETSS1F93JPKZMCGM/
 no_fighter(Jose Montanha) | Louie Sutherland vs. Jose Montanha | Aug 8, 2026 | https://www.paramountplus.com/shows/video/ALVE01KYHV6Z1RE13RW3YMTAB1725W/
 UNKNOWN_TYPE           | UFC 330 in 60-Min. All Fights. No Filler.
 UNKNOWN_TYPE           | UFC 330 in 25-Min. All Fights. No Filler.
@@ -7818,4 +7824,3 @@ no_fight               | Brad Riddell vs. Alex Da Silva | Sep 27, 2020 | https:/
 no_fight               | Antonina Shevchenko vs. Ariane Lipski | Nov 21, 2020 | https://www.paramountplus.com/shows/video/V9cZIW_gqH4cjRWpW6nK7yo7C9DQn1mi/
 no_fighter(Loma Lookboonmee) | Loma Lookboonmee vs. Elise Reed | Feb 12, 2023 | https://www.paramountplus.com/shows/video/fHP_YYPmoTgohTZoO0Fvg9yYaJ7kTyyp/
 no_fighter(Rongzhu)    | Rongzhu vs. Kody Steele | Feb 8, 2025 | https://www.paramountplus.com/shows/video/UaUljZx9xiio4kXbdmd414urskaU6Acx/
-no_fight               | Dan Ige vs. Patricio Pitbull | Jul 19, 2025 | https://www.paramountplus.com/shows/video/L0RquRGyzGUWoyU6qg6y379r9ZgUSZxX/

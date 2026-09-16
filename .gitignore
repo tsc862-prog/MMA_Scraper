@@ -14,3 +14,7 @@ prod_rebuild.log
 
 # scraper run logs
 *.log
+
+# scraper review lists (regenerated every run)
+verdict_unmatched.txt
+bonus_unmatched.txt

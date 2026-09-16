@@ -414,17 +414,83 @@ For each org we add:
   rank the same way; needs a per-fight source marker so a `#5` on a PFL card
   isn't read as a UFC rank.
 
-### TODO — more ranking sources
-- Fight Matrix (fightmatrix.com — algorithmic, deep top-250s, all orgs) and
-  Tapology (tapology.com/rankings — community-voted) are the obvious next two;
-  both have stable per-division URLs. Add as new `source` values — the table
-  and the app's source tabs need no schema change. ESPN and MMA Fighting
-  publish media-panel lists too but only as articles.
-- Rank-over-time on the fighter page: the snapshot history already holds the
-  data (`rankings` filtered by `fighter_id`, ordered by `snapshot_date`) — a
-  small sparkline / "peaked at #3 (Mar 2026)" line is a frontend-only add.
-- Snapshot diffing in the app: with two dates selected, highlight who moved
-  in / out between them.
+### TODO — more ranking sources  (internet pass 2026-09-08)
+Probed every candidate with plain `requests`-style fetches (browser UA, no JS).
+- **Fight Matrix** (fightmatrix.com) — the one to add next. Algorithmic
+  (CIRRS / ELO variants), all orgs, men + women, P4P. Plain server-rendered
+  HTML, robots.txt allows everything, no Cloudflare. `/mma-ranks/<division>/`
+  is 25 rows a page (LW runs to 59 pages — take the first 4 = top 100).
+  Each row: rank, movement, name, age, record, points, last/next fight.
+  Fighter profiles (`/fighter-profile/<Name>/<id>/`) link the fighter's
+  **Sherdog page**, so ids resolve exactly — no name matching needed (cache
+  the fm_id → sherdog_id map; one profile fetch per new fighter). Monthly
+  **archive back to 2008** at `/historical-mma-rankings/ranking-snapshots/
+  ?Issue=<n>&Division=<code>` (245 issues; Division codes 1..17, -1/-2 for
+  P4P) — the natural source for the historical fight-rank backfill above.
+  Their data is also sold via the PolyData API (partnership Mar 2026) —
+  not needed while the pages stay open.
+- **Tapology** — list pages (`/rankings/ufc`, `/rankings/<id>-<slug>`) return
+  200 from a home IP with a browser UA, but bout/fighter pages sit behind a
+  Cloudflare "Just a moment" challenge (403), and robots.txt carries an
+  ai-train=no content signal. The fan-voted lists only use the **100–150
+  most-recent votes**, so they are noisy. Its algorithmic UFC rankings are a
+  possible third `source`; the fan lists are not worth the trouble. Expect
+  the GitHub runner to be blocked — would need a fallback like Sherdog's.
+- **Verdict MMA** `/fighter-rankings` is just the official UFC list — skip.
+- **MMA.SOCIAL** (fan-rated fighter skills + ELO) — 1–7 ratings per entry,
+  1–3 per fight. Too thin. Good Fights — ratings need sign-in, not in HTML.
+  MMA Bridge — event-level only, client-rendered.
+
+### DONE — crowd fight ratings as "other users"  (planned 2026-09-08, built 2026-09-16)
+Built as planned below: `migrate/add_crowd_ratings.sql` (tables
+`fight_crowd_ratings`, `event_crowd_ratings`, `fight_bonuses`; `fight_search`
++ `crowd_rating` / `crowd_rating_count` / `crowd_source` / `bonus_awards`),
+`verdict_scraper.py` and `bonus_scraper.py` in the nightly, and in the app
+(Rewatch `js/events.js`) a `blendRating()` helper — crowd score halved to
+stars, weight `min(1, count/50)` against your rating, +0.25 star for FOTN /
++0.1 for the per-fighter bonuses — rendered as a quiet grey number after the
+stars with the detail in its tooltip; the bonus name is muted italic text in
+the sub-meta line. `node tests/crowd-blend.cjs` covers the rule. Back-catalog:
+Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16.
+Still open: show `event_crowd_ratings` (event score + hype) on the event
+header; Verdict's non-UFC name spellings (RIZIN, ONE) land in
+`verdict_unmatched.txt` — add aliases as they appear.
+
+Original plan (kept for the reasoning):
+Goal: show a community score next to your own rating, and let a blended
+"consensus" weight it in. **Source: Verdict MMA** (verdictmma.com) — the only
+site with real per-FIGHT volume:
+- `/event/<id>` is server-rendered (Nuxt SSR, 1.4 MB): `Event Rating x/10
+  (n)`, `Hype Rating x/10 (n)`, then one `Fight Rating` line per bout —
+  "Umar Nurmagomedov vs. Song Yadong 8.36 /10 (444 ratings)". UFC 330 main
+  event had 887 ratings; DWCS bouts 60–110; PFL / RIZIN / ONE cards exist.
+- Coverage: every UFC event since UFC 1 has a page (ids are NOT
+  chronological — 800 = UFC 32, 1800 = TUF 6 Finale), but fight ratings
+  only carry volume from **~late 2025 on** (Mar 2025 card: 4 ratings; Sep
+  2025 DWCS: 1–2; 2026 cards: hundreds). So it is a going-forward source
+  plus a one-time sweep of 2025–26 — not a back-catalog.
+- Access: HTML pages are open (robots.txt only disallows `/api/`; the
+  `/api/v1/bff/...` JSON needs auth — don't use it). Terms page has no
+  scraping clause. Nightly: fetch the recent-events index (`/events/recent`),
+  then each event page from the last ~14 days; re-fetch for ~30 days so
+  counts settle. Match bouts to `fights` by event date + fighter names (same
+  alias machinery as the video scrapers), store unmatched to a review file.
+- Schema sketch: `fight_crowd_ratings (fight_id FK, source text, rating
+  numeric(4,2) on a 0–10 scale, rating_count int, hype numeric, hype_count,
+  source_url, scraped_at, unique(fight_id, source))` + `event_crowd_ratings`
+  for the event/hype scores. Keep it separate from `ratings` (personal,
+  irreplaceable). Expose via `fight_search` as `crowd_rating`,
+  `crowd_rating_count`.
+- Blend: `consensus = (my_rating*W_me + crowd_avg*W_crowd) / (W_me+W_crowd)`
+  with `W_crowd = min(1, count/50)` (or Bayesian: prior = source mean). Your
+  ratings are numeric(3,1) — treat both as 0–10. App shows the crowd score as
+  a quiet secondary number, not a pill (see UI rule).
+- Second source for the back-catalog: **UFC bonus awards** (Fight / Performance
+  of the Night) from Wikipedia event pages ("Bonus awards" bulleted section) —
+  objective, covers 2005→, cheap to scrape. Could feed a small fixed bump.
+- Tapology's annual "Fights of the Year" lists (fan-voted, 2010→) give a
+  top-50 per year for the back-catalog, but the vote pool is tiny (100 most
+  recent) — low weight if used at all.
 
 ## Video sources
 - ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
@@ -479,6 +545,20 @@ For each org we add:
   also queries vesper by the abbreviation — "Fight Club Rush 27" alone only
   surfaced the full-card replay. Backfilled 3 fights (FCR 27 Berisha/Silva
   Marques, FCR 29 Al-Jasim/Silva do Nascimento, FCR 29 Kveldstadt/Grabowski).
+- **DWCS per-fight VODs — two seasons have none anywhere (checked 2026-09-09).**
+  Season 7 / 2023 (10 cards, 49 fights): Fight Pass only carries the full
+  "Season 7, Week N" episodes — vesper searches for a dozen of that season's
+  fighters return zero Contender Series clips — and Paramount+ season 7 is 10
+  "Full Episode" items. Season 10 / 2026: not on Fight Pass at all (series
+  2285 lists "DWCS Season 10" but `/api/v4/season/36736` 404s, no 2026 fighter
+  has a clip); Paramount+ season 10 is "Week N" full episodes only, already on
+  `events.paramount_url`. So those fights correctly show just the event replay.
+  Per-fight clips do exist for 2017–2022 ("… Dana White's Contender Series")
+  and 2024+ ("… DWCS"); the leftover gaps there were name-drift cases that had
+  never been through the date-anchored fallback (added for the 2025 season).
+  `--search-events --events <37 DWCS card ids>` backfilled 17 of them
+  (S1 ×4, S2 ×2, 2021 ×7, 2022 ×3, 2024 ×1) plus 23 incidental regional-org
+  bouts and 3 UWC event replays surfaced by the same surname queries.
 - ~~LFA's YouTube channel (@lfafights) barely matched anything.~~ **DONE
   2026-09-06:** the channel was wired but only 16 of 2,658 LFA fights and 9
   events had links, because (a) the playlist scan only takes playlists titled
@@ -570,6 +650,26 @@ For each org we add:
   (not nightly): `research_unmatched.py`, `import_ratings.py`, `migrate/*.py`
   — fix before the next use.
 - Per source, note free vs. paywalled.
+
+## App performance
+
+### DONE — precomputed read models  (2026-09-16)
+- The event page took 3–4 s and the community dashboard 1.6 s, almost all of
+  it round trips and server-side joins on the small prod instance. Added
+  `migrate/app_perf_precompute.sql`: `event_flags_mv` + `community_fight_base`
+  materialized views, `events_index()` / `my_ratings()` RPCs, and
+  `community_dashboard()` rewritten over the view. `refresh_app_caches.py`
+  rebuilds the views at the end of every scraper pass (workflow step + the
+  live-event skill). App side: one request per screen, supabase-js pinned,
+  scripts deferred, Chart.js lazy-loaded.
+- **Follow-up:** drop `event_result_flags()` once the old app JS has aged out
+  of browser caches (it's unused by the current app).
+- **Follow-up:** `fight_rating_stats()` (community averages, called on load
+  and after every save) still joins `ratings` to the 66k-row `fights` table
+  just to exclude amateur bouts — join `community_fight_base` instead.
+- **Not done (advisor WARN):** the four `ratings` RLS policies call
+  `auth.uid()` per row; wrapping it as `(select auth.uid())` is the standard
+  fix. Negligible at 1.3k rows, cheap to do when next touching ratings.
 
 ## Ground rules (carried over from prior decisions)
 - ~~ufcstats stays the UFC source~~ **SUPERSEDED 2026-06-20:** Sherdog is now the

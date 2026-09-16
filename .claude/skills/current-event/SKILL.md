@@ -22,7 +22,8 @@ the main event's result lands in the DB.
 1. Create the loop with CronCreate (session-only, `*/5 * * * *`,
    `recurring: true`). The prompt must instruct: run
    `python sherdog_scraper.py --orgs "<org>"` then `python paramount_scraper.py`
-   in the repo root, report a one-line summary of each, keep looping on errors.
+   then `python refresh_app_caches.py` in the repo root, report a one-line
+   summary of each, keep looping on errors.
    - **Scope Sherdog to the live org** — a full active-org sweep (~40 orgs)
      can overrun the 5-minute interval; the nightly covers the rest.
    - Paramount only matters for UFC/DWCS-era events (Paramount+ content);
@@ -46,7 +47,11 @@ the main event's result lands in the DB.
    order by fi.fight_position;
    ```
 3. `python paramount_scraper.py 2>&1 | Select-Object -Last 8` (UFC only)
-4. Report ONE short line: Sherdog fights pushed + which top-card results are
+4. `python refresh_app_caches.py` — **always, last.** The app's events list
+   and community stats read precomputed views; nothing this pass wrote shows
+   up there until they're refreshed (the event card itself is live). Skipping
+   it leaves tonight's card looking result-less in the app until the nightly.
+5. Report ONE short line: Sherdog fights pushed + which top-card results are
    in; Paramount clips/event-links/unmatched with deltas vs the previous pass.
 
 ## Reading the numbers

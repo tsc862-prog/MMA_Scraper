@@ -47,6 +47,9 @@ dispatch via `if: github.event.schedule == '30 7 * * *' || github.event_name == 
 | Flag amateur fights | `amateur_scraper.py --orgs "…" --limit 2000` | daily / manual | Flags amateur bouts on otherwise-pro regional cards by reading Sherdog fighter pages; incremental via `amateur_checked.txt`. |
 | Fighter profiles | `fighter_profile_scraper.py --limit 2000` | daily / manual | Fills `fighters.image_url` / `nationality` / `date_of_birth` / `height` / `association` from Sherdog fighter pages, for the app's fighter page. Incremental via the `fighters.profile_scraped_at` column (not a tracker file), so a nightly run only touches fighters added that day. |
 | Rankings | `rankings_scraper.py` | daily / manual | Divisional + pound-for-pound rankings from ufc.com (champion + top 15, names resolved to `fighters.id` via alias / accent-fold / surname-flip / UFC-roster match) and Sherdog (its multi-page rankings article + two P4P articles, exact fighter ids) into the `rankings` table as **dated snapshots** — a source's lists are compared with its latest stored snapshot and stored under today's date only when something changed (older snapshots are never touched); a source that parses to too few rows records nothing. Then stamps every **upcoming UFC fight's** `fighter1_rank` / `fighter2_rank` from the latest UFC snapshot ('C' / '1'..'15' / null); past fights are never touched, so tags freeze at fight-night values. Unmatched names go to `rankings_unmatched.txt` (not committed). Added 2026-09-06. |
+| Crowd ratings | `verdict_scraper.py` | daily / manual | Community fight + event scores from Verdict MMA (verdictmma.com — server-rendered event pages; the site's `/api/` is auth-only and not used) into `fight_crowd_ratings` / `event_crowd_ratings` on Verdict's 0–10 scale. Reads the ten cards on `/events/recent` plus every stored event whose date is within 30 days (`--settle`), since ratings keep arriving for weeks. Bouts are matched to the DB by date (±1 day) and fighter names (exact / alias / accent-fold / surname-first flip / surname within that card). No tracker file. Unmatched bouts go to `verdict_unmatched.txt` (not committed). The 2025–26 back-catalog was a one-off `--sweep 1-2000` on 2026-09-16. Added 2026-09-16. |
+| UFC bonuses | `bonus_scraper.py` | daily / manual | Fight / Performance (pre-2014: Knockout / Submission) of the Night from the Wikipedia UFC event pages into `fight_bonuses`. Events matched by date from Wikipedia's "List of UFC events" table. Nightly it only fetches UFC events from the last 45 days that have no bonus rows yet (a few pages, 1 req/s, descriptive User-Agent). `--all` backfilled every UFC event on 2026-09-16. Unmatched awards go to `bonus_unmatched.txt` (not committed). Added 2026-09-16. |
+| Refresh app caches | `refresh_app_caches.py` | **every** trigger (`if: always()`) | Calls the `refresh_app_caches()` RPC to rebuild the two materialized views the app reads instead of recomputing on every page load — `event_flags_mv` (per-event has-results / has-video flags behind the events list) and `community_fight_base` (per-fight rows behind the community dashboard). Until this runs, the events list and community stats show the previous pass; the event card itself is always live. Runs even if an earlier step failed so whatever did land is visible. The live-event loop (`.claude/skills/current-event`) runs the same script after each pass. Added 2026-09-16. |
 | Save trackers | inline git | **every** trigger | Commits updated state files back to `main` (see below). |
 
 ## Secrets
@@ -72,6 +75,11 @@ Not every scraper is in the nightly. `pluto_scraper.py` (Pluto TV's Bellator
 replays → `pluto_url`) was a one-off backfill on 2026-09-06 — Bellator is
 defunct and the catalog is static, so it's run by hand (`--push`) if Pluto ever
 adds episodes, not on a schedule.
+
+`verdict_scraper.py` and `bonus_scraper.py` (added 2026-09-16) also have no
+tracker file: the first re-fetches whatever `event_crowd_ratings` already holds
+for the last 30 days, the second only looks at recent UFC events with no
+`fight_bonuses` rows yet.
 
 `fighter_profile_scraper.py` deliberately has **no** tracker file — it resumes
 off `fighters.profile_scraped_at` in the DB. A 38k-id text file rewritten and

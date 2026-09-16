@@ -94,6 +94,30 @@ jobs:
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python rankings_scraper.py
 
+      # Community fight/event scores from Verdict MMA -> fight_crowd_ratings /
+      # event_crowd_ratings ("other users" in the app's blended score). Reads
+      # the ten most recent cards plus every stored event from the last 30
+      # days (ratings keep arriving for weeks). No tracker file — state is the
+      # DB. Unmatched bouts -> verdict_unmatched.txt (not committed).
+      - name: Scrape crowd ratings from Verdict MMA (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python verdict_scraper.py
+
+      # UFC post-fight bonus awards (FOTN / POTN) from the Wikipedia event
+      # pages -> fight_bonuses. Nightly it only checks UFC events from the
+      # last 45 days that have no bonus rows yet, so it's a few pages a night.
+      - name: Scrape UFC bonus awards from Wikipedia (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python bonus_scraper.py
+
+      # Rebuild the app's precomputed views (event_flags_mv for the events
+      # list, community_fight_base for the community dashboard) so whatever
+      # this pass wrote is what the app shows. Every trigger, and even after
+      # an earlier step failed — anything that did land should still surface.
+      - name: Refresh app caches
+        if: always()
+        run: python refresh_app_caches.py
+
       - name: Save completed events trackers
         run: |
           git config user.name "github-actions[bot]"

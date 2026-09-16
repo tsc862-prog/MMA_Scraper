@@ -9,6 +9,8 @@ The intended end-state schema for the "every pro event" vision. This is a
 organizations ──< events ──< fights ──1:1── fight_results
                                │  │
                    fighters ──<┘  └──< ratings   (your personal data)
+                                    ├──< fight_crowd_ratings  (Verdict MMA fans)
+                                    └──< fight_bonuses        (UFC bonus awards)
                       │
                       └──< fighter_aliases
 
@@ -138,6 +140,42 @@ Your personal fight ratings — irreplaceable; survives every migration.
 | notes     | text |
 | logged_at | bigint |
 
+### fight_crowd_ratings
+Community ("other users") fight scores, added 2026-09-16 via
+`migrate/add_crowd_ratings.sql`, filled nightly by `verdict_scraper.py`.
+Separate from `ratings` on purpose — nothing here is yours. RLS on, anon
+`select` only.
+| column       | type | notes |
+|--------------|------|-------|
+| fight_id     | text FK → fights (cascade) |
+| source       | text | `verdict` (verdictmma.com); room for more sources |
+| rating       | numeric(4,2) | on the source's scale — Verdict is **0–10**; the app halves it to stars |
+| rating_count | int | how many fans rated; drives the blend weight (full at 50) |
+| source_key   | text | Verdict's own key, `"<event id>/<fight index>"` |
+| source_url   | text |
+| scraped_at   | timestamptz | last refresh — pages are re-fetched for 30 days after the card |
+| primary key (fight_id, source) |
+
+### event_crowd_ratings
+Same source, per event: `event_id` FK → events (cascade), `source`, `rating`
+/ `rating_count` (post-event score 0–10), `hype` / `hype_count` (pre-event
+hype 0–10), `source_key` (Verdict event id), `source_url`, `scraped_at`.
+Primary key (event_id, source). Not yet surfaced in the app.
+
+### fight_bonuses
+UFC post-fight bonus awards from the Wikipedia event pages, added 2026-09-16
+(`migrate/add_crowd_ratings.sql`), filled by `bonus_scraper.py` (nightly for
+recent cards; `--all` backfilled the catalog). RLS on, anon `select` only.
+| column     | type | notes |
+|------------|------|-------|
+| id         | bigserial PK |
+| fight_id   | text FK → fights (cascade) |
+| award      | text | `FOTN` (Fight of the Night), `POTN` (Performance), `KOTN` / `SOTN` (Knockout / Submission, pre-2014) |
+| fighter_id | bigint FK → fighters, nullable | the awarded fighter; **null for FOTN** (both) |
+| source_url | text | the Wikipedia article |
+| scraped_at | timestamptz |
+| unique (fight_id, award, coalesce(fighter_id, 0)) |
+
 ### change_log
 Audit of inserts/updates/deletes on fights, events, fight_results.
 (Triggers disabled during the bulk backfill.)
@@ -186,12 +224,40 @@ the event replay in its place (full-card link preferred over prelims) and
 hides the result as a spoiler, wherever the row renders. The ESPN / Netflix
 event columns were appended 2026-09-07 via
 `migrate/add_event_vod_columns.sql`. `security_invoker=on`.
+Since 2026-09-16 (`migrate/add_crowd_ratings.sql`) the row also carries
+`crowd_rating` / `crowd_rating_count` / `crowd_source` (the Verdict row from
+`fight_crowd_ratings`, null when none) and `bonus_awards` (the fight's
+`fight_bonuses` codes joined with commas, e.g. `FOTN,POTN`, null when none).
+The app blends these with the user's stars as a quiet secondary number.
 `events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
 replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
 / `event_pluto_url` on the view) was added 2026-09-06 via
 `migrate/add_pluto_url.sql` for Pluto TV's free Bellator replays, filled by
 `pluto_scraper.py` — a one-off backfill (Bellator is defunct), not a nightly
 step. No prelims variant: Pluto posts one replay per card.
+
+### App read models (materialized views + RPCs)
+Added 2026-09-16 via `migrate/app_perf_precompute.sql` so the app's slow
+screens do one round trip against precomputed data instead of re-joining
+66k fights on every page load (on the small prod instance that was 0.5–2 s
+for the event flags, 1.6 s for the community dashboard, and the events table
+was paged down in 7 requests). Both views are refreshed by
+**`refresh_app_caches()`** (service_role only, `CONCURRENTLY` so readers
+never block), which `refresh_app_caches.py` calls at the end of every scraper
+pass — nightly workflow and live-event loop. Neither view is exposed through
+the API; the app only reaches them through the RPCs.
+
+| object | kind | what it holds |
+|--------|------|---------------|
+| `event_flags_mv` | matview, unique on `event_id` | per event: `has_results` (any fight with a method) and `has_video` (any fight with a paramount / youtube / fightpass / pluto URL); amateur fights excluded |
+| `community_fight_base` | matview, unique on `id`; indexes on `organization`, `event_year` | one row per pro fight: event name / org / year, weight class, both fighter ids + names, winner, method, precomputed `is_dec` / `is_finish` / `is_ko` / `is_sub` and `time_sec` |
+| `events_index()` | RPC → jsonb, security definer | every `events` row (nulls stripped) + `has_results` / `has_fight_video` from `event_flags_mv`, as one array — replaces `event_result_flags()` + paging `events` |
+| `my_ratings()` | RPC → jsonb, **security invoker** | the caller's `ratings` rows (RLS: `user_id = auth.uid()`) each overlaid on its `fight_search` row, newest first — ratings keys win (`id`, `notes`), mirroring the app's old client-side merge |
+| `community_dashboard()` | RPC → jsonb, security definer, **plpgsql + EXECUTE** | unchanged signature and output; now aggregates `community_fight_base` (+ live `ratings`) instead of re-joining the base tables. The org / division / year filters are inlined as literals on purpose: as a SQL-language function PG17 planned the body with the parameters unknown, estimated the filtered base at ~1 row, and nested-looped the ratings aggregate once per fight (35 s+) |
+| `refresh_app_caches()` | RPC → void, security definer, **service_role only** | refreshes both views |
+
+`event_result_flags()` is kept for browsers still holding the previous app
+JS; drop it once that has aged out.
 
 ## Changes from current
 
