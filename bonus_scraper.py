@@ -131,8 +131,11 @@ def parse_bonuses(html):
                 parts = re.split(r'\s+and\s+(?=[A-Z][^,]+\s+vs\.?\s)', body)
                 out.append((code, [p.strip() for p in parts if 'vs' in p.lower()]))
             else:
-                parts = re.split(r',\s*|\s+and\s+|\s*&\s*', body)
-                out.append((code, [p.strip() for p in parts if p.strip()]))
+                # "A, B, and C" / "A and B" / "A & B"; a leading "and" left by an
+                # Oxford comma is dropped; "No bonus awarded" isn't a name
+                parts = re.split(r',\s*(?:and\s+)?|\s+and\s+|\s*&\s*', body)
+                names = [re.sub(r'^and\s+', '', p.strip()) for p in parts]
+                out.append((code, [p for p in names if p and not p.lower().startswith('no bonus')]))
     return out
 
 # ── DB matching ───────────────────────────────────────────────────────────────

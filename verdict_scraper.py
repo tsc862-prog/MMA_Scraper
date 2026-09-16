@@ -144,6 +144,7 @@ def parse_event(html, vid):
 def fold(name):
     n = unicodedata.normalize('NFKD', name or '')
     n = ''.join(c for c in n if not unicodedata.combining(c))
+    n = n.replace('’', "'").replace('‘', "'")      # curly apostrophes (Wikipedia) → straight
     return re.sub(r'\s+', ' ', n.lower().replace('-', ' ').replace('.', '')).strip()
 
 def surname(name):
@@ -175,6 +176,10 @@ def resolve_name(name, by_exact, by_fold, by_last, aliases, known):
         if ids:
             return ids
     if len(toks) > 2:
+        # Korean-style "Choi Doo-ho" vs Sherdog "Doo Ho Choi": family name moves end↔front
+        ids = by_fold.get(' '.join(toks[1:] + toks[:1])) or by_fold.get(' '.join(toks[-1:] + toks[:-1]))
+        if ids:
+            return ids
         ids = by_fold.get(f'{toks[0]} {surname(name)}') or by_fold.get(f'{toks[-1]} {toks[0]}')
         if ids:
             return ids
