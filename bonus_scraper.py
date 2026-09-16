@@ -152,14 +152,15 @@ def parse_bonuses(html, event_name=None):
             body = body.replace('*', '').replace('^', '')   # "Rony Jason*", "Pat Healy vs. Jim Miller ^"
             body = re.sub(r'\s+\d$', '', body)              # "Vera vs. Font 1" rematch numbering
             if code == 'FOTN':
-                parts = re.split(r'\s+and\s+(?=[A-Z][^,]+\s+vs\.?\s)', body)
-                out.append((code, [p.strip() for p in parts if 'vs' in p.lower()]))
+                # "A vs. B and C vs. D" / "A vs. B, C vs. D" — two bouts share the award
+                parts = re.split(r'\s*,\s*(?:and\s+)?|\s+and\s+(?=[A-Z][^,]+\s+vs\.?\s)', body)
+                out.append((code, [p.strip() for p in parts if re.search(r'\svs\.?\s', p)]))
             else:
                 # "A, B, and C" / "A and B" / "A & B"; a leading "and" left by an
                 # Oxford comma is dropped; "No bonus awarded" isn't a name
                 parts = re.split(r',\s*(?:and\s+)?|\s+and\s+|\s*&\s*', body)
                 names = [re.sub(r'^and\s+', '', p.strip()) for p in parts]
-                out.append((code, [p for p in names if p and not re.match(r'(no(ne)?|not)\s+(bonus|award)', p, re.I)]))
+                out.append((code, [p for p in names if p and not re.match(r'(no(ne)?|not)(\s|$)', p, re.I)]))
     return out
 
 # ── DB matching ───────────────────────────────────────────────────────────────
@@ -207,14 +208,25 @@ def _sig(name):
             and t not in {'ufc', 'fight', 'night', 'ultimate', 'fighting', 'championship', 'live', 'espn'}}
 
 def match_event(wp, by_date):
-    cands = by_date.get(wp['date'], [])
-    if len(cands) == 1:
-        return cands[0]
+    """Wikipedia dates overseas cards by local time and Sherdog by US time
+    (Rockhold vs. Bisping in Sydney: Nov 8 vs Nov 7), so look a day either
+    side too and let the headliner surnames decide: a candidate that shares
+    names with the Wikipedia title beats any that doesn't, and a lone
+    same-day candidate is accepted only when no candidate shares names."""
+    sig = _sig(wp['name'])
+    cands = []
+    for off in (0, -1, 1):
+        for e in by_date.get(wp['date'] + dt.timedelta(days=off), []):
+            cands.append((len(sig & _sig(e['name'])), off == 0, e))
     if not cands:
         return None
-    sig = _sig(wp['name'])
-    scored = sorted(cands, key=lambda e: -len(sig & _sig(e['name'])))
-    return scored[0] if len(sig & _sig(scored[0]['name'])) > len(sig & _sig(scored[1]['name'])) else None
+    cands.sort(key=lambda c: (-c[0], not c[1]))
+    best = cands[0]
+    if best[0] > 0:
+        rival = [c for c in cands[1:] if c[0] == best[0]]
+        return best[2] if not rival else None
+    same_day = [c for c in cands if c[1]]
+    return same_day[0][2] if len(same_day) == 1 else None
 
 # ── Runs ──────────────────────────────────────────────────────────────────────
 

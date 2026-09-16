@@ -154,6 +154,8 @@ def fold(name):
     n = unicodedata.normalize('NFKD', name or '')
     n = ''.join(c for c in n if not unicodedata.combining(c))
     n = n.replace('’', "'").replace('‘', "'")      # curly apostrophes (Wikipedia) → straight
+    # letters NFKD leaves alone (no combining form): Wikłacz, Özkılıç, Søren, Đorđe, Straßer
+    n = n.translate(str.maketrans({'ł': 'l', 'Ł': 'L', 'ı': 'i', 'ø': 'o', 'Ø': 'O', 'đ': 'd', 'Đ': 'D', 'ß': 'ss'}))
     return re.sub(r'\s+', ' ', n.lower().replace('-', ' ').replace('.', '')).strip()
 
 def surname(name):
@@ -196,6 +198,13 @@ def resolve_name(name, by_exact, by_fold, by_last, aliases, known):
             ids = by_fold.get(t)
             if ids:
                 return ids
+        ids = by_fold.get(' '.join(toks[1:]))          # "Carlos Diego Ferreira" → "Diego Ferreira"
+        if ids:
+            return ids
+    # the display name is a prefix of the stored one ("Ariane Lipski" → "Ariane Lipski da Silva")
+    pref = {i for k, v in by_fold.items() if k.startswith(f + ' ') for i in v}
+    if len(pref) == 1:
+        return pref
     ids = by_last.get(surname(name), set())
     return ids if len(ids) == 1 else set()
 
