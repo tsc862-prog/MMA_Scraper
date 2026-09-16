@@ -104,11 +104,32 @@ def list_events(html):
             break
     return out
 
-def parse_bonuses(html):
+def _bonus_heading(soup, event_name):
+    """The 'Bonus awards' heading for THIS event. Some articles bundle several
+    cards (the 2012 'UFC on Fuel TV' pages), each with its own Bonus awards
+    section (ids Bonus_awards, Bonus_awards_2, …); pick the one whose nearest
+    preceding event heading is this event, else the sole section on a normal
+    page."""
+    heads = soup.find_all(id=re.compile(r'^Bonus_[Aa]wards(_\d+)?$'))
+    if not heads:
+        return None
+    if len(heads) == 1:
+        return heads[0]
+    want = fold(event_name or '')
+    for h in heads:
+        for prev in h.find_all_previous('h2'):
+            if re.match(r'^Bonus_[Aa]wards', prev.get('id') or ''):
+                continue
+            if fold(prev.get_text(' ', strip=True)) == want:
+                return h
+            break
+    return None
+
+def parse_bonuses(html, event_name=None):
     """'Bonus awards' section → [(award_code, [names...])]. A FOTN entry's
     names list holds 'A vs. B' strings; per-fighter awards hold fighter names."""
     soup = BeautifulSoup(html, 'html.parser')
-    h = soup.find(id='Bonus_awards') or soup.find(id='Bonus_Awards')
+    h = _bonus_heading(soup, event_name)
     if not h:
         return []
     out = []
@@ -128,7 +149,7 @@ def parse_bonuses(html):
             body = m.group(2).strip().rstrip('.')
             body = re.sub(r'\s*\(.*?\)', '', body)          # "(replaced …)", "($50,000)"
             body = re.sub(r'\s*\[.*?\]', '', body)          # "[a]" footnote markers
-            body = body.replace('*', '')                    # "Rony Jason*"
+            body = body.replace('*', '').replace('^', '')   # "Rony Jason*", "Pat Healy vs. Jim Miller ^"
             body = re.sub(r'\s+\d$', '', body)              # "Vera vs. Font 1" rematch numbering
             if code == 'FOTN':
                 parts = re.split(r'\s+and\s+(?=[A-Z][^,]+\s+vs\.?\s)', body)
@@ -138,7 +159,7 @@ def parse_bonuses(html):
                 # Oxford comma is dropped; "No bonus awarded" isn't a name
                 parts = re.split(r',\s*(?:and\s+)?|\s+and\s+|\s*&\s*', body)
                 names = [re.sub(r'^and\s+', '', p.strip()) for p in parts]
-                out.append((code, [p for p in names if p and not re.match(r'no(ne)?\s+(bonus|award)', p, re.I)]))
+                out.append((code, [p for p in names if p and not re.match(r'(no(ne)?|not)\s+(bonus|award)', p, re.I)]))
     return out
 
 # ── DB matching ───────────────────────────────────────────────────────────────
@@ -197,11 +218,11 @@ def match_event(wp, by_date):
 
 # ── Runs ──────────────────────────────────────────────────────────────────────
 
-def process(wp, db_event, aliases, dry_run, unmatched):
+def process(wp, db_event, aliases, dry_run, unmatched, force=False):
     html = fetch(wp['url'])
     if html is None:
         return 0
-    awards = parse_bonuses(html)
+    awards = parse_bonuses(html, wp['name'])
     if not awards:
         return 0
     card = Card(db_event, aliases)
@@ -226,11 +247,20 @@ def process(wp, db_event, aliases, dry_run, unmatched):
                              'source_url': wp['url'], 'scraped_at': now})
     # The table's key is a bigserial, so a REST upsert can't merge on
     # (fight_id, award, fighter_id) — insert only what isn't there yet.
-    if rows:
+    # --force re-parses the card from scratch: its old rows go first (a page
+    # that used to be mis-read — e.g. a bundled multi-event article — may have
+    # left wrong awards behind).
+    have = set()
+    if card.fights:
         ids = ','.join(f['id'] for f in card.fights)
-        have = {(b['fight_id'], b['award'], b['fighter_id'])
-                for b in fetch_all('fight_bonuses', 'fight_id,award,fighter_id', f'&fight_id=in.({ids})', order='id')}
-        rows = [r for r in rows if (r['fight_id'], r['award'], r['fighter_id']) not in have]
+        if force and not dry_run:
+            r = requests.delete(f'{s.SUPABASE_URL}/rest/v1/fight_bonuses?fight_id=in.({ids})',
+                                headers=s._headers(), timeout=60)
+            r.raise_for_status()
+        elif rows:
+            have = {(b['fight_id'], b['award'], b['fighter_id'])
+                    for b in fetch_all('fight_bonuses', 'fight_id,award,fighter_id', f'&fight_id=in.({ids})', order='id')}
+            rows = [r for r in rows if (r['fight_id'], r['award'], r['fighter_id']) not in have]
     print(f'  {wp["date"]} {wp["name"]}: {len(rows)} new awards'
           + ('' if len(rows) + len(have) == sum(len(n) for _, n in awards) else f' ({sum(len(n) for _, n in awards) - len(rows) - len(have)} unmatched)'))
     if rows and not dry_run:
@@ -240,7 +270,7 @@ def process(wp, db_event, aliases, dry_run, unmatched):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--all', action='store_true', help='every UFC event, not just recent ones')
-    ap.add_argument('--force', action='store_true', help='with --all: re-check events that already have bonus rows')
+    ap.add_argument('--force', action='store_true', help='re-parse events that already have bonus rows, replacing their rows')
     ap.add_argument('--days', type=int, default=45, help='nightly window: UFC events from the last N days (default 45)')
     ap.add_argument('--limit', type=int, default=0, help='stop after N pages (backfill in chunks)')
     ap.add_argument('--dry-run', action='store_true')
@@ -276,7 +306,7 @@ def main():
         if not db_event or db_event['id'] in have:
             continue
         n_pages += 1
-        n_rows += process(wp, db_event, aliases, args.dry_run, unmatched)
+        n_rows += process(wp, db_event, aliases, args.dry_run, unmatched, force=args.force)
         if args.limit and n_pages >= args.limit:
             print(f'--limit {args.limit} reached')
             break
