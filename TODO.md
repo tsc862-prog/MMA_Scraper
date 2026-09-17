@@ -446,14 +446,15 @@ Built as planned below: `migrate/add_crowd_ratings.sql` (tables
 `fight_crowd_ratings`, `event_crowd_ratings`, `fight_bonuses`; `fight_search`
 + `crowd_rating` / `crowd_rating_count` / `crowd_source` / `bonus_awards`),
 `verdict_scraper.py` and `bonus_scraper.py` in the nightly, and in the app
-(Rewatch `js/events.js`) a `blendRating()` helper — crowd score halved to
-stars, weight `min(1, count/50)` against your rating, +0.25 star for FOTN /
-+0.1 for the per-fighter bonuses — rendered as a quiet grey number after the
-stars with the detail in its tooltip; each award is a small FOTN / POTN /
-KOTN / SOTN tag right-aligned on the sub-meta line with the weight class /
-event name, 10px (user's placement and size, 2026-09-16). Both sit behind the row's spoiler gate (hidden with the
-result until the fight is rated — a crowd score says whether the fight was
-good, a bonus name says it was a finish). `node tests/crowd-blend.cjs`
+(Rewatch `js/events.js`) the crowd score shown as-is — Verdict's 0–10
+halved to stars, NOT blended with the user's rating (blend tried first, user
+dropped it 2026-09-17) — as a quiet grey number after the stars, raw score
+and fan count in its tooltip; each award is a FOTN / POTN / KOTN / SOTN tag
+right-aligned on the sub-meta line with the weight class / event name, 10px
+(user's placement and size, 2026-09-16). Both sit behind the row's spoiler
+gate (hidden with the result until the fight is rated — a crowd score says
+whether the fight was good, a bonus name says it was a finish).
+`node tests/crowd-blend.cjs`
 covers the rule. Back-catalog:
 Verdict `--sweep 1-2000` and Wikipedia `--all` were run once on 2026-09-16,
 then a pre-2025 Verdict pass (`--since 2001-01-01 --min-count 10`) for the
