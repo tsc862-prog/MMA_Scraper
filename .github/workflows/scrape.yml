@@ -110,6 +110,16 @@ jobs:
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python bonus_scraper.py
 
+      # Opening / closing moneylines from BestFightOdds -> fight_odds. Reads
+      # BFO's events sitemap for cards within +/-10 days, each event page for
+      # its matchups, then one fighter page per bout (the archive with open +
+      # closing range). Re-fetches the whole window nightly so upcoming
+      # bouts' lines settle after the card. No tracker file. Unmatched bouts
+      # -> bfo_unmatched.txt (not committed).
+      - name: Scrape betting odds from BestFightOdds (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python bfo_scraper.py
+
       # Rebuild the app's precomputed views (event_flags_mv for the events
       # list, community_fight_base for the community dashboard) so whatever
       # this pass wrote is what the app shows. Every trigger, and even after

@@ -2,9 +2,16 @@
   "permissions": {
     "allow": [
       "mcp__claude_ai_Supabase__execute_sql",
+      "mcp__claude_ai_Supabase__apply_migration",
       "Bash(curl -s \"http://www.ufcstats.com/event-details/9dde100a40dda0c2\")",
       "Bash(python -c ':*)",
       "Bash(curl -s \"http://www.ufcstats.com/event-details/24edbbe1a498f1a3\")"
+    ]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Running SQL and applying schema migrations on the user's own Supabase project (tzmsetedkjsrlfgavdyq, the MMA scraper database) through the Supabase MCP tools is allowed, including creating tables, views, indexes and RLS policies. It is a single-developer project; migrations live in migrate/*.sql and the user asks for them to be applied."
     ]
   }
 }

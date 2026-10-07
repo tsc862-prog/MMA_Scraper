@@ -10,7 +10,8 @@ organizations ──< events ──< fights ──1:1── fight_results
                                │  │
                    fighters ──<┘  └──< ratings   (your personal data)
                                     ├──< fight_crowd_ratings  (Verdict MMA fans)
-                                    └──< fight_bonuses        (UFC bonus awards)
+                                    ├──< fight_bonuses        (UFC bonus awards)
+                                    └──< fight_odds           (BestFightOdds lines)
                       │
                       └──< fighter_aliases
 
@@ -181,6 +182,31 @@ recent cards; `--all` backfilled the catalog). RLS on, anon `select` only.
 | scraped_at | timestamptz |
 | unique (fight_id, award, coalesce(fighter_id, 0)) |
 
+### fight_odds
+Betting odds per fight from BestFightOdds (bestfightodds.com), added
+2026-10-06 (`migrate/add_fight_odds.sql`), filled by `bfo_scraper.py`
+(nightly for cards within ±10 days; `--sweep` backfills the catalog from
+BFO's fighter pages, which go back to 2007). American odds (`-210` favourite,
+`+175` underdog), both sides stored in the DB's fighter1 / fighter2 order.
+RLS on, anon `select` only.
+| column              | type | notes |
+|---------------------|------|-------|
+| fight_id            | text FK → fights (cascade) |
+| source              | text | `bfo` (room for more) |
+| fighter1_open       | int  | opening line |
+| fighter1_close_low  | int  | lowest closing line across the books BFO tracks |
+| fighter1_close_high | int  | highest closing line |
+| fighter1_close      | int  | midpoint of the closing range (averaged in decimal odds, converted back) — the number the app shows |
+| fighter2_open / _close_low / _close_high / _close | int | same for fighter 2 |
+| source_key          | text | BFO matchup id (or `<bfo event id>/<slug>/<slug>` for a bout BFO hasn't charted yet) |
+| source_url          | text | the BFO event page |
+| scraped_at          | timestamptz |
+| primary key (fight_id, source) |
+
+For an **upcoming** fight the `close` columns hold the current line; the
+nightly re-fetches every card within the window, so they settle to the true
+close after the bell. An upset = `winner_id`'s side closed positive.
+
 ### change_log
 Audit of inserts/updates/deletes on fights, events, fight_results.
 (Triggers disabled during the bulk backfill.)
@@ -234,6 +260,10 @@ Since 2026-09-16 (`migrate/add_crowd_ratings.sql`) the row also carries
 `fight_crowd_ratings`, null when none) and `bonus_awards` (the fight's
 `fight_bonuses` codes joined with commas, e.g. `FOTN,POTN`, null when none).
 The app blends these with the user's stars as a quiet secondary number.
+Since 2026-10-06 (`migrate/add_fight_odds.sql`) it also carries
+`fighter1_odds_open` / `fighter1_odds_close` / `fighter2_odds_open` /
+`fighter2_odds_close` (American odds from `fight_odds`, null when BFO has no
+line).
 `events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
 replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
 / `event_pluto_url` on the view) was added 2026-09-06 via

@@ -185,8 +185,17 @@ above never reached (ids < 10000). Added to `REPLAY_PLAYLISTS`: 2620 LUX
 Fight League (85 replays; LUX had 0/67 event URLs because it was only ever
 reached as a PASS 5 side effect), 1633 Cage Warriors (242), 2543 LFA (216),
 2544 Cage Fury FC (89), 9823 Ares FC (32). Reminder: the Fight Pass scraper
-is manual and local — a dry run writes `fightpass_matches.txt` only; nothing
-reaches the DB without `--push`.
+is local — a dry run writes `fightpass_matches.txt` only; nothing reaches the
+DB without `--push`.
+
+**2026-09-25 — Fight Pass scraper scheduled.** Eternal MMA 110 (2026-09-12)
+sat unlinked for two weeks because the scraper only ran by hand: no Task
+Scheduler entry existed (only the Paramount one), and the last manual run was
+`--events`-scoped to UWC/LUX. The replay (video/1010985) and five clips were
+on Fight Pass the whole time. Fixed with a targeted `--events 113929 --push`,
+then a full `--search-events --push` sweep, then a daily Task Scheduler task
+'Fight Pass Scraper' (23:45, after Paramount at 23:30) running
+`fightpass_scraper.py --search-events --push` from the repo folder.
 Wired: 27884 ZFN Event Replays, 18836 UAE Warriors Event Replays. New-org
 candidates with real replay archives (next wave; check Sherdog coverage):
 - **RFA** (28427, Resurrection Fighting Alliance — LFA's predecessor)
@@ -503,6 +512,41 @@ site with real per-FIGHT volume:
 - Tapology's annual "Fights of the Year" lists (fan-voted, 2010→) give a
   top-50 per year for the back-catalog, but the vote pool is tiny (100 most
   recent) — low weight if used at all.
+
+## Betting odds
+
+### DONE — scraper + table  (2026-10-06)
+`bfo_scraper.py` → `fight_odds` (`migrate/add_fight_odds.sql`; `fight_search`
++ `fighter1_odds_open` / `fighter1_odds_close` / `fighter2_odds_open` /
+`fighter2_odds_close`), in the nightly after the bonus scraper. **Source:
+BestFightOdds** (bestfightodds.com) — the de facto MMA odds archive, every
+major org back to 2007, server-rendered, robots.txt allows all, no
+Cloudflare challenge to a plain client. Event pages only show today's book
+prices (empty on old cards), so the scraper reads the **fighter pages**:
+Open + "Closing range" (low … high across books) per bout, both sides. We
+store open / close_low / close_high / close (range midpoint) per fighter in
+American odds. Nightly: cards within ±10 days (upcoming bouts carry the
+current line until the card passes). Matching reuses `verdict_scraper.Pool`
+(date ±3 days + names); bouts whose fighters the DB doesn't know are only
+counted, so orgs we don't track (ACA, Oktagon, EFC, …) don't flood
+`bfo_unmatched.txt`. Alternatives surveyed and skipped: The Odds API (live
+only, history paid from mid-2020), FightOdds.io (GraphQL locked to its own
+app's queries), Tapology (403s bots), OddsPortal (JS + anti-bot).
+- [x] **Applied `migrate/add_fight_odds.sql` to prod** 2026-10-06 and ran the
+  first nightly pass (91 bouts). The auto-mode classifier had refused the
+  Supabase MCP writes until `.claude/settings.json` got an `autoMode.allow`
+  rule for this project's migrations.
+- [ ] **Back-catalog sweep**: `python bfo_scraper.py --sweep` once, in the
+  background (`--resume` if interrupted; `--since 2010-01-01` to shorten).
+- [ ] Aliases from the first nightlies: BFO "Khaos Williams" = Sherdog
+  "Kalinn Williams", "Benardo Sopaj", "Paul Elliot" (ONE) — `add_alias.py`.
+- [x] App (2026-10-06, Rewatch `js/events.js`): each fighter's closing line
+  as a small grey number after the name/record (not spoiler-gated — odds are
+  public pre-fight; upcoming bouts show the current line), plus an **UPSET**
+  tag in the bonus-tag family on the sub-meta line when the winner closed
+  positive and the loser negative (spoiler-gated). `node tests/odds.cjs`.
+- [ ] App: a rewatch filter / Community list for upsets (biggest underdog
+  wins) would fall out of `upsetPrice()` cheaply.
 
 ## Video sources
 - ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE

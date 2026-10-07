@@ -18,3 +18,5 @@ prod_rebuild.log
 # scraper review lists (regenerated every run)
 verdict_unmatched.txt
 bonus_unmatched.txt
+bfo_unmatched.txt
+bfo_sweep_progress.txt
