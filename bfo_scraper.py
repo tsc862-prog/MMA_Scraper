@@ -31,7 +31,11 @@ What a nightly run does (no tracker file — state lives in the DB):
      by (event, opponent).
   4. Match to the DB: candidate events within ±3 days of BFO's date, fighter
      names resolved exact → alias → accent-folded → surname inside that
-     small pool (verdict_scraper's Pool). Upsert (fight_id, 'bfo').
+     small pool (verdict_scraper's Pool). Upsert (fight_id, 'bfo'). BFO
+     sometimes charts one bout twice (a fighter with two BFO profiles, e.g.
+     "Mason Hartshorn" and "Mason Carzino-Hartshorn" on LFA 243); only the
+     first row matched per fight is kept — a second in the same batch
+     would make Postgres reject the whole upsert (error 21000).
   Unmatched bouts go to bfo_unmatched.txt (not committed). BFO covers many
   orgs the DB doesn't, so a bout whose fighters are unknown to the DB
   altogether is only counted (nightly: both unknown; sweep: either).
@@ -319,9 +323,11 @@ class Run:
         self.known = Known(aliases, fighters)
         self.pages = {}                     # fighter slug → parsed bouts
         self.done = set()                   # bout keys handled this run
+        self.fights_done = set()            # fight ids queued this run (one odds row per fight)
         self.skip = set() if (args.force or args.dry_run) else stored_keys()
         self.unmatched, self.rows = [], []
         self.n_matched = self.n_seen = self.n_foreign = self.n_nolines = self.n_skipped_pages = 0
+        self.n_dupes = 0                    # bouts BFO charts twice for one DB fight
         self.since = dt.date.fromisoformat(args.since) if args.since else None
 
     def fighter_bouts(self, slug):
@@ -344,6 +350,10 @@ class Run:
         now = dt.datetime.now(dt.timezone.utc).isoformat()
         row, why = bout_row(bout, self.pools, now)
         if row:
+            if row['fight_id'] in self.fights_done:   # BFO charted this bout twice (two profiles for one fighter)
+                self.n_dupes += 1
+                return False
+            self.fights_done.add(row['fight_id'])
             self.rows.append(row)
             self.n_matched += 1
             return True
@@ -470,6 +480,7 @@ def main():
 
     print(f'\n{run.n_matched}/{run.n_seen} bouts matched, {len(run.unmatched)} unmatched, '
           f'{run.n_foreign} on cards the DB does not carry, {run.n_nolines} matched but without lines'
+          + (f', {run.n_dupes} charted twice by BFO (kept the first)' if run.n_dupes else '')
           + (f', {run.n_skipped_pages} fighter pages skipped' if run.n_skipped_pages else '')
           + (' (dry run — nothing written)' if args.dry_run else ''))
     if run.unmatched:

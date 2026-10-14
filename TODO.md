@@ -536,6 +536,13 @@ app's queries), Tapology (403s bots), OddsPortal (JS + anti-bot).
   first nightly pass (91 bouts). The auto-mode classifier had refused the
   Supabase MCP writes until `.claude/settings.json` got an `autoMode.allow`
   rule for this project's migrations.
+- [x] **Nightly fixed 2026-10-14**: every run 2026-10-08..14 died in the odds
+  step with Postgres 21000 ("ON CONFLICT DO UPDATE command cannot affect row
+  a second time") — BFO charted Martinez vs Carzino-Hartshorn (LFA 243)
+  twice under two profiles for the same fighter, both matched the one DB
+  fight, and the batch upsert carried two rows for one primary key. The
+  scraper now keeps one row per fight per run (first match wins) and counts
+  the rest in the summary.
 - [ ] **Back-catalog sweep**: `python bfo_scraper.py --sweep` once, in the
   background (`--resume` if interrupted; `--since 2010-01-01` to shorten).
 - [ ] Aliases from the first nightlies: BFO "Khaos Williams" = Sherdog
