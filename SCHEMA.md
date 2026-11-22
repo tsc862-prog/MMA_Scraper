@@ -207,6 +207,22 @@ For an **upcoming** fight the `close` columns hold the current line; the
 nightly re-fetches every card within the window, so they settle to the true
 close after the bell. An upset = `winner_id`'s side closed positive.
 
+### fight_summaries
+A short written account (2–4 sentences) of how each bout played out, added
+2026-11-21 (`migrate/add_fight_summaries.sql`),
+filled by `summary_scraper.py`: a Claude model writes it from Sherdog's
+round-by-round play-by-play article for the card. Only the generated summary
+is stored, never the play-by-play text. One row per fight; `--force`
+overwrites. RLS on, anon `select` only.
+| column       | type | notes |
+|--------------|------|-------|
+| fight_id     | text PK, FK → fights (cascade) |
+| summary      | text | 2–4 sentences, gives the result away — the app shows it only after the viewer rates the fight |
+| source       | text | `sherdog` (where the play-by-play came from) |
+| source_url   | text | the play-by-play article |
+| model        | text | model id that wrote it, e.g. `claude-sonnet-5-5` |
+| generated_at | timestamptz |
+
 ### change_log
 Audit of inserts/updates/deletes on fights, events, fight_results.
 (Triggers disabled during the bulk backfill.)
@@ -264,6 +280,8 @@ Since 2026-10-06 (`migrate/add_fight_odds.sql`) it also carries
 `fighter1_odds_open` / `fighter1_odds_close` / `fighter2_odds_open` /
 `fighter2_odds_close` (American odds from `fight_odds`, null when BFO has no
 line).
+Since 2026-11-21 (`migrate/add_fight_summaries.sql`) it also carries
+`summary` (the `fight_summaries` text, null when none).
 `events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
 replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
 / `event_pluto_url` on the view) was added 2026-09-06 via

@@ -50,6 +50,7 @@ dispatch via `if: github.event.schedule == '30 7 * * *' || github.event_name == 
 | Crowd ratings | `verdict_scraper.py` | daily / manual | Community fight + event scores from Verdict MMA (verdictmma.com — server-rendered event pages; the site's `/api/` is auth-only and not used) into `fight_crowd_ratings` / `event_crowd_ratings` on Verdict's 0–10 scale. Reads the ten cards on `/events/recent` plus every stored event whose date is within 30 days (`--settle`), since ratings keep arriving for weeks. Bouts are matched to the DB by date (±1 day) and fighter names (exact / alias / accent-fold / surname-first flip / surname within that card). No tracker file. Unmatched bouts go to `verdict_unmatched.txt` (not committed). The 2025–26 back-catalog was a one-off `--sweep 1-2000` on 2026-09-16, then pre-2025 cards with `--since 2001-01-01 --min-count 10` (fight ratings only launched in 2025, so older cards carry a few retro ratings; only bouts with 10+ are stored). Added 2026-09-16. |
 | UFC bonuses | `bonus_scraper.py` | daily / manual | Fight / Performance (pre-2014: Knockout / Submission) of the Night from the Wikipedia UFC event pages into `fight_bonuses`. Events matched by date from Wikipedia's "List of UFC events" table. Nightly it only fetches UFC events from the last 45 days that have no bonus rows yet (a few pages, 1 req/s, descriptive User-Agent). `--all` backfilled every UFC event on 2026-09-16. Unmatched awards go to `bonus_unmatched.txt` (not committed). Added 2026-09-16. |
 | Betting odds | `bfo_scraper.py` | daily / manual | Opening line + closing range per fighter from BestFightOdds (bestfightodds.com) into `fight_odds`. Reads `sitemap-events.xml` for BFO cards dated within ±10 days of today (`--days`; non-MMA cards — BJJ, Power Slap, bare-knuckle — skipped by slug), each event page for its matchups, then one **fighter page** per bout — the event pages only show today's book prices, the fighter pages hold the open / closing-range archive back to 2007. Every card in the window is re-fetched each night so an upcoming bout's "closing" columns (its current line) settle to the real close after the card. Bouts matched to the DB by date (±3 days) + fighter names via the Verdict scraper's pool; a bout BFO charts twice (one fighter under two BFO profiles) is stored once, first match wins. No tracker file. Unmatched bouts go to `bfo_unmatched.txt` (not committed); bouts whose fighters the DB doesn't know at all (orgs we don't track) are only counted. The back-catalog is a one-off `--sweep` over `sitemap-teams.xml` (~22k fighters, pages for fighters not in the DB skipped; `--resume` via `bfo_sweep_progress.txt`, not committed). Added 2026-10-06. |
+| Fight summaries | `summary_scraper.py` | daily / manual | A 2–4 sentence summary of each fight into `fight_summaries`, written by a Claude model (`claude-sonnet-5-5`; `SUMMARY_MODEL` overrides) from Sherdog's round-by-round play-by-play article, found via the "VIEW PLAY-BY-PLAY" link on the event page. One model request per card: the whole article plus the card's fights (id, names, official result) go in, a summary per fight id comes back as structured JSON. Nightly it only looks at UFC events from the last 14 days (`--days`, `--org-ids`) whose fights have a result but no summary yet, so a normal night is zero or one request; `--event <id>`, `--all --limit N` and `--force` are for backfills. Only the summary is stored, never the play-by-play text. Needs the `ANTHROPIC_API_KEY` secret — without it the step prints a notice and exits 0. |
 | Refresh app caches | `refresh_app_caches.py` | **every** trigger (`if: always()`) | Calls the `refresh_app_caches()` RPC to rebuild the two materialized views the app reads instead of recomputing on every page load — `event_flags_mv` (per-event has-results / has-video flags behind the events list) and `community_fight_base` (per-fight rows behind the community dashboard). Until this runs, the events list and community stats show the previous pass; the event card itself is always live. Runs even if an earlier step failed so whatever did land is visible. The live-event loop (`.claude/skills/current-event`) runs the same script after each pass. Added 2026-09-16. |
 | Save trackers | inline git | **every** trigger | Commits updated state files back to `main` (see below). |
 
@@ -60,6 +61,8 @@ The `.env` is built at runtime from these repository secrets:
 - `SUPABASE_URL`, `SUPABASE_KEY` — database access
 - `YOUTUBE_API_KEY` — YouTube Data API v3
 - `GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD` — SMTP for the review digest
+- `ANTHROPIC_API_KEY` — Claude API, for the fight summaries (optional: the
+  summary step skips itself when it is missing)
 
 ## State / tracker files
 
@@ -81,6 +84,9 @@ adds episodes, not on a schedule.
 tracker file: the first re-fetches whatever `event_crowd_ratings` already holds
 for the last 30 days, the second only looks at recent UFC events with no
 `fight_bonuses` rows yet.
+
+`summary_scraper.py` (added 2026-11-21) has no tracker file either: it asks
+the DB which recent UFC fights have a result but no `fight_summaries` row.
 
 `bfo_scraper.py` (added 2026-10-06) likewise has no tracker file: the nightly
 re-fetches every BFO card within ±10 days. `bfo_sweep_progress.txt` only

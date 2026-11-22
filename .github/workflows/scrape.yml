@@ -38,6 +38,7 @@ jobs:
           echo "YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}" >> .env
           echo "GMAIL_ADDRESS=${{ secrets.GMAIL_ADDRESS }}" >> .env
           echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> .env
+          echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> .env
 
       # ufcstats (start.py) retired — Sherdog is now the source of truth for
       # every org including UFC. Runs on every schedule so live UFC fight-night
@@ -119,6 +120,16 @@ jobs:
       - name: Scrape betting odds from BestFightOdds (daily only)
         if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
         run: python bfo_scraper.py
+
+      # A 2–4 sentence summary of each fight -> fight_summaries, written by a
+      # Claude model (claude-sonnet-5-5) from Sherdog's play-by-play article
+      # for the card. Only UFC events from the last 14 days whose fights have
+      # a result but no summary yet, so a normal night is zero or one model
+      # request. No tracker file. Without the ANTHROPIC_API_KEY secret it
+      # prints a notice and exits 0.
+      - name: Write fight summaries from Sherdog play-by-play (daily only)
+        if: github.event.schedule == '30 7 * * *' || github.event_name == 'workflow_dispatch'
+        run: python summary_scraper.py
 
       # Rebuild the app's precomputed views (event_flags_mv for the events
       # list, community_fight_base for the community dashboard) so whatever

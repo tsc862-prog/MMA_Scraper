@@ -555,6 +555,37 @@ app's queries), Tapology (403s bots), OddsPortal (JS + anti-bot).
 - [ ] App: a rewatch filter / Community list for upsets (biggest underdog
   wins) would fall out of `upsetPrice()` cheaply.
 
+## Fight summaries
+
+### DONE — scraper + table  (2026-11-21)
+`summary_scraper.py` → `fight_summaries` (`migrate/add_fight_summaries.sql`;
+`fight_search` + `summary`), in the nightly after the odds scraper. A Claude
+model (`claude-sonnet-5-5`) writes 2–4 sentences per fight from Sherdog's
+play-by-play article for the card — one request per card, structured JSON
+keyed by fight id, the DB result passed in as the official one. A summary
+that names neither fighter is dropped. Sources surveyed: Sherdog is the only
+one that is both fetchable and round-by-round for every bout; ufc.com's
+results articles have a paragraph per fight (possible second source);
+MMA Mania / MMA Weekly / Tapology 403, Bloody Elbow is paywalled.
+App side: a collapsed "Summary" toggle on the fight row, shown only after
+the viewer has rated the fight (`node tests/summary.cjs` in the app repo).
+- [x] **Applied `migrate/add_fight_summaries.sql` to prod** 2026-11-21, in two
+  parts through the Supabase connector (table + policy, then the view). The
+  connector declines a script containing `drop policy` in a session that
+  can't show its confirmation prompt, so the idempotent `drop policy if
+  exists` line was left out of what was sent; the table was new.
+- [x] `ANTHROPIC_API_KEY` added to the local `.env` 2026-11-21.
+- [ ] **Add `ANTHROPIC_API_KEY` to the repo's Actions secrets.** Until then
+  the nightly step prints a notice and exits 0.
+- [x] **First real run** 2026-11-21: UFC 334, UFC Fight Night 293 and 294 —
+  39 summaries, every fight on all three cards, about 17k input / 2k output
+  tokens per card. The first dry run skipped a majority draw; the result
+  line and prompt now spell draws out.
+- [ ] Wording is occasionally clumsy ("a seated knockdown-type right");
+  tighten the prompt if it grates.
+- [ ] Backfill decision: `--all --limit N` covers older UFC cards that have a
+  Sherdog play-by-play; roughly 17k input tokens per card.
+
 ## Video sources
 - ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
   2026-07-10:** `CHANNELS` in `youtube_scraper.py` now covers PFL (+Bellator/
