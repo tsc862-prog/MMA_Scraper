@@ -221,6 +221,9 @@ overwrites. RLS on, anon `select` only.
 | source       | text | `sherdog` (where the play-by-play came from) |
 | source_url   | text | the play-by-play article |
 | model        | text | model id that wrote it, e.g. `claude-sonnet-5-5` |
+| fighter1_missed_weight, fighter2_missed_weight | boolean, default false | the article says that fighter came in over the limit (2026-11-23, `migrate/add_fight_context.sql`) |
+| fighter1_short_notice, fighter2_short_notice | boolean, default false | the article calls that fighter a late / short-notice replacement |
+| context      | text | one sentence of detail when any flag is set; pre-fight facts only, the app shows it ungated |
 | generated_at | timestamptz |
 
 ### change_log
@@ -282,6 +285,9 @@ Since 2026-10-06 (`migrate/add_fight_odds.sql`) it also carries
 line).
 Since 2026-11-21 (`migrate/add_fight_summaries.sql`) it also carries
 `summary` (the `fight_summaries` text, null when none).
+Since 2026-11-23 (`migrate/add_fight_context.sql`) it also carries the four
+`fighterN_missed_weight` / `fighterN_short_notice` flags and `context` (null
+when the fight has no summary row; false = the article did not say).
 `events.youtube_prelims_url` was added 2026-08-15 for LFA's prelim-card
 replay uploads. `pluto_url` on both `events` and `fights` (plus `fi.pluto_url`
 / `event_pluto_url` on the view) was added 2026-09-06 via

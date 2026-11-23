@@ -583,8 +583,22 @@ the viewer has rated the fight (`node tests/summary.cjs` in the app repo).
   line and prompt now spell draws out.
 - [ ] Wording is occasionally clumsy ("a seated knockdown-type right");
   tighten the prompt if it grates.
-- [ ] Backfill decision: `--all --limit N` covers older UFC cards that have a
-  Sherdog play-by-play; roughly 17k input tokens per card.
+- [x] **Pre-fight context** 2026-11-23 (`migrate/add_fight_context.sql`,
+  applied to prod): the same request also returns which fighter missed weight
+  and which was a late replacement, plus one `context` sentence. Only what
+  the article states; false means "not said". Recent articles tag the
+  weigh-in figure "Missed Weight"; older ones mention it rarely, so coverage
+  thins out going back. App: MISSED WEIGHT / SHORT NOTICE tags, ungated.
+- [x] **Older article layout** 2026-11-23: articles before about 2014 have no
+  `#playbyplay` block; `legacy_text()` reads the plain article body. Sherdog
+  links no play-by-play at all for most cards before about 2008.
+- [ ] **Backfill in progress.** 2026 rewritten with context and 2025 filled
+  on 2026-11-23 (`summary_backfill.log`). Continue a year at a time:
+  `python summary_scraper.py --all --since 2024-01-01 --until 2024-12-31`.
+  About 11–26k input / 2–2.5k output tokens per card.
+- [ ] A second source for context and for pre-2008 cards: Wikipedia's event
+  pages have a Background section that reliably records replacements and
+  weight misses for every era.
 
 ## Video sources
 - ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE

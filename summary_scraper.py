@@ -19,6 +19,17 @@ Letting the model line bouts up with fight ids avoids name matching here
 (Sherdog's "Heili Alateng" is the DB's "Alatengheili"). Only the generated
 summary is stored, never the play-by-play text.
 
+Context. The same request also pulls out two pre-fight facts when the
+article states them: a fighter who missed weight (Sherdog tags the weigh-in
+figure "Missed Weight") and a fighter who took the bout as a late
+replacement. They are stored as per-fighter flags plus one short `context`
+sentence; none of it gives the result away, so the app shows it ungated.
+
+Older cards. Articles before about 2014 have no `#playbyplay` block or bout
+headings, just the article body with a "A vs. B" line and "Round 1" under
+it; `legacy_text()` reads those. Sherdog has no play-by-play link at all for
+most cards before about 2008.
+
 Scope. UFC by default (organization id 2; --org-ids for others). Nightly it
 looks at events from the last --days (14) and only at fights that have a
 result but no summary yet, so a normal night is zero or one model request.
@@ -32,7 +43,9 @@ exits 0 so the nightly doesn't fail.
   python summary_scraper.py                  # nightly: recent UFC cards lacking summaries
   python summary_scraper.py --event 114293   # one event by Sherdog id (any org, any date)
   python summary_scraper.py --all --limit 20 # backfill: every in-scope event, 20 model requests at a time
+  python summary_scraper.py --all --since 2025-01-01 --until 2025-12-31   # backfill one year
   python summary_scraper.py --force          # rewrite summaries that already exist
+  python summary_scraper.py --all --stale-before 2026-11-23   # rewrite only those written before a date
   python summary_scraper.py --dry-run        # fetch + parse (+ summarise if a key is set), print, write nothing
 """
 import os
@@ -65,6 +78,11 @@ For each listed fight:
 - Find its bout in the article. Names can be spelled or ordered differently between the article and the list; use the opponents and the result to line them up.
 - Write 2 to 4 sentences, about 40 to 75 words, in plain past-tense prose. Refer to fighters by surname. Say how the fight unfolded and how it ended; for a decision, say what won it rather than listing scores.
 - Use only what the article says. Do not add records, rankings, odds, background or opinion, and do not copy the article's sentences; describe the action in your own words.
+- Separately from the summary, report two pre-fight facts, only when the article states them outright:
+  - missed_weight: which fighter came in over the limit for the bout. The article usually marks this next to the weigh-in figure ("188: Missed Weight") or says so in the commentary. A fight simply booked at a catchweight is not a miss.
+  - short_notice: which fighter took the bout as a late or short-notice replacement for someone who withdrew.
+  Answer each with a list of the fighters it applies to, each name copied exactly as it is written in the list of fights you were given; an empty list when it applies to neither. When the article does not say, answer with an empty list; do not infer a miss from the numbers alone or rely on your own memory of the event.
+  - context: when either list is not empty, one short sentence giving the detail the article has (the weight and the limit, how late the call was, who was replaced). State it as plain fact ("Solecki took the fight on short notice."), without mentioning the article. It is shown to people who have not watched the fight yet, so it must not hint at who won or how. Otherwise leave it empty.
 - A draw or a no contest is an ordinary result: summarise the fight and say how it came to end without a winner (for example a point deduction that levelled the scorecards).
 - The database result is the official one. If the article's account of who won contradicts it, or the bout is missing from the article, or its section has no official result yet, set covered to false and leave the summary empty rather than guessing.
 
@@ -81,8 +99,11 @@ SCHEMA = {
                     'fight_id': {'type': 'string'},
                     'covered': {'type': 'boolean'},
                     'summary': {'type': 'string'},
+                    'missed_weight': {'type': 'array', 'items': {'type': 'string'}},
+                    'short_notice': {'type': 'array', 'items': {'type': 'string'}},
+                    'context': {'type': 'string'},
                 },
-                'required': ['fight_id', 'covered', 'summary'],
+                'required': ['fight_id', 'covered', 'summary', 'missed_weight', 'short_notice', 'context'],
                 'additionalProperties': False,
             },
         },
@@ -134,6 +155,26 @@ def playbyplay_text(article_html):
     start = text.find('## ')
     return (text[start:] if start >= 0 else ''), bouts
 
+def legacy_text(article_html):
+    """Articles from before the `#playbyplay` layout (roughly pre-2014): the
+    article body is one run of text broken by <br>, each bout an "A vs. B"
+    line followed by "Round 1". → (text from the first bout on, bout count)."""
+    soup = BeautifulSoup(article_html, 'html.parser')
+    body = soup.select_one('.body_content') or soup.select_one('article')
+    if body is None:
+        return '', 0
+    for tag in body.find_all(['script', 'style']):
+        tag.decompose()
+    for br in body.find_all('br'):
+        br.replace_with('\n')
+    lines = [' '.join(l.split()) for l in body.get_text(' ').split('\n')]
+    lines = [l for l in lines if l]
+    firsts = [i for i, l in enumerate(lines) if re.match(r'Round 1\b', l)]
+    if not firsts:
+        return '', 0
+    end = next((i for i, l in enumerate(lines) if l.startswith('Related Articles')), len(lines))
+    return '\n'.join(lines[max(0, firsts[0] - 1):end]), len(firsts)
+
 # ── Model ─────────────────────────────────────────────────────────────────────
 
 def _name_tokens(name):
@@ -151,6 +192,27 @@ def mentions_fighter(summary, fight):
                 return True
     return False
 
+def _sides(names, fight):
+    """Names the model returned for a context flag → {1, 2} sides of the fight.
+    The model is asked to copy the name from the listing, so this is normally
+    an exact match; otherwise the side sharing more name tokens wins, and a
+    name that fits neither (or both equally) is dropped rather than guessed."""
+    sides = set()
+    t1, t2 = set(_name_tokens(fight['fighter1_name'])), set(_name_tokens(fight['fighter2_name']))
+    for nm in names or []:
+        if fold(nm) == fold(fight['fighter1_name']):
+            sides.add(1)
+        elif fold(nm) == fold(fight['fighter2_name']):
+            sides.add(2)
+        else:
+            toks = set(_name_tokens(nm))
+            a, b = len(toks & t1), len(toks & t2)
+            if a != b:
+                sides.add(1 if a > b else 2)
+            else:
+                print(f'    context name {nm!r} fits neither side of {fight["id"]}; ignored')
+    return sides
+
 def _result_line(f):
     method = ' '.join(b for b in (f.get('details'), f.get('method')) if b and '|' not in b)
     if f.get('winner_name'):
@@ -161,7 +223,9 @@ def _result_line(f):
     return ', '.join(b for b in bits if b)
 
 def summarise(client, event, fights, article):
-    """One request for the whole card → ({fight_id: summary}, model id, usage)
+    """One request for the whole card → ({fight_id: row}, model id, usage)
+    where row = {summary, fighter1_missed_weight, fighter2_missed_weight,
+    fighter1_short_notice, fighter2_short_notice, context},
     or (None, None, None) when the model declined or ran out of room."""
     listing = '\n'.join(
         f'- fight_id {f["id"]}: {f["fighter1_name"]} vs. {f["fighter2_name"]}'
@@ -195,7 +259,16 @@ def summarise(client, event, fights, article):
         if not mentions_fighter(text, fight):
             print(f'    dropped {fight["id"]}: summary names neither {fight["fighter1_name"]} nor {fight["fighter2_name"]}')
             continue
-        out[fight['id']] = text
+        mw = _sides(row.get('missed_weight'), fight)
+        sn = _sides(row.get('short_notice'), fight)
+        out[fight['id']] = {
+            'summary': text,
+            'fighter1_missed_weight': 1 in mw,
+            'fighter2_missed_weight': 2 in mw,
+            'fighter1_short_notice': 1 in sn,
+            'fighter2_short_notice': 2 in sn,
+            'context': (' '.join((row.get('context') or '').split()) or None) if (mw or sn) else None,
+        }
     return out, resp.model, resp.usage
 
 # ── Runs ──────────────────────────────────────────────────────────────────────
@@ -225,6 +298,8 @@ def process(client, event, fights, dry_run):
         return 0, 0
     article_html = fetch_html(url)
     article, bouts = playbyplay_text(article_html or '')
+    if not bouts:
+        article, bouts = legacy_text(article_html or '')
     if not bouts or len(article) < MIN_ARTICLE_CHARS:
         print(f'  {label}: play-by-play has no rounds yet')
         return 0, 0
@@ -239,14 +314,19 @@ def process(client, event, fights, dry_run):
           f' ({usage.input_tokens:,} in / {usage.output_tokens:,} out tokens, {model})')
     if dry_run:
         names = {f['id']: f'{f["fighter1_name"]} vs. {f["fighter2_name"]}' for f in fights}
-        for fid, text in summaries.items():
-            print(f'    {names[fid]}: {text}')
+        for fid, row in summaries.items():
+            print(f'    {names[fid]}: {row["summary"]}')
+            if row['context']:
+                print(f'      context: {row["context"]}')
         return len(summaries), 1
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     s.upsert('fight_summaries', [
-        {'fight_id': fid, 'summary': text, 'source': 'sherdog', 'source_url': url,
+        {'fight_id': fid, **row, 'source': 'sherdog', 'source_url': url,
          'model': model, 'generated_at': now}
-        for fid, text in summaries.items()])
+        for fid, row in summaries.items()])
+    flagged = sum(1 for r in summaries.values() if any(v is True for v in r.values()))
+    if flagged:
+        print(f'    {flagged} with a weight miss or late replacement')
     return len(summaries), 1
 
 def main():
@@ -254,8 +334,11 @@ def main():
     ap.add_argument('--event', type=int, help='one event by Sherdog id (ignores --org-ids, --days)')
     ap.add_argument('--all', action='store_true', help='every in-scope event, not just recent ones (backfill)')
     ap.add_argument('--days', type=int, default=14, help='nightly window: events from the last N days (default 14)')
+    ap.add_argument('--since', help='with --all: only events on or after this date (YYYY-MM-DD)')
+    ap.add_argument('--until', help='with --all: only events on or before this date (YYYY-MM-DD)')
     ap.add_argument('--org-ids', default=str(UFC_ORG_ID), help='comma-separated organization ids (default 2 = UFC)')
     ap.add_argument('--force', action='store_true', help='rewrite summaries that already exist')
+    ap.add_argument('--stale-before', help='also rewrite summaries generated before this date or UTC timestamp (YYYY-MM-DD or YYYY-MM-DDTHH:MM:SSZ); resumable, unlike --force')
     ap.add_argument('--limit', type=int, default=0, help='stop after N model requests (backfill in chunks)')
     ap.add_argument('--dry-run', action='store_true', help='print summaries, write nothing')
     args = ap.parse_args()
@@ -277,10 +360,18 @@ def main():
         extra = f'&organization_id=in.({args.org_ids})&date=lte.{today}'
         if not args.all:
             extra += f'&date=gte.{today - dt.timedelta(days=args.days)}'
+        else:
+            if args.since:
+                extra += f'&date=gte.{dt.date.fromisoformat(args.since)}'
+            if args.until:
+                extra += f'&date=lte.{dt.date.fromisoformat(args.until)}'
     events = fetch_all('events', 'id,name,date', extra, order='date.desc')
     by_event = fights_for(e['id'] for e in events)
     have = set() if args.force else {
-        r['fight_id'] for r in fetch_all('fight_summaries', 'fight_id', order='fight_id')}
+        r['fight_id'] for r in fetch_all(
+            'fight_summaries', 'fight_id',
+            f'&generated_at=gte.{args.stale_before}' if args.stale_before else '',
+            order='fight_id')}
     todo = [(e, [f for f in by_event.get(e['id'], []) if f['id'] not in have]) for e in events]
     todo = [(e, fs) for e, fs in todo if fs]
     print(f'{len(events)} events in scope, {len(todo)} with fights lacking a summary')
