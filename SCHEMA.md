@@ -207,6 +207,24 @@ For an **upcoming** fight the `close` columns hold the current line; the
 nightly re-fetches every card within the window, so they settle to the true
 close after the bell. An upset = `winner_id`'s side closed positive.
 
+### fight_weights
+The weight class of a fight Sherdog lists without one (most cards before
+2012), added 2026-11-23 (`migrate/add_fight_weights.sql`), filled by
+`weight_scraper.py` from Wikipedia's bout tables. Separate from `fights`
+because `sherdog_scraper.py` rewrites `fights.weight_class` on a re-scrape.
+RLS on, anon `select` only.
+| column          | type | notes |
+|-----------------|------|-------|
+| fight_id        | text PK, FK → fights (cascade) |
+| weight_class    | text | the name the bout was billed under ("Middleweight" for a 1999 UFC under-200 bout) |
+| weight_limit_lb | numeric | upper limit in lb; null = no upper limit (Openweight, Super Heavyweight, the early UFC's 200-and-over Heavyweight) |
+| source          | text | `wikipedia`, or `rule` (UFC before UFC 12: every bout Openweight) |
+| source_url      | text | the Wikipedia page |
+| updated_at      | timestamptz |
+
+`fight_search.weight_class` is `fights.weight_class` when set, else this
+table's; the view also carries `weight_limit_lb`.
+
 ### fight_summaries
 A short written account (2–4 sentences) of how each bout played out, added
 2026-11-21 (`migrate/add_fight_summaries.sql`),

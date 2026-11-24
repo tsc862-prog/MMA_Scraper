@@ -600,6 +600,31 @@ the viewer has rated the fight (`node tests/summary.cjs` in the app repo).
   pages have a Background section that reliably records replacements and
   weight misses for every era.
 
+## Weight classes for old cards
+
+### DONE — UFC  (2026-11-23)
+`weight_scraper.py` → `fight_weights` (`migrate/add_fight_weights.sql`,
+applied to prod). Sherdog lists no weight class for most cards before 2012 in
+any organisation (UFC 1,650 blank, PRIDE 583, Strikeforce 528, WEC 349,
+KOTC / Shooto / Pancrase thousands). Wikipedia's `{{MMAevent bout}}` tables
+filled 1,631 of the UFC's 1,650. Billed name + `weight_limit_lb`; the app
+shows the limit where it differs from today's and groups by it.
+- Wikipedia's UFC 12–30 tables mix the names of the day with today's
+  equivalents, even on one page; `ufc_early()` reads the label as a weight
+  band and restores the billed name from the date.
+- [ ] 19 UFC fights left: 5 rematch pairs with differing classes, the rest
+  name mismatches (UFC Fight Night 1's page, "War Machine", a few 1997–99
+  bouts). `python weight_scraper.py --dry-run` lists them. Note the scraper
+  picks blank fights off `fight_search`, which now falls back to
+  `fight_weights`, so a rerun only sees fights still missing.
+- [ ] **PRIDE needs another source.** Wikipedia leaves the class blank on
+  about four PRIDE bouts in five (84 usable of 583) and mixes PRIDE's names
+  with today's. `--orgs PRIDE` is configured but off by default.
+- [ ] Strikeforce, WEC and the rest: add a row to `ORGS` (and `ERAS` where an
+  organisation's limits differ) once a source is checked for each.
+- [ ] Unchecked: whether Sherdog's own labels for ONE / Shooto fights are the
+  organisation's names or converted ones.
+
 ## Video sources
 - ~~Generalize the YouTube scraper's channels beyond the PFL channel.~~ **DONE
   2026-07-10:** `CHANNELS` in `youtube_scraper.py` now covers PFL (+Bellator/

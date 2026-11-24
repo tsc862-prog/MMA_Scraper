@@ -36,6 +36,15 @@ result but no summary yet, so a normal night is zero or one model request.
 A card with no play-by-play link is skipped (and re-checked each night while
 it is inside the window). No tracker file — state is the DB.
 
+Wikipedia (--source wikipedia). Sherdog has no play-by-play for the early
+cards, so those are written from Wikipedia instead: the event article's prose
+and the notes column of its results table, plus, for each bout, the passages
+in the two fighters' own biographies that mention the opponent. That is far
+thinner than a play-by-play. A bout the excerpts say nothing about beyond the
+result is left without a summary rather than padded out, and the model is
+told not to fill gaps from memory. Rows are stored with source `wikipedia`.
+Bouts are lined up with Wikipedia's tables by weight_scraper.py's matcher.
+
 Model. `claude-sonnet-5-5` (SUMMARY_MODEL in .env overrides), structured JSON
 output. Needs ANTHROPIC_API_KEY in .env; without it the script says so and
 exits 0 so the nightly doesn't fail.
@@ -46,6 +55,7 @@ exits 0 so the nightly doesn't fail.
   python summary_scraper.py --all --since 2025-01-01 --until 2025-12-31   # backfill one year
   python summary_scraper.py --force          # rewrite summaries that already exist
   python summary_scraper.py --all --stale-before 2026-11-23   # rewrite only those written before a date
+  python summary_scraper.py --all --source wikipedia --until 1996-12-31   # early cards, from Wikipedia
   python summary_scraper.py --dry-run        # fetch + parse (+ summarise if a key is set), print, write nothing
 """
 import os
@@ -55,6 +65,7 @@ import json
 import time
 import argparse
 import datetime as dt
+from collections import Counter
 
 import requests
 from bs4 import BeautifulSoup
@@ -79,14 +90,24 @@ For each listed fight:
 - Write 2 to 4 sentences, about 40 to 75 words, in plain past-tense prose. Refer to fighters by surname. Say how the fight unfolded and how it ended; for a decision, say what won it rather than listing scores.
 - Use only what the article says. Do not add records, rankings, odds, background or opinion, and do not copy the article's sentences; describe the action in your own words.
 - Separately from the summary, report two pre-fight facts, only when the article states them outright:
-  - missed_weight: which fighter came in over the limit for the bout. The article usually marks this next to the weigh-in figure ("188: Missed Weight") or says so in the commentary. A fight simply booked at a catchweight is not a miss.
+  - missed_weight: which fighter came in over the limit for the bout. The article usually marks this next to the weigh-in figure ("188: Missed Weight") or says so in the commentary. A "Missed Weight" label is always a miss, even when the bout is then shown at a catchweight the fighter was under: the bout was moved to that catchweight because of the miss. The limit that was missed is the one for the weight class in the list of fights (non-title bouts allow one pound over). A fight booked at a catchweight from the start, with nobody labelled as missing weight, is not a miss.
   - short_notice: which fighter took the bout as a late or short-notice replacement for someone who withdrew.
   Answer each with a list of the fighters it applies to, each name copied exactly as it is written in the list of fights you were given; an empty list when it applies to neither. When the article does not say, answer with an empty list; do not infer a miss from the numbers alone or rely on your own memory of the event.
-  - context: when either list is not empty, one short sentence giving the detail the article has (the weight and the limit, how late the call was, who was replaced). State it as plain fact ("Solecki took the fight on short notice."), without mentioning the article. It is shown to people who have not watched the fight yet, so it must not hint at who won or how. Otherwise leave it empty.
+  - context: when either list is not empty, one short sentence giving the detail the article has (the weight and the limit that was missed, and that the bout went ahead at a catchweight if it did; how late the call was, who was replaced). State it as plain fact ("Solecki took the fight on short notice.", "Potieria weighed 188 pounds, over the 186-pound middleweight limit, and the bout went ahead at a catchweight."). Never mention the article or how it labels things. It is shown to people who have not watched the fight yet, so it must not hint at who won or how. Otherwise leave it empty.
 - A draw or a no contest is an ordinary result: summarise the fight and say how it came to end without a winner (for example a point deduction that levelled the scorecards).
 - The database result is the official one. If the article's account of who won contradicts it, or the bout is missing from the article, or its section has no official result yet, set covered to false and leave the summary empty rather than guessing.
 
 Return one entry for every listed fight id, and no others."""
+
+SYSTEM_WIKI = SYSTEM.replace(
+    "You are given one event's round-by-round play-by-play article and the list of fights that need a summary, each with its id and the official result from the app's database.",
+    "You are given excerpts from Wikipedia about one event and the list of fights that need a summary, each with its id and the official result from the app's database. The excerpts are the event article's prose, any note from its results table, and, under each bout, the passages from the two fighters' biographies that mention the opponent. Treat all of it as \"the article\" below."
+).replace(
+    "- Write 2 to 4 sentences, about 40 to 75 words, in plain past-tense prose.",
+    "- Write 1 to 4 sentences, up to about 75 words, in plain past-tense prose; a short fight the excerpts describe briefly gets a short summary."
+) + """
+
+These are old fights and the excerpts are often thin. Describe only what the excerpts say happened in the fight. If they give nothing about a bout beyond who won, the method and the time, set covered to false: do not restate the result as a summary, and do not add anything you remember about the fight from elsewhere. The biographies are written from each fighter's side and can disagree; where they do, keep to what both support."""
 
 SCHEMA = {
     'type': 'object',
@@ -222,7 +243,7 @@ def _result_line(f):
     bits = [res, f'round {f["round"]}' if f.get('round') else '', f.get('time') or '']
     return ', '.join(b for b in bits if b)
 
-def summarise(client, event, fights, article):
+def summarise(client, event, fights, article, system=None, tag='play_by_play'):
     """One request for the whole card → ({fight_id: row}, model id, usage)
     where row = {summary, fighter1_missed_weight, fighter2_missed_weight,
     fighter1_short_notice, fighter2_short_notice, context},
@@ -233,7 +254,7 @@ def summarise(client, event, fights, article):
         for f in fights)
     prompt = (f'Event: {event["name"]} ({event["date"]})\n\n'
               f'Fights that need a summary:\n{listing}\n\n'
-              f'<play_by_play>\n{article}\n</play_by_play>')
+              f'<{tag}>\n{article}\n</{tag}>')
     resp = client.beta.messages.create(
         model=MODEL,
         max_tokens=16000,
@@ -241,7 +262,7 @@ def summarise(client, event, fights, article):
         # the fallback model inside the same call instead of returning nothing.
         betas=['server-side-fallback-2026-07-01'],
         fallbacks='default',
-        system=SYSTEM,
+        system=system or SYSTEM,
         output_config={'effort': EFFORT, 'format': {'type': 'json_schema', 'schema': SCHEMA}},
         messages=[{'role': 'user', 'content': prompt}],
     )
@@ -329,6 +350,96 @@ def process(client, event, fights, dry_run):
         print(f'    {flagged} with a weight miss or late replacement')
     return len(summaries), 1
 
+# ── Wikipedia source ──────────────────────────────────────────────────────────
+
+class Wiki:
+    """Wikipedia material for cards with no play-by-play. Loads every event
+    page for the organisation once (weight_scraper's fetch and cache), then
+    fighter biographies on demand."""
+    def __init__(self, org, cache=None):
+        import weight_scraper as w
+        self.w = w
+        list_page, pattern = w.ORGS[org]
+        self.pages = w.page_texts(w.event_titles(list_page, pattern), cache and f'{cache}.{org}.json')
+        self.bouts = [(b, title) for title, text in self.pages.items() for b in w.bouts(text)]
+        self.bios = {}
+
+    def _bio(self, titles):
+        need = [t for t in titles if t and t not in self.bios]
+        if need:
+            got = self.w._page_texts(need)
+            # redirects resolve to another title; map by folded name as well
+            for t in need:
+                self.bios[t] = got.get(t) or next(
+                    (txt for title, txt in got.items() if self.w._key(title.split(' (')[0]) == self.w._key(t.split(' (')[0])), '')
+        return [self.bios.get(t) or '' for t in titles]
+
+    def _passages(self, bio, opponent, cap=1800):
+        """Paragraphs of a biography that name the opponent's surname."""
+        sur = self.w._surname(opponent)
+        out, n = [], 0
+        for para in re.split(r'\n\s*\n|\n(?==)', bio):
+            if para.lstrip().startswith(('{{', '|', '{|', '!', '*', '=')):
+                continue
+            text = self.w._plain(para)
+            if len(text) >= 80 and sur and sur in fold(text):
+                out.append(text[:900]); n += len(out[-1])
+                if n >= cap:
+                    break
+        return out
+
+    def material(self, fights):
+        """→ (text for the model, event page url, bouts with any passages) or
+        (None, None, 0) when the card's fights are not on Wikipedia."""
+        matched, _ = self.w.match(fights, self.bouts)
+        if not matched:
+            return None, None, 0
+        title = Counter(t for _, t in matched.values()).most_common(1)[0][0]
+        prose = self.w._plain(re.sub(r'\{\{MMAevent.*', '', self.pages[title], flags=re.S))
+        self._bio([l for b, _ in matched.values() for l in (b['a_link'], b['b_link'])])
+        parts, covered = [f'## Event article: {title}\n{prose[:6000]}'], 0
+        for f in fights:
+            if f['id'] not in matched:
+                continue
+            b, _ = matched[f['id']]
+            lines = [f'## Bout: {b["a"]} vs. {b["b"]}']
+            if b['notes']:
+                lines.append(f'Results table note: {b["notes"]}')
+            for me, link, other in ((b['a'], b['a_link'], b['b']), (b['b'], b['b_link'], b['a'])):
+                for para in self._passages(self._bio([link])[0] if link else '', other):
+                    lines.append(f"From {me}'s biography: {para}")
+            covered += len(lines) > 1
+            parts.append('\n'.join(lines))
+        return '\n\n'.join(parts), 'https://en.wikipedia.org/wiki/' + title.replace(' ', '_'), covered
+
+def process_wiki(client, event, fights, dry_run, wiki):
+    """process() for --source wikipedia. → (summaries written, model requests)."""
+    label = f'{event["date"]} {event["name"]}'
+    article, url, covered = wiki.material(fights)
+    if not article or not covered:
+        print(f'  {label}: nothing on Wikipedia beyond the results')
+        return 0, 0
+    if client is None:
+        print(f'  {label}: {covered}/{len(fights)} bouts have excerpts ({len(article):,} chars) — no API key, model not called')
+        return 0, 0
+    summaries, model, usage = summarise(client, event, fights, article, SYSTEM_WIKI, 'wikipedia_excerpts')
+    if summaries is None:
+        return 0, 1
+    print(f'  {label}: {len(summaries)}/{len(fights)} summaries, {covered} bouts with excerpts'
+          f' ({usage.input_tokens:,} in / {usage.output_tokens:,} out tokens, {model})')
+    if dry_run:
+        names = {f['id']: f'{f["fighter1_name"]} vs. {f["fighter2_name"]}' for f in fights}
+        for fid, row in summaries.items():
+            print(f'    {names[fid]}: {row["summary"]}')
+            if row['context']:
+                print(f'      context: {row["context"]}')
+        return len(summaries), 1
+    now = dt.datetime.now(dt.timezone.utc).isoformat()
+    s.upsert('fight_summaries', [
+        {'fight_id': fid, **row, 'source': 'wikipedia', 'source_url': url, 'model': model, 'generated_at': now}
+        for fid, row in summaries.items()])
+    return len(summaries), 1
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--event', type=int, help='one event by Sherdog id (ignores --org-ids, --days)')
@@ -339,6 +450,8 @@ def main():
     ap.add_argument('--org-ids', default=str(UFC_ORG_ID), help='comma-separated organization ids (default 2 = UFC)')
     ap.add_argument('--force', action='store_true', help='rewrite summaries that already exist')
     ap.add_argument('--stale-before', help='also rewrite summaries generated before this date or UTC timestamp (YYYY-MM-DD or YYYY-MM-DDTHH:MM:SSZ); resumable, unlike --force')
+    ap.add_argument('--source', choices=['sherdog', 'wikipedia'], default='sherdog', help='where the account of the fight comes from (default sherdog play-by-play)')
+    ap.add_argument('--cache', help='--source wikipedia: path prefix for a local cache of the event pages')
     ap.add_argument('--limit', type=int, default=0, help='stop after N model requests (backfill in chunks)')
     ap.add_argument('--dry-run', action='store_true', help='print summaries, write nothing')
     args = ap.parse_args()
@@ -376,10 +489,12 @@ def main():
     todo = [(e, fs) for e, fs in todo if fs]
     print(f'{len(events)} events in scope, {len(todo)} with fights lacking a summary')
 
+    wiki = Wiki('UFC', args.cache) if args.source == 'wikipedia' and todo else None
     n_rows = n_calls = 0
     for event, fights in todo:
         try:
-            rows, calls = process(client, event, fights, args.dry_run)
+            rows, calls = (process_wiki(client, event, fights, args.dry_run, wiki) if wiki
+                           else process(client, event, fights, args.dry_run))
         except requests.exceptions.RequestException as e:
             print(f'  {event["date"]} {event["name"]}: fetch failed ({e})')
             continue
